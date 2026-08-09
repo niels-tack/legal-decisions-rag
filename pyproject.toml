@@ -1,0 +1,103 @@
+[project]
+name = "legal-decisions-rag"
+version = "0.1.0"
+description = "Project to expose publicly available legal decisions to non-technical users through chat interfaces (Copilot etc.)"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pydantic>=2.10.0",
+    "langchain>=0.3.0",
+    "langchain-core>=0.3.0",
+]
+
+[dependency-groups]
+dev = [
+    "pip-audit>=2.9.1",
+    "pytest>=8.4.2",
+    "ruff>=0.5.7",
+    "ty>=0.0.1a24",
+]
+
+
+######################################## Ruff configuration ########################################
+[tool.ruff]
+line-length = 88
+indent-width = 4
+target-version = "py313"
+src = ["src"]
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "F",   # Pyflakes
+    "I",   # isort (import sorting)
+    "B",   # flake8-bugbear
+    "UP",  # pyupgrade
+]
+ignore = [
+    "E501", # line length handled by formatter
+]
+fixable = ["ALL"]
+unfixable = []
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.lint.per-file-ignores]
+# Be strict on application code, but relax a few common patterns in tests.
+"tests/**" = [
+    "B011", # assert-false (tests legitimately use asserts)
+    "B018", # useless-expression (pytest patterns / doc-style expressions)
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+docstring-code-format = false
+docstring-code-line-length = "dynamic"
+
+
+######################################## Ty configuration ########################################
+[tool.ty.environment]
+python-version = "3.13"
+
+[tool.ty.src]
+include = [
+    "src",
+    "tests",
+]
+
+[tool.ty.rules]
+unresolved-reference = "ignore"
+unresolved-attribute = "ignore"
+unresolved-import = "ignore"
+
+[[tool.ty.overrides]]
+include = ["src/**"]
+
+[tool.ty.overrides.rules]
+unresolved-reference = "error"
+unresolved-attribute = "error"
+unresolved-import = "error"
+
+[[tool.ty.overrides]]
+include = ["tests/**", "**/test_*.py"]
+
+[tool.ty.overrides.rules]
+unresolved-reference = "ignore"
+unresolved-attribute = "ignore"
+unresolved-import = "ignore"
+
+[[tool.ty.overrides]]
+include = ["examples/**"]
+
+[tool.ty.overrides.rules]
+unresolved-import = "ignore"
+unsupported-operator = "ignore"
+
+[[tool.ty.overrides]]
+include = ["deployment/**"]
+
+[tool.ty.overrides.rules]
+no-matching-overload = "ignore"
+unresolved-attribute = "ignore"

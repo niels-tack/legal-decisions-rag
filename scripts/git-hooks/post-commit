@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# post-commit hook: incrementally update the code-review-graph after each commit.
+# Fast — only re-parses files changed in the latest commit.
+
+uv run code-review-graph update 2>/dev/null || true

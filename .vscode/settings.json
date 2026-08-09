@@ -1,0 +1,15 @@
+{
+    // Point VS Code at the uv-managed virtual environment.
+    // This ensures Pylance, the ty extension, and the integrated terminal
+    // all use the same Python interpreter with all project dependencies installed.
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+
+    // Tell the ty VS Code extension to find the ty binary from the active
+    // Python environment (the venv above). Using importStrategy avoids
+    // hardcoding an absolute path, which would differ per machine.
+    // Note: ty.path requires a string[] — a plain string silently breaks it.
+    "ty.importStrategy": "fromEnvironment",
+
+    // Disable Pylance's built-in type checker so ty is the sole checker.
+    "python.analysis.typeCheckingMode": "off"
+}

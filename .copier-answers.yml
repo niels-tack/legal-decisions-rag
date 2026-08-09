@@ -1,0 +1,36 @@
+# This file is used by Copier to track which template was used
+# and what answers were given. DO NOT DELETE THIS FILE.
+# It enables you to update your project when the template changes.
+#
+# To update your project with template improvements:
+#   copier update
+#
+# To see what would change without applying:
+#   copier update --pretend
+
+_src_path: /tmp/copier._vcs.clone.u9lbrhp3
+_commit: 0b258d9b47b67cc99e3fafa6c72fc4a7c40b176e
+author_email: niels_tack@hotmail.com
+author_name: Niels Tack
+github_username: niels-tack
+include_mlflow: False
+license: MIT
+project_description: Project to expose publicly available legal decisions to non-technical users through chat interfaces (Copilot etc.)
+project_name: legal-decisions-rag
+project_slug: legal_decisions_rag
+python_version: 3.13
+repo_url: https://github.com/niels-tack/legal-decisions-rag
+use_ai_providers: True
+use_anthropic: False
+use_aws_bedrock: False
+use_azure_openai: False
+use_google_ai: False
+use_langchain: 
+use_llamaindex: 
+use_openai_direct: False
+use_pydantic: 
+use_code_review_graph: False
+use_docker: True
+use_github_actions: True
+use_logfire: False
+use_precommit: 

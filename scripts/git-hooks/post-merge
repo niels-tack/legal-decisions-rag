@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# post-merge hook: incrementally update the code-review-graph after a merge.
+# Catches files changed by the incoming merge that weren't in local commits.
+
+uv run code-review-graph update 2>/dev/null || true

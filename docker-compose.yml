@@ -1,0 +1,10 @@
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+    volumes:
+      - .:/app
+    command: uv run python -m src.main
