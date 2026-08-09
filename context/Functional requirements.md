@@ -20,15 +20,15 @@ Belgian Constitutional Court rulings are only available as scattered PDF documen
 - Non-technical users can get cited, relevant passages from Constitutional Court rulings using only their existing Copilot/ChatGPT/Claude account - zero installs, zero API keys, zero repo cloning.
 - Recurring hosting cost stays at €0.00/month.
 - The maintainer's home network/hardware is never exposed to the public internet.
-- Retrieval surfaces relevant passages for both exact lookups (case number, article reference) and conceptual/topical questions, across Dutch, French, and German rulings.
-- Every answer traces back to a verifiable case number and ruling date, with a link to the original official PDF as published on https://nl.const-court.be/.
+- Retrieval surfaces relevant passages for both exact lookups (case number, article reference) and conceptual/topical questions. Initial (POC) scope is Dutch-language rulings only; French/German coverage is a later-phase goal, not required for the first working version.
+- Every answer traces back to a verifiable ECLI identifier (the Court's standard citation, e.g. `ECLI:BE:GHCC:2025:ARR.001`) and ruling date, with a link to the original official PDF as published on the Court's website.
 
 ## Core requirements
 
 ### Must have (MVP)
 
-- Local ingestion pipeline (run offline, on the maintainer's own hardware) converting official Constitutional Court PDF rulings from https://nl.const-court.be/ into structured Markdown with YAML frontmatter (case number, ruling date, language, title, subject tags, articles referenced, and the source PDF URL).
-- Weekly automated scrape of https://nl.const-court.be/ for newly published rulings, run on the maintainer's local processing machine, with new/updated Markdown pushed from there to the public GitHub repository.
+- Local ingestion pipeline (run offline, on the maintainer's own hardware), initially scoped to Dutch-language rulings only, converting official Constitutional Court PDF rulings into structured Markdown with YAML frontmatter. Go for the most robust, complete metadata capture practical: every readily available field from the Court's official case overview listing and the PDF itself should be captured, not just a minimal set. At minimum this includes the ECLI identifier (canonical citation), the official arrest number (e.g. "1/2025"), the role/docket number ("rolnummer", e.g. "8115"), and the file/URL slug (e.g. "2025-001n") as three distinct, clearly labeled identifiers (they are not interchangeable and conflating them risks citation errors), plus ruling date, language, procedure type, controlled norm, outcome, subject tags/keywords, and the source PDF URL.
+- Weekly automated scrape of the Court's official case overview listing and PDF publications for newly published rulings, run on the maintainer's local processing machine, with new/updated Markdown pushed from there to the public GitHub repository.
 - Public GitHub repository hosting the processed Markdown as the canonical, versioned data source.
 - Automated index build (GitHub Actions) combining BM25 full-text search (SQLite FTS5) and vector embeddings for hybrid lexical + semantic retrieval.
 - Hosted, EU-based serverless search API (no self-hosting, no home-network exposure) that non-technical users' AI clients call to retrieve ranked passages with citations.
@@ -39,18 +39,20 @@ Belgian Constitutional Court rulings are only available as scattered PDF documen
 ### Should have
 
 - An MCP server exposing the same search capability to Claude Desktop, Cursor, and VS Code Copilot users, backed by the same hosted API rather than a locally built index.
-- Retrieval quality that accounts for Dutch/French/German legal terminology rather than naive single-tokenizer matching.
+- A text-quality check on extracted rulings before publishing (e.g. flagging suspiciously broken tokens/spacing from PDF extraction) so garbled text doesn't silently degrade search results or mislead users.
 
 ### Could have
 
 - Topic/date-range filtering in the search API, using the subject tags and article references already captured in frontmatter.
 - Basic usage logging on the serverless function to detect abuse or breakage.
+- French/German ruling coverage, and retrieval quality tuned for that trilingual mix, as a later-phase expansion once the Dutch-only POC is validated.
 
 ### Won't have (this version)
 
 - Any requirement for end users to hold an API key, clone a repository, or install a CLI tool.
 - Self-hosting the query API on the maintainer's own network/hardware exposed to the internet.
 - Legal advice or generation beyond retrieval - the system retrieves and cites source passages; the user's own LLM (Copilot/Claude/ChatGPT) is responsible for synthesis.
+- French- and German-language rulings (POC is Dutch-only).
 
 ## User workflows
 
