@@ -8,6 +8,17 @@ dependencies = [
     "pydantic>=2.10.0",
     "langchain>=0.3.0",
     "langchain-core>=0.3.0",
+    "beautifulsoup4>=4.12.0",
+    "pdfplumber>=0.11.0",
+    "requests>=2.32.0",
+    "pyyaml>=6.0.0",
+    "numpy>=1.26.0",
+    "sentence-transformers>=3.0.0",
+    "fastapi>=0.115.0",
+    "uvicorn>=0.30.0",
+    "httpx>=0.27.0",
+    "mcp>=2.0.0",
+    "boto3>=1.34.0",
 ]
 
 [dependency-groups]
@@ -25,6 +36,7 @@ line-length = 88
 indent-width = 4
 target-version = "py313"
 src = ["src"]
+extend-exclude = ["reference"]
 
 [tool.ruff.lint]
 select = [
