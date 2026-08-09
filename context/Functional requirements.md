@@ -1,90 +1,89 @@
 # Functional requirements: legal-decisions-rag
 
 > **Single source of truth for project scope and requirements**
-> 
+>
 > This document defines what the project should do and for whom. Update this as requirements evolve.
 > AI coding assistants will reference this to ensure code aligns with project goals.
 
-## Product context
-
-> Fill out this document to seed the project initialization workflow.
-> Replace `[placeholders]` with your information. Delete sections that don't apply.
-
 ## Problem statement
 
-[2-3 sentences describing:
-- Who has the problem?
-- What is the problem?
-- What's the impact if not solved?]
+Belgian Constitutional Court rulings are only available as scattered PDF documents on the Court's own website (https://nl.const-court.be/), with no way for non-technical legal professionals or citizens to search across them semantically or ask natural-language questions and get cited passages back. Existing local RAG tools (e.g. qmd) require installing software, cloning repositories, and managing API keys - a barrier most target users will not cross. Without a zero-install, zero-cost way to query this case law conversationally through AI tools people already use, valuable constitutional jurisprudence stays effectively undiscoverable to anyone who isn't a developer.
 
 ## Target users
 
-**Primary Users**: [Who will use this most? What's their role/context?]
+**Primary Users**: Non-technical legal professionals (lawyers, paralegals, policy staff, journalists) and interested citizens who already use Microsoft Copilot, ChatGPT, or Claude day-to-day and want to ask plain-language questions about Belgian Constitutional Court rulings without installing anything, cloning a repository, or holding an API key.
 
-**Secondary Users**: [Other stakeholders who interact with the system]
+**Secondary Users**: The maintainer (solo, technical), who processes PDFs into Markdown, runs the ingestion pipeline on personal hardware, and keeps the public dataset and index current.
 
 ## Success criteria
 
-[How do we know the project succeeded? Include measurable outcomes where possible.]
-
-- [Metric 1: e.g., "50% reduction in time spent on X"]
-- [Metric 2: e.g., "80% of users can complete Y without assistance"]
-- [Metric 3: e.g., "System handles Z requests per second"]
+- Non-technical users can get cited, relevant passages from Constitutional Court rulings using only their existing Copilot/ChatGPT/Claude account - zero installs, zero API keys, zero repo cloning.
+- Recurring hosting cost stays at €0.00/month.
+- The maintainer's home network/hardware is never exposed to the public internet.
+- Retrieval surfaces relevant passages for both exact lookups (case number, article reference) and conceptual/topical questions, across Dutch, French, and German rulings.
+- Every answer traces back to a verifiable case number and ruling date, with a link to the original official PDF as published on https://nl.const-court.be/.
 
 ## Core requirements
 
 ### Must have (MVP)
 
-> Essential for the system to function. Without these, the project fails.
-
-- [Essential capability 1]
-- [Essential capability 2]
-- [Essential capability 3]
+- Local ingestion pipeline (run offline, on the maintainer's own hardware) converting official Constitutional Court PDF rulings from https://nl.const-court.be/ into structured Markdown with YAML frontmatter (case number, ruling date, language, title, subject tags, articles referenced, and the source PDF URL).
+- Weekly automated scrape of https://nl.const-court.be/ for newly published rulings, run on the maintainer's local processing machine, with new/updated Markdown pushed from there to the public GitHub repository.
+- Public GitHub repository hosting the processed Markdown as the canonical, versioned data source.
+- Automated index build (GitHub Actions) combining BM25 full-text search (SQLite FTS5) and vector embeddings for hybrid lexical + semantic retrieval.
+- Hosted, EU-based serverless search API (no self-hosting, no home-network exposure) that non-technical users' AI clients call to retrieve ranked passages with citations.
+- A Microsoft Copilot Studio / Custom GPT integration (OpenAPI action) letting a user ask a plain-language question and get a cited answer, with zero setup on their end.
+- Abuse protection on the public API via a shared static key embedded server-side in each client integration, never seen or entered by end users.
+- Per-case hyperlinks back to the original official PDF on https://nl.const-court.be/ for verification.
 
 ### Should have
 
-> Important but the system works without them. High value, implement after MVP.
-
-- [Important capability 1]
-- [Important capability 2]
+- An MCP server exposing the same search capability to Claude Desktop, Cursor, and VS Code Copilot users, backed by the same hosted API rather than a locally built index.
+- Retrieval quality that accounts for Dutch/French/German legal terminology rather than naive single-tokenizer matching.
 
 ### Could have
 
-> Nice to have. Implement if time/budget allows.
-
-- [Desirable capability 1]
-- [Desirable capability 2]
+- Topic/date-range filtering in the search API, using the subject tags and article references already captured in frontmatter.
+- Basic usage logging on the serverless function to detect abuse or breakage.
 
 ### Won't have (this version)
 
-> Explicitly out of scope. Prevents scope creep.
-
-- [Future consideration 1]
-- [Future consideration 2]
+- Any requirement for end users to hold an API key, clone a repository, or install a CLI tool.
+- Self-hosting the query API on the maintainer's own network/hardware exposed to the internet.
+- Legal advice or generation beyond retrieval - the system retrieves and cites source passages; the user's own LLM (Copilot/Claude/ChatGPT) is responsible for synthesis.
 
 ## User workflows
 
-[Describe 1-3 key workflows users will perform]
+### Workflow 1: Non-technical user via Microsoft Copilot / Custom GPT
 
-### Workflow 1: [Name]
+1. User opens Microsoft Copilot (or a shared Custom GPT link) and asks, e.g., "What did the Constitutional Court decide about environmental permits in 2024?"
+2. Copilot's declarative agent calls the hosted search API (OpenAPI action, shared key attached automatically) in the background.
+3. The API returns the top-ranked passages (hybrid BM25 + vector) with case numbers, dates, and excerpts.
+4. Copilot synthesizes a cited answer directly in the chat; the user never sees a terminal, API key, or file.
 
-1. User does [action]
-2. System responds with [response]
-3. User completes [outcome]
+### Workflow 2: Technical user via MCP (Claude Desktop / Cursor / VS Code)
+
+1. User adds the project's MCP server to their client configuration (one-time, minimal setup - no local index to build, no API key to obtain).
+2. User asks a question about a ruling inside their existing AI chat.
+3. The MCP server calls the same hosted search API server-side (holding the shared key itself) and returns structured results as an MCP tool response.
+4. The client's LLM synthesizes a cited answer.
+
+### Workflow 3: Weekly scrape and update of new rulings
+
+1. On a weekly cadence, the local ingestion pipeline on the maintainer's own hardware checks https://nl.const-court.be/ for newly published rulings.
+2. New PDFs are downloaded and processed through the pipeline, producing Markdown + frontmatter (including the source PDF URL) for each new case.
+3. Maintainer pushes the new Markdown files to the public GitHub repository.
+4. GitHub Actions rebuilds the hybrid index and publishes it to EU object storage, with no manual deployment step beyond the `git push`.
 
 ## Constraints
 
-**Timeline**: [Deadline if any, or "flexible"]
+**Timeline**: Not yet specified - flexible.
 
-**Budget**: [Cost constraints for hosting, APIs, services]
+**Budget**: €0.00/month recurring hosting cost. The maintainer's own hardware may be used for ingestion but must never be exposed to the public internet.
 
-**Regulatory**: [Compliance requirements if any]
+**Regulatory**: Data is Belgian public-sector case law. Reuse basis should be explicitly confirmed but is expected to fall under public-sector information reuse rules. EU-based hosting is preferred over US-based alternatives for data sovereignty/GDPR alignment.
 
-**Other**: [Any other hard constraints]
+**Other**:
+- End users must never need an API key, GitHub account, or CLI tool.
+- The maintainer is a solo developer; the system must be maintainable without a team.
 
-## Open Questions
-
-[List uncertainties that need resolution during research phase]
-
-- [Question 1]
-- [Question 2]
