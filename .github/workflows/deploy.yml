@@ -1,0 +1,131 @@
+# Build, push, and deploy the query service.
+#
+# Builds the query-service Docker image from the repo's root Dockerfile,
+# pushes it to Scaleway Container Registry tagged with the commit SHA, then
+# runs Terraform (infra/terraform/) to point the Scaleway Serverless
+# Container at that new image tag.
+#
+# Runs on pushes to main that touch the query service, Dockerfile, or
+# Terraform config, and can also be triggered manually.
+#
+# Required repository secrets (Settings > Secrets and variables > Actions):
+#   SCW_ACCESS_KEY              Scaleway API access key. Used both for
+#                                `docker login`-equivalent auth (Terraform
+#                                provider) and, if the Terraform state backend
+#                                is an S3-compatible Scaleway bucket, for
+#                                backend authentication.
+#   SCW_SECRET_KEY              Scaleway API secret key matching the access
+#                                key above. Also used as the Container
+#                                Registry `docker login` password (username is
+#                                always the literal string "nologin").
+#   SCW_DEFAULT_PROJECT_ID      Scaleway project ID that owns the registry,
+#                                container namespace, and container.
+#   SCW_REGISTRY_NAMESPACE      Name of the Scaleway Container Registry
+#                                namespace (the `scaleway_registry_namespace`
+#                                Terraform resource) to push images to.
+#   SHARED_API_KEY              The query service's own shared static API key,
+#                                passed to Terraform as TF_VAR_shared_api_key
+#                                so it can be injected into the deployed
+#                                container's environment.
+#
+# NOTE: if infra/terraform/ declares additional required variables beyond
+# `image_tag` and `shared_api_key`, add matching TF_VAR_<name> secrets/env
+# entries to the "Terraform apply" step below - Terraform will otherwise fail
+# loudly with a "No value for required variable" error, which is the desired
+# fail-closed behavior.
+#
+# One-time manual setup required before this workflow can deploy for real:
+#   - Scaleway registry namespace, container namespace/container, and the
+#     Terraform state backend (e.g. a private Scaleway Object Storage bucket)
+#     must exist or be created by an initial `terraform apply` run.
+#   - All secrets above must be created in the repo (or org) settings.
+
+name: Deploy query service
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/query_service/**"
+      - "Dockerfile"
+      - "infra/terraform/**"
+  workflow_dispatch: {}
+
+env:
+  SCW_REGISTRY: rg.fr-par.scw.cloud
+  SCW_DEFAULT_REGION: fr-par
+  IMAGE_NAME: legal-decisions-rag-query
+  TF_WORKING_DIR: infra/terraform
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify required secrets are set
+        env:
+          SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
+          SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
+          SCW_DEFAULT_PROJECT_ID: ${{ secrets.SCW_DEFAULT_PROJECT_ID }}
+          SCW_REGISTRY_NAMESPACE: ${{ secrets.SCW_REGISTRY_NAMESPACE }}
+          SHARED_API_KEY: ${{ secrets.SHARED_API_KEY }}
+        run: |
+          set -euo pipefail
+          : "${SCW_ACCESS_KEY:?Missing required secret SCW_ACCESS_KEY}"
+          : "${SCW_SECRET_KEY:?Missing required secret SCW_SECRET_KEY}"
+          : "${SCW_DEFAULT_PROJECT_ID:?Missing required secret SCW_DEFAULT_PROJECT_ID}"
+          : "${SCW_REGISTRY_NAMESPACE:?Missing required secret SCW_REGISTRY_NAMESPACE}"
+          : "${SHARED_API_KEY:?Missing required secret SHARED_API_KEY}"
+          echo "All required secrets are present."
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Log in to Scaleway Container Registry
+        uses: docker/login-action@v4
+        with:
+          registry: ${{ env.SCW_REGISTRY }}
+          username: nologin
+          password: ${{ secrets.SCW_SECRET_KEY }}
+
+      - name: Build and push query service image
+        env:
+          IMAGE_REF: ${{ env.SCW_REGISTRY }}/${{ secrets.SCW_REGISTRY_NAMESPACE }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+        run: |
+          set -euo pipefail
+          docker build -t "$IMAGE_REF" -f Dockerfile .
+          docker push "$IMAGE_REF"
+          echo "Pushed $IMAGE_REF"
+
+      - name: Set up Terraform
+        uses: hashicorp/setup-terraform@v4
+        with:
+          terraform_wrapper: false
+
+      - name: Terraform init
+        working-directory: ${{ env.TF_WORKING_DIR }}
+        env:
+          # Scaleway provider auth (read directly from these env var names).
+          SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
+          SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
+          SCW_DEFAULT_PROJECT_ID: ${{ secrets.SCW_DEFAULT_PROJECT_ID }}
+          SCW_DEFAULT_REGION: ${{ env.SCW_DEFAULT_REGION }}
+          # Assumed S3-compatible backend (Scaleway Object Storage) auth, in
+          # case infra/terraform/ configures a remote "s3" backend rather than
+          # local state. Harmless no-op if the backend doesn't need them.
+          AWS_ACCESS_KEY_ID: ${{ secrets.SCW_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.SCW_SECRET_KEY }}
+        run: terraform init -input=false
+
+      - name: Terraform apply
+        working-directory: ${{ env.TF_WORKING_DIR }}
+        env:
+          SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
+          SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
+          SCW_DEFAULT_PROJECT_ID: ${{ secrets.SCW_DEFAULT_PROJECT_ID }}
+          SCW_DEFAULT_REGION: ${{ env.SCW_DEFAULT_REGION }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.SCW_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.SCW_SECRET_KEY }}
+          TF_VAR_shared_api_key: ${{ secrets.SHARED_API_KEY }}
+        run: |
+          set -euo pipefail
+          terraform apply -auto-approve -input=false -var "image_tag=${{ github.sha }}"

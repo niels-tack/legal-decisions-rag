@@ -18,5 +18,7 @@ COPY . .
 # Install the project
 RUN uv sync --frozen
 
-# Run the application
-CMD ["uv", "run", "python", "-m", "src.main"]
+EXPOSE 8080
+
+# Run the query-service HTTP API, listening on the Scaleway-provided PORT.
+CMD ["sh", "-c", "uv run uvicorn src.query_service.main:app --host 0.0.0.0 --port ${PORT:-8080}"]

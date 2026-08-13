@@ -1,0 +1,107 @@
+# Weekly search-index build.
+#
+# Pulls the latest Markdown rulings from the public data repo
+# (niels-tack/legal_decisions), builds cases.db with
+# src/indexing/build_index.py, and uploads the resulting artifact to
+# Scaleway Object Storage (S3-compatible endpoint) so the query service
+# can pick it up.
+#
+# Runs weekly, timed after the maintainer's own local ingestion run is
+# expected to have pushed new Markdown to the data repo, and can also be
+# triggered manually.
+#
+# Required repository secrets (Settings > Secrets and variables > Actions):
+#   SCW_ACCESS_KEY              Scaleway API access key (IAM application scoped
+#                                to Object Storage read/write on the target bucket).
+#   SCW_SECRET_KEY              Scaleway API secret key matching the access key above.
+#   SCW_DEFAULT_PROJECT_ID      Scaleway project ID that owns the bucket.
+#   SCW_OBJECT_STORAGE_BUCKET   Name of the Scaleway Object Storage bucket (fr-par)
+#                                that hosts cases.db for the query service.
+#
+# The bucket, its region (fr-par), and the IAM credentials above are expected
+# to already exist (see infra/terraform/) before this workflow can run for real.
+
+name: Build search index
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    # Every Monday at 03:00 UTC - after the maintainer's weekly local
+    # ingestion run is expected to have pushed new Markdown.
+    - cron: "0 3 * * 1"
+
+env:
+  SCW_REGION: fr-par
+  DB_PATH: cases.db
+  DATA_REPO_PATH: data-repo
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify required secrets are set
+        env:
+          SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
+          SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
+          SCW_DEFAULT_PROJECT_ID: ${{ secrets.SCW_DEFAULT_PROJECT_ID }}
+          SCW_OBJECT_STORAGE_BUCKET: ${{ secrets.SCW_OBJECT_STORAGE_BUCKET }}
+        run: |
+          set -euo pipefail
+          : "${SCW_ACCESS_KEY:?Missing required secret SCW_ACCESS_KEY}"
+          : "${SCW_SECRET_KEY:?Missing required secret SCW_SECRET_KEY}"
+          : "${SCW_DEFAULT_PROJECT_ID:?Missing required secret SCW_DEFAULT_PROJECT_ID}"
+          : "${SCW_OBJECT_STORAGE_BUCKET:?Missing required secret SCW_OBJECT_STORAGE_BUCKET}"
+          echo "All required secrets are present."
+
+      - name: Checkout this repository
+        uses: actions/checkout@v4
+
+      - name: Checkout legal_decisions data repository
+        uses: actions/checkout@v4
+        with:
+          repository: niels-tack/legal_decisions
+          path: ${{ env.DATA_REPO_PATH }}
+          # Public repository - no token/credentials needed.
+
+      - name: Install uv and Python
+        uses: astral-sh/setup-uv@v9
+        with:
+          python-version: "3.13"
+          enable-cache: true
+
+      - name: Install project dependencies
+        run: uv sync --locked
+
+      - name: Build cases.db from Markdown rulings
+        run: |
+          set -euo pipefail
+          MARKDOWN_DIR="${DATA_REPO_PATH}/Constitutional_Court_Belgium/NL"
+          if [ ! -d "$MARKDOWN_DIR" ]; then
+            echo "::error::Markdown directory '$MARKDOWN_DIR' not found in data repo checkout."
+            exit 1
+          fi
+          uv run python -m src.indexing.build_index \
+            --markdown-dir "$MARKDOWN_DIR" \
+            --db-path "$DB_PATH"
+
+      - name: Verify cases.db was produced
+        run: |
+          set -euo pipefail
+          if [ ! -s "$DB_PATH" ]; then
+            echo "::error::Index build did not produce a non-empty $DB_PATH"
+            exit 1
+          fi
+          ls -lh "$DB_PATH"
+
+      - name: Upload cases.db to Scaleway Object Storage
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.SCW_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.SCW_SECRET_KEY }}
+          AWS_DEFAULT_REGION: fr-par
+          SCW_OBJECT_STORAGE_BUCKET: ${{ secrets.SCW_OBJECT_STORAGE_BUCKET }}
+        run: |
+          set -euo pipefail
+          aws s3 cp "$DB_PATH" "s3://${SCW_OBJECT_STORAGE_BUCKET}/${DB_PATH}" \
+            --endpoint-url "https://s3.fr-par.scw.cloud" \
+            --region fr-par
+          echo "Uploaded ${DB_PATH} to s3://${SCW_OBJECT_STORAGE_BUCKET}/${DB_PATH}"
