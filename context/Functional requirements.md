@@ -7,85 +7,107 @@
 
 ## Problem statement
 
-Belgian Constitutional Court rulings are only available as scattered PDF documents on the Court's own website (https://nl.const-court.be/), with no way for non-technical legal professionals or citizens to search across them semantically or ask natural-language questions and get cited passages back. Existing local RAG tools (e.g. qmd) require installing software, cloning repositories, and managing API keys - a barrier most target users will not cross. Without a zero-install, zero-cost way to query this case law conversationally through AI tools people already use, valuable constitutional jurisprudence stays effectively undiscoverable to anyone who isn't a developer.
+Belgian Constitutional Court rulings are only available as scattered PDF documents on the Court's own website (https://nl.const-court.be/), with no way for non-technical legal professionals or citizens to search across them or ask natural-language questions and get cited passages back. Existing local RAG tools (e.g. qmd) require installing software, cloning repositories, and managing API keys - a barrier most target users will not cross. Chat-platform distribution channels (Copilot Studio agents, Custom GPTs, MCP) are not viable primary channels either: each requires paid licensing on the maintainer's side, per-tenant IT approval on the user's side, or technical configuration - and often all three.
+
+The only channel that reaches every target user with zero installs, zero accounts, zero IT clearance, and zero recurring cost is a plain public website. This project therefore delivers the case law as a searchable website, with a built-in handoff that carries retrieved, cited passages into whatever AI assistant the user already has (Copilot, ChatGPT, Claude) for synthesis on the user's own account and terms.
 
 ## Target users
 
-**Primary Users**: Non-technical legal professionals (lawyers, paralegals, policy staff, journalists) and interested citizens who already use Microsoft Copilot, ChatGPT, or Claude day-to-day and want to ask plain-language questions about Belgian Constitutional Court rulings without installing anything, cloning a repository, or holding an API key.
+**Primary Users**: Non-technical legal professionals (lawyers, in-house counsel, paralegals, policy staff, journalists, researchers) and interested citizens. They need only a web browser - including a locked-down corporate one. Many will additionally use their existing Microsoft Copilot, ChatGPT, or Claude account to synthesize answers from the passages the site retrieves, but no AI account is required to use the site.
 
 **Secondary Users**: The maintainer (solo, technical), who processes PDFs into Markdown, runs the ingestion pipeline on personal hardware, and keeps the public dataset and index current.
 
+## Phasing
+
+The project runs in two closely spaced phases plus a deferred V2. Phase 2 is committed scope on a short lead time, not an optional enhancement, so Phase 1 decisions must not make Phase 2 harder (the technical requirements pin down how).
+
+- **Phase 1 (POC/MVP)**: static website on GitHub Pages; lexical (BM25) search runs entirely in the browser against a statically hosted SQLite index; assistant handoff via copy-prompt and deep links.
+- **Phase 2 (fast follow)**: hosted, EU-based serverless search API (Scaleway) adding vector embeddings for hybrid lexical + semantic retrieval. The website switches its search backend from local to remote by configuration; the UI, data pipeline, and citations stay identical.
+- **V2 (deferred)**: MCP server, Custom GPT, and any Microsoft-marketplace agent.
+
 ## Success criteria
 
-- Non-technical users can get cited, relevant passages from Constitutional Court rulings using only their existing Copilot/ChatGPT/Claude account - zero installs, zero API keys, zero repo cloning.
-- Recurring hosting cost stays at €0.00/month.
+- Non-technical users can find and read cited, relevant passages from Constitutional Court rulings using only a web browser - zero installs, zero accounts, zero API keys, zero IT clearance.
+- Recurring hosting cost is €0.00/month in Phase 1 and stays within provider free tiers in Phase 2.
 - The maintainer's home network/hardware is never exposed to the public internet.
-- Retrieval surfaces relevant passages for both exact lookups (case number, article reference) and conceptual/topical questions. Initial (POC) scope is Dutch-language rulings only; French/German coverage is a later-phase goal, not required for the first working version.
-- Every answer traces back to a verifiable ECLI identifier (the Court's standard citation, e.g. `ECLI:BE:GHCC:2025:ARR.001`) and ruling date, with a link to the original official PDF as published on the Court's website.
+- In Phase 1, search queries never leave the user's browser (search executes client-side against a static index). The site states this privacy property visibly, because queries from legal professionals can reveal matter context.
+- Retrieval surfaces relevant passages for exact lookups (case number, ECLI, article reference) and keyword/terminology questions from Phase 1; conceptual, plain-language questions retrieve well from Phase 2 (vector search). Initial (POC) scope is Dutch-language rulings only; French/German coverage is a later-phase goal.
+- Every result traces back to a verifiable ECLI identifier (the Court's standard citation, e.g. `ECLI:BE:GHCC:2025:ARR.001`) and ruling date, with a link to the original official PDF as published on the Court's website.
+- The assistant handoff produces a self-contained prompt (user question + retrieved passages + citations) that any external LLM can turn into a cited answer without further tooling.
 
 ## Core requirements
 
-### Must have (MVP)
+### Must have - Phase 1 (POC/MVP)
 
 - Local ingestion pipeline (run offline, on the maintainer's own hardware), initially scoped to Dutch-language rulings only, converting official Constitutional Court PDF rulings into structured Markdown with YAML frontmatter. Go for the most robust, complete metadata capture practical: every readily available field from the Court's official case overview listing and the PDF itself should be captured, not just a minimal set. At minimum this includes the ECLI identifier (canonical citation), the official arrest number (e.g. "1/2025"), the role/docket number ("rolnummer", e.g. "8115"), and the file/URL slug (e.g. "2025-001n") as three distinct, clearly labeled identifiers (they are not interchangeable and conflating them risks citation errors), plus ruling date, language, procedure type, controlled norm, outcome, subject tags/keywords, and the source PDF URL.
 - Weekly automated scrape of the Court's official case overview listing and PDF publications for newly published rulings, run on the maintainer's local processing machine, with new/updated Markdown pushed from there to the public GitHub repository.
 - Public GitHub repository hosting the processed Markdown as the canonical, versioned data source.
-- Automated index build (GitHub Actions) combining BM25 full-text search (SQLite FTS5) and vector embeddings for hybrid lexical + semantic retrieval.
-- Hosted, EU-based serverless search API (no self-hosting, no home-network exposure) that non-technical users' AI clients call to retrieve ranked passages with citations.
-- A Microsoft Copilot Studio / Custom GPT integration (OpenAPI action) letting a user ask a plain-language question and get a cited answer, with zero setup on their end.
-- Abuse protection on the public API via a shared static key embedded server-side in each client integration, never seen or entered by end users.
-- Per-case hyperlinks back to the original official PDF on https://nl.const-court.be/ for verification.
+- Automated build (GitHub Actions) producing two artifacts from the committed Markdown: (a) a single SQLite database (`cases.db`) containing an FTS5 full-text index (BM25) over structure-aware passage chunks plus all frontmatter metadata, and (b) the static website. Both deploy to GitHub Pages on push, with no manual step beyond `git push`.
+- Client-side search: the website queries the statically hosted `cases.db` directly in the browser via HTTP range requests, fetching only the database pages a query needs rather than the whole file. No server component exists in Phase 1.
+- Search results show ranked passages with ECLI, arrest number, ruling date, outcome, and an excerpt; each result links to a per-case page and to the original official PDF on https://nl.const-court.be/ for verification.
+- Basic metadata filters in the search UI (at minimum date range and procedure type) - the frontmatter already carries this data and client-side SQL makes filtering cheap.
+- Assistant handoff: a "copy prompt" button that composes the user's question, the top retrieved passages, and full citations (ECLI, date, official PDF URL) into a clipboard-ready prompt for pasting into Copilot, ChatGPT, or Claude; plus "open in ..." deep links where a platform's URL prompt-prefill allows, respecting URL length limits. The copy button is the primary mechanism; deep links are convenience on top.
+- Per-case pages rendering the full ruling text with its metadata, so users (and their assistants, via paste) can work with a complete ruling.
+
+### Must have - Phase 2 (fast follow)
+
+- Hosted, EU-based serverless search API (Scaleway, no self-hosting, no home-network exposure) serving hybrid retrieval: BM25 plus vector similarity over the same passage chunks, merged and re-ranked, returning the same citation fields the Phase 1 frontend already renders.
+- The same `cases.db` artifact, extended with embeddings, remains the single canonical index consumed by the API. No forked retrieval logic between phases.
+- The website's search backend is switchable by configuration between local (Phase 1 behavior, retained as fallback) and the remote API. The UI does not change.
+- Abuse protection appropriate for a keyless browser client: per-IP rate limiting, CORS restricted to the site's origin, response-size caps, and request/rejection logging. No end-user keys.
+- The site's privacy statement is updated to reflect that queries reach the API in Phase 2, with logging kept to the minimum needed to spot abuse and breakage.
 
 ### Should have
 
-- An MCP server exposing the same search capability to Claude Desktop, Cursor, and VS Code Copilot users, backed by the same hosted API rather than a locally built index.
 - A text-quality check on extracted rulings before publishing (e.g. flagging suspiciously broken tokens/spacing from PDF extraction) so garbled text doesn't silently degrade search results or mislead users.
+- An honest note in the Phase 1 UI that search is keyword-based, with short guidance on effective queries (legal terminology, case numbers), until semantic search lands in Phase 2.
 
 ### Could have
 
-- Topic/date-range filtering in the search API, using the subject tags and article references already captured in frontmatter.
-- Basic usage logging on the serverless function to detect abuse or breakage.
+- Additional filters (outcome, subject tags, controlled norm) beyond the Phase 1 minimum.
+- Lightweight usage signals in Phase 2 (from API logs only, no client-side tracking) to learn what people actually search, informing retrieval tuning.
 - French/German ruling coverage, and retrieval quality tuned for that trilingual mix, as a later-phase expansion once the Dutch-only POC is validated.
 
 ### Won't have (this version)
 
-- Any requirement for end users to hold an API key, clone a repository, or install a CLI tool.
+- MCP server, Custom GPT, Copilot Studio agent, or any other chat-platform integration (all moved to V2). Each requires a paid subscription, per-tenant IT approval, or both; none is needed once the website plus assistant handoff exists.
+- Any requirement for end users to hold an API key, create an account, clone a repository, or install anything.
 - Self-hosting the query API on the maintainer's own network/hardware exposed to the internet.
-- Legal advice or generation beyond retrieval - the system retrieves and cites source passages; the user's own LLM (Copilot/Claude/ChatGPT) is responsible for synthesis.
+- Answer generation by the system itself - the site retrieves and cites source passages; synthesis happens in the user's own LLM via the handoff, on their account and responsibility.
 - French- and German-language rulings (POC is Dutch-only).
 
 ## User workflows
 
-### Workflow 1: Non-technical user via Microsoft Copilot / Custom GPT
+### Workflow 1: Search and verify in the browser (core, both phases)
 
-1. User opens Microsoft Copilot (or a shared Custom GPT link) and asks, e.g., "What did the Constitutional Court decide about environmental permits in 2024?"
-2. Copilot's declarative agent calls the hosted search API (OpenAPI action, shared key attached automatically) in the background.
-3. The API returns the top-ranked passages (hybrid BM25 + vector) with case numbers, dates, and excerpts.
-4. Copilot synthesizes a cited answer directly in the chat; the user never sees a terminal, API key, or file.
+1. User opens the public website and types a question or keywords, e.g. "omgevingsvergunning 2024", an arrest number, or an ECLI.
+2. Phase 1: the browser fetches only the needed index pages from the statically hosted `cases.db` and ranks passages with BM25 locally. Phase 2: the site calls the hosted API, which runs hybrid BM25 + vector retrieval over the same chunks. Filters narrow by date or procedure type in both.
+3. Results show ranked passages with ECLI, date, outcome, and excerpt.
+4. User opens the per-case page for the full text, or clicks through to the original official PDF to verify.
 
-### Workflow 2: Technical user via MCP (Claude Desktop / Cursor / VS Code)
+### Workflow 2: Handoff to the user's own AI assistant
 
-1. User adds the project's MCP server to their client configuration (one-time, minimal setup - no local index to build, no API key to obtain).
-2. User asks a question about a ruling inside their existing AI chat.
-3. The MCP server calls the same hosted search API server-side (holding the shared key itself) and returns structured results as an MCP tool response.
-4. The client's LLM synthesizes a cited answer.
+1. After a search, the user clicks "copy prompt" (or an "open in ..." deep link where supported).
+2. The site composes a self-contained prompt: the user's question, the top passages, and full citations (ECLI, date, official PDF URL).
+3. The user pastes it into the assistant they already use - Copilot at work, ChatGPT, Claude - which synthesizes a cited answer under the user's own account, terms, and IT policy.
+4. The embedded citations let the user trace every claim back to the official PDF.
 
 ### Workflow 3: Weekly scrape and update of new rulings
 
 1. On a weekly cadence, the local ingestion pipeline on the maintainer's own hardware checks https://nl.const-court.be/ for newly published rulings.
 2. New PDFs are downloaded and processed through the pipeline, producing Markdown + frontmatter (including the source PDF URL) for each new case.
 3. Maintainer pushes the new Markdown files to the public GitHub repository.
-4. GitHub Actions rebuilds the hybrid index and publishes it to EU object storage, with no manual deployment step beyond the `git push`.
+4. GitHub Actions rebuilds `cases.db` and the static site and deploys to GitHub Pages, with no manual deployment step beyond the `git push`. In Phase 2 the same workflow additionally computes embeddings for new chunks, uploads the extended `cases.db` to Scaleway Object Storage, and the API picks it up.
 
 ## Constraints
 
-**Timeline**: Not yet specified - flexible.
+**Timeline**: Phase 1 first; Phase 2 is a committed fast follow on a short lead time. Exact dates flexible.
 
-**Budget**: €0.00/month recurring hosting cost. The maintainer's own hardware may be used for ingestion but must never be exposed to the public internet.
+**Budget**: €0.00/month recurring hosting cost in Phase 1 (GitHub Pages and Actions free tiers). Phase 2 must fit within Scaleway free tiers. The maintainer's own hardware may be used for ingestion but must never be exposed to the public internet.
 
-**Regulatory**: Data is Belgian public-sector case law. Reuse basis should be explicitly confirmed but is expected to fall under public-sector information reuse rules. EU-based hosting is preferred over US-based alternatives for data sovereignty/GDPR alignment.
+**Regulatory**: Data is Belgian public-sector case law. Reuse basis should be explicitly confirmed but is expected to fall under public-sector information reuse rules. Phase 1 has the strongest possible privacy posture (queries never leave the browser); Phase 2 introduces an EU-hosted (Scaleway Paris) API for sovereignty/GDPR alignment, with minimal logging. Note that GitHub Pages serves via a US-owned CDN; since the content is public case law and Phase 1 queries stay client-side, exposure is minimal, but if EU static hosting becomes a matter of principle, the same static artifacts can move to Scaleway Object Storage website hosting without architectural change.
 
 **Other**:
-- End users must never need an API key, GitHub account, or CLI tool.
-- The maintainer is a solo developer; the system must be maintainable without a team.
-
+- End users must never need an API key, account, GitHub knowledge, or CLI tool.
+- The maintainer is a solo developer; the system must be maintainable without a team. Phase 1 deliberately contains no servers, containers, or infrastructure-as-code.
+- Phase 1 design choices must not obstruct Phase 2: chunking, schema, and citation fields are shared across phases, and the frontend's search backend is swappable (see technical requirements).
