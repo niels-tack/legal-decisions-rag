@@ -12,10 +12,7 @@
 # Object Storage: cases.db artifact
 # ---------------------------------------------------------------------------
 
-# Deliberately PRIVATE. A public-read bucket would let anyone scrape the
-# entire corpus directly by guessing/finding the object URL, bypassing the
-# query API's rate limiting entirely. The query service instead reads this
-# bucket with its own scoped IAM credentials (see below).
+# Private resource by IAM credentials (see below).
 resource "scaleway_object_bucket" "cases_db" {
   name       = var.bucket_name
   region     = var.region
@@ -26,11 +23,6 @@ resource "scaleway_object_bucket" "cases_db" {
   }
 }
 
-# The `acl` argument on scaleway_object_bucket itself is deprecated in
-# favour of the dedicated scaleway_object_bucket_acl resource (verified via
-# provider docs); "private" is also Scaleway's default ACL for new buckets,
-# but it is set explicitly here so bucket privacy is visible in code and not
-# left to an implicit provider default.
 resource "scaleway_object_bucket_acl" "cases_db" {
   bucket     = scaleway_object_bucket.cases_db.id
   region     = var.region

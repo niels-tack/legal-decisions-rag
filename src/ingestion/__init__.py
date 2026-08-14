@@ -3,10 +3,10 @@
 Three independently testable concerns, kept in separate modules per the
 project's technical requirements:
 
-- ``discover``: scrape the Court's case overview listing for per-ruling
+- ``discover``: scrape courts' case overview listing for per-ruling
   metadata and PDF URLs.
-- ``extract``: convert a ruling PDF into clean text, split into the four
-  structural sections shared via ``src.schemas``.
+- ``extract``: convert a ruling PDF into clean text, split into structural 
+  sections shared via ``src.schemas``.
 - ``assemble``: render a ``CaseMetadata`` instance plus section text into
   the Markdown file format consumed by ``src.indexing``.
 
