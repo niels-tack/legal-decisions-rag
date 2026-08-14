@@ -1,0 +1,831 @@
+RAAD VAN STATE, AFDELING ADMINISTRATIE.
+
+A R R E S T
+
+nr. 189.705 van 22 januari 2009
+in de zaak A. 71.846/XII-89.
+
+In zake :
+
+de NV GULDENBERG DATA ENGINEERING,
+die woonplaats kiest bij
+advocaten Ph. Coenraets en P. Luchie,
+kantoor houdende te 1000 Brussel,
+Terkamerenlaan 27
+
+tegen :
+
+het  AGENTSCHAP  VOOR  GEOGRAFISCHE  INFORMATIE
+VLAANDEREN, 
+voorheen de VLAAMSE LANDMAATSCHAPPIJ,
+die woonplaats kiest bij
+advocaat D. D’Hooghe,
+kantoor houdende te 1000 Brussel,
+Loksumstraat 25.
+
+tussenkomende partij :
+
+de NV TELE-ATLAS BELGIUM,
+die woonplaats kiest bij
+advocaten J. L. Stuyck en D. Lindemans,
+kantoor houdende te 1000 Brussel,
+Keizerslaan 3.
+
+---------------------------------------------------------------------------------------------------
+
+D E  R A A D  V A N  S T A T E,  XIIe  K A M E R,
+
+Gezien  het  verzoekschrift  dat  de  NV  Guldenberg  Data
+
+Engineering op 9 december 1996 heeft ingediend om de nietigverklaring te vorderen
+
+van “de toewijzingsbeslissing van de Vlaamse Landmaatschappij aan NV Tele Atlas
+
+Data  Gent,  bij  beslissing  van  de  Raad  van  Bestuur  van  9  oktober  1996,  met
+
+betrekking  tot  het  bestek  OC-96/01  ‘Opdracht  voor  aanneming  van  leveringen.
+Digitaal vectorieel wegen- en spoorwegenbestand op middenschaalniveau voor het
+Vlaams en Brussels gewest’”;
+
+Gelet  op  het  arrest  nr.  157.987  van  27  april  2006  waarbij  de
+debatten worden heropend en het door de auditeur-generaal aan te stellen lid van het
+auditoraat  ermede  wordt  belast  het  onderzoek  van  de  zaak  voort  te  zetten  met
+betrekking tot de gegrondheid van het eerste middel en, in voorkomend geval, de
+ontvankelijkheid en gegrondheid van de overige middelen;
+
+XII-89-1/14
+
+Gelet op het arrest nr. 177.749 van 11 december 2007 waarbij het
+
+eerste middel niet gegrond is bevonden, de debatten worden heropend en het door
+
+de auditeur-generaal aan te stellen lid van het auditoraat ermede wordt belast het
+
+tweede, derde en vierde middel te onderzoeken op hun ontvankelijkheid en hun
+
+gegrondheid;
+
+J. Stevens;
+
+Gezien  het  aanvullend  verslag  opgesteld  door  eerste  auditeur
+
+Gelet op de kennisgeving van het verslag aan partijen en gezien
+
+de laatste memorie van de verzoekende partij;
+
+Gelet op de beschikking van 22 juli 2008 waarbij de terechtzitting
+
+bepaald wordt op 7 oktober 2008;
+
+Gehoord het verslag van kamervoorzitter D. Verbiest;
+
+Gehoord de opmerkingen van advocaat W. Van Parijs, die loco
+
+advocaten Ph. Coenraets en P. Luchie verschijnt voor de verzoekende partij, van
+
+advocaat N. Kiekens, die loco advocaat D. D'Hooghe verschijnt voor de verwerende
+
+partij, en van advocaat J. Honnay, die loco advocaat D. Lindemans verschijnt voor
+
+de tussenkomende partij;
+
+Gehoord het eensluidend advies van eerste auditeur J. Stevens;
+
+Gelet op titel VI, hoofdstuk II, van de wetten op de Raad van
+
+State, gecoördineerd op 12 januari 1973;
+
+XII-89-2/14
+
+OVERWEEGT WAT VOLGT :
+
+De gegevens van de zaak
+
+1.
+
+De verwerende partij schrijft een algemene offerteaanvraag uit
+
+voor  een  opdracht  voor  aanneming  van  leveringen.  De  opdracht  strekt  tot  de
+
+levering  van  een  digitaal  vectorieel  wegen-  en  spoorwegenbestand  op
+
+middenschaalniveau voor het Vlaamse en het Brussels Hoofdstedelijk Gewest.
+
+Het toepasselijke bestek voorziet in een “basisopdracht” en drie
+
+“opties” of aanvullende leveringen.
+
+Het bestek (blz. 6) bepaalt als gunningscriteria, “in volgorde van
+
+afnemend belang” :
+
+“(1) De  technische  waarde  van  de  te  leveren  bestanden  en  bijkomende
+technische  contractuele
+
+bestanden,  rekening  houdend  met  de 
+bepalingen, met inbegrip van de resultaten van de testen (40 %).
+
+ (2) De volledige prijs, inclusief de prijs voor de 3 opties (40 %).
+ (3) De kwaliteit van de voorziene dienstverlening, de kennisoverdracht, de
+
+documentatie en de ondersteuning (10 %).
+ (4) De financiële en beroepswaarborgen (5 %).
+ (5) De  voorgelegde  referenties  m.b.t.  gelijkaardige  opdrachten  en de
+
+specifieke problematiek (5 %)”.
+
+Op  1  juli  1996  worden  de  offertes  geopend.    Er  blijken  vier
+
+inschrijvers een offerte te hebben ingediend, onder wie de verzoekende partij en de
+
+tussenkomende  partij  NV  Tele-Atlas  Belgium  en  het  Nationaal  Geografisch
+
+Instituut.
+
+In  een  uitgebreide  nota  van  19  september  1996  vergelijkt  de
+
+administratie de inschrijvingen.
+
+Uiteindelijk  wordt  daarin  de  verzoekende  partij 
+
+telkens
+geklasseerd na  NV Tele-Atlas Belgium, en na  het Nationaal Geografisch Instituut.
+In  het  voorstel  van  beslissing  wordt  voor  de  eerste  “optie”  van  NV  Tele-Atlas
+Belgium gekozen.
+
+XII-89-3/14
+
+De  Raad  van  Bestuur  van  de  verwerende  partij  neemt  in  zijn
+
+zitting van 9 oktober 1996 de bestreden beslissing, in navolging van het voornoemde
+
+voorstel waarnaar in de beslissing wordt verwezen.
+
+De ontvankelijkheid
+
+2.
+
+In het auditoraatsverslag wordt aangenomen dat uit het voormelde
+
+arrest nr. 177.749 moet worden afgeleid dat de exceptie van de verwerende partij
+
+betreffende de ontstentenis van belang bij het tweede, derde en vierde middel is
+
+verworpen.  Meteen wordt de gegrondheid van de betrokken middelen onderzocht.
+
+Na het auditoraatsverslag laat de verwerende partij aan de Raad
+
+van State weten dat zij geen laatste memorie indient.
+
+In  die  omstandigheden  wordt  aangenomen  dat  de  verwerende
+
+partij niet langer op haar exceptie aandringt.  Gelet overigens op het feit dat hierna
+
+geen van de middelen gegrond wordt bevonden komt een onderzoek van en een
+
+uitspraak over het belang bij de middelen overbodig over.
+
+De gegrondheid
+
+Tweede middel
+
+3.1.
+
+Het tweede middel wordt in het inleidend verzoekschrift gesteund
+
+op  schending  van  “artikel  25A§1  juncto  42,  §1  van  het  uitvoeringsbesluit
+
+overheidsopdrachten”.  Daarbij stelt de verzoekende partij dat “de inschrijvingen
+
+van Tele-Atlas en in mindere mate Master, fundamenteel afwijken van de essentiële
+
+besteksbepalingen”.  Zij ontwikkelt zulks in drie onderdelen.
+
+3.1.1.
+
+In een eerste middelonderdeel wordt aangevoerd wat volgt :
+
+“3.2.1. De gunningscriteria, vermeld in punt 1.9. van het bestek OC-96/01
+Dat  het  eerste  gunningscriteria,  hebbende  een  gewicht  van  40  %,  de
+technische  waarde  betreft  ‘van  de  te  leveren  bestanden  en  bijkomende
+bestanden, rekening houdende met de technische contractuele bepalingen, met
+inbegrip van de resultaten van de testen’
+
+Dat  het  evaluatieverslag  van  de  stuurgroep  GIS-Vlaanderen,  waarop  de
+beslissing  van  de  Raad  van  Bestuur  van  de  Vlaamse  Landmaatschappij
+geruggesteund is, uitdrukkelijk dient vast te stellen op blz. 6, derde alinea :
+
+‘Het onvolledig zijn van de testbestanden van twee inschrijvers (Master
+en Tele Atlas) heeft voor gevolg gehad dat een aantal vergelijkende testen
+
+XII-89-4/14
+
+niet of niet volledig konden uitgevoerd worden waardoor de beoordeling van
+de resultaten van de testen bemoeilijkt werd’;
+Dat men echter meent dit te kunnen wegwuiven door de ene zinsnede : ‘Er
+werd nochtans vermeden om deze onvolledigheid te laten doorwerken in de
+quotering’;
+
+Dat het echter vanzelfsprekend is dat de volledigheid van de testbestanden
+
+een essentieel element uitmaakt van de besteksvoorwaarden;
+
+Dat  het  basiswerk  van  Flamme  en  Mathei  ‘Praktische  Commentaar
+Overheidsopdrachten’,  nr.  55.3,  uitdrukkelijk  beklemtoont  dat  de  term
+‘technische waarde’ slechts een verzamelbegrip inhoudt dat nader moet worden
+omschreven;
+
+Dat, in casu, het bestek uitdrukkelijk stelde hoe de technische waarde nader
+wordt omschreven, nl. door testbestanden die uiteraard volledig moeten zijn;
+Dat, ten titel van overvloede, het bestek OC-96/01, in punt 1.11.2, blz. 8,
+punt  2,  nog  de  volgende  specificaties  verschafte  over  de  ‘testbestanden  op
+diskette’ :
+
+‘Deze testbestanden hebben betrekking op :
+-  de te leveren bestanden in het kader van de basisopdracht;
+-  de te leveren bijkomende bestanden in het kader van optie 1.
+De testbestanden zullen ten minste betrekking hebben op het volledige
+gebied gelegen op de NGI-1/10000-cardbladen 11/8, 12/5, 18/6 en 18/7 voor
+wat betreft het bestand zoals bedoeld in de basisopdracht.  Het testbestand voor
+wat betreft optie 1 zal betrekking hebben op het volledige grondgebied van
+carblad 18/6’;
+
+Dat  het  essentieel  karakter  van  de  testbestanden  derhalve  uitvoerig  zijn
+beklemtoond geworden door de woorden ‘ten minste’, ‘het volledige gebied’
+en ‘het volledige grondgebied’;
+
+Dat  er  geen  discussie  bestaat  over  het  volkomen  conform  zijn  van  de
+
+testbestanden die verzoekster indiende;
+
+Dat men zelfs in het evaluatieverslag van de stuurgroep GIS-Vlaanderen,
+twee  alinea’s  verder,  moet  vaststellen  dat  het  gaat  om  een  ‘erg  volledig
+bestand’,  ‘in  verband  gebracht  met  de  strenge  kwaliteitscontroles  die
+RMS-India hanteert’ (de onderaannemer van verzoekster);
+
+Dat  het  vaststellen  dat  Tele  Atlas  en  Master  een  onvolledig  testbestand
+binnenbrachten,  er  op  zijn  minst  had  toe  moeten  leiden  dat  de  Vlaamse
+Landmaatschappij  een  essentiële  tekortkoming  diende  vast  te  stellen  in  de
+binnengebrachte  inschrijving,  rekening  houdende  met  de  definitie  van
+technische waarde in het bestek”.
+
+In laatste memorie wordt daar nog aan toegevoegd :
+
+“1. Volgens Mijnheer de Eerste Auditeur kan niet gesteld worden dat het
+afleveren  van  volledige  bestanden  voor  alle  kaartbladen  een  essentiële
+bestekbepaling uitmaakt.
+
+In dit opzicht zou, volgens Mijnheer de Eerste Auditeur, door het leveren
+van een volledig bestand voor kaartblad 18/6 het doel van de vraag naar de
+bestanden bereikt zijn (nl. enerzijds het gebruik ervan voor het uitvoeren van
+een  evaluatietest  en  anderzijds  om 
+te  gelden  als  object  van
+kwaliteitsverbintenis).
+
+Zulke bewering is in tegenstrijd met het evaluatieverslag zelf van tegenpartij,
+
+hetwelk voorziet :
+
+‘Het onvolledig zijn van de testbestanden van twee inschrijvers (Master
+en Tele Atlas) heeft voor gevolg gehad dat een aantal vergelijkende testen
+
+XII-89-5/14
+
+niet of niet volledig konden uitgevoerd worden waardoor de beoordeling van
+de resultaten van de testen bemoeilijkt werd’ 
+Tegenpartij toont dus in haar eigen evaluatie aan, dat zij ook, en eigenlijk
+zelfs vooral, het kwantitatieve aspect zeer essentieel vindt (en dit precies omdat
+nu juist het volledige karakter van de testbestanden een effectieve vergelijking
+van de offertes mogelijk maakt1.
+
+[...]
+Uit  de  rechtspraak  van  de  Raad  van  State  blijkt  dus  duidelijk  dat  het
+substantieel  karakter  van  een  bepaling  van  het  bijzonder  lastenboek  dient
+beoordeeld [te] worden in het licht van het principe van de gelijkheid tussen de
+inschrijvers.
+
+In dit geval, zoals volgt uit het evaluatierapport van de tegenpartij, heeft het
+onvolledig  karakter  van  de  testen  van  de  gegevensbank,  geen  effectieve
+vergelijking toegelaten van de offertes m.b.t. de technische aspecten en werd
+het principe van het gelijkheidsbeginsel, gedurende het nazicht van de offertes,
+niet gerespecteerd.
+
+Indien we nog zouden veronderstellen dat, zoals de Heer Auditeur schrijft :
+het leveren van een volledig bestand voor kaartblad 18/6 erop gericht is het
+door  het  bijzonder  lastenboek  nagestreefde  doel  te  bereiken  met  name  ‘het
+uitvoeren  van  een  evaluatietest’  dan  moet  nog  worden  vastgesteld  dat  deze
+levering  slechts  gedeeltelijk  het  nagestreefde  doel  bereikt  omdat,  zoals
+tegenpartij  zelf  heeft  gesteld  ‘een  aantal  vergelijkende  testen  niet  of  niet
+volledig konden uitgevoerd worden’.
+
+Tegenpartij heeft echter in zijn lastenboek, verschillende keren het belang
+van deze tests benadrukt, tests die trouwens integraal deel uitmaken van de
+toewijzingscriteria van de offertes !²
+
+Uit  hetgeen  voorafgaat  blijkt  dus  dat  de  beschikking  van  het  bestek
+betreffende  het  afleveren  van  volledige  bestanden  voor  vier  bepaalde
+kaartbladen een substantieel karakter had en bijgevolg de schending van deze
+formaliteit van aard is om de regelmatigheid van de offerte van maatschappij
+Tele Atlas aan te tasten.
+
+(1) Het is des te meer zo dat het onvolledig karakter van de testbestanden
+een invloed op de kwaliteit van het product heeft.  Inderdaad, het testbestand
+eveneens de basis vormt voor de kwaliteitsverbintenis, die elke individuele
+inschrijver krachtens artikel 4.6.2. van het bestek diende te onderschrijven.
+Het feit dat de kwaliteit van het product, waartoe de individuele inschrijvers
+zich verbinden, deze is die over alle testbestanden wordt geleverd, impliceert
+dat  de  inschrijver  die  een  onvolledig  testbestand  indient,  uiteraard  geen
+fouten kan maken in een testbestand dat niet gemaakt werd.
+(2) Zie het artikel 1.9 van het bestek, dat voorziet :
+‘1.9. Gunningscriteria
+De  voordeligste  offerte  wordt  bepaald,  rekening  houdend  met  volgende
+gunningscriteria in volgorde van afnemend belang.
+(1)  De  technische  waarde  van  de  te  leveren  bestanden  en  bijkomende
+bestanden, rekening houdend met de technische contractuele bepalingen, met
+inbegrip van de resultaten van de testen [...] Volgens Mijnheer de Eerste
+Auditeur,  zou  het  verzoekster  blijkbaar  ‘voordelig  uitgekomen  zijn
+aangezien  van  bij  de  start  niet  meer  dan  9  entiteiten  toegang  dienden  te
+hebben tot de bestanden : de fasering qua aantal met een consequentie voor
+de prijs kwam overeen met de behoefte van tegenpartij’”.
+
+3.1.2.
+Het eerste gunningscriterium is de technische waarde van de te
+leveren bestanden en bijkomende bestanden, rekening houdend met de technische
+contractuele bepalingen, “met inbegrip van de resultaten van de testen”.
+
+XII-89-6/14
+
+In  de  eerste  plaats  kan  uit  de  aangehaalde  omschrijving  niet
+
+worden afgeleid of er sprake is van een essentiële besteksbepaling, waar het de
+
+woorden “met inbegrip van de resultaten van de testen” betreft.
+
+Voorts bestaat er tussen partijen geen betwisting over het feit dat
+
+de  tussenkomende  partij  enkel  een  volledig  testbestand  heeft  afgeleverd  voor
+
+kaartblad 18/6 maar niet voor de kaartbladen 11/8, 12/5 en 18/7.
+
+Nu is in punt 1.11.2 (2) van het bestek inzake “Testbestanden op
+
+diskette” bepaald dat “de testbestanden ten minste betrekking [zullen] hebben op het
+
+volledige gebied gelegen op de NGI-1 : 10.000-kaartbladen 11/8, 12/5, 18/6 en
+
+18/7”.
+
+De vraag rijst aldus of door het genoemde verzuim een essentiële
+
+besteksbepaling geschonden is.  In dat verband verwijst de verwerende partij terecht
+
+naar de punten 4.6.1 en 4.6.2 van het bestek.  In punt 4.6.1 (“Evaluatietesten”) wordt
+
+bepaald  dat  “elke  inschrijver  bij  zijn  inschrijving  aan  de  opdrachtgever  een
+
+testbestand ter beschikking [zal] stellen van een proefgebied waarvan de ligging
+
+omschreven is onder 1.11.2 (2)” en dat “dit bestand in de eerste plaats [zal] gebruikt
+
+worden  voor  het  uitvoeren  van  een  evaluatietest  om  de  kenmerken  van  het
+
+aangeboden  wegenbestand  te  controleren  en  te  evalueren  ten  opzichte  van  de
+
+specificaties  van  onderhavig  bestek  en  de  bij  de  inschrijving  ingediende
+
+specificaties” : in de eerste aangehaalde volzin wordt verwezen naar de bepaling van
+
+1.11.2 (2) en in de tweede aangehaalde volzin wordt het doel van de vraag tot het
+
+afleveren  van  een  bestand  beschreven,  namelijk  om  het  in  de  eerste  plaats  te
+
+gebruiken  voor  het  uitvoeren  van  een  evaluatietest,  hetgeen  kadert  in  de
+
+kwaliteitscontrole die hoort bij het eerste gunningscriterium.
+
+In  punt  4.6.2  van  het  bestek  (“Kwaliteitsverbintenis”)  wordt
+bepaald  dat  het 
+testbestand  zal  gelden  als  object  van
+kwaliteitsverbintenis  die  de  inschrijver  op  zich  neemt,  waarmee  hij  de
+minimumkwaliteit van het te leveren wegenbestand garandeert.
+
+ingediende 
+
+Met de verwerende partij wordt aangenomen dat door het leveren
+van  een  volledig  bestand  voor  kaartblad  18/6  het  doel  van  de  vraag  naar  de
+bestanden bereikt is, namelijk enerzijds het gebruik ervan voor het uitvoeren van
+een evaluatietest en anderzijds om te gelden als object van kwaliteitsverbintenis.
+
+XII-89-7/14
+
+Hieruit vloeit voort dat de verwerende partij terecht het afleveren van volledige
+
+bestanden voor alle kaartbladen niet als een essentiële besteksbepaling aanmerkte.
+
+Het middelonderdeel wordt niet aanvaard.
+
+3.2.1.
+
+wat volgt :
+
+In een tweede middelonderdeel doet de verzoekende partij gelden
+
+“3.2.2.  Het  eigendoms-  en  gebruiksrecht  ten  gunste  van  de  Vlaamse
+
+Landmaatschappij, opgenomen in 2.4.1. van het bestek OC-96/01
+
+Dat het bestek uitdrukkelijk handelt over een ‘niet-exclusief eigendoms- en
+gebruiksrecht  van  onbeperkte  duur  op  alle  in  het  kader  van  deze  opdracht
+geleverde bestanden’, ten voordele van de Vlaamse Landmaatschappij;
+
+Dat verder wordt gepreciseerd dat de Vlaamse Landmaatschappij het bestand
+ter  beschikking  zal  stellen  overeenkomstig  het  samenwerkingsverband  van
+GIS-Vlaanderen  aan  ‘alle  geledingen  van  het  Ministerie  van  de  Vlaamse
+Gemeenschap,  de  Vlaamse  openbare  instellingen,  en  alle  andere  besturen,
+organisaties en instellingen die formeel tot het GIS-Vlaanderen toetreden’;
+
+Dat het dan ook onaanvaardbaar is dat Tele Atlas, in diens offerte, slechts
+
+negen legale entiteiten toelaat, zodat het gebruik geenszins onbeperkt is;
+
+Dat het laatstvermelde kan worden afgeleid uit de toewijzingsbeslissing van
+de Vlaamse Landmaatschappij dd. 9 oktober 1996 welke uitdrukkelijk vaststelt
+dat ‘het bestand kan worden gebruikt door 8 juridische entiteiten en de Vlaamse
+Landmaatschappij’;
+
+Dat  dit  echter  flagrant  in  tegenstrijd  is  met  de  bestekbepalingen,  zoals
+hierboven weergegeven en de inschrijving van Tele Atlas, enkel reeds om die
+reden, had moeten geweerd zijn;
+
+Dat  verzoekster  daarenboven  heeft  vernomen  dat  Tele  Atlas  zelfs  geen
+eigendoms- en gebruikersrecht zou kunnen verlenen voor diens basisofferte
+Vlagisnet;
+
+Dat het niet-conform zijn van de inschrijving van Tele Atlas ten opzichte
+van essentiële bestekbepalingen derhalve eventueel nog veel omvangrijker is
+dan hierboven weergegeven;
+
+Dat de gunning echter uiteindelijk betrekking heeft gehad op de suggestie,
+zijnde Street Net, waarbij men slechts een beperkt aantal entiteiten een ‘niet-
+exclusief eigendoms- en gebruikersrecht van onbeperkte duur’ kan verlenen”.
+
+In laatste memorie luidt het :
+
+“Mijnheer de auditeur preciseert :
+‘Indien van bij de start meer dan 9 entiteiten toegang dienden te hebben en
+zelfs het maximum aantal, voldeed het voorstel van tussenkomende partij ook,
+kon  het  voorstel  gehonoreerd  worden  en  kon  de  prijs  daarvan  berekend
+worden’.
+
+Door zulke bewering, erkent mijnheer de eerste Auditeur dat een onbeperkt
+gebruik van de geleverde bestanden niet noodzakelijk zal toegelaten worden
+aan tegenpartij tijdens de uitvoering van de opdracht.
+
+[...]
+Er is dus sprake van een schending van het artikel 2.4.1. van het bestek en
+
+dit in tegenstelling met wat mijnheer de eerste auditeur beweert.
+
+Het  feit  dat  het  voorgestelde³  systeem  eigenlijk  voordelig  zou  zijn  voor
+verzoekster -hetgeen trouwens nergens wordt aangetoond- houdt niet in dat
+
+XII-89-8/14
+
+tegenpartij  kan  afwijken  van  de  bepalingen  van  het  door  haar  opgestelde
+bijzonder lastenboek.
+
+Het past, hieromtrent, om eraan te herinneren dat het bijzonder lastenboek
+tot doel heeft om, in tempore non suspecto, de kandidaten te informeren over
+de verwachtingen (en dus de noden) van de toewijzende overheid omtrent de
+overheidsopdracht die zij wenst toe te wijzen.  Het is derhalve aan diezelfde
+overheid niet toegelaten om, in de loop van de toewijzingsprocedure van de
+overheidsopdracht  terug  te  komen  op  haar  verwachtingen  derwijze  dat  het
+gelijkheidsprincipe tussen inschrijvers compleet wordt miskend. Dit is nochtans
+precies wat tegenpartij inzake heeft gedaan.
+
+(3) Volgens de termen van mijnheer de eerste auditeur, ‘het moduleren van
+het ter beschikking stellen van de bestanden van de suggestie Streetnet qua
+aantal gekoppeld aan een startprijs voor 8 entiteiten en het Ondersteunend
+Centrum, vermeerderd met een forfaitaire prijs voor elke bijkomende entiteit
+tot een plafond’”.
+
+3.2.2.
+
+Hetgeen  de  tussenkomende  partij  voorgesteld  heeft,  is  de
+
+verwerende partij blijkbaar voordelig uitgekomen aangezien niet reeds van bij de
+
+start meer dan 9 entiteiten toegang dienden te hebben tot de bestanden : de fasering
+
+qua aantal met consequentie voor de prijs kwam overeen met de behoefte van de
+
+verwerende partij.  Indien van bij de start meer dan 9 entiteiten toegang dienden te
+
+hebben en zelfs het maximum aantal, voldeed het voorstel van de tussenkomende
+
+partij ook; het kon immers worden gehonoreerd en de prijs daarvan kon worden
+
+berekend.
+
+Het moduleren van het ter beschikking stellen van de bestanden
+
+van de suggestie Streetnet qua aantal gekoppeld aan een startprijs voor 8 entiteiten
+
+en  het  Ondersteunend  Centrum,  vermeerderd  met  een  forfaitaire  prijs  voor  elke
+
+bijkomende  entiteit  tot  een  plafond,  kan  aldus  niet  worden  aangemerkt  als  een
+
+schending van het door de verzoekende partij ingeroepen punt 2.4.1. van het bestek.
+
+Het middelonderdeel wordt niet aanvaard.
+
+3.3.1.
+volgt :
+
+In een derde middelonderdeel betoogt de verzoekende partij wat
+
+“3.2.3. De omschrijving van het vereiste wegenbestand met de minimale
+attribuutinformatie,  zoals  weergegeven  in  punt  4.2.1.  en  4.2.2.1.  van  het
+bestek OC-96/01
+
+Dat, allereerst, punt 4.2.1. van het bestek de minimale objecten opneemt
+
+voor het wegen- en spoorwegenbestand;
+
+Dat onder de eerste rubriek ‘wegen’ uitdrukkelijk de ‘afsluiting van wegen,
+
+straten en paden’ wordt beklemtoond;
+
+Dat de daaropvolgende besteksbepaling 4.2.2.1. voorschrijft :
+
+XII-89-9/14
+
+‘Wat betreft het wegenbestand, zoals bedoeld in de basisopdracht (in het
+vet gedrukt) is voor elk lijnsegment minimaal volgende attribuutinformatie
+opgenomen :
+(1) fysische wegklasse : - autoweg
+
+(2) liggingskenmerken :
+
+-  weg met verharding van 7 m of breder
+-  weg met verharding smaller dan 7 m
+-  moeilijk berijdbare weg
+-  aardeweg/niet -verharde weg
+-  pad
+-  brandlaan
+-  brug (+orde)
+-  viaduct (+ orde)
+-  gelijkgronds
+- 
+-  ferry
+-  veer’;
+
+tunnel
+
+Dat het evaluatieverslag van stuurgroep GIS-Vlaanderen op blz. 17, eerste
+alinea,  dient  vast  te  stellen  dat  de  uiteindelijk  weerhouden  suggestie
+‘Street Net’, ‘in vergelijking tot de andere inschrijvingen op basisopdracht,
+minder weglengte’ inhoudt;
+
+Dat men zelfs preciseert : ‘Het belang van het feit dat Street Net ca. 40 %
+
+minder weglengte bevat, moet gerelativeerd worden...’;
+
+Dat men echter uit het oog verliest dat deze relativering ertoe leidt dat men
+
+een essentiële bepaling van het bestek schendt”.
+
+Vastgesteld wordt dat de verzoekende partij het feit dat Streetnet
+
+“ca. 40 % minder weglengte omvat” in haar verzoekschrift poneert als zijnde een
+
+schending  van  een  essentiële  besteksbepaling,  blijkbaar  van  het  -uitgebreide-
+
+punt  4.2.2.1  van  het  bestek,  zonder  te  verduidelijken  wat  die  essentiële
+
+besteksbepaling juist is en hoe ze dan wel zou zijn geschonden.  Alleen reeds om die
+
+reden is het middelonderdeel niet ontvankelijk en moet het worden verworpen.
+
+In haar memorie van wederantwoord gaat de verzoekende partij
+
+weliswaar  uitgebreid  in  op  de  kwestie  en  tracht  zij  haar  gelijk  te  halen  door  te
+
+citeren uit en zich te steunen op de voormelde evaluatienota van 19 september 1996,
+
+hoewel zij die nota reeds van bij het opstellen van haar verzoekschrift in haar bezit
+
+had, en deze er als stuk IV aan toevoegde.  Hetgeen daaromtrent wordt aangevoerd
+in  de  memorie  van  wederantwoord  is  dan  ook  een  niet  ontvankelijke  nieuwe
+invulling van het middel.
+
+Het derde middelonderdeel en dienvolgens het tweede middel in
+
+zijn geheel worden niet aanvaard.
+
+Derde middel
+
+XII-89-10/14
+
+3.4.1.
+
+Het derde middel luidt in het inleidend verzoekschrift :
+
+“3.3. Bij het niet-weerhouden van de eerste middelen, staat het op zijn minst
+vast  dat  de  keuze  van  NV  Tele  Atlas  kennelijk  onredelijk  is  door  de
+vastgestelde verkeerde vergelijking (3.1.) en het geenszins eerbiedigen van de
+essentiële bestekbepalingen (3.2.)
+
+Dat het slechts een marginale toetsing vergt van uw Raad van State om vast
+te stellen dat men kost wat kost de opdracht wenste te gunnen aan NV Tele
+Atlas,  conform  de  geruchten  die  ook  de  ronde  deden  en  men  hiervoor  niet
+terugschrikt  om  de  bepalingen  van  het  bestek  niet  meer  als  essentieel  te
+beschouwen of, elke objectieve vergelijking met de uiteindelijk suggestie van
+NV Tele Atlas uit te sluiten;
+
+[...]
+Dat immers de beoordeling van het luik ‘volledigheid’ kennelijk onredelijk
+is,  aangezien  het  product  van  verzoekster  als  het  meest  volledige  wordt
+gekwalificeerd, maar slechts 8 op 10 krijgt, waar het minder volledige product
+van Tele Atlas 9 op 10 krijgt;
+
+Dat het evaluatieverslag op pagina 6 (‘volledigheid van het wegennet’) stelt :
+‘De firma Guldenberg leverde in relatie tot het uitgangsmateriaal van de
+digitalisatie (1 : 10.000 top-kaarten van NGI), een erg volledig bestand (in
+totaal 1978 km weg op een oppervlakte van 292 km2, 6,77 km/km2).  Deze
+in  verband  gebracht  worden  met  de  strenge
+volledigheid  kan 
+kwaliteitsnormen die RMS-India hanteert.
+(...)
+
+Tele Atlas komt voor wat betreft kaartblad 18/6 op dezelfde totale lengte
+als Guldenberg.  Voor wat betreft de andere kaartbladen nochtans zijn de
+waarden t.o.v. Guldenberg resp 69 %, 56 % en 58 % (...)’
+Dat  verzoekster  reeds  sub  3.2.3.  aantoonde  dat  ‘Streetnet’  40  %  minder
+
+weglengte bevat;
+
+Dat het evaluatiebestand in verband met ‘Streetnet’ verdergaat :
+
+‘Volledigheid
+‘Streetnet’  heeft,  in  vergelijking  tot  de  andere  inschrijvingen  op  de
+
+basisopdracht, minder weglengte.’;
+Dat  de  Vlaamse  Landmaatschappij  op  kennelijk  onredelijke  wijze  dit
+
+substantiële gebrek minimaliseert :
+
+‘Het belang van het feit dat ‘Streetnet’ ca 40 % minder weglengte bevat,
+moet gerelativeerd worden in het licht van het gebruik van het skeletbestand.
+Deze  40  %  minder  weglengte  betreffen  in  hoofdzaak  veldwegen,
+boswegen en paden zoals ze op de topografische kaarten zijn opgenomen.
+Deze wegen werden opgenomen in het uitgeschreven bestek omdat deze
+kunnen  dienstig  zijn  voor  toepassingen  waarbij  het  skeletbestand  als
+ruimtelijk skelet gebruik wordt.  Het zal slechts incidenteel voorkomen dat
+aan  deze  kleine  wegen  en  paden  bijkomende  attribuutinformatie  wordt
+gekoppeld.
+
+Voorlopig  kan  de  ruimtelijke  skeletfunctie  van  het  skeletbestand
+overgenomen worden door de rasterbestanden zoals ze op dit moment ter
+beschikking komen van het GIS-Vlaanderen.
+Er moet wel opgemerkt worden dat naast de wegen in het ‘Streetnet’-bestand
+een  aantal  bijkomende  object-thema’s  zijn  opgenomen  :  deelgemeenten,
+statische sectoren, water, parken, bebouwde kommen’.
+Dat verzoekster reeds sub 3.2.1. en 3.2.3. aantoonde dat dit een miskenning
+
+uitmaakt van de essentiële besteksbepaling van art. 4.2.2.1;
+
+Dat  uit  deze  bestekbepaling,  reeds  geciteerd  sub  3.2.3.,  blijkt  welk  een
+belang  aan  een  gedetailleerde  spoorweg-  en  gewone  wegweergave  wordt
+gehecht;
+
+XII-89-11/14
+
+Dat het bestek verder luidt op p. 16 (artikel 4.2.1.) :
+
+‘(...)
+Minimaal moeten volgende objecten opgenomen worden :
+(1) Wegen :
+De  aslijnen  van  wegen,  straten  en  paden,  zoals  voorgesteld  op  de
+topografische kaarten, 1 : 10.000, van het Nationaal Geografisch Instituut,
+met aanduidingen van de kruisingen en aansluitingen (...)’ [...]
+Dat het dan ook volledig ondenkbaar is dat de quotering voor volledigheid
+van Tele Atlas (9) en verzoekster (8) op een objectieve en redelijke basis is tot
+stand  gekomen,  indien  men  rekening  houdt  met  de  hierboven  aangetoonde
+fundamentele tekortkomingen bij eerste verweerster”.
+
+3.4.2.
+
+Daargelaten opnieuw de vraag of dit middel voldoende duidelijk
+
+de geschonden rechtsregel omschrijft, hetgeen de verwerende partij betwist, dient
+
+te worden vastgesteld dat het derde middel gesteund is op het eerste middel én het
+
+tweede middel : het eerste middel is echter in voormeld arrest nr. 177.749 reeds
+
+ongegrond bevonden en het tweede middel is hiervoor niet aanvaard.  Dienvolgens
+
+dient dan ook het derde middel als niet gegrond te worden aangemerkt.
+
+Vierde middel
+
+3.5.1.
+
+In een vierde middel voert de verzoekende partij aan wat volgt :
+
+“Schending van art. artikel 44, vijfde lid van het K.B. van 22 april 1977
+Dat verzoekster wijst op de mogelijkheid die door artikel 44, vijfde lid van
+het K.B. van 22 april 1977 wordt geboden aan de opdrachtgever, die vooraleer
+de opdracht te gunnen, met de kandidaat-inschrijvers in contact kan treden om
+de inhoud van offerte te preciseren of ... aan te vullen”.
+
+Zij betoogt nader dat zulks het geval had moeten zijn inzake een
+
+niet  door  het  bestek  vereist  onderhoudscontract  en  een  doorgroeiscenario,
+
+voorgesteld door de gekozen inschrijver.
+
+Artikel 44, vijfde lid, van het koninklijk besluit van 22 april 1977
+3.5.2.
+betreffende  de  overheidsopdrachten  voor  aanneming  van  werken,  leveringen  en
+diensten, bepaalt hetgeen volgt :
+
+“In elk geval treedt het bestuur slechts in contact met de kandidaten indien
+
+zij de inhoud van hun offerte moeten preciseren of aanvullen”.
+
+Deze bepaling is niet bedoeld om inschrijvers, die geen suggesties
+hebben ingediend, na de opening van de offertes, uit te nodigen en de kans te geven
+
+XII-89-12/14
+
+suggesties in te dienen om reden dat één van de inschrijvers dergelijke suggesties
+
+heeft ingediend.
+
+4.
+
+gegrond.
+
+Het vierde middel is niet gegrond.
+
+Geen van de door de verzoekende partij aangevoerde middelen is
+
+XII-89-13/14
+
+OM DIE REDENEN
+
+BESLIST DE RAAD VAN STATE :
+
+Artikel 1.
+
+Artikel 2.
+
+Het beroep wordt verworpen.
+
+De kosten van de vordering tot schorsing en van het beroep tot
+
+nietigverklaring, bepaald op 99,16 euro, komen ten laste van de verzoekende partij.
+
+De kosten van de tussenkomst, bepaald op 74,37 euro, komen ten
+
+laste van de tussenkomende partij.
+
+Het door de tussenkomende partij teveel gekweten zegelrecht van
+
+49,59 euro dient haar te worden terugbetaald
+
+Aldus  te  Brussel  uitgesproken  in  openbare  terechtzitting,  op
+
+tweeëntwintig januari 2009, door de XIIe kamer, die was samengesteld uit :
+
+de HH. D. VERBIEST,
+
+kamervoorzitter,
+
+J. LUST,
+
+G. VAN HAEGENDOREN,
+
+Mevr.
+
+S. DOMS,
+
+staatsraad,
+
+staatsraad,
+
+griffier.
+
+De griffier,
+
+ De voorzitter,
+
+ S. DOMS.
+
+D. VERBIEST.
+
+XII-89-14/14
+
+
