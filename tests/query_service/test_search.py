@@ -44,11 +44,13 @@ def test_hybrid_search_lexical_match_returns_expected_case(
         conn.close()
 
     assert results
-    assert results[0].source == "GHCC"
-    assert results[0].ecli == "ECLI:BE:GHCC:2025:ARR.001"
-    assert results[0].case_number == "2025-001n"
-    assert results[0].section == "reasoning"
-    assert results[0].paragraph_number == "B.7"
+    top = results[0]
+    assert top.source == "GHCC"
+    assert top.ecli == "ECLI:BE:GHCC:2025:ARR.001"
+    assert top.case_number == "2025-001n"
+    assert top.chunks
+    assert top.chunks[0].section == "reasoning"
+    assert top.chunks[0].paragraph_number == "B.7"
 
 
 def test_hybrid_search_semantic_only_match(fixture_db_path: Path) -> None:
@@ -66,7 +68,8 @@ def test_hybrid_search_semantic_only_match(fixture_db_path: Path) -> None:
 
     assert results
     assert results[0].ecli == "ECLI:BE:GHCC:2025:ARR.002"
-    assert results[0].paragraph_number is None
+    assert results[0].chunks
+    assert results[0].chunks[0].paragraph_number is None
 
 
 def test_hybrid_search_filters_by_source(fixture_db_path: Path) -> None:

@@ -1,5 +1,5 @@
 import { truncateExcerpt } from "./search/excerpt";
-import type { SearchResultItem } from "./search/types";
+import type { CaseSearchResult } from "./search/types";
 
 const DEFAULT_MAX_RESULTS = 5;
 
@@ -11,29 +11,35 @@ const DEFAULT_MAX_RESULTS = 5;
  * template over data, not a network call, so it's cheap to unit-test for
  * size limits and citation completeness.
  *
+ * Each case contributes its best-matching chunk (chunks[0]) to the prompt so
+ * the passage is always the most relevant excerpt for that case.
+ *
  * @param question - The user's original search query/question.
- * @param results - Ranked results, already in the order to present (best first).
- * @param maxResults - Maximum number of passages to include.
+ * @param results - Ranked cases, already in the order to present (best first).
+ * @param maxResults - Maximum number of cases to include.
  * @returns The composed, clipboard-ready prompt text.
  */
 export function composePrompt(
   question: string,
-  results: SearchResultItem[],
+  results: CaseSearchResult[],
   maxResults: number = DEFAULT_MAX_RESULTS,
 ): string {
   const included = results.slice(0, maxResults);
 
   const passages = included
     .map((result, index) => {
-      const label = result.paragraphNumber
-        ? `${result.ecli}, paragraph ${result.paragraphNumber}`
-        : `${result.ecli}, ${result.section}`;
+      const chunk = result.chunks[0];
+      if (!chunk) return null;
+      const label = chunk.paragraphNumber
+        ? `${result.ecli}, paragraph ${chunk.paragraphNumber}`
+        : `${result.ecli}, ${chunk.section}`;
       return [
         `[${index + 1}] ${label}, ${result.rulingDate}`,
-        `"${truncateExcerpt(result.excerpt)}"`,
+        `"${truncateExcerpt(chunk.excerpt)}"`,
         `Source PDF: ${result.sourcePdfUrl}`,
       ].join("\n");
     })
+    .filter(Boolean)
     .join("\n\n");
 
   return [

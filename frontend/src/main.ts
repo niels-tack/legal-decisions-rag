@@ -1,6 +1,6 @@
 import { composePrompt } from "./promptComposer";
 import { createSearchProvider } from "./search/provider";
-import type { SearchResultItem, SortOption } from "./search/types";
+import type { CaseSearchResult, SortOption } from "./search/types";
 import { strings } from "./strings";
 import {
   applyUrlStateToForm,
@@ -134,7 +134,7 @@ async function main(): Promise<void> {
 
   const provider = createSearchProvider();
 
-  let currentResults: SearchResultItem[] = [];
+  let currentResults: CaseSearchResult[] = [];
   const selectedIndices = new Set<number>();
 
   function resetSelection(resultCount: number): void {

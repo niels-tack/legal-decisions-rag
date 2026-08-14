@@ -1,9 +1,20 @@
 import { describe, expect, it } from "vitest";
 
 import { composePrompt } from "../src/promptComposer";
-import type { SearchResultItem } from "../src/search/types";
+import type { CaseSearchResult, ChunkResult } from "../src/search/types";
 
-function makeResult(overrides: Partial<SearchResultItem> = {}): SearchResultItem {
+function makeChunk(overrides: Partial<ChunkResult> = {}): ChunkResult {
+  return {
+    section: "reasoning",
+    paragraphNumber: "B.7",
+    excerpt: "Het Hof oordeelt dat de bepaling ongrondwettig is.",
+    highlightedSnippet: null,
+    score: 1.0,
+    ...overrides,
+  };
+}
+
+function makeResult(overrides: Partial<CaseSearchResult> = {}): CaseSearchResult {
   return {
     source: "GHCC",
     ecli: "ECLI:BE:GHCC:2025:ARR.001",
@@ -16,12 +27,9 @@ function makeResult(overrides: Partial<SearchResultItem> = {}): SearchResultItem
     controlledNorm: "Artikel 1",
     outcome: "Vernietiging",
     title: "Test ruling",
-    section: "reasoning",
-    paragraphNumber: "B.7",
-    excerpt: "Het Hof oordeelt dat de bepaling ongrondwettig is.",
-    highlightedSnippet: null,
     sourcePdfUrl: "https://example.test/2025-001n.pdf",
-    score: 1.0,
+    bestScore: 1.0,
+    chunks: [makeChunk()],
     ...overrides,
   };
 }
@@ -36,12 +44,11 @@ describe("composePrompt", () => {
 
   it("cites every included result's ECLI, paragraph, and PDF URL", () => {
     const results = [
-      makeResult({ ecli: "ECLI:BE:GHCC:2025:ARR.001", paragraphNumber: "B.7" }),
+      makeResult({ ecli: "ECLI:BE:GHCC:2025:ARR.001", chunks: [makeChunk({ paragraphNumber: "B.7" })] }),
       makeResult({
         ecli: "ECLI:BE:GHCC:2025:ARR.002",
-        paragraphNumber: null,
-        section: "facts",
         sourcePdfUrl: "https://example.test/2025-002n.pdf",
+        chunks: [makeChunk({ paragraphNumber: null, section: "facts" })],
       }),
     ];
 
@@ -68,7 +75,7 @@ describe("composePrompt", () => {
 
   it("truncates an excerpt longer than the shared response-size cap", () => {
     const longExcerpt = "x".repeat(3000);
-    const prompt = composePrompt("q", [makeResult({ excerpt: longExcerpt })]);
+    const prompt = composePrompt("q", [makeResult({ chunks: [makeChunk({ excerpt: longExcerpt })] })]);
 
     expect(prompt).not.toContain("x".repeat(2001));
     expect(prompt).toContain("…");
@@ -76,5 +83,10 @@ describe("composePrompt", () => {
 
   it("returns an empty passages block gracefully when there are no results", () => {
     expect(() => composePrompt("q", [])).not.toThrow();
+  });
+
+  it("skips cases with no chunks without crashing", () => {
+    const result = makeResult({ chunks: [] });
+    expect(() => composePrompt("q", [result])).not.toThrow();
   });
 });

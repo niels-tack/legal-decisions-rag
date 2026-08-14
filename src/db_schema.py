@@ -1,19 +1,10 @@
 """SQLite schema shared by the index builder and the query service.
 
-The database is a single portable ``cases.db`` file: ``cases`` holds
-per-ruling metadata (including which judicial body - ``source`` - issued
-it), ``chunks`` holds one row per numbered-paragraph passage (see
-``src.indexing.build_index`` for how paragraph boundaries are found), and
-``chunks_fts`` is an FTS5 (BM25) index over ``chunks`` in external-content
-mode, so passage text is stored exactly once (in ``chunks``) rather than
-duplicated into the FTS5 index. ``embeddings`` is reserved now (keyed by
-``chunk_id``) for Phase 2's vector similarity search, but is left empty by
-the Phase 1 build - see ``src.indexing.build_index.build_index`` (BM25 only)
-vs ``add_embeddings`` (the additive Phase 2 step).
-
-Per the technical requirements' range-request tuning, ``PAGE_SIZE`` must be
-set on a connection before any table is created - SQLite only honors
-``PRAGMA page_size`` on an empty database.
+The database is a single portable ``cases.db`` file: 
+- ``cases``: per-ruling metadata (incl. judicial body)
+- ``chunks``: per-paragraph passage data
+- ``chunks_fts``: FTS5 (BM25) index over ``chunks`` .
+- ``embeddings``: embeddings vector similarity search (TO DO PHASE 2)
 """
 
 from __future__ import annotations
@@ -21,9 +12,6 @@ from __future__ import annotations
 import json
 import sqlite3
 
-# The documented sweet spot for HTTP range-request (byte-serving) access in
-# Phase 1's client-side SQLite-over-HTTP setup: small enough that a query
-# touches few bytes per page, at the cost of a larger page count overall.
 PAGE_SIZE = 1024
 
 CASES_TABLE_SQL = """
@@ -58,10 +46,6 @@ CREATE TABLE IF NOT EXISTS chunks (
 );
 """
 
-# External-content mode: chunks_fts.rowid is chunks.chunk_id, and the
-# indexed 'text' column's actual value lives only in chunks.text - FTS5
-# looks it up there (via content_rowid) whenever a query needs it (e.g. for
-# a snippet), rather than storing its own second copy.
 CHUNKS_FTS_SQL = """
 CREATE VIRTUAL TABLE IF NOT EXISTS chunks_fts USING fts5(
     text,
@@ -71,10 +55,6 @@ CREATE VIRTUAL TABLE IF NOT EXISTS chunks_fts USING fts5(
 );
 """
 
-# Phase 2 adds vector similarity search over these same chunks. The table
-# (and its column names/types) are reserved now, per the technical
-# requirements, so the schema doesn't need to change shape later - it is
-# simply left unpopulated by the Phase 1 build.
 EMBEDDINGS_TABLE_SQL = """
 CREATE TABLE IF NOT EXISTS embeddings (
     chunk_id INTEGER PRIMARY KEY,
@@ -88,15 +68,7 @@ EMBEDDING_MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12
 
 
 def initialize_database(conn: sqlite3.Connection) -> None:
-    """Create all tables for the shared cases.db schema.
-
-    Must be called on an otherwise-empty connection: this sets
-    ``PRAGMA page_size`` first, which SQLite only applies if no tables have
-    been created yet on that connection.
-
-    Args:
-        conn: An open connection to the target (empty) SQLite database.
-    """
+    """Create all tables for the shared cases.db schema."""
     conn.execute(f"PRAGMA page_size = {PAGE_SIZE}")
     conn.execute(CASES_TABLE_SQL)
     conn.execute(CHUNKS_TABLE_SQL)
@@ -115,24 +87,7 @@ def insert_chunk(
     paragraph_number: str | None = None,
     parent_numbers: list[str] | None = None,
 ) -> None:
-    """Insert one passage into ``chunks`` and its FTS5 index entry.
-
-    Args:
-        conn: An open connection to the target SQLite database.
-        chunk_id: The shared id also used as ``chunks_fts.rowid`` and, in
-            Phase 2, as the ``embeddings`` table's key.
-        case_id: Foreign key into the ``cases`` table.
-        section: One of the structural section labels in ``src.schemas``.
-        chunk_order: Zero-based position of this chunk within its case,
-            preserving document order for later reconstruction/rendering.
-        text: The passage's plain text content.
-        paragraph_number: This chunk's own numbered identifier (e.g.
-            ``"B.7.3"``), or ``None`` for a whole-section fallback chunk
-            from a section/body with no paragraph numbering.
-        parent_numbers: Ancestor identifiers (e.g. ``["B", "B.7"]`` for
-            ``"B.7.3"``), or ``None``/empty when there's nothing to derive
-            ancestors from.
-    """
+    """Insert one passage into ``chunks`` and its FTS5 index entry."""
     conn.execute(
         "INSERT INTO chunks "
         "(chunk_id, case_id, section, paragraph_number, parent_numbers, "

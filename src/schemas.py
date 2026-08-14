@@ -73,8 +73,25 @@ class Chunk(BaseModel):
     text: str = Field(..., description="The chunk's plain text content")
 
 
-class SearchResultItem(BaseModel):
-    """One ranked passage returned by the query service's search endpoint."""
+class ChunkResult(BaseModel):
+    """One matched chunk within a case search result."""
+
+    section: str = Field(..., description="One of: facts, arguments, reasoning, ruling")
+    paragraph_number: str | None = Field(
+        ..., description="This chunk's own numbered identifier, e.g. 'B.7.3'"
+    )
+    excerpt: str = Field(..., description="Truncated chunk text (response-size-capped)")
+    score: float = Field(
+        ..., description="Hybrid BM25 + vector reciprocal-rank-fusion score"
+    )
+
+
+class CaseSearchResult(BaseModel):
+    """One ranked case with its top matching chunks.
+
+    Cases are ranked by their best chunk's score. At most
+    ``_MAX_CHUNKS_PER_CASE`` chunks are included, ordered best-first.
+    """
 
     source: str = Field(..., description="Issuing judicial body, e.g. 'GHCC'")
     ecli: str
@@ -87,14 +104,12 @@ class SearchResultItem(BaseModel):
     controlled_norm: str
     outcome: str
     title: str
-    section: str
-    paragraph_number: str | None = Field(
-        ..., description="The excerpt's own numbered identifier, e.g. 'B.7.3'"
-    )
-    excerpt: str
     source_pdf_url: str
-    score: float = Field(
-        ..., description="Hybrid BM25 + vector reciprocal-rank-fusion score"
+    best_score: float = Field(
+        ..., description="Score of the highest-ranked matching chunk in this case"
+    )
+    chunks: list[ChunkResult] = Field(
+        ..., description="Top matching chunks for this case, best-first"
     )
 
 
@@ -102,7 +117,7 @@ class SearchResponse(BaseModel):
     """Response body for ``GET /search``."""
 
     query: str
-    results: list[SearchResultItem]
+    results: list[CaseSearchResult]
 
 
 # Structural section labels used consistently by the Markdown assembler,

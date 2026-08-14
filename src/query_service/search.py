@@ -14,7 +14,7 @@ from collections.abc import Callable
 
 import numpy as np
 
-from src.schemas import SearchResultItem
+from src.schemas import CaseSearchResult, ChunkResult
 
 # Standard RRF smoothing constant: dampens the influence of very high ranks
 # without needing per-corpus tuning.
@@ -31,6 +31,11 @@ _CANDIDATE_POOL_SIZE = 50
 # thousands of characters, which the caller neither needs nor should be able
 # to pull wholesale through the search endpoint.
 _MAX_EXCERPT_CHARS = 2000
+
+# Maximum number of matching chunks to include per case in the search response.
+# Cases may have many chunks that match a query; exposing only the top few
+# keeps the response concise while still showing the most relevant passages.
+_MAX_CHUNKS_PER_CASE = 3
 
 
 def _truncate_excerpt(text: str) -> str:
@@ -207,8 +212,12 @@ def hybrid_search(
     embed_fn: Callable[[list[str]], np.ndarray],
     limit: int = 5,
     sources: list[str] | None = None,
-) -> list[SearchResultItem]:
-    """Run hybrid lexical + semantic search and return fused, ranked results.
+) -> list[CaseSearchResult]:
+    """Run hybrid lexical + semantic search and return fused, ranked cases.
+
+    Results are grouped by case: each returned item is one distinct case with
+    its top ``_MAX_CHUNKS_PER_CASE`` matching chunks, ordered best-first.
+    Cases are ranked by the score of their highest-ranked chunk.
 
     Args:
         conn: An open connection to the ``cases.db`` database.
@@ -216,18 +225,22 @@ def hybrid_search(
         embed_fn: Callable computing L2-normalized query embeddings, e.g.
             ``src.indexing.embeddings.embed_texts``. Injected rather than
             imported directly so tests can supply a lightweight fake.
-        limit: Maximum number of results to return after fusion.
+        limit: Maximum number of distinct *cases* to return after fusion.
         sources: Optional judicial-body keys (e.g. ``["GHCC"]``) to restrict
             results to. ``None``/empty searches every registered body.
 
     Returns:
-        ``SearchResultItem`` objects sorted by descending fused RRF score,
+        ``CaseSearchResult`` objects sorted by descending best-chunk score,
         at most ``limit`` of them.
     """
-    lexical_rows = _lexical_search(conn, query_text, _CANDIDATE_POOL_SIZE, sources)
-    semantic_rows = _semantic_search(
-        conn, query_text, embed_fn, _CANDIDATE_POOL_SIZE, sources
-    )
+    # Widen the candidate pool proportionally to ``limit`` so that even when
+    # a single popular case dominates the top-k chunks we still surface enough
+    # distinct cases to fill the page. The brute-force vector scan is
+    # unaffected in cost (it scans all embeddings regardless); the FTS5 LIMIT
+    # only bounds how many rows the virtual-table scan materialises.
+    candidate_pool = max(_CANDIDATE_POOL_SIZE, limit * _MAX_CHUNKS_PER_CASE * 5)
+    lexical_rows = _lexical_search(conn, query_text, candidate_pool, sources)
+    semantic_rows = _semantic_search(conn, query_text, embed_fn, candidate_pool, sources)
 
     # Track each chunk's rank (1-based) in whichever list(s) it appears in,
     # plus enough chunk detail to build the final result without a second
@@ -244,26 +257,51 @@ def hybrid_search(
                 _RRF_K + rank
             )
 
-    ranked_ids = sorted(fused_scores, key=lambda cid: fused_scores[cid], reverse=True)[
-        :limit
-    ]
-    if not ranked_ids:
+    if not fused_scores:
         return []
 
-    case_ids = {chunk_info[cid][0] for cid in ranked_ids}
-    cases_by_id = _fetch_cases(conn, case_ids)
+    # Group all scored chunks by their case, keeping only the top
+    # ``_MAX_CHUNKS_PER_CASE`` per case (ordered best-first). The case's
+    # representative score is the score of its highest-ranked chunk, which
+    # also determines its position in the final ranked list.
+    case_chunks: dict[int, list[tuple[float, str, str | None, str]]] = {}
+    for chunk_id, score in fused_scores.items():
+        case_id, section, paragraph_number, text = chunk_info[chunk_id]
+        case_chunks.setdefault(case_id, []).append((score, section, paragraph_number, text))
+
+    # Sort each case's chunks by score descending, keep the top N.
+    case_best_scores: dict[int, float] = {}
+    for case_id, chunks in case_chunks.items():
+        chunks.sort(key=lambda t: t[0], reverse=True)
+        case_chunks[case_id] = chunks[:_MAX_CHUNKS_PER_CASE]
+        case_best_scores[case_id] = chunks[0][0]
+
+    # Rank cases by their best chunk score and take the top ``limit``.
+    ranked_case_ids = sorted(
+        case_best_scores, key=lambda cid: case_best_scores[cid], reverse=True
+    )[:limit]
+
+    cases_by_id = _fetch_cases(conn, set(ranked_case_ids))
 
     results = []
-    for chunk_id in ranked_ids:
-        case_id, section, paragraph_number, text = chunk_info[chunk_id]
+    for case_id in ranked_case_ids:
         case = cases_by_id.get(case_id)
         if case is None:
             # Defensive: the FOREIGN KEY constraint should prevent this, but
             # skip rather than crash a live query if the data is ever
             # inconsistent.
             continue
+        chunks = [
+            ChunkResult(
+                section=section,
+                paragraph_number=paragraph_number,
+                excerpt=_truncate_excerpt(text),
+                score=score,
+            )
+            for score, section, paragraph_number, text in case_chunks[case_id]
+        ]
         results.append(
-            SearchResultItem(
+            CaseSearchResult(
                 source=case["source"],
                 ecli=case["ecli"],
                 arrest_number=case["arrest_number"],
@@ -275,11 +313,9 @@ def hybrid_search(
                 controlled_norm=case["controlled_norm"],
                 outcome=case["outcome"],
                 title=case["title"],
-                section=section,
-                paragraph_number=paragraph_number,
-                excerpt=_truncate_excerpt(text),
                 source_pdf_url=case["source_pdf_url"],
-                score=fused_scores[chunk_id],
+                best_score=case_best_scores[case_id],
+                chunks=chunks,
             )
         )
     return results

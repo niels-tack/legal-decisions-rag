@@ -4,11 +4,12 @@ import { truncateExcerpt } from "./excerpt";
 import { buildFtsMatchQuery } from "./ftsQuery";
 import { SNIPPET_MATCH_END, SNIPPET_MATCH_START } from "./snippetMarkers";
 import type {
+  CaseSearchResult,
+  ChunkResult,
   FilterOptions,
   SearchFilters,
   SearchOptions,
   SearchProvider,
-  SearchResultItem,
   SortOption,
 } from "./types";
 
@@ -25,6 +26,16 @@ const REQUEST_CHUNK_SIZE = 1024;
 const DEFAULT_DB_URL = `${import.meta.env.BASE_URL}cases.db`;
 
 const SNIPPET_MAX_TOKENS = 40;
+
+// Maximum chunks to include per case in the grouped result. Must match the
+// intent of the backend's _MAX_CHUNKS_PER_CASE (src/query_service/search.py).
+const MAX_CHUNKS_PER_CASE = 3;
+
+// Number of chunk rows to fetch from SQLite before case-level grouping. Sized
+// generously so that even when a single case dominates the top FTS ranks we
+// still accumulate enough distinct cases to fill several pages of results.
+// Phase 1's corpus is small enough that fetching this many rows is fast.
+const POOL_SIZE = 500;
 
 const SORT_CLAUSES: Record<SortOption, string> = {
   relevance: "rank",
@@ -62,6 +73,11 @@ interface WhereClause {
  * lazily over HTTP range requests via `sql.js-httpvfs`. No embeddings, no
  * hybrid re-ranking, no fusion score - Phase 1 has exactly one ranked list
  * (FTS5's own `rank`), unlike the Phase 2 API's RRF fusion of two.
+ *
+ * Results are grouped by case: each returned item is one `CaseSearchResult`
+ * with up to `MAX_CHUNKS_PER_CASE` matching chunks (best-ranked first). The
+ * SQL query fetches a large flat pool ordered by FTS5 rank; JS groups it so
+ * the same case never appears twice in the results list.
  */
 export class LocalSqliteProvider implements SearchProvider {
   private workerPromise: Promise<WorkerHttpvfs> | null = null;
@@ -122,11 +138,57 @@ export class LocalSqliteProvider implements SearchProvider {
     return { sql: conditions.join(" AND "), params };
   }
 
+  /**
+   * Group a flat list of chunk rows (ordered by FTS5 rank) into case results.
+   * Preserves the first-occurrence ordering of each case, so the case whose
+   * best chunk ranked highest in FTS5 appears first in the output. Within
+   * each case, chunks are in their original rank order (best first).
+   */
+  private groupIntoCases(rows: CaseRow[]): CaseSearchResult[] {
+    const caseMap = new Map<string, { caseData: CaseRow; chunks: ChunkResult[] }>();
+
+    for (const row of rows) {
+      if (!caseMap.has(row.ecli)) {
+        caseMap.set(row.ecli, { caseData: row, chunks: [] });
+      }
+      const entry = caseMap.get(row.ecli)!;
+      if (entry.chunks.length < MAX_CHUNKS_PER_CASE) {
+        entry.chunks.push({
+          section: row.section,
+          paragraphNumber: row.paragraph_number,
+          excerpt: truncateExcerpt(row.text),
+          highlightedSnippet: row.highlighted_snippet,
+          // No ranking score is exposed by FTS5's bare `rank` ordering in a
+          // portable way here; relative order (already applied via ORDER BY)
+          // is what matters for Phase 1, not a score value.
+          score: 0,
+        });
+      }
+    }
+
+    return [...caseMap.values()].map(({ caseData, chunks }) => ({
+      source: caseData.source,
+      ecli: caseData.ecli,
+      arrestNumber: caseData.arrest_number,
+      roleNumber: caseData.role_number,
+      caseNumber: caseData.file_slug,
+      rulingDate: caseData.ruling_date,
+      language: caseData.language,
+      procedureType: caseData.procedure_type,
+      controlledNorm: caseData.controlled_norm,
+      outcome: caseData.outcome,
+      title: caseData.title,
+      sourcePdfUrl: caseData.source_pdf_url,
+      bestScore: 0,
+      chunks,
+    }));
+  }
+
   async search(
     query: string,
     filters: SearchFilters,
     options: SearchOptions,
-  ): Promise<SearchResultItem[]> {
+  ): Promise<CaseSearchResult[]> {
     const matchQuery = buildFtsMatchQuery(query);
     if (!matchQuery) {
       return [];
@@ -136,6 +198,11 @@ export class LocalSqliteProvider implements SearchProvider {
     const where = this.buildWhereClause(matchQuery, filters);
     const orderBy = SORT_CLAUSES[options.sort];
 
+    // Fetch a large flat pool (no SQL-level OFFSET) ordered by FTS5 rank, then
+    // group into cases in JS. SQL OFFSET on chunk rows cannot directly represent
+    // an OFFSET on cases, so pagination is handled after grouping by slicing the
+    // full ordered case list. See comment on POOL_SIZE for sizing rationale.
+    //
     // Comlink's Remote<T> proxy type collapses query()'s own <T> generic (it
     // can't know the runtime row shape), so the result comes back untyped -
     // asserted to CaseRow[] here, the one place that shape is declared.
@@ -165,33 +232,12 @@ export class LocalSqliteProvider implements SearchProvider {
        JOIN cases ON cases.case_id = chunks.case_id
        WHERE ${where.sql}
        ORDER BY ${orderBy}
-       LIMIT ? OFFSET ?`,
-      [SNIPPET_MATCH_START, SNIPPET_MATCH_END, "…", SNIPPET_MAX_TOKENS, ...where.params, options.limit, options.offset],
+       LIMIT ?`,
+      [SNIPPET_MATCH_START, SNIPPET_MATCH_END, "…", SNIPPET_MAX_TOKENS, ...where.params, POOL_SIZE],
     )) as CaseRow[];
 
-    return rows.map((row) => ({
-      source: row.source,
-      ecli: row.ecli,
-      arrestNumber: row.arrest_number,
-      roleNumber: row.role_number,
-      caseNumber: row.file_slug,
-      rulingDate: row.ruling_date,
-      language: row.language,
-      procedureType: row.procedure_type,
-      controlledNorm: row.controlled_norm,
-      outcome: row.outcome,
-      title: row.title,
-      section: row.section,
-      paragraphNumber: row.paragraph_number,
-      excerpt: truncateExcerpt(row.text),
-      highlightedSnippet: row.highlighted_snippet,
-      sourcePdfUrl: row.source_pdf_url,
-      // No ranking score is exposed by FTS5's bare `rank` ordering in a
-      // portable way here; Phase 1 has one ranked list, so relative order
-      // (already applied via ORDER BY) is what matters, not a score value -
-      // unlike the Phase 2 API's fused RRF score.
-      score: 0,
-    }));
+    const allCases = this.groupIntoCases(rows);
+    return allCases.slice(options.offset, options.offset + options.limit);
   }
 
   async count(query: string, filters: SearchFilters): Promise<number> {
@@ -204,7 +250,7 @@ export class LocalSqliteProvider implements SearchProvider {
     const where = this.buildWhereClause(matchQuery, filters);
 
     const rows = (await worker.db.query(
-      `SELECT COUNT(*) AS total
+      `SELECT COUNT(DISTINCT cases.case_id) AS total
        FROM chunks_fts
        JOIN chunks ON chunks.chunk_id = chunks_fts.rowid
        JOIN cases ON cases.case_id = chunks.case_id

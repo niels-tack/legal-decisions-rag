@@ -24,9 +24,6 @@ from src.schemas import (
     CaseMetadata,
 )
 
-# Exact section headers emitted by the ingestion pipeline's Markdown
-# assembler, in document order, mapped to the section constants shared
-# across the codebase via src.schemas.
 SECTION_HEADERS: tuple[tuple[str, str], ...] = (
     ("## Feiten en rechtspleging", SECTION_FACTS),
     ("## Standpunten van de partijen", SECTION_ARGUMENTS),
@@ -46,16 +43,7 @@ class MalformedFrontmatterError(ValueError):
 
 def split_frontmatter(text: str) -> tuple[str, str]:
     """Split a Markdown document into its raw YAML frontmatter and body.
-
-    Args:
-        text: Full contents of one source Markdown file.
-
-    Returns:
-        A ``(frontmatter_yaml, body)`` tuple.
-
-    Raises:
-        MalformedFrontmatterError: If the file has no ``---``-delimited
-            frontmatter block at all.
+    Return ``(frontmatter_yaml, body)`` tuple.
     """
     match = _FRONTMATTER_RE.match(text)
     if match is None:
@@ -64,19 +52,7 @@ def split_frontmatter(text: str) -> tuple[str, str]:
 
 
 def parse_metadata(frontmatter_yaml: str) -> CaseMetadata:
-    """Parse and validate a case's YAML frontmatter.
-
-    Args:
-        frontmatter_yaml: The raw YAML text between the frontmatter delimiters.
-
-    Returns:
-        A validated ``CaseMetadata`` instance.
-
-    Raises:
-        MalformedFrontmatterError: If the YAML is unparsable, is not a
-            mapping, or fails ``CaseMetadata`` validation (e.g. a missing
-            required field).
-    """
+    """Parse and validate a case's YAML frontmatter."""
     try:
         raw = yaml.safe_load(frontmatter_yaml)
     except yaml.YAMLError as exc:

@@ -354,3 +354,18 @@ select:focus-visible {
   outline: 3px solid var(--color-focus-ring);
   outline-offset: 2px;
 }
+
+/* Wider layout for large screens: override --measure progressively so the
+   page fills the available space on a full-screen browser without stretching
+   too far on very wide monitors. Below 1100px the default 42rem stays. */
+@media (min-width: 1100px) {
+  :root {
+    --measure: 68rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  :root {
+    --measure: 90rem;
+  }
+}

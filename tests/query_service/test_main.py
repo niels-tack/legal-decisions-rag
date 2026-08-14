@@ -41,8 +41,9 @@ def test_search_from_allowed_origin_returns_matching_fixture(
     top_result = body["results"][0]
     assert top_result["ecli"] == "ECLI:BE:GHCC:2025:ARR.001"
     assert top_result["case_number"] == "2025-001n"
-    assert "omgevingsvergunning" in top_result["excerpt"].lower()
-    assert top_result["score"] > 0
+    assert top_result["chunks"]
+    assert "omgevingsvergunning" in top_result["chunks"][0]["excerpt"].lower()
+    assert top_result["best_score"] > 0
 
 
 def test_search_preflight_from_disallowed_origin_is_rejected(

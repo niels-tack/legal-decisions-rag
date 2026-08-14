@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python *)",
+      "Bash(just test *)",
+      "Bash(npm test *)",
+      "Bash(just check *)",
+      "Bash(npx tsc *)",
+      "Bash(echo \"Exit code: $?\")",
+      "Bash(echo \"Exit: $?\")"
+    ]
+  }
+}

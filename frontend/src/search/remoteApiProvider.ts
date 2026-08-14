@@ -1,13 +1,22 @@
 import type {
+  CaseSearchResult,
+  ChunkResult,
   FilterOptions,
   SearchFilters,
   SearchOptions,
   SearchProvider,
-  SearchResultItem,
 } from "./types";
 
-/** Matches `src/schemas.py::SearchResultItem` field-for-field (snake_case, as sent over HTTP). */
-interface ApiSearchResultItem {
+/** Mirrors `src/schemas.py::ChunkResult` field-for-field (snake_case, as sent over HTTP). */
+interface ApiChunkResult {
+  section: string;
+  paragraph_number: string | null;
+  excerpt: string;
+  score: number;
+}
+
+/** Mirrors `src/schemas.py::CaseSearchResult` field-for-field (snake_case, as sent over HTTP). */
+interface ApiCaseSearchResult {
   source: string;
   ecli: string;
   arrest_number: string;
@@ -19,22 +28,31 @@ interface ApiSearchResultItem {
   controlled_norm: string;
   outcome: string;
   title: string;
-  section: string;
-  paragraph_number: string | null;
-  excerpt: string;
   source_pdf_url: string;
-  score: number;
+  best_score: number;
+  chunks: ApiChunkResult[];
 }
 
 interface ApiSearchResponse {
   query: string;
-  results: ApiSearchResultItem[];
+  results: ApiCaseSearchResult[];
 }
 
 // Matches src/query_service/main.py::MAX_LIMIT - the API rejects (422) any
 // `limit` above this, so count()'s single-fetch approximation must respect
 // it too, not just the UI's own page size.
 const API_MAX_LIMIT = 20;
+
+function mapChunk(chunk: ApiChunkResult): ChunkResult {
+  return {
+    section: chunk.section,
+    paragraphNumber: chunk.paragraph_number,
+    excerpt: chunk.excerpt,
+    // Phase 2 API does not produce highlighted snippets yet.
+    highlightedSnippet: null,
+    score: chunk.score,
+  };
+}
 
 /**
  * Phase 2's `SearchProvider`: calls the hosted hybrid BM25 + vector search
@@ -57,7 +75,7 @@ export class RemoteApiProvider implements SearchProvider {
     query: string,
     filters: SearchFilters,
     options: SearchOptions,
-  ): Promise<SearchResultItem[]> {
+  ): Promise<CaseSearchResult[]> {
     const params = new URLSearchParams({ q: query, limit: String(options.limit) });
     for (const source of filters.sources ?? []) {
       params.append("sources", source);
@@ -81,12 +99,9 @@ export class RemoteApiProvider implements SearchProvider {
       controlledNorm: item.controlled_norm,
       outcome: item.outcome,
       title: item.title,
-      section: item.section,
-      paragraphNumber: item.paragraph_number,
-      excerpt: item.excerpt,
-      highlightedSnippet: null,
       sourcePdfUrl: item.source_pdf_url,
-      score: item.score,
+      bestScore: item.best_score,
+      chunks: item.chunks.map(mapChunk),
     }));
   }
 

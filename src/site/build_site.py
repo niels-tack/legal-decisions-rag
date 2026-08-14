@@ -124,6 +124,7 @@ def _render_section_nav(sections: dict[str, str]) -> str:
 _STYLE = """
 :root { color-scheme: light; }
 body { font-family: "Segoe UI", system-ui, sans-serif; max-width: 42rem; margin: 0 auto; padding: 0 1rem 3rem; line-height: 1.6; color: #16181d; }
+body.has-passage-nav { padding-bottom: 4rem; }
 a.back { display: inline-block; margin: 1.25rem 0 0.5rem; color: #0b4a7a; text-decoration: none; }
 a.back:hover { text-decoration: underline; }
 h1 { font-size: 1.5rem; margin: 0.5rem 0; }
@@ -135,9 +136,85 @@ dl.metadata dt { font-weight: 600; color: #565d6b; }
 .section-nav a:hover { text-decoration: underline; }
 .paragraph { scroll-margin-top: 3.5rem; }
 .paragraph:target { background: #fff1a8; }
+.paragraph.relevant { border-left: 3px solid #0b4a7a; padding-left: 0.75rem; background: #eaf2fa; }
+.paragraph.relevant:target { background: #fff1a8; }
 p { margin: 0 0 0.9rem; }
 footer.reader-footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #d8dce2; font-size: 0.85rem; color: #565d6b; }
 a:focus-visible, button:focus-visible { outline: 3px solid #1a6ec7; outline-offset: 2px; }
+#passage-nav { position: fixed; bottom: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: center; gap: 1rem; padding: 0.65rem 1rem; background: #fff; border-top: 1px solid #d8dce2; box-shadow: 0 -2px 6px rgba(0,0,0,.07); font-size: 0.9rem; z-index: 100; }
+#passage-nav span { color: #565d6b; }
+#passage-nav button { padding: 0.35rem 0.85rem; border: 1px solid #b7bfca; border-radius: 0.4rem; background: #f6f7f9; cursor: pointer; }
+#passage-nav button:hover:not(:disabled) { background: #eaf2fa; }
+#passage-nav button:disabled { opacity: 0.4; cursor: default; }
+"""
+
+# Reads the `?p=` query parameter (comma-separated paragraph IDs from the
+# search result) and, if present: marks each matching .paragraph as
+# .relevant (blue left border), then injects a fixed bottom nav bar so the
+# reader can step through all relevant passages without manual scrolling.
+_SCRIPT = """
+(function () {
+  var params = new URLSearchParams(location.search);
+  var raw = params.get('p') || '';
+  var ids = raw ? raw.split(',') : [];
+  if (!ids.length) return;
+
+  var elements = [];
+  ids.forEach(function (id) {
+    var el = document.getElementById(id);
+    if (el) { el.classList.add('relevant'); elements.push({ id: id, el: el }); }
+  });
+  if (!elements.length) return;
+
+  // Sort by document order (top to bottom), not by score order from ?p=,
+  // so Vorige/Volgende steps follow the text, not the relevance ranking.
+  elements.sort(function (a, b) { return a.el.compareDocumentPosition(b.el) & 4 ? -1 : 1; });
+
+  var hash = location.hash ? decodeURIComponent(location.hash.slice(1)) : '';
+  var current = 0;
+  for (var i = 0; i < elements.length; i++) {
+    if (elements[i].id === hash) { current = i; break; }
+  }
+
+  if (elements.length < 2) return;
+
+  document.body.classList.add('has-passage-nav');
+
+  var nav = document.createElement('div');
+  nav.id = 'passage-nav';
+  nav.setAttribute('role', 'navigation');
+  nav.setAttribute('aria-label', 'Navigatie tussen relevante passages');
+
+  var prev = document.createElement('button');
+  prev.textContent = '\\u2190 Vorige passage';
+
+  var lbl = document.createElement('span');
+
+  var next = document.createElement('button');
+  next.textContent = 'Volgende passage \\u2192';
+
+  function update() {
+    lbl.textContent = 'Passage ' + (current + 1) + ' van ' + elements.length + '\\u00a0\\u00b7\\u00a0' + elements[current].id;
+    prev.disabled = current === 0;
+    next.disabled = current === elements.length - 1;
+  }
+
+  function go(idx) {
+    current = idx;
+    history.replaceState(null, '', location.pathname + location.search + '#' + encodeURIComponent(elements[current].id));
+    elements[current].el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    update();
+  }
+
+  prev.addEventListener('click', function () { if (current > 0) go(current - 1); });
+  next.addEventListener('click', function () { if (current < elements.length - 1) go(current + 1); });
+
+  nav.appendChild(prev);
+  nav.appendChild(lbl);
+  nav.appendChild(next);
+  document.body.appendChild(nav);
+  update();
+}());
 """
 
 
@@ -204,6 +281,7 @@ def render_case_page(metadata: CaseMetadata, sections: dict[str, str]) -> str:
 <footer class="reader-footer">
 <p>Dit is geen juridisch advies. Verifieer elke passage aan de hand van het originele PDF.</p>
 </footer>
+<script>{_SCRIPT}</script>
 </body>
 </html>
 """
