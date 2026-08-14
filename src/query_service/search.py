@@ -14,6 +14,7 @@ from collections.abc import Callable
 
 import numpy as np
 
+from src.db_schema import EMBEDDING_QUERY_PREFIX
 from src.schemas import CaseSearchResult, ChunkResult
 
 # Standard RRF smoothing constant: dampens the influence of very high ranks
@@ -171,7 +172,11 @@ def _semantic_search(
     if not rows:
         return []
 
-    query_vector = embed_fn([query_text])[0].astype(np.float32)
+    # Apply the query prefix required by E5-class models. The passage prefix
+    # is applied at index time by embed_passages; the query prefix must be
+    # applied here at retrieval time. Both prefixes are defined in
+    # src.db_schema so a model change updates both places atomically.
+    query_vector = embed_fn([EMBEDDING_QUERY_PREFIX + query_text])[0].astype(np.float32)
     stored_vectors = np.stack([np.frombuffer(row[5], dtype=np.float32) for row in rows])
     scores = stored_vectors @ query_vector
 

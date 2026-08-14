@@ -29,10 +29,14 @@ from pathlib import Path
 import numpy as np
 
 from src.db_schema import (
+    EMBEDDING_DIM,
     EMBEDDING_MODEL_NAME,
+    EMBEDDING_PASSAGE_PREFIX,
+    EMBEDDING_QUERY_PREFIX,
     initialize_database,
     insert_chunk,
     tune_for_range_access,
+    upsert_model_meta,
 )
 from src.markdown_case import MalformedFrontmatterError, parse_case_file
 from src.schemas import CaseMetadata
@@ -205,18 +209,22 @@ def add_embeddings(
 ) -> int:
     """Phase 2 additive step: compute and store embeddings for every chunk.
 
-    Populates the ``embeddings`` table (reserved by
-    ``src.db_schema.EMBEDDINGS_TABLE_SQL``) for every ``chunks`` row that
-    doesn't already have one, so this can be re-run safely on top of an
-    existing artifact. Never invoked by the Phase 1 build path or its CI
-    job; only the Phase 2 index-build step (adding embeddings before
-    uploading to Scaleway Object Storage) calls this.
+    Populates the ``embeddings`` table for every ``chunks`` row that doesn't
+    already have one, so this can be re-run safely on top of an existing
+    artifact. After all vectors are stored, writes a ``model_meta`` row
+    recording the model name, dimension, and the prefix strings required at
+    query time - so the query service can verify it is using byte-identical
+    weights and prefixes.
+
+    Never invoked by the Phase 1 build path or its CI job; only the Phase 2
+    index-build step (adding embeddings before uploading to Scaleway Object
+    Storage) calls this.
 
     Args:
         db_path: Path to an existing ``cases.db`` built by ``build_index``.
-        embed_fn: Callable computing L2-normalized embeddings for a batch
-            of texts. Defaults to
-            ``src.indexing.embeddings.embed_texts``, imported lazily so
+        embed_fn: Callable computing L2-normalized embeddings for a batch of
+            passage texts (already passage-prefixed if required). Defaults to
+            ``src.indexing.embeddings.embed_passages``, imported lazily so
             that importing this module (and running the Phase 1 build)
             never requires ``sentence-transformers`` to be installed.
         batch_size: Number of chunk texts embedded per model call.
@@ -225,7 +233,7 @@ def add_embeddings(
         The number of newly embedded chunks.
     """
     if embed_fn is None:
-        from src.indexing.embeddings import embed_texts as embed_fn
+        from src.indexing.embeddings import embed_passages as embed_fn
 
     model_name = getattr(embed_fn, "model_name", EMBEDDING_MODEL_NAME)
 
@@ -238,9 +246,12 @@ def add_embeddings(
         ).fetchall()
 
         embedded_count = 0
+        first_vector_dim: int | None = None
         for start in range(0, len(rows), batch_size):
             batch = rows[start : start + batch_size]
             vectors = embed_fn([text for _chunk_id, text in batch])
+            if first_vector_dim is None and len(vectors):
+                first_vector_dim = vectors.shape[1]
             conn.executemany(
                 "INSERT INTO embeddings (chunk_id, model_name, vector) "
                 "VALUES (?, ?, ?)",
@@ -254,6 +265,15 @@ def add_embeddings(
                 ],
             )
             embedded_count += len(batch)
+
+        vector_dim = first_vector_dim or EMBEDDING_DIM
+        upsert_model_meta(
+            conn,
+            model_name=model_name,
+            vector_dim=vector_dim,
+            query_prefix=EMBEDDING_QUERY_PREFIX,
+            passage_prefix=EMBEDDING_PASSAGE_PREFIX,
+        )
         conn.commit()
         return embedded_count
     finally:

@@ -11,10 +11,6 @@ Onboarding a new body means:
 2. Working out its paragraph-numbering convention (if any) from real
    rulings and registering a new ``SourceConfig`` below with the correct
    ``paragraph_marker_re``, ``section_headers``, and ``heading_normalizer``.
-
-Nothing in ``src.indexing.build_index``, ``src.markdown_case``, or
-``src.query_service`` needs to change for either step - they read this
-registry, not any specific body's hard-coded conventions.
 """
 
 from __future__ import annotations
@@ -27,13 +23,6 @@ from dataclasses import dataclass, field
 # ---------------------------------------------------------------------------
 
 SOURCE_CONSTITUTIONAL_COURT = "GHCC"
-
-# GHCC-specific section label constants. These strings are stored verbatim
-# in the ``chunks.section`` column of ``cases.db`` and rendered as section
-# anchors on case pages. The ingestion modules (``src.ingestion.extract``
-# and ``src.ingestion.assemble``) import these rather than ``src.schemas``
-# so the label definitions stay in one place alongside the rest of the
-# GHCC configuration.
 GHCC_SECTION_FACTS = "facts"
 GHCC_SECTION_ARGUMENTS = "arguments"
 GHCC_SECTION_REASONING = "reasoning"
