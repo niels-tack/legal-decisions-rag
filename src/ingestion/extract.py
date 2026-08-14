@@ -18,12 +18,11 @@ from pathlib import Path
 
 import pdfplumber
 
-from src.schemas import (
-    KNOWN_SECTIONS,
-    SECTION_ARGUMENTS,
-    SECTION_FACTS,
-    SECTION_REASONING,
-    SECTION_RULING,
+from src.sources import (
+    GHCC_SECTION_ARGUMENTS,
+    GHCC_SECTION_FACTS,
+    GHCC_SECTION_REASONING,
+    GHCC_SECTION_RULING,
 )
 
 # Observed per page of the sample ruling:
@@ -175,23 +174,26 @@ def split_into_sections(full_text: str) -> dict[str, str]:
 
     facts_match = _FACTS_MARKER_RE.search(full_text)
     if facts_match:
-        markers.append((SECTION_FACTS, facts_match.start()))
+        markers.append((GHCC_SECTION_FACTS, facts_match.start()))
 
     arguments_match = _ARGUMENTS_MARKER_RE.search(full_text)
     if arguments_match:
-        markers.append((SECTION_ARGUMENTS, arguments_match.start()))
+        markers.append((GHCC_SECTION_ARGUMENTS, arguments_match.start()))
 
     reasoning_match = _REASONING_MARKER_RE.search(full_text)
     if reasoning_match:
-        markers.append((SECTION_REASONING, reasoning_match.start()))
+        markers.append((GHCC_SECTION_REASONING, reasoning_match.start()))
 
     ruling_start = _find_ruling_start(full_text)
     if ruling_start is not None:
-        markers.append((SECTION_RULING, ruling_start))
+        markers.append((GHCC_SECTION_RULING, ruling_start))
 
     markers.sort(key=lambda marker: marker[1])
 
-    sections: dict[str, str] = dict.fromkeys(KNOWN_SECTIONS, "")
+    sections: dict[str, str] = dict.fromkeys(
+        (GHCC_SECTION_FACTS, GHCC_SECTION_ARGUMENTS, GHCC_SECTION_REASONING, GHCC_SECTION_RULING),
+        "",
+    )
     for position, (section, start) in enumerate(markers):
         end = (
             markers[position + 1][1] if position + 1 < len(markers) else len(full_text)

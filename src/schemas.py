@@ -51,15 +51,7 @@ class CaseMetadata(BaseModel):
 
 
 class Chunk(BaseModel):
-    """One numbered-paragraph chunk of a ruling's body text.
-
-    Chunking happens at the paragraph-numbering granularity of the ruling's
-    own body (e.g. ``B.7.3``), not at the coarser section granularity -
-    ``section`` is retained purely as metadata. A section with no numbering
-    (or a body with no numbering convention at all, see
-    ``src.sources.SourceConfig.paragraph_marker_re``) falls back to a single
-    whole-section chunk with ``paragraph_number=None``.
-    """
+    """One numbered-paragraph chunk of a ruling's body text."""
 
     case_id: int = Field(..., description="Foreign key into the cases table")
     section: str = Field(..., description="One of: facts, arguments, reasoning, ruling")
@@ -87,10 +79,9 @@ class ChunkResult(BaseModel):
 
 
 class CaseSearchResult(BaseModel):
-    """One ranked case with its top matching chunks.
-
-    Cases are ranked by their best chunk's score. At most
-    ``_MAX_CHUNKS_PER_CASE`` chunks are included, ordered best-first.
+    """One ranked case with its top matching chunks. Cases are ranked by their 
+    best chunk's score. Chunks within a case are ranked best-first by their own 
+    scores.
     """
 
     source: str = Field(..., description="Issuing judicial body, e.g. 'GHCC'")
@@ -120,10 +111,3 @@ class SearchResponse(BaseModel):
     results: list[CaseSearchResult]
 
 
-# Structural section labels used consistently by the Markdown assembler,
-# the index builder's chunker, and any documentation referencing sections.
-SECTION_FACTS = "facts"
-SECTION_ARGUMENTS = "arguments"
-SECTION_REASONING = "reasoning"
-SECTION_RULING = "ruling"
-KNOWN_SECTIONS = (SECTION_FACTS, SECTION_ARGUMENTS, SECTION_REASONING, SECTION_RULING)

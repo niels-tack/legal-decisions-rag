@@ -21,21 +21,11 @@ import re
 from pathlib import Path
 
 from src.indexing.build_index import split_into_paragraphs
-from src.markdown_case import (
-    SECTION_HEADERS,
-    MalformedFrontmatterError,
-    parse_case_file,
-)
+from src.markdown_case import MalformedFrontmatterError, parse_case_file
 from src.schemas import CaseMetadata
 from src.sources import SourceConfig, get_source
 
 logger = logging.getLogger(__name__)
-
-# Human-readable section titles, derived from the same headers
-# src.markdown_case knows the Markdown assembler emits (stripping the "## ").
-SECTION_DISPLAY_NAMES: dict[str, str] = {
-    section: header.removeprefix("## ") for header, section in SECTION_HEADERS
-}
 
 # Splits a chunk's text into its own visual sub-paragraphs on blank lines,
 # since a whole-section fallback chunk (no numbering) is often several
@@ -56,11 +46,18 @@ def _render_chunk_body(text: str) -> str:
     return "\n".join(f"<p>{html.escape(p)}</p>" for p in paragraphs)
 
 
-def _render_section(section: str, section_text: str, source_config: SourceConfig) -> str:
-    """Render one broad section (facts/arguments/reasoning/ruling) as HTML.
+def _render_section(
+    section_label: str,
+    display_name: str,
+    section_text: str,
+    source_config: SourceConfig,
+) -> str:
+    """Render one section as HTML.
 
     Args:
-        section: The section constant (see ``src.schemas``).
+        section_label: The section's free-form label (e.g. ``"facts"``).
+        display_name: Human-readable heading derived from the Markdown header
+            (the ``##`` prefix stripped).
         section_text: That section's trimmed body text (may be empty).
         source_config: The issuing body's ``SourceConfig``, for
             ``split_into_paragraphs``.
@@ -86,31 +83,33 @@ def _render_section(section: str, section_text: str, source_config: SourceConfig
             chunk_html_blocks.append(body_html)
 
     return (
-        f'<section id="section-{html.escape(section)}">\n'
-        f"<h2>{html.escape(SECTION_DISPLAY_NAMES[section])}</h2>\n"
+        f'<section id="section-{html.escape(section_label)}">\n'
+        f"<h2>{html.escape(display_name)}</h2>\n"
         + "\n".join(chunk_html_blocks)
         + "\n</section>"
     )
 
 
-def _render_section_nav(sections: dict[str, str]) -> str:
+def _render_section_nav(sections: dict[str, str], source_config: SourceConfig) -> str:
     """Render a sticky navigator linking to each section actually present.
 
     A ruling can run to hundreds of thousands of words (see the functional
-    requirements), so a way to jump straight to facts / arguments /
-    reasoning / operative ruling - without endless scrolling - is real
-    reading-usability, not decoration.
+    requirements), so a way to jump straight between sections - without
+    endless scrolling - is real reading-usability, not decoration.
 
     Args:
-        sections: Mapping of section constant to section body text.
+        sections: Mapping of section label to section body text.
+        source_config: The issuing body's config, whose ``section_headers``
+            define the labels and their display names in document order.
 
     Returns:
         HTML markup for the nav, or an empty string if no section has text.
     """
     links = [
-        f'<a href="#section-{html.escape(section)}">{html.escape(SECTION_DISPLAY_NAMES[section])}</a>'
-        for section in SECTION_DISPLAY_NAMES
-        if sections.get(section, "")
+        f'<a href="#section-{html.escape(label)}">'
+        f'{html.escape(header.removeprefix("## "))}</a>'
+        for header, label in source_config.section_headers
+        if sections.get(label, "")
     ]
     if not links:
         return ""
@@ -250,10 +249,17 @@ def render_case_page(metadata: CaseMetadata, sections: dict[str, str]) -> str:
 
     sections_html = "\n".join(
         section_html
-        for section in SECTION_DISPLAY_NAMES
-        if (section_html := _render_section(section, sections.get(section, ""), source_config))
+        for md_header, section_label in source_config.section_headers
+        if (
+            section_html := _render_section(
+                section_label,
+                md_header.removeprefix("## "),
+                sections.get(section_label, ""),
+                source_config,
+            )
+        )
     )
-    section_nav_html = _render_section_nav(sections)
+    section_nav_html = _render_section_nav(sections, source_config)
 
     title = html.escape(metadata.title)
     ecli = html.escape(metadata.ecli)

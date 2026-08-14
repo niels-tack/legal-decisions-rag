@@ -4,11 +4,11 @@ from pathlib import Path
 
 import pytest
 from src.ingestion import extract
-from src.schemas import (
-    SECTION_ARGUMENTS,
-    SECTION_FACTS,
-    SECTION_REASONING,
-    SECTION_RULING,
+from src.sources import (
+    GHCC_SECTION_ARGUMENTS,
+    GHCC_SECTION_FACTS,
+    GHCC_SECTION_REASONING,
+    GHCC_SECTION_RULING,
 )
 
 SAMPLE_PDF_PATH = (
@@ -42,10 +42,10 @@ def test_extract_case_sections_finds_all_four_sections(
 ) -> None:
     """Every one of the four structural sections should be found and non-empty."""
     for section in (
-        SECTION_FACTS,
-        SECTION_ARGUMENTS,
-        SECTION_REASONING,
-        SECTION_RULING,
+        GHCC_SECTION_FACTS,
+        GHCC_SECTION_ARGUMENTS,
+        GHCC_SECTION_REASONING,
+        GHCC_SECTION_RULING,
     ):
         assert sample_sections[section].strip(), f"section {section!r} was empty"
 
@@ -54,25 +54,25 @@ def test_facts_section_starts_at_roman_numeral_heading(
     sample_sections: dict[str, str],
 ) -> None:
     """The facts section should start at the "I." heading, not mid-sentence."""
-    assert sample_sections[SECTION_FACTS].startswith("I.")
+    assert sample_sections[GHCC_SECTION_FACTS].startswith("I.")
 
 
 def test_arguments_section_starts_at_a_marker(sample_sections: dict[str, str]) -> None:
     """The party-arguments section should start at the "- A -" marker."""
-    assert sample_sections[SECTION_ARGUMENTS].startswith("- A -")
+    assert sample_sections[GHCC_SECTION_ARGUMENTS].startswith("- A -")
 
 
 def test_reasoning_section_starts_at_b_marker(sample_sections: dict[str, str]) -> None:
     """The Court's-reasoning section should start at the "- B -" marker."""
-    assert sample_sections[SECTION_REASONING].startswith("- B -")
+    assert sample_sections[GHCC_SECTION_REASONING].startswith("- B -")
 
 
 def test_ruling_section_contains_operative_formula(
     sample_sections: dict[str, str],
 ) -> None:
     """The ruling section should contain the standard "Om die redenen" formula."""
-    assert "Om die redenen" in sample_sections[SECTION_RULING]
-    assert "zegt voor recht" in sample_sections[SECTION_RULING]
+    assert "Om die redenen" in sample_sections[GHCC_SECTION_RULING]
+    assert "zegt voor recht" in sample_sections[GHCC_SECTION_RULING]
 
 
 def test_boilerplate_ecli_footer_does_not_leak_into_sections(
@@ -102,10 +102,10 @@ def test_split_into_sections_leaves_missing_marker_empty() -> None:
     """A marker that never appears should leave its section empty, not raise."""
     sections = extract.split_into_sections("just some unrelated text with no markers")
 
-    assert sections[SECTION_FACTS] == ""
-    assert sections[SECTION_ARGUMENTS] == ""
-    assert sections[SECTION_REASONING] == ""
-    assert sections[SECTION_RULING] == ""
+    assert sections[GHCC_SECTION_FACTS] == ""
+    assert sections[GHCC_SECTION_ARGUMENTS] == ""
+    assert sections[GHCC_SECTION_REASONING] == ""
+    assert sections[GHCC_SECTION_RULING] == ""
 
 
 def test_split_into_sections_tolerates_en_dash_marker_variant() -> None:
@@ -114,5 +114,5 @@ def test_split_into_sections_tolerates_en_dash_marker_variant() -> None:
 
     sections = extract.split_into_sections(text)
 
-    assert sections[SECTION_REASONING].startswith("- B")
-    assert "Reasoning here" in sections[SECTION_REASONING]
+    assert sections[GHCC_SECTION_REASONING].startswith("- B")
+    assert "Reasoning here" in sections[GHCC_SECTION_REASONING]

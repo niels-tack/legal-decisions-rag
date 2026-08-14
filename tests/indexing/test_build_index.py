@@ -21,7 +21,10 @@ from src.sources import SOURCE_CONSTITUTIONAL_COURT, SourceConfig, get_source
 FIXTURES_DIR = Path(__file__).parent / "fixtures"
 FAKE_EMBEDDING_DIM = 8
 _NO_NUMBERING_SOURCE = SourceConfig(
-    key="TEST_NO_NUMBERING", name="Test source with no numbering", paragraph_marker_re=None
+    key="TEST_NO_NUMBERING",
+    name="Test source with no numbering",
+    paragraph_marker_re=None,
+    section_headers=(),
 )
 
 

@@ -35,13 +35,7 @@ from src.db_schema import (
     tune_for_range_access,
 )
 from src.markdown_case import MalformedFrontmatterError, parse_case_file
-from src.schemas import (
-    SECTION_ARGUMENTS,
-    SECTION_FACTS,
-    SECTION_REASONING,
-    SECTION_RULING,
-    CaseMetadata,
-)
+from src.schemas import CaseMetadata
 from src.sources import SourceConfig, get_source
 
 logger = logging.getLogger(__name__)
@@ -146,8 +140,8 @@ def _index_file(conn: sqlite3.Connection, md_file: Path, next_chunk_id: int) -> 
 
     chunk_id = next_chunk_id
     order = 0
-    for section in (SECTION_FACTS, SECTION_ARGUMENTS, SECTION_REASONING, SECTION_RULING):
-        section_text = sections.get(section, "")
+    for _header, section_label in source_config.section_headers:
+        section_text = sections.get(section_label, "")
         for paragraph_number, parent_numbers, chunk_text in split_into_paragraphs(
             section_text, source_config
         ):
@@ -155,7 +149,7 @@ def _index_file(conn: sqlite3.Connection, md_file: Path, next_chunk_id: int) -> 
                 conn,
                 chunk_id,
                 case_id,
-                section,
+                section_label,
                 order,
                 chunk_text,
                 paragraph_number=paragraph_number,

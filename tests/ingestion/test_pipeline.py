@@ -18,11 +18,11 @@ import pytest
 import requests
 from requests.adapters import HTTPAdapter
 from src.ingestion import discover, extract, pipeline
-from src.schemas import (
-    SECTION_ARGUMENTS,
-    SECTION_FACTS,
-    SECTION_REASONING,
-    SECTION_RULING,
+from src.sources import (
+    GHCC_SECTION_ARGUMENTS,
+    GHCC_SECTION_FACTS,
+    GHCC_SECTION_REASONING,
+    GHCC_SECTION_RULING,
 )
 
 
@@ -180,10 +180,10 @@ def test_process_ruling_writes_markdown_with_merged_metadata(
         extract,
         "extract_case_sections",
         lambda pdf_path: {
-            SECTION_FACTS: "I. Facts",
-            SECTION_ARGUMENTS: "- A - Arguments",
-            SECTION_REASONING: "- B - Reasoning",
-            SECTION_RULING: "Om die redenen, Ruling",
+            GHCC_SECTION_FACTS: "I. Facts",
+            GHCC_SECTION_ARGUMENTS: "- A - Arguments",
+            GHCC_SECTION_REASONING: "- B - Reasoning",
+            GHCC_SECTION_RULING: "Om die redenen, Ruling",
         },
     )
 

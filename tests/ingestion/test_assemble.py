@@ -5,12 +5,12 @@ from pathlib import Path
 
 import yaml
 from src.ingestion import assemble
-from src.schemas import (
-    SECTION_ARGUMENTS,
-    SECTION_FACTS,
-    SECTION_REASONING,
-    SECTION_RULING,
-    CaseMetadata,
+from src.schemas import CaseMetadata
+from src.sources import (
+    GHCC_SECTION_ARGUMENTS,
+    GHCC_SECTION_FACTS,
+    GHCC_SECTION_REASONING,
+    GHCC_SECTION_RULING,
 )
 
 SAMPLE_METADATA = CaseMetadata(
@@ -30,10 +30,10 @@ SAMPLE_METADATA = CaseMetadata(
 )
 
 SAMPLE_SECTIONS = {
-    SECTION_FACTS: "I. Onderwerp en rechtspleging.\n\nDe feiten worden uiteengezet.",
-    SECTION_ARGUMENTS: "- A -\n\nDe partijen voeren het volgende aan.",
-    SECTION_REASONING: "- B -\n\nHet Hof oordeelt als volgt.",
-    SECTION_RULING: "Om die redenen, het Hof zegt voor recht.",
+    GHCC_SECTION_FACTS: "I. Onderwerp en rechtspleging.\n\nDe feiten worden uiteengezet.",
+    GHCC_SECTION_ARGUMENTS: "- A -\n\nDe partijen voeren het volgende aan.",
+    GHCC_SECTION_REASONING: "- B -\n\nHet Hof oordeelt als volgt.",
+    GHCC_SECTION_RULING: "Om die redenen, het Hof zegt voor recht.",
 }
 
 
@@ -90,7 +90,7 @@ def test_render_markdown_frontmatter_round_trips_through_yaml() -> None:
 def test_render_markdown_missing_section_yields_empty_but_present_header() -> None:
     """A missing section should still get its header, with an empty body."""
     sections_without_ruling = {
-        key: value for key, value in SAMPLE_SECTIONS.items() if key != SECTION_RULING
+        key: value for key, value in SAMPLE_SECTIONS.items() if key != GHCC_SECTION_RULING
     }
 
     markdown = assemble.render_markdown(SAMPLE_METADATA, sections_without_ruling)

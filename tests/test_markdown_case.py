@@ -18,11 +18,12 @@ from src.markdown_case import (
     split_frontmatter,
     split_sections,
 )
-from src.schemas import (
-    SECTION_ARGUMENTS,
-    SECTION_FACTS,
-    SECTION_REASONING,
-    SECTION_RULING,
+from src.sources import (
+    GHCC_SECTION_ARGUMENTS,
+    GHCC_SECTION_FACTS,
+    GHCC_SECTION_REASONING,
+    GHCC_SECTION_RULING,
+    get_source,
 )
 
 FIXTURES_DIR = Path(__file__).parent / "indexing" / "fixtures"
@@ -66,13 +67,14 @@ def test_split_sections_orders_by_position_not_declaration_order() -> None:
         "## Beschikking\n\nRuling text.\n\n"
         "## Feiten en rechtspleging\n\nFacts text."
     )
+    ghcc = get_source("GHCC")
 
-    sections = split_sections(body)
+    sections = split_sections(body, ghcc)
 
-    assert sections[SECTION_RULING] == "Ruling text."
-    assert sections[SECTION_FACTS] == "Facts text."
-    assert SECTION_ARGUMENTS not in sections
-    assert SECTION_REASONING not in sections
+    assert sections[GHCC_SECTION_RULING] == "Ruling text."
+    assert sections[GHCC_SECTION_FACTS] == "Facts text."
+    assert GHCC_SECTION_ARGUMENTS not in sections
+    assert GHCC_SECTION_REASONING not in sections
 
 
 def test_parse_case_file_reads_real_fixture() -> None:
@@ -81,7 +83,7 @@ def test_parse_case_file_reads_real_fixture() -> None:
 
     assert metadata.ecli == "ECLI:BE:GHCC:2025:ARR.001"
     assert metadata.source == "GHCC"
-    assert "discriminatie" in sections[SECTION_FACTS].lower()
+    assert "discriminatie" in sections[GHCC_SECTION_FACTS].lower()
 
 
 def test_parse_case_file_raises_on_broken_fixture() -> None:
