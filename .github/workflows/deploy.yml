@@ -23,13 +23,18 @@
 #   SCW_REGISTRY_NAMESPACE      Name of the Scaleway Container Registry
 #                                namespace (the `scaleway_registry_namespace`
 #                                Terraform resource) to push images to.
-#   SHARED_API_KEY              The query service's own shared static API key,
-#                                passed to Terraform as TF_VAR_shared_api_key
-#                                so it can be injected into the deployed
-#                                container's environment.
+#
+# Required repository/org variable (Settings > Secrets and variables >
+# Actions > Variables - not a secret, the query service is keyless):
+#   ALLOWED_ORIGIN              The deployed website's origin, passed to
+#                                Terraform as TF_VAR_allowed_origin to lock
+#                                down the query service's CORS policy. If
+#                                unset, Terraform's default ("") leaves the
+#                                API rejecting every browser origin - safe,
+#                                but set this once the site is live.
 #
 # NOTE: if infra/terraform/ declares additional required variables beyond
-# `image_tag` and `shared_api_key`, add matching TF_VAR_<name> secrets/env
+# `image_tag` and `allowed_origin`, add matching TF_VAR_<name> secrets/env
 # entries to the "Terraform apply" step below - Terraform will otherwise fail
 # loudly with a "No value for required variable" error, which is the desired
 # fail-closed behavior.
@@ -67,14 +72,12 @@ jobs:
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
           SCW_DEFAULT_PROJECT_ID: ${{ secrets.SCW_DEFAULT_PROJECT_ID }}
           SCW_REGISTRY_NAMESPACE: ${{ secrets.SCW_REGISTRY_NAMESPACE }}
-          SHARED_API_KEY: ${{ secrets.SHARED_API_KEY }}
         run: |
           set -euo pipefail
           : "${SCW_ACCESS_KEY:?Missing required secret SCW_ACCESS_KEY}"
           : "${SCW_SECRET_KEY:?Missing required secret SCW_SECRET_KEY}"
           : "${SCW_DEFAULT_PROJECT_ID:?Missing required secret SCW_DEFAULT_PROJECT_ID}"
           : "${SCW_REGISTRY_NAMESPACE:?Missing required secret SCW_REGISTRY_NAMESPACE}"
-          : "${SHARED_API_KEY:?Missing required secret SHARED_API_KEY}"
           echo "All required secrets are present."
 
       - name: Checkout
@@ -125,7 +128,7 @@ jobs:
           SCW_DEFAULT_REGION: ${{ env.SCW_DEFAULT_REGION }}
           AWS_ACCESS_KEY_ID: ${{ secrets.SCW_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SCW_SECRET_KEY }}
-          TF_VAR_shared_api_key: ${{ secrets.SHARED_API_KEY }}
+          TF_VAR_allowed_origin: ${{ vars.ALLOWED_ORIGIN }}
         run: |
           set -euo pipefail
           terraform apply -auto-approve -input=false -var "image_tag=${{ github.sha }}"

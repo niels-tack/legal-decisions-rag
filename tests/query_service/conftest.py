@@ -9,6 +9,7 @@ test needs to download the real sentence-transformers model.
 
 from __future__ import annotations
 
+import importlib
 import sqlite3
 from collections.abc import Iterator
 from pathlib import Path
@@ -16,9 +17,9 @@ from pathlib import Path
 import numpy as np
 import pytest
 from fastapi.testclient import TestClient
-from src.db_schema import initialize_database, insert_passage
+from src.db_schema import initialize_database, insert_chunk
 
-TEST_API_KEY = "test-shared-key"
+TEST_ALLOWED_ORIGIN = "https://example-site.test"
 
 # Small fixed-dimension vectors so the fake embedder never needs the real
 # model. Deliberately distinct per fixture passage so semantic ranking has
@@ -28,22 +29,52 @@ _FIXTURE_VECTORS = {
     "environment": np.array([1.0, 0.0, 0.0, 0.0], dtype=np.float32),
     "pension": np.array([0.0, 1.0, 0.0, 0.0], dtype=np.float32),
     "tax": np.array([0.0, 0.0, 1.0, 0.0], dtype=np.float32),
+    "traffic": np.array([0.0, 0.0, 0.0, 1.0], dtype=np.float32),
 }
 
-# Fabricated passages: (case row index, section, text, embedding key).
+# Fabricated passages: (case row index, section, text, embedding key,
+# paragraph_number, parent_numbers). The first passage carries a numbered
+# identifier so search-result propagation of paragraph_number/section can
+# be exercised end to end; the rest are unnumbered whole-section chunks,
+# same as a section with no numbering convention.
 _FIXTURE_PASSAGES = [
     (
         0,
         "reasoning",
         "De omgevingsvergunning voor milieu werd geweigerd.",
         "environment",
+        "B.7",
+        ["B"],
     ),
-    (1, "reasoning", "Het pensioenstelsel voor sociale zekerheid wijzigt.", "pension"),
-    (2, "reasoning", "De fiscale controle op belastingen was onrechtmatig.", "tax"),
+    (
+        1,
+        "reasoning",
+        "Het pensioenstelsel voor sociale zekerheid wijzigt.",
+        "pension",
+        None,
+        [],
+    ),
+    (
+        2,
+        "reasoning",
+        "De fiscale controle op belastingen was onrechtmatig.",
+        "tax",
+        None,
+        [],
+    ),
+    (
+        3,
+        "reasoning",
+        "De verkeersboete werd wegens een vormgebrek vernietigd.",
+        "traffic",
+        None,
+        [],
+    ),
 ]
 
 _FIXTURE_CASES = [
     {
+        "source": "GHCC",
         "ecli": "ECLI:BE:GHCC:2025:ARR.001",
         "arrest_number": "1/2025",
         "role_number": "8001",
@@ -58,6 +89,7 @@ _FIXTURE_CASES = [
         "title": "Omgevingsvergunning milieu",
     },
     {
+        "source": "GHCC",
         "ecli": "ECLI:BE:GHCC:2025:ARR.002",
         "arrest_number": "2/2025",
         "role_number": "8002",
@@ -72,6 +104,7 @@ _FIXTURE_CASES = [
         "title": "Pensioenstelsel",
     },
     {
+        "source": "GHCC",
         "ecli": "ECLI:BE:GHCC:2025:ARR.003",
         "arrest_number": "3/2025",
         "role_number": "8003",
@@ -84,6 +117,24 @@ _FIXTURE_CASES = [
         "keywords": "[]",
         "source_pdf_url": "https://nl.const-court.be/2025-003n.pdf",
         "title": "Fiscale controle",
+    },
+    {
+        # A non-Constitutional-Court body, purely to exercise the `sources`
+        # filter - search.py filters on the plain `cases.source` column and
+        # doesn't require this key to be registered in src.sources.SOURCES.
+        "source": "OTHER",
+        "ecli": "ECLI:BE:OTHER:2025:ARR.004",
+        "arrest_number": "4/2025",
+        "role_number": "8004",
+        "file_slug": "2025-004x",
+        "ruling_date": "2025-04-10",
+        "language": "nl",
+        "procedure_type": "Beroep",
+        "controlled_norm": "Wegverkeersreglement",
+        "outcome": "Vernietiging",
+        "keywords": "[]",
+        "source_pdf_url": "https://example.test/2025-004x.pdf",
+        "title": "Verkeersboete",
     },
 ]
 
@@ -110,6 +161,8 @@ def fake_embed_fn(texts: list[str]) -> np.ndarray:
             vectors.append(_FIXTURE_VECTORS["pension"])
         elif "fiscale" in lowered or "belasting" in lowered:
             vectors.append(_FIXTURE_VECTORS["tax"])
+        elif "verkeer" in lowered or "boete" in lowered:
+            vectors.append(_FIXTURE_VECTORS["traffic"])
         else:
             vectors.append(np.zeros(_EMBEDDING_DIM, dtype=np.float32))
     return np.stack(vectors).astype(np.float32)
@@ -126,12 +179,13 @@ def _build_fixture_db(db_path: Path) -> None:
 
     for case_id, case in enumerate(_FIXTURE_CASES, start=1):
         conn.execute(
-            "INSERT INTO cases (case_id, ecli, arrest_number, role_number, "
-            "file_slug, ruling_date, language, procedure_type, "
+            "INSERT INTO cases (case_id, source, ecli, arrest_number, "
+            "role_number, file_slug, ruling_date, language, procedure_type, "
             "controlled_norm, outcome, keywords, source_pdf_url, title) "
-            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
             (
                 case_id,
+                case["source"],
                 case["ecli"],
                 case["arrest_number"],
                 case["role_number"],
@@ -147,17 +201,29 @@ def _build_fixture_db(db_path: Path) -> None:
             ),
         )
 
-    for passage_id, (case_index, section, text, embedding_key) in enumerate(
-        _FIXTURE_PASSAGES, start=1
-    ):
+    for chunk_id, (
+        case_index,
+        section,
+        text,
+        embedding_key,
+        paragraph_number,
+        parent_numbers,
+    ) in enumerate(_FIXTURE_PASSAGES, start=1):
         case_id = case_index + 1
-        insert_passage(conn, passage_id, case_id, section, text)
+        insert_chunk(
+            conn,
+            chunk_id,
+            case_id,
+            section,
+            0,
+            text,
+            paragraph_number=paragraph_number,
+            parent_numbers=parent_numbers,
+        )
         vector = _FIXTURE_VECTORS[embedding_key]
         conn.execute(
-            "INSERT INTO passage_embeddings "
-            "(passage_id, case_id, section, text, model_name, vector) "
-            "VALUES (?, ?, ?, ?, ?, ?)",
-            (passage_id, case_id, section, text, "fake-test-model", vector.tobytes()),
+            "INSERT INTO embeddings (chunk_id, model_name, vector) VALUES (?, ?, ?)",
+            (chunk_id, "fake-test-model", vector.tobytes()),
         )
 
     conn.commit()
@@ -186,7 +252,7 @@ def client(
     """A ``TestClient`` wired to the fixture database and a fake embedder.
 
     Sets ``CASES_DB_PATH`` (so the app's lifespan opens the fixture file
-    instead of downloading anything) and ``SHARED_API_KEY`` before the app
+    instead of downloading anything) and ``ALLOWED_ORIGIN`` before the app
     starts, and overrides the embedding dependency so no real model loads.
 
     Args:
@@ -198,15 +264,29 @@ def client(
     """
     monkeypatch.setenv("CASES_DB_PATH", str(fixture_db_path))
     monkeypatch.delenv("CASES_DB_URL", raising=False)
-    monkeypatch.setenv("SHARED_API_KEY", TEST_API_KEY)
+    monkeypatch.setenv("ALLOWED_ORIGIN", TEST_ALLOWED_ORIGIN)
 
-    # Imported after env vars are set and fresh per test so module-level
-    # `app` state (dependency overrides) doesn't leak between tests.
-    from src.query_service import main as query_service_main
+    # main.py reads ALLOWED_ORIGIN once at module level (to configure
+    # CORSMiddleware, which can only be added before the app starts). A
+    # plain `from src.query_service import main` is a no-op once the
+    # package has already imported it once (Python resolves it via the
+    # package's own `main` attribute, never touching sys.modules again),
+    # so every test after the first would silently reuse whatever origin
+    # was set during that first import - importlib.reload forces the
+    # module's top level to actually re-run against the current env.
+    import src.query_service.main as query_service_main
+    from src.query_service.rate_limit import _limiter
+
+    importlib.reload(query_service_main)
 
     query_service_main.app.dependency_overrides[query_service_main.get_embed_fn] = (
         lambda: fake_embed_fn
     )
+    # Fresh rate-limit state per test - the limiter is a module-level
+    # singleton shared across the whole process (unlike `main`, `rate_limit`
+    # is never evicted from sys.modules above), so a prior test's requests
+    # must not carry over and spuriously trip a later test's limit.
+    _limiter._buckets.clear()
 
     with TestClient(query_service_main.app) as test_client:
         yield test_client

@@ -1,10 +1,15 @@
-# Weekly search-index build.
+# Weekly Phase 2 hybrid-index build.
 #
-# Pulls the latest Markdown rulings from the public data repo
-# (niels-tack/legal_decisions), builds cases.db with
-# src/indexing/build_index.py, and uploads the resulting artifact to
-# Scaleway Object Storage (S3-compatible endpoint) so the query service
-# can pick it up.
+# This is the Phase 2 (hosted API) build: it pulls the latest Markdown
+# rulings from the public data repo (niels-tack/legal_decisions), builds the
+# Phase 1 BM25-only cases.db with src/indexing/build_index.py, layers Phase
+# 2 vector embeddings on top with src/indexing/build_index.add_embeddings,
+# and uploads the resulting hybrid artifact to Scaleway Object Storage
+# (S3-compatible endpoint) so the query service can pick it up.
+#
+# The separate, not-yet-built Phase 1 workflow (BM25-only cases.db + static
+# site, deployed to GitHub Pages) will reuse the same build_index() call
+# without the embeddings step - see context/Technical requirements.md.
 #
 # Runs weekly, timed after the maintainer's own local ingestion run is
 # expected to have pushed new Markdown to the data repo, and can also be
@@ -21,7 +26,7 @@
 # The bucket, its region (fr-par), and the IAM credentials above are expected
 # to already exist (see infra/terraform/) before this workflow can run for real.
 
-name: Build search index
+name: Build Phase 2 hybrid search index
 
 on:
   workflow_dispatch: {}
@@ -72,7 +77,7 @@ jobs:
       - name: Install project dependencies
         run: uv sync --locked
 
-      - name: Build cases.db from Markdown rulings
+      - name: Build cases.db from Markdown rulings (Phase 1 step, BM25 only)
         run: |
           set -euo pipefail
           MARKDOWN_DIR="${DATA_REPO_PATH}/Constitutional_Court_Belgium/NL"
@@ -83,6 +88,16 @@ jobs:
           uv run python -m src.indexing.build_index \
             --markdown-dir "$MARKDOWN_DIR" \
             --db-path "$DB_PATH"
+
+      - name: Add embeddings for hybrid retrieval (Phase 2 additive step)
+        run: |
+          set -euo pipefail
+          uv run --extra embeddings python -c "
+          from pathlib import Path
+          from src.indexing.build_index import add_embeddings
+          count = add_embeddings(Path('${{ env.DB_PATH }}'))
+          print(f'Embedded {count} chunk(s).')
+          "
 
       - name: Verify cases.db was produced
         run: |

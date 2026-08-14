@@ -208,3 +208,8 @@ marimo/_lsp/
 __marimo__/
 
 .DS_Store
+
+# Generated local dev data (see justfile: backend-dev-data, process-samples)
+# - never source, never committed.
+.dev-data/
+sample-data/

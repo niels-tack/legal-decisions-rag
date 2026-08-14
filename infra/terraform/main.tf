@@ -12,9 +12,9 @@
 # Object Storage: cases.db artifact
 # ---------------------------------------------------------------------------
 
-# Deliberately PRIVATE. A public-read bucket would let anyone bypass the
-# query API's shared-key check and scrape the entire corpus directly by
-# guessing/finding the object URL. The query service instead reads this
+# Deliberately PRIVATE. A public-read bucket would let anyone scrape the
+# entire corpus directly by guessing/finding the object URL, bypassing the
+# query API's rate limiting entirely. The query service instead reads this
 # bucket with its own scoped IAM credentials (see below).
 resource "scaleway_object_bucket" "cases_db" {
   name       = var.bucket_name
@@ -45,8 +45,7 @@ resource "scaleway_object_bucket_acl" "cases_db" {
 # is_public = true keeps this simple and free at this project's scale
 # (Scaleway Container Registry free tier: 75GB storage, free inbound
 # bandwidth for a single small image) - per Technical requirements.md. The
-# image itself contains no secrets; the shared API key is injected at
-# container runtime, not baked into the image.
+# image itself contains no secrets - the query service is keyless.
 resource "scaleway_registry_namespace" "query_service" {
   name        = var.registry_namespace_name
   description = "Docker image registry for the legal-decisions-rag query service."
@@ -89,10 +88,11 @@ resource "scaleway_container" "query_service" {
 
   # "public" here means the HTTPS endpoint is reachable without a Scaleway
   # IAM token (verified default/allowed value via provider docs) - i.e. it
-  # controls network reachability, not application auth. The app itself
-  # still rejects every request that lacks a valid X-API-Key header
-  # (SHARED_API_KEY secret env var below); Copilot Studio / Custom GPT /
-  # the MCP server hold that key server-side and call this public endpoint.
+  # controls network reachability, not application auth. The app itself has
+  # no request-level auth at all (the query service is keyless, per the
+  # technical requirements); the website's browser is the only intended
+  # caller, enforced by the ALLOWED_ORIGIN-locked CORS policy plus per-IP
+  # rate limiting below, not by anything Terraform manages.
   privacy = "public"
 
   # Cost-conscious defaults: scale to zero when idle, never run more than
@@ -102,13 +102,14 @@ resource "scaleway_container" "query_service" {
   max_scale = 1
 
   # Plain (non-secret) environment variables: enough for the app to build
-  # its own S3-compatible client and know which object to fetch. No
-  # credentials here - those are injected as secret_environment_variables
-  # below.
+  # its own S3-compatible client, know which object to fetch, and lock down
+  # its CORS policy. No credentials here - those are injected as
+  # secret_environment_variables below.
   environment_variables = {
     CASES_BUCKET_NAME     = scaleway_object_bucket.cases_db.name
     CASES_BUCKET_REGION   = var.region
     CASES_BUCKET_ENDPOINT = scaleway_object_bucket.cases_db.endpoint
+    ALLOWED_ORIGIN        = var.allowed_origin
   }
 
   # secret_environment_variables (verified argument name via provider docs):
@@ -119,7 +120,6 @@ resource "scaleway_container" "query_service" {
   # state must live in a private, access-controlled backend (see
   # backend.tf) and never be committed.
   secret_environment_variables = {
-    SHARED_API_KEY          = var.shared_api_key
     CASES_BUCKET_ACCESS_KEY = scaleway_iam_api_key.cases_db_reader.access_key
     CASES_BUCKET_SECRET_KEY = scaleway_iam_api_key.cases_db_reader.secret_key
   }

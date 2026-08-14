@@ -44,9 +44,11 @@ def test_hybrid_search_lexical_match_returns_expected_case(
         conn.close()
 
     assert results
+    assert results[0].source == "GHCC"
     assert results[0].ecli == "ECLI:BE:GHCC:2025:ARR.001"
     assert results[0].case_number == "2025-001n"
     assert results[0].section == "reasoning"
+    assert results[0].paragraph_number == "B.7"
 
 
 def test_hybrid_search_semantic_only_match(fixture_db_path: Path) -> None:
@@ -64,6 +66,34 @@ def test_hybrid_search_semantic_only_match(fixture_db_path: Path) -> None:
 
     assert results
     assert results[0].ecli == "ECLI:BE:GHCC:2025:ARR.002"
+    assert results[0].paragraph_number is None
+
+
+def test_hybrid_search_filters_by_source(fixture_db_path: Path) -> None:
+    """The optional ``sources`` filter restricts results to matching bodies.
+
+    Scoping the same "verkeersboete" query to GHCC must never surface the
+    OTHER-sourced case, even via the semantic branch's weak-match ranking
+    (see ``test_hybrid_search_empty_index_returns_empty_list`` for why a
+    nonempty embeddings pool always ranks *something*) - it can only be
+    excluded by the source filter actually narrowing the candidate pool,
+    not by its similarity score happening to be low.
+    """
+    conn = sqlite3.connect(str(fixture_db_path))
+    try:
+        ghcc_only = hybrid_search(
+            conn, "verkeersboete", fake_embed_fn, limit=5, sources=["GHCC"]
+        )
+        other_only = hybrid_search(
+            conn, "verkeersboete", fake_embed_fn, limit=5, sources=["OTHER"]
+        )
+    finally:
+        conn.close()
+
+    assert all(result.source == "GHCC" for result in ghcc_only)
+    assert other_only
+    assert other_only[0].source == "OTHER"
+    assert other_only[0].ecli == "ECLI:BE:OTHER:2025:ARR.004"
 
 
 def test_hybrid_search_respects_limit(fixture_db_path: Path) -> None:

@@ -13,15 +13,15 @@ from pydantic import BaseModel, Field
 
 
 class CaseMetadata(BaseModel):
-    """YAML frontmatter fields captured for one Constitutional Court ruling.
+    """YAML frontmatter fields captured for one ruling."""
 
-    The ECLI, arrest number, role number, and file slug are kept as separate
-    fields because they are genuinely different identifiers in the source
-    documents (e.g. ECLI ``ECLI:BE:GHCC:2025:ARR.001``, arrest number
-    ``1/2025``, role number ``8115``, file slug ``2025-001n``); collapsing
-    them into a single "case number" field risks citation errors.
-    """
-
+    source: str = Field(
+        ...,
+        description=(
+            "Issuing judicial body, e.g. 'GHCC' for the Constitutional "
+            "Court."
+        ),
+    )
     ecli: str = Field(
         ..., description="Canonical citation, e.g. ECLI:BE:GHCC:2025:ARR.001"
     )
@@ -38,7 +38,7 @@ class CaseMetadata(BaseModel):
     )
     procedure_type: str = Field(..., description="e.g. 'Prejudiciële vraag'")
     controlled_norm: str = Field(
-        ..., description="The law/article under constitutional review"
+        ..., description="The law/article under review"
     )
     outcome: str = Field(
         ..., description="The Court's ruling outcome, e.g. 'Vernietiging'"
@@ -50,17 +50,33 @@ class CaseMetadata(BaseModel):
     title: str = Field(..., description="Short human-readable title for the ruling")
 
 
-class Passage(BaseModel):
-    """One chunk of a ruling's body text, scoped to a structural section."""
+class Chunk(BaseModel):
+    """One numbered-paragraph chunk of a ruling's body text.
+
+    Chunking happens at the paragraph-numbering granularity of the ruling's
+    own body (e.g. ``B.7.3``), not at the coarser section granularity -
+    ``section`` is retained purely as metadata. A section with no numbering
+    (or a body with no numbering convention at all, see
+    ``src.sources.SourceConfig.paragraph_marker_re``) falls back to a single
+    whole-section chunk with ``paragraph_number=None``.
+    """
 
     case_id: int = Field(..., description="Foreign key into the cases table")
     section: str = Field(..., description="One of: facts, arguments, reasoning, ruling")
-    text: str = Field(..., description="The passage's plain text content")
+    paragraph_number: str | None = Field(
+        ..., description="This chunk's own numbered identifier, e.g. 'B.7.3'"
+    )
+    parent_numbers: list[str] = Field(
+        default_factory=list,
+        description="Ancestor identifiers, e.g. ['B', 'B.7'] for 'B.7.3'",
+    )
+    text: str = Field(..., description="The chunk's plain text content")
 
 
 class SearchResultItem(BaseModel):
     """One ranked passage returned by the query service's search endpoint."""
 
+    source: str = Field(..., description="Issuing judicial body, e.g. 'GHCC'")
     ecli: str
     arrest_number: str
     role_number: str
@@ -72,6 +88,9 @@ class SearchResultItem(BaseModel):
     outcome: str
     title: str
     section: str
+    paragraph_number: str | None = Field(
+        ..., description="The excerpt's own numbered identifier, e.g. 'B.7.3'"
+    )
     excerpt: str
     source_pdf_url: str
     score: float = Field(

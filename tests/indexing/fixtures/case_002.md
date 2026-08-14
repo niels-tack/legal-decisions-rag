@@ -1,4 +1,5 @@
 ---
+source: "GHCC"
 ecli: "ECLI:BE:GHCC:2025:ARR.002"
 arrest_number: "2/2025"
 role_number: "8200"
@@ -27,8 +28,12 @@ onvoldoende waarborgt. De Ministerraad besluit tot verwerping.
 
 ## Beoordeling door het Hof
 
-Het Hof stelt vast dat het middel niet gegrond is, aangezien de bestreden
-bepaling voldoende procedurele waarborgen bevat.
+B.1.  Het Hof stelt vast dat het middel niet gegrond is.
+
+B.1.1.  De bestreden bepaling bevat voldoende procedurele waarborgen.
+
+B.2.  Het Hof merkt op dat de wetgever over een ruime beoordelingsvrijheid
+beschikt.
 
 ## Beschikking
 

@@ -50,13 +50,14 @@ export SCW_SECRET_KEY="<your Scaleway API secret key>"
 export AWS_ACCESS_KEY_ID="$SCW_ACCESS_KEY"
 export AWS_SECRET_ACCESS_KEY="$SCW_SECRET_KEY"
 export TF_VAR_project_id="<your Scaleway project ID>"
-export TF_VAR_shared_api_key="<the shared static API key the query service should accept>"
+export TF_VAR_allowed_origin="<the deployed website's origin, e.g. https://niels-tack.github.io>"
 ```
 
-Never commit any of the above. `variables.tf` marks `shared_api_key` as
-`sensitive` so Terraform redacts it from console/log output, but it is still
-written into the state file in plaintext (standard Terraform behaviour) -
-another reason the state bucket must be private (step 0) and never public.
+Never commit any of the above. `allowed_origin` isn't secret (the query
+service is keyless - see `src/query_service/main.py`), but the Scaleway
+access/secret keys are; the state bucket must stay private (step 0) and
+never public regardless, since Terraform writes resolved variable values
+into the state file in plaintext.
 
 ## 2. Init, plan, apply
 
@@ -107,7 +108,7 @@ an exact commit and `terraform apply` reliably detects a change.
 | `SCW_ACCESS_KEY` | scaleway provider auth (Terraform) and `docker login` to the registry |
 | `SCW_SECRET_KEY` | scaleway provider auth (Terraform) and `docker login` to the registry |
 | `SCW_PROJECT_ID` | passed as `TF_VAR_project_id` |
-| `SHARED_API_KEY` | passed as `TF_VAR_shared_api_key`; also whatever holds this same value in the MCP server's / Copilot connector's own environment, outside this repo |
+| `ALLOWED_ORIGIN` (repo/org variable, not a secret) | passed as `TF_VAR_allowed_origin` - the deployed website's origin, locking down the query service's CORS policy |
 | `TF_STATE_BUCKET` (optional) | if you don't want the state bucket name hardcoded in `backend.tf`, pass it instead via `terraform init -backend-config="bucket=$TF_STATE_BUCKET"` |
 
 In the workflow, also set `AWS_ACCESS_KEY_ID`/`AWS_SECRET_ACCESS_KEY` from
@@ -123,12 +124,10 @@ step, for the reason explained in step 1 above.
   dedicated IAM application's key for CI) - this is distinct from the
   per-application key Terraform creates *for the query service* in `main.tf`.
 - Create the Terraform state bucket manually (step 0).
-- Decide and record the shared static API key value (`shared_api_key`) that
-  will be embedded in the Copilot Studio / Custom GPT connector config and
-  the MCP server's environment - this repo only stores it as a Terraform
-  variable / GitHub secret, it does not generate or distribute it to clients.
 - Pick globally-unique bucket and registry namespace names if the defaults
   in `variables.tf` are already taken.
-- Wire the resulting `query_service_endpoint` output into the Copilot
-  Studio OpenAPI action, the Custom GPT Action config, and the MCP server's
-  environment, alongside the shared API key.
+- Once the Phase 1 static site is deployed to GitHub Pages, set
+  `allowed_origin` to its real origin so the query service's CORS policy
+  stops rejecting it (it fails closed - no origin allowed - until then).
+- Wire the resulting `query_service_endpoint` output into the website's
+  Phase 2 `RemoteApiProvider` configuration (see Technical requirements.md).

@@ -122,6 +122,7 @@ def test_build_case_metadata_combines_discovered_and_ecli() -> None:
         discovered, file_slug="2025-001n", ecli="ECLI:BE:GHCC:2025:ARR.001"
     )
 
+    assert metadata.source == "GHCC"
     assert metadata.ecli == "ECLI:BE:GHCC:2025:ARR.001"
     assert metadata.file_slug == "2025-001n"
     assert metadata.arrest_number == "1/2025"

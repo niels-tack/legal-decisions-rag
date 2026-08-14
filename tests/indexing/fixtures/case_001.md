@@ -1,4 +1,5 @@
 ---
+source: "GHCC"
 ecli: "ECLI:BE:GHCC:2025:ARR.001"
 arrest_number: "1/2025"
 role_number: "8115"

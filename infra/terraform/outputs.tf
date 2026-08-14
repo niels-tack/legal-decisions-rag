@@ -1,8 +1,8 @@
-# Outputs consumed by CI (to smoke-test a deploy) and by whoever wires up
-# the Copilot Studio / Custom GPT / MCP client integrations.
+# Outputs consumed by CI (to smoke-test a deploy) and by whoever configures
+# the website's Phase 2 remote search backend.
 
 output "query_service_endpoint" {
-  description = "Public HTTPS endpoint of the query-service Serverless Container. Point client integrations (OpenAPI connector, MCP server) at <this>/search."
+  description = "Public HTTPS endpoint of the query-service Serverless Container. Point the website's RemoteApiProvider config at <this>/search."
   value       = scaleway_container.query_service.public_endpoint
 }
 

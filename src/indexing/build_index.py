@@ -1,11 +1,20 @@
-"""Build the hybrid-search ``cases.db`` SQLite file from ruling Markdown.
+"""Build the Phase 1 BM25-only ``cases.db`` SQLite file from ruling Markdown.
 
 Each source Markdown file has YAML frontmatter (matching ``CaseMetadata``)
 followed by four ``##``-headed sections produced by the ingestion pipeline.
-This module chunks each ruling one passage per section (whole-section
-chunking, per the project's decision to avoid naive word-count/blank-line
-splitting given how widely ruling lengths vary) and writes both the lexical
-(FTS5) and vector representations of every passage.
+This module first splits each ruling into those four broad sections, then
+chunks each section at its own numbered-paragraph granularity (e.g.
+``B.7.3``) using the issuing body's marker pattern from
+``src.sources.SOURCES`` - finer-grained than one chunk per section, since a
+single section can itself run to hundreds of numbered points. A section (or
+a body) with no numbering convention falls back to one whole-section chunk,
+per the project's decision to avoid naive word-count/blank-line splitting
+given how widely ruling lengths vary. It has no embedding dependency at all,
+so the Phase 1 GitHub Actions build (which produces the artifact deployed
+to GitHub Pages) never needs to install or run a sentence-embedding model.
+
+Phase 2 layers vector embeddings on top of this same artifact via
+``add_embeddings`` below, run as a separate, additive step.
 """
 
 from __future__ import annotations
@@ -13,17 +22,19 @@ from __future__ import annotations
 import argparse
 import json
 import logging
-import re
 import sqlite3
 from collections.abc import Callable
 from pathlib import Path
 
 import numpy as np
-import yaml
-from pydantic import ValidationError
 
-from src.db_schema import EMBEDDING_MODEL_NAME, initialize_database, insert_passage
-from src.indexing.embeddings import embed_texts
+from src.db_schema import (
+    EMBEDDING_MODEL_NAME,
+    initialize_database,
+    insert_chunk,
+    tune_for_range_access,
+)
+from src.markdown_case import MalformedFrontmatterError, parse_case_file
 from src.schemas import (
     SECTION_ARGUMENTS,
     SECTION_FACTS,
@@ -31,208 +42,128 @@ from src.schemas import (
     SECTION_RULING,
     CaseMetadata,
 )
+from src.sources import SourceConfig, get_source
 
 logger = logging.getLogger(__name__)
 
-# Exact section headers emitted by the ingestion pipeline's Markdown
-# assembler, in document order, mapped to the section constants shared
-# across the codebase via src.schemas.
-_SECTION_HEADERS: tuple[tuple[str, str], ...] = (
-    ("## Feiten en rechtspleging", SECTION_FACTS),
-    ("## Standpunten van de partijen", SECTION_ARGUMENTS),
-    ("## Beoordeling door het Hof", SECTION_REASONING),
-    ("## Beschikking", SECTION_RULING),
-)
 
-# Matches the leading ``---\n<yaml>\n---`` frontmatter block. DOTALL so
-# ``.`` spans the multi-line YAML body; non-greedy so it stops at the
-# first closing delimiter rather than a later one inside the body text.
-_FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n?", re.DOTALL)
-
-
-class MalformedFrontmatterError(ValueError):
-    """Raised when a Markdown file's frontmatter cannot be parsed or validated."""
-
-
-def _split_frontmatter(text: str) -> tuple[str, str]:
-    """Split a Markdown document into its raw YAML frontmatter and body.
-
-    Args:
-        text: Full contents of one source Markdown file.
-
-    Returns:
-        A ``(frontmatter_yaml, body)`` tuple.
-
-    Raises:
-        MalformedFrontmatterError: If the file has no ``---``-delimited
-            frontmatter block at all.
-    """
-    match = _FRONTMATTER_RE.match(text)
-    if match is None:
-        raise MalformedFrontmatterError("No '---' delimited frontmatter block found")
-    return match.group(1), text[match.end() :]
-
-
-def _parse_metadata(frontmatter_yaml: str) -> CaseMetadata:
-    """Parse and validate a case's YAML frontmatter.
-
-    Args:
-        frontmatter_yaml: The raw YAML text between the frontmatter delimiters.
-
-    Returns:
-        A validated ``CaseMetadata`` instance.
-
-    Raises:
-        MalformedFrontmatterError: If the YAML is unparsable, is not a
-            mapping, or fails ``CaseMetadata`` validation (e.g. a missing
-            required field).
-    """
-    try:
-        raw = yaml.safe_load(frontmatter_yaml)
-    except yaml.YAMLError as exc:
-        raise MalformedFrontmatterError(f"Unparsable YAML frontmatter: {exc}") from exc
-
-    if not isinstance(raw, dict):
-        raise MalformedFrontmatterError("Frontmatter did not parse to a YAML mapping")
-
-    try:
-        return CaseMetadata.model_validate(raw)
-    except ValidationError as exc:
-        raise MalformedFrontmatterError(
-            f"Frontmatter failed validation: {exc}"
-        ) from exc
-
-
-def _split_sections(body: str) -> dict[str, str]:
-    """Split a ruling's body text into its structural sections.
-
-    Sections are located by their exact header strings and sliced from the
-    end of one header to the start of the next (or end of document). A
-    section absent from the body (e.g. a header the ingestion pipeline
-    didn't emit for this ruling) is simply omitted from the result rather
-    than treated as an error - callers only insert passages for sections
-    that are present and non-empty.
-
-    Args:
-        body: The Markdown body following the frontmatter block.
-
-    Returns:
-        A mapping of section constant (see ``src.schemas``) to trimmed
-        section text, for whichever headers were found in ``body``.
-    """
-    positions: list[tuple[int, int, str]] = []
-    for header, section in _SECTION_HEADERS:
-        start = body.find(header)
-        if start != -1:
-            positions.append((start, start + len(header), section))
-    positions.sort(key=lambda p: p[0])
-
-    sections: dict[str, str] = {}
-    for i, (_start, header_end, section) in enumerate(positions):
-        end = positions[i + 1][0] if i + 1 < len(positions) else len(body)
-        sections[section] = body[header_end:end].strip()
-    return sections
-
-
-def build_index(
-    markdown_dir: Path,
-    db_path: Path,
-    embed_fn: Callable[[list[str]], np.ndarray] = embed_texts,
-) -> None:
-    """Build ``cases.db`` from a directory of ruling Markdown files.
+def build_index(markdown_dir: Path, db_path: Path) -> None:
+    """Build the Phase 1 ``cases.db`` (BM25 only) from a directory of Markdown.
 
     Args:
         markdown_dir: Directory containing one ``*.md`` file per ruling.
         db_path: Destination SQLite file. Overwritten if it already exists.
-        embed_fn: Function computing embeddings for a batch of passage
-            texts. Defaults to the real multilingual model in
-            ``src.indexing.embeddings``; tests should inject a fast fake
-            instead of loading that model. If the callable exposes a
-            ``model_name`` attribute, that string is recorded in
-            ``passage_embeddings.model_name``; otherwise
-            ``EMBEDDING_MODEL_NAME`` is recorded.
 
     Malformed frontmatter (unparsable YAML, missing required
     ``CaseMetadata`` field) in a single file is logged and that file is
-    skipped, rather than aborting the whole build.
+    skipped, rather than aborting the whole build. ``VACUUM``/``ANALYZE``
+    run once at the end so the on-disk page size matches
+    ``src.db_schema.PAGE_SIZE`` and the query planner has fresh statistics.
     """
     if db_path.exists():
         db_path.unlink()
 
-    model_name = getattr(embed_fn, "model_name", EMBEDDING_MODEL_NAME)
-
     conn = sqlite3.connect(db_path)
     try:
         initialize_database(conn)
-        next_passage_id = 1
+        next_chunk_id = 1
         for md_file in sorted(markdown_dir.glob("*.md")):
             try:
-                next_passage_id = _index_file(
-                    conn, md_file, embed_fn, model_name, next_passage_id
-                )
+                next_chunk_id = _index_file(conn, md_file, next_chunk_id)
             except MalformedFrontmatterError as exc:
                 logger.warning("Skipping %s: %s", md_file, exc)
         conn.commit()
+        tune_for_range_access(conn)
     finally:
         conn.close()
 
 
-def _index_file(
-    conn: sqlite3.Connection,
-    md_file: Path,
-    embed_fn: Callable[[list[str]], np.ndarray],
-    model_name: str,
-    next_passage_id: int,
-) -> int:
+def split_into_paragraphs(
+    section_text: str, source_config: SourceConfig
+) -> list[tuple[str | None, list[str], str]]:
+    """Split one section's text into fine-grained numbered-paragraph chunks.
+
+    Args:
+        section_text: One section's trimmed body text (may be empty).
+        source_config: The issuing body's config, whose
+            ``paragraph_marker_re`` (if any) locates paragraph-numbering
+            markers within ``section_text``.
+
+    Returns:
+        ``(paragraph_number, parent_numbers, text)`` tuples in document
+        order. Falls back to a single ``(None, [], section_text)`` chunk
+        when the body has no numbering convention, or the section simply
+        has no numbered markers in it (e.g. the facts/operative-ruling
+        sections of a Constitutional Court ruling). Any text preceding the
+        first marker (e.g. a "-B-" divider line already captured as part
+        of the section) is dropped if blank, or kept as its own
+        unnumbered chunk otherwise. Empty if ``section_text`` is empty.
+    """
+    if not section_text:
+        return []
+
+    marker_re = source_config.paragraph_marker_re
+    matches = list(marker_re.finditer(section_text)) if marker_re else []
+    if not matches:
+        return [(None, [], section_text)]
+
+    chunks: list[tuple[str | None, list[str], str]] = []
+    preamble = section_text[: matches[0].start()].strip()
+    if preamble:
+        chunks.append((None, [], preamble))
+
+    for index, match in enumerate(matches):
+        number = match.group(1)
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(
+            section_text
+        )
+        parts = number.split(".")
+        parent_numbers = [".".join(parts[:i]) for i in range(1, len(parts))]
+        chunks.append((number, parent_numbers, section_text[match.start() : end].strip()))
+    return chunks
+
+
+def _index_file(conn: sqlite3.Connection, md_file: Path, next_chunk_id: int) -> int:
     """Parse, validate, and insert one ruling's Markdown file.
 
     Args:
         conn: Open connection to the destination database.
         md_file: Path to the ruling's Markdown file.
-        embed_fn: Embedding function, see ``build_index``.
-        model_name: Model name string recorded alongside stored vectors.
-        next_passage_id: Next free id to assign to a passage (shared rowid
-            between ``passages_fts`` and ``passage_embeddings``).
+        next_chunk_id: Next free id to assign to a chunk (shared rowid
+            between ``chunks`` and ``chunks_fts``).
 
     Returns:
-        The next free passage id after inserting this file's sections.
+        The next free chunk id after inserting this file's sections.
 
     Raises:
         MalformedFrontmatterError: Propagated from parsing/validation so
             the caller can log and skip this file.
     """
-    text = md_file.read_text(encoding="utf-8")
-    frontmatter_yaml, body = _split_frontmatter(text)
-    metadata = _parse_metadata(frontmatter_yaml)
+    metadata, sections = parse_case_file(md_file)
+    source_config = get_source(metadata.source)
 
     case_id = _insert_case(conn, metadata)
 
-    sections = _split_sections(body)
-    section_items = [(section, txt) for section, txt in sections.items() if txt]
-    if not section_items:
-        return next_passage_id
-
-    texts = [txt for _section, txt in section_items]
-    vectors = embed_fn(texts)
-
-    passage_id = next_passage_id
-    for (section, txt), vector in zip(section_items, vectors, strict=True):
-        insert_passage(conn, passage_id, case_id, section, txt)
-        conn.execute(
-            "INSERT INTO passage_embeddings "
-            "(passage_id, case_id, section, text, model_name, vector) "
-            "VALUES (?, ?, ?, ?, ?, ?)",
-            (
-                passage_id,
+    chunk_id = next_chunk_id
+    order = 0
+    for section in (SECTION_FACTS, SECTION_ARGUMENTS, SECTION_REASONING, SECTION_RULING):
+        section_text = sections.get(section, "")
+        for paragraph_number, parent_numbers, chunk_text in split_into_paragraphs(
+            section_text, source_config
+        ):
+            insert_chunk(
+                conn,
+                chunk_id,
                 case_id,
                 section,
-                txt,
-                model_name,
-                np.asarray(vector, dtype=np.float32).tobytes(),
-            ),
-        )
-        passage_id += 1
-    return passage_id
+                order,
+                chunk_text,
+                paragraph_number=paragraph_number,
+                parent_numbers=parent_numbers,
+            )
+            chunk_id += 1
+            order += 1
+    return chunk_id
 
 
 def _insert_case(conn: sqlite3.Connection, metadata: CaseMetadata) -> int:
@@ -248,12 +179,13 @@ def _insert_case(conn: sqlite3.Connection, metadata: CaseMetadata) -> int:
     cursor = conn.execute(
         """
         INSERT INTO cases (
-            ecli, arrest_number, role_number, file_slug, ruling_date,
+            source, ecli, arrest_number, role_number, file_slug, ruling_date,
             language, procedure_type, controlled_norm, outcome, keywords,
             source_pdf_url, title
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
         (
+            metadata.source,
             metadata.ecli,
             metadata.arrest_number,
             metadata.role_number,
@@ -270,6 +202,68 @@ def _insert_case(conn: sqlite3.Connection, metadata: CaseMetadata) -> int:
     )
     assert cursor.lastrowid is not None  # INSERT always yields a rowid
     return cursor.lastrowid
+
+
+def add_embeddings(
+    db_path: Path,
+    embed_fn: Callable[[list[str]], np.ndarray] | None = None,
+    batch_size: int = 64,
+) -> int:
+    """Phase 2 additive step: compute and store embeddings for every chunk.
+
+    Populates the ``embeddings`` table (reserved by
+    ``src.db_schema.EMBEDDINGS_TABLE_SQL``) for every ``chunks`` row that
+    doesn't already have one, so this can be re-run safely on top of an
+    existing artifact. Never invoked by the Phase 1 build path or its CI
+    job; only the Phase 2 index-build step (adding embeddings before
+    uploading to Scaleway Object Storage) calls this.
+
+    Args:
+        db_path: Path to an existing ``cases.db`` built by ``build_index``.
+        embed_fn: Callable computing L2-normalized embeddings for a batch
+            of texts. Defaults to
+            ``src.indexing.embeddings.embed_texts``, imported lazily so
+            that importing this module (and running the Phase 1 build)
+            never requires ``sentence-transformers`` to be installed.
+        batch_size: Number of chunk texts embedded per model call.
+
+    Returns:
+        The number of newly embedded chunks.
+    """
+    if embed_fn is None:
+        from src.indexing.embeddings import embed_texts as embed_fn
+
+    model_name = getattr(embed_fn, "model_name", EMBEDDING_MODEL_NAME)
+
+    conn = sqlite3.connect(db_path)
+    try:
+        rows = conn.execute(
+            "SELECT chunk_id, text FROM chunks "
+            "WHERE chunk_id NOT IN (SELECT chunk_id FROM embeddings) "
+            "ORDER BY chunk_id"
+        ).fetchall()
+
+        embedded_count = 0
+        for start in range(0, len(rows), batch_size):
+            batch = rows[start : start + batch_size]
+            vectors = embed_fn([text for _chunk_id, text in batch])
+            conn.executemany(
+                "INSERT INTO embeddings (chunk_id, model_name, vector) "
+                "VALUES (?, ?, ?)",
+                [
+                    (
+                        chunk_id,
+                        model_name,
+                        np.asarray(vector, dtype=np.float32).tobytes(),
+                    )
+                    for (chunk_id, _text), vector in zip(batch, vectors, strict=True)
+                ],
+            )
+            embedded_count += len(batch)
+        conn.commit()
+        return embedded_count
+    finally:
+        conn.close()
 
 
 def _parse_args() -> argparse.Namespace:

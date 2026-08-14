@@ -23,6 +23,7 @@ from urllib3.util.retry import Retry
 
 from src.ingestion import assemble, discover, extract
 from src.schemas import CaseMetadata
+from src.sources import SOURCE_CONSTITUTIONAL_COURT
 
 logger = logging.getLogger(__name__)
 
@@ -122,6 +123,7 @@ def build_case_metadata(
         ``assemble.write_case_file``.
     """
     return CaseMetadata(
+        source=SOURCE_CONSTITUTIONAL_COURT,
         ecli=ecli,
         arrest_number=discovered["arrest_number"],
         role_number=discovered["role_number"],

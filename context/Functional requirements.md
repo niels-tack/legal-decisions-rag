@@ -7,7 +7,7 @@
 
 ## Problem statement
 
-Belgian Constitutional Court rulings are only available as scattered PDF documents on the Court's own website (https://nl.const-court.be/), with no way for non-technical legal professionals or citizens to search across them or ask natural-language questions and get cited passages back. Existing local RAG tools (e.g. qmd) require installing software, cloning repositories, and managing API keys - a barrier most target users will not cross. Chat-platform distribution channels (Copilot Studio agents, Custom GPTs, MCP) are not viable primary channels either: each requires paid licensing on the maintainer's side, per-tenant IT approval on the user's side, or technical configuration - and often all three.
+Belgian high-court rulings are only available as scattered PDF documents on each court's own website, with no way for non-technical legal professionals or citizens to search across them or ask natural-language questions and get cited passages back. The POC starts with the Constitutional Court (https://nl.const-court.be/), but the same problem applies to other Belgian judicial bodies (e.g. the Council of State's case-law search at https://raadvanstate.be/), so the project's data model and ingestion pipeline are designed to add a body without re-architecting, not to lock in a single-court assumption. Existing local RAG tools (e.g. qmd) require installing software, cloning repositories, and managing API keys - a barrier most target users will not cross. Chat-platform distribution channels (Copilot Studio agents, Custom GPTs, MCP) are not viable primary channels either: each requires paid licensing on the maintainer's side, per-tenant IT approval on the user's side, or technical configuration - and often all three.
 
 The only channel that reaches every target user with zero installs, zero accounts, zero IT clearance, and zero recurring cost is a plain public website. This project therefore delivers the case law as a searchable website, with a built-in handoff that carries retrieved, cited passages into whatever AI assistant the user already has (Copilot, ChatGPT, Claude) for synthesis on the user's own account and terms.
 
@@ -31,21 +31,22 @@ The project runs in two closely spaced phases plus a deferred V2. Phase 2 is com
 - Recurring hosting cost is €0.00/month in Phase 1 and stays within provider free tiers in Phase 2.
 - The maintainer's home network/hardware is never exposed to the public internet.
 - In Phase 1, search queries never leave the user's browser (search executes client-side against a static index). The site states this privacy property visibly, because queries from legal professionals can reveal matter context.
-- Retrieval surfaces relevant passages for exact lookups (case number, ECLI, article reference) and keyword/terminology questions from Phase 1; conceptual, plain-language questions retrieve well from Phase 2 (vector search). Initial (POC) scope is Dutch-language rulings only; French/German coverage is a later-phase goal.
-- Every result traces back to a verifiable ECLI identifier (the Court's standard citation, e.g. `ECLI:BE:GHCC:2025:ARR.001`) and ruling date, with a link to the original official PDF as published on the Court's website.
+- Retrieval surfaces relevant passages for exact lookups (case number, ECLI, article reference) and keyword/terminology questions from Phase 1; conceptual, plain-language questions retrieve well from Phase 2 (vector search). Initial (POC) scope is Dutch-language Constitutional Court rulings only; French/German coverage and additional judicial bodies (e.g. the Council of State) are later-phase goals.
+- Every result traces back to a verifiable ECLI identifier (the Court's standard citation, e.g. `ECLI:BE:GHCC:2025:ARR.001`) and ruling date, with a link to the original official PDF as published on the Court's website, plus the specific numbered paragraph (e.g. `B.7.3`) the passage was taken from wherever the source ruling numbers its paragraphs - not just "somewhere in this document".
+- Users can scope a search to one judicial body, several, or all of them (a source filter alongside the date-range/procedure-type filters) - meaningful as soon as a second body is onboarded, and harmless with only one.
 - The assistant handoff produces a self-contained prompt (user question + retrieved passages + citations) that any external LLM can turn into a cited answer without further tooling.
 
 ## Core requirements
 
 ### Must have - Phase 1 (POC/MVP)
 
-- Local ingestion pipeline (run offline, on the maintainer's own hardware), initially scoped to Dutch-language rulings only, converting official Constitutional Court PDF rulings into structured Markdown with YAML frontmatter. Go for the most robust, complete metadata capture practical: every readily available field from the Court's official case overview listing and the PDF itself should be captured, not just a minimal set. At minimum this includes the ECLI identifier (canonical citation), the official arrest number (e.g. "1/2025"), the role/docket number ("rolnummer", e.g. "8115"), and the file/URL slug (e.g. "2025-001n") as three distinct, clearly labeled identifiers (they are not interchangeable and conflating them risks citation errors), plus ruling date, language, procedure type, controlled norm, outcome, subject tags/keywords, and the source PDF URL.
+- Local ingestion pipeline (run offline, on the maintainer's own hardware), initially scoped to Dutch-language Constitutional Court rulings only, converting official PDF rulings into structured Markdown with YAML frontmatter. Go for the most robust, complete metadata capture practical: every readily available field from the Court's official case overview listing and the PDF itself should be captured, not just a minimal set. At minimum this includes which judicial body issued the ruling (the "source" - Constitutional Court for the POC), the ECLI identifier (canonical citation), the official arrest number (e.g. "1/2025"), the role/docket number ("rolnummer", e.g. "8115"), and the file/URL slug (e.g. "2025-001n") as distinct, clearly labeled identifiers (they are not interchangeable and conflating them risks citation errors), plus ruling date, language, procedure type, controlled norm, outcome, subject tags/keywords, and the source PDF URL. Each judicial body gets its own discovery/extraction logic (courts publish differently) behind a shared per-source plug-in point, so onboarding the Council of State later means writing that body's ingestion module and registering its own paragraph-numbering convention, not modifying the shared pipeline, schema, or chunking logic.
 - Weekly automated scrape of the Court's official case overview listing and PDF publications for newly published rulings, run on the maintainer's local processing machine, with new/updated Markdown pushed from there to the public GitHub repository.
 - Public GitHub repository hosting the processed Markdown as the canonical, versioned data source.
 - Automated build (GitHub Actions) producing two artifacts from the committed Markdown: (a) a single SQLite database (`cases.db`) containing an FTS5 full-text index (BM25) over structure-aware passage chunks plus all frontmatter metadata, and (b) the static website. Both deploy to GitHub Pages on push, with no manual step beyond `git push`.
 - Client-side search: the website queries the statically hosted `cases.db` directly in the browser via HTTP range requests, fetching only the database pages a query needs rather than the whole file. No server component exists in Phase 1.
 - Search results show ranked passages with ECLI, arrest number, ruling date, outcome, and an excerpt; each result links to a per-case page and to the original official PDF on https://nl.const-court.be/ for verification.
-- Basic metadata filters in the search UI (at minimum date range and procedure type) - the frontmatter already carries this data and client-side SQL makes filtering cheap.
+- Basic metadata filters in the search UI (at minimum date range, procedure type, and judicial body/source) - the frontmatter already carries this data and client-side SQL makes filtering cheap. With only the Constitutional Court onboarded, the source filter has one option and is effectively a no-op, but the filter itself (and the underlying `source` field) exists from Phase 1 so a second body is a data addition, not a UI or schema change.
 - Assistant handoff: a "copy prompt" button that composes the user's question, the top retrieved passages, and full citations (ECLI, date, official PDF URL) into a clipboard-ready prompt for pasting into Copilot, ChatGPT, or Claude; plus "open in ..." deep links where a platform's URL prompt-prefill allows, respecting URL length limits. The copy button is the primary mechanism; deep links are convenience on top.
 - Per-case pages rendering the full ruling text with its metadata, so users (and their assistants, via paste) can work with a complete ruling.
 
@@ -67,6 +68,7 @@ The project runs in two closely spaced phases plus a deferred V2. Phase 2 is com
 - Additional filters (outcome, subject tags, controlled norm) beyond the Phase 1 minimum.
 - Lightweight usage signals in Phase 2 (from API logs only, no client-side tracking) to learn what people actually search, informing retrieval tuning.
 - French/German ruling coverage, and retrieval quality tuned for that trilingual mix, as a later-phase expansion once the Dutch-only POC is validated.
+- A second judicial body - the Council of State (Raad van State), whose published case law is time-window-searchable at raadvanstate.be - onboarded as a new ingestion module against the existing per-source plug-in point. Its own paragraph-numbering convention (likely different from the Constitutional Court's `A.`/`B.`-lettered scheme) needs its own investigation before it can be registered.
 
 ### Won't have (this version)
 
@@ -80,9 +82,9 @@ The project runs in two closely spaced phases plus a deferred V2. Phase 2 is com
 
 ### Workflow 1: Search and verify in the browser (core, both phases)
 
-1. User opens the public website and types a question or keywords, e.g. "omgevingsvergunning 2024", an arrest number, or an ECLI.
-2. Phase 1: the browser fetches only the needed index pages from the statically hosted `cases.db` and ranks passages with BM25 locally. Phase 2: the site calls the hosted API, which runs hybrid BM25 + vector retrieval over the same chunks. Filters narrow by date or procedure type in both.
-3. Results show ranked passages with ECLI, date, outcome, and excerpt.
+1. User opens the public website and types a question or keywords, e.g. "omgevingsvergunning 2024", an arrest number, or an ECLI, optionally narrowing to one or more judicial bodies via the source filter (only the Constitutional Court exists as an option until a second body is onboarded).
+2. Phase 1: the browser fetches only the needed index pages from the statically hosted `cases.db` and ranks passages with BM25 locally. Phase 2: the site calls the hosted API, which runs hybrid BM25 + vector retrieval over the same chunks. Filters narrow by date, procedure type, and source in both.
+3. Results show ranked passages with ECLI, date, outcome, the specific numbered paragraph (e.g. `B.7.3`) where available, and an excerpt.
 4. User opens the per-case page for the full text, or clicks through to the original official PDF to verify.
 
 ### Workflow 2: Handoff to the user's own AI assistant
@@ -111,3 +113,4 @@ The project runs in two closely spaced phases plus a deferred V2. Phase 2 is com
 - End users must never need an API key, account, GitHub knowledge, or CLI tool.
 - The maintainer is a solo developer; the system must be maintainable without a team. Phase 1 deliberately contains no servers, containers, or infrastructure-as-code.
 - Phase 1 design choices must not obstruct Phase 2: chunking, schema, and citation fields are shared across phases, and the frontend's search backend is swappable (see technical requirements).
+- The corpus is expected to grow beyond the Constitutional Court eventually: every case carries an explicit judicial-body/source field, and ingestion is organized so a new body is a new, independently-testable module rather than a change to shared schema, chunking, or query logic (see technical requirements).

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zoek in uitspraken van het Grondwettelijk Hof</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1 id="heading"></h1>
+      <p id="privacy-note" class="privacy-note"></p>
+    </header>
+
+    <form id="search-form" class="search-form">
+      <input id="query-input" type="search" name="q" autocomplete="off" />
+      <button id="search-button" type="submit"></button>
+      <p id="query-guidance" class="query-guidance"></p>
+      <div id="example-queries" class="example-queries"></div>
+
+      <fieldset id="filters" class="filters">
+        <legend id="filters-legend"></legend>
+        <label>
+          <span id="label-date-from"></span>
+          <input type="date" id="filter-date-from" name="dateFrom" />
+        </label>
+        <label>
+          <span id="label-date-to"></span>
+          <input type="date" id="filter-date-to" name="dateTo" />
+        </label>
+        <label>
+          <span id="label-procedure-type"></span>
+          <select id="filter-procedure-type" name="procedureType"></select>
+        </label>
+        <label>
+          <span id="label-source"></span>
+          <select id="filter-source" name="source"></select>
+        </label>
+        <label>
+          <span id="label-sort"></span>
+          <select id="filter-sort" name="sort"></select>
+        </label>
+      </fieldset>
+    </form>
+
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+
+    <div id="handoff" class="handoff" hidden>
+      <button id="copy-prompt-button" type="button"></button>
+      <span id="copy-feedback" class="copy-feedback" aria-live="polite"></span>
+    </div>
+
+    <ul id="results-list" class="results-list"></ul>
+
+    <nav id="pagination" class="pagination" aria-label="Paginering"></nav>
+
+    <footer id="trust-footer" class="trust-footer"></footer>
+  </main>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

@@ -3,7 +3,11 @@
 Deployed as a Scaleway Serverless Container: on startup it fetches the
 prebuilt ``cases.db`` artifact (if not already present) and keeps a single
 SQLite connection open for the container's lifetime, then serves
-``GET /search`` requests protected by the shared static API key.
+``GET /search`` requests. Per the technical requirements the API is keyless
+(no end-user or shared client key of any kind); abuse protection instead
+comes from origin-locked CORS (below), per-IP rate limiting
+(``src.query_service.rate_limit``), and a response-size cap on excerpts
+(``src.query_service.search``).
 """
 
 from __future__ import annotations
@@ -18,11 +22,18 @@ from typing import Annotated
 import httpx
 import numpy as np
 from fastapi import Depends, FastAPI, HTTPException, Query, Request, status
+from fastapi.middleware.cors import CORSMiddleware
 
 from src.indexing.embeddings import embed_texts
-from src.query_service.auth import require_api_key
+from src.query_service.rate_limit import rate_limit
 from src.query_service.search import hybrid_search
 from src.schemas import SearchResponse
+
+# The deployed website's origin - the only one the keyless API's CORS
+# policy allows to call it from a browser. Empty by default so an
+# unconfigured deployment fails closed (no origin allowed) rather than
+# silently permitting every site to call the API.
+ALLOWED_ORIGIN_ENV_VAR = "ALLOWED_ORIGIN"
 
 CASES_DB_PATH_ENV_VAR = "CASES_DB_PATH"
 CASES_DB_URL_ENV_VAR = "CASES_DB_URL"
@@ -32,8 +43,8 @@ CASES_DB_OBJECT_KEY = "cases.db"
 # Set by Terraform (infra/terraform/main.tf) on the deployed container: the
 # bucket holding cases.db is private, so the app authenticates to it with
 # its own narrowly-scoped IAM credentials rather than a public URL - a
-# public bucket would let anyone bypass the API's shared-key check and
-# scrape the whole corpus directly.
+# public bucket would let anyone scrape the whole corpus directly, bypassing
+# the API's rate limiting and response-size caps entirely.
 CASES_BUCKET_NAME_ENV_VAR = "CASES_BUCKET_NAME"
 CASES_BUCKET_REGION_ENV_VAR = "CASES_BUCKET_REGION"
 CASES_BUCKET_ENDPOINT_ENV_VAR = "CASES_BUCKET_ENDPOINT"
@@ -43,6 +54,19 @@ CASES_BUCKET_SECRET_KEY_ENV_VAR = "CASES_BUCKET_SECRET_KEY"
 MIN_LIMIT = 1
 MAX_LIMIT = 20
 DEFAULT_LIMIT = 5
+
+# Module-level singleton: FastAPI needs the actual Query() instance as the
+# parameter default (that's how it recognizes a query param and its
+# metadata), but ruff's B008 flags a `list`-annotated parameter's default
+# being a function call - defining it once here instead satisfies both.
+_SOURCES_QUERY_DEFAULT = Query(
+    default=None,
+    description=(
+        "Restrict results to these judicial-body keys (e.g. 'GHCC'), "
+        "repeatable (?sources=GHCC&sources=...). Omit to search every "
+        "registered body."
+    ),
+)
 
 
 def _download_from_private_bucket(db_path: Path) -> bool:
@@ -136,6 +160,19 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
 
 app = FastAPI(title="legal-decisions-rag query service", lifespan=lifespan)
 
+# Origin-locked CORS: the only client is the static website, called directly
+# from the user's browser (there is no other server-side client to exempt,
+# now that the shared-key-holding integrations have moved to v2/). An unset
+# ALLOWED_ORIGIN means the allow-list is empty, so no browser origin can
+# call this API until a deployment explicitly configures its site's origin.
+_allowed_origin = os.environ.get(ALLOWED_ORIGIN_ENV_VAR)
+app.add_middleware(
+    CORSMiddleware,  # ty: ignore[invalid-argument-type]
+    allow_origins=[_allowed_origin] if _allowed_origin else [],
+    allow_methods=["GET"],
+    allow_headers=["*"],
+)
+
 
 def get_db_connection(request: Request) -> sqlite3.Connection:
     """Return the app's shared SQLite connection.
@@ -165,7 +202,7 @@ def get_embed_fn() -> Callable[[list[str]], np.ndarray]:
 
 @app.get("/health")
 def health() -> dict[str, str]:
-    """Unauthenticated liveness check.
+    """Liveness check, exempt from rate limiting.
 
     Returns:
         A static ``{"status": "ok"}`` payload.
@@ -176,19 +213,21 @@ def health() -> dict[str, str]:
 @app.get(
     "/search",
     response_model=SearchResponse,
-    dependencies=[Depends(require_api_key)],
+    dependencies=[Depends(rate_limit)],
 )
 def search(
     conn: Annotated[sqlite3.Connection, Depends(get_db_connection)],
     embed_fn: Annotated[Callable[[list[str]], np.ndarray], Depends(get_embed_fn)],
     q: str | None = Query(default=None),
     limit: int = Query(default=DEFAULT_LIMIT, ge=MIN_LIMIT, le=MAX_LIMIT),
+    sources: list[str] | None = _SOURCES_QUERY_DEFAULT,
 ) -> SearchResponse:
     """Run hybrid search and return cited passages for a plain-text query.
 
     Args:
         q: The user's search text. Required and must be non-blank.
         limit: Maximum number of results to return (1-20).
+        sources: Optional judicial-body keys to restrict results to.
         conn: The shared SQLite connection (injected).
         embed_fn: The query-embedding callable (injected).
 
@@ -203,7 +242,7 @@ def search(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="Query parameter 'q' is required and must not be blank.",
         )
-    results = hybrid_search(conn, q, embed_fn, limit=limit)
+    results = hybrid_search(conn, q, embed_fn, limit=limit, sources=sources)
     return SearchResponse(query=q, results=results)
 
 

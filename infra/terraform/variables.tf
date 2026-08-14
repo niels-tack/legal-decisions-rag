@@ -47,8 +47,8 @@ variable "image_tag" {
   default     = "latest"
 }
 
-variable "shared_api_key" {
-  description = "Shared static API key the query service checks every incoming request against (the X-API-Key header, see src/query_service/auth.py). Held only in Terraform variables / GitHub Actions secrets, never committed or logged."
+variable "allowed_origin" {
+  description = "Origin of the deployed website, the only one the query service's CORS policy allows to call it from a browser (see src/query_service/main.py). Not secret - the API is keyless. Left empty by default so an unconfigured deployment fails closed (no origin allowed) rather than accepting requests from anywhere."
   type        = string
-  sensitive   = true
+  default     = ""
 }

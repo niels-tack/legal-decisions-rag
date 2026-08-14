@@ -1,7 +1,7 @@
 [project]
 name = "legal-decisions-rag"
 version = "0.1.0"
-description = "Project to expose publicly available legal decisions to non-technical users through chat interfaces (Copilot etc.)"
+description = "Searchable website for Belgian Constitutional Court rulings, with a built-in handoff into the user's own AI assistant"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
@@ -13,13 +13,28 @@ dependencies = [
     "requests>=2.32.0",
     "pyyaml>=6.0.0",
     "numpy>=1.26.0",
-    "sentence-transformers>=3.0.0",
     "fastapi>=0.115.0",
     "uvicorn>=0.30.0",
     "httpx>=0.27.0",
-    "mcp>=2.0.0",
     "boto3>=1.34.0",
 ]
+
+# Phase 2 only (src/indexing/embeddings.py, add_embeddings(), and the query
+# service's query-time embedding): sentence-transformers pulls in torch and,
+# on most platforms, nvidia CUDA packages - multiple GB that Phase 1
+# workflows (ingestion, build_index, build_site, the frontend's dev data,
+# plain `uv sync`/`uv run`) never need and shouldn't be forced to install.
+# Install explicitly with `uv sync --extra embeddings` or
+# `uv run --extra embeddings ...` when you actually need real embeddings -
+# see the justfile's `add-embeddings`/`backend-dev`/`fullstack-dev` recipes.
+[project.optional-dependencies]
+embeddings = ["sentence-transformers>=3.0.0"]
+
+[tool.pytest.ini_options]
+# v2/ holds deferred functionality that isn't part of the active build (see
+# v2/README.md) - excluded here so it's never picked up by plain test
+# discovery even though it lives inside this repo.
+testpaths = ["tests"]
 
 [dependency-groups]
 dev = [
@@ -36,7 +51,7 @@ line-length = 88
 indent-width = 4
 target-version = "py313"
 src = ["src"]
-extend-exclude = ["reference"]
+extend-exclude = ["reference", "v2"]
 
 [tool.ruff.lint]
 select = [
@@ -91,6 +106,17 @@ include = ["src/**"]
 unresolved-reference = "error"
 unresolved-attribute = "error"
 unresolved-import = "error"
+
+[[tool.ty.overrides]]
+# sentence-transformers is an optional extra (pyproject.toml's
+# [project.optional-dependencies], not installed by plain `uv sync`) -
+# embeddings.py's only use of it is the single lazy, deliberately-optional
+# import in _get_model(). More specific than the src/** override above, so
+# it takes precedence for this one file.
+include = ["src/indexing/embeddings.py"]
+
+[tool.ty.overrides.rules]
+unresolved-import = "ignore"
 
 [[tool.ty.overrides]]
 include = ["tests/**", "**/test_*.py"]
