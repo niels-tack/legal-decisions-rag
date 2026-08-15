@@ -30,6 +30,44 @@ logger = logging.getLogger(__name__)
 DATA_SUBPATH = Path("Constitutional_Court_Belgium") / "NL"
 DEFAULT_DELAY_SECONDS = 2.0
 MAX_TITLE_LENGTH = 200
+LOG_DIR = Path("logs")
+
+
+def _configure_logging(log_dir: Path = LOG_DIR) -> None:
+    """Set up console and dated file handlers on the root logger.
+
+    Replaces ``logging.basicConfig`` in ``main()`` so that every INFO-level
+    message is both printed to the terminal and appended to a dated log file
+    under ``log_dir``. Safe to call multiple times: a second call appends a
+    new ``FileHandler`` (dated log rolls over each day) but never duplicates
+    the ``StreamHandler``.
+
+    Args:
+        log_dir: Directory to write ``ingestion-YYYY-MM-DD.log`` into.
+            Created automatically if it does not exist.
+    """
+    log_dir.mkdir(parents=True, exist_ok=True)
+    log_file = log_dir / f"ingestion-{date.today().isoformat()}.log"
+    fmt = logging.Formatter(
+        "%(asctime)s %(levelname)-8s %(message)s", datefmt="%H:%M:%S"
+    )
+
+    root = logging.getLogger()
+    root.setLevel(logging.INFO)
+
+    # Add a StreamHandler only if none exists yet (avoids duplicates in tests
+    # that call main() more than once without resetting the root logger).
+    if not any(
+        isinstance(h, logging.StreamHandler) and not isinstance(h, logging.FileHandler)
+        for h in root.handlers
+    ):
+        ch = logging.StreamHandler()
+        ch.setFormatter(fmt)
+        root.addHandler(ch)
+
+    fh = logging.FileHandler(log_file, encoding="utf-8")
+    fh.setFormatter(fmt)
+    root.addHandler(fh)
 
 
 def build_session(
@@ -161,6 +199,7 @@ def process_ruling(
     output_dir: Path,
     pdf_cache_dir: Path,
     session: requests.Session,
+    label: str = "",
 ) -> Path:
     """Download, extract, and assemble the Markdown file for one new ruling.
 
@@ -169,6 +208,7 @@ def process_ruling(
         output_dir: Directory the finished Markdown file is written into.
         pdf_cache_dir: Directory the downloaded PDF is kept in.
         session: A polite requests session for the PDF download.
+        label: Optional progress prefix (e.g. ``"[2/5]"``) shown in log lines.
 
     Returns:
         The path of the written Markdown file.
@@ -177,15 +217,28 @@ def process_ruling(
         ValueError: If no ECLI could be found in the downloaded PDF.
     """
     file_slug = discover.file_slug_from_pdf_url(discovered["pdf_url"])
-    pdf_path = pdf_cache_dir / f"{file_slug}.pdf"
-    download_pdf(discover.ghcc_pdf_download_url(file_slug, language="nl"), pdf_path, session)
+    tag = f"{label} {file_slug}" if label else file_slug
 
+    logger.info("%s - downloading PDF...", tag)
+    pdf_path = pdf_cache_dir / f"{file_slug}.pdf"
+    download_pdf(
+        discover.ghcc_pdf_download_url(file_slug, language="nl"), pdf_path, session
+    )
+
+    logger.info("%s - extracting ECLI...", tag)
     ecli = extract.extract_ecli(pdf_path)
     if ecli is None:
         raise ValueError(f"Could not find an ECLI in downloaded PDF: {pdf_path}")
+
+    logger.info("%s - extracting sections...", tag)
     sections = extract.extract_case_sections(pdf_path)
+
+    logger.info("%s - assembling Markdown...", tag)
     metadata = build_case_metadata(discovered, file_slug, ecli)
-    return assemble.write_case_file(output_dir, metadata, sections)
+    output_path = assemble.write_case_file(output_dir, metadata, sections)
+
+    logger.info("%s - done -> %s", tag, output_path.name)
+    return output_path
 
 
 def push_to_remote(data_repo_path: Path, new_file_count: int) -> None:
@@ -254,23 +307,44 @@ def run_pipeline(
     pdf_cache_dir = data_repo_path / ".pdf_cache"
     http_session = session or build_session()
 
+    # ------------------------------------------------------------------
+    # Phase 1: document server discovery
+    # ------------------------------------------------------------------
+    logger.info("=== Phase 1/3: Document server discovery (year=%d) ===", target_year)
     known_slugs = existing_file_slugs(output_dir)
-
     server_html = discover.fetch_document_server_listing(
         target_year, session=http_session
     )
     all_slugs = discover.parse_document_server_listing(server_html, target_year)
     new_slugs = [s for s in all_slugs if s not in known_slugs]
     logger.info(
-        "Document server: %d ruling(s) for %d, %d new.",
+        "Phase 1/3: %d ruling(s) on document server, %d new (already known: %d).",
         len(all_slugs),
-        target_year,
         len(new_slugs),
+        len(known_slugs),
     )
 
+    if not new_slugs:
+        logger.info("Nothing to do.")
+        return []
+
+    # ------------------------------------------------------------------
+    # Phase 2: fetch info cards for each new slug
+    # ------------------------------------------------------------------
+    total_new = len(new_slugs)
+    logger.info(
+        "=== Phase 2/3: Fetching info cards for %d new ruling(s) ===", total_new
+    )
     discovered_rulings: list[discover.DiscoveredRuling] = []
-    for slug in new_slugs:
+    for idx, slug in enumerate(new_slugs, start=1):
         arrest_number = discover.arrest_number_from_slug(slug)
+        logger.info(
+            "[%d/%d] %s - fetching info card (arrest %s)...",
+            idx,
+            total_new,
+            slug,
+            arrest_number,
+        )
         try:
             card_html = discover.fetch_info_card_html(
                 arrest_number, session=http_session
@@ -278,23 +352,39 @@ def run_pipeline(
             ruling = discover.parse_info_card(card_html, slug)
         except Exception as exc:
             logger.warning(
-                "Could not fetch/parse info card for %s (%s): %s - skipping.",
+                "[%d/%d] %s - info card failed (%s): %s - skipping.",
+                idx,
+                total_new,
                 slug,
                 arrest_number,
                 exc,
             )
             continue
         discovered_rulings.append(ruling)
+    logger.info(
+        "Phase 2/3: %d/%d ruling(s) ready for processing.",
+        len(discovered_rulings),
+        total_new,
+    )
 
+    # ------------------------------------------------------------------
+    # Phase 3: download, extract, and assemble each ruling
+    # ------------------------------------------------------------------
+    total_process = len(discovered_rulings)
+    logger.info("=== Phase 3/3: Processing %d ruling(s) ===", total_process)
     written_paths: list[Path] = []
-    for ruling in discovered_rulings:
+    for idx, ruling in enumerate(discovered_rulings, start=1):
         if written_paths:
             time.sleep(delay_seconds)
+        label = f"[{idx}/{total_process}]"
         written_paths.append(
-            process_ruling(ruling, output_dir, pdf_cache_dir, http_session)
+            process_ruling(ruling, output_dir, pdf_cache_dir, http_session, label=label)
         )
 
+    logger.info("=== Done: wrote %d new case file(s) ===", len(written_paths))
+
     if push and written_paths:
+        logger.info("Pushing %d new file(s) to remote...", len(written_paths))
         push_to_remote(data_repo_path, len(written_paths))
 
     return written_paths
@@ -351,15 +441,14 @@ def main(argv: list[str] | None = None) -> None:
     Args:
         argv: Argument list to parse; defaults to ``sys.argv[1:]``.
     """
-    logging.basicConfig(level=logging.INFO)
+    _configure_logging()
     args = _parse_args(argv)
-    written_paths = run_pipeline(
+    run_pipeline(
         data_repo_path=args.data_repo_path,
         year=args.year,
         push=args.push,
         delay_seconds=args.delay_seconds,
     )
-    logger.info("Wrote %d new case file(s)", len(written_paths))
 
 
 if __name__ == "__main__":

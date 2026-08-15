@@ -39,6 +39,7 @@ embeddings = ["sentence-transformers>=3.0.0"]
 # v2/README.md) - excluded here so it's never picked up by plain test
 # discovery even though it lives inside this repo.
 testpaths = ["tests"]
+pythonpath = ["."]
 
 [dependency-groups]
 dev = [

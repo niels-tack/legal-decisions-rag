@@ -266,7 +266,7 @@ def test_run_pipeline_skips_rulings_already_present_as_markdown(
     monkeypatch.setattr(
         pipeline,
         "process_ruling",
-        lambda ruling, out_dir, cache_dir, session: (
+        lambda ruling, out_dir, cache_dir, session, **kwargs: (
             processed.append(ruling["arrest_number"]) or out_dir / "dummy.md"
         ),
     )
@@ -288,7 +288,7 @@ def test_run_pipeline_does_not_push_by_default(
     monkeypatch.setattr(
         pipeline,
         "process_ruling",
-        lambda ruling, out_dir, cache_dir, session: out_dir / "x.md",
+        lambda ruling, out_dir, cache_dir, session, **kwargs: out_dir / "x.md",
     )
     push_calls: list[Any] = []
     monkeypatch.setattr(
@@ -308,7 +308,7 @@ def test_run_pipeline_pushes_only_when_explicitly_requested(
     monkeypatch.setattr(
         pipeline,
         "process_ruling",
-        lambda ruling, out_dir, cache_dir, session: out_dir / "x.md",
+        lambda ruling, out_dir, cache_dir, session, **kwargs: out_dir / "x.md",
     )
     push_calls: list[int] = []
     monkeypatch.setattr(
