@@ -67,7 +67,7 @@ jobs:
           # Public repository - no token needed.
 
       - name: Install uv and Python
-        uses: astral-sh/setup-uv@v9
+        uses: astral-sh/setup-uv@v5
         with:
           python-version: "3.13"
           enable-cache: true
