@@ -1,0 +1,1505 @@
+RAAD VAN STATE, AFDELING BESTUURSRECHTSPRAAK 
+
+VOORZITTER VAN DE XIIe KAMER 
+
+In zake: 
+
+A R R E S T 
+
+nr. 244.136 van 2 april 2019 
+in de zaak A. 227.580/XII-8702 
+
+ de NV CGM LAB BELGIUM 
+bijgestaan en vertegenwoordigd door   
+advocaat Anthony Poppe 
+kantoor houdend te 1160 Brussel 
+Tedescolaan 7 
+bij wie woonplaats wordt gekozen 
+
+tegen: 
+
+de AV AZ SINT-JAN BRUGGE-OOSTENDE 
+bijgestaan en vertegenwoordigd door 
+advocaat Tom De Gendt 
+kantoor houdend te 3000 Leuven 
+Koning Leopold I-straat 32 
+bij wie woonplaats wordt gekozen 
+
+Tussenkomende partij: 
+
+de NV MIPS 
+bijgestaan en vertegenwoordigd door 
+advocaten Jens Debièvre en Elisabeth Robbroeckx 
+kantoor houdend te 1000 Brussel 
+Havenlaan 86c 
+bij wie woonplaats wordt gekozen 
+
+--------------------------------------------------------------------------------------------------   
+
+I. Voorwerp van de vordering 
+
+1. 
+
+De vordering, ingesteld op 8 maart 2019, strekt tot de schorsing 
+
+bij  uiterst  dringende  noodzakelijkheid  van  de  tenuitvoerlegging  van  “[d]e 
+
+beslissing van de raad van bestuur van de AV AZ Sint-Jan Brugge-Oostende van 
+
+20 februari 2019 houdende niet-gunning van de overheidsopdracht van diensten: 
+
+aanschaf, implementatie en onderhoud van een labo-informatiesysteem en gunning 
+
+XII-8702-1/21 
+
+‡ACETOCGBJ-BDGJJJT‡ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+van de opdracht aan de nv MIPS”. 
+
+II. Verloop van de rechtspleging 
+
+2. 
+
+De verwerende partij heeft een nota ingediend. 
+
+Met  een  verzoekschrift  van  20  maart  2019  heeft  de  nv  Mips 
+
+gevraagd om in het administratief kort geding te mogen tussenkomen. 
+
+De  partijen  zijn  opgeroepen  voor  de  terechtzitting,  die  heeft 
+
+plaatsgevonden op 28 maart 2019, om 11.00 uur. 
+
+Staatsraad Johan Bovin heeft verslag uitgebracht. 
+
+Advocaat  Anthony  Poppe,  die  verschijnt  voor  de  verzoekende 
+
+partij, advocaat Sarah Brouwers, die loco advocaat Tom De Gendt verschijnt voor 
+
+de verwerende partij,  en advocaten Jens Debièvre en Elisabeth  Robbroeckx, die 
+
+verschijnen voor de tussenkomende partij, zijn gehoord. 
+
+Auditeur  Ines  Martens  heeft  een  met  dit  arrest  eensluidend 
+
+advies gegeven. 
+
+Er is toepassing gemaakt van de bepalingen op het gebruik der 
+
+talen,  vervat  in  titel  VI,  hoofdstuk  II,  van  de  wetten  op  de  Raad  van  State, 
+
+gecoördineerd op 12 januari 1973. 
+
+III. Feiten 
+
+3.1. 
+
+De verwerende partij schrijft een overheidsopdracht voor diensten uit 
+
+met als voorwerp “de aankoop, implementatie en onderhoud van een Laboratory 
+
+information System (LIS) voor AZ Sint Jan Brugge-Oostende AV”. 
+
+Het bestek bepaalt voorts dat “dit project […] de aankoop [inhoudt] 
+
+van een LIS […] met volledige implementatie en ondersteuning voor 10 jaar”. 
+
+XII-8702-2/21 
+
+‡ACETOCGBJ-BDGJJJT‡ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+De  opdracht  wordt  geplaatst  door  middel  van  een  mede-
+
+dingingsprocedure met onderhandeling. 
+
+3.2. 
+
+Er worden vier kandidaten geselecteerd om een offerte in te dienen, 
+
+waaronder de verzoekende partij, zijnde de huidige LIS-verlener voor de campus 
+
+Sint Jan te Brugge en de gekozen inschrijver, zijnde de huidige LIS-verlener voor 
+
+de campus Henri Serruys te Oostende. 
+
+3.3. 
+
+Op 10 oktober 2018 dient de verzoekende partij een offerte in. 
+
+3.4. 
+
+Op 15 november 2018 licht de verzoekende partij haar offerte toe 
+
+aan de hand van een presentatie. 
+
+3.5. 
+
+Vervolgens vraagt de externe consultant AAA+ die de opdracht had 
+
+gekregen  de  procedure  te  organiseren  en  op  te  volgen,  een  prijsverantwoording 
+
+gelet op de vaststelling dat het offertebedrag van de verzoekende partij beduidend 
+
+onder het gemiddeld bedrag ligt van dat van de andere ingediende offertes. 
+
+Uit de met een brief van 23 november 2018 door de verzoekende 
+
+partij  gegeven  prijsverantwoording  blijkt  dat  deze  laatste  uitging  van  een 
+
+gedeeltelijke installatie vanuit het bestaande LIS voor de campus Sint-Jan in plaats 
+
+van een volledige herinstallatie.     
+
+Met  een  brief  van  25  november  2018  wijst  de  externe  consulent 
+
+erop  dat  de  opdracht  een  volledige  herinstallatie  inhoudt  en  dat  de  verwerende 
+
+partij maximaal voor virtualisatie gaat.    Tevens geeft zij bijkomende informatie 
+
+en  vraagt  bijkomende  uitleg  over  een  aantal  aspecten  van  het  systeem  van  de 
+
+verzoekende partij. 
+
+Met een brief van 28 november 2018 bezorgt de verzoekende partij 
+
+aan  de  verwerende  partij  de  door  haar  gevraagde  informatie  en  een  aangepaste 
+
+inventaris. 
+
+XII-8702-3/21 
+
+‡ACETOCGBJ-BDGJJJT‡ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.6. 
+
+Met een brief van 9 januari 2019 vraagt de verwerende partij aan de 
+
+inschrijvers om een BAFO in te dienen, met de volgende mededeling: 
+
+“De aanbestedende overheid wenst de aanbieder er op te wijzen dat enkel 
+een realistische prijs weerhouden kan worden, gebaseerd op een volledige 
+herinstallatie. Er wordt verwacht dat u er hierbij geen rekening houdt dat er 
+verder gebouwd wordt op mogelijke reeds bestaande applicaties.” 
+
+3.7. 
+
+Op 16 januari 2019 dient de verzoekende partij een nieuwe offerte 
+
+in,  waarin  rekening  wordt  gehouden  met  een  volledige  herinstallatie  van  het 
+
+systeem. 
+
+3.8. 
+
+Met een brief van 21 februari 2019, ter post aangetekend verzonden 
+
+en per e-mailbericht verstuurd op 22 februari 2019, deelt de verwerende partij aan 
+
+de verzoekende partij mee dat de raad van bestuur op 20 februari 2019 heeft beslist 
+
+de  opdracht  te  gunnen  aan  de  nv  MIPS,  met  als  bijlage  een  niet  ondertekend 
+
+verslag van nazicht van de offertes. 
+
+3.9. 
+
+In  antwoord  op  een  e-mailbericht  van  5  maart  2019  bezorgt  de 
+
+verwerende  partij  met  een  e-mailbericht  van  6  maart  2019  aan  de  verzoekende 
+
+partij een afschrift van de gunningsbeslissing van 20 februari 2019. 
+
+Dit is de bestreden beslissing. 
+
+IV. Regelmatigheid van de rechtspleging 
+
+4. 
+
+De verzoekende partij heeft een “pleitnota” ingediend. Deze nota, die 
+
+niet door de procedureregeling is voorgeschreven, wordt slechts bij de beoordeling 
+
+van de vordering betrokken in de mate dat deze de neerslag is van de mondelinge 
+
+uiteenzetting ter terechtzitting. 
+
+‡ACETOCGBJ-BDGJJJT‡ 
+
+XII-8702-4/21 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+V. Tussenkomst 
+
+5. 
+
+De nv Mips blijkt voordeel te halen uit de bestreden beslissing en 
+
+heeft er belang bij dat de vordering wordt afgewezen. Bijgevolg moet haar verzoek 
+
+tot tussenkomst worden ingewilligd. 
+
+VI. Schorsingsvoorwaarden 
+
+6.1. 
+
+Krachtens artikel 17, §§ 1 en 4, van de gecoördineerde wetten op 
+
+de Raad van State kan tot schorsing van de tenuitvoerlegging bij uiterst dringende 
+
+noodzakelijkheid  slechts  worden  besloten  onder  de  dubbele  voorwaarde  dat 
+
+minstens één ernstig middel wordt aangevoerd dat de nietigverklaring van de akte 
+
+of  het  reglement  prima  facie  kan  verantwoorden  en  dat  een  uiterst  dringende 
+
+noodzakelijkheid voorhanden is die onverenigbaar is met de behandelingstermijn 
+
+van de gewone vordering tot schorsing. 
+
+6.2. 
+
+Te dezen is evenwel ook de wet van 17 juni 2013 „betreffende de 
+
+motivering,  de  informatie  en  de  rechtsmiddelen  inzake  overheidsopdrachten, 
+
+bepaalde  opdrachten  voor  werken,  leveringen  en  diensten  en  concessies‟  van 
+
+toepassing. 
+
+Krachtens  artikel  15,  eerste  lid,  van  die  wet  kan  de  uitvoering 
+
+worden  geschorst  van  de  thans  bestreden  beslissingen  in  aanwezigheid  van  een 
+
+ernstig middel of een klaarblijkelijke onwettigheid. 
+
+Overeenkomstig  artikel  15,  tweede  lid,  echter  wordt  de 
+
+vordering tot schorsing voor de Raad van State uitsluitend ingesteld volgens een 
+
+procedure bij uiterst dringende noodzakelijkheid. 
+
+Er  dient  te  dezen  dan  ook  enkel  nog  te  worden  onderzocht  of 
+
+minstens  één  ernstig  middel  wordt  aangevoerd,  dan  wel  een  klaarblijkelijke 
+
+‡ACETOCGBJ-BDGJJJT‡ 
+
+XII-8702-5/21 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+onwettigheid  aanwezig  is,  die  de  nietigverklaring  van  de  bestreden  beslissingen 
+
+kunnen verantwoorden. 
+
+VII. Onderzoek van het eerste onderdeel van het tweede middel 
+
+Uiteenzetting 
+
+7.1. 
+
+aan van:   
+
+De verzoekende partij voert in een tweede middel de schending 
+
+“-  het gelijkheidsbeginsel en het transparantiebeginsel vervat in artikel 4 van 
+
+de wet inzake overheidsopdrachten dd. 17 juni 2016;   
+
+-  Artikel 4, lid 1, 8°, van de wet van 17 juni 2013 betreffende de motive-
+ring,  de  informatie  en  de  rechtsmiddelen  inzake  overheidsopdrachten, 
+bepaalde opdrachten voor werken, leveringen en diensten en concessies 
+en  de  artikelen  2  en  3  van  de  wet  van  29  juli  1991  betreffende  de 
+uitdrukkelijke motivering van de bestuurshandelingen;   
+
+-    Het  algemeen  beginsel  van  behoorlijk  bestuur  van  de  materiële 
+
+motiveringsplicht.   
+
+Doordat de beoordeling van het gunningscriterium „kwaliteit‟ niet steunt op 
+een afdoende motivering bestaande uit concrete motieven;   
+Doordat verzoekende partij uit de motivering niet kan afleiden waarom de 
+scores  voor  dit  criterium  aan  de  gekozen  inschrijvers  en  haarzelf  werden 
+toegekend;   
+Doordat de zeer weinige concrete motieven dan ook niet    correct zijn;   
+Terwijl een gunningsbeslissing moet steunen op een concrete motivering die 
+terug te vinden is in de beslissing zelf;   
+Terwijl een gunningsbeslissing moet steunen op draagkrachtige en rechtens 
+aanvaardbare motieven; 
+Zodat de in het middel aangehaalde beginselen geschonden worden;” 
+
+7.2. 
+
+In  een  eerste  middelonderdeel  voert  de  verzoekende  partij  aan 
+
+dat de in het gunningsverslag opgenomen motivering haar niet toelaat te begrijpen 
+
+waarom  haar  een  score  van  slechts  34,62/60  punten  werd  toegekend  voor  het 
+
+gunningscriterium  “kwaliteit”.  De  verwerende  partij  heeft  zich  beperkt  tot 
+
+algemene  nietszeggende  beoordelingen  zonder  aan  te  geven  op  welke  wijze  de 
+
+verzoekende  partij  minder  goed  scoorde  dan  andere  inschrijvers  op  de  door  de 
+
+verwerende partij opgesomde aspecten. Hetzelfde geldt voor de beoordeling van 
+
+XII-8702-6/21 
+
+‡ACETOCGBJ-BDGJJJT‡ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+de offerte van de gekozen inschrijver.   
+
+Beoordeling 
+
+7.3. 
+
+Het  geschonden  geachte  artikel  4,  8°,  van  de  wet  van  17  juni 
+
+2013  „betreffende  de  motivering,  de  informatie  en  de  rechtsmiddelen  inzake 
+
+overheidsopdrachten en bepaalde opdrachten voor werken, leveringen en diensten 
+
+en concessies‟ (hierna de rechtsbeschermingswet 2013), bepaalt: 
+
+“In  het  kader  van  de  plaatsing  van  een  opdracht  stelt  de  aanbestedende 
+instantie een gemotiveerde beslissing op : 
+[…] 
+ 8° wanneer ze een opdracht gunt, ongeacht de procedure;” 
+
+Artikel 5, 9°, van dezelfde wet, bepaalt: 
+
+“De  in  artikel  4  bedoelde  gemotiveerde  beslissing  bevat,  naargelang  de 
+plaatsingsprocedure en het soort beslissing: 
+[…] 
+9°  de  namen  van  de  gekozen  inschrijver  of  de  gekozen  deelnemer  of 
+deelnemers bij de raamovereenkomst en van de deelnemers en inschrijvers 
+van  wie  de  regelmatige  offerte  niet  werd  gekozen  en  de  juridische  en 
+feitelijke motieven, waaronder de kenmerken en relatieve voordelen van de 
+gekozen offerte, voor de beslissingen die daarop betrekking hebben;” 
+
+Artikel 8, §1, eerste lid, van dezelfde wet, dat te deze eveneens 
+
+van toepassing is, bepaalt: 
+
+“Onmiddellijk na het nemen van de gemotiveerde gunningsbeslissing deelt 
+de aanbestedende instantie het volgende mee: 
+1° […] 
+2° […] 
+3° aan elke inschrijver van wie de offerte niet is gekozen en aan de gekozen 
+inschrijver, de gemotiveerde beslissing.” 
+
+7.4. 
+
+Bij brief van 21 februari 2019 deelt de verwerende partij aan de 
+
+verzoekende partij mee dat de opdracht werd gegund aan nv MIPS. Bij deze brief 
+
+XII-8702-7/21 
+
+‡ACETOCGBJ-BDGJJJT‡ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+wordt het gunningsverslag gevoegd. In het gunningsverslag wordt met betrekking 
+
+tot  de  beoordeling  van  de  offerte  van  de  verzoekende  partij  en  van  de  gekozen 
+
+inschrijver het volgende vermeld: 
+
+“Gunningscriterium nr. 2: Kwaliteit Beoordeling op 60 punten   
+Het bestek vermeldt het volgende mbt de beoordeling: In het luik kwaliteit 
+zijn minimumeisen vooropgesteld waaraan het systeem moet voldoen om 
+in aanmerking te komen. Indien men hier niet aan voldoet, wordt men niet 
+verder meegenomen in de evaluatie. De minimumeisen zijn per hoofdstuk 
+in  het  vet  samengevat  en  aangeduid.  De  leverancier  dient  hierop  zo 
+volledig mogelijk te antwoorden. De antwoorden worden meegenomen in 
+de evaluatie.   
+Indien van toepassing:  een bijkomend duidelijk verstaanbaar en beknopt 
+overzicht  van  wat  er  in  de  offerte  „extra‟  wordt  aangeboden  en  die  een 
+meerwaarde kan betekenen bij de evaluatie.   
+Voor gunningscriterium kwaliteit dient minstens de helft van de punten te 
+worden behaald om verder in aanmerking te komen voor de gunning van 
+de opdracht.   
+
+Beoordelingsmethodiek:   
+Er werd per topic/hoofdstuk gequoteerd. Het quoteren gebeurde door de 
+diverse leden van het multidisciplinair team. Dit team omvat zowel artsen, 
+stafmedewerkers  IT  en  experten  IT  Labo,  dit  van  de  beide  campussen 
+Oostende en Brugge. Indien de kandidaten op eenzelfde manier voldoen 
+aan  de  minimumeisen  dan  verkrijgt  men  ook  dezelfde  score.  Bij  het 
+quoteren  werd  tevens  rekening  gehouden  met  de  volledigheid  van  de 
+offerte, structuur, mate van in detail uitgewerkt etc.   
+Hierna werd deze totale score herleid naar een totaal op 60 punten.   
+
+2 
+
+CGM LAB 
+BELGIUM SA 
+
+34,62 
+
+De firma scoort goed, maar minder goed dan 
+de andere firma’s op volgende aspecten:   
+- Zorgapplicaties en rapportering van 
+resultaten   
+- Facturatie   
+- Gebruik   
+- lab – lab koppelingen   
+- licenties, data migratie en integratie 
+infrastructuur   
+- gebruik   
+- ontwikkelingen en toekomstmogelijkheden   
+- archivering   
+De firma scoort niet goed/minst goed op 
+volgende aspecten:   
+- Validaties   
+- Rapportering, statistieken   
+- Klachtenmodule (niet aanwezig)   
+
+XII-8702-8/21 
+
+‡ACETOCGBJ-BDGJJJT‡ 
+
+ 
+ 
+ 
+ 
+ 
+- Bloedtransfusie   
+
+Bijkomend: - De eerste ingediende offerte 
+van de firma werd ingediend als een „draft‟- 
+versie; (alle opmerkingen, wijzigingen en 
+doorhalingen blijven zichtbaar). Hierdoor is 
+de offerte slordig en niet secuur afgewerkt. 
+Het maakt de informatie ook 
+onoverzichtelijk.   
+Dat de ingediende antwoorden en informatie 
+onduidelijk zijn, bleek ook uit de gesprekken 
+op de demo van 15/11:Op het aspect rond 
+Lab-Lab koppelingen met het KOM-netwerk 
+werd geen duidelijk antwoord gegeven in de 
+offerte (post 15).   
+Ook in daaropvolgende vragenrondes blijft 
+dit een minpunt: de info is vaak niet 
+nauwkeurig en onduidelijk.   
+Tenslotte werd ook een fout gemaakt in het 
+doorgeven van de definitieve prijs, ook dit 
+moest opnieuw bevraagd worden.   
+
+Het pakket dat initieel aangeboden werd door 
+de firma CGM ging ervan uit dat het huidige 
+LIS, momenteel aanwezig in Sint Jan 
+Brugge, wordt uitgebreid met de campus 
+Oostende.   
+In de vraag naar bijkomende informatie werd 
+gesteld hier geen rekening mee te houden. De 
+offerte werd op deze manier aangepast.   
+Minpunt is dat er veel managed services en 
+beheer zelf te voorzien zijn. De firma CGM 
+gaat uit van een sterke lokale technische 
+ondersteuning   
+Pluspunten: de firma kan zelf extra interfaces 
+opzetten zonder extra licentie-kost; DB 
+oracle = breed gebruikt systeem.   
+
+3 
+
+MIPS NV 
+
+51 
+
+De firma MIPS NV scoort het best op 
+volgende aspecten:   
+- lab – lab koppelingen   
+- Zorgapplicaties en rapportering van 
+resultaten   
+- Facturatie   
+- Gebruik   
+- Rapportering, statistieken   
+- Stockbeheer   
+- Archivering   
+
+XII-8702-9/21 
+
+‡ACETOCGBJ-BDGJJJT‡ 
+
+ 
+ 
+ 
+ 
+ 
+- Klachtenmodule   
+- bloedtransfusie   
+
+De firma scoort goed, maar minder goed dan 
+de andere firma’s op volgende aspecten:   
+- licenties, data migratie en integratie 
+infrastructuur   
+- ontwikkelingen, toekomstmogelijkheden   
+
+De firma scoort het niet goed/minst goed op 
+volgende aspecten:   
+- Validaties   
+
+Bijkomend:   
+Het ingediende dossier van de firma is 
+gedetailleerd en goed gestructureerd 
+afgewerkt. Dit is professioneel. Het 
+aangeboden pakket is het meest compleet en 
+biedt een holistische aanpak. De firma gaat 
+uit van een herinstallatie, wat ook onze vraag 
+is.   
+Pluspunt: verwachten niet dat het 
+ziekenhuis zelf data-integraties 
+opzet, de firma biedt standaard 
+interfaces. Er is minder in eigen 
+beheer te voorzien   
+Minpunt: DB progress = dit is niet innovatief   
+
+.” 
+
+7.5. 
+
+Op  het  eerste  gezicht  dient  te  worden  vastgesteld  dat  de 
+
+motivering  met  betrekking  tot  de  beoordeling  van  de  offertes  wat  betreft  het 
+
+gunningscriterium  “kwaliteit”  zich  beperkt  tot  een  weergave  van  een  aantal 
+
+topics/titels  uit  de  technische  vereisten  opgenomen  in  het  bestek  met  daaraan 
+
+toegevoegd  de  vermelding  dat  de  offerte  hieraan  beter  dan  wel  minder  goed 
+
+voldoet dan de overige offertes. Vervolgens wordt aan de offerte een puntenscore 
+
+toegekend nauwkeurig tot twee cijfers na de komma. De verschillende elementen 
+
+die in de beoordeling worden vermeld stemmen overeen met de titels in het deel 
+
+technische bepalingen van het bestek waaronder de minimale technische vereisten, 
+
+alsook  de  elementen  die  een  significante  meerwaarde  van  de  offerte  kunnen 
+
+betekenen  worden  opgenomen.  Op  het  eerste  gezicht  worden  in  het  technische 
+
+bestek  echter  onder  deze  titels  verschillende  minimale  vereisten  nauwkeuriger 
+
+omschreven.  Zo  bijvoorbeeld  worden  in  het  technische  bestek  onder  de  als 
+
+XII-8702-10/21 
+
+‡ACETOCGBJ-BDGJJJT‡ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+beoordelingselement  gehanteerde  titel  “zorgapplicatie”  verdere  minimale  eisen 
+
+beschreven  inzake  het  opnemen  van  patiënteninformatie,  het  overnemen  van 
+
+zorgverstrekkers-gegevens,  het  gebruik  van  elektronische  patiëntinformatie  aan 
+
+het bed, het uitsturen van gevalideerde resultaten naar de verwijzer via eHealthbox 
+
+en  naar  de  HUB.  Onder  het  als  beoordelingselement  gehanteerde  “gebruik” 
+
+worden in het technisch bestek bijvoorbeeld ook verschillende minimale vereisten 
+
+beschreven, zoals blijkt uit de hieronder hernomen tekst uit het bestek (blz. 32-34): 
+
+“III.4 Gebruik   
+Op de werkposten moet men als volgt kunnen werken met het LIS:   
+Het LIS moet de volgende staalflow en werkwijze ondersteunen:   
+- Nieuwe orders   
+o die binnenkomen via CyberLab worden automatisch aangemaakt in het 
+LIS   
+o die binnenkomen op papier moeten men manueel kunnen ingeven   
+o  van  POCT  toestellen  worden  automatisch  aangemaakt  en  resultaten 
+ingelezen   
+o vlotte ingave van sequentiële aanvragen (tijdcurves)   
+o Van alle monsters in een order moeten etiketten afgedrukt worden met 
+identificatie barcodes, ordernummer, naam, geboortedatum, type monster, 
+afnametijdstip en toestellen/werkposten waar er testen moeten gebeuren.   
+- Scannen voor ontvangst van het monster in het lab.   
+- Mogelijkheid om bij staalreceptie algemene staalinformatie op te nemen 
+die indien nodig aanleiding geeft tot bijkomende medische validatie (zoals 
+bv. Afwijkende temperatuur bij transport)   
+- Monster komt beschikbaar in het LIS en   
+o komt open in de werklijst van het toestel, de werkpost en eventueel aparte 
+werklijsten zoals URGENT, Nacht, ….   
+o  wordt  automatisch  doorgestuurd  naar  het  toestel  zodat  het  toestel  dit 
+herkent wanneer men het monster aanbiedt   
+- Men moet het LIS kunnen configureren zodat er bij ingave van een order 
+of  bij  inscannen  van  monsters  voor  ontvangst  in  het  Lab  indien  nodig 
+waarschuwingen  gegeven  worden  en  automatische  verwerkingen  zoals 
+extra testen aanvragen, bepaalde patiëntkenmerken invullen, … uitgevoerd 
+worden (pop-up).   
+- Men moet sequentiële afnames van verschillende monsters in de tijd (bv 
+endocriene  stimulatietesten,  dagcurves)  flexibel  kunnen  linken  aan 
+éénzelfde ordernummer van de patiënt.   
+-  Mogelijkheid  tot  export  van  gegevens  om  een  labogids  te  creëren 
+(webapplicatie die de nodige informatie uit de database van het LIMS kan 
+halen en waar we als klant eventuele lay-out keuzes in hebben)   
+- Als resultaten beschikbaar zijn in toestel   
+o Het LIS ontvangt de resultaten na het uitvoeren van de analyse door het 
+
+XII-8702-11/21 
+
+‡ACETOCGBJ-BDGJJJT‡ 
+
+ 
+ 
+ 
+tot 
+
+ingestelde 
+
+ingave  van  resultaten  via  vooraf 
+
+toestel.   
+o  Men  moet  in  het  LIS  kunnen  configureren  welke  testen  manueel  of 
+automatisch  moeten  geconfirmeerd  en/of  geautoriseerd  worden. 
+(technische  validatie=confirmeren,  medische  validatie=autoriseren).  Men 
+moet test-specifieke criteria kunnen instellen voor de selectie van wanneer 
+een testresultaat wel of niet moet geautoriseerd worden.   
+o Koppeling met Valab   
+o Mogelijkheid tot instellen van medische validatiecentra   
+o Men moet het LIS kunnen configureren zodat er bij bepaalde resultaten 
+indien  nodig  waarschuwingen  gegeven  worden  en  automatische 
+verwerkingen zoals extra testen aanvragen, mail versturen naar Ziekenhuis 
+Infectiebestrijding, … uitgevoerd worden   
+o  Mogelijkheid  tot  registratie  (en  validatie)  doorgegeven  klinische  en 
+therapeutische  informatie,  zodat  er  per  patiënt  een  overzichtelijk  intern 
+„medisch dossier‟ raadpleegbaar is   
+-  Mogelijkheid 
+gestandaardiseerde parameters   
+-  Men  moet  interne  en  externe  commentaar  kunnen  toevoegen  op 
+testniveau   
+Men  moet  een  telefoonlijst  kunnen  configureren  waarop  de  testen  met 
+abnormale  resultaten  komen  die  men  moet  doorbellen.  Nadat  men  de 
+resultaten heeft doorgebeld moet men dit kunnen afvinken en commentaar 
+toevoegen aan de telefoonlog.   
+- Men moet orders kunnen opzoeken als een arts belt voor bijaanvragen of 
+resultaten.   
+- Men moet vlot bijaanvragen aan een order kunnen toevoegen.   
+- Geïntegreerde rekenmachine   
+-  Alle  handelingen  in  het  LIS  moeten  gelogd  worden  zodat  er  volledige 
+traceerbaarheid is.   
+- Men moet bijlagen kunnen toevoegen op verschillende niveaus: Orders, 
+Personen, Monsters, Testen, Klachten, …   
+- Celteller   
+-  Logistieke  voorziening  om  op  een  efficiënte  manier  orders  te  kunnen 
+versturen binnen een multi-site laboratorium met volledige traceability. Op 
+verzendende  site  scant  men  alle  monsters  en  de  doos/drager  waarin  men 
+deze inpakt. Ontvangst op de andere site moet men enkel de doos/drager 
+scannen om alle monsters beschikbaar te hebben.   
+- Patiënteigenschappen   
+- Gemakkelijk toekennen van eigenschappen op patientniveau   
+o Ziektes   
+o Eigenschappen voor interne werking te optimaliseren   
+- Verschillende selecties voor queries   
+- Verschillende selecties voor triggers   
+- Uitgebreide ondersteuning voor Microbiologie   
+o opvolgen van inzetten van monsters   
+o  Bi-directionele  koppeling  met 
+
+identificatie  en 
+
+toestellen  voor 
+
+‡ACETOCGBJ-BDGJJJT‡ 
+
+XII-8702-12/21 
+
+ 
+ 
+antibiogram.   
+o  Gebruik  van  eenvoudige  query‟s  voor  opzoeken  van  microbiologische 
+acties  per  periode,  patiënt,  materiaal,  procedure,  organisme  met 
+mogelijkheid om gebruik te maken van zelf-gedefinieerde filters   
+o  Uitgebreide  configuratie  met  mogelijkheid  om  specifieke  regels  in  te 
+bouwen   
+o  Duidelijk  overzicht  met  alle  elementen  zoals  klinische  inlichtingen, 
+behandeling, resultaten van analyses   
+o Opstellen van statistieken volgens isolaten, resistentie en onderzoeken   
+- Uitgebreide ondersteuning voor Epidemiologie   
+o  Mogelijkheid  tot  vergelijken  van  isolaten  en  het  creëren  van  isolaat 
+reeksen. Van elk nieuw geconfirmeerd isolaat dat wordt toegevoegd aan de 
+kweek  van  een  patiënt  wordt  een  isolaat  reeks  aangemaakt,  indien  het 
+isolaat  volgens  in  te  stellen  criteria  niet  overeenkomt  met  een  eerder 
+geïsoleerd isolaat. Wanneer een isolaat wel binnen ingestelde criteria valt, 
+voegt het LIS het isolaat toe als dubbel aan een bestaande reeks. Een dubbel 
+is in het isolaat overzicht duidelijk te herkennen (bv. aan een D).   
+o De module moet zorgen voor:   
+Detectie van isolaat reeksen   
+Vergelijking  van  isolaat  reeksen  tussen  patiënten  en  detectie  van 
+ziekenhuisinfecties   
+Automatische  rapportage  bij 
+organismen (MRSA, VRE, e.d.)   
+Criteria  (Infectie  trigger,  Kruisinfectie  trigger,  Max.  aantal  dagen 
+tussen  2  opeenvolgende  isolaten  van  een  reeks,  tussen  opname  en 
+nosocomiaal,  Max  antibiogramverschil  tussen  2  opeenvolgende  isolaten 
+van  een  reeks,  tussen  1ste  en  laatste  isolaat  van  een  reeks,  …)  moeten 
+gelden in gans het LIS en per micro organisme in te stellen zijn.   
+Exporteermogelijkheden via statistiekmodule.   
+QC module   
+-  Mogelijkheid  om  binnen  het  LIS  systeem 
+interne  en  externe 
+kwaliteitscontroles  te  verwerken  en/of  te  exporteren  naar  gekoppelde 
+systemen.   
+- Mogelijkheid om m.b.v. interne en externe controles de kwaliteit van een 
+laboratorium  te  waarborgen.  De  Quality  Control  module  zorgt  voor  de 
+monitoring  van  resultaten  a.d.h.v.  de  vooraf  bekende  criteria  op  zowel 
+kwantitatieve als kwalitatieve resultaten.   
+- De module moet de mogelijkheid bieden tot:   
+o Controle op de kwaliteit van de meetmethodes   
+o Bewaking van de betrouwbaarheid van geproduceerde resultaten volgens 
+ingestelde regels   
+o Afhandeling interne en externe controles   
+o Export 
+Pathfinder/Fastfinder)   
+o Genereren en opslaan van Auditrapporten   
+o Configuratie van controles op werklijsten   
+
+identificatie  van  specifieke  micro 
+
+kwaliteitsverwerking 
+
+(bv.Biorad, 
+
+externe 
+
+naar 
+
+‡ACETOCGBJ-BDGJJJT‡ 
+
+XII-8702-13/21 
+
+ 
+ 
+o Track and trace van QC resultaten”. 
+
+7.6. 
+
+Door  de  enkele  vermelding  in  het  gunningsverslag  dat  haar 
+
+offerte  minder  goed  scoort  dan  de  andere  offertes  op  het  beoordelingselement 
+
+“gebruik”  krijgt  de  verzoekende  partij  geen  enkel  inzicht  in  de  vraag  met 
+
+betrekking tot welke van de talrijk opgesomde vereisten in  het  technisch  bestek 
+
+onder  de  titel  “gebruik”  haar  offerte  niet  voldoet  of  de  offerte  van  de  andere 
+
+inschrijver  beter  voldoet.  Dit  geldt  evenzeer  voor  alle  andere  in  het  gunnings-
+
+verslag  weergegeven  beoordelingselementen  die  betrekking  hebben  op 
+
+verschillende minimale vereisten. Evenmin blijkt uit de gegeven motivering aan 
+
+welke  van  de  in  het  bestek  opgenomen  elementen  die  een  meerwaarde  kunnen 
+
+betekenen de offerte al dan niet beantwoordt in de ogen van het beoordelingsteam. 
+
+Zo worden onder de titels “Lab-Lab-koppelingen”, “ontwikkelingen en toekomst-
+
+mogelijkheden  […]”  verscheidene  elementen–  vermeld  die  een  significante 
+
+meerwaarde  kunnen  betekenen.  Nu  in  de  beoordeling  van  de  offertes  de 
+
+verwerende partij zich ertoe beperkt de titel weer te geven uit het technische bestek 
+
+met  betrekking  tot  bepaalde  minimale  eisen  of  significante  meerwaarden  en  de 
+
+vermelding  dat  de  offerte  hieraan  beter  of  minder  goed  voldoet  dan  de  andere 
+
+offertes,  wordt  aan  de  betrokkene  op  geen  enkele  wijze  inzicht  verschaft  in  de 
+
+wijze  waarop  zijn  offerte  al  dan  niet  voldoet  aan  de  verschillende  vereisten  die 
+
+omschreven worden onder de betrokken titel in het technische bestek en wordt aan 
+
+de betrokkene aldus onvoldoende inzicht verschaft in de wijze waarop zijn offerte 
+
+beantwoordt  aan  het  gunningscriterium,  laat  staan  dat  de  betrokkene  voldoende 
+
+concreet weet wat de kenmerken en relatieve voordelen van de gekozen offerte zijn 
+
+tegenover zijn eigen offerte. De bijkomende motivering in het gunningsverslag, dat 
+
+de offerte van de verzoekende partij slordig was, met onoverzichtelijke informatie 
+
+die  onvoldoende  nauwkeurig  en  duidelijk  was,  dat  het  feit  dat  in  veel  managed 
+
+services en beheer zelf te voorzien zijn een minpunt van de offerte betreft en dat het 
+
+feit dat de onderneming zelf extra interfaces kan opzetten zonder extra licentiekost 
+
+en dat DB-Oracle een breed gebruikt systeem is een pluspunt van de offerte vormt, 
+
+maakt  in  het  licht  van  de  verscheidene  getoetste  beoordelingselementen  en  de 
+
+toegekende scores evenmin een afdoende motivering uit. Dit lijkt des te meer te 
+
+XII-8702-14/21 
+
+‡ACETOCGBJ-BDGJJJT‡ 
+
+ 
+ 
+ 
+ 
+gelden  nu  de  verwerende  partij  in  haar  nota  ook  aangeeft  dat  bijvoorbeeld  het 
+
+argument  met  betrekking  tot  de  managed  services  niet  eens  betrokken  zou  zijn 
+
+geweest in de beoordeling en de toekenning van de puntenscore, zodat dit zelfs niet 
+
+als een motief van de bestreden beslissing dient te worden beschouwd. 
+
+7.7. 
+
+Voorts  lijkt  deze  motivering  evenmin  afdoende  gelet  op  de 
+
+aangekondigde  beoordelingsmethodiek.  In  het  bestek  werd  de  beoordelings-
+
+methodiek  wat  het  tweede  gunningscriterium  “kwaliteit”  betreft  als  volgt 
+
+omschreven (bladzijde 10): 
+
+“ I.11 Gunningscriteria 
+Volgende criteria zijn van toepassing bij de gunning van de opdracht: 
+
+nr 
+
+1 
+
+2 
+
+beschrijving 
+
+prijs 
+
+[…] 
+
+Kwaliteit 
+
+gewicht 
+
+30 
+
+60 
+
+Zie  specificaties  technische  bepalingen 
+
+voor een beschrijving van: 
+
+-  De minimumeisen 
+
+-  Aspecten 
+
+die 
+
+een 
+
+significante 
+
+meerwaarde  kunnen  betekenen  in  de 
+
+evaluatie 
+
+3 
+
+Service (onderhoud, opleiding) 
+
+10 
+
+[…] 
+
+Aan elk criterium werd een gewicht toegekend. Op basis van de afweging 
+van  al  deze  criteria  rekening  houdende  met  het  gewicht  dat  er  aan  werd 
+toegekend,  zal  de  opdracht  gegund  worden  aan  de  inschrijver  die  de 
+economisch voordeligste offerte, vanuit het oogpunt van de aanbestedende 
+overheid, heeft ingediend. 
+Voor gunningscriterium 2 dient minstens de helft van de punten te worden 
+behaald om verder in aanmerking te kunnen komen voor gunning van de 
+opdracht.” 
+
+‡ACETOCGBJ-BDGJJJT‡ 
+
+XII-8702-15/21 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Bij de technische bepalingen van het bestek wordt daar nog aan 
+
+toegevoegd (bladzijde 22): 
+
+“B. structuur 
+[…] 
+Er zijn minimumeisen vooropgesteld waaraan het  systeem  moet voldoen 
+om in aanmerking te komen. Indien men hier niet aan voldoet, wordt men 
+niet  verder  meegenomen  in  de  evaluatie.  De  minimumeisen  zijn  per 
+hoofdstuk  in  vet  samengevat  en  aangeduid.  Gelieve  hierop  zo  volledig 
+mogelijk te antwoorden. Uw antwoorden zullen meegenomen worden in de 
+evaluatie van de gunningscriteria kwaliteit of service.   
+[…] 
+Indien  van  toepassing:  een  bijkomend  duidelijk  verstaanbaar  en  beknopt 
+overzicht  van  wat  er  in  de  offerte  „extra‟  wordt  aangeboden  en  die  een 
+meerwaarde  kan  betekenen  voor  dit  project.  Deze  aspecten  kunnen 
+meegenomen worden bij de evaluatie van de criteria kwaliteit en service.” 
+
+Zo wordt in de technische bepalingen bijvoorbeeld aangegeven 
+
+dat  de  daar  omschreven  vereisten  inzake  lab-lab  koppelingen  geen  minimale 
+
+vereisten zijn, maar dat het voorstel in de offerte om te voldoen aan deze vereisten 
+
+als  een significante meerwaarde kan worden beoordeeld  in de evaluatie  van het 
+
+gunningscriterium “kwaliteit”.   
+
+Op grond van de omschrijving van de beoordelingsmethodiek in 
+
+het bestek en het gunningsverslag en de motivering van de beoordeelde elementen 
+
+wordt  aan  de  betrokken  inschrijver  evenmin  voldoende  inzicht  verschaft  in  de 
+
+wijze waarop aan de offerte een bepaald  aantal  punten, nauwkeurig tot  op twee 
+
+cijfers na de komma, werd toegekend in functie van de beoordeelde elementen. Er 
+
+wordt in het gunningsverslag enkel toegelicht dat de offertes werden beoordeeld 
+
+door diverse leden van een multidisciplinair team. Er wordt echter niet toegelicht 
+
+op welke wijze deze leden van het beoordelingsteam het voldoen aan de minimale 
+
+vereisten enerzijds, en het voorstellen van extra‟s die een significante meerwaarde 
+
+betekenen  anderzijds,  hebben  geëvalueerd  in  functie  van  het  totaal  aantal  toe  te 
+
+kennen punten voor dit gunningscriterium en dit ook rekening houdende met het 
+
+feit dat alle in de eindrangschikking opgenomen offertes geacht moeten worden te 
+
+hebben voldaan aan de minimale technische vereisten.   
+
+XII-8702-16/21 
+
+‡ACETOCGBJ-BDGJJJT‡ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+7.8. 
+
+In  haar  nota  stelt  de  verwerende  partij  dat  een  beoordelings-
+
+methode werd  gebruikt  waarbij  de diverse topics werden  gescoord op 5 punten, 
+
+waarbij een beoordeling zeer goed (voldoet aan de minimumeisen en biedt een zeer 
+
+goed  gedetailleerd  en  duidelijk  uitgewerkt  overzicht  van  de  mogelijkheden,  het 
+
+antwoord  is  volledig)  leidde  tot  een  score  van  5/5,  goed  (voldoet  aan  de 
+
+minimumeisen  en  biedt  een  duidelijk  overzicht)  tot  een  score  van  3/5,  basis 
+
+(voldoet  aan  de  minimumeisen)  tot  een  score  van  2,5/5,  geen  antwoord/voldoet 
+
+niet (geen antwoord: eventueel nog bevragen in de onderhandelingen of voldoet 
+
+niet) tot een score van 0/5 en niet goed (voldoet niet aan de minimumeisen (niet 
+
+verder  meenemen  in  de  evaluatie)  tot  een  score  “NA”.    Bijkomend  zou  ook 
+
+rekening zijn gehouden met de volledigheid van de offerte, structuur, en de mate 
+
+van  in  detail  uitgewerkt  zijn  van  de  offerte.  Wanneer  dit  niet  voldeed  aan  de 
+
+verwachtingen werd hiervoor een punt afgetrokken en kreeg men een score van 
+
+4/5. Voor de topics die een significante meerwaarde konden betekenen werd een 
+
+score  van  5/5  gegeven  voor  de  beoordeling  “zeer  goed”  (het  antwoord  van  de 
+
+kandidaat  biedt  een  significante  meerwaarde  voor  het  ziekenhuis;  zeer  goed 
+
+gedetailleerd  en  duidelijk  uitgewerkt  overzicht  van  de  mogelijkheden,  het 
+
+antwoord  is  volledig),  een  score  3/5  voor  “goed”  (het  antwoord  biedt  een 
+
+meerwaarde  voor  het  ziekenhuis;  duidelijk  overzicht),  2,5/5  voor  “basis” 
+
+(antwoord  gegeven,  maar  biedt  geen  meerwaarde)  en  een  score  0/5  voor  “geen 
+
+antwoord/voldoet  niet”  (geen  antwoord:  eventueel  nog  bevragen 
+
+in  de 
+
+onderhandelingen of voldoet niet). 
+
+De campussen Sint-Jan en Henri-Serruys zouden elk een eigen 
+
+beoordeling  hebben  gedaan  waarna  het  gemiddelde  werd  genomen  van  de 
+
+toegekende  scores,  wat  werd  herrekend  naar  60  punten,  zijnde  het  aan  het 
+
+gunningscriterium toegekende gewicht. 
+
+De door de verwerende partij in haar nota gegeven toelichting bij 
+
+de  gebruikte  beoordelingsmethodiek  is  echter  nergens  terug  te  vinden  in  het 
+
+administratief dossier, laat  staan dat  deze werd  meegedeeld  aan de verzoekende 
+
+partij. 
+
+XII-8702-17/21 
+
+‡ACETOCGBJ-BDGJJJT‡ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+Vervolgens zet de verwerende partij in haar nota een beoordeling 
+
+uiteen van de offerte van de verzoekende partij met deelscores en motivering van 
+
+de deelscores waarvan evenmin enig spoor terug is te vinden in het administratief 
+
+dossier,  laat  staan  dat  deze  motivering  blijkt  te  zijn  meegedeeld  aan  de  verzoe-
+
+kende partij. Zo stelt de verwerende partij in haar nota: 
+
+“Voor  een  aantal  topics  verkreeg  verzoekende  partij  een  score  van  4/5. 
+Haar offerte voldeed in principe voor deze topics aan de voorwaarden voor 
+de maximum score, maar omdat de offerte zeer slordig en onoverzichtelijk 
+en summier was opgesteld, werd er bij de quotering van deze topics telkens 
+een punt afgehouden. Het gaat om een algemene verlaging in de score van 
+onderstaande topics omwille van hiaten in offerte: deze was zeer moeilijk 
+leesbaar,  was  zeer  slecht  gedocumenteerd  en  bevatte  geen  afbeeldingen. 
+Omwille  van  deze  hiaten  kon  het  evalutatieteam  van  de  campus 
+Henri-Serruys,  bestaande  uit  mensen  zonder  enige  voorkennis  van  het 
+systeem van verzoekende partij, zeer moeilijk inschatten welke de exacte 
+kenmerken en prestaties van het systeem zijn.   
+Het gaat om de volgende topics:   
+− 1.1.1 Zorgapplicaties en 1.1.2 Rapportering;   
+− 1.1.3 Lab-Lab koppelingen;   
+− 1.2 data-migratie en integratie met de infrastructuur;   
+− III.2 Integratie labo Intern.   
+Op deze topics behaalde verzoekende partij dus een score van 16 op 20.   
+Op de andere topics waarop de offerte van verzoekend goed scoorde, doch 
+minder  goed  dan  de  andere  inschrijvers,  verkreeg  ze  de  volgende  scores 
+met bijhorende motivering:   
+− 1.2 licenties: 3/5 „Dit is een goede score – geen verdere motivatie;   
+− 1.1.4 facturatie: 3/5 „De basismogelijkheden van de facturatie zijn OK‟;   
+− III.4 gebruik: 3,3/5, „Dit is een goede score – geen verdere motivatie‟;   
+−  III.5  ontwikkelingen  en  toekomstmogelijkheden:  3/5  „onvoldoende 
+inzicht in toekomstige ontwikkelingen‟;   
+− III.8 archivering: 2,75 „De archiveringsmodule in Molis is zeer basic‟.   
+Op deze topics scoorde verzoekende partij dus in totaal 15,05 op 25. 
+Op de topics waar de offerte van verzoekende partij niet goed/minst goed 
+op scoorde, behaalde deze de volgende scores met bijhorende motivering:   
+−  III.3  validaties:  2,5  /5  „Het  valideren  in  groepen  is  niet  mogelijk: 
+bv. simultaan valideren van negatieve screeningsresultaten microbiologie‟;   
+− III.6 rapportering – statistieken: 2,8 /5 „De statistiekmodule in Molis is 
+ontoereikend  en  absoluut  niet  gebruiksvriendelijk  (oa  het  bekomen  van 
+lijsten voor ZIB is uitermate omslachtig)‟;   
+− III.9 klachtenmodule: 0/5 „Niet aanwezig‟ en „Zeer onduidelijke en slecht 
+geformuleerde  zin  over  non-conformiteiten  die  kunnen  worden 
+doorgestuurd  naar  een  QM  module.  Er  is  geen  notie  van  de  gevraagde 
+bewaarduur van 10 jaar, dit wordt niet vermeld. Er zijn geen voorbeelden of 
+screenshots; dit voldoet dus niet aan de minimumeis;   
+
+XII-8702-18/21 
+
+‡ACETOCGBJ-BDGJJJT‡ 
+
+ 
+ 
+ 
+− III.10 bloedtransfusie: 2,8/5 .   
+Op deze topics scoorde verzoekende partij dus in totaal 8,1 op 20.   
+Ten slotte behaalde de offerte van verzoekende partij een score van 1,25 op 
+5 voor topic III.7   
+Stockbeheer met de volgende motivatie: „Het stockbeheer is Molis is een 
+„lege doos‟. De mogelijkheden zijn niet uitgewerkt en kunnen aldus  niet 
+ingeschat worden.‟   
+Uiteindelijk behaalt de offerte van verzoekende partij een score van 40,04 
+op  70  op  het  gunningscriterium  kwaliteit.  Deze  werd  door  verwerende 
+partij herleid tot 34,62/60. 
+
+en 
+
+integratie  met  de 
+
+CGM LAB BELGIUM NV   
+Gunningscriterium kwaliteit   
+1.1.1 Zorgapplicaties en 1.1.2 Rapportering   
+1.1.3 Lab-Lab koppelingen   
+1.1.4 facturatie:   
+1.2 licenties   
+1.2  data-migratie 
+infrastructuur   
+III.2 Integratie labo Intern.   
+III.3 validaties   
+III.4 gebruik:   
+III.5 ontwikkelingen en toekomstmogelijkheden:   
+III.6 rapportering – statistieken:   
+III.7 Stockbeheer   
+III.8 archivering   
+III.9 klachtenmodule   
+III.10 bloedtransfusie   
+Totaal op 70 punten   
+Totaal op 60 punten   
+
+4/5   
+4/5   
+3/5   
+3/5   
+4/5   
+
+4/5   
+2,5/5   
+3,3/5   
+3/5   
+2,8 /5   
+1,25/5   
+2,75/5   
+0/5   
+2,8/5   
+40,4/70   
+34,62/60   
+
+Ter  vergelijking  vindt  men  hieronder  de  score  van  de  offerte  van  de 
+gekozen inschrijver per topic. 
+
+MIPS NV   
+Gunningscriterium kwaliteit   
+1.1.1 Zorgapplicaties en 1.1.2 Rapportering   
+1.1.3 Lab-Lab koppelingen   
+1.1.4 facturatie:   
+1.2 licenties   
+1.2 data-migratie en integratie met de infrastructuur   
+III.2 Integratie labo Intern.   
+III.3 validaties   
+III.4 gebruik:   
+III.5 ontwikkelingen en toekomstmogelijkheden:   
+III.6 rapportering – statistieken:   
+III.7 Stockbeheer   
+III.8 archivering   
+
+   5/5   
+   3/5   
+   5/5 
+3/5   
+5/5   
+3/5   
+2,5/5   
+5/5   
+3/5   
+5 /5   
+5/5   
+5/5   
+
+XII-8702-19/21 
+
+‡ACETOCGBJ-BDGJJJT‡ 
+
+ 
+ 
+ 
+ 
+ 
+III.9 klachtenmodule   
+III.10 bloedtransfusie   
+Totaal op 70 punten   
+Totaal op 60 punten   
+
+5/5   
+5/5   
+59,5/70   
+ 51/60.”   
+
+Afgezien van de vraag of de door de verwerende partij in haar 
+
+nota  aangebrachte  motivering  als  een  afdoende  motivering  zou  mogen  worden 
+
+beschouwd die de bestreden beslissing zou kunnen dragen, dient in ieder geval op 
+
+het  eerste  gezicht  te  worden  vastgesteld  dat  deze  motivering  niet  lijkt  te  zijn 
+
+opgenomen in de bestreden beslissing of in het gunningsverslag zoals dat aan de 
+
+verzoekende  partij  werd  meegedeeld  en  zoals  dat  gunningsverslag  in  het 
+
+administratief dossier werd neergelegd. Van deze bijkomende motivering is zelfs 
+
+geen enkel spoort terug te vinden in het administratief dossier. Deze motivering 
+
+lijkt zich dan ook in ieder geval voor te doen als een a posteriori motivering die in 
+
+geen geval het  gebrek aan afdoende motivering van de bestreden beslissing kan 
+
+rechtzetten.   
+
+7.9. 
+
+Het eerste middelonderdeel is in de aangegeven mate ernstig. 
+
+VIII. Besluit 
+
+8. 
+
+Het tweede middel is in de aangegeven mate ernstig  gebleken.   
+
+Deze  vaststelling  volstaat  om  de  schorsing  van  de  tenuitvoerlegging  bij  uiterst 
+
+dringende noodzakelijkheid van de bestreden gunningsbeslissing te bevelen. 
+
+Noch  uit  het  in  de  aangegeven  mate  ernstig  bevonden  tweede 
+
+middel,  noch  uit  de  overige  middelen  –  indien  deze  al  ernstig  zouden  worden 
+
+bevonden  –  volgt  dat  de  opdracht  hoe  dan  ook  aan  de  verzoekende  partij  had 
+
+moeten  worden  gegund.  De  vordering  tot  schorsing  van  de  beslissing  tot  niet-
+
+gunning  van  de  opdracht  aan  de  verzoekende  partij  dient  bijgevolg  te  worden 
+
+verworpen. 
+
+‡ACETOCGBJ-BDGJJJT‡ 
+
+XII-8702-20/21 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Het  is  passend,  gelet  op  de  hierna  ingewilligde  vordering  tot 
+
+schorsing en het daaropvolgende nog noodzakelijke procedureverloop, de kosten, 
+
+de gevorderde rechtsplegingsvergoeding inbegrepen, in beraad te houden. 
+
+BESLISSING 
+
+1. Het verzoek van de nv Mips tot tussenkomst wordt ingewilligd. 
+
+2. De Raad van State beveelt de schorsing van de tenuitvoerlegging bij uiterst 
+
+dringende  noodzakelijkheid  van  de  beslissing  van  20  februari  2019  van  de 
+
+raad  van  bestuur  van  het  AZ  Sint-Jan  Brugge  –  Oostende  waarbij  de 
+
+overheidsopdracht  voor  diensten  “aanschaf,  implementatie  en  onderhoud 
+
+van een labo-informatiesysteem voor een periode van 10 jaar” wordt gegund 
+
+aan de nv Mips. 
+
+3. De Raad van State verwerpt de vordering voor het overige. 
+
+Dit arrest is uitgesproken te Brussel, in openbare terechtzitting van 2 april 2019, 
+
+door de Raad van State, XIIe kamer, samengesteld uit: 
+
+Johan Bovin, 
+
+staatsraad, 
+
+waarnemend voorzitter, 
+
+bijgestaan door 
+
+Silja Doms, 
+
+griffier. 
+
+De griffier 
+
+De voorzitter 
+
+Silja Doms 
+
+Johan Bovin 
+
+‡ACETOCGBJ-BDGJJJT‡ 
+
+XII-8702-21/21 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

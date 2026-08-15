@@ -76,23 +76,42 @@ def parse_metadata(frontmatter_yaml: str) -> CaseMetadata:
         ) from exc
 
 
+_DYNAMIC_SECTION_RE = re.compile(r"^## (.+)$", re.MULTILINE)
+
+
 def split_sections(body: str, source_config: SourceConfig) -> dict[str, str]:
     """Split a ruling's body text into its structural sections.
 
-    Uses the issuing body's own ``section_headers`` (from ``SourceConfig``)
-    rather than a fixed set of headers, so Council-of-State rulings with a
-    different structure parse correctly alongside Constitutional Court ones.
+    Two modes, selected by ``source_config.dynamic_sections``:
+
+    - **Fixed** (``dynamic_sections=False``): splits on the exact
+      ``##``-prefixed strings listed in ``source_config.section_headers``.
+      The dict keys are the corresponding section labels (e.g. ``"facts"``
+      for GHCC). Sections absent from the body are omitted from the result.
+    - **Dynamic** (``dynamic_sections=True``): splits on *any* ``## ``-
+      prefixed line found in the body, keeping the heading text verbatim as
+      the dict key. Used for courts like RVS whose heading set varies per
+      ruling and cannot be enumerated in advance.
+
+    In both modes the dict is ordered by document position and values are
+    trimmed of leading/trailing whitespace.
 
     Args:
         body: The Markdown body following the frontmatter block.
-        source_config: The issuing body's config, whose ``section_headers``
-            define the ``(markdown_header, section_label)`` pairs to split on.
+        source_config: The issuing body's config.
 
     Returns:
-        A mapping of section label to trimmed section text, for whichever
-        headers were found in ``body``. Labels are the free-form strings
-        defined by the source (e.g. ``"facts"`` for GHCC).
+        A mapping of section key to trimmed section text.
     """
+    if source_config.dynamic_sections:
+        matches = list(_DYNAMIC_SECTION_RE.finditer(body))
+        sections: dict[str, str] = {}
+        for i, match in enumerate(matches):
+            heading = match.group(1).strip()
+            end = matches[i + 1].start() if i + 1 < len(matches) else len(body)
+            sections[heading] = body[match.end() : end].strip()
+        return sections
+
     positions: list[tuple[int, int, str]] = []
     for header, section_label in source_config.section_headers:
         start = body.find(header)
@@ -100,7 +119,7 @@ def split_sections(body: str, source_config: SourceConfig) -> dict[str, str]:
             positions.append((start, start + len(header), section_label))
     positions.sort(key=lambda p: p[0])
 
-    sections: dict[str, str] = {}
+    sections = {}
     for i, (_start, header_end, section_label) in enumerate(positions):
         end = positions[i + 1][0] if i + 1 < len(positions) else len(body)
         sections[section_label] = body[header_end:end].strip()

@@ -144,8 +144,12 @@ def _index_file(conn: sqlite3.Connection, md_file: Path, next_chunk_id: int) -> 
 
     chunk_id = next_chunk_id
     order = 0
-    for _header, section_label in source_config.section_headers:
-        section_text = sections.get(section_label, "")
+    for section_key, section_text in sections.items():
+        category = (
+            source_config.heading_category_map.get(section_key)
+            if source_config.heading_category_map
+            else None
+        )
         for paragraph_number, parent_numbers, chunk_text in split_into_paragraphs(
             section_text, source_config
         ):
@@ -153,11 +157,12 @@ def _index_file(conn: sqlite3.Connection, md_file: Path, next_chunk_id: int) -> 
                 conn,
                 chunk_id,
                 case_id,
-                section_label,
+                section_key,
                 order,
                 chunk_text,
                 paragraph_number=paragraph_number,
                 parent_numbers=parent_numbers,
+                section_category=category,
             )
             chunk_id += 1
             order += 1

@@ -1,0 +1,2338 @@
+RAAD VAN STATE, AFDELING BESTUURSRECHTSPRAAK 
+
+In zake: 
+
+XIIe KAMER 
+
+A R R E S T 
+
+nr. 236.928 van 27 december 2016 
+in de zaak A. 215.655/XII-7868 
+
+de GmbH VOESTALPINE SIGNALING SIERSHAHN  
+vennootschap naar Duits recht 
+bijgestaan en vertegenwoordigd door  
+advocaat Peter De Cock 
+kantoor houdend te 2930 Brasschaat 
+Kapelsesteenweg 48 
+bij wie woonplaats wordt gekozen 
+
+tegen: 
+
+de NV INFRABEL 
+bijgestaan en vertegenwoordigd door  
+advocaten David D’Hooghe, Leopold Schellekens en Jole Carlé 
+kantoor houdend te 1000 Brussel 
+Loksumstraat 25 
+bij wie woonplaats wordt gekozen 
+
+--------------------------------------------------------------------------------------------------  
+
+I. Voorwerp van het beroep 
+
+1. 
+
+Het  beroep, 
+
+ingesteld  op  22  april  2015,  strekt 
+
+tot  de 
+
+nietigverklaring van de “beslissing van de raad van bestuur van Infrabel n.v. van 
+
+23-02-2015  waarmee  de  opdracht  van  levering  van  meetposten  voor  warme 
+
+asbussen  (dossier  04C/291108)  wordt  toegewezen  aan  de  onderneming  Ansaldo 
+
+STS (Frankrijk)”. 
+
+II. Verloop van de rechtspleging 
+
+2. 
+
+Bij  arrest  nr.  232.271  van  22  september  2015  is  de  vordering 
+
+tot  schorsing  van  de  tenuitvoerlegging  van  de  bestreden  beslissing  verworpen, 
+
+omdat deze niet bij uiterst dringende noodzakelijkheid was ingeleid. 
+
+XII-7868-1/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+De verzoekende partij heeft een verzoekschrift tot voortzetting 
+
+van de rechtspleging ingediend. 
+
+De  verwerende  partij  heeft  een  memorie  van  antwoord 
+
+ingediend  en  de  verzoekende  partij  heeft  een  memorie  van  wederantwoord 
+
+ingediend. 
+
+Eerste auditeur Jos Stevens heeft een verslag opgesteld. 
+
+De  verzoekende  partij  en  de  verwerende  partij  hebben  een 
+
+laatste memorie ingediend. 
+
+De  partijen  zijn  opgeroepen  voor  de  terechtzitting,  die  heeft 
+
+plaatsgevonden op 25 oktober 2016. 
+
+Staatsraad Pierre Barra heeft verslag uitgebracht. 
+
+Advocaat  Piet  Tulkens,  die  loco  advocaat  Peter  De  Cock 
+
+verschijnt voor de verzoekende partij, en advocaat Jole Carlé, die verschijnt voor 
+
+de verwerende partij, zijn gehoord. 
+
+Eerste auditeur Jos Stevens heeft een met dit arrest eensluidend 
+
+advies gegeven. 
+
+Er is toepassing gemaakt van de bepalingen op het gebruik der 
+
+talen,  vervat  in  titel  VI,  hoofdstuk  II,  van  de  wetten  op  de  Raad  van  State, 
+
+gecoördineerd op 12 januari 1973. 
+
+III. Feiten 
+
+3.1. 
+
+De in het geding zijnde opdracht betreft een raamovereenkomst 
+
+van  10  jaar,  met  inbegrip  van  een  onderhoudscontract  van  20  jaar,  voor  de 
+
+levering  van  een  nieuwe  generatie  meetposten  voor  de  detectie  van  warme 
+
+asbussen (DWBC), toegepast op het spoorwegnet van de verwerende partij. 
+
+XII-7868-2/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+De  opdracht  wordt  gegund  via  een  onderhandelingsprocedure 
+
+met Europese bekendmaking. 
+
+3.2. 
+
+De  opdracht  wordt  bekendgemaakt 
+
+in  het  Bulletin  der 
+
+Aanbestedingen  op  2  april  2014  en  in  het  Europees  Publicatieblad  op  5  april 
+
+2014. 
+
+De  aanvragen  tot  deelneming  moeten  worden  ingediend 
+
+uiterlijk op 9 mei 2014 om 12 uur. 
+
+De  verwerende  partij  ontvangt  van  vijf  kandidaten,  waaronder 
+
+de  verzoekende  partij,  een  aanvraag  tot  deelneming.  Na  toetsing  aan  de 
+
+vooropgestelde  selectiecriteria,  besluit  de  verwerende  partij  dat  elk  van  de 
+
+vijf kandidaten  aan  deze  criteria  voldoet  en  dus  geselecteerd  mag  worden.  De 
+
+verwerende  partij  bezorgt  elk  van  de  vijf  kandidaten  het  bestek  met  nummer 
+
+04C/0000291108. 
+
+3.3. 
+
+2014. 
+
+De offertes moeten worden ingediend uiterlijk op 22 september 
+
+Het  bestek  heeft  vier  bijlagen,  namelijk  de  specifieke 
+
+contractuele  voorwaarden,  de  technische  voorwaarden,  de  voorwaarden  met 
+
+betrekking  tot  het  project  management  en  het  garantie-  en  onderhoudscontract. 
+
+Aan de technische voorwaarden zijn nog eens vier bijlagen gehecht. In de bijlage 
+
+“ontwerpvereisten”  bij  de  technische  voorwaarden  wordt  beschreven  aan  welke 
+
+vereisten  de  geleverde  meetposten  moeten  voldoen  –  functionele  eisen, 
+
+technische 
+
+eisen, 
+
+beschikbaarheidseisen, 
+
+onderhoudbaarheidseisen, 
+
+veiligheidseisen,  eisen  met  betrekking  tot  interfaces  en  elektromagnetische 
+
+compatibiliteit  (EMC).  Deze  eisen  worden  telkens  aangeduid  met  de  letter  “R” 
+
+gevolgd door een nummer. Het aangeboden meetsysteem moet voldoen aan al die 
+
+vereisten. 
+
+Het  bestek  bepaalt 
+
+twee  gunningscriteria,  namelijk  de 
+
+technische waarde (70 %) en de prijs (30 %). 
+
+XII-7868-3/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+De  evaluatie  van  de  prijs  zal  gebeuren  op  grond  van  de 
+
+werkwijze Total Cost of Ownership (hierna: TCO) op een termijn van 20 jaar en 
+
+rekening houdend met de gevraagde prijs in de inventaris en in het bestek.  
+
+De  specifieke  contractuele  voorwaarden  bij  het  bestek 
+
+specificeren uit welke elementen de TCO bestaat. Die zijn de volgende: 
+
+1) -  de aankoopprijs – bestaande uit:  
+
+-  het bedrag van de offerte 
+
+-  het reservematerieel voorgesteld door de leverancier  
+
+-  5 reserve holle dwarsliggers (of equivalent) 
+
+-  opleiding 
+
+-  documentatie  
+
+2) 
+
+de prijs van het onderhoud gedurende de volledige looptijd – bestaande uit: 
+
+-  de kost van het garantie- en onderhoudscontract 
+
+-  vervanging van 5% van de “LRU” die volgens de verwerende partij zullen 
+
+  moeten  worden  vervangen  gedurende  20  jaar  te  wijten  aan  schade  of 
+
+incorrect gebruik van Infrabel 
+
+-  de “eventuele” kost voor preventief onderhoud uit te voeren door Infrabel 
+
+-  de verbruikskost, berekend volgens een in het bestek opgenomen formule. 
+
+3.4. 
+
+Drie  kandidaten  dienen  een  offerte  in:  de  verzoekende  partij, 
+
+Ansaldo STS (hierna: Ansaldo) en Clearsy. 
+
+Op 9 oktober 2014 stuurt de verwerende partij een “Request for 
+
+Quotation  n°2”  aan  de  drie  inschrijvers,  waarbij  drie  bijlagen  worden  gevoegd: 
+
+een  lijst  met  algemene  opmerkingen  of  vragen  –  dezelfde  voor  de  drie 
+
+inschrijvers – en twee specifieke met betrekking tot hun eerste offerte, namelijk 
+
+een  lijst  met  een  aantal  punctuele  verbeteringen  of  opmerkingen  en  één  met 
+
+betrekking  tot  de  ontwerpvereisten  –  aangemerkt  door  middel  van  een  “R”  en 
+
+nummer in de linker kolom van het document. 
+
+In  de  lijst  met  algemene  opmerkingen  wordt  verduidelijkt  dat 
+
+voor  het  onderhoudscontract  alle  LRU’s  moeten  worden  vermeld,  dat  als  LRU 
+
+wordt beschouwd alle onderdelen die afzonderlijk kunnen worden vervangen, dus 
+
+XII-7868-4/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ook  kabels, en dat de waarde “0”  dient  te worden ingevuld als er  geen jaarlijks 
+
+forfaitair bedrag moet worden betaald. 
+
+De verwerende partij verzoekt de inschrijvers, op grond van de 
+
+meegedeelde  verbeteringen,  opmerkingen  of  vragen,  een  nieuwe  offerte  in  te 
+
+dienen uiterlijk op 24 oktober 2014. 
+
+Midden oktober vindt ook met elk van de drie inschrijvers een 
+
+overleg plaats. 
+
+Op  16  oktober  2014  stuurt  de  verwerende  partij  aan  de  drie 
+
+inschrijvers  een  nieuwe  “Request  for  Quotation  nr.3”.  In  deze  “Request  for 
+
+Quotation”  maakt  de  verwerende  partij  een  aantal  bijkomende  verbeteringen  of 
+
+opmerkingen en worden tevens twee posten van het bestek gewijzigd. 
+
+De termijn om een nieuwe offerte in te dienen wordt verlengd 
+
+naar 31 oktober 2014. 
+
+De drie inschrijvers dienen een tweede offerte in. 
+
+Op  7  november  2014  stuurt  de  verwerende  partij  aan  de 
+
+drie inschrijvers  een  nieuwe  en  laatste  “request  for  quotation  nr.  4”,  waarin  zij 
+
+ten aanzien van elk van de inschrijvers nog een aantal punctuele verbeteringen en 
+
+opmerkingen  maakt.  Aan  de  inschrijvers  wordt  gevraagd,  op  grond  van  de 
+
+verbeteringen en opmerkingen, uiterlijk op 14 november 2014 een best and final 
+
+offer (BAFO) in te dienen. 
+
+De  drie  kandidaten  dienen  binnen  de  voorgeschreven  termijn 
+
+een BAFO in. 
+
+3.5. 
+
+Op  19 november  en  op  9  en  17 december  2014  stelt  de 
+
+verwerende partij het gunningsverslag op. 
+
+Uit dat verslag blijkt dat de verzoekende partij met haar BAFO 
+
+het beste scoort op het vlak van de technische kwaliteit en Ansaldo het beste qua 
+
+XII-7868-5/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+prijs. Verrekend volgens het relatieve gewicht van de twee gunningscriteria leidt 
+
+dit tot een rangschikking waarbij Ansaldo als eerste wordt gerangschikt met een 
+
+score van 0,942 en de verzoekende partij als tweede met een score van 0,863. 
+
+Voorgesteld  wordt  de  opdracht,  die  is  opgesplitst  in  twee 
+
+raamovereenkomsten,  te  weten  een  leveringscontract  van  10  jaar  en  een 
+
+herstellings- en onderhoudscontract van 20 jaar, te gunnen aan Ansaldo. 
+
+3.6. 
+
+Op  23  februari  2015  bekrachtigt  de  raad  van  bestuur  van  de 
+
+verwerende partij het voorstel om te gunnen aan Ansaldo. 
+
+In  het  voorstel  tot  gunnen  wordt  wat  het  bedrag  van  de 
+
+opdracht betreft, vermeld dat het bedrag van de aan Ansaldo te gunnen opdracht 
+
+overeenstemt  met  de  TCO-waarde  (5.487.674  euro)  waarvan  de  kosten  worden 
+
+afgetrokken  voor  het  preventief  onderhoud,  uitgevoerd  door  de  nv  Infrabel,  de 
+
+kosten  voor  de  vervanging  van  5%  van  de  LRU  en  de  kost  voor  het 
+
+energieverbruik  gedurende  20  jaar,  wat  voor  Ansaldo  “in  totaal  197.234  euro” 
+
+was, om een bedrag te krijgen van 5.290.440 euro. 
+
+Dit is de bestreden beslissing. 
+
+Op  26  februari  2015  wordt  de  beslissing  tot  gunning  van  de 
+
+opdracht ter kennis gebracht van de inschrijvers via aangetekende brieven en via 
+
+e-mailberichten. 
+
+3.7. 
+
+Op  22  april  2015  dient  de  verzoekende  partij  een  “beroep  tot 
+
+nietigverklaring  &  vordering  tot  schorsing”  in  van  de  beslissing  van  de 
+
+verwerende partij van 23 februari 2015 “waarmee de opdracht van levering van 
+
+meetposten voor warme asbussen (dossier 04C/291108) wordt toegewezen aan de 
+
+onderneming Ansaldo STS (Frankrijk)”. 
+
+XII-7868-6/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+IV. Onderzoek van de middelen 
+
+A. Eerste middel  
+
+Uiteenzetting van het middel  
+
+4. 
+
+De verzoekende partij voert de schending aan van artikel 3 van 
+
+de  wet  van  29  juli  1991  ‘betreffende  de  uitdrukkelijke  motivering  van  de 
+
+bestuurshandelingen’. 
+
+Uit de bestreden beslissing blijkt volgens de verzoekende partij 
+
+niet  dat  de  offertes  aan  een  prijsonderzoek  werden  onderworpen  en  aan  de 
+
+inschrijvers  een  prijsverantwoording  werd  gevraagd,  noch  worden  daarin  de 
+
+redenen aangegeven waarom de verwerende partij geen dergelijk onderzoek heeft 
+
+verricht en waarom zij geen prijsverantwoording aan de gekozen inschrijver heeft 
+
+gevraagd. 
+
+De  bestreden  beslissing  zou  voorts  –  volgens  de  verzoekende 
+
+partij  nog  steeds  in  strijd  met  de  formelemotiveringsplicht  –  slechts  de  globale 
+
+prijs  van  elk  der  inschrijvers  weergeven.  De  verwerende  partij  beroept  zich  ten 
+
+onrechte  op  haar  geheimhoudingsplicht  om  haar  geen  inzage  te  verlenen  in  de 
+
+prijzen per post van iedere inschrijver.  
+
+5. 
+
+In haar memorie van wederantwoord benadrukt de verzoekende 
+
+partij  dat  zij  op  het  ogenblik  van  de  kennisgeving  van  de  bestreden  beslissing 
+
+geen  weet  had  van  de  prijsverschillen  voor  bepaalde  posten,  zodat  zij  in  haar 
+
+beroep  tot  nietigverklaring  daar  ook  niet  kon  op  ingaan.  De  verzoekende  partij 
+
+kon enkel uitgaan van gissingen en veronderstellingen. Bijgevolg had zij niet de 
+
+gelegenheid  zich  op  een  behoorlijke  manier  tegen  de  beslissing  te  verzetten;  zij 
+
+kon slechts op een gebrekkige, beperkte wijze – doordat zij enkel weet had van 
+
+de globale prijs voor alle posten samen, en daarnaast van de globale prijs voor de 
+
+drie laatste posten samen – nagaan of de verwerende partij de offerte van Ansaldo 
+
+wel  op  een  juiste  manier  had  beoordeeld.  De  verwerende  partij  beriep  zich  ten 
+
+onrechte  op  haar  geheimhoudingsplicht.  De  gunnende  overheid  mag  zich  niet 
+
+XII-7868-7/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+verschuilen achter het bedrijfsgeheim om zich te onttrekken aan haar verplichting 
+
+uitdrukkelijk en afdoende te motiveren. 
+
+Voorts herhaalt zij dat nergens door de verwerende partij wordt 
+
+verklaard waarom er door haar geen prijsverantwoording werd gevraagd, of, met 
+
+andere woorden, waarom er volgens haar geen schijn van abnormaliteit bleek uit 
+
+het aanbod van Ansaldo. De prijsverschillen tussen het aanbod van Ansaldo aan 
+
+de  ene  kant  en  van  de  verzoekende  partij  en  Clearsy  aan  de  andere  kant,  zijn 
+
+nochtans  aanzienlijk.  Niet  alleen  de  globale  prijs  is  aanzienlijk  lager,  maar  dat 
+
+geldt nog meer voor het prijsverschil voor post 70 ‘herstelling op 20 jaar’. Ook de 
+
+prijzen die Ansaldo aanbood voor de drie laatste posten – ‘preventief onderhoud’, 
+
+‘vervanging 5 % LRU op 20 jaar’, ‘kost verbruik’ – lagen in vergelijking met die 
+
+van de twee andere inschrijvers bijzonder laag. 
+
+6. 
+
+In haar laatste memorie blijft de verzoekende partij erbij dat het 
+
+voor  haar  op  grond  van  de  motivering  van  de  bestreden  beslissing  onmogelijk 
+
+was  om  na  te  gaan  of  die  beslissing  door  de  verwerende  partij  wel  op  een 
+
+zorgvuldige  en  verantwoorde  manier  was  genomen.  Daartoe  was  het  immers 
+
+nodig  dat  zij  ook  weet  had  van  de  prijs  die  door  de  andere  inschrijvers  was 
+
+aangeboden voor elke post afzonderlijk. Enkel op die manier kon zij nagaan waar 
+
+de anomalieën zich precies situeerden. Het gevolg hiervan was dat zij slechts een 
+
+gebrekkig verzoekschrift kon indienen. 
+
+Zij blijft er tevens bij dat de verwerende partij zich ten onrechte 
+
+op  haar  geheimhoudingsplicht  heeft  beroepen.  Dat  de  verwerende  partij  deze 
+
+prijzen wel vrijgeeft in de procedure ten gronde in het administratief dossier maar 
+
+deze  weigerde  vrij  te  geven  voordien  en  ook  in  de  schorsingsprocedure,  doet 
+
+vermoeden 
+
+dat 
+
+de 
+
+verwerende 
+
+partij 
+
+enkel 
+
+haar 
+
+zogenaamde 
+
+geheimhoudingsplicht had ingeroepen om een beroep door de verzoekende partij 
+
+tegen  haar  beslissing  te  voorkomen  of  te  bemoeilijken.  Als  blijkt  dat  de 
+
+aanbestedende overheid zich ten onrechte beroept op haar geheimhoudingsplicht 
+
+om  bepaalde  gegevens  die  van  belang  zijn  om  haar  beslissing  te  kunnen 
+
+beoordelen, niet mee te delen, dan is de formelemotiveringsplicht onmiskenbaar 
+
+geschonden. 
+
+XII-7868-8/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Beoordeling 
+
+7. 
+
+De  bestreden  beslissing  moet,  teneinde  te  voldoen  aan  de 
+
+formelemotiveringsverplichting  die  de  verzoekende  partij  afleidt  uit  de  wet  van 
+
+29  juli  1991,  de  juridische  en  feitelijke  overwegingen  vermelden  die  aan  de 
+
+beslissing  ten  grondslag  liggen;  die  motivering  moet  afdoende  zijn  teneinde  de 
+
+belanghebbende in staat te stellen terdege te oordelen of het zin heeft zich tegen 
+
+de beslissing te verweren met de middelen die het recht hem ter beschikking stelt. 
+
+Te  dezen  is  de  geformaliseerde  gunningsbeslissing  het  besluit 
+
+van  23  februari  2015  van  de  raad  van  bestuur  van  Infrabel  waarbij  het 
+
+gemotiveerde  voorstel  tot  gunning  van  de  opdracht  aan  Ansaldo  wordt 
+
+goedgekeurd.  Het  gunningsverslag  werd  aan  de  verzoekende  partij  ter  kennis 
+
+gebracht samen met de bestreden beslissing. Wat de evaluatie van de prijs betreft, 
+
+werd bij de analyse van de offertes de totale TCO berekend door alle opgegeven 
+
+prijzen  voor  de  11  posten  samen  te  tellen.  Bij  de  kennisgeving  van  het  verslag 
+
+aan  de  verzoekende  partij  werden  de  afzonderlijke  bedragen  voor  de  11  posten 
+
+van  de  twee  andere  inschrijvers  wit  gemaakt;  enkel  hun  globale  TCO  werd 
+
+vrijgegeven. 
+
+In  de  concrete  omstandigheden  van  de  zaak  waarin  de 
+
+verzoekende  partij  aanklaagt  dat  zij  in  het  ongewisse  was  omtrent  de  door  de 
+
+andere inschrijvers opgegeven eenheidsprijzen voor de afzonderlijke posten zodat 
+
+zij deze niet kon onderzoeken op “anomalieën”, is de verzoekende partij door de 
+
+kennisname van het administratief dossier, in staat gesteld geweest deze cijfers te 
+
+kennen  en  door  het  indienen  van  een  memorie  van  wederantwoord  haar  tweede 
+
+middel nader uit te werken op grond van de haar tot dan toe onbekende gegevens 
+
+die  de  verwerende  partij  aanvankelijk  niet  wou  vrijgeven  in  het  kader  van  de 
+
+bescherming  van  vertrouwelijke  bedrijfsinformatie.  Een  nietigverklaring  van  de 
+
+gunningsbeslissing op grond van een schending van de formelemotiveringsplicht 
+
+omdat de verzoekende partij bij het instellen van haar beroep deze cijfers nog niet 
+
+kende,  is  in  de  huidige  stand  van  het  geding  niet  meer  dienstig  voor  de 
+
+verzoekende  partij;  zij  is  tijdens  het  geding  wel  afdoende  in  staat  gesteld  voor 
+
+haar rechten op te komen.  
+
+XII-7868-9/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+8. 
+
+De verzoekende partij toont voorts niet aan dat de beoordeling 
+
+door  de  verwerende  partij  in  het  kader  van  artikel  21,  §  1,  van  het  koninklijk 
+
+besluit  van  16  juli  2012  ‘plaatsing  overheidsopdrachten  speciale  sectoren’ 
+
+(hierna:  het  koninklijk  besluit  van  16  juli  2012),  dat  “er  geen  enkele  schijn  van 
+
+abnormaliteit  uit  de  offerte  van  Ansaldo  en  de  daarin  opgenomen  prijzen  is 
+
+gebleken”  nog  nader  formeel  moet  worden  gemotiveerd.  Anders  is  het  voor  de 
+
+vraag of de inhoudelijke beoordeling van de offerte van de gekozen inschrijver en 
+
+haar  prijzen  regelmatig  en  juist  is,  en  of  dat  er  in  dat  opzicht  al  dan  niet  een 
+
+schending  van  de  zorgvuldigheidsplicht  en  de  materiëlemotiveringsplicht 
+
+voorligt, wat aan bod komt bij het tweede middel. 
+
+9. 
+
+Het middel wordt verworpen. 
+
+B. Tweede middel 
+
+Standpunt van de partijen 
+
+10. 
+
+In een tweede middel voert de verzoekende partij de schending 
+
+aan  van  de  artikelen  21,  §§  1  en  3,  en  98,  §  1,  van  het  koninklijk  besluit  van 
+
+16 juli 2012, artikel 26, § 2, van de wet van 15 juni 2006 ‘overheidsopdrachten en 
+
+bepaalde  opdrachten  voor  werken,  leveringen  en  diensten’  (hierna:  wet  van 
+
+15 juni  2006)  en  artikel  5,  2°,  van  de  wet  van  17  juni  2013  ‘betreffende  de 
+
+motivering,  de  informatie  en  de  rechtsmiddelen  inzake  overheidsopdrachten  en 
+
+bepaalde  opdrachten  voor  werken,  leveringen  en  diensten’  (hierna:  wet  van 
+
+17 juni 2013). 
+
+In  een  eerste  onderdeel  betoogt  de  verzoekende  partij  dat  de 
+
+verwerende  partij  met  toepassing  van  artikel  21,  §  1,  van  het  koninklijk  besluit 
+
+van  16  juli  2012  of  ingevolge  haar  zorgvuldigheidsplicht  aan  de  gekozen 
+
+inschrijver  Ansaldo  een  prijsverantwoording  had  moeten  vragen  omtrent  zowel 
+
+de  totaalprijs  van  zijn  offerte  als  de  afzonderlijke  prijzen  voor  de  posten 
+
+‘preventief  onderhoud’,  ‘kost  verbruik’  en  ‘vervanging  5  %  LRU  op  20  jaar’. 
+
+Zulks zou zich opdringen, volgens haar, omdat de totaalprijs en de prijzen voor 
+
+de betrokken posten abnormaal laag zijn. 
+
+XII-7868-10/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Toegelicht wordt: 
+
+“De prijs die door één van de inschrijvers, Ansaldo STS, werd opgegeven 
+verschilde  in  aanzienlijke  mate  van  die  van  de  twee  andere  inschrijvers, 
+verzoekende partij Voestalpine Signaling Siershahn GmbH en Clearsy. 
+De  prijs  van  Ansaldo  STS  bedroeg  5.487.674,00  €,  die  van  Voestalpine 
+Signaling  Siershahn  GmbH  daarentegen  8.074.577,00  €  en  van  Clearsy 
+8.195.139,00 €. 
+Het  verschil  wordt  nog  groter  waar  Ansaldo  STS  voor  de  posten 
+‘preventief onderhoud’, ‘vervanging 5 % LRU - Lowest Replaceable Unit 
+(dit  is  kleinste  vervangbare  eenheid)  op  20  jaar’,  en  ‘kost  verbruik  (op 
+20 jaar)’ een prijs zou hebben opgegeven van 197.234,00 € alles samen, 
+terwijl Voestalpine Signaling Siershahn GmbH hiervoor op een prijs komt 
+van (265.980,00 € + 290.092,00 € + 724.935,00 € =) 1.281.007,00 €. 
+Voestalpine Signaling Siershahn GmbH legt een document neer, getiteld 
+‘Motivatie verzoekschrift vernietiging’ van 02-04-2015 (stuk 4.1.), samen 
+met  de  nodige  stavingstukken  (stuk  4.2.1.-4.2.7.),  waarin  omstandig 
+uiteengezet  wordt  waarom  de  prijs  die  Ansaldo  STS  voor  die  posten 
+opgeeft onmogelijk juist kan zijn. 
+Volgens  de  vereisten  van  Infrabel  n.v.  (‘Detectie  van  warme  asbussen 
+MP.NG  (meetposten  new  generation)  –  ontwerpeisen’,  par.  3.3.  R  12) 
+dienden de meetposten te voldoen aan norm EN50125. 
+Dit  betekende  dat  de  werking  van  de  meetposten  moest  gewaarborgd 
+blijven  bij  temperaturen  in  de  buitenlucht  van  -  25  C°  tot  +  40  C°. 
+Bovendien  moest  rekening  gehouden  worden  met  de  gevolgen  van 
+zonnestraling, alsook met die van sneeuw, hagel en ijsafzetting (publicatie 
+van  de  norm  EN50125-3  door  het  Deutsches  Institut  für  Normung  e.v., 
+p.12 par. 4.9.; p. 12 par. 4.7. en 4.8., stuk 4.2.7.). 
+Indien men voor wat betreft de prijsopgave van Ansaldo STS zou uitgaan 
+van de hoogst mogelijke prijs van 197.234,00 € voor de ‘kost verbruik (op 
+20  jaar)’  (wat  zou  betekenen  dat  de  prijs  voor  de  posten  ‘preventief 
+onderhoud’  en  ‘vervanging  5  %  LRU  op  20  jaar’  nihil  zou  zijn,  wat 
+weinig  waarschijnlijk  is),  dan  komt  men  volgens  de  berekening  die 
+Infrabel  n.v.  heeft  voorgeschreven  (zie  ‘Detectie  van  warme  asbussen 
+MP.NG 
+specifieke  contractuele 
+voorwaarden’  van  24-07-2014,  p.  13,  punt  8.3.2.,  stuk  4.2.4.)  op  een 
+energieverbruik van 114 watt per meetpost. 
+Infrabel  n.v.  bevestigde  op  09-03-2015  aan  Voestalpine  Signaling 
+Siershahn GmbH dat Ansaldo STS zou gebruik maken van het zogeheten 
+‘Pegasus’-systeem van het Spaanse ITSS (Iberica Tecnologia En Sistemas 
+De Seguridad Ferroviarios S.L.). 
+Volgens  een  technisch  document  van  ITSS  (stuk  4.2.5.)  zou  het 
+energieverbruik  voor  een  meetpost  van 
+ITSS  met  2  scanners 
+130 voltampère bedragen, waarbij echter uitdrukkelijk vermeld wordt dat 
+hierbij  geen  rekening  werd  gehouden  met  het  energieverbruik  bij  anti-
+ijsverwarming, speciale datatransmissie of airconditioning. 
+Volgens  een  ander  document  van  ITSS  (stuk  4.2.6.)  zou  het 
+energieverbruik  voor  een  meetpost  van  ITSS  met  2  scanners  zonder 
+
+(meetposten  new  generation) 
+
+- 
+
+XII-7868-11/30 
+
+ 
+ 
+ 
+ 
+de 
+
+400 
+
+voor 
+
+bedragen; 
+
+voltampère 
+
+scannerverwarming 
+scannerverwarming zou hier nog eens 160 voltampère bijkomen. 
+Het energieverbruik dat ITSS zelf opgeeft per meetpost ligt dus beduidend 
+hoger  dan  het  energieverbruik  dat  volgens  de  offerte  van  Ansaldo  STS 
+van toepassing zou zijn, zelfs indien zou worden uitgegaan van de hoogst 
+mogelijke prijs van 197.234,00 €. 
+Kennelijk  werd  er  door  Ansaldo  STS  bij  de  berekening  van  het 
+energieverbruik  van  de  meetposten  geen  rekening  gehouden  met 
+klimatologische  omstandigheden,  en  werden  de  kosten  voor  de 
+verwarming of de airconditioning van de scanners dus niet meegerekend, 
+waarmee zij inging tegen de eisen die door Infrabel n.v. waren gesteld. 
+Hieruit  kan  ook  afgeleid  worden  dat  Ansaldo  STS  voor  wat  betreft  de 
+posten  ‘preventief  onderhoud’  en  ‘vervanging  5  %  LRU  op  20  jaar’ 
+waarschijnlijk  evenmin  de  kosten  voor  de  verwarmings-  en 
+airconditioningselementen heeft meegerekend. 
+Het  is  derhalve  zeer  de  vraag  of  Infrabel  n.v.  wel  op  een  behoorlijke, 
+zorgvuldige  manier  de  prijzen  heeft  onderzocht  die  inschrijver  Ansaldo 
+STS vermeld heeft in haar offerte. 
+Infrabel  n.v.  diende  op  grond  van  haar  zorgvuldigheidsverplichting  de 
+regelmatigheid  van  de  offertes  na  te  gaan,  en  één  van  de  vereisten  voor 
+een  regelmatige  offerte  is  juist  dat  er  geen  abnormale  prijzen  worden 
+opgegeven.” 
+
+In  een  tweede  onderdeel  betoogt  de  verzoekende  partij  voorts 
+
+dat  indien  met  haar  zou  worden  aangenomen  dat  het  eigenlijk  niet  gaat  om  een 
+
+onderhandelingsprocedure  –  uit  niets  blijkt  immers  dat  de  procedure  kadert  in 
+
+artikel 26 van de wet van 15 juni 2006 of dat er hier effectief werd onderhandeld 
+
+– de verwerende partij dan met toepassing van het voormelde artikel 21, § 3, aan 
+
+Ansaldo een verantwoording had moeten vragen over de abnormaal lage prijzen 
+
+die  Ansaldo  hanteerde.  Artikel  98,  §  2,  van  het  koninklijk  besluit  van  16  juli 
+
+2012,  ook  al  is  dit  artikel  slechts  van  toepassing  in  het  geval  er  vier  offertes 
+
+werden  ingediend,  geeft  een  nadere  bepaling  van  wat  moet  worden  verstaan 
+
+onder abnormale prijs. 
+
+11. 
+
+In  de  memorie  van  antwoord  stelt  de  verwerende  partij  dat  in 
+
+zoverre het middel gericht is tegen het vermeend onrechtmatig aanwenden van de 
+
+onderhandelingsprocedure op de voorliggende opdracht, het middel niet gericht is 
+
+tegen  de  bestreden  gunningsbeslissing,  maar  tegen  het  bestek.  Aangezien  de 
+
+beslissing  tot  goedkeuring  van  het  bestek  niet  werd  aangevochten,  is  dit 
+
+middelonderdeel onontvankelijk. 
+
+XII-7868-12/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+Voorts  is  zij  van  oordeel  dat  zij  niet  gehouden  was  tot  het 
+
+voeren van een prijsonderzoek op grond van de artikelen 21, § 3, en 98, § 1, van 
+
+het koninklijk besluit van 16 juli 2012, aangezien die niet van toepassing zijn op 
+
+de onderhandelingsprocedure. 
+
+De  verwerende  partij  betwist  voorts  dat  geen  beroep  mocht 
+
+worden  gedaan  op  de  onderhandelingsprocedure  en  dat  zij  daarvan  in  casu  niet 
+
+effectief  toepassing  zou  hebben  gemaakt.  In  de  speciale  sectoren  heeft  de 
+
+aanbestedende overheid krachtens artikel 53, § 1, van de wet van 15 juni 2006 de 
+
+keuze om de onderhandelingsprocedure aan te wenden voor het plaatsen van haar 
+
+opdrachten  en  moet  zij  zich  daarvoor  niet  verantwoorden  op  grond  van  de 
+
+bijzondere  gevallen  die  in  artikel  26, §  2,  van  de  wet  van  15  juni  2006  worden 
+
+bepaald, zoals dat in de klassieke sectoren het geval is met toepassing van artikel 
+
+5, 2°, van de wet van 17 juni 2013. 
+
+De  opdracht  werd  gegund  in  verschillende  rondes,  waarbij  de 
+
+betrokken inschrijvers telkens de mogelijkheid kregen hun offerte bij te schaven 
+
+en  te  optimaliseren.  In  de  verschillende  onderhandelingsrondes  kregen  de 
+
+inschrijvers ook de mogelijkheid de prijzen van hun offerte aan te passen. Het is 
+
+bijgevolg  duidelijk  dat  de  onderhandelingen  tussen  de  verwerende  partij  en  de 
+
+inschrijvers  in  casu  veel  verder  zijn  gegaan  dan  het  louter  aanbrengen  van 
+
+verduidelijkingen  of  aanvullingen,  nu  de  inschrijvers  onder  meer  hun  prijzen  – 
+
+met inbegrip van de totale offerteprijs – meermaals hebben gewijzigd. 
+
+De  verwerende  partij  zet  ten  slotte  uiteen  waarom  er  volgens 
+
+haar  ook  geen  enkele  reden  was  om  ten  aanzien  van  Ansaldo  een  procedure  op 
+
+grond  van  de  algemene  zorgvuldigheidsplicht  en  artikel  21,  §  1,  van  het 
+
+koninklijk  besluit  van  16  juli  2012  in  te  zetten  waarbij  op  zoek  zou  worden 
+
+gegaan naar de aanwezigheid van abnormale prijzen.  
+
+Zij wijst erop dat, gelet op de aanslepende economische crisis, 
+
+bepaalde 
+
+inschrijvers  met  zeer  concurrentiële  prijzen  –  en  beperkte(re) 
+
+winstmarges  –  inschrijven  op  overheidsopdrachten.  In  die  context  hoeven 
+
+inschrijvingsprijzen die schommelen tussen de 5.487.674 euro en 8.195.139 euro 
+
+XII-7868-13/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+niet  te  verbazen.  Er  is  geen  reden  om  aan  te  nemen  dat  de  prijs  van 
+
+8.195.139 euro  –  offerte  van  Clearsy  –  of  van  8.074.577  euro  –  offerte  van  de 
+
+verzoekende  partij  –  als  referentie  zou  moeten  gelden  voor  de  beoordeling  van 
+
+het  al  dan  niet  normale  karakter  van  de  inschrijvingsprijzen  en  evenmin  is  er 
+
+reden  om  aan  te  nemen  dat  een  inschrijvingsprijs  van  5.487.674  euro 
+
+noodzakelijk als “schijnbaar abnormaal laag” zou moeten worden beschouwd. 
+
+Voorts  is  uit  de  offerte  en  de  onderhandelingen  die  de 
+
+verwerende  partij  met  de  gekozen  inschrijver  Ansaldo  heeft  gevoerd,  gebleken 
+
+dat  de  prijzen  van  Ansaldo  wel  degelijk  de  eisen  dekken  die  het  bestek  oplegt. 
+
+Aldus  heeft  de  verwerende  partij  alle  garanties  dat  Ansaldo  de  opdracht  zal 
+
+uitvoeren  conform  de  vereisten  van  de  opdrachtdocumenten  en  dit  tegen  de  in 
+
+haar  offerte  opgegeven  prijzen.  Het  risico  voor  de  verwerende  partij  op  niet-
+
+conforme uitvoering door de gekozen inschrijver Ansaldo, is bovendien beperkt. 
+
+De verwerende partij kan in voorkomend geval immers niet verplicht worden de 
+
+niet-conforme levering te aanvaarden. Bovendien stelt de leverancier zich in het 
+
+geval  van  niet-conforme  levering  bloot  aan  het  risico  op  toepassing  van 
+
+actiemiddelen  door  de  verwerende  partij  in  de  zin  van  artikel  44  van  het 
+
+koninklijk  besluit  van  14  januari  2013  ‘tot  bepaling  van  de  algemene 
+
+uitvoeringsregels  van  de  overheidsopdrachten  en  van  de  concessies  voor 
+
+openbare werken’. 
+
+De verwerende partij gaat ten slotte ook nog uitgebreid in op de 
+
+“detailkritiek van de verzoekende partij per bekritiseerde post”.  
+
+12. 
+
+In de memorie van wederantwoord blijft de verzoekende partij  
+
+erbij dat de verwerende partij ten onrechte betoogt dat de gunning verliep volgens 
+
+de  onderhandelingsprocedure.  Zij  meent  dat  de  verwerende  partij  dan  ook  met 
+
+toepassing  van  het  voormelde  artikel  21,  §  3,  Ansaldo  om  een  verantwoording 
+
+had  moeten  vragen  omtrent  de  abnormaal  lage  prijs  die  zij  aanbood.  Nergens 
+
+blijkt  uit  de  ‘Requests  for  Quotation’,  die  door  de  verwerende  partij  worden 
+
+omschreven  als  “onderhandelingsrondes”,  dat  er  daadwerkelijk  werd 
+
+onderhandeld  met  de  inschrijvers,  dit  wil  zeggen  dat  de  wijziging  van  de 
+
+voorwaarden van de opdracht werd besproken of dat er werd afgedongen op de 
+
+prijs. 
+
+XII-7868-14/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Voorts blijft zij erbij dat de verwerende partij geen zorgvuldig 
+
+prijsonderzoek  heeft  verricht.  Het  is  immers  weinig  aannemelijk  dat  de  prijzen 
+
+van  Ansaldo  voor  de  post  70  ‘herstelling  op  20  jaar’  en  de  posten  ‘preventief 
+
+onderhoud’, ‘vervanging 5 % LRU op 20 jaar’, en ‘kost verbruik’ niet abnormaal 
+
+laag zouden zijn, zoals de verwerende partij volhoudt.  
+
+Alleen  al  voor  post  70  ‘herstelling  op  20  jaar’  –  deze  kritiek 
+
+formuleert  de  verzoekende  partij  op  grond  van  de  inzage  van  het  administratief 
+
+dossier  –  bedraagt  het  verschil  met  de  andere  inschrijvers  2  tot  3  miljoen  euro. 
+
+Ondanks  dit  bijzonder  grote  prijsverschil,  heeft  de  verwerende  partij  kennelijk 
+
+geen  vragen  gesteld  aan  Ansaldo  over  de  wijze  waarop  die  haar  prijs  berekend 
+
+had. Het bestaan van een al dan niet verhevigde concurrentie verklaart nog altijd 
+
+niet  dit  grote  prijsverschil.  Het  feit  dat  Ansaldo  uiteindelijk  de  gevolgen  zal 
+
+dragen indien haar levering niet in overeenstemming is met de eisen die werden 
+
+gesteld,  ontslaat  de  verwerende  partij  er  uiteraard  niet  van  om  een  behoorlijk 
+
+prijsonderzoek  uit  te  voeren.  Het  prijsverschil  is  des  te  opvallender  omdat  de 
+
+systemen  van  de  verzoekende  partij  en  van  Ansaldo  eigenlijk  nauwelijks  van 
+
+elkaar  verschillen.  Het  Pegasus-systeem  van  het  Spaanse  Iberica  Tecnologia  En 
+
+Sistemas De Seguridad Ferroviaros s.l. (ITSS), waar Ansaldo gebruik van maakt, 
+
+is  immers  in  belangrijke  mate  een  kopie  van  het  Phoenix-systeem  van  de 
+
+verzoekende partij. 
+
+De  verzoekende  partij  legt  vervolgens  uit  op  welke  wijze  zij 
+
+zelf is gekomen tot het bedrag dat zij bood voor post 70 en bezorgt hieromtrent 
+
+ook  een  “Toelichting  post  70”.  Samengevat,  komt  zij,  door  bij  elk  van  de 
+
+19 LRU,  waaruit  haar  meetpost  bestaat,  uit  te  gaan  van  hun  eigen  “MTBF-
+
+waarde”  (“Mean  Time  Between  Failures”  –  vertaling:  gemiddeld  tijdsverloop 
+
+tussen  het  optreden  van  een  faling)  die  zij  heeft  berekend  op  grond  van 
+
+praktijkervaring, uit op een prijs van 3.239.870 euro. 
+
+Het  systeem  van  Ansaldo  blijkt  volgens  de  stukken  uit  het 
+
+administratief dossier echter slechts te bestaan uit 7 LRU’s. Opvallend hierbij is 
+
+dat  een  deel  van  de  LRU’s  die  door  de  verwerende  partij  uitdrukkelijk  waren 
+voorgeschreven,  bij  inschrijver  Ansaldo  blijkt  te  ontbreken,  onder  meer  een 
+
+XII-7868-15/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+regen-  of  vochtigheidssensor,  terwijl  volgens  de  verwerende  partij  het  systeem 
+
+van Ansaldo hier wel degelijk in zou voorzien juist omdat de verwarming ervan 
+
+pas zou aanslaan als het koud is en het tegelijk regent of  sneeuwt,  waardoor de 
+
+kosten  aanzienlijk  zouden  beperkt  blijven.  Indien  wordt  uitgegaan  van  slechts 
+
+7 LRU’s, zoals in het geval van Ansaldo, en bovendien van een betrouwbaarheid 
+
+(MTBF) volgens de theoretische standaard “MIL-HDBK (‘Military Handbook’) -
+
+217 F notice 2”, dan komt men inderdaad tot een bedrag voor post 70 “herstelling 
+
+op 20 jaar” dat het bedrag dat door Ansaldo werd voorgesteld benadert, namelijk 
+
+1.061.640  euro.  De  prijs  die  Ansaldo  voorstelt  voor  post  70  kan  bijgevolg 
+
+onmogelijk als realistisch worden beschouwd. 
+
+Wat  posten  ‘preventief  onderhoud’,  ‘vervanging  5  %  LRU  op 
+
+20 jaar’ en ‘kost verbruik’ betreft, merkt de verzoekende partij nog het volgende 
+
+op.  Eis  R33  van  de  “ontwerpvereisten”  gevoegd  bij  het  bestek  bepaalt 
+
+uitdrukkelijk dat als er geen preventief onderhoud nodig is, dit door de inschrijver 
+
+moet  kunnen  worden  bewezen.  Uit  niets  blijkt  echter  dat  dit  bewijs  inderdaad 
+
+door  Ansaldo  werd  geleverd.  Alleszins  bestaan  er  ernstige  twijfels  dat  de 
+
+meetposten van Ansaldo geen preventief onderhoud nodig zouden hebben; dit is 
+
+technisch  vrijwel  uitgesloten.  Hoe  dan  ook  komt  het  zo  beweerde  “predictief 
+
+onderhoud”  neer  op  een  preventief  onderhoud:  het  onderhoud  wordt  immers 
+
+uitgevoerd  voordat  de  meetpost  niet  meer  op  een  behoorlijke  manier  kan 
+
+functioneren.  Zelfs in  dat geval, moet in ieder geval het waarschuwingssysteem 
+
+op  zich  geregeld  worden  gecontroleerd.  Ook  de  afstelling  van  de  railcontacten 
+
+moet  in  elk  geval  geregeld  worden  nagegaan  alsook  moet  de  draaiende  spiegel 
+
+geregeld  worden  schoongemaakt,  zo  niet  kan  het  systeem  door  het 
+
+binnendringend vuil en vocht na een tijd niet langer meer functioneren. Ten slotte 
+
+moet het systeem geregeld worden gekalibreerd, teneinde de nauwkeurigheid van 
+
+de  metingen  te  waarborgen.  Ook  ITSS,  dat  het  systeem  ontwikkelde  waarvan 
+
+Ansaldo gebruik maakt, past kalibreren toe. 
+
+Voor  wat  de  post  ‘vervanging  5  %  LRU  op  20  jaar’  betreft, 
+
+betwist  de  verzoekende  partij  eveneens  de  verklaring  van  de  verwerende  partij 
+
+dat  het  gebruik  van  gerecycleerde  onderdelen  een  aanzienlijke  besparing  zou 
+
+inhouden en acht zij die bewering lang niet bewezen. Gerecycleerde onderdelen 
+
+hebben  immers  evenzeer  hun  kostprijs.  Bovendien  houdt  ook  de  verzoekende 
+
+XII-7868-16/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+partij bij haar berekening rekening met het gebruik van gerecycleerde onderdelen. 
+
+Dit kan dus moeilijk het verschil in prijs tussen Ansaldo en de verzoekende partij 
+
+verklaren. Het kan trouwens nooit helemaal van te voren bepaald worden wat het 
+
+aandeel zal zijn van de gerecycleerde onderdelen in het totaal aantal onderdelen 
+
+dat moet worden vervangen op 20 jaar. 
+
+Ten slotte, wat de post ‘kost verbruik’ betreft, trekt zij eveneens 
+
+de  uitleg  van  de  verwerende  partij  met  betrekking  tot  de  technologische 
+
+innovaties van het systeem van Ansaldo – waardoor de verbruikskosten veel lager 
+
+zouden uitvallen doordat er voor de meetposten geen verwarming nodig zou zijn, 
+
+behalve  wanneer  de  temperatuur  zou  dalen  onder  de  5°C  en  het  tegelijk  zou 
+
+regenen of sneeuwen – in twijfel. Zoals reeds gezegd, is er in de lijst van LRU’s 
+
+van Ansaldo nergens sprake van een sensor die regen of sneeuw kan detecteren. 
+
+Het is trouwens de vraag of een meetsysteem wel behoorlijk kan functioneren als 
+
+het pas aanslaat bij een temperatuur onder 5°C als het tegelijk regent of sneeuwt. 
+
+In dit verband merkt de verzoekende partij nog op dat de koudste maanden van 
+
+het jaar over het algemeen ook de meeste neerslagdagen kennen. Bijgevolg kan 
+
+het  verschil  in  verbruik  zo  groot  niet  zijn  tussen  een  systeem  waarvan  de 
+
+verwarming  alleen  aanslaat  als  de  temperatuur  daalt  beneden  de  5°C  en  het 
+
+tegelijk regent of sneeuwt, en een gewoon systeem. In de technische documenten 
+
+van  het  Spaanse  ITSS  die  de  verzoekende  partij  heeft  voorgelegd,  en  die 
+
+betrekking  hebben  op  het  Pegasus-systeem  waar  Ansaldo  gebruik  van  maakt,  is 
+
+bovendien nergens sprake van de zogenaamde “technologische innovaties” waar 
+
+het Pegasus-systeem volgens Ansaldo blijk van zou geven. Daarentegen mag uit 
+
+deze  documenten  worden  afgeleid  dat  het  Pegasus-systeem  gewoon  gekoeld  en 
+
+verwarmd wordt als andere systemen.  
+
+Volgens  de  verzoekende  partij  is  het  voorts  onduidelijk  of  de 
+
+inschattingen,  waar  alle  inschrijvers  van  zijn  uitgegaan  bij  het  bepalen  van  de 
+
+post  ‘kost  verbruik’,  op  dezelfde  wijze  gebeurden.  Het  is  geenszins  uitgesloten 
+
+dat  door  de  andere  inschrijvers  geen  rekening  werd  gehouden  met  gegevens 
+
+waarmee  de  verzoekende  partij  wel  rekening  hield.  Zij  herhaalt  dat  heel  wat 
+
+LRU’s die door de verwerende partij waren voorgeschreven of aanwezig werden 
+
+geacht bij Ansaldo ontbraken en vermoedt dan ook dat door Ansaldo enkel werd 
+
+rekening  gehouden  met  het  beperkt  aantal  LRU’s  die  zij  vermeldt  om  de 
+
+XII-7868-17/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+verbruikskosten te berekenen.  Andere LRU’s, die  nochtans noodzakelijk waren, 
+
+werden bij de berekening van de verbruikskosten achterwege gelaten. 
+
+De  verzoekende  partij  besluit  dat  het  feit  dat  het  systeem  van 
+
+Ansaldo  door  de  verwerende  partij  als  technisch  inferieur  werd  beschouwd 
+
+moeilijk te rijmen valt met de beweerde lage onderhoudskosten. Voor wat post 70 
+
+‘herstelling  op  20  jaar’  betreft,  heeft  verwerende  partij  kennelijk  geen  vragen 
+
+gesteld aan Ansaldo over de wijze waarop die haar prijs berekend had, ondanks 
+
+het bijzonder grote prijsverschil met de andere inschrijvers. Voor wat de posten 
+
+‘preventief  onderhoud’,  ‘vervanging  5  %  LRU  op  20  jaar’  en  ‘kost  verbruik’ 
+
+betreft,  heeft  de  verwerende  partij  de  antwoorden  van  Ansaldo  voetstoots 
+
+aangenomen, zonder na te gaan of die antwoorden wel steekhoudend waren. 
+
+13. 
+
+In  haar  laatste  memorie  repliceert  de  verwerende  partij  op  het 
+
+voor  haar  negatief  uitvallende  auditoraatsverslag,  in  zoverre  daarin  wordt 
+
+aangenomen dat zij de op haar rustende zorgvuldigheidsplicht en het voormelde 
+
+artikel  21,  §  1,  heeft  geschonden  door  de  offerte  van  Ansaldo  aan  geen 
+
+prijsonderzoek  te  onderwerpen,  met  betrekking  tot  post  70  ‘herstelling  op 
+
+20 jaar’, nog het volgende. 
+
+Verwijzend  naar  bijlage  5  van  het  bestek,  verduidelijkt  zij  dat 
+
+de  prijs  voor  het  onderhoudscontract  uitsluitend  is  gegrond  op  de  forfaitaire 
+
+jaarlijkse  onderhoudsprijzen  die  de  inschrijvers  opgeven  voor  de  verschillende 
+
+LRU’s van een meetpost. Zij kan de bewering van de verzoekende partij dat het 
+
+gebruik  van  eenzelfde  of  een  gelijkaardig  systeem  –  quod  non  –  zou  moeten 
+
+leiden tot eenzelfde kostprijs voor de vervanging of het herstel van de onderdelen 
+
+van dat systeem niet bijvallen. De lagere prijzen van Ansaldo voor het onderhoud 
+
+vloeien  hoofdzakelijk  voort  uit  de  doorgedreven  toepassing  van  recyclage  van 
+
+(sub)onderdelen  van  de  LRU’s,  wat  door  Ansaldo  nadrukkelijk  werd  toegelicht 
+
+en  aangetoond  tijdens  de  gevoerde  onderhandelingen.  Te  dezen  houdt  de 
+
+voormelde recyclage concreet in dat enkel een bepaald defect (sub)onderdeel van 
+
+een  LRU  wordt  vervangen  en  niet  de  volledige  eenheid.  Dit  verklaart  dat  de 
+
+aankoopprijs  zo  goed  als  identiek  is  voor  de  verschillende  inschrijvers  maar  de 
+
+herstellingsprijzen  beduidend 
+
+lager  bij  Ansaldo.  Bovendien  betwist  de 
+
+verwerende  partij  dat  het  systeem  van  Ansaldo  in  belangrijke  mate  een  “kopie” 
+
+XII-7868-18/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+zou zijn van het Phoenix-systeem van de verzoekende partij. Het is weliswaar zo 
+
+dat de beide systemen teruggaan op een oorspronkelijk model, doch het systeem 
+
+dat  Ansaldo  aanbiedt  –  het  Pegasus-systeem  –  is  een  optimalisering  van  het 
+
+oorspronkelijke  model.  Het  systeem  dat  Ansaldo  aanbiedt, 
+
+is  dus  het 
+
+basissysteem met verdere technische evoluties, onder andere op het vlak van het 
+
+lager  verbruik  van  het  systeem  en  het  gebruik  van  een  G-krachtsensor  bij  het 
+
+predictief onderhoud. 
+
+De  beweringen  van  de  verzoekende  partij  in  verband  met 
+
+MTBF doen volgens de verwerende partij voorts niet ter zake in het kader van de 
+
+vaststelling  van  de  kostprijs  voor  het  garantie-  en  onderhoudscontract.  Zij 
+
+herhaalt  dat  die  kost  uitsluitend  gebaseerd  is  op  de  eenheidsprijzen  die  de 
+
+inschrijvers  opgeven  voor  het  onderhoud  van  de  verschillende  LRU’s  van  een 
+
+meetpost.  De  MTBF  wordt  door  de  nv  Infrabel  louter  bij  de  inschrijvers 
+
+opgevraagd  om  te  kunnen  inschatten  welke  LRU’s  het  gevoeligst  zijn  wat  de 
+
+noodzaak tot herstel of vervanging betreft, doch oefent geen enkele invloed uit op 
+
+de prijzen, noch op de aan de nv Infrabel te factureren jaarbedragen, noch op de 
+
+totale kost voor het onderhoudscontract. 
+
+De verwerende partij betwist ook dat Ansaldo een meetsysteem 
+
+met  slechts  7  LRU’s  als  uitgangspunt  zou  hebben  genomen  voor  de  berekening 
+
+van  de  kost  voor  het  onderhoudscontract.  De  meetpost  van  Ansaldo  (Pegasus-
+
+systeem) bestaat uit 16 LRU’s, wat dus vergelijkbaar is met de 19 LRU’s van het 
+
+meetsysteem van de verzoekende partij. Ansaldo zou een vervolledigde lijst met 
+
+al haar LRU’s hebben doorgestuurd en voor diverse LRU’s een prijs “0” hebben 
+
+opgegeven. 
+
+De  verwerende  partij  merkt  ten  slotte,  wat  deze  post  betreft, 
+
+nog  op  dat  de  nodige  toelichtingen  naar  aanleiding  van  de  onderhandelingen 
+
+werden  gegeven  waaronder  de  toelichting  dat  de  forfaitaire  kosten  voor 
+
+de ontbrekende  LRU’s  in  de  eerste  offerte  werden  verdeeld  over  de  LRU’s  die 
+
+al vermeld  stonden  in  de  eerste  offerte.  Bijgevolg  was  nader  onderzoek  op  dit 
+
+punt – door bijvoorbeeld het vragen om prijsverantwoording – volgens haar ook 
+
+niet nodig. 
+
+XII-7868-19/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Voorts  repliceert  zij  nog  op  de  bijkomende  kritiek  van  de 
+
+verzoekende  partij,  zoals  ontwikkeld  in  haar  memorie  van  wederantwoord  met 
+
+betrekking tot de posten ‘kost verbruik’ en ‘preventief onderhoud’. 
+
+Wat de ‘kost verbruik’ betreft, betwist de verwerende partij de 
+
+bemerking van de  verzoekende partij dat Ansaldo in zijn offerte geen LRU zou 
+
+hebben  opgenomen  met  betrekking  tot  de  sensor  om  regen  en  sneeuw  te 
+
+detecteren. Het betreft LRU nr. 5, genaamd ‘Sonde de température extérieure’ en 
+
+die meet zowel de vochtigheid als de temperatuur, in de vorm van twee sensoren 
+
+–  één  voor  vochtigheid  en  één  voor  temperatuur.  De  naam  van  dit  LRU  duidt 
+
+weliswaar 
+
+enkel  op  de 
+
+temperatuursensor,  doch  omvat  ook 
+
+een 
+
+vochtigheidssensor.  Aangezien  Ansaldo  deze  vochtigheidssensor  pas  heeft 
+
+opgenomen  in  zijn  BAFO  –  in  het  licht  van  de  met  de  nv Infrabel  gevoerde 
+
+onderhandelingen met betrekking tot de post ‘kost verbruik’ – werd de naam van 
+
+het LRU op dat moment echter niet meer gewijzigd, maar het betreft wel degelijk 
+
+een LRU met een temperatuursensor én een vochtigheidssensor. Bij het systeem 
+
+van de verzoekende partij gebeurt bijstelling van de verwarming enkel in functie 
+
+van de omgevingstemperatuur en niet – zoals het systeem van Ansaldo – ook in 
+
+functie van de vochtigheid. 
+
+Wat  de  post 
+
+‘preventief  onderhoud’  betreft,  blijft  de 
+
+verwerende partij erbij dat het niet zo vreemd is dat de kostprijs voor deze post in 
+
+de offerte van Ansaldo 0 euro is. Bij het systeem van Ansaldo is een preventief 
+
+onderhoud  immers  niet  nodig  en  wordt  gewerkt  met  een  predictief  onderhoud, 
+
+wat inhoudt dat het waarschuwingssysteem van Ansaldo eerst een waarschuwing 
+
+zal  geven  wanneer  de  tussenkomst  door  een  technicus  vereist  is.  Dit  soort  van 
+
+predictief  onderhoud  –  aan  de  hand  van  waarschuwings-  en  alarmsignalen  – 
+
+wordt  algemeen  toegepast  bij  moderne(re)  seininrichtingssystemen.  Ansaldo 
+
+heeft  voorts  wel  degelijk  het  bewijs  geleverd  dat  geen  preventief  onderhoud 
+
+nodig 
+
+is: 
+
+in  het  kader  van  de  onderhandelingen  heeft  Ansaldo  zijn 
+
+onderhoudsstrategie  duidelijk  verklaard  aan  de  verwerende  partij,  ook  met 
+
+betrekking  tot  het  railcontact  type  Frauscher  RSR123.  Net  zoals  voor  dit 
+
+railcontact en het defect dat in dat kader kan optreden, bestaat er voor alle andere 
+
+anomalieën en fouten een specifieke foutcode die, bij het systeem van Ansaldo, 
+
+wordt  doorgestuurd  naar  het  centrale  onderhoudscentrum  van  de  verwerende 
+
+XII-7868-20/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+partij.  Bij  de  installatie  van  het  prototype  van  dit  predictief  onderhoud  is  het 
+
+systeem reeds getest en conform bevonden. 
+
+14. 
+
+In  haar  laatste  memorie  blijft  de  verzoekende  partij  er  in  de 
+
+eerste plaats bij dat artikel 21, § 3, van het koninklijk besluit van 16 juli 2012 wel 
+
+degelijk  werd  geschonden.  Het  versturen  aan  de  inschrijvers  van  een  aantal 
+
+“Requests  for  Quotation”  kan  moeilijk  omschreven  worden  als  het  voeren  van 
+
+onderhandelingen. Zij wijst op het gevaar dat een aanbestedende overheid opteert 
+
+voor  de onderhandelingsprocedure om op  die  manier  de  strenge  bepalingen  van 
+
+onder meer het voormelde artikel 21, § 3, te omzeilen. 
+
+Wat de schending van artikel 21, § 1, van het koninklijk besluit 
+
+van  16  juli  2012  en  van  de  algemene  zorgvuldigheidsplicht  betreft,  merkt  de 
+
+verzoekende partij nog op dat het in de eerste plaats uit veiligheidsoverwegingen 
+
+van belang was dat de verwerende partij zorgvuldig zou nagaan of de prijzen die 
+
+door de inschrijvers voor post 70 ‘herstelling op 20 jaar’ werden opgegeven, wel 
+
+realistisch waren. De “meetposten voor de detectie van warme asbussen” waarop 
+
+de opdracht betrekking heeft, dienen om de veiligheid van het spoorwegennet te 
+
+vergroten, aangezien ze ertoe bijdragen ontsporingen te voorkomen. 
+
+Voorts blijft zij erbij dat ook Ansaldo net zoals zij tot haar prijs 
+
+is  gekomen  door  het  aantal  LRU’s  te  vermenigvuldigen  met  een  factor  MTBF. 
+
+De bewering van de verwerende partij in haar laatste memorie dat de MTBF geen 
+
+enkele invloed uitoefent op de prijzen is weinig  geloofwaardig en  in tegenstrijd 
+
+met  de  tabel  2  van  “Bijlage  5:  garantie  en  onderhoudscontract”,  waarin  ook  de 
+
+MTBF  voor  elk  onderdeel  dient  te  worden  vermeld,  wat  inhoudt  dat  de  MTBF 
+
+wel  degelijk  zijn  weerslag  heeft  op  de  eenheidsprijs  per  onderdeel.  Indien  niet 
+
+wordt  uitgegaan  van  de  “gemiddelde  levensduur  van  het  onderdeel  zonder 
+
+herstelling/onderhoud”,  kan  ook  niet  worden  bepaald  wanneer  een  onderdeel 
+
+moet  worden  hersteld  of  vervangen,  en  kan  ook  geen  prijs  worden  bepaald.  En 
+
+zelfs al zou de MTBF geen enkele invloed hebben gehad op de prijsbepaling door 
+
+Ansaldo,  dan  nog  blijft  het  onduidelijk  hoe  deze  dan  wel  tot  haar  prijs  is 
+
+gekomen. 
+
+XII-7868-21/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Ook de uitleg van de verwerende partij dat de kosten voor het 
+
+onderhoud  en  de  herstelling  over  20  jaar  voor  de  ontbrekende  LRU’s  werden 
+
+verdeeld  over  de  LRU’s  die  wel  waren  opgenomen  in  de  offerte  overtuigt  de 
+
+verzoekende  partij  niet:  “Waarom  kon  Ansaldo  STS  immers  niet  gewoon  per 
+
+‘LRU’  de  eenheidsprijs  opgeven,  in  plaats  van  die  prijs  voor  de  in  de  offerte 
+
+ontbrekende ‘LRU’s’ naar verwerende partij beweert te voegen bij de prijs van de 
+
+‘LRU’s’  die  wel  in  de  offerte  vermeld  werden?  En  hoe  kan  men  dan  nog  de 
+
+juistheid  van  die  prijs  nagaan,  als  niet  eens  duidelijk  is  welke  prijs  bij  welke 
+
+gevoegd  werd?”  Volgens  de  verzoekende  partij  wijst  alles  erop  dat  Ansaldo  de 
+
+ontbrekende  onderdelen  helemaal  niet  in  aanmerking  heeft  genomen  voor  de 
+
+berekening  van  de  prijs,  en  dat  de  verwerende  partij  met  een  toch  wel  erg 
+
+twijfelachtige verklaring genoegen heeft genomen. 
+
+Ook  blijft  de  verzoekende  partij  erbij  dat  de  uitleg  inzake  een 
+
+doorgedreven gebruik van gerecycleerde onderdelen voor de lage prijs voor deze 
+
+post evenmin het aanzienlijk prijsverschil kan verklaren. Zij herhaalt dat zij zelf 
+
+eveneens  gebruikmaakt  van  gerecycleerde  onderdelen,  en  dat  de  praktijk 
+
+bovendien 
+
+leert  dat  nieuwe  onderdelen  vaak  goedkoper  uitvallen  dan 
+
+gerecycleerde. 
+
+Zij  merkt  tevens  opnieuw  op  dat  de  bewering  van  de 
+
+verwerende  partij  in  dit  kader  dat  het  systeem  van  Ansaldo  “technologisch 
+
+verfijnder”  zou  zijn,  merkwaardig  is  nu  het  systeem  van  Ansaldo  bij  de 
+
+beoordeling  van  het  eerste  gunningscriterium,  met  een  gewicht  van  70  %,  juist 
+
+technisch inferieur werd geacht ten opzichte van de systemen van de twee andere 
+
+inschrijvers. 
+
+Ook  wat  de  posten  ‘preventief  onderhoud’,  ‘vervanging  5  % 
+
+LRU op 20 jaar’, en ‘kost verbruik’ betreft, blijft de verzoekende partij er in haar 
+
+laatste memorie bij dat de verwerende partij de prijzen aangeboden door Ansaldo 
+
+niet op een zorgvuldige manier heeft onderzocht. Zij verwijst naar haar memorie 
+
+van wederantwoord, doch merkt nog het volgende op voor de posten ‘preventief 
+
+onderhoud’ en ‘kost verbruik. 
+
+XII-7868-22/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Wat  de  nulprijs  voor  de  post  preventief  onderhoud  betreft, 
+
+benadrukt  zij  dat  ook  een  zuiver  predictief  onderhoud  zijn  kostprijs  heeft.  Zo 
+
+wijst zij erop dat ook een kostprijs moet in rekening worden gebracht in het geval 
+
+er  moet  worden  ingegrepen  als  er  door  het  systeem  een  waarschuwing  wordt 
+
+gegeven,  dat  ook  het  waarschuwingssysteem  zelf  geregeld  op  zijn  functioneren 
+
+moet  worden  nagekeken  en  dat  dit  ook  zijn  kostprijs  heeft  en  dat  het  moeilijk 
+
+voorstelbaar  is  dat  ook  bij  een  predictief  systeem  niet  minstens  voor  sommige 
+
+onderdelen  op  vaste,  vooraf  bepaalde  tijdstippen  een  signaal  wordt  gegeven  dat 
+
+een onderhoud of nazicht noodzakelijk is.  
+
+Wat de post ‘verbruik’ betreft, merkt zij nog op dat het feit dat 
+
+zelfs al zou het systeem van Ansaldo over een vochtigheidssensor beschikken dit 
+
+op zich nog niet het aanzienlijke verschil in prijs voor het verbruik kan verklaren. 
+
+De  verbruikskost  wordt  trouwens  niet  alleen  door  de  verwarming  bepaald.  Zij 
+
+vermoedt  daarom  dat  Ansaldo  voor  de  berekening  van  de  verbruikskost  eens  te 
+
+meer een heleboel LRU’s heeft weggelaten. 
+
+Zij  herinnert  er  ten  slotte  aan  dat  het  systeem  van  Ansaldo 
+
+eigenlijk  niet  in  overeenstemming  is  met  de  eisen  die  door  verwerende  partij 
+
+gesteld werden. Volgens de opdracht moest er rekening worden gehouden met de 
+
+temperatuur  van  klasse  Tl  –  temperatuur  tussen  -25°C  en  +40°C  –  terwijl  het 
+
+systeem  van  Ansaldo  voldoet  aan  klasse  T2  –  temperatuur  tussen  -40°C  en 
+
++35°C. 
+
+Beoordeling 
+
+15. 
+
+De  in  het  geding  zijnde  opdracht  wordt  gegund  volgens  een 
+
+onderhandelingsprocedure met bekendmaking en wordt door de verwerende partij 
+
+gekwalificeerd  als  een  opdracht  in  de  nutssectoren,  kwalificatie  die  door  de 
+
+verzoekende partij niet wordt betwist. 
+
+De artikelen 21, § 3, en 98, § 1, van het koninklijk besluit van 
+
+16 juli 2012, die handelen over de procedure inzake abnormaleprijzenonderzoek, 
+
+zijn  niet  van  toepassing  op  een  onderhandelingsprocedure,  wat  de  verzoekende 
+
+partij ook niet betwist. 
+
+XII-7868-23/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Dit  doet  echter  niets  af  aan  de  plicht  voor  een  aanbestedende 
+
+overheid  om  ook  bij  een  onderhandelingsprocedure  de  regelmatigheid  van  een 
+
+offerte na te gaan en één van de elementen van regelmatigheid is dat de offerte 
+
+geen abnormale prijzen bevat. 
+
+Voorts onderwerpt de aanbestedende overheid krachtens artikel 
+
+21, § 1, van het koninklijk besluit van 16 juli 2012 de ingediende offertes aan een 
+
+prijsonderzoek. Op haar verzoek verstrekken de inschrijvers tijdens de procedure 
+
+alle nodige inlichtingen om dit onderzoek mogelijk te maken. Die bepaling is van 
+
+toepassing ongeacht de gunningsprocedure. 
+
+Ook rust op de aanbestedende overheid, bij het nemen van haar 
+
+beslissing  of  zij  al  dan  niet  de  abnormaliteit  van  prijzen  onderzoekt,  en  bij  dat 
+
+onderzoek zelf, een zorgvuldigheidplicht. 
+
+De vraag rijst hier dan ook of de verwerende partij de totaalprijs 
+
+van de offerte van Ansaldo en haar prijzen voor de posten, waaronder post 70, als 
+
+normale  prijzen  mocht  beschouwen,  zonder  daarbij  haar  verplichtingen  te 
+
+schenden.  
+
+16. 
+
+De  verwerende  partij  heeft  de  opdracht  geraamd  op 
+
+18.560.000 euro.  De  volgende  biedingen  worden  ontvangen:  Ansaldo: 
+
+5.487.674 euro,  Clearsy:  8.195.139 
+
+euro 
+
+en  de  verzoekende  partij: 
+
+8.074.577 euro.  De  prijzen  wijken  onderling  sterk  van  elkaar  af  en  alle 
+
+inschrijvers – doch die van Ansaldo duidelijk het sterkst – van de raming van de 
+
+verwerende  partij.  De  aangeboden  totaalprijzen  bedragen  respectievelijk  29,5%, 
+
+44% en 43,5% van de raming. 
+
+De prijzen die door de drie inschrijvers werden aangeboden per 
+
+post, zijn de volgende: 
+
+XII-7868-24/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  Ansaldo 
+
+     Clearsy 
+
+            Voestalpine 
+
+post 10 (meetpost indoor 
+
+meting)  
+
+2.522.000,00 €  
+
+2.029.485,00 €  
+
+2.076.360,00 €  
+
+post 20 (meetpost 
+
+1.419.600,00 €  
+
+1.334.964,00 €  
+
+1.207.640,00 €  
+
+outdoor meting)  
+
+post 30 (prototype-
+
+80.000,00 €  
+
+79.140,00 €  
+
+43.130,00 €  
+
+materiaal)  
+
+post 40 (prototype-
+
+45.000,00 €  
+
+39.320,00 €  
+
+58.241,00 €  
+
+ontwikkeling)  
+
+post 50 (documentatie)  
+
+30.000,00 €  
+
+17.510,00 €  
+
+12.000,00 €  
+
+post 60 (opleiding)  
+
+15.000,00 €  
+
+7.250,00 € 
+
+7.500,00 €  
+
+post 70 (herstelling op 20 
+
+1.061.640,00 €  
+
+3.963.600,00 €  
+
+3.239.870,00 €  
+
+jaar)  
+
+post 80  
+
+117.200,00 €  
+
+100.616,00 €  
+
+148.829,00 €  
+
+(reservematerieel)  
+
+post preventief 
+
+0,00 €  
+
+217.056,00 €  
+
+265.980,00 €  
+
+onderhoud  
+
+post vervanging 5 % 
+
+93.400,00 €  
+
+181.224,00 €  
+
+290.092,00 €  
+
+LRU op 20 jaar  
+
+post kost verbruik  
+
+103.834,00 €  
+
+224.974,00 €  
+
+724.935,00 €  
+
+Met de verzoekende partij mag worden vastgesteld dat “alleen 
+
+al voor post 70” het verschil tussen de prijs opgegeven door Ansaldo, enerzijds, 
+
+en door de verzoekende partij en Clearsy, anderzijds, zeer aanzienlijk is. 
+
+17. 
+
+De  verwerende  partij  meent 
+
+echter  dat  het 
+
+totale 
+
+inschrijvingsbedrag alsook de afzonderlijke prijzen voor  de  bekritiseerde posten 
+
+geen  schijn  van  abnormaliteit  vertonen  en  zij  dan  ook  niet  “op  basis  van 
+
+artikel 21, § 1 KB Plaatsing speciale sectoren 16 juli 2012 of de op haar rustende 
+
+XII-7868-25/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+algemene zorgvuldigheidsplicht […] gehouden was tot het stellen van een vraag 
+
+om prijsverantwoording aan de gekozen inschrijver Ansaldo”. 
+
+Zij stelt dat, gelet op de economische crisis waardoor bepaalde 
+
+inschrijvers zouden inschrijven met zeer concurrentiële prijzen, het verschil in de 
+
+geboden  totaalprijzen  niet  hoeft  te  verbazen  en  dat  er  geen  reden  is  om  aan  te 
+
+nemen  dat  de  prijs  van  de  offerte  van  de  verzoekende  partij  als  referentie  zou 
+
+moeten  gelden  voor  de  beoordeling  van  het  normale  karakter  van  de 
+
+inschrijvingsprijzen. 
+
+Er  blijft  echter  hoe  dan  ook  een  groot  verschil  van  meer  dan 
+
+2,5 miljoen  euro  tussen  de  totaalprijs  van  Ansaldo  en  die  van  de  twee  andere 
+
+inschrijvers.  Overigens  wijkt  de  prijs  van  Ansaldo  sterk  af  ten  opzichte  van  de 
+
+eigen raming van de verwerende partij van de opdracht. Dat ook de prijzen van 
+
+alle inschrijvers sterk afwijken van de raming, doet niets af aan de vaststelling dat 
+
+die  afwijking  bij  Ansaldo  nog  veel  meer  bedraagt  dan  bij  de  andere  twee 
+
+inschrijvers. Enige uitleg of onderzoek daarover, onder meer waarom de raming 
+
+niet – langer – als een aanvaardbaar referentiepunt kan gelden, blijkt niet uit het 
+
+administratief  dossier.  Evenmin  in  haar  procedurestukken  gaat  de  verwerende 
+
+partij daarop in. 
+
+Ook  de argumentatie van de verwerende partij met betrekking 
+
+tot  het  beperkte  risico  op  niet-conforme  uitvoering  door  Ansaldo,  omdat  tijdens 
+
+de onderhandelingen is gebleken dat de door haar aangeboden meetposten en hun 
+
+onderdelen  “de  eisen  dekken  die  het  bestek  oplegt”  –  wat  niet  noodzakelijk  wil 
+
+zeggen  dat  ook  de  “prijzen”  die  eisen  dekken  en  dus  als  realistisch  kunnen 
+
+worden  aanvaard  –  overtuigt  niet.  Dat  de  verwerende  partij  bij  niet-conforme 
+
+levering  bovendien  beschikt  over  actiemiddelen  in  de  zin  van  het  koninklijk 
+
+besluit van 14 januari 2013 ‘tot bepaling van de algemene uitvoeringsregels van 
+
+de overheidsopdrachten en van de concessies voor openbare werken’, ontslaat de 
+
+verwerende  partij,  zoals  de  verzoekende  partij  terecht  opmerkt,  er  evenmin  van 
+
+om een behoorlijk prijsonderzoek uit te voeren. 
+
+In  die  omstandigheden  is  de  verwerende  partij,  wat  de 
+
+totaalprijs 
+
+van 
+
+de 
+
+gekozen 
+
+inschrijver 
+
+betreft, 
+
+aan 
+
+haar 
+
+XII-7868-26/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+zorgvuldigheidsverplichting tekort gekomen door deze prijs niet op een eventuele 
+
+abnormaliteit  te  onderzoeken  –  uit  het  administratief  dossier  blijkt  alvast  geen 
+
+dergelijk onderzoek. 
+
+18. 
+
+Ook  met  betrekking  tot  post  70  ‘herstelling  op  20  jaar’  moet 
+
+eenzelfde tekortkoming worden opgemerkt. 
+
+Het aanzienlijk lagere bedrag voor deze post in de offerte van 
+
+Ansaldo – meer dan 2 miljoen met de twee andere inschrijvers – zou volgens de 
+
+verwerende  partij  hoofdzakelijk  voortvloeien  uit  “de  doorgedreven  toepassing 
+
+van  recyclage  van  (sub)onderdelen  van  de  LRU’s”  bij  het  herstel  of  de 
+
+vervanging van de te leveren meetposten, wat door Ansaldo nadrukkelijk zou zijn 
+
+toegelicht  en  aangetoond  tijdens  de  gevoerde  onderhandelingen.  De  toepassing 
+
+van deze “recyclage” zou verklaren “dat de aankoopprijs zo goed als identiek is 
+
+voor de verschillende inschrijvers maar de herstellingsprijzen beduidend lager bij 
+
+Ansaldo”.  Ook  wat  de  post  ‘vervanging  5%  LRU  op  20  jaar’  betreft  doet 
+
+de verwerende  partij  in  haar  memorie  van  antwoord  gelden  dat  Ansaldo  tijdens 
+
+de onderhandelingen heeft aangegeven dat bij het door haar aangeboden systeem 
+
+–  Pegasus-systeem  –  de  beschadigde  of  defecte  onderdelen  niet  in  hun  geheel 
+
+moeten worden vervangen door nieuwe “maar wel door gerecycleerde onderdelen 
+
+(enkel  die  componenten  waarvan  geen  gerecycleerde  componenten  voorhanden 
+
+zijn  moeten  dan  worden  vervangen  door  nieuwe  componenten)”,  wat  een 
+
+aanzienlijke besparing inhoudt.  
+
+Van  die  voormelde  door  Ansaldo  gegeven  uitleg  tijdens  de 
+
+onderhandelingen  is  geen  neerslag  te  vinden  in  het  administratief  dossier;  ook 
+
+wordt daarover niets  vermeld in  het  gunningsverslag of de bestreden beslissing. 
+
+De verwerende partij verwijst hieromtrent ook niet naar bepaalde stukken. 
+
+De verwerende partij gaat ook in de laatste memorie niet in op 
+
+de repliek van de verzoekende partij dat ook zij een beroep doet op gerecycleerde 
+
+onderdelen,  dat  de  prijs  ervan  niet  altijd  goedkoper  uitvalt  dan  nieuwe 
+
+onderdelen, en dat trouwens nooit helemaal van te voren kan worden bepaald wat 
+
+het  aandeel  zal  zijn  van  de  gerecycleerde  onderdelen  in  het  totaal  aantal 
+
+onderdelen dat moet worden vervangen op 20 jaar. 
+
+XII-7868-27/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Ansaldo  geeft  bovendien  wat  de  prijsberekening  voor  de  post 
+
+van het onderhoudscontract betreft in haar tabellen 2 en 2bis per “LRU” slechts 
+
+een forfaitaire jaarlijkse prijs op voor de eerste 7 LRU’s en bij de andere 9 LRU’s 
+
+wordt geen prijs ingevuld. De verwerende partij bevestigt dit, doch licht toe dat 
+
+de kostprijs voor de post 70 bij Ansaldo wel degelijk “het onderhoud / het herstel 
+
+van  alle  LRU’s  van  een  meetpost  [omvat]  gedurende  de  totale  looptijd  van  het 
+
+contract” wat zij aanneemt op grond van de uitleg die Ansaldo haar zou hebben 
+
+gegeven tijdens de onderhandelingen, doch waarvan ook geen neerslag te vinden 
+
+is  in  het  administratief  dossier,  namelijk  dat  “de  forfaitaire  kosten  voor  de 
+
+ontbrekende  LRU’s  in  de  eerste  offerte  werden  verdeeld  over  de  LRU’s  die  al 
+
+vermeld stonden in de eerste offerte”. 
+
+Uit de vergelijking van de bijlage “Fichier TCO” van Ansaldo 
+
+bij de RFQ nr.3 en haar latere offertes, blijkt dat zij bij haar eerste offerte in de 
+
+tabel  2bis  “reparation/renouvellement  20  ans”  voor  de  7  LRU’s  een  jaarlijkse 
+
+forfaitaire eenheidsprijs opgaf per LRU die laag was maar zelfs toch nog hoger 
+
+dan de nog lagere bedragen die zij in haar tweede en laatste BAFO-offerte opgaf. 
+
+De  uitleg  dat  de  forfaitaire  kosten  voor  de  ontbrekende  LRU’s  in  de 
+
+“vervolledigde”  tabel  werden  verdeeld  over  de  al  in  de  eerste  offerte  vermelde 
+
+LRU’s  komt  dat  ook  bevreemdend  over  en  valt  niet  onmiddellijk  te  begrijpen. 
+
+Alleszins kan zelfs niet uit de door Ansaldo ingevulde lijsten worden opgemaakt 
+
+of  met  de  aanduiding  “–  €”  een  nulprijs  wordt  bedoeld  dan  wel  of  die  prijs  is 
+
+inbegrepen in de andere LRU’s en dewelke. 
+
+Uit  het  dossier  blijkt  niet  dat  de  verwerende  partij  deze 
+
+eenheidsprijzen  voor  post  70,  noch  die  in  verband  met  de  eerste  zeven  LRU’s, 
+
+noch  waarom  voor  de  9  andere  LRU’s  geen  eenheidsprijs  werd  opgegeven,  op 
+
+enige wijze heeft onderzocht. In haar laatste memorie verwijst zij enkel naar de 
+
+voormelde  bevreemdende  uitleg,  die  Ansaldo  zou  hebben  gegeven  tijdens  de 
+
+onderhandelingen,  maar  waarvan  zoals  opgemerkt  geen  neerslag  wordt 
+
+teruggevonden  in  het  administratief  dossier,  althans  wordt  deze  niet  door  de 
+
+verwerende partij aangegeven. 
+
+XII-7868-28/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Gelet op de gegeven omstandigheden diende de prijs voor post 
+
+70  door  de  verwerende  partij 
+
+tijdens  de  gunningsprocedure  aan  een 
+
+regelmatigheidsonderzoek te worden onderworpen. 
+
+19. 
+
+Voorgaande vaststellingen  wat  de door de gekozen inschrijver 
+
+geboden totaalprijs en prijs voor post 70 betreft, volstaan om aan te nemen dat de 
+
+verwerende  partij  dan  ook  niet  aantoont  dat  wat  deze  prijzen  betreft,  “verder 
+
+onderzoek […] door bv. het vragen om prijsverantwoording” niet nodig was. Van 
+
+een  zorgvuldig  handelende  overheid  dient  te  worden  verwacht  dat  zij  dergelijk 
+
+groot  prijsverschil  –  waarover  minstens  een  schijn  van  abnormaliteit  hangt  en 
+
+dienvolgens  een  vermoeden  van  onregelmatigheid  van  de  offerte  –  niet 
+
+onopgemerkt  en  onbesproken  laat  en  zorgvuldig  onderzoekt.  De  weinige 
+
+toelichtingen  tijdens  de  onderhandelingen  waarnaar  de  verwerende  partij  had 
+
+gevraagd  en  verwijst  en  waarvan  wel  een  spoor  zou  kunnen  worden 
+
+teruggevonden in het dossier volstaan niet, om die twijfel te doen wegnemen en 
+
+te mogen besluiten dat “verder onderzoek op dit punt” niet nodig was. 
+
+Het tweede middel is in de besproken mate gegrond. 
+
+V. Kosten 
+
+20.1.  
+
+De  verzoekende  partij  vraagt  dat  de  verwerende  partij  zou 
+
+worden veroordeeld tot betaling van de rolrechten ten belope van 400 euro en van 
+
+een  rechtsplegingsvergoeding  van  2.800  euro,  verhoogd  met  20%  gelet  op  de 
+
+vordering tot schorsing. 
+
+20.2. 
+
+Aangezien  de  vordering  tot  schorsing  als  onontvankelijk  werd 
+
+afgewezen,  louter  door  toedoen  van  de  verzoekende  partij  die  niet  de  wettelijk 
+
+voorgeschreven  procedure  volgde,  wordt  zij  verwezen  in  haar  eigen  kosten  wat 
+
+de vordering tot schorsing betreft. 
+
+Wat  het  annulatieberoep  betreft,  voert  de  verzoekende  partij 
+
+geen  bijzondere  redenen  aan  om,  wat  de  rechtsplegingsvergoeding  betreft,  van 
+
+het basisbedrag van 700 euro af te wijken. 
+
+XII-7868-29/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BESLISSING 
+
+1.  De  Raad  van  State  vernietigt  de  beslissing  van  de  nv  Infrabel  van 
+
+23 februari  2015  waarbij  de  opdracht  van  levering  van  meetposten  voor 
+
+warme asbussen (dossier 04C/291108) wordt gegund aan Ansaldo STS. 
+
+2. De verzoekende partij wordt verwezen in de kosten van de vordering tot 
+
+schorsing, begroot op een rolrecht van 200 euro. 
+
+De  verwerende  partij  wordt  verwezen  in  de  kosten  van  het  beroep  tot 
+
+nietigverklaring,  begroot  op  een  rolrecht  van  200  euro  en  een 
+
+rechtsplegingsvergoeding  van  700  euro,  die  verschuldigd 
+
+is  aan  de 
+
+verzoekende partij. 
+
+Dit arrest is uitgesproken te Brussel, in openbare terechtzitting van 27 december 
+
+2016, door de Raad van State, XIIe kamer, samengesteld uit: 
+
+Dierk Verbiest, 
+
+Johan Bovin,  
+
+Pierre Barra, 
+
+kamervoorzitter, 
+
+staatsraad, 
+
+staatsraad, 
+
+bijgestaan door 
+
+Greta Scheveneels,  
+
+griffier. 
+
+De griffier 
+
+                           De voorzitter 
+
+Greta Scheveneels 
+
+                           Dierk Verbiest 
+
+XII-7868-30/30 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

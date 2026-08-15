@@ -1,0 +1,654 @@
+RAAD VAN STATE, AFDELING BESTUURSRECHTSPRAAK 
+
+VOORZITTER VAN DE XIIe KAMER 
+
+In zake: 
+
+A R R E S T 
+
+nr. 242.537 van 4 oktober 2018 
+in de zaak A. 226.144/XII-8614 
+
+de CVBA INFOHOS SERVICES 
+bijgestaan en vertegenwoordigd door 
+advocaten Jens Debièvre en Toby De Backer 
+kantoor houdend te 1000 Brussel 
+Havenlaan 86c, b113 
+bij wie woonplaats wordt gekozen 
+
+tegen: 
+
+het AZ SINT-JAN BRUGGE-OOSTENDE AV 
+bijgestaan en vertegenwoordigd door 
+advocaat Tom De Gendt 
+kantoor houdend te 3000 Leuven 
+Koning Leopold I-straat 32 
+bij wie woonplaats wordt gekozen 
+
+--------------------------------------------------------------------------------------------------   
+
+I. Voorwerp van de vordering 
+
+1. 
+
+De  vordering,  ingesteld  op  14 september  2018,  strekt  tot  de 
+
+schorsing bij uiterst dringende noodzakelijkheid van de tenuitvoerlegging van “de 
+
+beslissing van 30 augustus 2018 van de Algemeen directeur van het AZ Sint-Jan 
+
+Brugge-Oostende  AV  houdende  de  niet-selectie  van  de  [cvba  Infohos  Services] 
+
+voor de overheidsopdracht tot levering, implementatie, ontwikkeling en onderhoud 
+
+van een ziekenhuisbreed geïntegreerd elektronisch patiëntendossier (EPD)”. 
+
+II. Verloop van de rechtspleging 
+
+2. 
+
+De verwerende partij heeft een nota ingediend. 
+
+‡AEKSNFCBH-BDEJHBV‡ 
+
+XII-8614-1/9 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+De  partijen  zijn  opgeroepen  voor  de  terechtzitting,  die  heeft 
+
+plaatsgevonden op 2 oktober 2018, om 11.00 uur. 
+
+Staatsraad Pierre Barra heeft verslag uitgebracht. 
+
+Advocaten  Jens  Debièvre  en  Elisabeth  Robbrouckx,  die 
+
+verschijnen voor de verzoekende partij, en advocaat Tom De Gendt, die verschijnt 
+
+voor de verwerende partij, zijn gehoord. 
+
+Auditeur  Thomas  Maes  heeft  een  met  dit  arrest  eensluidend 
+
+advies gegeven. 
+
+Er is toepassing gemaakt van de bepalingen op het gebruik der 
+
+talen,  vervat  in  titel  VI,  hoofdstuk  II,  van  de  wetten  op  de  Raad  van  State, 
+
+gecoördineerd op 12 januari 1973. 
+
+III. Feiten 
+
+3.1. 
+
+Op  28  maart  2018  beslist  de  verwerende  partij  om  een 
+
+mededingingsprocedure  met  onderhandeling 
+
+te  starten  voor  de  aanschaf, 
+
+implementatie  en  onderhoud  van  een  elektronisch  patiëntendossier  voor  een 
+
+periode  van  10  jaar.  Het  betreft  een  procedure  in  twee  fasen,  namelijk  een 
+
+selectiefase  met  een  oproep 
+
+tot  kandidatuurstelling  en  vervolgens  een 
+
+onderhandelingsfase. Het betreft een dienstenopdracht. 
+
+De opdracht wordt geraamd op “tussen 2,2 en 5 miljoen [euro] 
+
+per jaar incl btw […] voor één jaar”. 
+
+3.2. 
+
+De  opdracht  wordt  aangekondigd 
+
+in  het  Bulletin  der 
+
+Aanbestedingen van 16 mei 2018 en in het Supplement bij het Publicatieblad van 
+
+de Europese Unie van 17 mei 2018. De aankondiging omschrijft de opdracht meer 
+
+in detail als volgt: 
+
+“De levering, implementatie, ontwikkeling en onderhoud van een zieken-
+huis breed geïntegreerd elektronisch patiëntendossier (EPD). Hierbij is het 
+
+‡AEKSNFCBH-BDEJHBV‡ 
+
+XII-8614-2/9 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+essentieel om een EPD aan te bieden dat het ziekenhuis toelaat zijn rol in 
+het ziekenhuislandschap optimaal in te vullen conform de technologie van 
+vandaag  en  klaar  voor  de  eisen  van  morgen.  Datamigratie  tussen  het 
+bestaande EPD en het toekomstige EPD is essentieel. 
+Patiëntenadministratie  en  facturatie  vallen  buiten  het  voorwerp  van  deze 
+opdracht.” 
+
+Wat  de  van  de  kandidaten  vereiste  technische  en  beroeps-
+
+bekwaamheid betreft, luidt de aankondiging: 
+
+“Lijst en beknopte beschrijving van de selectiecriteria: 
+1.  De  kandidaat  voegt  een  lijst  van  gelijkaardige  projecten  toe  van  de 
+afgelopen drie jaar die door de kandidaat werden opgestart/uitgevoerd in 
+België. Dit met vermelding van de naam van de instelling, de coördinaten 
+van  de  contactpersoon,  beknopte  beschrijving  van  de  opdracht,  datum 
+implementatie en jaarbudget. De referenties dienen van een gelijkaardige 
+omvang te zijn als de uitgeschreven opdracht. 
+[…] 
+Eventuele minimumeisen:   
+1.  Lijst  met  referenties:  deze  lijst  van  referenties  moet  minstens  2 
+gedocumenteerde en vergelijkbare projecten van de afgelopen drie jaar 
+bevatten. Daarbij gaat het om projecten die door de kandidaat werden 
+opgestart  of  uitgevoerd  in  België  van  een  gelijkaardige  omvang  als 
+deze  opdracht.  Een  vergelijkbaar  project  is  er  een  bestaande  uit  de 
+levering, 
+implementatie,  ontwikkeling  en  onderhoud  van  een 
+ziekenhuis  breed  geïntegreerd  elektronisch  patiëntendossier  (EPD) 
+voor een algemeen en/of universitair ziekenhuis.” 
+
+3.3. 
+
+Op  22  juni  2018  worden  de  kandidaturen  geopend.  Vijf 
+
+ondernemingen hebben zich kandidaat gesteld, waaronder de huidige verzoekende 
+
+partij. 
+
+3.4. 
+
+In  augustus  2018  wordt  een  „verslag  van  nazicht  van  de 
+
+kandidaatstellingen‟ opgesteld. 
+
+In  dit  verslag  wordt  vastgesteld  dat  de  verzoekende  partij  niet 
+
+voldoet  aan  de  vereisten  inzake  technische  en  beroepsbekwaamheid.  Deze 
+
+vaststelling wordt als volgt gemotiveerd: 
+
+“Infohos Services CVBA: voldoet niet. 
+
+‡AEKSNFCBH-BDEJHBV‡ 
+
+XII-8614-3/9 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+.  Toepassing:  geen  éénduidige  naam,  betreft  samenbrengen  van  aparte 
+toepassingen, „best of breed‟): 
+• CPD Spoed, Medisch en Verpleegkundig   
+• Medicatiebeheer 
+• RIS 
+• Meddos (vernoemen ze niet) 
+Referenties min eisen:   
+AZ Vesalius Tongeren 
+AZ Oudenaarde 
+AZ Lokeren 
+. Andere (onderhoud en support EPD): 
+AZ Vesalius Tongeren 
+AZ Oudenaarde 
+AZ Lokeren 
+AZ Sint Jan Brugge Oostende AV 
+ASZ Aalst 
+Infohos  Services 
+en 
+beroepsbekwaamheid  wegens  het  niet  kunnen  aanbieden  van  een 
+ziekenhuis  breed  geïntegreerd  patiëntendossier  omdat  ze  de  volgende 
+basisfunctionaliteiten  niet  in  hun  aanbod  hebben:  afsprakenbeheer, 
+operatiekwartier en intern transport.” 
+
+cvba  voldoet  niet 
+
+technische- 
+
+aan  de 
+
+Er wordt dan ook voorgesteld om de verzoekende partij niet te 
+
+selecteren. 
+
+3.5. 
+
+Op 29 augustus 2018 beslist de verwerende partij om het verslag 
+
+van nazicht van de kandidaatstellingen bij te vallen en de verzoekende partij niet te 
+
+selecteren. Dit is de bestreden beslissing. 
+
+3.6. 
+
+Met  een  e-mailbericht  en  een  aangetekend  schrijven  van  30 
+
+augustus  2018  geeft  de  verwerende  partij  kennis  aan  de  verzoekende  partij  van 
+
+haar niet-selectie; hierbij is het nazichtsverslag niet gevoegd. In deze brief wordt 
+
+de niet-selectie van de verzoekende partij als volgt gemotiveerd: 
+
+“Wij hebben uw inschrijving niet geselecteerd om volgende reden(-en): 
+Infohos  Services  CVBA  voldoet  niet  aan  de 
+technische-  en 
+beroepsbekwaamheid  wegens  het  niet  kunnen  aanbieden  van  een 
+ziekenhuis  breed  geïntegreerd  patiëntendossier  omdat  ze  de  volgende 
+basisfunctionaliteiten  niet  in  hun  aanbod  hebben:  afsprakenbeheer, 
+operatiekwartier en intern transport.” 
+
+‡AEKSNFCBH-BDEJHBV‡ 
+
+XII-8614-4/9 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+IV. Schorsingsvoorwaarden 
+
+4.1. 
+
+Krachtens artikel 17, §§ 1 en 4, van de gecoördineerde wetten op 
+
+de Raad van State kan tot schorsing van de tenuitvoerlegging bij uiterst dringende 
+
+noodzakelijkheid  slechts  worden  besloten  onder  de  dubbele  voorwaarde  dat 
+
+minstens één ernstig middel wordt aangevoerd dat de nietigverklaring van de akte 
+
+of  het  reglement  prima  facie  kan  verantwoorden  en  dat  een  uiterst  dringende 
+
+noodzakelijkheid voorhanden is die onverenigbaar is met de behandelingstermijn 
+
+van de gewone vordering tot schorsing. 
+
+4.2. 
+
+Te dezen is evenwel ook de wet van 17 juni 2013 „betreffende de 
+
+motivering,  de  informatie  en  de  rechtsmiddelen  inzake  overheidsopdrachten, 
+
+bepaalde  opdrachten  voor  werken,  leveringen  en  diensten  en  concessies‟  van 
+
+toepassing. 
+
+Krachtens  artikel  15,  eerste  lid,  van  die  wet  kan  de  uitvoering 
+
+worden  geschorst  van  de  thans  bestreden  beslissing  in  aanwezigheid  van  een 
+
+ernstig middel of een klaarblijkelijke onwettigheid. 
+
+Overeenkomstig  artikel  15,  tweede  lid,  echter  wordt  de 
+
+vordering tot schorsing voor de Raad van State uitsluitend ingesteld volgens een 
+
+procedure bij uiterst dringende noodzakelijkheid. 
+
+Er  dient  te  dezen  dan  ook  enkel  nog  te  worden  onderzocht  of 
+
+minstens  één  ernstig  middel  wordt  aangevoerd,  dan  wel  een  klaarblijkelijke 
+
+onwettigheid  aanwezig  is,  die  de  nietigverklaring  van  de  bestreden  beslissing 
+
+kunnen verantwoorden. 
+
+V. Onderzoek van het enig middel 
+
+Standpunt van de partijen 
+
+5.1.1. 
+
+De verzoekende partij voert de schending aan van de artikelen 4 
+
+en 71 van de wet van 17 juni 2016 „inzake overheidsopdrachten‟, van artikel 68, 
+
+§ 1, van het koninklijk besluit van 18 april 2017 „plaatsing overheidsopdrachten in 
+‡AEKSNFCBH-BDEJHBV‡ 
+
+XII-8614-5/9 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+de klassieke sectoren‟, van het gelijkheidsbeginsel, van het patere legem quam ipse 
+
+fecisti-beginsel,  van  het  zorgvuldigheidsbeginsel,  van  de  materiëlemotiverings-
+
+plicht, van artikel 5, 6º, van de wet van 17 juni 2013 „betreffende de motivering, de 
+
+informatie  en  de  rechtsmiddelen  inzake  overheidsopdrachten  en  bepaalde 
+
+opdrachten voor werken, leveringen en diensten en concessies‟ en van de artikelen 
+
+2 en 3 van de wet van 29 juli 1991 „betreffende de uitdrukkelijke motivering van de 
+
+bestuurshandelingen‟. 
+
+Zij vat haar middel als volgt samen: 
+
+“Doordat  de  verwerende  partij  in  de  bestreden  beslissing  besluit  de 
+verzoekende partij niet te selecteren om reden dat diens kandidatuur niet 
+zou tegemoetkomen aan de in de oproep gestelde selectiecriteria m.b.t. de 
+technische  en  beroepsbekwaamheid,  en  meer  bepaald  omdat  afspraken-
+beheer, operatiekwartier en intern transport niet in de basisfunctionaliteiten 
+van de kandidatuur zouden zijn opgenomen. 
+Terwijl  de  verwerende  partij  zich  moest  beperken  tot  het  toetsen  van  de 
+kandidatuur aan de selectiecriteria zoals vervat in de oproep. 
+Terwijl  de  door  de  verwerende  partij  t.a.v.  de  technische  en  beroeps-
+bekwaamheid  van  de  verzoekende  partij  ingeroepen  toetsstenen  van 
+afsprakenbeheer, operatiekwartier en intern transport nergens voorkomen 
+in de oproep en al zeker geen deel uitmaken van de minimale eis. 
+Terwijl deze toetsstenen eerder de inhoud van de beoogde dienstverlening 
+betreffen,  waardoor  zij  als  gunningscriteria  en  niet  als  selectiecriteria 
+kwalificeren. 
+Terwijl de bestreden beslissing op geen enkele andere wijze aantoont dat de 
+kandidatuur van verzoekende partij, die zeer gedetailleerd antwoord[t] op 
+de  oproep, 
+technische  en  beroeps-
+bekwaamheid, niet zou voldoen aan de kwalitatieve selectiecriteria.” 
+
+inzonderheid  wat  betreft  de 
+
+In de toelichting bij het middel laat de verzoekende partij onder 
+
+andere  gelden  dat  de  “Wet  Motivering  Bestuurshandelingen  geschonden  [is] 
+
+omdat  de  motivatie  van  de  Bestreden  Beslissing  niet  afdoende  is  om  de 
+
+niet-selectie te rechtvaardigen”. “Er wordt in de Bestreden Beslissing immers geen 
+
+enkele  schending  door  of  tekortkoming  in  de  Kandidatuur  aangehaald  die 
+
+grondslag  vindt  in  de  Oproep.  De  Bestreden  Beslissing  is  derhalve  gebrekkig 
+
+gemotiveerd.” 
+
+‡AEKSNFCBH-BDEJHBV‡ 
+
+XII-8614-6/9 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Ter  terechtzitting  hekelt  de  verzoekende  partij,  binnen  het 
+
+middel zo lijkt, onder meer het feit dat uit de nota van de verwerende partij er in 
+
+essentie een  andere motivering van haar niet-selectie  naar voren komt dan deze 
+
+opgenomen in de bestreden beslissing. In de nota is er onder meer sprake van het 
+
+feit dat de verzoekende partij geen geïntegreerd elektronisch patiëntendossier zou 
+
+hebben  aangeboden  in  haar  referenties  als  reden  van  niet-selectie  terwijl  deze 
+
+kritiek helemaal niet blijkt uit de bestreden beslissing. 
+
+5.1.2. 
+
+De verwerende partij merkt in haar nota op dat de verzoekende 
+
+partij niet is geselecteerd omdat uit haar referenties blijkt dat deze handelen over 
+
+een  niet-geïntegreerd  elektronisch  patiëntendossier  terwijl  de  referenties  een 
+
+geïntegreerd  elektronisch  patiëntendossier  moeten  betreffen.  Dergelijk  dossier 
+
+dient volgens de verwerende partij op de eerste plaats te worden gekenmerkt door 
+
+het  gebruik  maken  van  één  portaal  en  niet  van  een  variatie  van  applicaties  die 
+
+nochtans blijkt uit de referenties van de verzoekende partij en op de tweede plaats 
+
+door  het  aanbieden  van  de  15  corefunctionaliteiten,  waaronder  het  afspraken-
+
+beheer, die expliciet vermeld zijn in bijlage 19 van het koninklijk besluit van 25 
+
+april  2002  „betreffende  de  vaststelling  en  de  vereffening  van  het  budget  van 
+
+financiële middelen van de ziekenhuizen‟. 
+
+Volgens  de  verwerende  partij  zijn  de  “motieven  van  de 
+
+bestreden  beslissing,  namelijk  dat  de  verzoekende  partij  niet  voldoet  aan  de 
+
+technische  en  beroepsbekwaamheid  wegens  het  niet  kunnen  aanbieden  van  een 
+
+ziekenhuis breed geïntegreerd elektronisch patiëntendossier, […] dan ook rechtens 
+
+aanvaardbaar”. “Bovendien is  de motivatie afdoende om  de niet-selectie  van de 
+
+verzoekende partij te rechtvaardigen. De vaststelling dat de verzoekende partij niet 
+
+voldoet aan de vooropgestelde minimumeis is immers voldoende om de beslissing 
+
+tot niet-selectie te rechtvaardigen.” 
+
+Beoordeling 
+
+5.2. 
+
+Zoals  de  verzoekende  partij  opmerkt,  lijkt  in  de  bestreden 
+
+beslissing  de  draagwijdte  van  de  motivering  tot  de  niet-selectie  van  de 
+
+verzoekende  partij  fundamenteel  anders  dan  degene  die  in  de  nota  van  de 
+
+verwerende partij wordt weergegeven. 
+‡AEKSNFCBH-BDEJHBV‡ 
+
+XII-8614-7/9 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+In de nota wordt vermeld dat er slechts kan sprake zijn van een 
+
+“geïntegreerd  elektronisch  patiëntendossier  indien:  1)  er  gebruik  wordt  gemaakt 
+
+van één portaal in plaats van het gebruik van een variatie van applicaties en 2) de 
+
+15  corefunctionaliteiten,  waaronder  het  beheer  van  afspraken,  worden  aange-
+
+boden” en dat de verzoekende partij dit niet heeft aangeboden in haar referenties 
+
+aangezien  zij  erin  een  niet-geïntegreerd  dossier  zou  aanbieden.  In  de  bestreden 
+
+beslissing is er dan weer slechts sprake van het “niet [voldoen] aan de technische- 
+
+en  beroepsbekwaamheid  wegens  het  niet  kunnen  aanbieden  van  een  ziekenhuis 
+
+breed  geïntegreerd  patiëntendossier  omdat  ze  de  volgende  basisfunctionaliteiten 
+
+niet in hun aanbod hebben: afsprakenbeheer, operatiekwartier en intern transport”. 
+
+In  de  bestreden  beslissing  wordt  de  niet-selectie  niet  expliciet 
+
+gesteund op het niet-aanbieden in de referenties van een geïntegreerd elektronisch 
+
+patiëntendossier terwijl dit niet-aanbieden in  de  nota als  de meest  fundamentele 
+
+reden  wordt  beschouwd  voor  de  niet-selectie,  namelijk  de  afwezigheid  van  één 
+
+portaal in deze referenties; voorts wordt in de nota niet meer gerept van een manco 
+
+aan  de  functionaliteiten  „operatiekwartier‟  en  „intern  transport‟  terwijl  dit  in  de 
+
+bestreden beslissing wel het geval is; overigens toont de verwerende partij niet aan 
+
+dat deze functionaliteiten opgenomen zijn onder de voormelde bijlage 19 van het 
+
+koninklijk  besluit  van  25  april  2002  en  dus  dat  ze  zouden  horen  bij  een 
+
+geïntegreerd elektronisch patiëntendossier. 
+
+In  die  omstandigheden  lijkt  de  bestreden  beslissing  aangetast 
+
+met een motiveringsgebrek waarvan de vaststelling volstaat om de schorsing van 
+
+de tenuitvoerlegging ervan te bevelen. 
+
+VI. Besluit 
+
+6. 
+
+Het  enig  middel  is  in  de  besproken  mate  ernstig  gebleken.  De 
+
+vordering  tot  schorsing  bij  uiterst  dringende  noodzakelijkheid  dient  dan  ook  te 
+
+worden gewilligd. 
+
+Het  is  passend,  gelet  op  de  hierna  ingewilligde  vordering  tot 
+
+schorsing en het daaropvolgende nog noodzakelijke procedureverloop, de kosten, 
+
+de gevorderde rechtsplegingsvergoeding inbegrepen, in beraad te houden. 
+‡AEKSNFCBH-BDEJHBV‡ 
+
+XII-8614-8/9 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BESLISSING 
+
+De Raad van State beveelt de schorsing van de tenuitvoerlegging bij uiterst 
+
+dringende noodzakelijkheid van de beslissing van 30 augustus 2018 van het 
+
+AZ  Sint-Jan  Brugge-Oostende  AV  houdende  de  niet-selectie  van  de 
+
+cvba Infohos Services voor de overheidsopdracht tot levering, implementatie, 
+
+ontwikkeling  en  onderhoud  van  een  ziekenhuisbreed  geïntegreerd 
+
+elektronisch patiëntendossier (EPD). 
+
+Dit arrest is uitgesproken te Brussel, in openbare terechtzitting van 4 oktober 2018, 
+
+door de Raad van State, XIIe kamer, samengesteld uit: 
+
+Pierre Barra, 
+
+staatsraad, 
+
+waarnemend voorzitter, 
+
+bijgestaan door 
+
+Silja Doms, 
+
+griffier. 
+
+De griffier 
+
+De voorzitter 
+
+Silja Doms 
+
+Pierre Barra 
+
+‡AEKSNFCBH-BDEJHBV‡ 
+
+XII-8614-9/9 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

@@ -1,0 +1,2179 @@
+RAAD VAN STATE, AFDELING BESTUURSRECHTSPRAAK 
+
+VOORZITTER VAN DE XIIe VAKANTIEKAMER 
+
+A R R E S T 
+
+nr. 242.226 van 23 augustus 2018 
+in de zaak A. 225.775/XII-8.590. 
+
+In zake: 
+
+1. de GmbH SCHEIDT EN BACHMANN,   
+
+vennootschap naar buitenlands recht 
+
+  2. de NV WORLDLINE 
+
+3. de BV BLUEBRIDGE TRANSACTIONS NEDERLAND,   
+
+vennootschap naar buitenlands recht 
+
+bijgestaan en vertegenwoordigd door 
+advocaten Koen Clonen en Flora Wauters 
+kantoor houdend te 2600 Antwerpen 
+Fruithoflaan 124, bus 14 
+bij wie woonplaats wordt gekozen 
+
+tegen: 
+
+de VLAAMSE VERVOERMAATSCHAPPIJ 
+DE LIJN 
+bijgestaan en vertegenwoordigd door 
+advocaten Frank Judo en Stijn Maeyaert 
+kantoor houdend te 1000 Brussel 
+Keizerslaan 3 
+bij wie woonplaats wordt gekozen 
+
+Tussenkomende partij: 
+
+de SAS CONDUENT BUSINESS SOLUTIONS FRANCE,   
+
+  vennootschap naar buitenlands recht 
+bijgestaan en vertegenwoordigd door 
+advocaten Kris Wauters en Sophie Bleux 
+kantoor houdend te 1170 Brussel 
+Terhulpsesteenweg 187 
+bij wie woonplaats wordt gekozen 
+
+--------------------------------------------------------------------------------------------------   
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-1/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+I. Voorwerp van de vordering 
+
+1. 
+
+De vordering, ingesteld op 26 juli 2018, strekt tot de schorsing 
+
+bij uiterst dringende noodzakelijkheid van de tenuitvoerlegging van “de beslissing 
+
+van  de  Raad  van  Bestuur  van  de  Vlaamse  Vervoersmaatschappij  De  Lijn  van 
+
+10 juli  2018  om  de  raamovereenkomst  voor  het  aankopen  van  contactloos 
+
+EMV(cEMV) en Account Based Ticketing (ABT) diensten en toestellen voor het 
+
+CEMV/ABT 
+
+project 
+
+(opdracht  M_C_Klant_Verkoop-2017-mibng-236 
+
+cEMV/ABT Project) te gunnen aan Conduent Business Solutions France SAS voor 
+
+een looptijd van tien jaar en bijgevolg niet aan verzoeksters te gunnen”. 
+
+II. Verloop van de rechtspleging 
+
+2. 
+
+De verwerende partij heeft een nota ingediend. 
+
+Met  een  verzoekschrift  van  8  augustus  2018  heeft  de 
+
+SAS Conduent  Business Solutions  France, vennootschap naar buitenlands recht, 
+
+gevraagd om in het administratief kort geding te mogen tussenkomen. 
+
+De  partijen  zijn  opgeroepen  voor  de  terechtzitting,  die  heeft 
+
+plaatsgevonden op 20 augustus 2018, om 10.00 uur. 
+
+Kamervoorzitter Eric Brewaeys heeft verslag uitgebracht. 
+
+Advocaten Flora Wauters en Koen Clonen, die verschijnen voor 
+
+de verzoekende partijen, advocaten Frank Judo en Stijn Maeyaert, die verschijnen 
+
+voor  de  verwerende  partij,  en  advocaten  Kris  Wauters  en  Sophie  Bleux,  die 
+
+verschijnen voor de tussenkomende partij, zijn gehoord. 
+
+Eerste  auditeur  Inge  Vos  heeft  een  met  dit  arrest  eensluidend 
+
+advies gegeven. 
+
+Er is toepassing gemaakt van de bepalingen op het gebruik der 
+
+talen,  vervat  in  titel  VI,  hoofdstuk  II,  van  de  wetten  op  de  Raad  van  State, 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-2/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+gecoördineerd op 12 januari 1973. 
+
+III. Feiten 
+
+3.1.   
+
+De  Vlaamse  Vervoermaatschappij  De  Lijn  schrijft  een 
+
+overheidsopdracht voor diensten in de speciale sectoren uit met als voorwerp “het 
+
+aankopen van contactloos EMV („cEMV‟) en Account Based Ticketing („ABT‟) 
+
+diensten en toestellen voor het cEMV ABT project”. 
+
+Het  betreft  het  afsluiten  van  een  raamovereenkomst  met  een 
+
+enkele deelnemer voor de duur van 10 jaar. 
+
+De 
+
+opdracht 
+
+wordt 
+
+gegund 
+
+bij 
+
+wijze 
+
+van 
+
+onderhandelingsprocedure met voorafgaande oproep tot mededinging. 
+
+3.2.   
+
+De  opdracht  wordt  bekendgemaakt 
+
+in  het  Bulletin  der 
+
+Aanbestedingen op 10 november 2017 en het Publicatieblad van de Europese Unie 
+
+op 15 november 2017. 
+
+3.3.   
+
+De selectieleidraad bevat als selectiecriterium inzake technische 
+
+bekwaamheid  of  beroepsbekwaamheid  onder  meer  als  vereiste:  “Acquiring 
+
+licentie  geldig  in  België  voor  internationale  betaalschema‟s  (minimum  Visa  en 
+
+Mastercard)”.   
+
+Tevens  wordt  bepaald  dat  indien  de  kandidaat  zich  wenst  te 
+
+beroepen op de economische en financiële draagkracht en/of op de technische en 
+
+beroepsbekwaamheid van andere entiteiten, hij dient aan te tonen dat hij over de 
+
+noodzakelijke middelen voor de uitvoering van de opdracht zal beschikken door 
+
+middel van een verbintenis van deze entiteit. Wat betreft de criteria inzake studie- 
+
+en  beroepskwalificaties  van  de  dienstverlener  of  van  de  titularis  of  van  het 
+
+leidinggevend  personeel  van  de  onderneming,  of  de  criteria  betreffende  de 
+
+overeenstemmende beroepservaring, kan de kandidaat luidens de selectieleidraad 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-3/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+slechts beroep doen op de capaciteiten van andere entiteiten, wanneer deze laatste 
+
+de diensten waarvoor hun capaciteiten vereist zijn zelf uitvoeren of leveren. Indien 
+
+een kandidaat wenst beroep te doen op de capaciteiten van andere entiteiten, dient 
+
+hij bij de aanbestedende entiteit het bewijs aan te brengen van het feit dat hij over 
+
+de nodige middelen beschikt, bijvoorbeeld door middel van de verbintenis hiertoe 
+
+vanwege deze entiteiten over te maken. Hiertoe is een modeldocument voorzien in 
+
+bijlage 1 in het Vierde Deel van de selectieleidraad. 
+
+3.4.   
+
+Een van de geïnteresseerde kandidaten stelt de volgende vraag 
+
+bij de selectieleidraad:   
+
+“De  aanbestedingsleidraad  staat  het  toe  om  in  te  schrijven  als  een 
+consortium. Daarover hebben we de volgende vraag: Is het mogelijk om na de 
+pre-kwalificatiefase de samenstelling van het consortium te wijzigen?”. 
+
+Deze  vraag  wordt  door  de  verwerende  partij  als  volgt 
+
+beantwoord:   
+
+“Ja, maar:   
+
+- Het nieuwe lid in het consortium moet voldoen aan de selectiecriteria 
+
+en de vereisten van het bestek;   
+
+-  De  aanpassing  van  het  consortium  mag  geen  wezenlijke  wijziging 
+
+aan de opdracht met zich meebrengen;   
+
+-  Het  mag  geen  manier  zijn  om  de  wet  te  omzeilen  (bv.  aan  de 
+
+minimum eisen van het bestek moet men blijven voldoen)”. 
+
+3.5.   
+
+Acht kandidaten dienen tijdig een kandidaatstelling in, waarvan 
+
+er bij beslissing van 9 februari 2018 zeven worden geselecteerd en uitgenodigd om 
+
+een eerste offerte in te dienen:   
+
+- Ridango AS;   
+
+- De Lijn Cemv/ABT Project: Conduent & Adyen;   
+
+- Thales Transportation System BV;   
+
+- Kapsch CarrierCom Belgium NV;   
+
+- WSBB (de verzoekende partijen);   
+
+- Vix Technology Belgium NV & CCV Group;   
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-4/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+- T&G  Group:  Atron  electronic  GmbH,  Ogloba,  Vibbek  AG,  SIX  Payment 
+
+Services ltd.   
+
+Kandidaat 
+
+IVU  Traffic  Technologies  AG  wordt  niet 
+
+geselecteerd. Een van de motieven voor deze niet-selectie luidt als volgt: 
+
+“De kandidatuur bevatte verder geen bewijs dat de kandidaat beschikt over 
+een  acquiring  licentie  geldig  in  België  voor  internationale  betaalschema‟s 
+(minimaal  VISA  en  Mastercard).  Er  is  sprake  van  een  draagkracht  op  derde, 
+zijnde de firma CCV Group B.V. die beschikt over een acquiringlicentie voor 
+Bancontact.  De  vereiste  spreekt  echter  van  minimaal  VISA  en  Mastercard. 
+Hiervoor  verwijst  CCV  group  naar  „partners‟  zonder  toevoeging  van  enige 
+attesten rond een mogelijke draagkracht hieromtrent. Bijgevolg ontbreekt er een 
+bewijs dat de kandidaat beschikt over de vereiste betaallicenties”. 
+
+3.6.   
+
+Het bestek bepaalt onder artikel 1.04.1 onder meer het volgende:   
+
+“De inschrijver dient door de aanbestedende entiteit geselecteerd te zijn om 
+
+een offerte te mogen indienen. 
+Het feit dat de inschrijver geselecteerd is, ontslaat hem niet van de verplichting 
+te blijven voldoen aan de uitsluitingsgronden en selectiecriteria, zoals bepaald 
+in  artikel  67  en  volgende  van  het  KB  Plaatsing  en  in  de  gebeurlijke 
+selectieleidraad”. 
+
+In artikel 1.04.2 wordt bovendien gesteld: 
+
+“1.04.2  Beroepen  op  draagkracht  derden  (art.  150  Wet  en  72§2  en  §3 
+
+KB Plaatsing) 
+
+Indien  de  inschrijver  zich  tijdens  de  selectiefase  heeft  beroepen  op  de 
+technische  en 
+economische  en  financiële  draagkracht  alsook  op  de 
+beroepsbekwaamheid van andere entiteiten dient hij opnieuw aan te tonen dat 
+hij  over  de  noodzakelijke  middelen  voor  de  uitvoering  van  de  opdracht  zal 
+beschikken. Het toevoegen van het vorige document volstaat niet. Een nieuw 
+document  „beroepen  op  draagkracht  van  een  derde  entiteit‟  dient  te  worden 
+opgemaakt. 
+
+Voor  het  „beroepen  op  de  draagkracht  van  een  derde  entiteit‟  is  een 
+
+modeldocument voorzien in het Vierde Deel, Bijlage 2. 
+
+Wanneer  de  inschrijver  een  beroep  doet  op  de  draagkracht  van  andere 
+entiteiten  zoals  bedoeld  in  artikel  72  en  die  draagkracht  bepalend  is  geweest 
+voor  zijn  selectie,  vermeldt  de  inschrijver,  al  naargelang,  steeds  voor  welk 
+gedeelte hij een beroep doet op die draagkracht en welke andere entiteiten hij 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-5/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+voorstelt, zowel in zijn aanvraag tot deelneming als in zijn offerte. 
+
+Deze vermelding laat de aansprakelijkheid van de inschrijver onverlet”. 
+
+3.7.   
+
+Slechts  drie  van  de  geselecteerde  kandidaten  dienen  een 
+
+eerste offerte in op 27 maart 2018:   
+
+- Conduent  Business  Solutions  France  SAS  (volgens  het  gunningsverslag  als 
+
+opvolger van het consortium De Lijn Cemv/ABT Project);   
+
+- Vix - CCV (consortium Vix Technology Belgium NV & CCV Group);   
+
+- WSBB (consortium van de verzoekende partijen).   
+
+3.8.   
+
+Na  onderhandelingen  worden  de  inschrijvers  uitgenodigd  om 
+
+een verbeterde offerte in te dienen op basis van een verfijnd bestek, waarin hoger 
+
+vermelde bepalingen ongewijzigd werden opgenomen. 
+
+3.9.   
+
+Een van de inschrijvers stelt de volgende vraag bij het bestek:   
+
+“Zou het voor De Lijn aanvaardbaar zijn indien de leidende partner van het 
+consortium die voor de opdracht  werd  geselecteerd, als  enige bieder een bod 
+indient  waarbij  de  bijkomende  consortiumpartners  als  verplichte  belangrijke 
+onderaannemers  worden  aangeduid  die  niet  zonder  schriftelijk  akkoord  van 
+De Lijn kunnen worden vervangen?”. 
+
+Deze  vraag  wordt  door  de  verwerende  partij  als  volgt 
+
+beantwoord: 
+
+“Elke partner van een consortium is gelijk, er is niet zoiets als een leidende of 
+bijkomende  partner.  Een  consortium  kan  worden  opgevolgd  door  een  ander 
+consortium/onderneming in zoverre De Lijn een opvolgingsdocument van het 
+nieuwe  consortium/onderneming  ontvangt  en  er  sprake  is  van  documenten 
+inzake de draagkracht van derden met betrekking tot de betrokkene zodat nog 
+steeds  aan  de  selectiecriteria  wordt  voldaan.  Dus,  ja,  onder  de  hierboven 
+omschreven omstandigheden”. 
+
+3.10.   
+
+Drie  inschrijvers  dienen  een  finale  offerte  in  op  basis  van  het 
+
+finale bestek.   
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-6/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+In  deze  finale  offerte  volgt  Vix  Technology  Belgium  NV  het 
+
+consortium Vix - CCV op.   
+
+3.11.   
+
+In  het  gunningsverslag  wordt  de  finale  offerte  van  Vix 
+
+Technology Belgium NV substantieel onregelmatig bevonden en niet weerhouden 
+
+voor de opdracht.   
+
+De  finale  offertes  van  de  verzoekende  partijen  en  Conduent 
+
+Business Solutions France SAS worden wel als regelmatig beoordeeld en getoetst 
+
+aan de gunningscriteria. 
+
+In  die  beoordeling  behaalt  de  finale  offerte  van  Conduent 
+
+Business  Solutions  France  SAS  een  score  van  71,36/100  punten,  tegenover  een 
+
+score van 67,30/100 punten voor de finale offerte van de verzoekende partijen.   
+
+Voorgesteld  wordt  aldus  om  de  opdracht  te  gunnen  aan 
+
+Conduent Business Solutions France SAS. 
+
+3.12.   
+
+Op 10 juli 2018 beslist de raad van bestuur van de verwerende 
+
+partij  om  de  opdracht  overeenkomstig  het  gunningsverslag  te  gunnen  aan 
+
+Conduent Business Solutions France SAS. 
+
+3.13.   
+
+Met  een  schrijven  van  11  juli  2018  wordt  aan  de  verzoekende 
+
+partijen meegedeeld dat hun offerte niet werd gekozen. 
+
+IV. Tussenkomst 
+
+4. 
+
+De  SAS Conduent  Business  Solutions  France,  vennootschap 
+
+naar buitenlands recht, blijkt voordeel te halen uit de bestreden beslissing en heeft 
+
+er belang bij dat de vordering wordt afgewezen. Bijgevolg moet haar verzoek tot 
+
+tussenkomst worden ingewilligd. 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-7/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+V. Verzoek tot vertrouwelijke behandeling van bepaalde stukken 
+
+5.   
+
+Alle partijen vragen om een aantal stukken als vertrouwelijk te 
+
+behandelen  en  betwisten  niet  het  vertrouwelijke  karakter  van  deze  stukken.  Er 
+
+belet  op  formeel  vlak  de  Raad  van  State  niets  om  in  te  gaan  op  de  gevraagde 
+
+vertrouwelijke behandeling. 
+
+In de huidige stand van  het  geding kunnen deze  verzoeken tot 
+
+vertrouwelijke behandeling worden ingewilligd.   
+
+Aangezien  de  bedoelde  stukken  waarvoor  men  zich  op  de 
+
+vertrouwelijkheid beroept volledig werden meegedeeld aan de Raad van State, kan 
+
+hij van deze informatie kennisnemen en deze in zijn beschouwing betrekken. 
+
+VI. Schorsingsvoorwaarden 
+
+6.   
+
+Krachtens artikel 17, §§ 1 en 4, van de gecoördineerde wetten op 
+
+de Raad van State, gelezen in samenhang met artikel 15 van de wet van 17 juni 
+
+2013  betreffende  de  motivering,  de  informatie  en  de  rechtsmiddelen  inzake 
+
+overheidsopdrachten, bepaalde opdrachten voor werken, leveringen en diensten en 
+
+concessies,  moet,  om  gebeurlijk  tot  schorsing  van  de  tenuitvoerlegging  over  te 
+
+gaan, enkel worden onderzocht of in de voorliggende vordering tot schorsing die is 
+
+ingesteld volgens de procedure bij uiterst dringende noodzakelijkheid, een ernstig 
+
+middel of een klaarblijkelijke onwettigheid wordt aangevoerd. 
+
+VII. Onderzoek van de middelen 
+
+A. Eerste middel 
+
+Uiteenzetting van het middel 
+
+7.   
+
+Het  eerste  middel  is  genomen  uit  de  schending  van  het 
+
+wettigheidsbeginsel,  van  artikel  2,  25°  van  de  wet  van  17  juni  2016  inzake 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-8/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+overheidsopdrachten  (hierna:  wet  overheidsopdrachten),  van  artikel  62  van  het 
+
+koninklijk besluit van 18 juni 2017 plaatsing overheidsopdrachten in de speciale 
+
+sectoren (hierna: KB plaatsing speciale sectoren), van de artikelen 2 en 3 van de 
+
+wet  van  29  juli  1991  betreffende  de  uitdrukkelijke  motivering  van  de 
+
+bestuurshandelingen 
+
+(hierna: motiveringswet),  van  het  gelijkheids- 
+
+en 
+
+transparantiebeginsel, van het “patere legem quam ipse fecisti”-beginsel en van het 
+
+formeel motiveringsbeginsel als beginselen van behoorlijk bestuur.   
+
+De  verzoekende  partijen  verwijzen  daarbij  naar  het  principe 
+
+zoals omschreven in artikel 2, 25° van de wet overheidsopdrachten en artikel 62 
+
+van  het  KB  plaatsing  speciale  sectoren  overeenkomstig  hetwelk  alleen 
+
+geselecteerde kandidaten een offerte mogen indienen, evenals naar het bestek dat 
+
+eveneens  bepaalt  dat  de  inschrijver  door  de  aanbestedende  entiteit  geselecteerd 
+
+dient te zijn om een (verbeterde) offerte te mogen indienen en dus geen afwijking 
+
+op dit principe bevat. 
+
+Zij merken op dat uit het bestreden besluit niettemin blijkt dat De 
+
+Lijn  Cemv/ABT  Project:  Conduent  &  Adyen  als  kandidaat  geselecteerd  werd, 
+
+doch dat de eerste en verbeterde offerte werden ingediend door Conduent Business 
+
+Solutions  France  SAS.  Aldus  staat  volgens  hen  vast  dat  een  niet  geselecteerde 
+
+kandidaat een eerste en verbeterde offerte in het kader van de gunningsprocedure 
+
+heeft ingediend. 
+
+Volgens  de  verzoekende  partijen  wordt  op  geen  enkele  wijze 
+
+door  de  aanbestedende  overheid  gemotiveerd  waarom  de  offerte  van  Conduent 
+
+Business Solutions France SAS alsnog zou moeten worden toegelaten. Er wordt in 
+
+de bestreden beslissing slechts vermeld dat Conduent Business Solutions France 
+
+SAS  de opvolger is  van  de  oorspronkelijk  geselecteerde inschrijver, doch het  is 
+
+geheel onduidelijk op welke wijze Conduent Business Solutions France SAS als de 
+
+rechtsopvolger  van  het  consortium  De  Lijn  Cemv/ABT  Project:  Conduent  & 
+
+Adyen zou moeten worden beschouwd. Op die manier handelt de aanbestedende 
+
+overheid  volgens  hen  in  strijd  met  de  eigen  regels  van  het  bestek  alsook  met 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-9/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+artikel 2  en  3  van  de  motiveringswet  en  de  formelemotiveringsplicht.  Het 
+
+ontbreken  van  dergelijke  motivering  is  volgens  hen  des  te  meer  problematisch 
+
+aangezien Conduent Business Solutions France SAS allerminst zelfstandig aan de 
+
+selectievoorwaarden voldoet zoals aangevoerd in het tweede middel. 
+
+Een  deugdelijke  motivering  om 
+
+te  besluiten 
+
+tot  de 
+
+regelmatigheid  van  de  offerte  van  Conduent  Business  Solutions  France  SAS  is 
+
+volgens de verzoekende partijen ook onbestaande. Als zodanig moest de offerte 
+
+van Conduent Business Solutions France SAS volgens de verzoekende partijen dan 
+
+ook als onregelmatig worden beschouwd en kon deze niet worden aanvaard. 
+
+Beoordeling 
+
+8.   
+
+Zowel de verwerende als de tussenkomende partij werpen op dat 
+
+de verzoekende partijen in essentie aanvoeren dat de bestreden beslissing onwettig 
+
+zou  zijn  omdat  de  offerte  van  Conduent  Business  Solutions  France  SAS  ten 
+
+onrechte  regelmatig  zou  zijn  verklaard,  maar  dat  zij  niet  toelichten  welke 
+
+rechtsregel in dit verband concreet zou zijn geschonden, noch op welke wijze. De 
+
+bepalingen en beginselen die de verzoekende  partijen aanhalen, hebben  volgens 
+
+hen prima facie immers geen betrekking op de regelmatigheid van de offertes.   
+
+9.   
+
+Uit  de  uiteenzetting  van  het  middel  blijkt  duidelijk  dat  het  in 
+
+essentie 
+
+betrekking 
+
+heeft 
+
+op 
+
+een 
+
+vermeende 
+
+schending 
+
+van 
+
+de 
+
+formelemotiveringsverplichting  enerzijds  en  van  de  bepalingen  inzake  het 
+
+indieningsrecht van een offerte anderzijds. 
+
+In  het  verslag  aan  de  Koning  bij  artikel  55  van  het  koninklijk 
+
+besluit van 18 april 2017 plaatsing overheidsopdrachten in de klassieke sectoren 
+
+(hierna:  KB  plaatsing  klassieke  sectoren),  waarvan  de  bepalingen  op  het 
+
+eerste gezicht  lijken  overeen  te  stemmen  met  artikel  62  van  het  KB  plaatsing 
+
+speciale  sectoren  waarvan  te  dezen  de  schending  wordt  aangevoerd,  is  er  als 
+
+sanctie in geval van schending van de bepalingen van dit artikel sprake van een 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-10/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+“substantieel onregelmatige” offerte.   
+
+Aldus  lijkt  de  verzoekende  partijen  bezwaarlijk  te  kunnen 
+
+worden verweten dat zij bij de uiteenzetting van hun middel gebruik maken van de 
+
+terminologie die door de regelgever zelf wordt gehanteerd. 
+
+Bovendien  blijken  zowel  de  verwerende  partij  als  de 
+
+tussenkomende  partij  wel  degelijk  te  hebben  begrepen  dat  de  aangevoerde 
+
+schending  betrekking  heeft  op  de  bepalingen  inzake  het  indieningsrecht  van  de 
+
+offerte. 
+
+De exceptie wordt verworpen. 
+
+10.   
+
+Ook  de  exceptie  “obscuri  libelli”  die  de  verwerende  partij 
+
+daarnaast  nog  opwerpt  met  betrekking  tot  de  aangevoerde  schending  van  het 
+
+wettigheidsbeginsel, artikel 2, 25° en 4 van de wet overheidsopdrachten, artikel 62 
+
+van het KB plaatsing speciale sectoren, het gelijkheids- en transparantiebeginsel, 
+
+het  zorgvuldigheidsbeginsel  en  het  rechtszekerheidsbeginsel  kan  op  het 
+
+eerste gezicht niet worden aangenomen. Uit het geheel van de uiteenzetting van het 
+
+middel  blijkt  op  het  eerste  gezicht  immers  voldoende  duidelijk  waarom  de 
+
+verzoekende partijen deze bepalingen en beginselen geschonden achten. 
+
+Deze exceptie wordt eveneens verworpen. 
+
+11.   
+
+De uitdrukkelijke motivering van de bestreden beslissing moet, 
+
+om  te  voldoen  aan  de  formelemotiveringsplicht,  onder  meer  vervat  in  de 
+
+geschonden  geachte  artikelen  2  en  3  van  de  motiveringswet,  de  juridische  en 
+
+feitelijke overwegingen vermelden die aan de beslissing ten grondslag liggen; die 
+
+motivering  moet  afdoende  zijn  teneinde  de  belanghebbende  in  staat  te  stellen 
+
+terdege te oordelen of het zin heeft zich tegen de beslissing te verweren met de 
+
+middelen die het recht hem ter beschikking stelt. 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-11/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+12.   
+
+Artikel  2,  25°  van  de  wet  overheidsopdrachten  omschrijft  de 
+
+onderhandelingsprocedure  met  voorafgaande  oproep  tot  mededinging  als  “de 
+
+plaatsingsprocedure waarbij elke belangstellende ondernemer naar aanleiding van 
+
+een oproep tot mededinging een aanvraag tot deelneming mag indienen, waarbij 
+
+alleen de geselecteerde kandidaten een offerte mogen indienen en waarbij over de 
+
+voorwaarden van de opdracht kan worden onderhandeld met de inschrijvers, en die 
+
+uitsluitend van toepassing is op de opdrachten die onder het toepassingsgebied van 
+
+titel 3 vallen”. Titel 3 van de wet heeft betrekking op overheidsopdrachten in de 
+
+speciale sectoren, zoals onderhavige opdracht.   
+
+Artikel  62  van  het  KB  plaatsing  speciale  sectoren,  waarvan 
+
+eveneens de schending wordt opgeworpen, bepaalt: 
+
+“In  een  niet-openbare  procedure,  in  een  onderhandelingsprocedure  met 
+voorafgaande in oproep tot mededinging, in  een concurrentiegerichte dialoog 
+en in een innovatiepartnerschap mogen enkel de geselecteerde kandidaten een 
+offerte indienen. 
+
+Nochtans  kunnen  de  opdrachtdocumenten  toestaan  dat  de  offerte  wordt 
+ingediend  door  een  combinatie  van  ondernemers  bestaande  uit  een 
+geselecteerde en één of meer niet-geselecteerde personen. 
+
+Anderzijds kunnen de opdrachtdocumenten het gezamenlijk indienen van 
+één  enkele  offerte  door  meerdere  geselecteerde  kandidaten  beperken  of 
+verbieden, teneinde een voldoende mededinging te waarborgen”. 
+
+Het  gelijkluidende  artikel  55  van  het  KB  plaatsing  klassieke 
+
+sectoren wordt in het verslag aan de Koning bij dit besluit als volgt toegelicht: 
+
+“Dit artikel neemt artikel 55 van het koninklijk besluit van 15 juli 2011 over. 
+Het  eerste  lid  herinnert  aan  de  regel  volgens  dewelke,  bij  procedures  die 
+twee fasen omvatten, enkel de geselecteerden een offerte mogen indienen. Deze 
+bepaling is voortaan niet alleen van toepassing op de niet-openbare procedure, 
+de  onderhandelingsprocedure  met  voorafgaande  bekendmaking  en  de 
+concurrentiegerichte dialoog, maar ook op het innovatiepartnerschap. 
+
+Het tweede lid blijft ongewijzigd. Zo dient een aanbestedende overheid die 
+aan  een  combinatie  van  ondernemers  die  een  geselecteerde  en  één  of  meer 
+niet-geselecteerden  omvat  toestemming  wenst  te  geven  om  een  offerte  in  te 
+dienen, dit in de opdrachtdocumenten te vermelden. Bij ontstentenis van zulke 
+vermelding is de indiening van een dergelijke offerte niet toegestaan en zal deze 
+dan ook substantieel onregelmatig zijn. 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-12/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Wat de zinsnede „en één of meer niet-geselecteerde personen‟ betreft in het 
+tweede lid, dient te worden verduidelijkt dat hiermee niet alleen wordt gedoeld 
+op  die  ondernemers  die  deelnemen  aan  de  procedure  maar  niet  geselecteerd 
+werden, maar ook op ondernemers die nog niet deelnamen aan de procedure. 
+
+Het derde lid blijft ongewijzigd. Deze bepaling maakt het mogelijk om in 
+de opdrachtdocumenten het gezamenlijk indienen van één enkele offerte door 
+meerdere geselecteerden te beperken of te verbieden”. 
+
+13.   
+
+In tegenstelling tot wat de tussenkomende partij voorhoudt, lijkt 
+
+ook het reeds geciteerde artikel 1.04.1 van het bestek een verbod in te houden om 
+
+offertes te aanvaarden van niet geselecteerde inschrijvers. 
+
+Daarnaast  blijkt  zowel  tijdens  de  selectiefase  als  tijdens  de 
+
+gunningsfase  een  vraag  te  zijn  gesteld  aan  de  verwerende  partij  omtrent  de 
+
+mogelijkheid om de samenstelling van een consortium te wijzigen. De verwerende 
+
+partij lijkt die mogelijkheid te hebben bevestigd, doch slechts voor zover aan een 
+
+aantal gestelde voorwaarden wordt voldaan. 
+
+14.   
+
+Te dezen blijkt dat de gekozen inschrijver zijn kandidaatstelling 
+
+heeft ingediend onder de vorm van een tijdelijke handelsvennootschap, samen met 
+
+Adyen BV, onder de benaming “De Lijn Cemv/ABT Project”. 
+
+Uit  de  selectiebeslissing  blijkt  dat  de  tussenkomende  partij  en 
+
+Adyen  BV  samen  optredend  als  kandidaat  werden  geselecteerd  door  de 
+
+verwerende partij. 
+
+Uit  de  gunningsbeslissing,  evenals  uit  de  ingediende  offertes 
+
+zelf,  blijkt  evenwel  dat  vervolgens  de  eerste  offerte  en  de  verbeterde  offerte 
+
+uitsluitend werden ingediend door de tussenkomende partij, zijnde slechts één van 
+
+de leden van de geselecteerde kandidaat.   
+
+Anders dan de verwerende partij en de tussenkomende partij dit 
+
+zien, lijkt de verwijzing naar artikel 62, eerste lid, van het KB plaatsing speciale 
+
+sectoren  dan  ook  wel  degelijk  pertinent  en  kan  prima  facie  niet  aangenomen 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-13/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+worden  dat  de  gekozen  inschrijver  Conduent  Business  Solutions  France  SAS 
+
+eerder  als  kandidaat  werd  geselecteerd.  Het  in  voornoemd  artikel  62,  eerste  lid, 
+
+neergelegde principe lijkt immers in beginsel te vereisen dat de gepreselecteerde 
+
+ondernemers feitelijk en rechtens identiek zijn aan de ondernemers die de offertes 
+
+indienen.   
+
+Ook  het  feit  dat  de  verwerende  partij  zowel  Conduent  als 
+
+CCV Group reeds zou hebben onderworpen aan een selectieonderzoek als lid van 
+
+andere  inschrijvende  verenigingen  zoals  de  tussenkomende  partij  aanvoert,  lijkt 
+
+niet  te  impliceren  dat  zij  gezamenlijk  als  reeds  geselecteerde  kandidaat  kunnen 
+
+worden beschouwd. 
+
+15.   
+
+In  het  gunningsverslag,  waarop  de  bestreden  beslissing  steunt, 
+
+wordt echter uitsluitend opgemerkt dat de offerte werd ingediend door “Conduent 
+
+Business Solutions France SAS (opvolger van het consortium De Lijn Cemv/ ABT 
+
+Project)”.   
+
+Er blijkt op het eerste gezicht ook niet - en dit wordt door geen 
+
+van de partijen beweerd - dat Conduent Business Solutions France SAS algemene 
+
+rechtsopvolger zou zijn van Adyen BV. 
+
+Met de verzoekende partijen dient prima facie dan ook te worden 
+
+vastgesteld  dat  door  de  verwerende  partij  in  het  gunningsverslag  niet  wordt 
+
+gemotiveerd  waarom  de  tussenkomende  partij  alsnog  zou  moeten  worden 
+
+toegelaten een offerte in te dienen, terwijl zowel artikel 62 van het KB plaatsing 
+
+speciale  sectoren  als  het  bestek  zelf  voorschrijven  dat  enkel  de  geselecteerde 
+
+kandidaten een offerte mogen indienen.   
+
+In  het  licht  daarvan  lijkt  een  loutere  vermelding  dat  Conduent 
+
+Business Solutions France SAS als “opvolger” dient te worden beschouwd, niet als 
+
+een afdoende motivering te kunnen worden beschouwd. 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-14/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Evenmin worden andere redenen aangegeven - en ze blijken niet 
+
+uit  het  administratief  dossier  -  die  verantwoorden  dat  de  opdracht  aan  de 
+
+tussenkomende partij kon worden vergund. 
+
+Terecht lijken de verzoekende partijen er ook op te wijzen dat het 
+
+ontbreken  van  dergelijke  motivering  des  te  meer  problematisch  is  aangezien  de 
+
+tussenkomende partij in het kader van de kandidaatstelling niet zelfstandig aan de 
+
+selectievoorwaarden  leek  te  voldoen,  doch  hiervoor  mede  beroep  deed  op  het 
+
+andere lid van de combinatie Adyen BV.   
+
+16.   
+
+Het doel van de formelemotiveringsplicht sluit tevens uit dat de 
+
+verzoekende  partijen  vrede  zouden  moeten  nemen  met  een  mededeling  van  de 
+
+motieven nadat zij een rechtsmiddel - meer bepaald een vordering tot schorsing bij 
+
+uiterst dringende noodzakelijkheid - hebben aangewend.   
+
+In haar nota brengt de verwerende partij evenmin motieven aan 
+
+waarom de opvolging te dezen kan worden aanvaard. 
+
+Met  de  opgave  van  motieven  door  de  tussenkomende  partij   
+
+mag  uiteraard  geen  rekening  worden  gehouden.  Het  blijkt  immers  niet  dat  deze 
+
+motieven,  die  in  beginsel  in  de  bestreden  beslissing  zelf  moeten  worden 
+
+weergegeven, tevens worden gedragen door de verwerende partij. 
+
+Evenmin lijkt te dezen te kunnen worden aangenomen dat uit de 
+
+uiteenzetting van het tweede en derde middel, dan wel uit de formele motivering 
+
+van de gunningsbeslissing in zijn geheel, zou blijken dat de verzoekende partijen 
+
+de motieven kenden, waardoor  geen schending van de formelemotiveringsplicht 
+
+zou kunnen worden aangenomen. Dat uit de overige middelen en de beoordeling 
+
+van de gunningscriteria in het gunningsverslag blijkt dat de verzoekende partijen 
+
+weten dat de tussenkomende partij in haar offerte beroep doet op CCV Group BV, 
+
+lijkt op het eerste gezicht niet afdoende om hun belang bij dit middel te ontnemen. 
+
+De verwerende partij betwist immers niet dat CCV Group BV zelf enkel over een 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-15/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+acquiring licentie voor Bancontact beschikt, terwijl het selectievereiste minimaal 
+
+een acquiring licentie Visa en Mastercard vooropstelt. Bovendien lijkt het blijvend 
+
+voldoen aan de selectiecriteria slechts één van de vereisten te zijn waaraan - althans 
+
+volgens het antwoord van de verwerende partij lopende de procedure zelf - dient te 
+
+zijn voldaan opdat een wijziging van combinatie toelaatbaar zou zijn. 
+
+Er blijkt op het eerste gezicht dan ook niet dat de verzoekende 
+
+partijen  de  motieven  voor  het  al  dan  niet  aanvaarden  van  de  opvolging  zouden 
+
+kennen,  dan  wel  via  een  andere  weg  dan  de  bestreden  beslissing  reeds  zouden 
+
+hebben ontvangen voor het indienen van hun beroep. 
+
+Aldus lijkt de formelemotiveringsplicht te zijn geschonden. Het 
+
+eerste middel is in die mate ernstig. 
+
+B. Tweede middel 
+
+Uiteenzetting van het middel 
+
+17.   
+
+Het  tweede  middel  is  genomen  uit  de  schending  van  de 
+
+artikelen 4 en 150 van de wet overheidsopdrachten, artikel 72, § 2 en § 3, van het 
+
+KB  plaatsing  speciale  sectoren,  de  artikelen  2  en  3  van  de  motiveringswet,  de 
+
+artikelen 10 en 11 van de Grondwet, het gelijkheids- en transparantiebeginsel, het 
+
+formeel motiveringsbeginsel en het “patere legem quam ipse fecisti”-beginsel als 
+
+beginselen van behoorlijk bestuur.   
+
+De  verzoekende  partijen  wijzen  daarbij  vooreerst  op 
+
+artikel 1.04.2 van het bestek waarin inzake het beroep op draagkracht van derden 
+
+het volgende bepaald wordt:   
+
+“Indien  de  inschrijver  zich  tijdens  de  selectiefase  heeft  beroepen  op  de 
+economische  en  financiële  draagkracht  alsook  op  de 
+technische  en 
+beroepsbekwaamheid van andere entiteiten dient hij opnieuw aan te tonen dat 
+hij  over  de  noodzakelijke  middelen  voor  de  uitvoering  van  de  opdracht  zal 
+beschikken. Het toevoegen van het vorige document volstaat niet. Een nieuw 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-16/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+document  „beroepen  op  draagkracht  van  een  derde  entiteit‟  dient  te  worden 
+opgemaakt.   
+[…]   
+Wanneer  de  inschrijver  een  beroep  doet  op  de  draagkracht  van  andere 
+entiteiten  zoals  bedoeld  in  artikel  72  en  die  draagkracht  bepalend  is  geweest 
+voor  zijn  selectie,  vermeldt  de  inschrijver,  al  naargelang,  steeds  voor  welk 
+gedeelte hij een beroep doet op die draagkracht en welke andere entiteiten hij 
+voorstelt, zowel in zijn aanvraag tot deelneming als in zijn verbeterde offerte.   
+Deze vermelding laat de aansprakelijkheid van de inschrijver onverlet”. 
+
+Daarnaast  verwijzen  zij  ook  naar  artikel  1.04.3  van  het  bestek 
+
+met betrekking tot het inschakelen van onderaannemers waarin het volgende wordt 
+
+bepaald:   
+
+“De inschrijver dient in zijn verbeterde offerte te vermelden welk gedeelte 
+van  de  opdracht  hij  voornemens  is  in  onderaanneming  te  geven  en  welke 
+onderaannemers hij voorstelt”.   
+
+Zij merken op dat de oorspronkelijk geselecteerde kandidaat “De 
+
+Lijn Cemv/ABT Project: Conduent & Adyen” was, waarbij Adyen BV de functie 
+
+van  acquirer vervulde, terwijl  Conduent  Business  Solutions France  SAS  in haar 
+
+eerste  offerte  beroep  deed  hetzij  op  CCV  Group  BV,  hetzij  op  een  voor  de 
+
+verzoekende  partijen  onbekende  acquirer  en 
+
+in  haar  finale  offerte 
+
+in 
+
+onderaanneming beroep doet op CCV Group BV als acquirer. 
+
+In wat als een eerste grief kan worden beschouwd, voeren zij in 
+
+essentie aan dat de verwerende partij niettegenstaande voormeld artikel 1.04.2 van 
+
+het bestek noch bij het indienen van de eerste offerte, noch bij het indienen van de 
+
+finale offerte gecontroleerd heeft of Conduent Business Solutions France SAS, die 
+
+in  haar  offertes  beroep  deed  op  een  andere  acquirer,  alsnog  beschikt  over 
+
+voldoende  economische  en  financiële  draagkracht  en  de  nodige  technische  en 
+
+beroepsbekwaamheid om te voldoen aan de minimale eisen. Er wordt volgens hen 
+
+op generlei wijze aangetoond dat Conduent Business Solutions France SAS zonder 
+
+oorspronkelijke partner Adyen BV überhaupt nog voldoet aan de selectiecriteria. 
+
+Dit lijkt de verzoekende partijen ook niet het geval te zijn. Volgens de verzoekende 
+
+partijen beschikt CCV Group BV alvast niet over een acquiring licentie voor Visa 
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-17/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+en Mastercard zodat niet aan de minimale eisen is voldaan.   
+
+Dat  CCV  Group  BV  niet  voldoet  aan  de  technische  en 
+
+beroepsbekwaamheid blijkt volgens hen ook onrechtstreeks uit de “gemotiveerde 
+
+beslissing  van  de  selectie  van  kandidaten”  waarin  met  betrekking  tot  de 
+
+niet-selectie van IVU Traffic Technologies AG omwille van het ontbreken van het 
+
+nodige  bewijs  inzake  technische  en  beroepsbekwaamheid  het  volgende  wordt 
+
+gesteld: 
+
+“De kandidatuur bevatte verder geen bewijs dat de kandidaat beschikt over 
+een  acquiring  licentie  geldig  in  België  voor  internationale  betaalschema‟s 
+(minimaal  VISA  en  Mastercard).  Er  is  sprake  van  een  draagkracht  op  derde, 
+zijnde de firma CCV Group B.V. die beschikt over een acquiringlicentie voor 
+Bancontact.  De  vereiste  spreekt  echter  van  minimaal  VISA  en  Mastercard. 
+Hiervoor  verwijst  CCV  group  naar  „partners‟  zonder  toevoeging  van  enige 
+attesten rond een mogelijke draagkracht hieromtrent. Bijgevolg ontbreekt er een 
+bewijs dat de kandidaat beschikt over de vereiste betaallicenties”.   
+
+Hieruit  blijkt  dat  CCV  Group  BV  enkel  beschikt  over  een 
+
+acquiring licentie voor Bancontact en niet voor Visa of Mastercard. Gelet op de 
+
+doorlooptijd van enkele maanden om een bijkomende licentie te bekomen is  het 
+
+onmogelijk  dat  CCV  Group  BV  op  het  ogenblik  dat  de  finale  offertes  werden 
+
+ingediend over dergelijke bijkomende licenties zou hebben beschikt. 
+
+Bijkomend merken zij op dat het toch bijzonder eigenaardig is 
+
+dat IVU Traffic Technologies AG in het kader van de selectiefase niet geselecteerd 
+
+werd  onder  meer  omwille  van  het  feit  dat  haar  acquirer  CCV  Group  BV  geen 
+
+acquiring  licentie  heeft  voor  Visa  en  Mastercard,  terwijl  het  consortium 
+
+Vix Technology Belgium NV & CCV Group wel geselecteerd werd. Zij erkennen 
+
+dat  zij,  gelet  op  de  latere  onregelmatigverklaring  van  de  finale  offerte  van 
+
+Vix Technology  Belgium  NV,  geen  direct  belang  hebben  om  dit  op  te  werpen, 
+
+maar eens te meer wijst dit aspect volgens hen op onzorgvuldige besluitvorming en 
+
+een gebrekkige motivering. 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-18/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+In wat als een tweede grief kan worden beschouwd, voeren zij 
+
+aan dat uit het bericht van CCV Group BV aan Vix Technology Belgium NV van 
+
+24 mei 2018 bovendien duidelijk blijkt dat CCV Group BV niet kan voldoen aan 
+
+de vereiste tijdsplanning. Zij wijzen erop dat CCV Group BV in het kader van de 
+
+selectie  en  bij  het  indienen  van  de  eerste  offertes  nog  deel  uitmaakte  van  het 
+
+consortium Vix Technology Belgium NV & CCV Group, doch dat CCV Group 
+
+BV  in  de  periode  tussen  het  indienen  van  de  eerste  en  de  finale  offerte  aan 
+
+Vix Technology Belgium NV heeft meegedeeld niet langer te willen meedingen 
+
+naar de gunning van de opdracht omdat zij niet kan voldoen aan de doelstellingen 
+
+en  tijdsplanning  zoals  vooropgesteld  in  het  bestek  en  de  gunningsleidraden. 
+
+Hierdoor staat het volgens de verzoekende partijen ook vast dat CCV Group BV in 
+
+haar  (uiteindelijke)  vermeende  hoedanigheid  van  onderaannemer  -  acquirer  van 
+
+Conduent  Business  Solutions  France  SAS  niet  kan  voldoen  aan  de  eisen  zoals 
+
+bepaald in het bestek. Minstens verwijt zij de verwerende partij dat zij dit in het 
+
+kader van de finale offerte niet opnieuw gecontroleerd heeft. 
+
+Aldus  had  de  offerte  van  Conduent  Business  Solutions  France 
+
+SAS  volgens  de  verzoekende  partijen  substantieel  onregelmatig  moeten  worden 
+
+verklaard en moeten worden uitgesloten van de gunning. 
+
+Beoordeling 
+
+18.   
+
+De verwerende partij werpt in hoofdorde opnieuw een exceptie 
+
+van  onontvankelijkheid  op.  Zij  begrijpt  het  tweede  middel  van  de  verzoekende 
+
+partijen  op  die  manier  dat  zij  in  essentie  aanvoeren  dat  de  bestreden  beslissing 
+
+onwettig zou zijn omdat de offerte van Conduent Business Solutions France SAS 
+
+ten  onrechte  regelmatig  zou  zijn  verklaard.  Evenwel  wordt  volgens  haar  in  het 
+
+tweede middel niet toegelicht welke rechtsregel in dit verband concreet zou zijn 
+
+geschonden, noch op welke (precieze) wijze. De bepalingen en beginselen die de 
+
+verzoekende partijen aanhalen, hebben volgens haar immers geen betrekking op de 
+
+regelmatigheid  van  de  offertes.  Ook  de  tussenkomende  partij  werpt  op  dat  daar 
+
+waar het tweede middel kritieken bevat omtrent de regelmatigheid van de offerte 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-19/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+niet  wordt  aangegeven  welke  rechtsregel  zou  zijn  geschonden,  noch  op  welke 
+
+wijze. 
+
+19.   
+
+Overeenkomstig artikel 16, § 1, 5°, van het koninklijk besluit van 
+
+5 december 1991 tot bepaling van de rechtspleging in kort geding voor de Raad 
+
+van  State  moet  een  verzoekende  partij  in  haar  verzoekschrift  tot  schorsing  bij 
+
+uiterst  dringende  noodzakelijkheid,  indien  -  zoals  te  dezen  -  het  beroep  tot 
+
+nietigverklaring nog niet is ingediend, een uiteenzetting geven van de middelen die 
+
+de nietigverklaring van de akte of het reglement kunnen rechtvaardigen en die zij 
+
+dus  tot  staving  van  haar  vordering  aanvoert.  Onder  “middel”  in  de  zin  van  het 
+
+voormelde artikel 16, § 1, 5°, wordt verstaan de voldoende duidelijke omschrijving 
+
+van de overtreden rechtsregel en van de wijze waarop die regel door de bestreden 
+
+beslissing  wordt  geschonden.  “Voldoende  duidelijk”  betekent  dat  geen 
+
+veronderstellingen  moeten  worden  gemaakt  over  de  juiste  bedoelingen  van  de 
+
+verzoekende partij, waardoor in werkelijkheid de verwerende partij en nadien de 
+
+Raad van State ertoe worden gebracht in de plaats van de verzoekende partij het 
+
+verzoekschrift te redigeren. 
+
+20.   
+
+In  de  mate  dat  de  verzoekende  partijen  te  dezen  in  een 
+
+tweede grief  aanvoeren  dat  uit  het  bericht  van  CCV  Group  BV  aan 
+
+Vix Technology Belgium NV van 24 mei 2018 duidelijk blijkt dat CCV Group BV 
+
+niet  kan  voldoen  aan  de  vereiste  tijdsplanning  en  dat  de  offerte  van  de 
+
+tussenkomende  partij  om  die  reden  ten  onrechte  regelmatig  zou  zijn  verklaard, 
+
+dient op het  eerste  gezicht  te worden vastgesteld  dat  de verzoekende partijen in 
+
+gebreke  blijven  toe  te  lichten  welke  rechtsregels  of  bepalingen  van  de 
+
+selectieleidraad  of  het  bestek  zouden  zijn  geschonden.  De  verzoekende  partijen 
+
+lijken dienaangaande uitsluitend te verwijzen naar een brief van CCV Group BV 
+
+aan  Vix  Technology  Belgium  NV  van  24  mei  2018,  waarvan  overigens  op  het 
+
+eerste gezicht niet blijkt dat de verwerende partij kennis had bij aanname van de 
+
+bestreden beslissing. In geen van de door hen in het verzoekschrift aangehaalde 
+
+bepalingen of beginselen lijkt sprake te zijn van een vereiste tijdsplanning. Wat de 
+
+tweede grief betreft lijkt de aangevoerde exceptie door de verwerende partij dan 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-20/29 
+
+ 
+ 
+ 
+ 
+ 
+ook gegrond.   
+
+21.   
+
+Daarentegen  dient  de  exceptie  “obscuri  libelli”  vanwege  de 
+
+verwerende partij te worden verworpen in de mate dat deze tevens de eerste door 
+
+de verzoekende partijen aangevoerde grief omvat waarin zij in essentie aanvoeren 
+
+dat de verwerende partij, niettegenstaande artikel 1.04.2 van het bestek, noch bij 
+
+het indienen van de eerste offerte noch bij het indienen van de verbeterde offerte 
+
+gecontroleerd heeft of de tussenkomende partij, die in haar offertes beroep deed op 
+
+een andere acquirer dan in de kandidaatstelling, alsnog  beschikt over voldoende 
+
+economische  en 
+
+financiële  draagkracht  en  de  nodige 
+
+technische  en 
+
+beroepsbekwaamheid  om  te voldoen  aan de minimale eisen.  In tegenstelling tot 
+
+wat  de  verwerende  partij  voorhoudt,  blijkt  uit  de  uiteenzetting  van  het  middel 
+
+voldoende  duidelijk  welke  rechtsregels  en  bepalingen  van  het  bestek  de 
+
+verzoekende  partijen  concreet  geschonden  achten,  evenals  op  welke  wijze.  Het 
+
+enkele feit dat de verzoekende partijen in dat verband soms verkeerdelijk lijken te 
+
+verwijzen  naar  de  sanctie  van  de  onregelmatigheid  in  de  plaats  van  naar  de 
+
+eventuele niet-selectie is niet van aard om het middel onontvankelijk te bevinden. 
+
+Overigens  blijkt zowel  uit de nota als  uit het  verzoekschrift tot tussenkomst dat 
+
+beide partijen het middel wel degelijk in die zin hebben begrepen.   
+
+Ook  in  de  mate  dat  de  tussenkomende  partij  nog  een  exceptie 
+
+“obscuri libelli” opwerpt, wat  de formelemotiveringsplicht  betreft, dient deze te 
+
+worden  verworpen.  In  de  mate  dat  de  verzoekende  partijen  aanvoeren  dat  op 
+
+generlei  wijze  wordt  aangetoond  dat  de 
+
+tussenkomende  partij  zonder 
+
+oorspronkelijke partner Adyen BV überhaupt nog voldoet aan de selectiecriteria, 
+
+lijkt aangenomen te kunnen worden dat zij daarmee tevens beogen te verwijzen 
+
+naar  het  gebrek  aan  uitdrukkelijke  motieven  in  de  bestreden  beslissing  en  het 
+
+gunningsverslag dienaangaande. 
+
+22.   
+
+Overeenkomstig  artikel  4  van  de  wet  overheidsopdrachten 
+
+dienen de aanbesteders de ondernemers op gelijke en niet-discriminerende wijze te 
+
+behandelen en dienen zij op een transparante en proportionele wijze te handelen. 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-21/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Artikel  150 van diezelfde wet  regelt de  mogelijkheid om  zich, 
+
+wat de speciale sectoren betreft, voor het voldoen aan de selectiecriteria inzake de 
+
+economische en financiële draagkracht van de ondernemer of zijn technische en 
+
+beroepsbekwaamheid te beroepen op de draagkracht van andere entiteiten.   
+
+De  artikelen  72,  §  2  en  §  3,  van  het  KB  plaatsing  speciale 
+
+sectoren,  waarvan  eveneens  de  schending  wordt  opgeworpen,  geven  uitvoering 
+
+aan deze bepaling. 
+
+Daarnaast  is  een  aanbestedende  overheid  op  grond  van  het 
+
+“patere legem”-beginsel ertoe gehouden om de regels die zij in haar eigen bestek 
+
+heeft opgelegd, te eerbiedigen. 
+
+23.   
+
+De selectieleidraad bevat als selectiecriterium inzake technische 
+
+bekwaamheid  of  beroepsbekwaamheid  onder  meer  als  vereiste:  “Acquiring 
+
+licentie  geldig  in  België  voor  internationale  betaalschema‟s  (minimum  Visa  en 
+
+Mastercard)”.   
+
+Tevens  wordt  bepaald  dat  indien  de  kandidaat  zich  wenst  te 
+
+beroepen op de economische en financiële draagkracht en/of op de technische en 
+
+beroepsbekwaamheid van andere entiteiten, hij dient aan te tonen dat hij over de 
+
+noodzakelijke middelen voor de uitvoering van de opdracht zal beschikken door 
+
+middel van een verbintenis van deze entiteit. Wat betreft de criteria inzake studie- 
+
+en  beroepskwalificaties  van  de  dienstverlener  of  van  de  titularis  of  van  het 
+
+leidinggevend  personeel  van  de  onderneming,  of  de  criteria  betreffende  de 
+
+overeenstemmende beroepservaring, kan de kandidaat luidens de selectieleidraad 
+
+slechts beroep doen op de capaciteiten van andere entiteiten, wanneer deze laatste 
+
+de diensten waarvoor hun capaciteiten vereist zijn zelf uitvoeren of leveren. Indien 
+
+een kandidaat wenst beroep te doen op de capaciteiten van andere entiteiten, dient 
+
+hij bij de aanbestedende entiteit het bewijs aan te brengen van het feit dat hij over 
+
+de nodige middelen beschikt, bijvoorbeeld door middel van de verbintenis hiertoe 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-22/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+vanwege deze entiteiten over te maken. Hiertoe is een modeldocument voorzien in 
+
+bijlage 1 in het Vierde Deel van de selectieleidraad. 
+
+Zowel  het  eerste  bestek  als  het  verfijnd  bestek  bepalen  onder 
+
+artikel 1.04.1 dat het feit dat de inschrijver geselecteerd is, hem niet ontslaat van de 
+
+verplichting te blijven voldoen aan de uitsluitingsgronden en selectiecriteria, zoals 
+
+bepaald  in  artikel  67  en  volgende  van  het  KB  Plaatsing  en  in  de  gebeurlijke 
+
+selectieleidraad. 
+
+van het bestek.   
+
+Ook geldt het voorschrift van het reeds geciteerde artikel 1.04.2 
+
+24.   
+
+De  gekozen  inschrijver  blijkt  zijn  kandidaatstelling  te  hebben 
+
+ingediend  onder  de  vorm  van  een  tijdelijke  handelsvennootschap,  samen  met 
+
+Adyen BV, onder de benaming “De Lijn Cemv/ABT Project”. 
+
+Uit de selectiebeslissing blijkt dat het dan ook de tussenkomende 
+
+partij  en  Adyen  BV,  samen  optredend,  te  zijn  die  als  kandidaat  werden 
+
+geselecteerd door de verwerende partij. 
+
+Aangenomen  lijkt  te  moeten  worden  dat,  minstens  voor  het 
+
+voldoen  aan  het  selectievereiste  “Acquiring  licentie  geldig  in  België  voor 
+
+internationale betaalschema‟s (minimum Visa en Mastercard)”, daarbij rekening 
+
+werd  gehouden  met  de  licenties  van  Adyen  BV  nu  niet  blijkt  dat  Conduent 
+
+Business Solutions France SAS over deze licenties beschikt. 
+
+Uit  de  gunningsbeslissing,  evenals  uit  de  ingediende  offertes 
+
+zelf,  blijkt  evenwel  dat  vervolgens  de  eerste  offerte  en  de  verbeterde  offerte 
+
+uitsluitend werden ingediend door de tussenkomende partij, zijnde slechts één van 
+
+de leden van de geselecteerde kandidaat.   
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-23/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+25.   
+
+Noch uit het  gunningsverslag, noch uit de bestreden beslissing 
+
+blijkt  echter  dat,  zoals  de  verwerende  partij  nu  lijkt  staande  te  houden,  zij  als 
+
+aanbestedende overheid op grond van de documentatie in de offerte zou hebben 
+
+besloten dat de gekozen inschrijver blijvend voldoet aan de selectievoorwaarden. 
+
+In  het  gunningsverslag  wordt  aangaande  de  indiening  van  de 
+
+offertes immers uitsluitend het volgende opgemerkt: 
+
+“III. INDIENING VAN DE OFFERTES 
+
+De offertes werden geopend op 27 maart 2018. 
+Drie bedrijven dienden hun offerte in: 
+
+a. Conduent  Business  Solutions  France  SAS  (opvolger  van  het 
+
+consortium De Lijn Cemv/ABT Project) 
+
+b. Vix-CCV  (consortium  Vix  Technology  Belgium  NV  &  CCV 
+
+Group)   
+
+c. WSBB  (consortium  Scheidt  &  Bachmann  GmbH,  Bluebridge 
+
+Transactions Nederland BV & Worldline) 
+
+Na onderhandelingen dienden de inschrijvers een verbeterde offerte in die 
+werden  geopend  op  6  juni  2018  waarbij  Vix  Technology  Belgium  NV  het 
+consortium Vix-CCV opvolgde”. 
+
+Vervolgens  wordt 
+
+in  het  gunningsverslag 
+
+enkel  de 
+
+regelmatigheid  van  de  offertes  beoordeeld  en  worden  de  regelmatig  bevonden 
+
+offertes getoetst aan de gunningscriteria. 
+
+Op  het  eerste  gezicht  blijkt  ook  niet  uit  het  gunningsverslag, 
+
+noch uit de overige stukken van het administratief dossier dat de verwerende partij 
+
+nader  zou  hebben  onderzocht  of  Conduent  Business  Solutions  France  SAS,  die 
+
+zowel de eerste offerte als de finale offerte in eigen naam heeft ingediend, terwijl 
+
+de  kandidaatstelling  werd  ingediend  door  een  combinatie  van  ondernemingen, 
+
+blijvend voldoet aan de selectiecriteria, al dan niet door een beroep te doen op de 
+
+economische  en 
+
+financiële  draagkracht  alsook  op  de 
+
+technische  en 
+
+beroepsbekwaamheid van andere entiteiten. 
+
+Dergelijk hernieuwd onderzoek van de vraag of blijvend voldaan 
+
+was aan de selectiecriteria was in de bijzondere omstandigheden van de zaak ten 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-24/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+aanzien van de gekozen inschrijver prima facie niettemin noodzakelijk gelet op, 
+
+enerzijds  het  wegvallen  van  één  van  de  leden  van  de  combinatie  waardoor  de 
+
+bestaande  selectiebeslissing  niet  meer  actueel  was  en,  anderzijds,  de 
+
+artikelen 1.04.1  en  1.04.2  van  het  bestek  die  een  verplichting  bevatten  om  te 
+
+blijven  voldoen  aan  de  uitsluitingsgronden  en  selectiecriteria  en  om,  indien  de 
+
+inschrijver  zich  tijdens  de  selectiefase  heeft  beroepen  op  de  economische  en 
+
+financiële  draagkracht  alsook  op  de  technische  en  beroepsbekwaamheid  van 
+
+andere  entiteiten,  opnieuw  dient  aan  te  tonen  dat  hij  over  de  noodzakelijke 
+
+middelen voor de uitvoering van de opdracht zal beschikken. 
+
+In tegenstelling tot wat de tussenkomende partij voorhoudt, kan 
+
+prima facie, gelet op de gewijzigde samenstelling van de combinatie enerzijds en 
+
+de artikelen 1.04.1 en 1.04.2 van het bestek anderzijds, niet worden aangenomen 
+
+dat  het  enkele  feit  dat  de  offerte  van  Conduent  is  meegenomen  naar  de 
+
+gunningsfase  inhoudt  dat  er  voldaan  is  aan  de  selectie-eisen  en  dat  dit  door  de 
+
+verwerende partij werd onderzocht en gunstig beoordeeld. 
+
+Met  de  post  factum  verwijzing  in  de  nota  naar  een  aantal 
+
+uittreksels  uit  de  offerte  van  de  gekozen  inschrijver  kan  geen  rekening  worden 
+
+gehouden. Deze argumentatie van de verwerende partij blijkt overigens enkel en 
+
+alleen te steunen op uittreksels van de offerte zonder dat uit andere stukken van het 
+
+administratief dossier ook blijkt dat dit door de verwerende partij effectief werd 
+
+onderzocht voor de aanname van de bestreden beslissing. 
+
+Anders  dan  de 
+
+tussenkomende  partij  dit 
+
+ziet,  kan 
+
+vanzelfsprekend  uit  de  eerdere  selectie  van  het  consortium  Vix  Technology 
+
+Belgium  NV  &  CCV  Group  evenmin  worden  afgeleid  dat  Conduent  Business 
+
+Solutions France SAS, met ditmaal CCV Group als onderaannemer, voldoet aan de 
+
+selectiecriteria. 
+
+In dit verband dient ook vastgesteld te worden dat kandidaat IVU 
+
+Traffic  Technologies  AG  in  de  selectiebeslissing  van  9  februari  2018  niet  werd 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-25/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+geselecteerd  en  waarbij  een  van  de  motieven  voor  deze  niet-selectie  luidde  als 
+
+volgt: 
+
+“De kandidatuur bevatte verder geen bewijs dat de kandidaat beschikt over 
+een  acquiring  licentie  geldig  in  België  voor  internationale  betaalschema‟s 
+(minimaal  VISA  en  Mastercard).  Er  is  sprake  van  een  draagkracht  op  derde, 
+zijnde de firma CCV Group B.V. die beschikt over een acquiringlicentie voor 
+Bancontact.  De  vereiste  spreekt  echter  van  minimaal  VISA  en  Mastercard. 
+Hiervoor  verwijst  CCV  group  naar  „partners‟  zonder  toevoeging  van  enige 
+attesten rond een mogelijke draagkracht hieromtrent. Bijgevolg ontbreekt er een 
+bewijs dat de kandidaat beschikt over de vereiste betaallicenties”. 
+
+Nu de tussenkomende partij in haar eerste en finale offerte plots 
+
+beroep blijkt te doen op diezelfde firma CCV Group BV als onderaannemer, lijkt 
+
+een gedegen onderzoek naar het al dan niet voldoen aan de selectievoorwaarden en 
+
+onder  meer  de  voorgelegde  bewijsstukken  inzake  de  vereiste  betaallicenties  en 
+
+verbintenissen - ditmaal te haren aanzien - op zijn plaats.   
+
+Wanneer niet langer voldaan was aan de gestelde minimumeisen 
+
+inzake  selectie,  mocht  de  verwerende  partij,  zo  lijkt,  immers  de  betrokken 
+
+inschrijver  niet  selecteren,  op  straffe  van  anders  het  bestek  en  de  gelijke 
+
+behandeling van de inschrijvers te schenden. 
+
+De  verwerende  partij  lijkt  dan  ook,  met  schending  van  het 
+
+bepaalde in de artikelen 72, §§ 2 en 3, van het KB plaatsing speciale sectoren en de 
+
+artikelen 1.04.1 en 1.04.2 van het  bestek, de opdracht  te hebben  gegund  zonder 
+
+erop  te  hebben  toegezien  of  minstens  niet  op  zorgvuldige  wijze,  dat  wat  de 
+
+gekozen inschrijver betreft, blijvend voldaan is aan de selectiecriteria, al dan niet 
+
+door een beroep te doen op de economische en financiële draagkracht alsook op de 
+
+technische en beroepsbekwaamheid van andere entiteiten. 
+
+26.   
+
+Daarnaast  lijkt  ook  elke  motivering  voor  de  selectie  van  de 
+
+gekozen inschrijver in het gunningsverslag en de bestreden beslissing te ontbreken 
+
+terwijl, zoals hoger uiteengezet, hoe dan ook niet langer gesteund kan worden op 
+
+de  eerdere  selectiebeslissing  van  9  februari  2018,  wat  inschrijver  Conduent 
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-26/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Business Solutions France SAS betreft. 
+
+In de mate dat door de verwerende partij en de tussenkomende 
+
+partij  wordt  verwezen naar de rechtspraak  van de Raad van State aangaande de 
+
+formele motiveringsplicht in geval de aanbestedende overheid beslist dat aan de 
+
+selectiecriteria  is  voldaan,  valt  op  te  merken  dat  te  dezen  zelfs  een  summiere 
+
+motivering  zoals  opgenomen  in  de  selectiebeslissing  van  9  februari  2018  en 
+
+waarbij de kandidaten, behoudens IVU Traffic Technologies AG, geacht werden te 
+
+voldoen aan de vereisten inzake technische bekwaamheid en beroepsbekwaamheid 
+
+onder de vermelding “Ok” ontbreekt. Overigens valt te betwijfelen of dergelijke 
+
+vermelding “Ok” in het gunningsverslag te dezen zou hebben volstaan nu duidelijk 
+
+blijkt - en door geen van de partijen wordt betwist - dat noch Conduent Business 
+
+Solutions  France  SAS,  noch  haar  onderaannemer  CCV Group  BV  zelf  over 
+
+acquiring licenties Visa en Mastercard beschikten bij indiening van de offerte. Een 
+
+loutere  vermelding  Ok  volstaat  niet  met  betrekking  tot  de  beoordeling  van  de 
+
+technische bekwaamheid van een inschrijver in het geval de gekozen inschrijver 
+
+niet  zelf  aan  dit  criterium  kan  voldoen  doch  hiertoe  beroep  moet  doen  op  een 
+
+onderaannemer, zeker niet wanneer er terzake moeilijkheden zijn gerezen.   
+
+Bijgevolg lijkt in de gegeven omstandigheden de motivering in 
+
+de  bestreden  gunningsbeslissing  niet  afdoende  en 
+
+lijkt  aldus  ook  de 
+
+formelemotiveringverplichting geschonden, die de verzoekende partijen afleiden 
+
+uit de artikelen 2 en 3 van de motiveringswet.   
+
+In  de  nota  van  de  verwerende  partij  worden  weliswaar 
+
+aanvullende  verantwoordingen  gegeven  maar  deze  zijn  dus  a  posteriori  en 
+
+bijgevolg  niet  meer  dienstig  aan  te  voeren  ter  ondersteuning  van  de  bestreden 
+
+beslissing. Dit lijkt dan ook geen afbreuk te doen aan de ernst van het middel, noch 
+
+de  verzoekende  partijen  hun  belang  te  ontnemen  bij  het  middel  in  de  mate  een 
+
+schending  van  de  formelemotiveringsplicht  wordt  aangevoerd.  Het  doel  van  de 
+
+formelemotiveringsverplichting zoals hiervoor geschetst lijkt immers uit te sluiten 
+
+dat de verzoekende partijen vrede zouden moeten nemen met een mededeling van 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-27/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+de motieven nadat zij een rechter hebben gevat - meer bepaald te dezen met een 
+
+vordering tot schorsing bij uiterst dringende noodzakelijkheid. 
+
+Het tweede middel is in die mate ernstig. 
+
+VIII. Besluit 
+
+27.   
+
+Aangezien  het  eerste  en  tweede  middel  reeds  in  de  besproken 
+
+mate ernstig werden bevonden, dient het derde middel in de huidige stand van het 
+
+geding vooralsnog niet te worden onderzocht.   
+
+Het eerste en tweede middel zijn in de aangegeven mate ernstig 
+
+en  verantwoorden  de  schorsing  van  de  tenuitvoerlegging  van  de  bestreden 
+
+beslissing.  In  de  mate  dat  de  verzoekende  partijen  hun  vordering  ook  zouden 
+
+richten tegen de bestreden beslissing in zoverre de opdracht niet aan hen is gegund, 
+
+lijken  zij  niet  afdoende  kenbaar  te  hebben  gemaakt  dat  zij  hier  uitdrukkelijk  de 
+
+benaarstiging van de schorsing van de tenuitvoerlegging beogen van de impliciete 
+
+weigering de opdracht aan haar te gunnen. 
+
+BESLISSING 
+
+1. Het  verzoek  van  de  SAS  Conduent  Business  Solutions  France, 
+
+vennootschap naar buitenlands recht, tot tussenkomst wordt ingewilligd. 
+
+2. De Raad van State beveelt de schorsing van de tenuitvoerlegging bij uiterst 
+
+dringende noodzakelijkheid van “de beslissing van de Raad van Bestuur van 
+
+de  Vlaamse  Vervoersmaatschappij  De  Lijn  van  10 juli  2018  om  de 
+
+raamovereenkomst  voor  het  aankopen  van  contactloos  EMV(cEMV)  en 
+
+Account Based Ticketing (ABT) diensten en toestellen voor het CEMV/ABT 
+
+project 
+
+(opdracht  M_C_Klant_Verkoop-2017-mibng-236 
+
+cEMV/ABT 
+
+Project)  te  gunnen  aan  Conduent  Business  Solutions  France  SAS  voor  een 
+
+looptijd van tien jaar”. 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-28/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3. De Raad van State verwerpt de vordering voor het overige. 
+
+4. Dit arrest dient bij uittreksel te worden bekendgemaakt op dezelfde wijze 
+
+als het geschorste besluit. 
+
+Dit  arrest 
+
+is  uitgesproken 
+
+te  Brussel, 
+
+in  openbare 
+
+terechtzitting  van 
+
+drieëntwintig augustus  2018,  door  de  Raad  van  State,  XIIe vakantiekamer, 
+
+samengesteld uit: 
+
+Eric Brewaeys, 
+
+kamervoorzitter, 
+
+bijgestaan door 
+
+Elisabeth Impens, 
+
+griffier. 
+
+De griffier 
+
+De voorzitter 
+
+Elisabeth Impens 
+
+Eric Brewaeys 
+
+‡CDISLBGAG-BDEFJFV‡ 
+
+XII-8.590-29/29 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

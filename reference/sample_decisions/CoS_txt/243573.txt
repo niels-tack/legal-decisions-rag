@@ -1,0 +1,1782 @@
+RAAD VAN STATE, AFDELING BESTUURSRECHTSPRAAK 
+
+VOORZITTER VAN DE XIIe KAMER 
+
+A R R E S T 
+
+nr. 243.573 van 31 januari 2019 
+in de zaak A. 227.144/XII-8677 
+
+In zake: 
+
+ de BV ARS TRAFFIC & TRANSPORT TECHNOLOGY 
+bijgestaan en vertegenwoordigd door   
+advocaten Kris Wauters en Sophie Bleux 
+kantoor houdend te 1170 Brussel 
+Terhulpsesteenweg 187 
+bij wie woonplaats wordt gekozen 
+
+tegen: 
+
+de VLAAMSE VERVOERMAATSCHAPPIJ DE LIJN 
+bijgestaan en vertegenwoordigd door 
+advocaten Jens Debièvre en Lore Derdeyn 
+kantoor houdend te 1000 Brussel 
+Havenlaan 86c, 113 b 
+bij wie woonplaats wordt gekozen 
+
+--------------------------------------------------------------------------------------------------   
+
+I. Voorwerp van de vordering 
+
+1.   
+
+De vordering, ingesteld op 2 januari 2019, strekt tot de schorsing 
+
+bij uiterst dringende noodzakelijkheid van de tenuitvoerlegging van “[h]et besluit 
+
+van de raad van bestuur van de Vlaamse Vervoermaatschappij De Lijn (afgekort 
+
+De  Lijn)  van  12  december  2018,  waarbij  [de  bv  ARS  Traffic  &  Transport 
+
+Technology] wordt uitgesloten en waarbij diens offerte substantieel onregelmatig 
+
+wordt bevonden voor de overheidsopdracht ‘Raamovereenkomst voor het leveren 
+
+van reizigersinformatieborden en gerelateerde diensten’ met als toepasselijk bestek 
+
+PG1111-00480 en waarbij de opdracht gegund wordt aan Axentia Technologies 
+
+AB”. 
+
+XII-8677-1/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+II. Verloop van de rechtspleging 
+
+2. 
+
+De verwerende partij heeft een nota ingediend. 
+
+De  partijen  zijn  opgeroepen  voor  de  terechtzitting,  die  heeft 
+
+plaatsgevonden op 24 januari 2019, om 11.30 uur. 
+
+Staatsraad Johan Bovin heeft verslag uitgebracht. 
+
+Advocaat  Kris  Wauters,  die  verschijnt  voor  de  verzoekende 
+
+partij,  en  advocaat  Lore  Derdeyn,  die  verschijnt  voor  de  verwerende  partij,  zijn 
+
+gehoord. 
+
+advies gegeven. 
+
+Auditeur  Thomas  Maes  heeft  een  met  dit  arrest  eensluidend 
+
+Er is toepassing gemaakt van de bepalingen op het gebruik der 
+
+talen,  vervat  in  titel  VI,  hoofdstuk  II,  van  de  wetten  op  de  Raad  van  State, 
+
+gecoördineerd op 12 januari 1973. 
+
+III. Feiten 
+
+3.1. 
+
+De verwerende partij schrijft een overheidsopdracht uit voor een 
+
+“Raamovereenkomst  voor  het 
+
+leveren  van 
+
+reizigersinformatieborden  en 
+
+gerelateerde  diensten”.  De  opdracht  wordt  door  de  verwerende  partij  ook 
+
+“IRTIS2” genoemd. Het betreft een opdracht in de speciale sector vervoer.   
+
+Er  wordt  initieel  gekozen  voor  de  openbare  procedure  als 
+
+plaatsingsprocedure.  Die  procedure  wordt  aangekondigd  in  het  Bulletin  der 
+
+Aanbestedingen van 8 september 2017 en in het Supplement op het Publicatieblad 
+
+van de Europese Unie van 13 september 2017.   
+
+Drie inschrijvers dienen in deze initiële procedure een offerte in:   
+
+- de tv IRTIS2, bestaande uit de nv Cofely Fabricom en de nv Spie Belgium;   
+
+XII-8677-2/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+-  de  bv  ARS  Traffic  &  Transport  Technology  uit  Nederland,  de  huidige 
+
+verzoekende partij;   
+
+- de ab Axentia Technologies uit Zweden. 
+
+Na onderzoek van de offertes blijkt dat er geen enkele inschrijver 
+
+in  aanmerking  komt  voor  gunning  van  de  opdracht.  De  tv  IRTIS2  wordt  niet 
+
+geselecteerd  omdat  de  ingediende  referenties  niet  voldoen  aan  de  minimale 
+
+vereisten; de offerte van Axentia wordt substantieel onregelmatig verklaard omdat 
+
+deze niet geldig is ondertekend; de offerte van de verzoekende partij voldoet niet 
+
+aan  de  technische  vereisten  van  het  bestek  waardoor  deze  substantieel 
+
+onregelmatig wordt verklaard.   
+
+Op 16 mei 2018 beslist de verwerende partij tot niet-gunning en 
+
+stopzetting van de initiële plaatsingsprocedure.   
+
+3.2. 
+
+De  verwerende  partij  beslist  diezelfde  dag  om  de  opdracht 
+
+opnieuw  te  gunnen  met  een  onderhandelingsprocedure  zonder  voorafgaande 
+
+oproep tot mededinging, met toepassing van artikel 124, § 1, 2°, van de wet van 
+
+17 juni  2016  ‘inzake  overheidsopdrachten’  (hierna:  de  wet  overheidsopdrachten 
+
+2016).   
+
+3.3. 
+
+Het bestek met referentie PG1111 00480 is van toepassing op de 
+
+opdracht.  Het  bestek  omschrijft  het  voorwerp  van  de  opdracht,  samengevat,  als 
+
+volgt: 
+
+“Deze opdracht betreft een raamovereenkomst voor een looptijd van vier 
+jaar  betreffende  de  levering  en  installatie  van  reizigersinformatieborden 
+(verder in dit bestek kortweg infoborden genoemd).   
+De  opdrachtnemer  dient  in  te  staan  voor  het  leveren  en  plaatsen  van 
+infoborden  en  het  bieden  van  de  nodige  operationele  dienstverlening 
+gedurende 10 jaar (inclusief de netwerkdiensten) om de realtime info aan 
+de  reizigers  te  tonen  binnen  de  aangeboden  doorvoertijd  en  binnen  de 
+aangeboden beschikbaarheid.   
+                Kort samengevat omvat deze opdracht: 
+
+-  het  leveren  van  infoborden  met  eventueel  bijhorende  toebehoren 
+(bijvoorbeeld zonnepaneel) voor het tonen aan een halte van real time 
+doorkomsten en eventuele reizigersberichten; 
+
+-  het leveren van haltepalen; 
+
+XII-8677-3/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+-  de installatie op de haltes; 
+-  het leveren van de operationele dienstverlening; 
+-  het optioneel leveren (verplichte optie) van alle onderhoudswerken op 
+
+de haltes.” 
+
+Het  bestek  bepaalt  dat  het  IRTIS  2  project  in  vijf  fasen  zal 
+
+verlopen, die samenvattend als volgt worden omschreven: 
+
+- Fase 1 - Gebruiksklaar maken van het initiële IRTIS2-systeem op testsite; 
+
+- Fase 2 - Ontwikkelen van de integratiecomponent; 
+
+- Fase 3 - Ontwikkelen, opleveren en testen van de productieversies; 
+
+- Fase 4 - Uitrol; 
+
+- Fase 5 - Eventuele verdere ontwikkelingen. 
+
+Voorts bepaalt het bestek het volgende: 
+
+“Initiële oplevering en productieversies 
+Als deel van het IRTIS 2 project zal de opdrachtnemer de kans krijgen om 
+evoluties en verbeteringen aan te brengen aan de aangeboden producten. 
+Daarom wordt er een onderscheid gemaakt tussen de initieel aangeboden 
+producten en de productieversies.   
+Gezien  de  complexiteit  als  gevolg  van  de  vereisten  betreffende  de 
+autonomie  in  energievoorziening  is  het  belangrijk  dat  de  initieel 
+aangeboden  producten  (infobord,  systeem  voor  energievoorziening  en 
+centrale  software)  al  eens  samen  hun  diensten  in  hun  geheel  bewezen 
+hebben en volgens de minimale vereisten van dit bestek (met uitzondering 
+van de minimale vereisten die specifiek zijn geïdentificeerd als toegelaten 
+voor verdere ontwikkelingen en evolutie).   
+Met initieel gebruik en initiële opleveringen wordt het volgende bedoeld: 
+• Het infobord met eventuele toebehoren dat zal gebruikt worden tijdens: 
+
+-  De gunningfase om de leesbaarheid te bepalen (zie later in dit bestek) 
+-  De end-to-end test tijdens de gunningfase (zie later in dit bestek) 
+-  De Fase 1 en de Fase 2 van het project (zie later in dit bestek) 
+
+• De centrale software die zal gebruikt worden tijdens: 
+
+-  De end-to-end test in de gunningfase 
+-  De Fase 1 en de Fase 2 van het project 
+
+Met productieversies wordt het volgende bedoeld: 
+• Het infobord met eventuele toebehoren dat zal gebruikt worden op: 
+
+-  De haltes van De Lijn 
+-  Op  de  test  site  van  De  Lijn  voor  het  testen  van  de  nieuwe 
+
+ontwikkelingen 
+
+• De versie van de centrale software die zal gebruikt worden voor: 
+
+-  De aansturing en het beheer van het infobord en eventuele toebehoren 
+
+die op de haltes van De Lijn zijn geïnstalleerd 
+
+XII-8677-4/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+-  Het  testen  van  de  productieversie  van  infobord  en  eventuele 
+
+toebehoren.” 
+
+Wat  de  selectie  betreft  van  de  inschrijvers  bepaalt  het  bestek 
+
+onder meer het volgende: 
+
+“De  technische  bekwaamheid,  de  beroepsbekwaamheid  en  de  bewezen 
+aangeboden  systeem  oplossing  dient  aangetoond  te  worden  op  basis  van 
+referenties.   
+De inschrijver dient minstens 3 referenties op te geven van klanten waar de 
+infoborden,  samen  met  het  systeem  van  energievoorziening,  gedurende 
+minstens 1 jaar operationeel actief zijn op datum van indienen offerte, én 
+waarvan  de  aansturing  en  het  beheer  van  de  infoborden  gebeurt  door  de 
+centrale  software  waarvan  zowel  de  infoborden,  het  systeem  voor 
+energievoorziening,  als  de  centrale  software  voldoen  aan  de  minimale 
+vereisten van dit bestek (met uitzondering van de vereisten die specifiek 
+zijn  geïdentificeerd  als  toegelaten  voor  verdere  ontwikkelingen  en 
+evolutie).   
+De in te dienen referenties dienen aan te tonen dat er gezamenlijk minstens 
+400  infoborden  operationeel  zijn  volgens  de  minimale  vereisten  zoals 
+gespecificeerd  in het derde deel  van dit bestek (met uitzondering van de 
+vereisten  die  specifiek  zijn  geïdentificeerd  als  toegelaten  voor  verdere 
+ontwikkelingen en evolutie).” 
+
+Daarnaast voorziet het bestek in een toetsing van de offertes aan 
+
+de  hand  van  acht  gunningscriteria.  Het  tweede  gunningscriterium  betreft  de 
+
+leesbaarheid van de infoborden. Er wordt voorzien in een “leesbaarheidstest”. 
+
+“Leesbaarheid 
+Het doel van de leesbaarheidstest is om op verschillende tijdstippen tijdens 
+de dag uit te maken vanuit welke locaties de informatie op het infobord nog 
+steeds  duidelijk  leesbaar  is.  Zie  ook  de  minimale  vereisten  betreffende 
+leesbaarheid in het derde deel van dit bestek. 
+De punten voor leesbaarheid zullen door een jury bepaald worden aan de 
+hand  van  de  leesbaarheidstest  buiten  de  minimale  zone.  Een  hogere 
+leesbaarheid  buiten  de  minimale  vereisten  zal  resulteren  in  een  hogere 
+score. 
+Over de leesbaarheidstest 
+Deze test is verplicht. De inschrijver kan geen kosten aanrekenen aan De 
+Lijn voor het uitvoeren van deze test. 
+In  de  periode  […]  zal  de  inschrijver  3  dagen  tijd  krijgen  (van  maandag 
+t.e.m. woensdag) om alles klaar te zetten voor de leesbaarheidstest volgens 
+de vereisten in deze sectie. Het doel van de test is om de leesbaarheid van 
+de  infoborden  te  kunnen  beoordelen  en  om  punten  voor  dit  criterium  te 
+
+XII-8677-5/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+tijdens  de 
+
+test  (gerekend  van  onderkant  bord 
+
+kunnen  toekennen.  In  de  overeengekomen  periode  krijgt  de  inschrijver 
+3 dagen tijd om een infobord aan een paal op een testlocatie te installeren. 
+De  inschrijver  dient  zelf  voor  een  paal  te  zorgen  maar  dat  hoeft  niet 
+noodzakelijk  de  definitieve  paal  te  zijn  die  in  fase  3  dient  opgeleverd  te 
+worden.  De  testlocatie  zal  in  Vlaanderen  zijn  en  zal  door  De  Lijn  later 
+meegedeeld worden. 
+De leesbaarheidstest dient te gebeuren met het infobord en de toebehoren 
+zoals die bij het begin van fase 1 (zie verder) dient opgeleverd te worden 
+(inclusief dezelfde software versie). 
+Het infobord dient op de vereiste hoogte van minimaal 2m20 geplaatst te 
+worden 
+t.o.v.  het 
+grondoppervlak). 
+Tijdens de dagen en uren dat de leesbaarheid zal getest worden, dient er 
+continu tenminste 2 volgende doorkomsten getoond te worden met realtime 
+info (mag van een fictieve halte en fictieve ritten zijn maar de ritten moeten 
+wel realistisch zijn en met de nodige vertragingen) en dit tenminste van 5h 
+‘s morgens tot 1h de volgende dag.   
+Tijdens de leesbaarheidstest dient er op vraag van de testcoördinator een 
+reizigersbericht  (tekst  door  de  testcoördinator  te  bepalen)  binnen  de 
+5 minuten op het infobord getoond te kunnen worden (manueel ter plaatse 
+of  van  op  afstand).  De  concrete  testogenblikken  zullen  plaats  vinden  op 
+vooraf  gecommuniceerde  ogenblikken.  Er  kunnen  met  andere  woorden 
+verschillende tests uitgevoerd worden binnen een redelijke tijdspanne van 
+14  dagen  afhankelijk  van  atmosferische  omstandigheden  (duister,  regen, 
+zon, ..) 
+De inschrijver dient zelf al het mogelijke te doen om alles operationeel te 
+krijgen zoals hierboven gespecificeerd en dient zelf voor de verbinding via 
+het publiek draadloze netwerk te zorgen.” 
+
+Het  bestek  bevat  de  volgende  minimale  technische  vereisten 
+
+inzake leesbaarheid: 
+
+“Leesbaarheid 
+De informatie die op het scherm van het infobord wordt weergegeven dient 
+volledig  en  goed  leesbaar  te  zijn  (rekening  houdend  ook  met  speciale 
+karakters zoals é, à, ä, …), op elk[…] tijdstip van de dag, binnen tenminste 
+een zone afgebakend door volgende afstanden en gezichtshoeken: 
+•  Een  verticale  en  longitudinale  gezichtshoek  die  personen  met  een 
+lichaamslengte  tussen 120 cm  en 200 cm  in staat stelt om  het scherm te 
+lezen vanop 1 m tot 5 m afstand van de haltepaal.   
+•  Een  minimale  horizontale  gezichtshoek  van  ±30°  ten  opzichte  van  de 
+verticale as van het scherm.” 
+
+XII-8677-6/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Voorts bepaalt het bestek nog het volgende: 
+
+“Elke  offerte  die  afwijkt  van  de  essentiële  voorschriften  van  dit 
+opdrachtdocument zal beschouwd worden als onregelmatig en nietig.” 
+
+en, 
+
+“Een  offerte  mag  enkel  ingediend  worden  als  volledig  aan  de  vereisten 
+zoals  gespecificeerd  in  dit  bestek  is  voldaan.  De  ingediende  offerte  is 
+bindend aan de vereisten van dit bestek. De vereisten gespecificeerd in dit 
+bestek zullen dienen voor de keuring en acceptatie.   
+Indien uit de ingediende offerte of tijdens de testen in de gunningfase blijkt 
+dat niet voldaan is aan de vereisten, zal de inschrijver uitgesloten worden.” 
+
+3.4. 
+
+Er  vindt  een  vragen-en-antwoordenronde  (Q&A)  plaats  tussen 
+
+de  drie  inschrijvers  van  de  initiële  openbare  procedure  en  de  aanbestedende 
+
+overheid.  De  antwoorden  worden  door  de  aanbestedende  overheid  aan  de  drie 
+
+inschrijvers bezorgd met de vermelding dat zij “integraal deel uitmaken van [het] 
+
+bestek”.    Het gaat om in totaal 82 vragen en antwoorden. Voor de huidige zaak 
+
+zijn de vragen 60 en 70 van belang: 
+
+“60.  Uw  wens  is  dat  de  infoborden  op  220  cm  hoogte  geplaatst  gaan 
+worden, zie ‘Minimale hoogte van het infobord[’], [(]bladnummer 65 van 
+het bestek). Om aan deze wens tegemoet te komen, willen wij het formaat 
+van onze LCD display aanpassen. Dit is een geringe aanpassing van een 
+bestaande, bewezen techniek. De wijze van aansturing is geheel identiek 
+aan een aantal eerdere door ons geleverde projecten. Kunt u svp bevestigen 
+dat deze beperkte aanpassing toegestaan is om daarmee aan deze eis van 
+het bestek te voldoen? 
+[A] Het is de inschrijver toegelaten om in de offerte een infobord aan te 
+bieden dat afwijkt van de infoborden waarvan gebruik wordt gemaakt in de 
+opgegeven  referenties  in  de  offerte.  Hierbij  is  het  aan  de  inschrijver  om 
+duidelijk  te  omschrijven  waarin  het  aangeboden  infobord  afwijkt  van  de 
+infoborden gebruikt in elk van de vermelde referenties. Hiermee is het aan 
+de  inschrijver  om  aan  te  tonen  dat  het  aangeboden  infobord  ten  minste 
+functioneel en technisch gelijkwaardig is aan de infoborden gebruikt in de 
+referenties en, indien het aangeboden infobord zou worden toegepast in de 
+configuratie van de opgegeven referentie, het geen afbreuk zou doen aan de 
+technische bekwaamheid, de beroepsbekwaamheid en de systeemoplossing 
+die  door  de  referentie  wordt  aangetoond.  Deze  verduidelijking  van  de 
+selectiecriteria  maakt  dat  het  de  inschrijver  is  toegelaten  om  de   
+minimumeis  van  ‘beproefd  concept’  zoals  vermeld  op  pagina  64,  aan  te 
+tonen op basis van infoborden die afwijken van de infoborden gebruikt in 
+
+XII-8677-7/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+de opgegeven referenties of die, als onderdeel van de opdracht die uit deze 
+offerte kan volgen, nog zijn te realiseren. 
+[…] 
+70.  Is  het  acceptabel  dat  ten  behoeve  van  de  end-to-end  test  en  de 
+leesbaarheidstest  er  één  infobord  geleverd  wordt  met  de  mogelijkheden 
+(functionaliteiten) en fontgrootte van het voor de uitrol te leveren display, 
+maar met een niet-definitieve omkadering? 
+[A]  Neen.  Voor  de  uitvoering  van  de  leesbaarheidstest  kan  slechts  één 
+infobord geleverd worden. Voor de end-to-end test is het noodzakelijk om 
+meting  te  kunnen  doen  op  één  of  meerdere  infoborden  die  zowel 
+technisch[…], hardwarematig, firmwarematig, mechanisch en functioneel 
+voldoen  aan  de  eisen  van  het  bestek  en  waarvan  de  werking,  de 
+samenstelling,  de  technische  en  functionele  specificatie  gelijk  is  aan  het 
+definitief te leveren bord.” 
+
+3.5. 
+
+De  drie  inschrijvers  uit  de  initiële  gunningsprocedure  worden 
+
+uitgenodigd  om  aan  deze  nieuwe  procedure  deel  te  nemen  en  een  offerte  in  te 
+
+dienen tegen uiterlijk 22 juni 2018. Zij dienen alle drie een nieuwe offerte in.   
+
+3.6. 
+
+Op 16 november 2018 wordt een gunningsverslag opgesteld.   
+
+De tv IRTIS2 wordt niet geselecteerd omdat haar referenties niet 
+
+voldoen.  Wat  de  verzoekende  partij  en  de  gekozen  inschrijver  betreft,  wordt 
+
+vastgesteld dat hun referenties geldig zijn. Zij worden bijgevolg wel geselecteerd. 
+
+Blijkens het gunningsverslag werd in dit verband reeds op 18 augustus 2018 een 
+
+selectiebeslissing genomen. 
+
+Vervolgens  worden  de  twee  overblijvende  offertes  nader 
+
+onderzocht. De voornoemde leesbaarheidstest wordt uitgevoerd op de infoborden. 
+
+Wat de offerte van de verzoekende partij betreft, wordt in dit verband vastgesteld 
+
+dat de verzoekende partij eerst meer tijd heeft gevraagd om zich op de test voor te 
+
+bereiden. Vervolgens wordt vastgesteld dat het door de verzoekende partij op de 
+
+testsite geïnstalleerde infobord “merkelijk verschillend is van het infobord dat in 
+
+de offerte van ARS wordt aangeboden”. Er wordt als volgt geoordeeld: 
+
+“In  het  bestek  wordt  hierover  aangegeven  dat,  enerzijds,  de 
+leesbaarheidstest dient te gebeuren met het initiële infobord dat bij de start 
+van fase 1 dient opgeleverd te worden (zie bestek p. 24). Anderzijds, geeft 
+het bestek aan dat het de inschrijver is toegelaten om een productieversie 
+
+XII-8677-8/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+functionele 
+
+infobord  slechts 
+
+representatief  kan  zijn  voor  de 
+
+van het infobord aan te bieden dat verschillend is van het initiële infobord 
+dat  wordt  gebruikt  voor  de  leesbaarheidstest,  end-to-end  test  etc.  op 
+voorwaarde  dat  het  initiële  infobord  gebruik  maakt  van  bewezen 
+technologie  én  dat  de  ontwikkelingen  die  nodig  zijn  om  het  initiële 
+infobord  om  te  vormen  tot  een  productieversie  van  het  infobord  in  de 
+offerte gedetailleerd zijn beschreven (zie bestek p. 42).   
+[…] 
+Gezien  de  offerte  van  ARS  geen  enkele  melding  maakt  over  enige 
+ontwikkelingen die  nodig  zijn om de elektronische, layout-technische en 
+optische kenmerken van het geïnstalleerde infobord om te zetten naar een 
+productieversie  ervan,  moet  redelijkerwijs  worden  aangenomen  dat  het 
+finale 
+initiële 
+productieversie van het infobord indien de verschillen dermate minimaal 
+zijn dat ze geen fundamenteel verschil zouden betekenen in de beoordeling 
+van de leesbaarheid en de esthetiek tussen het initiële infobord en de daarop 
+gebaseerde productieversie. 
+Echter,  bij  de  eerste  kennismaking  met  het  infobord  dat  ARS  ter 
+beschikking  stelt  voor  de  leesbaarheidstest  wordt  vastgesteld  dat  dit 
+infobord in belangrijke mate verschillend is van de productieversie zoals 
+deze in de offerte wordt voorgesteld. De verschillen zijn terug te vinden op 
+het  niveau  van  o.a.  het  aantal  displays,  de  displayformaten,  de  display 
+achtergrondkleur,  de 
+toewijzing  van  displays,  de 
+infobord-ophanging … 
+Het  feit  dat  de  verschillen  tussen  het  geïnstalleerde  en  het  aangeboden 
+infobord zich bevinden op aspecten die de leesbaarheid beïnvloeden (zie 
+verder ‘toelichting verschillen tussen het initieel infobord en voorgestelde 
+productieversie  van  het  infobord’),  maakt  dat  de  beoordeling  van  de 
+leesbaarheid van het geïnstalleerde infobord niet representatief is voor de 
+leesbaarheidservaring van het finale infobord. 
+Hierdoor  is  de  jury  niet  in  staat  om  de  leesbaarheid  van  het  infobord 
+eenduidig te beoordelen  en vormt  dit  een inbreuk op de vereiste van het 
+bestek voor de uitvoering van een leesbaarheidstest als onderdeel van de 
+evaluatie van de gunningscriteria. 
+De  fundamentele  verschillen  in  vormgeving,  afmeting  en  methode  van 
+ophanging  tussen  het  geïnstalleerde  infobord  en  productieversie  van  het 
+infobord  maken  tevens  dat  de  evaluatie  van  het  gunningscriterium 
+‘esthetiek’ (als onderdeel van de leesbaarheidstekst [sic]) door de jury niet 
+eenduidig kan uitgevoerd worden. 
+Gelet op het feit dat: 
+- de offerte geen enkele beschrijving geeft van de ontwikkelingen die het 
+geïnstalleerde  infobord  dient  te  ondergaan  om  tot  de  aangeboden 
+productieversie van het infobord te komen, 
+- de leesbaarheidstest op het geïnstalleerde infobord niet representatief is 
+voor de leesbaarheid van het aangeboden infobord, 
+- de beoordeling van de esthetiek (als onderdeel van de leesbaarheidstest) 
+van het geïnstalleerde infobord niet representatief is voor de esthetiek van 
+het aangeboden infobord   
+maakt dat de offerte van ARS substantieel onregelmatig is. 
+
+XII-8677-9/26 
+
+ 
+ 
+Toelichting  verschillen  tussen  het  initieel  infobord  en  de  productieversie 
+van het aangeboden infobord: 
+
+tussen  beide 
+
+in  achtergrondkleur 
+
+1) grijze versus witte achtergrondkleur van de displays: de displays van het 
+geïnstalleerde  infobord  hebben  een  grijze  achtergrondkleur,  de  displays 
+van  het  aangeboden  infobord  hebben  een  witte  achtergrond  kleur.  Het 
+verschil 
+infoborden  geeft  een 
+verschillende leesbaarheidservaring. 
+2)  verschillende  display  formaten:  de  displays  op  het  geïnstalleerde 
+infobord  komen  voor  in  twee  verschillende  formaten,  het  aangeboden 
+infobord maakt slechts gebruik van één enkel display formaat. ln de offerte 
+wordt  nergens  melding  gemaakt  van  het  gebruik  van  displays  met 
+verschillende formaten, maar spreekt men van één type LCD. Verder geeft 
+het  bestek  geen  beschrijving  van  de  ontwikkeling  die  nodig  is  om  het 
+infobord met 2 displayformaten om te zetten tot een infobord met slechts 
+1 displayformaat. 
+3) functionele opsplitsing van displays: de displays van het geïnstalleerde 
+infobord  zijn  ingedeeld  in  functionele  groepen,  nl.  displays  voor 
+aanduiding van het lijnnummer en de vertrektijd versus displays voor de 
+aanduiding van de bestemmingsnaam of een reizigersbericht. Het infobord 
+in  de  offerte  maakt  geen  verwijzing  naar  enige  vorm  van  functionele 
+opsplitsing  en  is  daardoor  qua  samenstelling  en  gebruik  fundamenteel 
+verschillend.  In  de  offerte  wordt  nergens  melding  gemaakt  van  enige 
+ontwikkeling  die  deze 
+functionele  opsplitsing  van  displays  zou 
+wegwerken. 
+4) verschillende achtergrondgrijswaarden : de achtergrondgrijswaarde van 
+een display is bepalend voor het contrast met de tekst en zodoende ook een 
+factor 
+de 
+achtergrondgrijswaarde  van  de  ‘40mm’  displays  verschillend  is  van  de 
+‘20mm’  displays  maakt  dat  het  niet  eenduidig  bepaald  is  welke 
+achtergrondgrijswaarde  er  van  toepassing  zal  zijn  op  de  displays  van  de 
+productieversie van het infobord. M.a.w. het voorkomen van verschillende 
+achtergrondgrijswaarden op het geïnstalleerde infobord laat niet toe om een 
+extrapolatie  te  maken  van  de  te  verwachte  leesbaarheid  van  het  aan  te 
+schaffen infobord.” 
+
+beïnvloedt.  Het 
+
+leesbaarheid 
+
+feit 
+
+dat 
+
+die 
+
+de 
+
+Vervolgens wordt er nog een “[p]ro forma evaluatie leesbaarheid 
+
+van geïnstalleerd infobord” uitgevoerd die eveneens negatief is: 
+
+“Niettegenstaande de substantiële onregelmatigheid van de offerte heeft de 
+jury, in de veronderstelling dat het geïnstalleerde infobord beschouwd zou 
+worden als de productieversie van het infobord, zich uitgesproken over de 
+leesbaarheid van het geïnstalleerde infobord en dit volgens de bepalingen 
+van de leesbaarheidstest zoals in het bestek beschreven. 
+De evaluatie van de leesbaarheidstest van het geïnstalleerde infobord is als 
+volgt : 
+
+XII-8677-10/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+1)  de  tekst  op  het  geïnstalleerde  infobord  is  niet  leesbaar  wanneer  dit 
+geobserveerd  wordt  vanop  de  uithoeken  (5  meter  @  30  graden)  van  de 
+minimale vereiste zichtbaarheidszone. De observatie werd uitgevoerd bij 
+zonnig daglicht en een heldere hemel.   
+2)  de  afstand  voor  leesbaarheid  valt  binnen  de  minimale  vereiste 
+zichtbaarheidszone  wanneer  druppelvorming  ten  gevolge  van  regenval 
+zich op de displays van het infobord voordoet.   
+3) bij observatie tijdens de avond (omstreeks 20u op 27 september 2018 - 
+goede  weersomstandigheden)  is  de  tekst  van  het  infobord  binnen  het 
+vooropgestelde  minimale  zichtbaarheidszone  niet  leesbaar  wanneer  de 
+backlight-verlichting  van  de  infolijnen  door  het  infobord  automatisch 
+wordt uitgeschakeld. Het uitvallen van de backlight-verlichting van één of 
+meerdere infolijnen wordt meermaals tijdens de avondobservatie waarge-
+nomen. De uitval van de backlight duurt gemiddeld 3 minuten en treedt op 
+wanneer doorkomstinformatie op de infolijn getoond wordt. 
+De observatie van de jury dat de tekst op het infobord onder gewone of bij 
+speciale (regen) condities niet leesbaar is binnen de in het bestek bepaalde 
+minimale  vereiste  zichtbaarheidszone  maakt  dat  het  geïnstalleerde 
+infobord niet voldoet aan de minimale vereisten van het bestek en dat de 
+offerte  van  ARS  daardoor  als  substantieel  onregelmatig  moet  worden 
+beschouwd.” 
+
+Wat  de  gekozen  inschrijver  betreft,  wordt  vastgesteld  dat  het 
+
+voor de leesbaarheidstest geïnstalleerde infobord  overeenstemt  met  het  infobord 
+
+dat in de offerte wordt voorgesteld en dat het bord de test doorstaat. 
+
+Gelet op de substantiële onregelmatigheid van de offerte van de 
+
+verzoekende  partij,  wordt  haar  offerte  niet  nader  onderzocht.  De  offerte  van  de 
+
+gekozen  inschrijver  wordt  wel  nader  onderzocht.  Er  wordt  vastgesteld  dat  de 
+
+offerte van de gekozen inschrijver voldoet aan alle voorwaarden en voor alle tests 
+
+geslaagd is. Het gunningsverslag besluit dan ook om de opdracht te gunnen aan de 
+
+ab Axentia Technologies. 
+
+3.7. 
+
+Op  12  december  2018  beslist  de  verwerende  partij  om  de 
+
+opdracht te gunnen aan de ab Axentia Technologies. Dit is de bestreden beslissing. 
+
+3.8. 
+
+Met  een  aangetekende  brief  en  een  e-mailbericht  van 
+
+18 december 2018 geeft de verwerende partij kennis aan de verzoekende partij van 
+
+de bestreden beslissing.   
+
+XII-8677-11/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+IV. Schorsingsvoorwaarden 
+
+4.1. 
+
+Krachtens artikel 17, §§ 1 en 4, van de gecoördineerde wetten op 
+
+de Raad van State kan tot schorsing van de tenuitvoerlegging bij uiterst dringende 
+
+noodzakelijkheid  slechts  worden  besloten  onder  de  dubbele  voorwaarde  dat 
+
+minstens één ernstig middel wordt aangevoerd dat de nietigverklaring van de akte 
+
+of  het  reglement  prima  facie  kan  verantwoorden  en  dat  een  uiterst  dringende 
+
+noodzakelijkheid voorhanden is die onverenigbaar is met de behandelingstermijn 
+
+van de gewone vordering tot schorsing. 
+
+4.2. 
+
+Te dezen is evenwel ook de wet van 17 juni 2013 ‘betreffende de 
+
+motivering,  de  informatie  en  de  rechtsmiddelen  inzake  overheidsopdrachten, 
+
+bepaalde  opdrachten  voor  werken,  leveringen  en  diensten  en  concessies’  van 
+
+toepassing. 
+
+Krachtens  artikel  15,  eerste  lid,  van  die  wet  kan  de  uitvoering 
+
+worden  geschorst  van  de  thans  bestreden  beslissing  in  aanwezigheid  van  een 
+
+ernstig middel of een klaarblijkelijke onwettigheid. 
+
+Overeenkomstig  artikel  15,  tweede  lid,  echter  wordt  de 
+
+vordering tot schorsing voor de Raad van State uitsluitend ingesteld volgens een 
+
+procedure bij uiterst dringende noodzakelijkheid. 
+
+Er  dient  te  dezen  dan  ook  enkel  nog  te  worden  onderzocht  of 
+
+minstens  één  ernstig  middel  wordt  aangevoerd,  dan  wel  een  klaarblijkelijke 
+
+onwettigheid  aanwezig  is,  die  de  nietigverklaring  van  de  bestreden  beslissing 
+
+kunnen verantwoorden. 
+
+XII-8677-12/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+V. Onderzoek van de middelen 
+
+A. Eerste middel   
+
+Uiteenzetting van het middel 
+
+5.1. 
+
+De verzoekende partij voert de schending aan van “[a]rtikel 74 
+
+van  het  koninklijk  besluit  van  18  juni  2017  plaatsing  overheidsopdrachten  in 
+
+speciale sectoren; [a]rtikel 4, lid 1, 8° en artikel 5, 8° Rechtsbeschermingswet en de 
+
+artikelen 2 en 3 van de formele motiveringswet; [h]et bestek PG111100480 en de 
+
+patere legem-plicht; [h]et zorgvuldigheidsbeginsel”. 
+
+Zij vat het middel als volgt samen: 
+
+als 
+
+substantieel 
+
+“Doordat de verwerende partij de offerte van AXENTIA Technologies AB 
+regelmatig verklaart, waarbij het gunningsverslag en de gunningsbeslissing 
+geen regelmatigheidsonderzoek bevat; 
+Terwijl overeenkomstig artikel 74 van het KB Plaatsing speciale sectoren 
+de aanbesteder dient na te gaan of de offerte regelmatig is waarbij o.a. de 
+niet-naleving  van  het  milieu-,  sociaal  of  arbeidsrecht,  van  de  vereisten 
+bedoeld in de artikelen 46, 50, 51, § 1, 52, 56, § 2, eerste lid, 61, § 2, 62, 81 
+en 89 van het KB Plaatsing speciale sectoren voor zover zij verplichtingen 
+bevatten  t.a.v.  de  inschrijver,  en  van  de  minimale  eisen  en  de  in  de 
+als 
+opdrachtdocumenten 
+substantiële  onregelmatigheden  worden  beschouwd  en  leiden  tot  de 
+nietigheid van de offerte; 
+Dat  de  aanbesteder  verplicht  is  zorgvuldig  te  werk  te  gaan  bij  het 
+onderzoek van de regelmatigheid en alle aspecten van zowel formele als 
+materiële regelmatigheid grondig dient te onderzoeken; Dat de bestreden 
+beslissing  teneinde  te  voldoen  aan  de  formele  motiveringsplicht  de 
+juridische en feitelijke overweging moet vermelden die aan de beslissing 
+tot regelmatig verklaring ten grondslag liggen en die motivering afdoende 
+moet zijn teneinde de belanghebbende in staat te stellen terdege te oordelen 
+of het zin heeft zich tegen de beslissing te verweren met de middelen die 
+het recht hem ter beschikking stelt; 
+Zodat  de  verwerende  partij  de  in  het  middel  aangehaalde  bepalingen  en 
+beginselen miskent.”   
+
+aangemerkte  vereisten 
+
+In de toelichting bij het middel wijst de verzoekende partij erop 
+
+dat uit het gunningsverslag blijkt dat de verwerende partij de ingediende offertes 
+
+heeft onderworpen aan een selectieonderzoek en een onderzoek aan de hand van de 
+
+XII-8677-13/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+gunningscriteria, maar niet dat zij de materiële en formele regelmatigheid van de 
+
+offerte  van  de  gekozen  inschrijver  heeft  onderzocht.  Evenmin  blijkt  of  er  is 
+
+nagegaan of de offerte geen onregelmatigheden bevat waarvan sprake in artikel 74 
+
+van het koninklijk besluit van 18 juni 2017 ‘plaatsing overheidsopdrachten in de 
+
+speciale  sectoren’  (hierna:  koninklijk  besluit  plaatsing  speciale  sectoren  2017) 
+
+(waaronder  de  correcte  ondertekening  van  de  offertes,  de  tijdige  indiening, 
+
+naleving  milieurecht,  sociaal  recht,  arbeidsrecht,  ...),  dan  wel  of  de  besteks-
+
+voorschriften betreffende de ondertekening van de offerte en de bij de offertes te 
+
+voegen documenten al dan niet zijn nageleefd. Dit is volgens de verzoekende partij 
+
+problematisch aangezien de eerdere plaatsingsprocedure werd stopgezet omdat er 
+
+enkel onregelmatige offertes werden ingediend, waarbij de offerte van de gekozen 
+
+inschrijver  substantieel  onregelmatig  was  net  omwille  van  een  gebrek  in  de 
+
+ondertekening. 
+
+Beoordeling 
+
+5.2. 
+
+Artikel 74 van het koninklijk besluit plaatsing speciale sectoren 
+
+2017 dat de verzoekende partij inroept, betreft de regelmatigheid van de offertes en 
+
+vereist in zijn eerste paragraaf, eerste lid, dat “[d]e aanbestedende entiteit [nagaat] 
+
+of de offertes regelmatig zijn”. 
+
+Artikel 4, eerste lid, 8º, van de wet van 17 juni 2013 ‘betreffende 
+
+de  motivering,  de  informatie  en  de  rechtsmiddelen  inzake  overheidsopdrachten, 
+
+bepaalde opdrachten voor werken, leveringen en diensten en concessies’ (hierna: 
+
+de  wet  rechtsbescherming)  bepaalt  dat  de  aanbestedende  instantie  een  gemoti-
+
+veerde beslissing opstelt wanneer zij een opdracht gunt, ongeacht de procedure. 
+
+Artikel 5, 8º, van dezelfde wet vereist dat de in artikel 4 bedoelde 
+
+gemotiveerde  beslissing  de  namen  van  de  inschrijvers  bevat  van  wie  de  offerte 
+
+onregelmatig is bevonden en de juridische en feitelijke motieven voor hun wering. 
+
+De artikelen 2 en 3 van de wet van 29 juli 1991 ‘betreffende de 
+
+uitdrukkelijke  motivering  van  de  bestuurshandelingen’  verplichten  de  overheid 
+
+ertoe in de akte de juridische en feitelijke overwegingen op te nemen die aan de 
+
+beslissing  ten  grondslag  liggen,  en  dit  op  een  “afdoende”  wijze.  Het  afdoende 
+
+XII-8677-14/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+karakter van de motivering betekent dat de motivering pertinent moet zijn, dit wil 
+
+zeggen  dat  ze  duidelijk  met  de  beslissing  te  maken  moet  hebben,  en  dat  ze 
+
+draagkrachtig  moet  zijn,  dit  wil  zeggen  dat  de  aangehaalde  redenen  moeten 
+
+volstaan om de beslissing zowel in feite als in rechte te dragen. 
+
+5.3. 
+
+De verzoekende partij voert in dit middel aan dat uit de motieven 
+
+zoals  uitgedrukt  in  het  gunningsverslag  niet  blijkt  dat  de  regelmatigheid  van  de 
+
+offerte van de gekozen inschrijver werd onderzocht. 
+
+Indien uit het administratief dossier blijkt dat de regelmatigheid 
+
+van  de  offertes  wel  degelijk  werd  onderzocht  en  dat  er  daarbij  geen  bijzondere 
+
+problemen zijn gerezen, lijkt de formelemotiveringsplicht niet te vereisen dat dit 
+
+regelmatigheidsonderzoek in extenso wordt weergegeven in het gunningsverslag 
+
+of  in  de  bestreden  beslissing.  Het  volstaat  vanuit  het  oogpunt  van  de  op  de 
+
+aanbestedende  overheid  rustende  plicht  om  haar  beslissing  te  omkleden  met 
+
+motieven, dat uit die beslissing blijkt – of minstens kan worden afgeleid – dat de 
+
+regelmatigheid  van  de  offertes  werd  betrokken  bij  het  nemen  van  de 
+
+gunningsbeslissing. Zulks lijkt te dezen het geval. Bij het administratief dossier is 
+
+alleszins een stuk gevoegd dat op het eerste gezicht de stelling van de verwerende 
+
+partij lijkt te ondersteunen dat de regelmatigheid van de offertes wel degelijk werd 
+
+onderzocht  door  de  aanbestedende  overheid,  ook  al  is  dat  onderzoek  niet 
+
+overgenomen 
+
+in  het  gunningsverslag  en  de  gunningsbeslissing.  Uit  het 
+
+gunningsverslag kan de verzoekende partij in elk geval afleiden dat niet zomaar 
+
+over die fase van de plaatsingsprocedure werd heengestapt. Het gunningsverslag 
+
+vermeldt immers dat de offertes voldoen aan de vereisten van het bestek en wijdt, 
+
+weze het prima facie dan wel ten onrechte onder de hoofding selectie, aandacht aan 
+
+het prijsonderzoek. 
+
+Er  lijkt  niet  van  de  aanbestedende  overheid  te  moeten  worden 
+
+vereist  dat  zij,  wanneer  er  geen  regelmatigheidsproblemen  rijzen,  voor  elk 
+
+mogelijk  aspect  dat  aan  de  regelmatigheid  van  de  offertes  raakt  in  detail  de 
+
+positieve redenen te kennen geeft waarom de offerte niet onregelmatig zou moeten 
+
+worden  verklaard.  In  dit  verband  kan  erop  worden  gewezen  dat  het  door  de 
+
+verzoekende partij ingeroepen artikel 5, 8º, van de wet rechtsbescherming, enkel 
+
+vereist dat de gemotiveerde beslissing de namen van de inschrijvers bevat van wie 
+
+XII-8677-15/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+de offerte onregelmatig is bevonden en de juridische en feitelijke motieven voor 
+
+hun wering. 
+
+Waar  de  verzoekende  partij  verwijst  naar  problemen  met  de 
+
+offerte  van  de  gekozen 
+
+inschrijver 
+
+inzake  ondertekening 
+
+in  de 
+
+initiële 
+
+plaatsingsprocedure, blijkt niet dat deze problemen zich thans in het kader van de 
+
+nieuwe  plaatsingsprocedure  hebben  herhaald.  Bovendien  merkt  de  verwerende 
+
+partij in dit verband niet ten onrechte op dat de offertes nu niet meer via e-tendering 
+
+moesten  worden  ingediend,  zodat  een  herhaling  van  het  probleem  met  de 
+
+ondertekening van het indieningsrapport niet meer aan de orde was. 
+
+Waar  de  verzoekende  partij  ten  slotte  nog  verwijst  naar  het 
+
+normdoel van de formelemotiveringsplicht, kan worden opgemerkt dat prima facie 
+
+dat doel te dezen lijkt te zijn bereikt. 
+
+5.4. 
+
+Het eerste middel is niet ernstig. 
+
+B. Tweede middel 
+
+Uiteenzetting van het middel 
+
+5.5. 
+
+De verzoekende partij voert de schending aan van “[a]rtikel 74 
+
+van het koninklijk besluit van 18 juni 2017 van plaatsing overheidsopdrachten in 
+
+de speciale sectoren; [a]rtikel 4, lid 1, 8º en artikel 5, 8° Rechtsbeschermingswet en 
+
+de  artikelen  2  en  3  van  de  formele  motiveringswet;  [h]et  bestek  PG111100480; 
+
+[d]e  materiële  motiveringsplicht,  de  patere  legem-plicht  en  het  evenredigheids-
+
+beginsel als beginselen van behoorlijk bestuur”. 
+
+Het middel omvat twee onderdelen. 
+
+Het eerste middelonderdeel wordt als volgt uiteengezet: 
+
+“Doordat verwerende partij de offerte van verzoekende partij substantieel 
+onregelmatig  verklaart  omdat  er  in  de  offerte  geen  beschrijving  zou  zijn 
+van de ontwikkelingen die het geïnstalleerde infobord dient te ondergaan, 
+
+XII-8677-16/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+de leesbaarheidstest op het geïnstalleerde infobord niet representatief zou 
+zijn  inzake  leesbaarheid  en  de  beoordeling  van  de  esthetiek  van  het 
+geïnstalleerde infobord niet representatief is;   
+Terwijl  op  grond  van  artikel  74,  §  1,  lid  3  KB  Plaatsing  een  offerte 
+substantieel  onregelmatig  is  wanneer  ze  van  aard  is  de  inschrijver  een 
+discriminerend voordeel te bieden, tot concurrentievervalsing te leiden, de 
+beoordeling van de offerte van de inschrijver of de vergelijking ervan met 
+de andere offertes te verhinderen, of de verbintenis van de inschrijver om 
+de  opdracht  onder  de  gestelde  voorwaarden  uit  te  voeren  onbestaande, 
+onvolledig of onzeker te maken;   
+Dat op grond van artikel 5, 8° Rechtsbeschermingswet en de artikelen 2 en 
+3  Formele  motiveringswet  de  beslissing  tot  gunning  van  een  overheids-
+opdracht  de  motieven  moeten  bevatten  die  duidelijk  maken  waarom  een 
+aanbestedende  overheid  een  offerte  substantieel  onregelmatig  heeft 
+verklaard;  dat  in  het  licht  van  artikel  74,  §  1,  lid  3  KB  Plaatsing  de 
+gunningsbeslissing moet duidelijk maken welk motief van deze bepaling in 
+het  concrete  geval  een  vaststelling  van  substantiële  onregelmatigheid 
+rechtvaardigt; 
+Dat  de  motieven,  die  verwerende  partij  in  de  bestreden  beslissing 
+formaliseert  om  de  offerte  van  de  verzoekende  partij  substantieel 
+onregelmatig te verklaren, geen betrekking hebben op het infobord zoals 
+aangeboden  in  de  offerte;  dat  bijgevolg  voornoemde  motieven  niet  de 
+onregelmatigheid van de offerte vaststellen; 
+Dat  voor  zover  het  motief  inzake  de  beweerde  afwezigheid  van 
+ontwikkelingen  die  het  geïnstalleerde  infobord  diende  te  ondergaan 
+betrekking zou hebben op de regelmatigheid van de offerte, quod non, dit 
+motief  geen  rekening  houdt  met  de  inhoud  van  de  offerte  van  de 
+verzoekende partij en dus niet pertinent is; dat immers verzoekende partij 
+in haar offerte het infobord aanbiedt dat ze ook effectief zal installeren en 
+bijgevolg ook geen ontwikkelingen meer noodzakelijk waren; 
+Dat de bestreden beslissing geen enkel motief bevat die duidelijk maakt dat 
+de beweerde onregelmatigheden in de offerte van verzoekende partij een 
+discriminerend  voordeel  bieden,  tot  concurrentievervalsing  leiden,  de 
+beoordeling van de offerte van de inschrijver of de vergelijking ervan met 
+de andere offertes verhindert, of de verbintenis van de inschrijver om de 
+opdracht  onder  de  gestelde  voorwaarden  uit  te  voeren  onbestaande, 
+onvolledig of onzeker maakt.”   
+
+Het tweede middelonderdeel wordt als volgt uiteengezet:   
+
+“Doordat de jury bij de beoordeling van de leesbaarheidstest vertrekt van 
+het uitgangspunt dat het geïnstalleerde infobord en de productieversie van 
+het  infobord  in  belangrijke  mate  verschillend  zijn,  terwijl  slechts  sprake 
+kon zijn van minimale verschillen;   
+Dat  de  jury  vaststelt  dat  het  tijdens  de  leesbaarheidstest  geïnstalleerde 
+infobord zou afwijken van de minimale vereisten inzake leesbaarheid;   
+
+XII-8677-17/26 
+
+ 
+ 
+ 
+ 
+ 
+Terwijl op grond van de patere legem-plicht een administratieve overheid 
+de regels die ze voor zichzelf vastlegt ook moet naleven bij het nemen van 
+een individuele beslissing;   
+Dat inzake de leesbaarheidstest het bestek als voorwaarden enkel stelt dat 
+het  bord  volledig  en  goed  leesbaar  moet  zijn  ‘op  elk  tijdstip  van  de  dag 
+binnen  tenminste  een  zone  afgebakend  door  volgende  afstanden  en 
+gezichtshoeken:   
+
+•  Een  verticale  en  longitudinale  gezichtshoek  die  personen  met  een 
+lichaamslengte tussen 120 cm en 200 cm in staat stelt om het scherm 
+te lezen vanop 1 m tot 5 m afstand van de haltepaal.   
+
+•  Een minimale horizontale gezichtshoek van ±30° ten opzichte van de 
+
+verticale as van het scherm.’ (zie blz. 65 van het bestek); 
+
+Dat  uit  de  stukken  van  het  dossier  blijkt  dat  verwerende  partij  heeft 
+aanvaard  dat  verzoekende  partij  tijdens  de  leesbaarheidstest  niet  het 
+infobord hanteerde dat uiteindelijk zou worden gebruikt bij de uitvoering 
+van de overheidsopdracht; dat immers onder meer op bladzijde 10 van het 
+gunningsverslag sprake is van verschillen tussen de productieversie en het 
+geïnstalleerde infobord, die minimaal kunnen zijn;   
+Dat  echter  noch  uit  het  bestek  noch  uit  enige  briefwisseling  blijkt  dat 
+verwerende partij aan de mogelijkheid van een ander geïnstalleerd infobord 
+bijkomende  voorwaarden  heeft  gesteld  dan  degene  die  blijken  uit  het 
+bestek met betrekking tot de leesbaarheidstest en de opgenomen minimale 
+voorwaarden;   
+Dat  de  jury,  door  te  eisen  dat  de  productieversie  en  het  geïnstalleerde 
+infobord slechts minimaal mochten verschillen, voorwaarden toevoegt die 
+de aanbestedende overheid zelf niet eerder had voorzien;   
+En  terwijl  volgens  het  bestek  PG111100480  de  minimale  voorwaarden 
+inzake leesbaarheid van het infobord de volgende zijn: ‘De informatie die 
+op het scherm van het infobord wordt weergegeven dient volledig en goed 
+leesbaar te zijn (rekening houdend ook met speciale karakters zoals é, à, ä, 
+...), op elke tijdstip van de dag, binnen tenminste een zone afgebakend door 
+volgende afstanden en gezichtshoeken:   
+
+•  Een  verticale  en  longitudinale  gezichtshoek  die  personen  met  een 
+lichaamslengte tussen 120 cm en 200 cm in staat stelt om het scherm 
+te lezen vanop 1 m tot 5 m afstand van de haltepaal.   
+
+•    Een minimale horizontale gezichtshoek van ± 30º ten opzichte van de 
+
+verticale as van het scherm.’   
+
+Dat  op  grond  van  de  materiële  motiveringsplicht  een  administratieve 
+overheid haar beslissing moet steunen op de juiste feitelijke gegevens en 
+rechtens aanvaardbare motieven;   
+Dat  wanneer  verwerende  partij  in  het  gunningsverslag  stelt  dat  het 
+geïnstalleerde infobord niet leesbaar is zij niet vertrekt van alle minimale 
+vereisten opgelegd in het bestek; dat aldus ten onrechte verwerende partij 
+zich baseert op een horizontale gezichtshoek van 30º, daar waar het bestek 
+het  heeft  over  een  horizontale  gezichtshoek  van  ±  30º;  dat  aldus 
+verwerende partij niet de voorwaarden toepast die ze zelf heeft voorzien in 
+het  bestek;  dat  dit  verschillend  uitgangspunt  evidenterwijze  een  invloed 
+
+XII-8677-18/26 
+
+ 
+ 
+inzake 
+
+infobord 
+
+heeft  gehad  op  de  evaluatie  van  de  leesbaarheidstest,  minstens  kan 
+verwerende partij die mogelijkheid niet uitsluiten; 
+Dat daarnaast het tweede motief waarom verwerende partij oordeelt dat het 
+geïnstalleerde 
+leesbaarheid  niet  voldoet  aan  de 
+minimumeisen, nl. inzake de backlight verlichting, op het eerste zicht niet 
+draagkrachtig is; dat schijnbaar slechts op één moment er sprake is van een 
+niet-leesbaar infobord, nl. omstreeks 20 u op 27 september 2018; dat dit 
+niet representatief is en het ook niet evenredig zou zijn om enkel op deze 
+grondslag de hele offerte onregelmatig te verklaren of de leesbaarheidstest 
+niet te laten gelden; dat er weliswaar sprake is van een backlight verlichting 
+die meermaals is uitgevallen, doch er geen besluiten worden uitgetrokken 
+tweede  motief  niet  kan 
+inzake 
+verantwoorden  waarom  in  het  raam  van  de  leesbaarheidstest  het  door 
+verzoekende  partij  geïnstalleerde  infobord  niet  zou  voldoen  aan  de 
+minimale eisen.” 
+
+leesbaarheid;  dat  bijgevolg  dit 
+
+Beoordeling 
+
+Eerste middelonderdeel 
+
+5.6. 
+
+In  een  eerste  middelonderdeel  voert  de  verzoekende  partij  in 
+
+essentie aan dat er in het gunningsverslag en de gunningsbeslissing niet afdoende 
+
+wordt gemotiveerd waarom haar offerte substantieel onregelmatig is in het licht 
+
+van artikel 74, § 1, derde lid, van het koninklijk besluit plaatsing speciale sectoren 
+
+2017. Die bepaling luidt: 
+
+“Een  offerte  is  substantieel  onregelmatig  wanneer  ze  van  aard  is  de 
+inschrijver  een  discriminerend  voordeel  te  bieden,  tot  concurrentie-
+vervalsing te leiden, de beoordeling van de offerte van de inschrijver of de 
+vergelijking ervan met de andere offertes te verhinderen, of de verbintenis 
+van  de  inschrijver  om  de  opdracht  onder  de  gestelde  voorwaarden  uit  te 
+voeren onbestaande, onvolledig of onzeker te maken.” 
+
+De verwerende partij merkt op het eerste gezicht terecht op dat 
+
+de verzoekende partij daarbij het vierde lid van artikel 74, § 1, uit het oog lijkt te 
+
+verliezen, dat luidt: 
+
+“De  volgende  onregelmatigheden  worden  met  name  als  substantieel 
+beschouwd : 
+      […] 
+
+XII-8677-19/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+      3°  de  niet-naleving  van  de  minimale  eisen  en  de  vereisten  die  als 
+substantieel worden aangemerkt in de opdrachtdocumenten.” 
+
+5.7. 
+
+Uit  het  gunningsverslag  (bladzijde  8-11)  blijkt  reeds  op  het 
+
+eerste gezicht dat de verzoekende partij bij het uitvoeren van de leesbaarheidstest 
+
+op  de  testsite  een  infobord  heeft  geïnstalleerd  dat  op  diverse  punten  behoorlijk 
+
+afwijkt van het infobord dat zij in haar offerte aan de aanbestedende overheid heeft 
+
+voorgesteld. 
+
+De verwerende partij wijst er terecht op dat in de offerte van de 
+
+verzoekende partij geen sprake is van een initiële versie en een productieversie van 
+
+het infobord, noch worden de vereiste ontwikkelingen om een initieel infobord om 
+
+te vormen naar een productiebord beschreven in de offerte. Aldus diende het bord 
+
+dat de verzoekende partij op de testsite zou plaatsen in beginsel het bord te zijn 
+
+zoals  omschreven  in  de  offerte,  dat  is  in  de  termen  van  het  bestek  aldus  de 
+
+productieversie. 
+
+In het licht van die vaststellingen, die overigens in hun kern niet 
+
+lijken te worden betwist door de verzoekende partij, lijkt het gunningsverslag wel 
+
+degelijk  afdoende  de  redenen  uiteen  te  zetten  waarom  er  wordt  besloten  tot  de 
+
+substantiële  onregelmatigheid.  Het  op  de  testsite  geplaatste  bord  blijkt  immers 
+
+volgens de aanbestedende overheid niet te voldoen aan de minimale eisen van het 
+
+bestek.  Aldus  lijkt  de  verwerende  partij  niet  ten  onrechte  tot  het  besluit  te  zijn 
+
+gekomen  dat  de  offerte  van  de  verzoekende  partij  is  aangetast  door  de 
+
+onregelmatigheid  bedoeld  in  artikel  74,  §  1,  vierde  lid,  3º,  van  het  koninklijk 
+
+besluit  plaatsing  speciale  sectoren  2017,  en  dus  door  een  substantiële  onregel-
+
+matigheid. Minstens kan er worden vastgesteld dat, door een afwijkend bord op de 
+
+testsite  te  plaatsen,  de  verbintenis  van  de  inschrijver  om  de  opdracht  onder  de 
+
+gestelde  voorwaarden  uit  te  voeren  onbestaande,  onvolledig  of  onzeker  is 
+
+geworden, zodat de aanbestedende overheid ook op die grond tot de substantiële 
+
+onregelmatigheid  mocht  besluiten.  Ook  lijkt  die  handelwijze  prima  facie  tot 
+
+gevolg  te  hebben  dat  de  beoordeling  van  de  offerte  van  de  verzoekende  partij 
+
+erdoor wordt verhinderd, nu er voor de test een infobord wordt aangeboden dat niet 
+
+het bord is omschreven in de offerte. 
+
+XII-8677-20/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Dat  deze  motieven  geen  betrekking  hebben  op  het  bord 
+
+aangeboden  in  de  offerte  en  dat  de  verzoekende  partij  wel  degelijk  het  bord 
+
+aangeboden in de offerte zal installeren bij de uitvoering van de opdracht, zoals de 
+
+verzoekende partij nog doet gelden, is in het licht van het voorgaande reeds op het 
+
+eerste gezicht irrelevant. 
+
+5.8. 
+
+Het eerste onderdeel van het tweede middel is niet ernstig. 
+
+Tweede middelonderdeel 
+
+5.9. 
+
+In het tweede middelonderdeel voert de verzoekende partij in de 
+
+eerste plaats een kritiek op de leesbaarheidstest die werd uitgevoerd op het door 
+
+haar op de testsite geïnstalleerde infobord. 
+
+Er  blijkt  echter  op  het  eerste  gezicht  niet  welk  belang  de 
+
+verzoekende partij heeft bij die kritiek. Immers werd haar offerte als substantieel 
+
+onregelmatig geweerd, gelet op het feit dat zij op de testsite een afwijkend infobord 
+
+heeft  geplaatst.  Die  vaststelling  lijkt,  zoals  reeds  opgemerkt,  op  zich  reeds  te 
+
+volstaan  om  de  substantiële  onregelmatigverklaring  van  de  offerte  van  de 
+
+verzoekende  partij  afdoende  te  ondersteunen.  De  daaropvolgende  pro-forma-
+
+beoordeling  van  het  testbord  van  de  verzoekende  partij  in  het  gunningsverslag, 
+
+waaromtrent uitdrukkelijk wordt opgemerkt dat deze gebeurt “[n]iettegenstaande 
+
+de substantiële onregelmatigheid van de offerte”, dient aldus op het eerste gezicht 
+
+als een ten overvloede en aldus overtollig motief te worden aangemerkt. 
+
+In die mate dient het middel prima facie te worden verworpen als 
+
+niet ontvankelijk bij gebrek aan belang. 
+
+5.10. 
+
+Waar de verzoekende partij in dit middelonderdeel nog lijkt te 
+
+doen  gelden  dat  het  haar  wél  was  toegelaten  om  een  afwijkend  infobord  te 
+
+installeren op de testsite, dient te worden opgemerkt dat de verwerende partij in dit 
+
+verband terecht doet gelden dat de verzoekende partij niet de toestemming had om 
+
+een volledig ander infobord te gebruiken voor de leesbaarheidstest dan het bord 
+
+aangeboden in de offerte. De verwerende partij mag worden bijgevallen waar zij in 
+
+XII-8677-21/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+dit verband opmerkt dat zulks het uitvoeren van de betrokken testen zinledig zou 
+
+maken. 
+
+Waar  de  verzoekende  partij  deze  grief  steunt  op  haar 
+
+e-mailbericht van 14 september 2018 aan de verwerende partij, dient in de eerste 
+
+plaats te worden opgemerkt dat het gaat om een eenzijdig stuk, uitgaande van de 
+
+verzoekende partij zelf, dat als zodanig geen toestemming kan inhouden om een 
+
+afwijkend  infobord  te  gebruiken.  Bovendien  wordt  in  dat  e-mailbericht  enkel 
+
+gesteld dat het infobord dat de verzoekende partij op de testsite zal installeren “op 
+
+enkele elementen zoals behuizing [zal] af[wijken] van de finale versie”, wat prima 
+
+facie  op  veeleer  minieme  afwijkingen  lijkt  te  wijzen.  Dat  de  verwerende  partij 
+
+dergelijke geringe afwijkingen door de vingers heeft gezien en geen uitdrukkelijk 
+
+bezwaar heeft geformuleerd in antwoord op dit e-mailbericht, lijkt op zich dan ook 
+
+niet  in  te  houden  dat  het  de  verzoekende  partij  meteen  was  toegelaten  om  een 
+
+testbord  te  gebruiken  dat  de  in  het  gunningsverslag  vastgestelde  substantiële 
+
+afwijkingen vertoont. 
+
+De betrokken grief is dan ook niet ernstig. 
+
+5.11. 
+
+Het tweede onderdeel van het tweede middel is evenmin ernstig. 
+
+C. Derde middel 
+
+Uiteenzetting van het middel 
+
+5.12. 
+
+De verzoekende partij voert de schending aan van “[h]et legali-
+
+teits- en rechtszekerheidsbeginsel als algemeen beginsel van behoorlijk bestuur”. 
+
+Zij vat het middel als volgt samen: 
+
+“Doordat verwerende partij oordeelt bij besluit van 12 december 2018 dat 
+het  aangeboden  infobord  niet  voldoet  aan  de  minimale  vereisten  van  de 
+leesbaarheidstest; 
+Terwijl bij besluit van 18 augustus 2018 verwerende partij geoordeeld heeft 
+dat  het  aangeboden  infobord  wel  voldoet  aan  de  minimale  vereisten  in 
+deel 3 van het bestek aangezien zij verzoekende partij selecteert; 
+
+XII-8677-22/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Dat  de  beslissing  van  18  augustus  2018  een  administratieve  rechts-
+handeling is die rechten verleent en slechts in geval van onregelmatigheid 
+kan worden ingetrokken binnen de termijn waarbinnen die rechtshandeling 
+nog in aanmerking komt voor vernietiging door de Raad van State; 
+Dat de termijn waarbinnen de beslissing van 18 augustus 2018 kon worden 
+ingetrokken reeds lang verstreken was op 12 december 2018; 
+Dat  de  beslissing  waarbij  geoordeeld  werd  dat  het  aangeboden  infobord 
+voldeed aan de minimale vereisten van het bestek, en dus ook deze van de 
+leesbaarheidstest, definitief is en verwerende partij bindt”. 
+
+In de toelichting bij het middel wijst de verzoekende partij erop 
+
+dat  op  grond  van  het  bestek  een  inschrijver  slechts  geselecteerd  mocht  worden 
+
+indien het aangeboden infobord in de offerte voldeed aan de minimale vereisten 
+
+opgenomen in het derde deel van het bestek, hetgeen door de inschrijvers diende te 
+
+worden aangetoond door middel van drie referenties. Indien de inschrijver werd 
+
+geselecteerd, hield dit volgens de verzoekende partij in dat het infobord, voorwerp 
+
+van de referenties, voldeed aan de minimale vereisten in het derde deel van het 
+
+bestek. Dat dit de lezing is die de verwerende partij gaf aan deze besteksbepaling 
+
+en  zodoende  de  betekenis  van  de  selectie  van  een  inschrijver,  volgt  volgens  de 
+
+verzoekende partij uit de niet-selectie van de tv IRTIS2. 
+
+Aan  inschrijvers  werd  de  mogelijkheid  geboden  om  in  te 
+
+schrijven met een ander infobord, dat afwijkt van het infobord opgenomen in de 
+
+referenties, op voorwaarde dat de inschrijver aantoont dat dit “andere infobord” 
+
+minstens  functioneel  en  technisch  gelijkwaardig  was  aan  het  infobord  in  de 
+
+referenties  én  dat  het  geen  afbreuk  deed  aan  de  technische  bekwaamheid,  de 
+
+beroepsbekwaamheid  en  de  systeemoplossing,  zo  argumenteert  de  verzoekende 
+
+partij. In het kader van de selectie mocht de inschrijver dus de minimumvereisten 
+
+aantonen  aan  de  hand  van  een  “ander”  infobord  dan  datgene  uit  de  referentie. 
+
+Hieruit  volgt  dat  een  inschrijver  maar  kon  worden  geselecteerd  indien  het 
+
+aangeboden infobord, wanneer dit niet 100 % overeenstemde met het infobord uit 
+
+de referenties, minstens functioneel en technisch gelijkwaardig was én indien de 
+
+inschrijver  aantoonde  dat  dit  infobord  voldeed  aan  de  minimumeis  van  het 
+
+“beproefd concept”. Indien het aangeboden  infobord zodoende  niet  voldeed aan 
+
+het beproefd concept, mocht de inschrijver niet worden geselecteerd en werd niet 
+
+aangetoond dat er voldaan was aan de minimale eisen van het derde deel van het 
+
+bestek. Bij beslissing van 18 augustus 2018 werd de verzoekende partij geselec-
+
+XII-8677-23/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+teerd en werd dus geoordeeld dat het infobord van de verzoekende partij voldeed. 
+
+De selectiebeslissing is een administratieve rechtshandeling die rechten verleende 
+
+aan de verzoekende partij aangezien deze beslissing de verzoekende partij het recht 
+
+gaf om door te gaan naar de volgende fase van de procedure. Deze beslissing is 
+
+bovendien definitief geworden op 18 oktober 2018 aangezien geen beroep werd 
+
+aangetekend bij de Raad van State, zo doet de verzoekende partij gelden. Door bij 
+
+besluit  van  12  december  2018  te  oordelen  dat  het  infobord  van  de  verzoekende 
+
+partij niet voldeed aan de minimumeisen van het bestek, zijnde de leesbaarheids-
+
+eisen  in  deel  3  van  het  bestek,  gaat  de  verwerende  partij  volledig  in  tegen  de 
+
+beslissing  van  18  augustus  2018  en  negeert  zij  volledig  het  bestaan  van  deze 
+
+rechtsverlenende  en  definitieve  beslissing.  Door  zo  te  handelen  heeft  de 
+
+verwerende  partij  als  het  ware  haar  eerdere  beslissing  van  18  augustus  2018 
+
+ingetrokken  en  dit  in  strijd  met  het  rechtszekerheidsbeginsel,  zo  besluit  de 
+
+verzoekende partij. 
+
+Beoordeling 
+
+5.13. 
+
+In het derde middel doet de verzoekende partij in essentie gelden 
+
+dat de verwerende partij in de bestreden beslissing ten onrechte terugkomt op haar 
+
+eerdere selectiebeslissing door de offerte van de verzoekende partij onregelmatig 
+
+te verklaren. Volgens de verzoekende partij houdt de eerdere selectiebeslissing in 
+
+dat haar offerte reeds regelmatig werd bevonden. 
+
+In de eerste plaats dient in dit verband te worden opgemerkt dat 
+
+de beslissing om een inschrijver te selecteren principieel niet lijkt in te houden dat 
+
+de aanbestedende overheid daarmee zou vooruitlopen op en afbreuk zou doen aan 
+
+haar daarop nog te volgen beslissing over de regelmatigheid van de offerte. Een 
+
+aanbestedende overheid die zich uitspreekt over de selectie van een inschrijver en 
+
+over de geldigheid van diens referenties oordeelt daarmee in beginsel niet over de 
+
+regelmatigheid  van  zijn  offerte.  Evenmin  kan  er  worden  aanvaard  dat  een 
+
+aanbestedende  overheid  door  een  selectiebeslissing  te  nemen  het  recht  zou 
+
+verliezen  om  zich  naderhand  nog  in  negatieve  zin  uit  te  spreken  over  de 
+
+regelmatigheid van de betrokken offerte. 
+
+XII-8677-24/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Te  dezen  dient  bovendien  te  worden  opgemerkt,  zoals  de 
+
+verwerende partij dat doet, dat het middel uitgaat van een verkeerde premisse. Bij 
+
+het nemen van de selectiebeslissing werd immers het infobord betrokken zoals dat 
+
+door de verzoekende partij werd voorgesteld in de offerte en werden de referenties 
+
+die  op  dat  type  infobord  betrekking  hebben  beoordeeld.  In  zoverre  er  in  de 
+
+selectiebeslissing al uitspraak zou worden gedaan over de regelmatigheid van de 
+
+offerte, lijkt die beoordeling aldus enkel betrekking te hebben op het op papier in 
+
+de offerte aangeboden bord en niet op het uiteindelijk op de testsite geïnstalleerde 
+
+infobord. 
+
+Zoals  reeds  vastgesteld,  steunt  de  substantiële  onregelmatig-
+
+verklaring van de offerte van de verzoekende partij te dezen immers niet op een 
+
+gebrek in het infobord dat werd aangeboden in de offerte als dusdanig. Wel steunt 
+
+deze op het feit dat de verzoekende partij bij het uitvoeren van de testen plots een 
+
+heel ander infobord blijkt voor te stellen aan de aanbestedende overheid. Van dit 
+
+type  infobord  was  geen  sprake  in  de  offerte  en  het  op  de  testsite  geïnstalleerde 
+
+infobord  blijkt  volgens  de  aanbestedende  overheid  bovendien  aanzienlijk  af  te 
+
+wijken  van  de  minimale  eisen  in  het  bestek.  Het  is  op  die  grond  dat  de  offerte 
+
+substantieel  onregelmatig  werd  verklaard,  zoals  reeds  vastgesteld  op  het  eerste 
+
+gezicht niet ten onrechte. 
+
+5.14. 
+
+Het derde middel is niet ernstig. 
+
+VI. Besluit 
+
+6. 
+
+Geen  van  de  middelen  is  ernstig  gebleken.  De  vordering  tot 
+
+schorsing  bij  uiterst  dringende  noodzakelijkheid  dient  dan  ook  te  worden 
+
+verworpen. 
+
+BESLISSING 
+
+1. De Raad van State verwerpt de vordering. 
+
+XII-8677-25/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2. De verzoekende partij wordt verwezen in de kosten van de vordering tot 
+
+schorsing bij uiterst dringende noodzakelijkheid, begroot op een rolrecht van 
+
+200  euro,  een  bijdrage  van  20  euro,  en  een  rechtsplegingsvergoeding  van 
+
+700 euro, die verschuldigd is aan de verwerende partij. 
+
+Dit  arrest  is  uitgesproken  te  Brussel,  in  openbare  terechtzitting  van  31  januari 
+
+2019, door de Raad van State, XIIe kamer, samengesteld uit: 
+
+Johan Bovin, 
+
+staatsraad, 
+
+waarnemend voorzitter, 
+
+bijgestaan door 
+
+Greta Scheveneels, 
+
+griffier. 
+
+  De griffier 
+
+De voorzitter 
+
+Greta Scheveneels 
+
+Johan Bovin 
+
+XII-8677-26/26 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

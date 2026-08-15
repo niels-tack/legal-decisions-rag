@@ -68,7 +68,20 @@ class Chunk(BaseModel):
 class ChunkResult(BaseModel):
     """One matched chunk within a case search result."""
 
-    section: str = Field(..., description="One of: facts, arguments, reasoning, ruling")
+    section: str = Field(
+        ...,
+        description=(
+            "Verbatim section heading or label. For GHCC this is a fixed label "
+            "(e.g. 'reasoning'); for RVS it is the original heading text."
+        ),
+    )
+    section_category: str | None = Field(
+        None,
+        description=(
+            "Cross-court semantic category (e.g. 'facts', 'reasoning', 'operative'). "
+            "None when the heading is not in the body's category map."
+        ),
+    )
     paragraph_number: str | None = Field(
         ..., description="This chunk's own numbered identifier, e.g. 'B.7.3'"
     )

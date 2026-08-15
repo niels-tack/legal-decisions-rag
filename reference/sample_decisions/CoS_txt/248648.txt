@@ -1,0 +1,1316 @@
+RAAD VAN STATE, AFDELING BESTUURSRECHTSPRAAK 
+
+In zake: 
+
+VOORZITTER VAN DE XIIe KAMER 
+
+A R R E S T 
+
+nr. 248.648 van 19 oktober 2020 
+in de zaak A. 231.806/XII-8959 
+
+ de NV TELEVIC HEALTHCARE 
+ bijgestaan en vertegenwoordigd door   
+advocaat Ignace Hameeuw 
+kantoor houdend te 8800 Roeselare 
+Kaaistraat 56 
+bij wie woonplaats wordt gekozen 
+
+tegen: 
+
+het UNIVERSITAIR ZIEKENHUIS GENT (UZ Gent) 
+bijgestaan en vertegenwoordigd door 
+advocaten Frederik Vandendriessche, Leen De Vuyst en 
+Louis François 
+kantoor houdend te 1000 Brussel 
+Loksumstraat 25 
+bij wie woonplaats wordt gekozen 
+
+Tussenkomende partij: 
+
+de NV TELECOM INTEGRATED TECHNOLOGIES 
+bijgestaan en vertegenwoordigd door 
+advocaat Filip Gijssels 
+kantoor houdend te 9900 Eeklo 
+Gentsesteenweg 56 
+bij wie woonplaats wordt gekozen 
+
+--------------------------------------------------------------------------------------------------   
+
+I. Voorwerp van de vordering 
+
+1. 
+
+De  vordering,  ingesteld  op  19  september  2020,  strekt  tot  de 
+
+schorsing bij uiterst dringende noodzakelijkheid van de tenuitvoerlegging van “de 
+
+beslissing  dd.  1/09/2020  van  het  UZ  Gent”  om  de  raamovereenkomst  voor  het 
+
+leveren,  plaatsen  en  in  dienst  stellen  van  verpleegoproepsystemen  (VOS)  en 
+
+medische  oproepsystemen  (MOS)  te  gunnen  aan  de  nv  Telecom  Integrated 
+
+Technologies.   
+
+XII-8959-1/17 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+II. Verloop van de rechtspleging 
+
+2. 
+
+De verwerende partij heeft een nota ingediend. 
+
+Met een verzoekschrift van 1 oktober 2020 heeft de nv Telecom 
+
+Integrated Technologies gevraagd om in het administratief kort geding te mogen 
+
+tussenkomen. 
+
+De  partijen  zijn  opgeroepen  voor  de  terechtzitting,  die  heeft 
+
+plaatsgevonden op 8 oktober 2020, om 10.15 uur. 
+
+Kamervoorzitter Dierk Verbiest heeft verslag uitgebracht. 
+
+Advocaat Stefanie Phlypo, die loco advocaat Ignace Hameeuw 
+
+verschijnt voor de verzoekende partij, advocaat Leen De Vuyst, die loco advocaat 
+
+Frederik Vandendriessche verschijnt voor de verwerende partij, en advocaat Filip 
+
+Gijssels, die verschijnt voor de tussenkomende partij, zijn gehoord. 
+
+Auditeur  Thomas  Maes  heeft  een  met  dit  arrest  eensluidend 
+
+advies gegeven. 
+
+Er is toepassing gemaakt van de bepalingen op het gebruik der 
+
+talen,  vervat  in  titel  VI,  hoofdstuk  II,  van  de  wetten  op  de  Raad  van  State, 
+
+gecoördineerd op 12 januari 1973. 
+
+III. Feiten 
+
+3.1. 
+
+De verwerende partij schrijft een overheidsopdracht uit voor een 
+
+raamovereenkomst  voor  het 
+
+leveren,  plaatsen  en 
+
+in  dienst  stellen  van 
+
+verpleegoproepsystemen (VOS) en medische oproepsystemen (MOS). 
+
+De opdracht wordt geplaatst via een mededingingsprocedure met 
+
+onderhandeling die een selectiefase en een gunningsfase omvat. 
+
+XII-8959-2/17 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.2. 
+
+De  opdracht  wordt  bekendgemaakt 
+
+in  het  Bulletin  der 
+
+Aanbestedingen van 29 oktober 2018. 
+
+3.3. 
+
+Het  bestek  bepaalt  dat  de  opdracht  bestaat  uit  een  vast  en  een 
+
+voorwaardelijk gedeelte. Het vaste gedeelte betreft het leveren en in dienst stellen 
+
+van  patiëntenoproepsystemen,  zowel  VOS  als  MOS.  Het  voorwaardelijk  deel 
+
+betreft het omnium onderhoud voor de twee systemen en het leveren, het plaatsen 
+
+en het in dienst stellen van een alarmserver. 
+
+De volgende gunningscriteria en subcriteria zijn van toepassing 
+
+blijkens het bestek: 
+
+1. Kwaliteit   
+
+1.1. Technische mogelijkheden   
+
+1.2. Openheid van het systeem   
+
+1.3. Innovatieve kenmerken en toekomstmogelijkheden   
+
+1.4. Klantenservice   
+
+2. Prijs (TCO over 5 jaar) 
+
+Totaal                                           
+
+60 punten 
+
+40/60 punten 
+
+10/60 punten 
+
+5/60 punten 
+
+5/60 punten 
+
+40 punten 
+
+100 punten. 
+
+3.4. 
+
+Twee  ondernemingen,  de  nv  Televic  Healthcare,  dit  is  de 
+
+verzoekende  partij,  en  de  nv  Telecom  Integrated  Technologies,  dit  is  de 
+
+tussenkomende  partij,  hebben  zich  elk  kandidaat  gesteld  en  beiden  worden 
+
+geselecteerd.  Zij  dienen  een  initiële  offerte  in,  worden  betrokken  in  de 
+
+onderhandelingen met de aanbestedende overheid, dienen beiden een tussentijdse 
+
+offerte in en vervolgens, na onderhandelingen, een BAFO. 
+
+3.5. 
+
+De  BAFO’s  worden 
+
+ingediend  aan  de  hand  van  een 
+
+BAFO-bestek.  Het  voorwaardelijk  gedeelte  van  de  opdracht  voor  het  leveren, 
+
+plaatsen  en  in  dienst  stellen  van  een  alarmserver  werd  in  het  BAFO-bestek 
+
+geschrapt.   
+
+3.6. 
+
+Op  5  augustus  2020  wordt  een  gunningsverslag  opgesteld.  De 
+
+BAFO’s van de twee inschrijvers worden allebei regelmatig bevonden. Vervolgens 
+
+worden zij getoetst aan de hand van de gunningscriteria.   
+
+XII-8959-3/17 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+De  BAFO  van  de  verzoekende  partij  behaalt  de  volgende 
+
+quotering: 
+
+1. Kwaliteit   
+
+1.1. Technische mogelijkheden   
+
+1.2. Openheid van het systeem   
+
+44/60 punten 
+
+32/40 punten 
+
+6/10 punten 
+
+1.3. Innovatieve kenmerken en toekomstmogelijkheden   
+
+3/5 punten 
+
+1.4. Klantenservice   
+
+2. Prijs (TCO over 5 jaar) 
+
+Totaal   
+
+3/5 punten 
+
+40/40 punten 
+
+84/100 punten. 
+
+De BAFO van de nv Telecom Integrated Technologies behaalt 
+
+volgende scores: 
+
+1. Kwaliteit   
+
+1.1. Technische mogelijkheden   
+
+1.2. Openheid van het systeem   
+
+49/60 punten 
+
+32/40 punten 
+
+10/10 punten 
+
+1.3. Innovatieve kenmerken en toekomstmogelijkheden   
+
+4/5 punten 
+
+1.4. Klantenservice   
+
+2. Prijs (TCO over 5 jaar) 
+
+Totaal 
+
+3/5 punten 
+
+36,86/40 punten 
+
+85,86/100 punten. 
+
+Er wordt dan ook voorgesteld om de opdracht te gunnen aan de 
+
+nv Telecom Integrated Technologies. 
+
+3.7. 
+
+Op  1  september  2020  beslist  de  verwerende  partij,  verwijzend 
+
+naar het gunningsverslag, om de opdracht te gunnen aan de nv Telecom Integrated 
+
+Technologies.   
+
+Dit is de bestreden beslissing.   
+
+Met  aangetekende  brieven  van  4  september  2020  worden  de 
+
+inschrijvers op de hoogte gebracht van de gunningsbeslissing. 
+
+XII-8959-4/17 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+IV. Tussenkomst 
+
+4. 
+
+De nv Telecom Integrated Technologies blijkt voordeel te halen 
+
+uit de bestreden beslissing en heeft er belang bij dat de vordering wordt afgewezen. 
+
+Bijgevolg moet haar verzoek tot tussenkomst worden ingewilligd. 
+
+V. Regelmatigheid van de rechtspleging 
+
+5. 
+
+De  verzoekende  partij  dient  een  niet  door  de  Raad  van  State 
+
+gevraagde  en  niet  in  enige  procedureregeling  vervatte  “replieknota”  in.    Deze 
+
+wordt geweerd, alleen reeds omdat deze pas de avond vóór de terechtzitting aan de 
+
+Raad blijkt te zijn bezorgd. 
+
+VI. Schorsingsvoorwaarden 
+
+6.1. 
+
+Krachtens artikel 17, §§ 1 en 4, van de gecoördineerde wetten op 
+
+de Raad van State kan tot schorsing van de tenuitvoerlegging bij uiterst dringende 
+
+noodzakelijkheid  slechts  worden  besloten  onder  de  dubbele  voorwaarde  dat 
+
+minstens één ernstig middel wordt aangevoerd dat de nietigverklaring van de akte 
+
+of  het  reglement  prima  facie  kan  verantwoorden  en  dat  een  uiterst  dringende 
+
+noodzakelijkheid voorhanden is die onverenigbaar is met de behandelingstermijn 
+
+van de gewone vordering tot schorsing. 
+
+6.2. 
+
+Te dezen is evenwel ook de wet van 17 juni 2013 ‘betreffende de 
+
+motivering,  de  informatie  en  de  rechtsmiddelen  inzake  overheidsopdrachten, 
+
+bepaalde opdrachten voor werken, leveringen en diensten en concessies’ (hierna: 
+
+rechtsbeschermingswet) van toepassing. 
+
+Krachtens  artikel  15,  eerste  lid,  van  die  wet  kan  de  uitvoering 
+
+worden  geschorst  van  de  thans  bestreden  beslissing  in  aanwezigheid  van  een 
+
+ernstig middel of een klaarblijkelijke onwettigheid. 
+
+Overeenkomstig  artikel  15,  tweede  lid,  echter  wordt  de 
+
+vordering tot schorsing voor de Raad van State uitsluitend ingesteld volgens een 
+
+procedure bij uiterst dringende noodzakelijkheid. 
+
+XII-8959-5/17 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Er  dient  te  dezen  dan  ook  enkel  nog  te  worden  onderzocht  of 
+
+minstens  één  ernstig  middel  wordt  aangevoerd,  dan  wel  een  klaarblijkelijke 
+
+onwettigheid  aanwezig  is,  die  de  nietigverklaring  van  de  bestreden  beslissing 
+
+kunnen verantwoorden. 
+
+VII. Onderzoek van de middelen 
+
+A. Eerste middel   
+
+Uiteenzetting van het middel   
+
+7. 
+
+De verzoekende partij voert in een eerste middel de schending 
+
+aan  van  artikel  57,  eerste  lid,  van  de  wet  van  17  juni  2016  ‘inzake 
+
+overheidsopdrachten’ (hierna: wet overheidsopdrachten 2016). 
+
+Zij citeert die bepaling en stelt vast dat daarin drie voorwaarden 
+
+zijn gekoppeld aan het uitschrijven van een voorwaardelijk deel: 
+
+-  de aanbestedende overheid dient de noodzaak ertoe aan te tonen; 
+
+-  de uitvoering van elk voorwaardelijk gedeelte is afhankelijk van een beslissing 
+
+van  de  aanbestedende  overheid  die  aan  de  opdrachtnemer  wordt  meegedeeld 
+
+overeenkomstig de in de initiële opdrachtdocumenten bepaalde nadere regels;   
+
+-  de  uitvoering  van  het  voorwaardelijk  deel  mag  de  algemene  aard  van  de 
+
+opdracht niet wijzigen. 
+
+Zij wijst er vervolgens op dat de verwerende partij noch in de 
+
+opdrachtdocumenten, noch nadien, aangeeft waarom de opdracht deels vast, deels 
+
+voorwaardelijk werd uitgeschreven. 
+
+Exceptie 
+
+8. 
+
+De verwerende partij en de tussenkomende partij betogen in een 
+
+exceptie bij het middel dat de verzoekende partij niet aantoont in welke mate de 
+
+vermeende  niet-naleving  artikel  57,  eerste  lid,  van  de  wet  overheidsopdrachten 
+
+2016 een invloed kon uitoefenen op de draagwijdte van de bestreden beslissing, de 
+
+verzoekende  partij  een  waarborg  zou  hebben  ontnomen  ofwel  als  gevolg  zou 
+
+XII-8959-6/17 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+hebben gehad de bevoegdheid van de steller van de handeling te beïnvloeden. Ze 
+
+verwijzen daarbij naar artikel 14, § 1, tweede lid, van de gecoördineerde wetten op 
+
+de Raad van State, dat deze voorwaarden stelt om aanleiding te kunnen geven tot 
+
+nietigverklaring. 
+
+Beoordeling 
+
+9. 
+
+luidt : 
+
+Artikel  57,  eerste  lid,  van  de  wet  overheidsopdrachten  2016, 
+
+“Wanneer de aanbestedende overheid de noodzaak daartoe aantoont, kan 
+ze een opdracht plaatsen die een of meer vaste gedeelten en een of meer 
+voorwaardelijke  gedeelten  omvat.  Alhoewel  de  sluiting  van  de  opdracht 
+betrekking  heeft  op  de  volledige  opdracht,  is  de  aanbestedende  overheid 
+enkel  gebonden  door  de  vaste  gedeelten.  De  uitvoering  van  elk 
+voorwaardelijk  gedeelte  is  afhankelijk  van  een  beslissing  van  de 
+aanbestedende  overheid  die  aan  de  opdrachtnemer  wordt  meegedeeld 
+overeenkomstig  de  in  de  initiële  opdrachtdocumenten  bepaalde  nadere 
+regels.  De  uitvoering  van  het  voorwaardelijk  gedeelte  mag  de  algemene 
+aard van de opdracht niet wijzigen.” 
+
+10. 
+
+De  betrokken  bepaling  lijkt,  anders  dan  de  verzoekende  partij 
+
+het lijkt te zien, niet met zoveel woorden te vereisen dat de aanbestedende overheid 
+
+vooraf  in  de  opdrachtdocumenten  of  tijdens  de  plaatsingsprocedure  ten  aanzien 
+
+van  de  inschrijvers  formeel  zou  motiveren  waarom  zij  de  opdracht  in  een  vast 
+
+gedeelte en een voorwaardelijk gedeelte heeft opgedeeld. Enkel wordt er vereist 
+
+dat  de  aanbestedende  overheid  de  noodzaak  daartoe  moet  kunnen  aantonen, 
+
+namelijk dat er materiële motieven voorhanden zijn voor de opdeling. 
+
+Mede  in  aanmerking  genomen  dat  de  aanbestedende  overheid   
+
+aldus over een aanzienlijke beoordelingsruimte beschikt om de opdracht al dan niet 
+
+in een vast en een voorwaardelijk gedeelte op te delen, geeft de verzoekende partij 
+
+in  haar  summier  uitgewerkt  middel  in  het  inleidend  verzoekschrift  geen  enkele 
+
+verduidelijking  betreffende  de  wijze  waarop  de  door  haar 
+
+ingeroepen 
+
+wetsschending,  namelijk  het  ontbreken  van  een  formele  motivering,  haar  zou 
+
+hebben benadeeld door haar een waarborg te hebben ontnomen, of als gevolg heeft 
+
+XII-8959-7/17 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+de draagwijdte van de bestreden beslissing of de bevoegdheid van de verwerende 
+
+partij te beïnvloeden.   
+
+De nieuwe invulling die zij ter terechtzitting geeft aan het 
+
+middel is niet ontvankelijk want laattijdig, in zoverre daarbij wordt betoogd dat het 
+
+al  dan  niet  opgenomen  zijn  van  de  alarmserver  in  de  opdracht  een  invloed  had 
+
+kunnen hebben op de beoordeling van het criterium “openheid”. 
+
+De  aangevoerde  onregelmatigheid  lijkt  aldus  niet  tot 
+
+nietigverklaring  aanleiding  te  kunnen  geven  bij  toepassing  van  artikel  14,  §  1, 
+
+tweede lid, van de voornoemde wetten en bijgevolg evenmin tot schorsing van de 
+
+tenuitvoerlegging  die  enkel  mogelijk  is  indien  de  aangevochten  akte  vatbaar  is   
+
+voor  nietigverklaring  overeenkomstig  artikel  17,  §  1,  eerste  lid,  van  diezelfde 
+
+wetten.   
+
+11. 
+
+De  exceptie  wordt  aanvaard  zodat  het  eerste  middel  niet 
+
+ontvankelijk is. 
+
+B. Tweede middel 
+
+Uiteenzetting van het middel   
+
+12. 
+
+De verzoekende partij voert in een tweede middel de schending 
+
+aan  van  “het  zorgvuldigheidsbeginsel,  motiveringsbeginsel,  gelijkheidsbeginsel, 
+
+transparantiebeginsel  en  beginsel  van  ‘patere  legem  quam  ipse  fecisti’”,  van 
+
+“artikel  4  en  artikel  38  §6  wet  overheidsopdrachten  van  17/06/  2016”  en  van 
+
+“artikel 5, 9º van de wet van 17/06/2013”. 
+
+In dit middel voert de verzoekende partij twee grieven aan. 
+
+13.1. 
+
+Een eerste grief betreft het subcriterium “1.2. Openheid van het 
+
+systeem” van het eerste gunningscriterium “Kwaliteit” zelf. De verzoekende partij 
+
+stelt  vast:  “Bij  de  omschrijving  van  het  criterium  ‘Openheid  van  het  systeem’ 
+
+wordt  aan  de  inschrijver  geen  beschrijving  gevraagd  van  de  wijze  waarop  het 
+
+dataverkeer tussen het systeem en de diverse componenten (medische apparatuur, 
+
+XII-8959-8/17 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+oproepsystemen, enz.), wordt voorzien of verzorgd. De inschrijver wordt dus niet 
+
+verzocht opgave te doen van de wijze van organisatie van de ‘datatransfer’ tussen 
+
+het systeem en de diverse componenten die zorgen voor de openheid”.   
+
+In  het  bestek  wordt  volgens  de  verzoekende  partij  ook  een 
+
+beoordelingsmethode vooropgesteld,  maar “[v]erdere subgunningscriteria of een 
+
+opsomming  van  de  concrete  zaken  waar  belang  wordt  aangehecht  per 
+
+gunningscriteria zijn er niet”. Volgens de verzoekende partij is “er […] met andere 
+
+woorden enkel de definitie van het gunningscriterium en het puntensysteem”. 
+
+13.2. 
+
+Een tweede grief betreft de toetsing van de BAFO’s aan de hand 
+
+van het voormelde subcriterium.   
+
+De  verzoekende  partij  wijst  er  op  dat  haar  offerte  voor  dit 
+
+subcriterium 3/5 of omgerekend 6/10 behaalde, terwijl de offerte van de gekozen 
+
+inschrijver  5/5,  omgerekend  10/10  haalde.  Volgens  de  verzoekende  partij  is  dit 
+
+grote verschil van 4 punten niet verantwoord. 
+
+Vervolgens voert de verzoekende partij overheen vijf bladzijden   
+
+een  punt-per-puntbespreking  uit  van  elk  beoordelingselement  dat  in  het 
+
+gunningsverslag wordt aangehaald – nota, organisatie datatransfer, aanpassing op 
+
+maat  van  de  software/hardware,  communiceren  en  alarmen  binnen  nemen  van 
+
+andere  medische  apparatuur  op  CPU-niveau,  mogelijkheid  tot  communicatie  – 
+
+waarbij  zij  toelicht  waarom  haar  eigen  offerte  beter  had  moeten  worden 
+
+beoordeeld, dan wel de offerte van de gekozen inschrijver minder goed had moeten 
+
+worden ingeschat. Zij besluit uit dit betoog dat het puntenverschil van 4 punten 
+
+tussen  de  offertes  niet  verantwoord  is,  er  wordt  niet  aangetoond  waarom  het 
+
+systeem  van  de  gekozen  inschrijver  “uitstekend”  zou  zijn,  terwijl  dat  van  de 
+
+verzoekende partij slechts “goed” zou zijn. Er blijkt niet dat de verwerende partij 
+
+de offertes op consistente en gelijke wijze heeft beoordeeld. Minstens wordt niet 
+
+voldoende gemotiveerd hoe de scores werden toegekend. 
+
+Het was bovendien niet vooraf duidelijk hoe met zulke gegevens 
+
+rekening  zou  worden  gehouden  bij  de  beoordeling  aan  de  hand  van  dat 
+
+subcriterium.  De  verwerende  partij  heeft  onvoldoende  aangegeven  met  welke 
+
+XII-8959-9/17 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+elementen  rekening  ging  worden  gehouden  bij  de  beoordeling  van  het 
+
+gunningscriterium “Openheid van het systeem”.   
+
+Bovendien worden de onderhandelingen  niet beschreven in de 
+
+gunningsbeslissing  of  het  gunningsverslag,  zodat  niet  kan  worden  nagegaan  in 
+
+welke  mate  de  inschrijvers  gelijk  werden  behandeld.  Het  gelijkheidsbeginsel  en 
+
+het transparantiebeginsel werden geschonden. 
+
+Beoordeling 
+
+14. 
+
+Overeenkomstig 
+
+artikel  4, 
+
+eerste 
+
+lid,  van  de  wet 
+
+overheidsopdrachten 2016, behandelen de aanbesteders de ondernemers op gelijke 
+
+en niet-discriminerende wijze en handelen zij op een transparante en proportionele 
+
+wijze. 
+
+Artikel 
+
+38, 
+
+§ 
+
+6, 
+
+van 
+
+diezelfde  wet 
+
+betreft 
+
+de 
+
+mededingingsprocedure met onderhandeling en bepaalt: 
+
+“Tijdens  de  onderhandelingen  verzekert  de  aanbestedende  overheid  de 
+gelijke  behandeling  van  alle  inschrijvers.  Daartoe  verstrekt  zij  geen 
+discriminerende informatie die bepaalde inschrijvers kan bevoordelen ten 
+opzichte van andere. Zij stelt alle inschrijvers wier offerte niet is afgewezen 
+overeenkomstig  paragraaf  7  schriftelijk  in  kennis  van  eventuele  andere 
+wijzigingen in de technische specificaties of andere opdrachtdocumenten 
+dan die waarbij de minimumeisen worden vastgesteld. Na deze wijzigingen 
+biedt  de  aanbestedende  overheid  de  inschrijvers  voldoende  tijd  om  hun 
+offertes, indien nodig, aan te passen en opnieuw in te dienen. 
+Overeenkomstig  artikel  13  maakt  de  aanbestedende  overheid  de 
+vertrouwelijke inlichtingen die een aan de onderhandelingen deelnemende 
+kandidaat  of  inschrijver  heeft  verstrekt,  niet  zonder  diens  schriftelijke 
+toestemming  aan  de  andere  deelnemers  bekend.  Deze  toestemming  mag 
+geen  algemene  strekking  hebben,  maar  moet  verwijzen  naar  de  beoogde 
+bekendmaking van specifieke inlichtingen.” 
+
+Overeenkomstig  artikel  5,  9º,  van  de  rechtsbeschermingswet 
+
+dient  de  gemotiveerde  beslissing  de  namen  van  de  gekozen  inschrijver  of  de 
+
+gekozen deelnemer of deelnemers bij de raamovereenkomst en van de deelnemers 
+
+en inschrijvers van wie de regelmatige offerte niet werd gekozen en de juridische 
+
+XII-8959-10/17 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+en feitelijke motieven te bevatten, waaronder de kenmerken en relatieve voordelen 
+
+van de gekozen offerte, voor de beslissingen die daarop betrekking hebben. 
+
+15. 
+
+Wat  de  eerste  grief  betreft,  worden  het  subcriterium  en  zijn 
+
+beoordelingsmethode in het BAFO-bestek als volgt omschreven: 
+
+“1.2 Openheid van het systeem [...] 
+Dit gunningscriterium betreft de mate dat het softwaresysteem open is en 
+waaraan het gekoppeld kan worden. Hoe opener het systeem, hoe hoger de 
+score.   
+De  inschrijver  toont  de  openheid  van  het  systeem  aan.  Dit  dossier  is 
+ziekenhuis-breed en het is de bedoeling dat het aangeboden VOS & MOS 
+op  verschillende  afdelingen  met  verschillende  wensen  geïmplementeerd 
+kunnen worden. 
+De  inschrijver  geeft  een  overzicht  met  welke  producenten  van  medische 
+apparatuur al koppelingen gebeurd zijn en hoe deze koppelingen gebeuren 
+op serverniveau.   
+Dit criterium wordt beoordeeld als volgt: 
+5  =  uitstekend:  de  openheid  van  het  systeem  wordt  als  uitstekend 
+beoordeeld 
+4 = zeer goed: de openheid van het systeem wordt als zeer goed beoordeeld 
+3 = goed: de openheid van het systeem wordt als goed beoordeeld 
+2 = matig: de openheid van het systeem wordt als matig beoordeeld 
+1 = zwak: de openheid van het systeem wordt als zwak beoordeeld 
+0 = zeer zwak of geen toegevoegde waarde: de openheid van het systeem 
+wordt als zeer zwak beoordeeld of biedt geen toegevoegde waarde   
+De punten op 5 worden omgerekend naar een score op 10 d.m.v. de regel 
+van 3.” 
+
+De verzoekende partij erkent in het verzoekschrift zelf dat het 
+
+bestek zowel een definitie van het subcriterium bevat als de beoordelingsmethode 
+
+ervan weergeeft. 
+
+Waar de verzoekende partij doet gelden dat het bestek het begrip 
+
+“openheid”  nog  nader  had  moeten  toelichten,  dient  er  in  de  eerste  plaats  op  te 
+
+worden gewezen dat uit de omschrijving van het subcriterium zelf alvast lijkt te 
+
+mogen worden afgeleid dat ermee wordt gepeild naar de mate van openheid van 
+
+het softwaresysteem, gelet op het feit dat VOS- & MOS-systemen ziekenhuisbreed 
+
+worden  geïmplementeerd,  “op  verschillende  afdelingen  met  verschillende 
+
+wensen”,  en  van  de  inschrijver  wordt  verlangd  dat  hij  een  overzicht  geeft  “met 
+
+XII-8959-11/17 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+welke producenten van medische apparatuur al koppelingen gebeurd zijn en hoe 
+
+deze koppelingen gebeuren op serverniveau”. 
+
+Bij  het  beoordelen  van  de  duidelijkheid  van  een  bestek,  dient 
+
+rekening te worden gehouden met degenen waarvoor het bestek bedoeld is. Er mag 
+
+worden  verondersteld  dat  de  in  het  bestek  gebruikte  terminologie  voor 
+
+professionelen in de betrokken sector een voldoende duidelijke inhoud heeft. Die 
+
+terminologie moet voorts worden begrepen in het licht van de omschrijving van het 
+
+voorwerp  van  de  opdracht  en  de  technische  bepalingen  van  het  bestek,  die  een 
+
+nadere invulling geven aan wat van de inschrijvers wordt verwacht.   
+
+In de technische bepalingen van het bestek wordt de gevraagde 
+
+openheid van het softwaresysteem nog als volgt nader toegelicht: 
+
+“Het systeem is zo ontwikkeld dat het op een eenvoudige en kost efficiënte 
+wijze kan mee evolueren met nieuwe mogelijkheden en behoeften. 
+Het systeem heeft een open platform waardoor integratie met bv. domotica, 
+camerasystemen  en  andere 
+systemen  naadloos  kunnen  worden 
+gerealiseerd. 
+Het systeem is zo ontwikkeld dat het zich naadloos integreert met zowel de 
+vorige  als  de  toekomstige  generatie  verpleegoproepsystemen.  Hierdoor 
+garandeert dit systeem een continuïteit op zeer lange termijn. 
+In  de  verzorgingsinstelling  zal  een  verpleegoproepsysteem  worden 
+geplaatst,  gebaseerd  op  een  open  platform  dat  volgende  functies  kan 
+integreren:   
+
+-    Kameroproepen met visuele en akoestische oproepsignalisatie   
+-    Regelbare akoestische bewaking   
+-    Bi – directionele communicatie tussen alle eenheden   
+-    Koppeling met technische contacten   
+-    Koppeling met toestellen, al dan niet via een MOS […] 
+-    Koppeling met audio en/of visuele media   
+-    Bij voorkeur zelf voorzien in muziekdistributie   
+-   Het 
+
+(draadloze) 
+communicatieplatformen, als daar zijn, ESPA, SMS, VOIP, WIFI, ... 
+wat zorgt voor een grote flexibiliteit.” 
+
+verschillende 
+
+ondersteun[t] 
+
+systeem 
+
+Het  lijkt  aldus  niet  dat  een  normaal  zorgvuldig  inschrijver, 
+
+gespecialiseerd  in  de  betrokken  materie,  aan  de  hand  van  de  uitvoerige 
+
+omschrijving van het subcriterium in het bestek en de technische bepalingen ervan, 
+
+niet zou kunnen weten wat er van hem wordt verwacht bij het opstellen van zijn 
+
+offerte inzake de openheid van het gevraagde medisch communicatiesysteem. 
+
+XII-8959-12/17 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+De  verzoekende  partij  toont  alleszins  niet  aan  hoe  dit 
+
+subcriterium als dermate obscuur of onduidelijk zou moeten worden aangemerkt, 
+
+dat  er  op  die  grondslag  tot  de  onrechtmatigheid  van  het  verloop  van  de  hele 
+
+plaatsingsprocedure zou moeten worden besloten, noch dat er zou moeten worden 
+
+vastgesteld  dat  de 
+
+inschrijvers  hier  verschalkt  zijn  geworden  door  de 
+
+onduidelijkheid van het betrokken subcriterium. 
+
+De eerste grief is niet ernstig. 
+
+16. 
+
+De  tweede  grief  die  in  het  tweede  middel  wordt  aangevoerd, 
+
+betreft de toetsing van de BAFO’s aan de hand van het betrokken subcriterium. 
+
+De  verwerende  partij  en  de  tussenkomende  partij  hebben  de 
+
+oefening gemaakt om de puntsgewijze kritiek van de verzoekende partij in elk van 
+
+zijn  vele  onderdelen  afzonderlijk  te  weerleggen.  Dergelijke  uitvoerige  feitelijke 
+
+kritiek en repliek lijken zich niet te lenen tot het uiterst snelle onderzoek dat in een 
+
+procedure  bij  uiterst  dringende  noodzakelijkheid  van  de  Raad  van  State  wordt 
+
+verwacht, zodat deze zich beperkt tot hetgeen volgt. 
+
+De  aanbestedende  overheid  beschikt  bij  de  inhoudelijke 
+
+beoordeling van de offertes en hun toetsing aan de gunningscriteria over een grote 
+
+beoordelingsruimte.  Het  is  in  de  eerste  plaats  de  aanbestedende  overheid  die 
+
+bepaalt  wat  zij  als  sterke  en  zwakke  punten  in  de  offertes  beschouwt  en  om  er 
+
+dienovereenkomstig punten aan toe te kennen. De Raad van State is niet bevoegd 
+
+om de beoordeling van de offertes over te doen en zijn eigen beoordeling in de 
+
+plaats  te  stellen  van  deze  van  de  overheid  en  mag  enkel  desgevraagd  een 
+
+beoordeling sanctioneren die niet zorgvuldig.   
+
+Bovendien  mag  de  geschiktheid  van  een  aanbestedende 
+
+overheid om tot een in rechte correct oordeel te komen bij het onderzoek van de 
+
+offertes  in  principe  worden  verondersteld,  gelet  op  het  vermoeden  van 
+
+rechtmatigheid  dat  verbonden  is  aan  elke  administratieve  beslissing.  Dat  lijkt   
+
+a fortiori te gelden wanneer het een gespecialiseerde overheidsinstantie, zoals het 
+
+UZ  Gent,  betreft,  waarvan  redelijkerwijze  mag  worden  verwacht  dat  deze 
+
+deskundig is inzake medische communicatieapparatuur en -software. Het komt aan 
+
+XII-8959-13/17 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+een  verzoekende  partij  in  de  procedure  voor  de  Raad  van  State  dan  toe  om 
+
+afdoende  aannemelijk  te  maken  dat  het  onderzoek  van  de  offertes  toch  op 
+
+onrechtmatige wijze zou zijn verricht.   
+
+17. 
+
+De  toetsing  van  de  offertes  aan  de  hand  van  het  subcriterium 
+
+“1.2 Openheid van het systeem” in het gunningsverslag luidt als volgt: 
+
+“1. Telecom Integrated Technologies   
+- Zeer uitgebreide en duidelijke nota 
+- De software is open voor connecteren met andere systemen, via bluetooth 
+of wifi 
+-  Aanpassingen  op  maat  i.v.m.  software/hardware  kunnen  toegepast 
+worden 
+- Kunnen communiceren en alarmen binnen nemen van andere medische 
+apparatuur op CPU niveau 
+-  Mogelijkheid  tot  communicatie  van  of  naar  (combineerbaar  naar  vrije 
+keuze en zonder beperking naar aantallen koppeling):verschillende andere 
+partijen, bv. DAKS server, ESPA, e-mail, ...   
+-zeer doorgedreven beleid/filosofie om op vraag van de klant een installatie 
+te leveren/aan te passen op maat van de klant 
+Beoordeling: uitstekend, score: 5/5 of 10/10 
+[...] 
+2. Televic Healthcare nv   
+-  Meer  beperkte  nota,  verwijzingen  naar  andere  documenten  (niet  zo 
+duidelijk) 
+- Geen vermelding van connectie via bluetooth of wifi   
+- Doorgedreven aanpassingsmogelijkheden en flexibiliteit van de systemen 
+op vraag van de klant   
+-  Mogelijkheid  tot  communicatie  met  verschillende  andere  partijen,  bv. 
+DAKS server, ESPA, e-mail, ...   
+Beoordeling: goed, score: 3/5 of 6/10.” 
+
+Te  dezen  lijkt  het  dat  de  verzoekende  partij  als  niet-gekozen 
+
+inschrijver  in  het  vrij  uitvoerige  gunningsverslag  aldus  wel  degelijk  de  redenen 
+
+kon  terugvinden  waarom  de  twee  offertes  op  de  diverse  gunningscriteria  en 
+
+subcriteria  beter  of  minder  goed  werden  beschouwd  door  de  aanbestedende 
+
+overheid en waarom uiteindelijk haar eigen offerte niet werd uitgekozen.   
+
+Voorts  lijken  de  uitgedrukte  concrete  motieven  op  het  eerste 
+
+gezicht niet van aard te zijn dat ze de voor het betrokken subcriterium toegekende 
+
+XII-8959-14/17 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+punten  niet  zouden  kunnen  verantwoorden.  Deze  scores  lijken  prima  facie 
+
+evenmin in een kennelijke wanverhouding te staan tot de woordelijke motieven. 
+
+De  verzoekende  partij  brengt  bijgevolg  prima  facie  geen 
+
+ernstige  redenen  aan,  die  de  gemotiveerde  evaluatie  van  de  offertes  door  de 
+
+aanbestedende overheid in twijfel kunnen doen trekken. 
+
+18. 
+
+De  verzoekende  partij  doet  voorts  gelden  dat  het  niet  vooraf 
+
+duidelijk was hoe met het betrokken subcriterium zou worden omgegaan.   
+
+Hiervoor werd reeds vastgesteld dat het subcriterium uitvoerig 
+
+werd omschreven in het bestek en in de technische bepalingen ervan, zodat aan de 
+
+hand daarvan de inschrijvers wel degelijk konden inschatten aan welke punten van 
+
+hun  offerte  de  aanbestedende  overheid  al  dan  niet  meer  of  minder  belang  zou 
+
+hechten.  Ook  de  beoordelingsmethodiek  werd  vooraf 
+
+in  het  bestek 
+
+bekendgemaakt. 
+
+De  verwerende  partij,  die  over  een  grote  beoordelingruimte 
+
+beschikt bij de toetsing van de offertes, blijkt bij de beoordeling aan de hand van 
+
+dit subcriterium overigens een vrij gebruikelijke beoordelingsmethodiek te hebben 
+
+toegepast, bestaande uit een descriptieve evaluatie in woorden gekoppeld aan het 
+
+toekennen van een puntenscore waarvan op het eerste gezicht niet is aangetoond 
+
+dat deze niet in een evenredige verhouding staat tot deze woordelijke evaluatie. 
+
+Het lijkt niet dat met de gehanteerde beoordelingsmethodiek de 
+
+kwalitatieve verschillen tussen de offertes niet op correcte wijze in kaart zouden 
+
+zijn gebracht. Uit het gunningsverslag blijkt op het eerste gezicht dat de diverse 
+
+sterke en zwakke punten van de offertes werden onderzocht en vergeleken. Zoals 
+
+reeds opgemerkt, lijkt het evenmin dat de toegekende punten in wanverhouding 
+
+staan tot de woordelijke evaluatie, noch lijkt het dat de offertes aan de hand van de 
+
+beoordelingselementen in het gunningsverslag aangehaald, werden geëvalueerd op 
+
+een  wijze  die  onverenigbaar  is  met  wat  in  het  bestek  omtrent  het  betrokken 
+
+subcriterium werd bepaald. 
+
+XII-8959-15/17 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Het  lijkt  aldus  niet  dat  de  verwerende  partij  te  dezen  bij  het 
+
+nemen van de bestreden beslissing haar beoordelingsruimte heeft overschreden. 
+
+19. 
+
+De verzoekende partij doet in deze grief ook nog gelden dat de 
+
+onderhandelingen  niet  worden  beschreven  in  de  gunningsbeslissing  of  het 
+
+gunningsverslag. 
+
+Het  lijkt  niet  vereist  dat  de  aanbestedende  overheid  in  het 
+
+gunningsverslag  een 
+
+integraal  relaas  opneemt  van  het  verloop  van  de 
+
+onderhandelingen.  Een  algemeen  overzicht  lijkt  in  beginsel  te  kunnen  volstaan, 
+
+zolang uit het administratief dossier blijkt dat de inschrijvers wel degelijk gelijk 
+
+werden behandeld tijdens de onderhandelingen zonder een van hen te bevoordelen 
+
+of te benadelen, vanzelfsprekend rekening houdend met de verschillen tussen hun 
+
+offertes. 
+
+Op  het  eerste  gezicht  is  zulks  hier  het  geval,  zowel  het 
+
+gunningsverslag  als  de  bestreden  beslissing  lijken  het  voornoemde  algemeen 
+
+overzicht van de onderhandelingen te bevatten. Daarnaast legt de aanbestedende 
+
+overheid  de  volledige  correspondentie  die  zij  met  de  inschrijvers  heeft  gevoerd 
+
+neer als deel van het administratief dossier; daaruit blijkt prima facie niet dat er een 
+
+ongelijke  behandeling  zou  voorliggen  die  neerkomt  op  het  bevoordelen  of 
+
+benadelen van één van de beide inschrijvers. 
+
+20. 
+
+Het tweede middel is in zijn geheel niet ernstig. 
+
+VIII. Besluit 
+
+21. 
+
+Geen van beide middelen is ernstig gebleken. De vordering tot 
+
+schorsing  bij  uiterst  dringende  noodzakelijkheid  dient  dan  ook  te  worden 
+
+verworpen. 
+
+XII-8959-16/17 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BESLISSING 
+
+1. Het verzoek van de nv Telecom Integrated Technologies tot tussenkomst 
+
+wordt ingewilligd. 
+
+2. De Raad van State verwerpt de vordering. 
+
+Dit  arrest  is  uitgesproken  te  Brussel,  in  openbare  terechtzitting  van  negentien 
+
+oktober tweeduizend twintig, door de Raad van State, XIIe kamer, samengesteld 
+
+uit: 
+
+Dierk Verbiest, 
+
+kamervoorzitter, 
+
+bijgestaan door 
+
+Greta Scheveneels, 
+
+griffier. 
+
+De griffier 
+
+De voorzitter 
+
+Greta Scheveneels 
+
+Dierk Verbiest 
+
+XII-8959-17/17 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

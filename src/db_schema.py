@@ -63,6 +63,7 @@ CREATE TABLE IF NOT EXISTS chunks (
     chunk_id INTEGER PRIMARY KEY,
     case_id INTEGER NOT NULL,
     section TEXT NOT NULL,
+    section_category TEXT,
     paragraph_number TEXT,
     parent_numbers TEXT NOT NULL,
     chunk_order INTEGER NOT NULL,
@@ -130,6 +131,7 @@ def insert_chunk(
     text: str,
     paragraph_number: str | None = None,
     parent_numbers: list[str] | None = None,
+    section_category: str | None = None,
 ) -> None:
     """Insert one passage into ``chunks`` and its FTS5 index entry.
 
@@ -138,24 +140,30 @@ def insert_chunk(
         chunk_id: The row id to assign (shared between ``chunks`` and
             ``chunks_fts``).
         case_id: Foreign key into the ``cases`` table.
-        section: Section label string, e.g. ``"reasoning"`` for GHCC.
+        section: Verbatim section heading or label string. For fixed-section
+            courts (GHCC) this is the section label (e.g. ``"reasoning"``);
+            for dynamic-section courts (RVS) it is the heading text verbatim.
         chunk_order: 0-based position within the case (for stable ordering).
         text: The chunk's plain text content.
         paragraph_number: This chunk's own numbered identifier, e.g.
             ``"B.7.3"``. ``None`` for whole-section fallback chunks.
         parent_numbers: Ancestor identifiers, e.g. ``["B", "B.7"]`` for
             ``"B.7.3"``. Defaults to an empty list.
+        section_category: Cross-court semantic category (one of the
+            ``CATEGORY_*`` constants from ``src.sources``), or ``None`` if
+            the heading is not in the body's ``heading_category_map``.
     """
     import json
 
     conn.execute(
         "INSERT INTO chunks "
-        "(chunk_id, case_id, section, paragraph_number, parent_numbers, "
-        "chunk_order, text) VALUES (?, ?, ?, ?, ?, ?, ?)",
+        "(chunk_id, case_id, section, section_category, paragraph_number, "
+        "parent_numbers, chunk_order, text) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
         (
             chunk_id,
             case_id,
             section,
+            section_category,
             paragraph_number,
             json.dumps(parent_numbers or []),
             chunk_order,

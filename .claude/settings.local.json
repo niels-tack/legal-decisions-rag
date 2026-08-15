@@ -8,7 +8,8 @@
       "Bash(npx tsc *)",
       "Bash(echo \"Exit code: $?\")",
       "Bash(echo \"Exit: $?\")",
-      "Bash(curl *)"
+      "Bash(curl *)",
+      "Bash(grep -v \"^.*:$\")"
     ]
   }
 }

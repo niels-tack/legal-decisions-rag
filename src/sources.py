@@ -10,13 +10,36 @@ Onboarding a new body means:
    publish differently - there is no shared scraper to reuse).
 2. Working out its paragraph-numbering convention (if any) from real
    rulings and registering a new ``SourceConfig`` below with the correct
-   ``paragraph_marker_re``, ``section_headers``, and ``heading_normalizer``.
+   ``paragraph_marker_re``, ``section_headers`` or ``dynamic_sections``,
+   and ``heading_category_map``.
+
+Cross-court category vocabulary
+--------------------------------
+Section headings differ per body (e.g. GHCC uses "Beoordeling door het Hof"
+while RVS uses "Beoordeling van het middel"), but we want a single filterable
+vocabulary across all courts. The ``heading_category_map`` on each
+``SourceConfig`` maps the body's own heading/section keys to one of the
+``CATEGORY_*`` constants below. Chunks whose heading is not in the map get
+``section_category = None``; callers should treat that as "unknown".
 """
 
 from __future__ import annotations
 
 import re
 from dataclasses import dataclass, field
+
+# ---------------------------------------------------------------------------
+# Cross-court section category constants
+# ---------------------------------------------------------------------------
+
+CATEGORY_FACTS = "facts"
+CATEGORY_ARGUMENTS = "arguments"
+CATEGORY_REASONING = "reasoning"
+CATEGORY_OPERATIVE = "operative"
+CATEGORY_ADMISSIBILITY = "admissibility"
+CATEGORY_JURISDICTION = "jurisdiction"
+CATEGORY_SUSPENSION = "suspension"
+CATEGORY_MIDDELEN = "middelen"
 
 # ---------------------------------------------------------------------------
 # Grondwettelijk Hof / Constitutional Court (GHCC)
@@ -34,100 +57,102 @@ GHCC_SECTION_RULING = "ruling"
 
 SOURCE_COUNCIL_OF_STATE = "RVS"
 
-# RVS section label constants. These strings are stored verbatim in
-# ``chunks.section`` and used as HTML anchors on case pages, just like
-# the GHCC constants above.
+# Category map for RVS headings: heading text (stripped, verbatim as it will
+# appear in the Markdown body after the assemble step) → cross-court category.
 #
-# Design note: the RVS has a much richer heading hierarchy than the GHCC
-# (admissibility, jurisdiction, suspension conditions, multiple examination
-# tiers, etc.). Rather than collapsing everything to the GHCC's four labels,
-# we keep RVS-specific labels so each body's structure is faithfully
-# represented. The normalization map below (``RVS_HEADING_MAP``) is the
-# single human-reviewed place where raw heading variants are mapped to these
-# canonical labels.
-RVS_SECTION_VOORWERP = "voorwerp"           # Subject / scope of the appeal
-RVS_SECTION_FEITEN = "feiten"               # Facts
-RVS_SECTION_STANDPUNT = "standpunt"         # Party standpoints / pleas
-RVS_SECTION_ONTVANKELIJKHEID = "ontvankelijkheid"  # Admissibility
-RVS_SECTION_RECHTSMACHT = "rechtsmacht"     # Jurisdiction
-RVS_SECTION_SCHORSING = "schorsing"         # Suspension conditions
-RVS_SECTION_MIDDELEN = "middelen"           # Examination of grounds (all tiers)
-RVS_SECTION_BEOORDELING = "beoordeling"    # Court's assessment / operative part
-
-# Human-reviewed normalization map: raw heading string as extracted from the
-# source document → canonical ``##``-prefixed Markdown header written by the
-# RVS assemble step. All variants that map to the same canonical header will
-# end up under the same section label in ``cases.db``.
-#
-# Maintenance notes:
-# - All keys are exact strings as they appear (or will appear after basic
-#   cleaning) in the raw PDF/HTML text. Case-sensitive.
-# - Add new variants here as they are discovered in the corpus; do not add
-#   regex patterns (use the assemble step for fuzzy matching if needed).
-# - The "standpunt" block is intentionally incomplete - the full variant list
-#   must be expanded by reviewing the real RVS corpus before ingestion begins.
-# - "Onderzoek van het Nde middel", sub-parts (onderdelen), and procedural
-#   exceptions (excepties) all collapse to one "## Onderzoek van de middelen"
-#   header so the indexer produces one searchable ``middelen`` section per
-#   case regardless of how many individual grounds are examined.
-RVS_HEADING_MAP: dict[str, str] = {
-    # --- Voorwerp van het beroep ----------------------------------------
-    "Voorwerp van de vordering": "## Voorwerp van het beroep",
-    "Voorwerp van de beroepen": "## Voorwerp van het beroep",
-    "Voorwerp van het beroep": "## Voorwerp van het beroep",
-    # --- Feiten ---------------------------------------------------------
-    "Feiten": "## Feiten",
-    "De gegevens van de zaak": "## Feiten",
-    # --- Standpunt van de partijen (INCOMPLETE - expand from corpus) ----
-    "Standpunt van de partijen": "## Standpunt van de partijen",
-    "Uiteenzetting van het middel": "## Standpunt van de partijen",
-    "Betwisting door verzoekende partij": "## Standpunt van de partijen",
-    # --- Ontvankelijkheid -----------------------------------------------
-    "Ontvankelijkheid van het beroep": "## Ontvankelijkheid",
-    "Ontvankelijkheid van de beroepen": "## Ontvankelijkheid",
-    "Ontvankelijkheid van de vordering": "## Ontvankelijkheid",
-    "De ontvankelijkheid": "## Ontvankelijkheid",
-    "Ontvankelijkheid – belang": "## Ontvankelijkheid",   # en dash variant
-    # --- Rechtsmacht ----------------------------------------------------
-    "De rechtsmacht van de Raad van State": "## Rechtsmacht van de Raad van State",
-    "Rechtsmacht van de Raad van State": "## Rechtsmacht van de Raad van State",
-    "Exceptie betreffende de rechtsmacht": "## Rechtsmacht van de Raad van State",
-    # --- Schorsingsvoorwaarden ------------------------------------------
-    "Herinnering aan de schorsingsvoorwaarden": "## Schorsingsvoorwaarden",
-    "Schorsingsvoorwaarden": "## Schorsingsvoorwaarden",
-    "De schorsingsvoorwaarden": "## Schorsingsvoorwaarden",
-    "De grondvoorwaarden voor de schorsing": "## Schorsingsvoorwaarden",
-    # --- Onderzoek van de middelen (all examination tiers + excepties) --
-    # Top-level "Onderzoek van" headings
-    "Onderzoek van de middelen Enig middel": "## Onderzoek van de middelen",
-    "Onderzoek van het eerste middel": "## Onderzoek van de middelen",
-    "Onderzoek van het tweede middel": "## Onderzoek van de middelen",
-    "Onderzoek van het derde middel": "## Onderzoek van de middelen",
-    "Onderzoek van het vierde middel": "## Onderzoek van de middelen",
-    "Onderzoek van het vijfde middel": "## Onderzoek van de middelen",
-    "Onderzoek van het zesde middel": "## Onderzoek van de middelen",
-    "Onderzoek van het zevende middel": "## Onderzoek van de middelen",
-    # Individual ground labels (second tier)
-    "Enig middel": "## Onderzoek van de middelen",
-    "Eerste middel": "## Onderzoek van de middelen",
-    "Tweede middel": "## Onderzoek van de middelen",
-    "Derde middel": "## Onderzoek van de middelen",
-    "Vierde middel": "## Onderzoek van de middelen",
-    "Vijfde middel": "## Onderzoek van de middelen",
-    "Zesde middel": "## Onderzoek van de middelen",
-    # Sub-parts of grounds (third tier)
-    "Eerste onderdeel": "## Onderzoek van de middelen",
-    "Tweede onderdeel": "## Onderzoek van de middelen",
-    "Derde onderdeel": "## Onderzoek van de middelen",
-    "Vierde onderdeel": "## Onderzoek van de middelen",
-    # Procedural exceptions (collapsed into middelen rather than a separate section
-    # because they are substantive grounds examined alongside the main grounds)
-    "Uiteenzetting van de exceptie": "## Onderzoek van de middelen",
-    "Exceptie": "## Onderzoek van de middelen",
-    "Excepties": "## Onderzoek van de middelen",
-    "De exceptie": "## Onderzoek van de middelen",
-    # --- Beoordeling ----------------------------------------------------
-    "Beoordeling": "## Beoordeling",
+# Design notes:
+# - Keys are the *verbatim* heading strings kept in the assembled Markdown,
+#   not normalized variants. The assemble step writes headings as-found; the
+#   indexer looks them up here for metadata only.
+# - Unknown headings (not in the map) are indexed with section_category=None.
+#   This is intentional: the corpus is large and inconsistent, so the map
+#   covers the known cases while remaining open to new patterns.
+# - Ordinal middelen headings ("Eerste middel" … "Tiende middel") and their
+#   "Het Xe middel" variants are listed up to a plausible maximum; higher
+#   ordinals (rare in practice) will just get section_category=None.
+# - Sub-parts ("Eerste onderdeel" etc.) and "Onderzoek van het Xe middel"
+#   forms all map to CATEGORY_MIDDELEN so they stay findable via category
+#   filter alongside the top-level ground headings.
+_RVS_HEADING_CATEGORY_MAP: dict[str, str] = {
+    # --- Facts / case data ------------------------------------------------
+    "De gegevens van de zaak": CATEGORY_FACTS,
+    "Feiten": CATEGORY_FACTS,
+    "De feiten": CATEGORY_FACTS,
+    # --- Jurisdiction -----------------------------------------------------
+    "De rechtsmacht van de Raad van State": CATEGORY_JURISDICTION,
+    "Rechtsmacht van de Raad van State": CATEGORY_JURISDICTION,
+    "Exceptie betreffende de rechtsmacht": CATEGORY_JURISDICTION,
+    # --- Admissibility ----------------------------------------------------
+    "De ontvankelijkheid": CATEGORY_ADMISSIBILITY,
+    "Ontvankelijkheid van het beroep": CATEGORY_ADMISSIBILITY,
+    "Ontvankelijkheid van de beroepen": CATEGORY_ADMISSIBILITY,
+    "Ontvankelijkheid van de vordering": CATEGORY_ADMISSIBILITY,
+    "Ontvankelijkheid – belang": CATEGORY_ADMISSIBILITY,
+    "De exceptie": CATEGORY_ADMISSIBILITY,
+    "Exceptie": CATEGORY_ADMISSIBILITY,
+    "Excepties": CATEGORY_ADMISSIBILITY,
+    "Uiteenzetting van de exceptie": CATEGORY_ADMISSIBILITY,
+    # --- Suspension conditions --------------------------------------------
+    "De grondvoorwaarden voor de schorsing": CATEGORY_SUSPENSION,
+    "De schorsingsvoorwaarden": CATEGORY_SUSPENSION,
+    "Schorsingsvoorwaarden": CATEGORY_SUSPENSION,
+    "Herinnering aan de schorsingsvoorwaarden": CATEGORY_SUSPENSION,
+    # --- Party standpoints ------------------------------------------------
+    "Standpunt van de partijen": CATEGORY_ARGUMENTS,
+    "Uiteenzetting van het middel": CATEGORY_ARGUMENTS,
+    "Betwisting door verzoekende partij": CATEGORY_ARGUMENTS,
+    # --- Grounds (middelen) - top-level ordinal forms ---------------------
+    "Enig middel": CATEGORY_MIDDELEN,
+    "Eerste middel": CATEGORY_MIDDELEN,
+    "Tweede middel": CATEGORY_MIDDELEN,
+    "Derde middel": CATEGORY_MIDDELEN,
+    "Vierde middel": CATEGORY_MIDDELEN,
+    "Vijfde middel": CATEGORY_MIDDELEN,
+    "Zesde middel": CATEGORY_MIDDELEN,
+    "Zevende middel": CATEGORY_MIDDELEN,
+    "Achtste middel": CATEGORY_MIDDELEN,
+    "Negende middel": CATEGORY_MIDDELEN,
+    "Tiende middel": CATEGORY_MIDDELEN,
+    # --- Grounds - "Het Xe middel" variants ------------------------------
+    "Het enige middel": CATEGORY_MIDDELEN,
+    "Het eerste middel": CATEGORY_MIDDELEN,
+    "Het tweede middel": CATEGORY_MIDDELEN,
+    "Het derde middel": CATEGORY_MIDDELEN,
+    "Het vierde middel": CATEGORY_MIDDELEN,
+    "Het vijfde middel": CATEGORY_MIDDELEN,
+    "Het zesde middel": CATEGORY_MIDDELEN,
+    "Het zevende middel": CATEGORY_MIDDELEN,
+    "Het achtste middel": CATEGORY_MIDDELEN,
+    "Het negende middel": CATEGORY_MIDDELEN,
+    "Het tiende middel": CATEGORY_MIDDELEN,
+    # --- Grounds - "Onderzoek van het Xe middel" forms -------------------
+    "Onderzoek van de middelen": CATEGORY_MIDDELEN,
+    "Onderzoek van het enige middel": CATEGORY_MIDDELEN,
+    "Onderzoek van het eerste middel": CATEGORY_MIDDELEN,
+    "Onderzoek van het tweede middel": CATEGORY_MIDDELEN,
+    "Onderzoek van het derde middel": CATEGORY_MIDDELEN,
+    "Onderzoek van het vierde middel": CATEGORY_MIDDELEN,
+    "Onderzoek van het vijfde middel": CATEGORY_MIDDELEN,
+    "Onderzoek van het zesde middel": CATEGORY_MIDDELEN,
+    "Onderzoek van het zevende middel": CATEGORY_MIDDELEN,
+    "Onderzoek van het achtste middel": CATEGORY_MIDDELEN,
+    "Onderzoek van het negende middel": CATEGORY_MIDDELEN,
+    "Onderzoek van het tiende middel": CATEGORY_MIDDELEN,
+    # --- Grounds - sub-parts (onderdelen) --------------------------------
+    "Eerste onderdeel": CATEGORY_MIDDELEN,
+    "Tweede onderdeel": CATEGORY_MIDDELEN,
+    "Derde onderdeel": CATEGORY_MIDDELEN,
+    "Vierde onderdeel": CATEGORY_MIDDELEN,
+    "Vijfde onderdeel": CATEGORY_MIDDELEN,
+    # --- Merits (gegrondheid) --------------------------------------------
+    "De gegrondheid van het beroep": CATEGORY_MIDDELEN,
+    "De gegrondheid": CATEGORY_MIDDELEN,
+    # --- Court's assessment / reasoning ----------------------------------
+    "Beoordeling van het middel": CATEGORY_REASONING,
+    "Beoordeling": CATEGORY_REASONING,
+    # --- Operative ruling ------------------------------------------------
+    "OM DIE REDENEN": CATEGORY_OPERATIVE,
+    "BESLIST DE RAAD VAN STATE :": CATEGORY_OPERATIVE,
 }
 
 
@@ -145,27 +170,31 @@ class SourceConfig:
             at all, in which case every section falls back to one whole-section
             chunk.
         section_headers: Ordered ``(markdown_header, section_label)`` pairs
-            that define this body's Markdown section structure. The
-            ``markdown_header`` is the exact ``##``-prefixed string the
-            body's own assemble step emits (and ``markdown_case.split_sections``
-            splits on); ``section_label`` is the free-form string stored in
-            ``chunks.section`` and used as an HTML anchor on case pages.
-            Order must match document order so ``split_sections`` can slice
-            between consecutive headers correctly.
-        heading_normalizer: Optional mapping from raw heading strings (as
-            extracted from source PDFs/HTML) to the canonical ``##``-prefixed
-            Markdown headers defined in ``section_headers``. Used by the
-            body-specific assemble step to normalize heading variants before
-            writing the ``.md`` file. ``None`` for bodies (like GHCC) whose
-            rulings use a small, consistent set of headings that do not require
-            normalization.
+            that define this body's Markdown section structure. Used by
+            ``markdown_case.split_sections`` when ``dynamic_sections=False``.
+            The ``markdown_header`` is the exact ``##``-prefixed string the
+            body's own assemble step emits; ``section_label`` is the string
+            stored in ``chunks.section`` and used as an HTML anchor on case
+            pages. Ignored when ``dynamic_sections=True``.
+        heading_category_map: Optional mapping from section keys to cross-court
+            category strings (``CATEGORY_*`` constants). For fixed-section
+            courts (``dynamic_sections=False``) keys are section labels (e.g.
+            ``"facts"``); for dynamic-section courts (``dynamic_sections=True``)
+            keys are verbatim heading texts as they appear in the body.
+            Headings absent from the map get ``section_category=None``.
+        dynamic_sections: When ``True``, ``markdown_case.split_sections``
+            detects section boundaries by scanning for any ``## ``-prefixed
+            line in the Markdown body (used for courts like RVS whose heading
+            set is open-ended and varies per ruling). When ``False`` (default),
+            splits on the fixed list in ``section_headers``.
     """
 
     key: str
     name: str
     paragraph_marker_re: re.Pattern[str] | None
-    section_headers: tuple[tuple[str, str], ...]
-    heading_normalizer: dict[str, str] | None = field(default=None)
+    section_headers: tuple[tuple[str, str], ...] = field(default=())
+    heading_category_map: dict[str, str] | None = field(default=None)
+    dynamic_sections: bool = field(default=False)
 
 
 # ---------------------------------------------------------------------------
@@ -183,9 +212,7 @@ _GHCC_PARAGRAPH_MARKER_RE = re.compile(r"(?m)^\s*([A-Z](?:\.\d+)+)\.\s+")
 # ---------------------------------------------------------------------------
 
 # RVS rulings number paragraphs with Arabic dot-notation: "1.", "1.2.",
-# "1.2.3.", etc. Roman-numeral headings (I., II., ...) mark major document
-# sections and are handled by the normalization layer above, not as
-# paragraph markers - they would produce misleadingly coarse chunks.
+# "1.2.3.", etc.
 _RVS_PARAGRAPH_MARKER_RE = re.compile(r"(?m)^\s*(\d+(?:\.\d+)*)\.\s+")
 
 # ---------------------------------------------------------------------------
@@ -203,23 +230,19 @@ SOURCES: dict[str, SourceConfig] = {
             ("## Beoordeling door het Hof", GHCC_SECTION_REASONING),
             ("## Beschikking", GHCC_SECTION_RULING),
         ),
-        heading_normalizer=None,
+        heading_category_map={
+            GHCC_SECTION_FACTS: CATEGORY_FACTS,
+            GHCC_SECTION_ARGUMENTS: CATEGORY_ARGUMENTS,
+            GHCC_SECTION_REASONING: CATEGORY_REASONING,
+            GHCC_SECTION_RULING: CATEGORY_OPERATIVE,
+        },
     ),
     SOURCE_COUNCIL_OF_STATE: SourceConfig(
         key=SOURCE_COUNCIL_OF_STATE,
         name="Raad van State (Conseil d'État)",
         paragraph_marker_re=_RVS_PARAGRAPH_MARKER_RE,
-        section_headers=(
-            ("## Voorwerp van het beroep", RVS_SECTION_VOORWERP),
-            ("## Feiten", RVS_SECTION_FEITEN),
-            ("## Standpunt van de partijen", RVS_SECTION_STANDPUNT),
-            ("## Ontvankelijkheid", RVS_SECTION_ONTVANKELIJKHEID),
-            ("## Rechtsmacht van de Raad van State", RVS_SECTION_RECHTSMACHT),
-            ("## Schorsingsvoorwaarden", RVS_SECTION_SCHORSING),
-            ("## Onderzoek van de middelen", RVS_SECTION_MIDDELEN),
-            ("## Beoordeling", RVS_SECTION_BEOORDELING),
-        ),
-        heading_normalizer=RVS_HEADING_MAP,
+        dynamic_sections=True,
+        heading_category_map=_RVS_HEADING_CATEGORY_MAP,
     ),
 }
 

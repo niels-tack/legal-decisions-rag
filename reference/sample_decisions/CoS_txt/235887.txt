@@ -1,0 +1,1385 @@
+RAAD VAN STATE, AFDELING BESTUURSRECHTSPRAAK 
+
+VOORZITTER VAN DE XIIe KAMER 
+
+In zake: 
+
+A R R E S T 
+
+nr. 235.887 van 27 september 2016 
+in de zaak A. 220.121/XII-8221 
+
+de NV VERBRAEKEN INFRA 
+bijgestaan en vertegenwoordigd door 
+advocaat Carlos De Wolf 
+kantoor houdend te 9680 Maarkedal 
+Etikhovestraat 6 
+bij wie woonplaats wordt gekozen 
+eveneens bijgestaan en vertegenwoordigd door 
+advocaat Charlotte De Wolf 
+
+tegen: 
+
+de CVBA EANDIS SYSTEM OPERATOR 
+bijgestaan en vertegenwoordigd door 
+advocaten  Frederik  Vandendriessche,  Leopold  Schellekens  en 
+Jochen Vranckx 
+kantoor houdend te 1000 Brussel 
+Loksumstraat 25 
+bij wie woonplaats wordt gekozen 
+
+--------------------------------------------------------------------------------------------------   
+
+I. Voorwerp van de vordering 
+
+1. 
+
+De  vordering,  ingesteld  op  29  augustus  2016,  strekt  tot  de 
+
+schorsing bij uiterst dringende noodzakelijkheid van de tenuitvoerlegging van: 
+
+“volgende beslissingen van verwerende partij: 
+1)  de  beslissing  van  verwerende  partij  d.d.  30  mei  2016,  doch  door 
+verzoekende partij op 30 juni 2016 ontvangen, en die luidt als volgt: 
+In  toepassing  van  de  regelgeving  betreffende  de  gunning  en  sluiting  van 
+overheidsopdrachten en onder meer in het bijzonder artikel 8 van de wet 
+van 17.08.2013, delen wij u mee dat wij uw offerte niet hebben gekozen. 
+
+XII-8221-1/20 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+De  aanbestedende  overheid  heeft  conform  artikel  35  van  de  wet 
+Overheidsopdrachten  beslist  om  de  minicompetitie  met  referentie  ‘862’ 
+niet  te  gunnen  om  budgettaire  redenen:  immers  werd  voor  de  uitvoering 
+van  deze  minicompetitie  een  raming  voorzien  die  sterk  afwijkt  van  de 
+ingediende  offertes  waardoor  de  budgetvoorzieningen  ruimschoots 
+ontoereikend zijn, (hierna de ‘Bestreden Beslissing 1’) […]. 
+
+2) de beslissing van verwerende partij, aan verzoekende partij meegedeeld 
+per aangetekend schrijven d.d. 19 augustus 2016, en die luidt als volgt: 
+Gezien geen enkele offerte uit bovenstaande voldeed aan de grenzen van de 
+voorziene  raming  en  bovendien  de  urgentie  door  het  tijdsverlies  van  de 
+minicompetitie zonder gunstig gevolg dermate is, beslist de aanbestedende 
+overheid  om  op  basis  van  art  53  §  2,  c  een  onderhandelingsprocedure 
+zonder bekendmaking op te starten waarbij aan drie gekende partijen in de 
+markt, allen niet-behorende tot de raamcontractanten in kader van dossier 
+EAN12AW124,  een  prijs  wordt  gevraagd  op  basis  van  dezelfde 
+voorwaarden uit het initiële lastenboek. Wij zenden u hierbij een afschrift 
+van  dit  lastenboek  dat  werd  uitgestuurd  aan  deze  partijen.  Uiteraard  is 
+hierbij de uitvoeringstermijn aangepast aangezien deze procedure op basis 
+van art 53 § 2, c pas kon worden opgestart na evaluatie van de biedingen in 
+kader  van  de  initiële,  niet-gegunde  minicompetitie  waaraan  uw  cliënte 
+deelnam. Om redenen van interne transparantie werd het dossiernummer 
+voor deze procedure behouden. 
+Na evaluatie van de ingediende offertes beslist de aanbestedende overheid 
+om een beslissing van gunning voor deze werken te bekrachtigen aan partij 
+‘Van Vulpen BV’ voor een totaalbedrag van € 364.900,00 exclusief BTW. 
+Dit  totaalbedrag  kon  gegund  worden  gezien  de  voorziene  raming  en  het 
+voorziene budget niet werd overschreden. (hierna de ‘Bestreden Beslissing 
+2’) […]”. 
+
+II. Verloop van de rechtspleging 
+
+2. 
+
+De verwerende partij heeft een nota ingediend. 
+
+De  partijen  zijn  opgeroepen  voor  de  terechtzitting,  die  heeft 
+
+plaatsgevonden op 13 september 2016, om 10.00 uur. 
+
+Kamervoorzitter Dierk Verbiest heeft verslag uitgebracht. 
+
+XII-8221-2/20 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Advocaten  Carlos  De  Wolf  en  Charlotte  De  Wolf,  die 
+
+verschijnen  voor  de  verzoekende  partij,  en  advocaat  Jochen  Vranckx,  die 
+
+verschijnt voor de verwerende partij, zijn gehoord. 
+
+Auditeur  Ines  Martens  heeft  een  met  dit  arrest  eensluidend 
+
+advies gegeven. 
+
+Er is toepassing gemaakt van de bepalingen op het gebruik der 
+
+talen,  vervat  in  titel  VI,  hoofdstuk  II,  van  de  wetten  op  de  Raad  van  State, 
+
+gecoördineerd op 12 januari 1973. 
+
+III. Feiten 
+
+3.1. 
+
+De 
+
+verwerende 
+
+partij 
+
+heeft 
+
+een 
+
+overheidsopdracht 
+
+bekendgemaakt  in  het  Bulletin  der  Aanbestedingen  van  9  januari  2013  met  als 
+
+voorwerp het opstellen van een raamovereenkomst voor de uitvoering van werken. 
+
+Het voorwerp van de werken wordt in de aankondiging als volgt omschreven: 
+
+“Het voorwerp van dit aankoopdossier omvat het uitvoeren van werken. 
+De werken behelzen: 
+•    Het ontwerpen en uitvoeren van gestuurde boringen 
+•  Het  plaatsen  en  lassen  van  stalen  gasleidingen  die  buiten  scope 
+ondergrondse leidingen vallen 
+•  Het  plaatsen  en  lassen  van  PE  (Polyethyleen)  gasleidingen  vanaf 
+Ø315mm 
+• Het  plaatsen en verbinden van kabels met een uitbatingspanning hoger 
+dan 15kV en/of een sectie groter dan 400 mm². 
+Het doel van dit aankoopdossier is het sluiten van een raamovereenkomst 
+met verschillende aannemers waarbij de deelopdrachten binnen de percelen 
+zullen toegewezen worden aan de hand van minicompetities”. 
+
+De  verzoekende  partij  heeft  zich  kandidaat  gesteld  voor  deze 
+
+opdracht en onder andere haar offerte werd gekozen voor de percelen 1 tot en met 8 
+
+van de opdracht.   
+
+XII-8221-3/20 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Voor perceel 1 werden de volgende zeven aannemers gekozen: 
+
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+
+nv APK Infra   
+bvba Cas-Vos   
+Cofely Fabricom – GDF SUEZ 
+bvba Rens   
+bvba RDJ Drilling   
+nv Van Den Berg 
+de verzoekende partij. 
+
+3.2. 
+
+De verwerende partij beslist volgens haar nota op 8 maart 2016 
+
+om  in  het  kader  van  de  gesloten  raamovereenkomst  een  minicompetitie  te 
+
+organiseren  voor  perceel  1,  namelijk  voor  het  ontwerpen  en  uitvoeren  van 
+
+gestuurde  boringen  regio  Oost.  Meer  specifiek  betreft  het  voorwerp  van  de 
+
+opdracht  het  ontwerpen  van  een  boorprofiel  en  het  uitvoeren  van  een  gestuurde 
+
+boring  met  een  bundel  van  3  x  PEØ250  en  5  x  PEØ200  in  kruising  met  het 
+
+Albertkanaal te Merksem. 
+
+Op deze opdracht zijn het bijzonder bestek “het ontwerpen van 
+
+een boorprofiel en het uitvoeren van een gestuurde boring met een bundel 3 X PE 
+
+Ø  250  en  5  X  PE  Ø  200  in  kruising  met  het  Albertkanaal”,  het  bijzonder 
+
+administratief  bestek  “Projectgebonden  werken  (Onderhandelingsprocedure  met 
+
+bekendmaking).  Dossiernr.:  EAN12AW124  –  Editie  04.2013”  en  het  bijzonder 
+
+administratief  bestek  “Afroep  op  raamcontract  –  Projectgebonden  Werken. 
+
+Dossiernr.: EAN12AW124 – Editie 09.2013” van toepassing.   
+
+Onder  punt  4  ‘Uitvoeringstermijn’  van  het  eerstgenoemde 
+
+bijzonder bestek werd de start van de werken op 9 mei 2016 en het einde van de 
+
+werken op 24 juni 2016 vastgelegd. 
+
+Volgens de nota is de uiterste datum en uur voor het indienen van 
+
+een offerte 5 april 2016 om 16.00 uur. 
+
+XII-8221-4/20 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Er  worden 
+
+twee  offertes 
+
+ingediend,  namelijk  door  de 
+
+verzoekende partij en door de nv Fabricom.   
+
+3.3. 
+
+Op  12  en  13  april  2016  worden  technische  vergaderingen 
+
+georganiseerd waarop alle opdrachtnemers bij perceel 1 van de raamovereenkomst 
+
+werden uitgenodigd en waarbij de scope van de opdracht werd besproken.   
+
+Op 14 april 2016 worden alle opdrachtnemers bij perceel 1 van 
+
+de  raamovereenkomst  gevraagd  om  tegen  28  april  2016  om  16  uur  een  nieuwe 
+
+offerte in te dienen.     
+
+Hierbij  worden  de  oorspronkelijke  opdrachtdocumenten   
+
+opnieuw bezorgd. Deze documenten worden wel op een aantal punten gewijzigd: 
+
+aldus  wordt  de  startdatum  van  de  werken  behouden  op  9  mei  2016,  maar  de 
+
+einddatum van de werken wordt verschoven naar 8 juli 2016.   
+
+Er  worden  vervolgens  drie  offertes  ingediend  binnen  deze   
+
+tweede  minicompetitie  door  drie  opdrachtnemers  bij  perceel  1  van  de 
+
+raamovereenkomst: de verzoekende partij, de nv Van den Berg en de nv Cas-Vos. 
+
+3.4. 
+
+Bij  e-mailbericht  van  14  april  2016  start  de  verwerende  partij 
+
+voor hetzelfde werk tevens een onderhandelingsprocedure zonder bekendmaking. 
+
+Er worden immers vier ondernemingen gecontacteerd met de vraag om een beste 
+
+offerte in te dienen voor het uitvoeren van een gestuurde boring met een bundel 
+
+van 3 x PEØ250 en 5 x PEØ200 in kruising met Albertkanaal te Merksem: Hak, 
+
+Van Vulpen, Fordibel en Dekabo. 
+
+Hun  worden  dezelfde  opdrachtdocumenten  bezorgd  als  bij  de 
+
+voormelde tweede minicompetitie. 
+
+Er  worden  twee  offertes  ingediend  in  het  kader  van  deze 
+
+onderhandelingsprocedure: door Hak en door Van Vulpen. 
+
+XII-8221-5/20 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.5. 
+
+Op  23  mei  2016  beslist  het  managementcomité  van  de 
+
+verwerende partij de opdracht aan de bv Van Vulpen te gunnen onder vermelding 
+
+“Minicompetities: projectgebonden werken (662) (dossier EAN12AW124)”.     
+
+Dit is de tweede bestreden beslissing. 
+
+Bij e-mailbericht van 25 mei 2016 wordt de bv Van Vulpen op de 
+
+hoogte gebracht van de gunning. Aan de andere inschrijver wordt medegedeeld dat 
+
+zijn offerte niet werd gekozen.   
+
+3.6. 
+
+Vervolgens beslist het managementcomité van verwerende partij 
+
+op 13 juni 2016 dat de minicompetitie wordt beëindigd en geëxpliciteerd dat de 
+
+voormelde  gunning  aan  bv  Van  Vulpen  gebeurde  op  grond  van  de 
+
+onderhandelingsprocedure: 
+
+“de 
+
+vergadering 
+
+keurt 
+
+de 
+
+voorgelegde 
+
+minicompetitiedossers, incl. de niet-gunning van dossier ‘projectgebonden werken 
+
+(662) (dossier EAN12AW124)’ en het OZB+-dossier goed”. 
+
+De voormelde beëindiging is de eerste bestreden beslissing. 
+
+3.7. 
+
+Bij aangetekende brief van 30 mei 2016, blijkbaar pas op 29 juni 
+
+2016 aangetekend verzonden, deelt de verwerende partij aan de verzoekende partij 
+
+mee: 
+
+“In toepassing van de regelgeving betreffende de gunning en sluiting van 
+overheidsopdrachten en onder meer in het bijzonder artikel 8 van de wet 
+van 17.06.2013, delen wij u mee dat wij uw offerte niet hebben gekozen.   
+De  aanbestedende  overheid  heeft  conform  artikel  35  van  de  wet 
+overheidsopdrachten beslist om de minicompetitie met referentie ‘662’ niet 
+te  gunnen  om  budgettaire  redenen:  immers  werd  voor  de  uitvoering  van 
+deze  minicompetitie  een  raming  voorzien  die  sterk  afwijkt  van  de 
+ingediende  offertes  waardoor  de  budgetvoorzieningen  ruimschoots 
+ontoereikend zijn.   
+[…]”. 
+
+XII-8221-6/20 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.8. 
+
+Op  30  juni  2016  richt  verzoekende  partij  een  schrijven  aan  de 
+
+verwerende partij, waarin zij aangeeft te hebben vernomen dat het dossier buiten 
+
+de  minicompetitie  wel  degelijk  werd  gegund  aan  een  aannemer  die  geen  deel 
+
+uitmaakt  van  de  lijst  van  gekwalificeerde  aannemers  voor  de  projectgebonden 
+
+werken.     
+
+Bij aangetekende brief van 6 juli 2016 antwoordt de verwerende 
+
+partij hierop aan de verzoekende partij: 
+
+“Zoals u vernam in ons schrijven van 30/05/2016 is om budgettaire redenen 
+beslist om project 662 niet te gunnen. Immers werd voor de uitvoering van 
+deze  minicompetitie  een  raming  voorzien  die  sterk  afwijkt  van  de 
+ingediende  offertes  waardoor  de  budgetvoorzieningen  ruimschoots 
+ontoereikend zijn.   
+[…]”. 
+
+Hierbij  wordt 
+
+tevens  verwezen  naar  de  administratieve 
+
+bepalingen  in  de  bestekdocumenten  die  aangeven  dat  er  in  hoofde  van  de 
+
+aanbestedende overheid geen verplichting bestaat om de opdracht te gunnen. 
+
+3.9. 
+
+Op 11 augustus 2016 richten de raadslieden van de verzoekende 
+
+partij  een  schrijven  aan  de  verwerende  partij  waarbij  gevraagd  wordt  om  op  de 
+
+volgende vragen een antwoord te formuleren: 
+
+“(a)  Werd  de  opdracht  houdende  een  aanvang  van  werken,  die  het 
+voorwerp  heeft  uitgemaakt  van  de  beslissing  tot  stopzetting  van  de 
+gunningsprocedure  in  toepassing  van  artikel  35  van  de  Wet  van  15  juni 
+2006, zoals meegedeeld bij aangetekend schrijven d.d. 30 mei 2016 doch 
+pas door Verbraeken ontvangen op 30 juni 2016, aan een andere aannemer 
+gegund? 
+(b) Zo ja, aan welke aannemer werd de opdracht gegund en op basis van 
+welke gunningsprocedure en aansluitende gunningsbeslissing werd tot de 
+gunning van deze opdracht overgegaan?” 
+
+3.10. 
+
+Bij  aangetekende  brief  van  19  augustus  2016  deelt  de 
+
+verwerende partij aan de verzoekende partij het volgende mee: 
+
+XII-8221-7/20 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+“In zoverre onderstaande informatie een herhaling is van ons schrijven van 
+6 juli 2016 vatten wij bondig het verloop van dit dossier samen: 
+- In kader van minicompetitie 662 dient uw cliënte inderdaad een offerte in. 
+De aanbestedende overheid beslist om over te gaan tot niet-gunning van 
+deze minicompetitie op basis van art. 35 W.O.O. met als specifieke reden 
+de afwijking tussen de ingediende offertes en de voorziene raming en het 
+voorziene  budget.  We  verwijzen  hiervoor  naar  onze  kennisgeving 
+‘niet-gunning’ alsmede naar ons schrijven van 6 juli aan uw cliënte waarbij 
+de kennisgeving niet-gunning geldt als formele mededeling in toepassing 
+van de wet van 17 juni 2013. 
+- Gezien geen enkele offerte uit bovenstaande voldeed aan de grenzen van 
+de voorziene raming en bovendien de urgentie door het tijdsverlies van de 
+minicompetitie zonder gunstig gevolg dermate is, beslist de aanbestedende 
+overheid  om  op  basis  van  art.  53  §2,  c  een  onderhandelingsprocedure 
+zonder bekendmaking op te starten waarbij aan drie gekende partijen in de 
+markt, allen niet-behorende tot de raamcontractanten in kader van dossier 
+EAN12AW124,  een  prijs  wordt  gevraagd  op  basis  van  dezelfde 
+voorwaarden uit het initiële lastenboek. Wij zenden u hierbij een afschrift 
+van  dit  lastenboek  dat  werd  uitgestuurd  aan  deze  partijen.  Uiteraard  is 
+hierbij de uitvoeringstermijn aangepast aangezien deze procedure op basis 
+van art. 53 §2, c pas kon worden opgestart na evaluatie van de biedingen in 
+kader  van  de  initiële,  niet-gegunde  minicompetitie  waaraan  uw  cliënte 
+deelnam. Om redenen van interne transparantie werd het dossiernummer 
+voor deze procedure behouden.   
+- Na evaluatie van de ingediende offertes beslist de aanbestedende overheid 
+om een beslissing van gunning voor deze werken te bekrachtigen aan partij 
+‘Van Vulpen BV’ voor een totaalbedrag van € 364.900,00 exclusief btw. 
+Dit  totaalbedrag  kon  gegund  worden  gezien  de  voorziene  raming  en  het 
+voorzien budget niet werden overschreden.” 
+
+IV. Ontvankelijkheid van het beroep 
+
+4. 
+
+5. 
+
+De verwerende werpt twee excepties van onontvankelijkheid op.   
+
+Voor  zover  de  vordering  gericht  is  tegen  de  eerste  bestreden 
+
+beslissing voert de verwerende partij aan dat de vordering laattijdig is.   
+
+Uit  de  hiernavolgende  bespreking  van  het  eerste  middel,  het 
+
+enige middel dat gericht is tegen deze beslissing, zal  blijken  dat dit  middel niet 
+
+ernstig wordt bevonden. Er dient dan ook geen uitspraak te worden gedaan over de 
+
+XII-8221-8/20 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ontvankelijkheid  van  de  vordering  voor  zover  ze  is  gericht  tegen  de  eerste 
+
+bestreden beslissing.   
+
+6. 
+
+Wat de vordering betreft voor zover ze is gericht tegen de tweede 
+
+bestreden beslissing en de exceptie, waarin het vermeende gebrek aan samenhang 
+
+tussen de beide vorderingen wordt opgeworpen, wordt deze exceptie niet aanvaard.   
+
+Daartoe  volstaat  de  vaststelling  dat  de  vorderingen  dezelfde 
+
+opdracht betreffen.   
+
+V. Schorsingsvoorwaarden 
+
+7.1. 
+
+Krachtens artikel 17, §§ 1 en 4, van de gecoördineerde wetten op 
+
+de Raad van State kan tot schorsing van de tenuitvoerlegging bij uiterst dringende 
+
+noodzakelijkheid  slechts  worden  besloten  onder  de  dubbele  voorwaarde  dat 
+
+minstens één ernstig middel wordt aangevoerd dat de nietigverklaring van de akte 
+
+of  het  reglement  prima  facie  kan  verantwoorden  en  dat  een  uiterst  dringende 
+
+noodzakelijkheid voorhanden is die onverenigbaar is met de behandelingstermijn 
+
+van de gewone vordering tot schorsing. 
+
+7.2. 
+
+Te dezen is evenwel ook de wet van 17 juni 2013 ‘betreffende de 
+
+motivering,  de  informatie  en  de  rechtsmiddelen  inzake  overheidsopdrachten  en 
+
+bepaalde opdrachten voor werken, leveringen en diensten’ van toepassing. 
+
+Krachtens  artikel  15,  eerste  lid,  van  die  wet  kan  de  uitvoering 
+
+worden  geschorst  van  de  thans  bestreden  beslissingen  in  aanwezigheid  van  een 
+
+ernstig middel of een klaarblijkelijke onwettigheid. 
+
+Overeenkomstig  artikel  15,  tweede  lid,  echter  wordt  de 
+
+vordering tot schorsing voor de Raad van State uitsluitend ingesteld volgens een 
+
+procedure bij uiterst dringende noodzakelijkheid. 
+
+XII-8221-9/20 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Overeenkomstig  artikel  31  gelden  deze  bepalingen  ook  voor 
+
+opdrachten die de drempelbedragen voor Europese bekendmaking niet bereiken. 
+
+Er  dient  te  dezen  dan  ook  enkel  nog  te  worden  onderzocht  of 
+
+minstens  één  ernstig  middel  wordt  aangevoerd,  dan  wel  een  klaarblijkelijke 
+
+onwettigheid  aanwezig  is,  die  de  nietigverklaring  van  de  bestreden  beslissingen 
+
+kunnen verantwoorden. 
+
+VI. Onderzoek van de middelen 
+
+A. Eerste middel   
+
+Uiteenzetting van het middel   
+
+8. 
+
+In een eerste middel voert de verzoekende partij de schending 
+
+aan  van  “artikel  18,  eerste  lid,  van  de  wet  van  24  december  1993”,  van  “de 
+
+artikelen  2  en  3  van  de  wet  van  29  juli  1991  betreffende  de  uitdrukkelijke 
+
+motivering  van  bestuurshandelingen”,  van  “het  gelijkheidsbeginsel,  het 
+
+mededingingsbeginsel, het transparantiebeginsel, de formele motiveringsplicht en 
+
+het zorgvuldigheidsbeginsel”. 
+
+In wat in het verzoekschrift als “toelichting” wordt aangemerkt 
+
+betoogt  de  verzoekende  partij  dat  de  verwerende  partij  zich  om  de 
+
+gunningsprocedure  stop  te  zetten  in  de  eerste  bestreden  beslissing  beroept  op 
+
+“artikel  35  van  de  wet  van  15  juni  2006”  wegens  budgettaire  redenen:  voor  de 
+
+uitvoering van deze minicompetitie werd in een raming voorzien die sterk afwijkt 
+
+van  de  ingediende  offertes,  waardoor  de  budgetvoorzieningen  ruimschoots 
+
+ontoereikend zijn.   
+
+Uit  de  kennisgeving  van  19  augustus  2016  zou  volgens  de 
+
+verzoekende partij echter blijken dat het reële motief berust op het vermeend en 
+
+niet gestaafd onaanvaardbaar karakter van de inschrijvingsprijzen en de afwijking 
+
+XII-8221-10/20 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+van  de  raming.  Budgettaire  redenen  en  een  ontoereikend  beschikbaar  budget 
+
+kunnen  volgens  de  verzoekende  partij  niet  worden  gelijkgesteld  met  het 
+
+niet-gestaafde motief van vermeende onaanvaardbare inschrijvingsprijzen.   
+
+Op geen enkele wijze wordt door de verwerende partij in haar 
+
+besluitvorming toelichting verstrekt met betrekking tot de raming en de ontvangen 
+
+inschrijvingsprijzen  betreffende  perceel  1.  Noch  het  vermeend  onaanvaardbaar 
+
+karakter van de inschrijvingsprijzen, noch de beweerde substantiële afwijking van 
+
+de  raming  wordt  door  de  verwerende  partij  aangetoond  of  gestaafd.  De 
+
+verzoekende  partij  kan  dan  ook  niet  oordelen  of  het  zin  heeft  zich  tegen  de 
+
+beslissing te verweren met de middelen die het recht haar ter beschikking stelt.   
+
+De  verzoekende  partij 
+
+is  voorts  van  mening  dat  het 
+
+zorgvuldigheidsbeginsel werd geschonden nu uit de bestreden beslissing niet blijkt 
+
+hoe  de  verwerende  partij  het  vermeend  onaanvaardbaar  karakter  van  de 
+
+inschrijvingsprijs van de verzoekende partij heeft vastgesteld.   
+
+Beoordeling 
+
+9. 
+
+De  verwerende  partij  deelt  bij  aangetekende  brief  van  30  mei 
+
+2016  aan  de  verzoekende  partij  mee  dat  zij  “conform  artikel  35  van  de  wet 
+
+overheidsopdrachten beslist [heeft] om de minicompetitie met referentie ‘662’ niet 
+
+te  gunnen  om  budgettaire  redenen:  immers  werd  voor  de  uitvoering  van  deze 
+
+minicompetitie een raming voorzien die sterk afwijkt van de ingediende offertes 
+
+waardoor de budgetvoorzieningen ruimschoots ontoereikend zijn.”   
+
+De  verzoekende  partij  doet  in  haar  verzoekschrift  gelden   
+
+dat  uit  de  brief  van  19  augustus  2016  blijkt  dat  de  verwerende  partij  haar 
+
+stopzettingsbeslissing  niet  langer  motiveert  vanuit  een  overschrijding  van  het 
+
+voorziene budget. 
+
+XII-8221-11/20 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Op het eerste gezicht herhaalt de verwerende partij nochtans ook 
+
+in deze laatstgenoemde brief de reden voor de stopzetting die ze reeds aanhaalde in 
+
+haar eerdere brieven van 30 mei 2016 en 6 juli 2016, namelijk de overschrijding 
+
+van het voorziene budget. De verwerende partij stelt immers letterlijk in haar brief 
+
+van 19 augustus 2016 dat dit schrijven een herhaling is van haar schrijven van 6 juli 
+
+2016, en dat de reden voor niet-gunning “de afwijking [is] tussen de ingediende 
+
+offertes en de voorziene raming en het voorziene budget”. Het lijkt evident dat het 
+
+door de verwerende partij voorziene budget voortvloeit uit een door de verwerende 
+
+partij opgemaakte raming van de kostprijs van de betreffende opdracht.   
+
+Er  valt  dan  ook  op  het  eerste  gezicht  niet  in  te  zien  hoe  de 
+
+motivering, opgenomen in de brief van 19 augustus 2016, zou verschillen van de 
+
+motivering die de verwerende partij reeds meedeelde in haar voorgaande brieven 
+
+van 30 mei 2016 respectievelijk 6 juli 2016. 
+
+In tegenstelling tot wat de verzoekende partij betoogt wordt, zo 
+
+lijkt, in voorgaande briefwisseling nergens door de verwerende partij vermeld dat 
+
+“het onaanvaardbaar karakter van de inschrijvingsprijzen” het motief zou vormen 
+
+voor de stopzetting van de gunningsprocedure.   
+
+Bijgevolg lijkt het uitgangspunt van de verzoekende partij, dat 
+
+het  motief  voor  de  stopzetting  van  de  gunningsprocedure  “minicompetitie  met 
+
+referentie 662”, meegedeeld in de brieven  van  de  verwerende  partij  van  30  mei 
+
+2016  en  6  juli  2016,  verschilt  van  het  motief  meegedeeld  in  de  brief  van 
+
+19 augustus 2016 en dat de bewering dat het motief opgenomen in de brief van 
+
+19 augustus 2016 “het onaanvaardbaar karakter van de inschrijvingsprijzen” zou 
+
+zijn, geen steun te vinden in het dossier. Het middel lijkt dus feitelijke grondslag te 
+
+missen. Om die reden dient niet nader te worden ingegaan op de toepasselijkheid 
+
+van de geschonden geachte wet van 24 december 1993 in huidig geding. 
+
+Het lijkt bijgevolg te mogen worden aangenomen dat het motief 
+
+op grond waarvan de verwerende partij de beslissing nam de gunningsprocedure 
+
+XII-8221-12/20 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+“minicompetitie  referentie  662”  stop  te  zetten,  de  overschrijding  van  de  raming 
+
+met  het  bijhorend  voorziene  budget  betreft.  De  verzoekende  partij  toont  prima 
+
+facie niet aan waarom de vermelding van dit motief in de brief van 30 mei 2016 
+
+haar niet in staat stelde terdege te oordelen of het zin had zich tegen de bestreden 
+
+beslissing  in  rechte  te  verweren.  De  verzoekende  partij  toont  niet  aan  dat  het 
+
+daartoe noodzakelijk was dat zij kennis zou hebben van de precieze mate waarin de 
+
+offertes, waaronder haar eigen offerte, de raming overschreden. Aldus lijkt geen 
+
+schending van de wet van 29 juli 1991 te worden aangetoond. 
+
+10. 
+
+Daarnaast moet worden vastgesteld dat de verzoekende partij in 
+
+haar verzoekschrift niet uitdrukkelijk betwist dat de verwerende partij zich om de 
+
+gunningsprocedure  stop  te  zetten  mocht  beroepen  op  het  gegeven  dat  de 
+
+inschrijvingsprijzen  significant  hoger  liggen  dan  de  raming  en  dat  er  niet  in 
+
+voldoende budget werd voorzien.   
+
+In de mate dat de verzoekende partij ervan uitgaat dat de eerste 
+
+bestreden  beslissing  steunt  op  het  “onaanvaardbaar  karakter  van  de 
+
+inschrijvingsprijzen”  om  vervolgens  daaruit  een 
+
+schending  van  het 
+
+zorgvuldigheidsbeginsel, 
+
+gelijkheidsbeginsel,  mededingingsbeginsel 
+
+en 
+
+transparantiebeginsel af te leiden, lijken deze grieven eveneens feitelijke grondslag 
+
+te ontberen.   
+
+11. 
+
+Het middel is niet ernstig. 
+
+B. Tweede middel 
+
+Uiteenzetting van het middel 
+
+12. 
+
+In een tweede middel voert de verzoekende partij de schending 
+
+aan van “ artikel 5 en 53, § 2, 1°, c) van de wet van 15 juni 2006”, van “de artikelen 
+
+2  en  3  van  de  wet  van  29  juli  1991”,  van  “het  gelijkheidsbeginsel,  het 
+
+XII-8221-13/20 
+
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+mededingingsbeginsel, het transparantiebeginsel, het zorgvuldigheidsbeginsel en 
+
+het rechtsbeginsel ‘patere legem quam ipse fecisti’”. 
+
+De  verzoekende  partij  betoogt  daartoe  onder  meer  dat  de 
+
+verwerende  partij  geen  bewijs  van  spoed  heeft  aangetoond  om  een  beroep  te 
+
+mogen doen op de onderhandelingsprocedure zonder bekendmaking op grond van 
+
+“artikel  53,  §  2,  1°,  c)  van  de  wet  van  15  juni  2006”,  aangezien  de 
+
+uitvoeringstermijn  werd  verlengd 
+
+in  de  onderhandelingsprocedure  zonder 
+
+voorafgaande  bekendmaking  en  er  op  heden  niet  is  aangetoond  dat  de 
+
+aannemingswerken intussen zijn aangevat.   
+
+De  verzoekende  partij  doet  ook  gelden  dat  in  de  bestreden 
+
+beslissing  wordt  aangevoerd  dat  de  urgentie  door  het  tijdsverlies  van  de 
+
+minicompetitie  zonder  gunstig  gevolg  dermate  is  dat  een  beroep  moet  worden 
+
+gedaan op de onderhandelingsprocedure zonder bekendmaking. De verzoekende 
+
+partij wijst er op dat deze bewering geenszins wordt gestaafd. 
+
+De verzoekende partij betoogt vervolgens nog dat het motief dat 
+
+hoogdringendheid  voorlag  wegens  de  uitvoeringstermijn  niet  kan  worden 
+
+bijgevallen  aangezien  aan  de  gekozen  inschrijver  in  het  kader  van  de 
+
+onderhandelingsprocedure  zonder  bekendmaking  een  langere  uitvoeringstermijn 
+
+werd toegekend.   
+
+Beoordeling 
+
+13. 
+
+In  de  loop  van  2013  gunde  de  verwerende  partij  reeds  een 
+
+raamovereenkomst voor de in het de in het geding zijnde werken waarvan perceel 1 
+
+het  ontwerpen  en  het  uitvoeren  van  gestuurde  boringen  regio  Oost  omvat.  Dit 
+
+perceel werd gegund aan zeven inschrijvers, waaronder de verzoekende partij.     
+
+Op 8 maart  2016  beslist de verwerende partij om in het kader 
+
+van perceel 1 van deze raamovereenkomst een minicompetitie te organiseren voor 
+
+XII-8221-14/20 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+bepaalde werken. Twee offertes, waaronder die van de verzoekende partij, worden 
+
+ingediend. Op 14 april 2016 worden opnieuw alle opdrachtnemers bij perceel 1 van 
+
+de raamovereenkomst uitgenodigd om in een tweede mini-competitie een tweede 
+
+offerte in te dienen tegen 28 april 2016. Drie kandidaten dienen een offerte in.   
+
+Gelijktijdig  blijkt  de  verwerende  partij 
+
+echter 
+
+een 
+
+onderhandelingsprocedure  zonder  bekendmaking  te  hebben  opgestart.  Eveneens 
+
+op  14  april  2016  immers  zendt  zij  een  e-mailbericht  aan  vier  andere 
+
+ondernemingen,  waaronder  de  bv  Van  Vulpen,  met  mededeling  van  dezelfde 
+
+gegevens die werden meegedeeld per e-mailbericht van 14 april 2016 aan onder 
+
+meer  de  verzoekende  partij,  en  met  dezelfde  vraag  om  een  offerte  in  te  dienen 
+
+tegen 28 april 2016.     
+
+De bv Van Vulpen dient net als de verzoekende partij op 28 april 
+
+2016 een offerte in. Bij beslissing van het managementcomité van de verwerende 
+
+partij wordt op 23 mei 2016 de gunning van de opdracht aan de bv Van Vulpen 
+
+goedgekeurd.  Dit  wordt  per  e-mailbericht  van  25  mei  2016  aan  de  gekozen 
+
+inschrijver meegedeeld.     
+
+Vervolgens  beslist  het  managementcomité  van  de  verwerende 
+
+partij op 13 juni 2016 om de nog lopende minicompetitie stop te zetten.   
+
+14. 
+
+De  verwerende  partij  geeft  in  haar  aangetekend  schrijven  van 
+
+19 augustus 2016 gericht aan de verzoekende partij aan dat zij een beroep deed op 
+
+de 
+
+onderhandelingsprocedure 
+
+zonder 
+
+bekendmaking 
+
+op 
+
+grond 
+
+van 
+
+artikel “53, § 2, c”,    allicht  daarmee  bedoelend het betrokken artikel van de wet 
+
+van  15  juni  2006    ‘overheidsopdrachten  en  bepaalde  opdrachten  voor  werken, 
+
+leveringen en diensten’ [hierna: de wet van 15 juni 2006]. 
+
+Er  ligt  te  dezen  echter  geen  formele  beslissing  voor  van  de 
+
+verwerende  partij,  waarin  zij  beslist  die  onderhandelingsprocedure  zonder 
+
+bekendmaking  op  te  starten  en  waarin  de  motieven  voor  de  keuze  van  deze 
+
+XII-8221-15/20 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+procedure  worden  uiteengezet.  Het  blijkt  evenmin  dat  een  onderzoek  van  het 
+
+voldaan zijn aan één van de voorwaarden om met deze procedure een opdracht te 
+
+gunnen, vooraf is gegaan aan het opstarten van de procedure. 
+
+Op grond van artikel 53, § 2, 1°, c), van de voormelde wet van 
+
+15 juni  2006  kan  in  de  nutssectoren  een  opdracht  voor  werken  bij  onder-
+
+handelingsprocedure  zonder  bekendmaking  worden  gegund,  indien  mogelijk  na 
+
+raadpleging  van  meerdere  aannemers,  voor  zover  zulks  strikt  noodzakelijk  is, 
+
+ingeval de termijnen voor de open of beperkte procedure of de onderhandelings-
+
+procedure  met  bekendmaking  wegens  dwingende  spoed,  voortvloeiend  uit 
+
+onvoorzienbare  gebeurtenissen  voor  de  aanbestedende  overheid,  niet  in  acht 
+
+genomen  kunnen  worden.  De  ter  rechtvaardiging  van  de  dwingende  spoed 
+
+ingeroepen omstandigheden mogen in geen geval aan de aanbestedende overheid 
+
+of aan het overheidsbedrijf te wijten zijn.   
+
+Te dezen lijkt op het eerste gezicht te moeten worden vastgesteld 
+
+dat de verwerende partij met betrekking tot dezelfde opdracht voor werken “het 
+
+ontwerpen en uitvoeren van gestuurde boringen met een bundel van 3 x PEØ250 en 
+
+5  x  PEØ200  in  kruising  met  het  Albertkanaal  te  Merksem”,  onderworpen  aan 
+
+dezelfde opdrachtdocumenten, gelijktijdig twee verschillende gunningsprocedures 
+
+voerde met verschillende inschrijvers. Nog vóór het nemen van een beslissing tot 
+
+stopzetting  van  de  minicompetitie  en  het  meedelen  van  deze  beslissing  aan  de 
+
+inschrijvers,  heeft  zij  gelijktijdig  een  onderhandelingsprocedure  zonder 
+
+bekendmaking opgestart met een aantal andere inschrijvers.   
+
+De  verwerende  partij 
+
+lijkt,  door  op  deze  prima 
+
+facie 
+
+bevreemdende manier te werk te gaan, in elk geval niet aan te tonen dat voldaan is 
+
+aan  de  voorwaarden  om 
+
+een  beroep 
+
+te  kunnen  doen  op  de 
+
+onderhandelingsprocedure zonder bekendmaking zoals bedoeld in het voormelde 
+
+artikel 53, § 2, 1°, c), van de wet van 15 juni 2006. 
+
+XII-8221-16/20 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Op het moment dat de verwerende partij tot de gunning van de 
+
+opdracht  aan  de  gekozen  inschrijver  met  een  onderhandelingsprocedure  zonder 
+
+bekendmaking beslist, was de gunningsprocedure voor de minicompetitie immers 
+
+nog lopende. Aangezien er nog geen beslissing was genomen tot stopzetting van 
+
+deze  procedure  en  het  dus  nog  niet  vaststond  dat  de  opdracht  niet  zou  kunnen 
+
+worden  gegund  binnen  de  procedure  van  de  minicompetitie,  valt  niet  in  te  zien 
+
+waarom  het  om  redenen  van  spoedeisendheid  noodzakelijk  was  dat  een  beroep   
+
+werd gedaan op een onderhandelingsprocedure zonder bekendmaking voordat de 
+
+procedure van de minicompetitie formeel werd afgerond.   
+
+15. 
+
+De  verwerende  partij  legt  in  haar  nota  uit  dat  de  reden  voor 
+
+spoedeisendheid zich situeert in het feit dat zo snel mogelijk met de werken van 
+
+start te gaan: 
+
+“Immers heeft de nv De Scheepvaart in 2015 een opdracht uitgeschreven 
+met  als  voorwerp  het  afbreken  van  de  bestaande  Azijnbrug  over  het 
+Albertkanaal te Deurne en de bouw van een nieuwe stalen boogbrug. Met 
+de  bouwwerken  van  de  brug  zal  begin  2017  gestart  worden,  terwijl  de 
+nutsleidingen in de loop van 2016 verplaatst dienen te worden (stuk 27). De 
+kabels  die  verplaatst  moeten  worden,  liggen  in  de  brug.  Met  andere 
+woorden, als de brug wordt afgebroken, verdwijnen de kabels en wordt het 
+netwerk onderbroken. 
+Het  is echter zo dat  zowel Eandis alsook Water-Link een nieuwe boring 
+onder  het  Albertkanaal  plannen,  terwijl  het  niet  mogelijk  is  om  de  twee 
+boringen gelijktijdig uit te voeren, nu er maar beperkte plaats beschikbaar 
+is  (stuk  27).  Dit  heeft  tot  gevolg  dat  indien  eerst  door  de  andere 
+maatschappij een boring wordt uitgevoerd Eandis op een andere plaats zal 
+moeten boren, met een substantiële meerkost tot gevolg. Hieruit vloeit dan 
+ook de noodzaak voort om zo snel als mogelijk – lees: als eerste – met de 
+boringen  te  kunnen  starten.  Bovendien  wordt  op  deze  wijze  eveneens 
+gegarandeerd  dat  de  nutsleidingen  tijdig  verplaatst  worden  en  er  geen 
+vertraging ontstaat voor de bouwwerken van de brug. Als de opdracht van 
+NV De Scheepvaart uitgesteld moet worden omdat verwerende partij nog 
+niet klaar zou zijn met het verplaatsen van de nutsleidingen, bestaat de kans 
+dat verwerende partij de daaraan verbonden kosten voor haar rekening zal 
+moeten  nemen.  De  vereiste  spoedeisendheid  voor  het  opstarten  van  de 
+onderhandelingsprocedure zonder bekendmaking was dan ook wel degelijk 
+voorhanden.” 
+
+XII-8221-17/20 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Nog los van de vaststelling dat deze motieven na het nemen van 
+
+de in het geding zijnde beslissing worden aangedragen, blijkt uit het stuk 27 dat er 
+
+reeds op 15 februari 2016 een vergadering plaatsvond tussen de verwerende partij 
+
+en de nv De Scheepvaart. Voor zover er in hoofde van de verwerende partij al een 
+
+noodzaak zou  hebben  bestaan om  als  eerste de boring uit te voeren en dat deze 
+
+binnen  korte  termijn  diende  te  worden  uitgevoerd,  was  de  verwerende  partij 
+
+hiervan  reeds  blijkbaar  op  de  hoogte  voorafgaand  aan  het  opstarten  van  de 
+
+minicompetitie.   
+
+Voorts betoogt de verwerende partij op bladzijde 4 van haar nota 
+
+dat  “gelet  op  het  gegeven  dat  de  prijzen  binnen  de  eerste  minicompetitie 
+
+ruimschoots boven de vooropgezette raming waren (en dus het risico [bestond] dat 
+
+ook  in  het  kader  van  de  tweede  minicompetitie  te  hoge  prijzen  zouden  worden 
+
+ontvangen), de aanbestedende overheid het ook aangewezen [acht] , omwille van 
+
+het feit dat zo snel als mogelijk tot gunning moet worden overgegaan, om voor de 
+
+beoogde  opdracht  ook  andere  marktspelers 
+
+te 
+
+raadplegen  binnen  een 
+
+onderhandelingsprocedure zonder bekendmaking.”   
+
+Aangezien  er  reeds  een  gunningsprocedure  lopende  was 
+
+waarbinnen de verwerende partij reeds offertes had ontvangen, lijkt de reden om de 
+
+onderhandelingsprocedure zonder bekendmaking op te starten dan ook niet louter 
+
+te liggen in de spoedeisendheid om te gunnen en de werken aan te vatten, waaraan 
+
+reeds  kon  worden  tegemoet  gekomen  met  de  lopende  gunningsprocedure,  maar 
+
+wel in het feit dat er binnen de lopende gunningsprocedure enkel offertes werden 
+
+ontvangen  die  ruimschoots  boven  de  raming  lagen.  De  spoedeisendheid  om  te 
+
+gunnen met een andere gunningsprocedure, voor zover dit al mocht om die reden, 
+
+zou aldus slechts kunnen zijn ontstaan na het formeel beëindigen van de lopende 
+
+gunningsprocedure, namelijk de minicompetitie. 
+
+In  die  zin  vertoont  het  middel,  waarin  wordt  aangevoerd  dat 
+
+geen blijk wordt gegeven van de vereiste hoogdringendheid om een beroep te doen 
+
+XII-8221-18/20 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+op  de  onderhandelingsprocedure  zonder  bekendmaking,  het  vereiste  ernstig 
+
+karakter. 
+
+16. 
+
+Het tweede middel is in de besproken mate ernstig. 
+
+VII. Besluit en kosten 
+
+17. 
+
+Het eerste middel is niet ernstig gebleken.   
+
+Het tweede middel is wel ernstig gebleken en verantwoordt de 
+
+schorsing  van  de  tenuitvoerlegging  van  de  daarmee  aangevochten  bestreden 
+
+beslissing. Aangezien het derde middel niet tot een ruimere schorsing aanleiding 
+
+lijkt te kunnen geven, dient het niet nader te worden onderzocht.   
+
+Het  is  passend,  gelet  op  de  hierna  bevolen  schorsing  en  het 
+
+daaropvolgende  nog  noodzakelijke  procedureverloop,  de  kosten,  gevorderde 
+
+rechtsplegingsvergoedingen inbegrepen, in beraad te houden. 
+
+BESLISSING 
+
+1. De Raad van State beveelt de schorsing van de tenuitvoerlegging bij uiterst 
+
+dringende  noodzakelijkheid  van  de  beslissing  genomen  door  cvba  Eandis 
+
+System Operator op 23 mei 2016 en herhaald op 13 juni 2016 om de opdracht 
+
+ontwerpen  van  een  boorprofiel  en  uitvoeren  van  een  gestuurde  boring  in 
+
+kruising met het Albertkanaal te Merksem aan de nv Van Vulpen te gunnen 
+
+(dossier EAN12AW124/662). 
+
+2. De vordering wordt voor het overige verworpen. 
+
+XII-8221-19/20 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Dit arrest is uitgesproken te Brussel, in openbare terechtzitting van 27 september 
+
+2016, door de Raad van State, XIIe kamer, samengesteld uit: 
+
+Dierk Verbiest, 
+
+kamervoorzitter, 
+
+bijgestaan door 
+
+Silja Doms, 
+
+griffier. 
+
+De griffier 
+
+De voorzitter 
+
+Silja Doms 
+
+Dierk Verbiest 
+
+XII-8221-20/20 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
