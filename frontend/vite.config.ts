@@ -28,6 +28,11 @@ function rangeCapabilityShim(): Plugin {
 }
 
 export default defineConfig({
+  // Allow the deploy base path to be overridden at build time so the same
+  // config works both locally (base="/") and on GitHub Pages where the site
+  // is served under a subpath (e.g. "/legal-decisions-rag/"). The workflow
+  // sets VITE_BASE_PATH to `/${{ github.event.repository.name }}/`.
+  base: process.env["VITE_BASE_PATH"] ?? "/",
   plugins: [rangeCapabilityShim()],
   test: {
     environment: "node",

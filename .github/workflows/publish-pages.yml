@@ -57,17 +57,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout this repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Checkout legal_decisions data repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: niels-tack/legal_decisions
           path: ${{ env.DATA_REPO_PATH }}
           # Public repository - no token needed.
 
       - name: Install uv and Python
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v6
         with:
           python-version: "3.13"
           enable-cache: true
@@ -115,6 +115,10 @@ jobs:
       - name: Build frontend (Vite)
         # VITE_SEARCH_BACKEND defaults to "local" (client-side SQLite provider)
         # when not set - correct for Phase 1.
+        # VITE_BASE_PATH sets Vite's `base` to the GitHub Pages subpath so
+        # asset URLs resolve correctly under /legal-decisions-rag/.
+        env:
+          VITE_BASE_PATH: /${{ github.event.repository.name }}/
         run: npm --prefix frontend run build
 
       - name: Report artifact size
@@ -126,7 +130,7 @@ jobs:
           du -sh frontend/dist/* 2>/dev/null || true
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: frontend/dist
 

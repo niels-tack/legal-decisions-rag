@@ -59,17 +59,17 @@ jobs:
           echo "All required secrets are present."
 
       - name: Checkout this repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Checkout legal_decisions data repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: niels-tack/legal_decisions
           path: ${{ env.DATA_REPO_PATH }}
           # Public repository - no token/credentials needed.
 
       - name: Install uv and Python
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v6
         with:
           python-version: "3.13"
           enable-cache: true
