@@ -16,6 +16,7 @@ import numpy as np
 
 from src.db_schema import EMBEDDING_QUERY_PREFIX
 from src.schemas import CaseSearchResult, ChunkResult
+from src.sources import SOURCES
 
 # Standard RRF smoothing constant: dampens the influence of very high ranks
 # without needing per-corpus tuning.
@@ -328,6 +329,12 @@ def hybrid_search(
             for (score, section, paragraph_number, section_category,
                  heading_level, parent_heading, text) in case_chunks[case_id]
         ]
+        source_config = SOURCES.get(case["source"])
+        info_card = (
+            source_config.build_info_card_url(case["arrest_number"], case["language"])
+            if source_config is not None and source_config.build_info_card_url is not None
+            else None
+        )
         results.append(
             CaseSearchResult(
                 source=case["source"],
@@ -342,6 +349,7 @@ def hybrid_search(
                 outcome=case["outcome"],
                 title=case["title"],
                 source_pdf_url=case["source_pdf_url"],
+                permalink_info_card=info_card,
                 best_score=case_best_scores[case_id],
                 chunks=chunks,
             )

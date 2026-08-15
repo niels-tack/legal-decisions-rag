@@ -124,6 +124,14 @@ class CaseSearchResult(BaseModel):
     outcome: str
     title: str
     source_pdf_url: str
+    permalink_info_card: str | None = Field(
+        None,
+        description=(
+            "Link to the court's information card for this ruling "
+            "(e.g. https://nl.const-court.be/ARR/1/2025 for GHCC). "
+            "None for courts that do not publish an information card."
+        ),
+    )
     best_score: float = Field(
         ..., description="Score of the highest-ranked matching chunk in this case"
     )

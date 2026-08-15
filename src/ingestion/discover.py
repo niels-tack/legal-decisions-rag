@@ -1,20 +1,36 @@
 """Scrape the Constitutional Court's official Dutch-language case listing.
 
-The live page (``https://www.const-court.be/nl/judgments?year=<year>``) is a
-server-rendered Vuetify application: each ruling is a ``judgement-card`` div
-carrying its date, procedure type, arrest number, PDF link, controlled norm,
-outcome, role number(s), and keywords. This module was written against the
-exact markup captured by a prior working scrape of that page (see
-``reference/initial_version/extracting_information_from_website.ipynb`` and
-the resulting records in ``reference/initial_version/overview.ipynb``); the
-live site itself could not be re-fetched from this sandbox (see the
-docstring on ``fetch_listing_html`` for why), so treat the selectors below as
-"known good as of that prior scrape" rather than independently re-verified
-today.
+Two distinct sources are used for GHCC ingestion, following the Court's own
+referencing guidelines (``https://nl.const-court.be/rule/referencing-judgments``):
 
-The network fetch (``fetch_listing_html``) and the HTML parsing
-(``parse_listing_html``) are kept separate so the parser can be unit tested
-against a saved fixture without any live HTTP call.
+1. **Metadata listing** - ``https://nl.const-court.be/nl/judgments?year={year}``:
+   a server-rendered Vuetify SPA, each ruling represented as a
+   ``judgement-card`` div carrying its date, procedure type, arrest number,
+   PDF link, controlled norm, outcome, role number(s), and keywords. This
+   page applies TLS fingerprinting that blocks Python ``requests``; in
+   practice the HTML is saved from a browser session and fed to
+   ``parse_listing_html`` (a pure function with no network dependency).
+
+2. **PDF downloads** - ``https://nl.const-court.be/public/n/``: a plain
+   Apache directory listing, accessible without TLS fingerprinting. Year
+   subdirectories (``/public/n/{year}/``) list PDFs as ``{year}-{seq:03d}n.pdf``
+   (zero-padded three-digit sequence, Dutch ``n`` suffix). Some rulings also
+   carry a companion ``-info.pdf`` (e.g. ``2026-002n-info.pdf``); these are
+   information-card PDFs and are not ingested. ``ghcc_pdf_download_url``
+   constructs the download URL from a file slug.
+
+Three canonical URL patterns are defined here for use throughout the pipeline:
+- **PDF permalink**: ``https://{lang}.const-court.be/{number}/{year}.pdf``
+  (e.g. ``https://nl.const-court.be/14/2026.pdf``) - stored as
+  ``source_pdf_url`` in the ``cases`` table.
+- **Info card**: ``https://{lang}.const-court.be/ARR/{number}/{year}``
+  (e.g. ``https://nl.const-court.be/ARR/31/2025``) - exposed as
+  ``permalink_info_card`` in search results.
+- **Download**: ``https://{lang}.const-court.be/public/n/{year}/{slug}.pdf``
+  - used only by the ingestion pipeline, never stored.
+
+``www.const-court.be`` still resolves but redirects to the language subdomain
+(``nl.``, ``fr.``, ``de.``, ``en.``) since August 2025.
 """
 
 from __future__ import annotations
@@ -261,3 +277,55 @@ def file_slug_from_pdf_url(pdf_url: str) -> str:
     if match is None:
         raise ValueError(f"Could not derive a file slug from PDF URL: {pdf_url!r}")
     return match.group(1)
+
+
+def ghcc_permalink_pdf(arrest_number: str, language: str = "nl") -> str:
+    """Canonical permalink to the published PDF of one GHCC ruling.
+
+    Format: ``https://<language>.const-court.be/<number>/<year>.pdf``,
+    following the court's official referencing rules.
+
+    Args:
+        arrest_number: Official arrest number, e.g. ``"1/2025"``.
+        language: ISO 639-1 language code (``"nl"``, ``"fr"``, ``"de"``).
+
+    Returns:
+        Permalink URL, e.g. ``"https://nl.const-court.be/1/2025.pdf"``.
+    """
+    number, year = arrest_number.split("/", 1)
+    return f"https://{language}.const-court.be/{number}/{year}.pdf"
+
+
+def ghcc_permalink_info_card(arrest_number: str, language: str = "nl") -> str:
+    """Canonical link to the GHCC information card for one ruling.
+
+    Format: ``https://<language>.const-court.be/ARR/<number>/<year>``.
+
+    Args:
+        arrest_number: Official arrest number, e.g. ``"1/2025"``.
+        language: ISO 639-1 language code.
+
+    Returns:
+        Info card URL, e.g. ``"https://nl.const-court.be/ARR/1/2025"``.
+    """
+    number, year = arrest_number.split("/", 1)
+    return f"https://{language}.const-court.be/ARR/{number}/{year}"
+
+
+def ghcc_pdf_download_url(file_slug: str, language: str = "nl") -> str:
+    """Build the download URL for a GHCC ruling PDF from the public document server.
+
+    The public document server (``/public/n/``) is used for ingestion because
+    the main site applies TLS fingerprinting that blocks automated clients.
+    The year component is inferred from the leading ``YYYY-`` part of the slug.
+
+    Args:
+        file_slug: The file/URL slug, e.g. ``"2025-001n"``.
+        language: ISO 639-1 language code.
+
+    Returns:
+        Download URL, e.g.
+        ``"https://nl.const-court.be/public/n/2025/2025-001n.pdf"``.
+    """
+    year = file_slug.split("-")[0]
+    return f"https://{language}.const-court.be/public/n/{year}/{file_slug}.pdf"

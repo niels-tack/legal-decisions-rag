@@ -134,7 +134,9 @@ def build_case_metadata(
         controlled_norm=discovered["controlled_norm"],
         outcome=discovered["outcome"],
         keywords=discovered["keywords"],
-        source_pdf_url=discovered["pdf_url"],
+        source_pdf_url=discover.ghcc_permalink_pdf(
+            discovered["arrest_number"], language="nl"
+        ),
         title=_build_title(discovered["procedure_type"], discovered["controlled_norm"]),
     )
 
@@ -176,7 +178,7 @@ def process_ruling(
     """
     file_slug = discover.file_slug_from_pdf_url(discovered["pdf_url"])
     pdf_path = pdf_cache_dir / f"{file_slug}.pdf"
-    download_pdf(discovered["pdf_url"], pdf_path, session)
+    download_pdf(discover.ghcc_pdf_download_url(file_slug, language="nl"), pdf_path, session)
 
     ecli = extract.extract_ecli(pdf_path)
     if ecli is None:

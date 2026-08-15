@@ -126,7 +126,10 @@ def test_build_case_metadata_combines_discovered_and_ecli() -> None:
     assert metadata.ecli == "ECLI:BE:GHCC:2025:ARR.001"
     assert metadata.file_slug == "2025-001n"
     assert metadata.arrest_number == "1/2025"
-    assert metadata.source_pdf_url == discovered["pdf_url"]
+    assert metadata.source_pdf_url == discover.ghcc_permalink_pdf(
+        discovered["arrest_number"], language="nl"
+    )
+    assert metadata.source_pdf_url == "https://nl.const-court.be/1/2025.pdf"
     assert "Prejudiciële vraag" in metadata.title
 
 

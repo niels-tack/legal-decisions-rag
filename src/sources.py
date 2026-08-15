@@ -26,6 +26,7 @@ vocabulary across all courts. The ``heading_category_map`` on each
 from __future__ import annotations
 
 import re
+from collections.abc import Callable
 from dataclasses import dataclass, field
 
 # ---------------------------------------------------------------------------
@@ -193,6 +194,13 @@ class SourceConfig:
             line in the Markdown body (used for courts like RVS whose heading
             set is open-ended and varies per ruling). When ``False`` (default),
             splits on the fixed list in ``section_headers``.
+        build_info_card_url: Optional callable ``(arrest_number, language) →
+            URL`` that returns the court's information card/fiche URL for one
+            ruling. Only courts that publish a stable, human-readable metadata
+            page alongside each ruling set this (currently GHCC only, via
+            ``https://{lang}.const-court.be/ARR/{number}/{year}``). ``None``
+            for courts with no such page (e.g. RVS), in which case
+            ``permalink_info_card`` in search results is ``None``.
     """
 
     key: str
@@ -202,6 +210,7 @@ class SourceConfig:
     heading_category_map: dict[str, str] | None = field(default=None)
     heading_level_map: dict[str, int] | None = field(default=None)
     dynamic_sections: bool = field(default=False)
+    build_info_card_url: Callable[[str, str], str] | None = field(default=None)
 
 
 # ---------------------------------------------------------------------------
@@ -221,6 +230,28 @@ _GHCC_PARAGRAPH_MARKER_RE = re.compile(r"(?m)^\s*([A-Z](?:\.\d+)+)\.\s+")
 # RVS rulings number paragraphs with Arabic dot-notation: "1.", "1.2.",
 # "1.2.3.", etc.
 _RVS_PARAGRAPH_MARKER_RE = re.compile(r"(?m)^\s*(\d+(?:\.\d+)*)\.\s+")
+
+# ---------------------------------------------------------------------------
+# GHCC URL builders
+# ---------------------------------------------------------------------------
+
+
+def _ghcc_info_card_url(arrest_number: str, language: str) -> str:
+    """Canonical info card URL for one GHCC ruling.
+
+    Format: ``https://{language}.const-court.be/ARR/{number}/{year}``.
+    See ``https://nl.const-court.be/rule/referencing-judgments``.
+
+    Args:
+        arrest_number: Official arrest number, e.g. ``"31/2025"``.
+        language: ISO 639-1 language code, e.g. ``"nl"``.
+
+    Returns:
+        Info card URL, e.g. ``"https://nl.const-court.be/ARR/31/2025"``.
+    """
+    number, year = arrest_number.split("/", 1)
+    return f"https://{language}.const-court.be/ARR/{number}/{year}"
+
 
 # ---------------------------------------------------------------------------
 # Registry
@@ -337,6 +368,7 @@ SOURCES: dict[str, SourceConfig] = {
             GHCC_SECTION_RULING: CATEGORY_OPERATIVE,
         },
         heading_level_map=_GHCC_HEADING_LEVEL_MAP,
+        build_info_card_url=_ghcc_info_card_url,
     ),
     SOURCE_COUNCIL_OF_STATE: SourceConfig(
         key=SOURCE_COUNCIL_OF_STATE,
