@@ -1,0 +1,1826 @@
+RAAD VAN STATE, AFDELING BESTUURSRECHTSPRAAK 
+
+VOORZITTER VAN DE XIIe KAMER 
+
+In zake: 
+
+A R R E S T 
+
+nr. 230.360 van 27 februari 2015 
+in de zaak A. 214.895/XII-7820 
+
+de CVBA INNO.COM 
+bijgestaan en vertegenwoordigd door 
+advocaat Rika Heijse 
+kantoor houdend te 9000 Gent 
+Kortrijksesteenweg 867 
+bij wie woonplaats wordt gekozen 
+
+tegen: 
+
+het VLAAMSE GEWEST 
+bijgestaan en vertegenwoordigd door 
+advocaten Carlos De Wolf en Anthony Verheggen 
+kantoor houdend te 9680 Maarkedal 
+Etikhovestraat 6 
+bij wie woonplaats wordt gekozen 
+
+Tussenkomende partij: 
+
+de BV ARS TRAFFIC & TRANSPORT TECHNOLOGY 
+bijgestaan en vertegenwoordigd door 
+advocaten Sofie Logie en Peter Henderyckx 
+kantoor houdend te 8500 Kortrijk 
+Beneluxpark 27B 
+bij wie woonplaats wordt gekozen 
+
+--------------------------------------------------------------------------------------------------   
+
+I. Voorwerp van de vordering 
+
+1. 
+
+De  vordering,  ingesteld  op  30  januari  2015,  strekt  tot  de 
+
+schorsing  bij  uiterst  dringende  noodzakelijkheid  van  de  tenuitvoerlegging  van 
+
+“[d]e  beslissing  van  [de  Vlaamse  minister  van  Mobiliteit,  Openbare  Werken, 
+
+Vlaamse Rand, Toerisme en Dierenwelzijn] van [23 december 2014] waarbij de 
+
+offerte van [de cvba Inno.com] voor de overheidsopdracht voor de realisatie van 
+
+XII-7820-1/23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+een  Enterprise  Architectuur  Schelderadarketen  en  IVS  Migratie  (dossier 
+
+16EN2013/1) onregelmatig is bevonden en is geweerd [en de opdracht is gegund 
+
+aan de BV ARS Traffic & Transport Technology]”. 
+
+II. Verloop van de rechtspleging 
+
+2. 
+
+De verwerende partij heeft een nota ingediend. 
+
+Met  een  verzoekschrift  van  10 februari  2015  heeft  de  bv  Ars 
+
+Traffic & Transport Technology gevraagd om in het administratief kort geding te 
+
+mogen tussenkomen. 
+
+De  partijen  zijn  opgeroepen  voor  de  terechtzitting,  die  heeft 
+
+plaatsgevonden op 19 februari 2015, om 14.00 uur. 
+
+Staatsraad Johan Bovin heeft verslag uitgebracht. 
+
+Advocaten Rika Heijse en Aline Heyrman, die verschijnen voor 
+
+de  verzoekende  partij,  advocaat  Anthony  Verheggen,  die  verschijnt  voor  de 
+
+verwerende partij, en advocaat Sofie Logie, die verschijnt voor de tussenkomende 
+
+partij, zijn gehoord. 
+
+Eerste  auditeur  Ann  Eylenbosch  heeft  een  met  dit  arrest 
+
+eensluidend advies gegeven. 
+
+Er is toepassing gemaakt van de bepalingen op het gebruik der 
+
+talen,  vervat  in  titel  VI,  hoofdstuk  II,  van  de  wetten  op  de  Raad  van  State, 
+
+gecoördineerd op 12 januari 1973. 
+
+III. Feiten 
+
+3.1. 
+
+Het  Vlaamse  Gewest  en  het  Ministerie  van  Infrastructuur  en 
+
+Milieu van het Koninkrijk der Nederlanden schrijven gezamenlijk een opdracht uit 
+
+voor  de  aanneming  van  diensten  met  als  voorwerp  “Enterprise  Architectuur 
+
+Schelderadarketen en IVS migratie”. 
+
+XII-7820-2/23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Het  agentschap  Maritieme  Dienstverlening  en  Kust,  Afdeling 
+
+scheepvaartbegeleiding, treedt namens de twee opdrachtgevers op.   
+
+3.2 
+
+De selectieleidraad licht de opdracht en de aanleiding ervan toe. 
+
+Daaruit blijkt onder meer het volgende. 
+
+De Schelderadarketen (hierna SKR) is een grensoverschrijdend 
+
+(België/Nederland) verkeersbegeleidend systeem ten behoeve van de scheepvaart 
+
+op  de  (Wester)Schelde  en  haar  mondingen.  Het  instrumentarium  SRK  wordt 
+
+gebruikt  voor  het  verlenen  van  Vessel  Traffic  Services  in  het  Scheldegebied 
+
+(hierna VTS SG). 
+
+De SRK is opgebouwd uit 3 grote deelsystemen: 
+
+a. Radar en doelvolger (RW); 
+b. Informatie Verwerkend Systeem (IVS); 
+c. VHF systeem. 
+
+De  huidige  opdracht  situeert  zich  binnen  de  noodzaak  tot 
+
+vernieuwing  van  de  bestaande  IVS  Software.  De  kern  van  de  huidige  IVS 
+
+applicatie  binnen  de  SRK  is  nog  steeds  gesteund  op  een  ontwerp  en  de 
+
+ontwikkeling van meer dan 10 jaar geleden. Deze applicatie werd initieel in 2003 
+
+operationeel  en  is  nadien,  tijdens  het  voorbije  decennium,  uitgebreid  met  een 
+
+aantal 
+
+software 
+
+componenten.  Vanuit 
+
+verschillende 
+
+perspectieven 
+
+(technisch/functioneel  –  operationeel/  financieel)  dringt  zich  thans  echter  een 
+
+vernieuwing op. 
+
+De beoogde opdracht bestaat uit 3 deelopdrachten: 
+
+“A.  Deelopdracht  A:  Basisopdracht,  d.i.  de  realisatie  van  de  Enterprise 
+Architectuur SRK, incl. de migratie van het IVS, deze deelopdracht bestaat 
+uit 3 onderdelen: 
+* A1 – realisatie kanaal IVS 
+* A2 – realisatie centraal gedeelte: ESB en bijhorende services 
+* A3 – realisatie domein IVS 
+
+B. Deelopdracht B: software upgrades voor de komende jaren in de vorm 
+van nieuwe releases, dit geldt voor de 3 lagen. 
+
+XII-7820-3/23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Dit  is  een  opdracht  in  regie,  waarvoor  elk  jaar  een  voorbehouden  som 
+wordt voorzien. 
+
+C. Deelopdracht C: beheer & onderhoud (3de lijn).” 
+
+3.3. 
+
+De aankondiging van de opdracht is gepubliceerd in het Bulletin 
+
+der Aanbestedingen van 28 november 2013 met erratum op 29 november 2013 en 
+
+in het Publicatieblad van de Europese Unie van 29 november 2013 met erratum op 
+
+3 december 2013.   
+
+De gunning van deze opdracht gebeurt via de onderhandelings-
+
+procedure met voorafgaande bekendmaking, op grond van artikel 26, § 2, 3°, van 
+
+de  wet  van  15  juni  2006  ‘overheidsopdrachten  en  bepaalde  opdrachten  voor 
+
+werken, leveringen en diensten’. 
+
+De gunning van de opdracht verloopt aldus in twee fasen. 
+
+De  selectie  van  de  kandidaten 
+
+is  onderworpen  aan  de 
+
+selectieleidraad 16EN2013/1.   
+
+Onder punt “3.3. Selectie” valt in deze selectieleidraad te lezen 
+
+wat volgt: 
+
+“De  geschiktheid  van  de  kandidaat-inschrijvers  wordt  bepaald  aan  de 
+hand van uitsluitinggronden en kwalitatieve selectiecriteria. 
+[…] 
+3.3.2.  Criteria  voor  de  kwalitatieve  selectie  (Art.  67,  68  en  72  KB 
+Plaatsing) 
+[…] 
+Zijn  technische  bekwaamheid  (Art.  68  en  72)  toont  hij  aan  door  het 
+voorleggen van: 
+Nr. 
+Criterium
+C1 
+▪ een lijst van de voornaamste projecten uitgevoerd 
+tijdens de laatste drie jaar (jaar 2010, 2011, 2012), 
+waaruit de opgebouwde en gehonoreerde expertise in 
+de bedoelde materie moet blijken: het betreft 
+realisatieprojecten, studies en diensten voor het 
+opzetten van applicaties voor informatiesystemen 
+t.b.v. Vessel Traffic Services (business) en/of 
+realisatieprojecten, studies en diensten m.b.t. 
+Enterprise Architectuur, SOA.
+
+Punten
+50
+
+XII-7820-4/23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+C2 
+
+C3 
+
+C4 
+
+C5 
+
+C6 
+C7 
+
+C8 
+
+▪ een document waaruit blijkt dat de 
+kandidaat-inschrijver ruime kennis heeft van en 
+ervaring met de business context van Vessel Traffic 
+Services (ook genoemd VTM: Vessel Traffic 
+Management, en/of VTMIS: Vessel Traffic 
+Management and Information Services); 
+▪ een document waaruit blijkt dat de 
+kandidaat-inschrijver ruime kennis heeft van en 
+ervaring met Enterprise Architectuur, SOA (Service 
+Oriented Architecture) en Software Engineering; 
+▪ een lijst van de personen c.q. functies die kunnen 
+ingeschakeld worden voor deze dienstverlening met 
+opgave van de beroepskwalificaties;
+▪ een beschrijving van de methodieken en 
+softwaretools waarover de dienstverlener zal 
+beschikken voor de uitvoering van het 
+projectmanagement;
+▪ een beschrijving van de organisatie van het bedrijf; 
+▪ een beschrijving van de maatregelen die de 
+kandidaat-inschrijver treft om de kwaliteit te 
+waarborgen, alsook een beschrijving van de toegepaste 
+methodieken en procedures om kwalitatief goede 
+projecten te leveren;
+▪ een lijst van de al dan niet tot de onderneming van de 
+kandidaat-inschrijver behorende technici of diensten, 
+in het bijzonder belast met het kwaliteitsmanagement 
+Totaal
+
+20
+
+50
+
+20
+
+20
+
+10
+15
+
+15
+
+200
+
+In  de  laatste  kolom  wordt  een  gewicht  toegekend  aan  het  betreffende 
+item dat toegepast wordt door de opdrachtgevers bij de beoordeling van 
+de kandidaturen. 
+Een minimum van 120 punten (60%) is vereist voor verdere selectie. 
+
+Aan  de  hand  van  deze  criteria  wordt  een  rangorde  (op  basis  van  de 
+behaalde puntenscore) bepaald waarbij minimum 3 (drie) en maximaal 6 
+(zes)  gegadigden,  die  aan  de  gestelde  eisen  met  betrekking  tot  de 
+bekwaamheid 
+de 
+voldoen, 
+onderhandelingsprocedure. 
+
+geselecteerd 
+
+worden 
+
+voor 
+
+De kandidaat-inschrijver dient ter staving van C1 t/m C8 bijgevoegde 
+vragenlijst volledig in te vullen. 
+
+3.3.3  Beroep  op  draagkracht  van  andere  entiteiten  (Art.  74  KB 
+Plaatsing) 
+
+inschrijver  kan  zich  beroepen  op  de  draagkracht  van 
+a)  De 
+onderaannemers of andere entiteiten. In dat geval voegt de inschrijver de 
+nodige  documenten 
+toe  aan  zijn  kandidaatstelling,  waaruit  de 
+verbintenis van deze onderaannemers of van andere entiteiten blijkt om 
+de voor de opdracht noodzakelijke middelen ter beschikking te stellen 
+
+XII-7820-5/23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+van de inschrijver. 
+
+b)  De  opdrachtnemer  is  verplicht  de  onderaannemers  in  te  zetten 
+waarop hij zich heeft beroepen in het kader van de kwalitatieve selectie. 
+Het  gebruik  van  andere  onderaannemers  is  onderworpen  aan  de 
+toestemming van de aanbestedende overheid. 
+
+Deze onderaannemers of entiteiten mogen zich niet in een toestand van 
+uitsluiting bevinden, zoals bedoeld in artikel 61 KB Plaatsing.” 
+
+In  bijlage  is  de  vragenlijst  ten  bewijze  van  de  technische 
+
+bekwaamheid gevoegd. 
+
+3.4. 
+
+De 
+
+sluitingsdatum 
+
+voor 
+
+het 
+
+indienen 
+
+van 
+
+de 
+
+kandidatuurstellingen is vastgesteld op 10 januari 2014.   
+
+Acht  kandidatuurstellingen  worden  ontvangen,  waaronder  die 
+
+van de verzoekende partij en van de bv ARS Traffic & Transport Technology. 
+
+3.5. 
+
+Het  rapport  van  de  selectiecommissie  van  24  februari  2014   
+
+evalueert de selectiecriteria betreffende de verzoekende partij als volgt: 
+
+“Inno.com  scoort  wisselend  op  de  verschillende  subcriteria.  De  VTS 
+business kennis is onvoldoende, de kennis en ervaring echter op gebied van 
+EA/SOA  vrij  goed  en  bepalend  voor  de  selectie.  De  eindscore  is  net 
+voldoende.” 
+
+De  bijlage  “Technische  beoordeling”  vermeldt  betreffende  de 
+
+verzoekende partij het volgende: 
+
+Criterium 
+C1 
+
+[…] 
+[…] 
+
+[…] 
+[…] 
+
+Inno.com 
+▪ weinig projecten compleet getrokken door 
+Inno.com 
+▪ slechts 1 VTS referentie 
+▪ niet alle referenties voldoen aan de criteria 
+zoals gesteld in de oproep, (vb referenties 
+zonder tijdsperiode en referenties van 2007) 
+▪ meerdere EA/SOA referenties 
+
+[…]    Kandidaat toont veel referenties op vlak van 
+EA/SOA, VTS referenties vrij beperkt: 
+
+[…] 
+
+  Voldoende score 
+
+XII-7820-6/23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+C2 
+
+[…] 
+
+  31/50 
+
+▪ kennis opgedaan uit SRK projecten uit het 
+verleden 
+▪ ook ATC kennis 
+▪ RealDolmen, geen omschrijving van 
+gevraagde kennis 
+
+[…] 
+
+[…]  Aantoonbaarheid beperkt tot ‘oude’ VTS 
+
+[…] 
+
+projecten. Onderaannemer heeft geen VTS 
+kennis 
+
+  Onvoldoende score 
+  8/20 
+
+C3 
+
+[…] 
+
+▪ netjes en compleet 
+▪ degelijk EA/SOA verhaal 
+▪ kennis is aanwezig maar komt niet direct 
+terug in projectenlijst 
+
+[…] 
+
+[…]  Kandidaat antwoordt uitgebreid en degelijk op 
+
+[…] 
+
+de criteria maar er is geen relatie met eerder 
+genoemde referenties 
+
+  Zonder meer goed 
+  41/50 
+
+C4 
+
+[…] 
+
+▪ personen die betrokken waren bij assessment 
+worden niet voorgesteld 
+▪ korte omschrijving verschillende profielen 
+▪ uitgebreide CV’s 
+
+[…] 
+
+[…]  Uitgebreide voorstelling inzetbare teamleden 
+
+[…] 
+
+per profiel 
+
+  Ruim voldoende 
+  15/20 
+
+C5 
+
+[…] 
+
+▪ beknopte omschrijving van de 
+projectmethodieken (verwijzing naar vorige 
+paragrafen) 
+▪ tools voor projecten enorm uitgebreid 
+
+[…]  De gevraagde criteria worden niet volledig 
+beantwoord (tools ok, methodieken 
+onvoldoende) 
+
+C6 
+
+[…] 
+
+  Net voldoende 
+  12/20 
+
+▪ beschrijving Inno.com/RealDolmen OK 
+▪ geen beschrijving over manier van 
+samenwerken – onduidelijkheid omtrent de 
+precieze rolverdeling tussen hoofdaannemer en 
+onderaannemer 
+▪ dunne bezetting Inno.com 
+
+[…] 
+
+[…] 
+
+[…] 
+
+[…]  De manier van samenwerken tussen kandidaat 
+en onderaannemer, alsook de teamstructuur is 
+onduidelijk 
+
+[…] 
+
+  Zwak 
+  5/10 
+
+XII-7820-7/23 
+
+ 
+ 
+C7 
+
+[…] 
+
+▪ kwaliteitssysteem op basis van best practices 
+▪ hoofdaannemer stelt de onderaannemer 
+verantwoordelijk voor kwaliteitsmanagement 
+
+[…] 
+
+[…]  Geen gedefinieerd kwaliteitssysteem, maar een 
+
+[…] 
+
+C8 
+
+[…] 
+
+aanpak op basis van best practices 
+
+  Ruim onvoldoende 
+  5/15 
+
+▪ verwijzing kwaliteitshandboek van 
+RealDolmen (onderaannemer) 
+▪ rol hoofdaannemer? 
+
+[…] 
+
+[…]  Kandidaat verwijst naar onderaannemer voor 
+
+[…] 
+
+dit criteria 
+
+  Slecht 
+  4/15 
+
+Opmerking […] 
+[…] 
+Totaal 
+
+Inschrijver steunt volledig op onderaannemer 
+121 
+
+[…] 
+[…] 
+
+3.6 
+
+De  beslissing  van  2  juni  2014  van  de  Vlaamse  minister  van 
+
+Mobiliteit  en  Openbare  Werken  selecteert  de  verzoekende  partij  als  vijfde 
+
+gerangschikte  en  de  bv  ARS  Traffic  &  Transport  Technology  als  vierde 
+
+gerangschikte. 
+
+Bij  aangetekende  brieven  van  5 
+
+juni  2014  worden  de 
+
+verzoekende partij en de tussenkomende partij door de verwerende partij in kennis 
+
+gesteld van de selectie en uitgenodigd een offerte in te dienen tegen 25 juli 2014 op 
+
+basis van het bestek nr. 16EN2013/1. Het bestek wordt per e-mail verzonden. 
+
+3.7. 
+
+Op 25 juni 2014 vindt een informatievergadering plaats. Tijdens 
+
+die vergadering wordt onder meer de volgende van de voorafgaandelijk door de 
+
+geselecteerde kandidaten ingediende vragen behandeld en beantwoord: 
+
+“Kan  er  nog  een  tweede  vragenronde  worden  opgenomen  zodat  er  nog 
+vragen  naar  aanleiding  van  de  informatievergadering  en  nadere  analyse 
+kunnen worden gesteld? 
+A.:  Er  is  geen  tweede  vragenronde.  Het  betreft  een  onderhandelings-
+procedure. De geselecteerde inschrijver dient een eerste offerte in te dienen 
+ten laatste tegen 25 juli 2014 om 11:00 uur. Daarna volgen één of meerdere 
+onderhandelingssessies  met  elke  geselecteerde  afzonderlijk.  Na  elke 
+onderhandelingssessie  dient  de  offerte  te  worden  bijgesteld.  Vervolgens 
+wordt  de  geselecteerde  inschrijver  verzocht  om  tegen  een  nader  vast  te 
+stellen datum een ‘Best and Final Offer’ (BAFO) in te dienen.” 
+
+XII-7820-8/23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+De kwestie van de onderaanneming maakt niet het voorwerp uit 
+
+van een vraagstelling van de verzoekende partij. 
+
+Drie geselecteerde kandidaten, waaronder de verzoekende partij 
+
+en de tussenkomende partij, dienen een eerste offerte in. 
+
+De verzoekende partij stelt in haar offerte de nv Ausy Belgium 
+
+voor  als  onderaannemer.  Zij  verklaart  dat  de  samenwerking  met  RealDolmen  is 
+
+stopgezet. 
+
+3.8. 
+
+Met  een  e-mailbericht  van  11  augustus  2014  –  herhaald  op  4 
+
+september 2014 – informeert de verzoekende partij bij de verwerende partij naar 
+
+“de concrete data […] om ons voorstel te bespreken en de onderhandelingen aan te 
+
+vatten”. 
+
+Met  een  e-mailbericht  van  5  november  2014  antwoordt  de 
+
+hoofdbeheerder van het beheer & exploitatieteam Schelderadarketen het volgende: 
+
+“Na  overleg  met  onze  juridische  dienst  kan  ik  u  enkel  meedelen  dat  op 
+basis  van  het  gevoerde  onderzoek  van  de  offertes,  Inno.com  momenteel 
+niet uitgenodigd wordt voor de onderhandelingen. Meer informatie kan pas 
+worden gegeven nadat hierover een definitieve beslissing is genomen”.   
+
+Met  de 
+
+twee  overgebleven 
+
+inschrijvers  wordt  door  de 
+
+verwerende partij een onderhandelingsronde georganiseerd. 
+
+De onderhandelingen hebben finaal geresulteerd in de indiening 
+
+van  een  Concept  BAFO  en  tenslotte  een  BAFO  door  de  overige  resterende 
+
+inschrijvers.   
+
+3.9. 
+
+Op 4 november 2014 wordt een gunningsverslag opgemaakt. 
+
+Op grond van de toetsing van de BAFO’s aan de vooropgestelde 
+
+gunningscriteria wordt de offerte van de tussenkomende partij als de economisch 
+
+meest voordelige beschouwd met een totaalscore van 81,58/100. 
+
+XII-7820-9/23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.10. 
+
+Bij  besluit  van  23  december  2014  beslist  de  verwerende  partij 
+
+deelopdrachten A en B te gunnen aan de bv ARS Traffic & Transport Technology. 
+
+Dit is het bestreden besluit.   
+
+Voormeld  besluit  bevat  betreffende  de  verzoekende  partij  de 
+
+volgende vermelding: 
+
+“Gelet op het feit dat: 
+1. De offerte van Inno.com niet in overstemming met artikel 12 van het KB 
+Plaatsing, noch met punt 3.3.3.b) van de selectieleidraad was; 
+2.  Bij  een  verdere  deelname  aan  de  onderhandelingsprocedure  door 
+Inno.com  het  gelijkheidsbeginsel  tussen  de  verschillende  inschrijvers 
+mogelijk geschaad zou kunnen worden; 
+3.  De  offerte  Inno.com  diende  geweerd 
+bovenvermelde niet-conformiteit”. 
+
+te  worden  wegens  de 
+
+3.11. 
+
+Met  een  ter  post  aangetekend  schrijven  van  12  januari  2015   
+
+wordt  aan  de  verzoekende  partij  kennis  gegeven  van  deze  motieven  om  haar 
+
+offerte onregelmatig te bevinden en te weren.   
+
+IV. Tussenkomst 
+
+4. 
+
+De bv ARS Traffic & Transport Technology blijkt voordeel te 
+
+halen  uit  de  bestreden  beslissing  en  heeft  er  belang  bij  dat  de  vordering  wordt 
+
+afgewezen. Dienvolgens moet haar verzoek tot tussenkomst worden ingewilligd. 
+
+V. Ontvankelijkheid van het beroep 
+
+5. 
+
+De tussenkomende partij werpt op dat de beslissing om de offerte 
+
+van de verzoekende partij onregelmatig te beschouwen, een vóórbeslissing is die 
+
+geen deel uitmaakt van de gunningsbeslissing en waarvan de verzoekende partij op 
+
+4 september 2014 zou in kennis zijn gesteld. Aangezien de verzoekende partij deze 
+
+vóórbeslissing  niet  tijdig  blijkt  te  hebben  aangevochten,  is  de  onregelmatig-
+
+verklaring definitief. Bovendien stelt zij dat, aangezien de verzoekende partij geen 
+
+middelen  ontwikkelt  tegen  de  beslissing  om  de  offertes  van  de  resterende 
+
+inschrijvers  regelmatig  te  bevinden,  zij  geen  belang  heeft  bij  de  vordering.  De 
+
+XII-7820-10/23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+bestreden beslissing van 23 december 2014 bevestigt hoogstens de onregelmatig-
+
+verklaring maar doet geen nieuwe beroepstermijn ingaan. 
+
+Beoordeling 
+
+6. 
+
+Uit de stukken van het administratief dossier blijkt dat op datum 
+
+van  5  november  2014  slechts  een  informatieve  e-mail  werd  verstuurd  naar  de 
+
+verzoekende  partij en dat er alleszins nog geen definitieve beslissing voorlag in 
+
+verband met de niet-conformiteit van haar offerte. Slechts met een op 12 januari 
+
+2015  ter  post  aangetekende  brief  is  de  verzoekende  partij  vervolgens  in  kennis 
+
+gesteld van de motieven om haar offerte te weren. Aangezien niet blijkt dat de brief 
+
+houdende  de  motieven  voor  de  wering  van  haar  offerte  ook  elektronisch  is 
+
+verzonden,  dient  te  worden  aangenomen  dat  het  verzoekschrift,  ingeleid  op  30 
+
+januari 2015, tijdig is.   
+
+Voorts kan aan de verzoekende partij niet het rechtens vereiste 
+
+belang worden ontzegd om de toewijzingsbeslissing aan te vechten met middelen 
+
+die  haar  eigen  wering  wegens  niet-conformiteit  betwisten.  In  die  zin  valt  de 
+
+exceptie samen met de grond van de zaak en kan ze niet worden bijgevallen. 
+
+VI. Schorsingsvoorwaarden 
+
+7.1. 
+
+Krachtens artikel 17, §§ 1 en 4, van de gecoördineerde wetten op 
+
+de Raad van State kan tot schorsing van de tenuitvoerlegging bij uiterst dringende 
+
+noodzakelijkheid  slechts  worden  besloten  onder  de  dubbele  voorwaarde  dat 
+
+minstens één ernstig middel wordt aangevoerd dat de nietigverklaring van de akte 
+
+of  het  reglement  prima  facie  kan  verantwoorden  en  dat  een  uiterst  dringende 
+
+noodzakelijkheid voorhanden is die onverenigbaar is met de behandelingstermijn 
+
+van de gewone vordering tot schorsing. 
+
+7.2. 
+
+Te dezen is evenwel ook de wet van 17 juni 2013 ‘betreffende de 
+
+motivering,  de  informatie  en  de  rechtsmiddelen  inzake  overheidsopdrachten  en 
+
+bepaalde opdrachten voor werken, leveringen en diensten’ van toepassing.   
+
+XII-7820-11/23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Krachtens  artikel  15,  eerste  lid,  van  die  wet  kan  de  uitvoering 
+
+worden  geschorst  van  de  thans  bestreden  beslissingen  in  aanwezigheid  van  een 
+
+ernstig middel of een klaarblijkelijke onwettigheid. 
+
+Overeenkomstig  artikel  15,  tweede  lid,  echter  wordt  de 
+
+vordering tot schorsing voor de Raad van State uitsluitend ingesteld volgens een 
+
+procedure bij uiterst dringende noodzakelijkheid. 
+
+Er  dient  te  dezen  dan  ook  enkel  nog  te  worden  onderzocht  of 
+
+minstens  één  ernstig  middel  wordt  aangevoerd,  dan  wel  een  klaarblijkelijke 
+
+onwettigheid  aanwezig  is,  die  de  nietigverklaring  van  de  bestreden  beslissingen 
+
+kunnen verantwoorden. 
+
+VII. Onderzoek van de middelen 
+
+A. Eerste middel   
+
+Uiteenzetting van het middel   
+
+8.1. 
+
+Een eerste middel wordt geput uit de schending van de artikelen 
+
+12  en  74  van  het  koninklijk  besluit  ‘plaatsing  overheidsopdrachten  klassieke 
+
+sectoren’ van 15 juli 2011 (hierna koninklijk besluit Plaatsing), punt 3.3.3.b) van 
+
+de  selectieleidraad  16EN2013/1  en  de  beginselen  van  behoorlijk  bestuur,  meer 
+
+bepaald  het  patere  legem  quam  ipse  fecisti-beginsel,  de  materiëlemotiverings-
+
+plicht, het zorgvuldigheidsbeginsel en het redelijkheidsbeginsel. 
+
+De  verzoekende  partij  betoogt  dat  voormelde  bepalingen  en 
+
+beginselen werden geschonden: 
+
+inschrijver 
+
+“Doordat  de  verwerende  partij  de  offerte  van  verzoekende  partij  niet 
+conform  verklaart  omdat  de 
+in  zijn  offerte  niet  zou 
+samenwerken met de onderaannemer op wiens draagkracht hij zich beriep 
+tijdens de selectiefase. 
+Terwijl  inno.com  zich  in  het  ‘formulier  kandidaatstelling’  alleen  en 
+individueel als enige kandiderende onderneming heeft kandidaat gesteld en 
+uitsluitend  op  basis  van  haar  eigen  referenties  en  draagkracht  is 
+
+XII-7820-12/23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+in  de  bijlagen  bij  het 
+
+geselecteerd; dat inno.com geen beroep heeft gedaan op de draagkracht van 
+RealDolmen om geselecteerd te worden en dat zulks ook uitdrukkelijk is 
+bevestigd  door  de  aanbestedende  overheid  in  het  rapport  van  de 
+selectiecommissie  en 
+rapport  van  de 
+selectiecommissie;  dat  inno.com  dan  ook  in  het  kader  van  haar  offerte 
+zonder  probleem  kon  samenwerken  met de  onderaannemer  Ausy  en  niet 
+langer met RealDolmen die oorspronkelijk in het toelichtende document bij 
+de kandidatuurstelling was gevoegd, 
+Terwijl  de  selectieleidraad  noch  het  bijzonder  bestek  vereisten  dat  de 
+kandidaat of de inschrijver vermelden voor welk gedeelte van de opdracht 
+hij voornemens is in onderaanneming te geven en welke onderaannemer(s) 
+hij voorstelt; 
+Zodat de aanbestedende overheid de offerte van inno.com ten onrechte niet 
+conform heeft verklaard”. 
+
+De  verzoekende  partij  licht  toe  dat  zij  zich  in  het  “formulier 
+
+kandidaatstelling” kandidaat heeft gesteld als individuele onderneming. Ondanks 
+
+het  feit  dat  in  het  toelichtende  document  bij  het  “formulier  kandidaatstelling” 
+
+RealDolmen wordt vermeld als de onderaannemer die zal instaan voor de coding 
+
+van de software, is het niet zo dat de verzoekende partij zich op de draagkracht van 
+
+RealDolmen beroept met het oog op haar selectie. In die zin heeft de verzoekende 
+
+partij dan ook geen verbintenis van RealDolmen toegevoegd aan haar kandidatuur-
+
+stelling.  Het  feit  dat  de  verzoekende  partij  zich  niet  op  de  draagkracht  van 
+
+RealDolmen  heeft  beroepen,  blijkt  volgens  haar  des  te  meer  uit  de  selectie-
+
+beslissing  die  uitdrukkelijk  zou  bevestigen  dat  zij  op  basis  van  haar  eigen 
+
+individuele  draagkracht  is  geselecteerd.  De  verzoekende  partij  benadrukt  voorts 
+
+dat de selectiecriteria C1 en C3 de belangrijkste zijn, gelet op het eraan toegekende 
+
+gewicht. Zij krijgt voor deze criteria en trouwens ook voor het criterium C4 een 
+
+ruim  voldoende  score  omwille  van  haar  eigen  individuele  kwaliteiten.  De 
+
+elementen waarvoor zij naar RealDolmen heeft verwezen, betreffen niet-essentiële 
+
+aspecten van de opdrachten, bijvoorbeeld het criterium C8, dat slechts voor 15 van 
+
+de  200  punten  wordt  gequoteerd.  De  verzoekende  partij  besluit  dat  zij  in  haar 
+
+kandidatuurstelling en in haar offerte enkel de onderaannemers heeft voorgesteld, 
+
+ondanks het niet toepasselijk maken door de opdrachtdocumenten van het vereiste 
+
+van artikel 12, eerste lid, van het koninklijk besluit Plaatsing. 
+
+XII-7820-13/23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+In de mate dat de verzoekende partij geen beroep heeft gedaan 
+
+op de draagkracht van RealDolmen om geselecteerd te worden, is de bepaling van 
+
+artikel  3.3.3.b)  van  de  selectieleidraad  volgens  haar  vervolgens  niet  van 
+
+toepassing. Anders gezegd, het feit dat zij in haar offerte gebruik maakt van een 
+
+andere  onderaannemer dan in  de kandidatuurstelling kan geen reden zijn om de 
+
+offerte  van  de  verzoekende  partij  onregelmatig  te  verklaren.  De  aanbestedende 
+
+overheid mocht dus geen gebruik maken  van  artikel  58,  §  5,  van  het  koninklijk 
+
+besluit  Plaatsing  om  haar  selectie  te  herzien.  Om  dezelfde  reden  schendt  de 
+
+aanbestedende  overheid  volgens  de  verzoekende  partij  het  vertrouwensbeginsel, 
+
+aangezien zij er als geselecteerde inschrijver rechtmatig mocht op vertrouwen, te 
+
+worden  toegelaten  tot  de  onderhandelingen.  Ondergeschikt  en  zelfs  indien 
+
+overeenkomstig  punt  3.3.3.b),  de  toestemming  van  de  aanbestedende  overheid 
+
+vereist zou zijn geweest om een andere onderaannemer in te zetten, dan nog had de 
+
+overheid  deze  toestemming  niet  lichtzinnig  mogen  weigeren  zonder  enige 
+
+toelichting aan de verzoekende partij te vragen. Aldus schendt de aanbestedende 
+
+overheid  het  zorgvuldigheidsbeginsel  en  het  redelijkheidsbeginsel,  zeker  in  het 
+
+licht van de soepelheid van de onderhandelingsprocedure. 
+
+Uit al wat voorafgaat, leidt de verzoekende partij nog af dat in 
+
+overeenstemming  met  de  bepalingen  van  de  selectieleidraad,  respectievelijk  het 
+
+bestek,  zij  als  geselecteerde  inschrijver  toegelaten  had  moeten  worden  tot  de 
+
+onderhandelingen. De motieven om dat niet te doen zijn niet draagkrachtig, want 
+
+gesteund op foutieve vaststellingen, zowel in feite als in rechte. 
+
+Beoordeling 
+
+8.2. 
+
+Artikel 12 van het koninklijk besluit Plaatsing luidt: 
+
+“De  opdrachtdocumenten  kunnen  de  inschrijver  verzoeken  om  in  zijn 
+offerte te vermelden welk gedeelte van de opdracht hij voornemens is aan 
+derden in onderaanneming te geven en welke onderaannemers hij voorstelt. 
+Deze vermelding laat de aansprakelijkheid van de inschrijver onverlet. 
+Wanneer de procedure een eerste fase met de indiening van aanvragen tot 
+deelneming  omvat,  neemt  de  inschrijver  in  zijn  offerte  steeds  de 
+vermelding van het eerste lid op voor de onderaannemers en van de andere 
+entiteiten  als  bedoeld  in  artikel  74  waarvan  de  draagkracht  bepalend  is 
+geweest voor zijn selectie”. 
+
+XII-7820-14/23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Artikel 74 van hetzelfde besluit bepaalt: 
+
+“Een kandidaat of een inschrijver kan zich voor welbepaalde opdrachten 
+beroepen op de draagkracht van andere entiteiten, ongeacht de juridische 
+aard  van  zijn  band  met  die  entiteiten.  In  dat  geval  toont  hij  de 
+aanbestedende  overheid  aan  dat  hij  zal  beschikken  over  de  voor  de 
+uitvoering van de opdracht noodzakelijke middelen, door overlegging van 
+de verbintenis van deze entiteiten om de kandidaat of inschrijver dergelijke 
+middelen  ter  beschikking  te  stellen.  Op  deze  entiteiten  is  artikel  61 
+toepasselijk. […]”. 
+
+Punt 3.3.3 van de selectieleidraad luidt als volgt: 
+
+a)  De 
+
+“3.3.3 Beroep op draagkracht van andere entiteiten (Art. 74 KB Plaatsing) 
+inschrijver  kan  zich  beroepen  op  de  draagkracht  van 
+onderaannemers  of  andere  entiteiten.  In  dat  geval  voegt  de 
+inschrijver  de  nodige  documenten  toe  aan  zijn  kandidaatstelling, 
+waaruit  de  verbintenis  van  deze  onderaannemers  of  van  andere 
+entiteiten blijkt om de voor de opdracht noodzakelijke middelen ter 
+beschikking te stellen van de inschrijver. 
+
+b)  De  opdrachtnemer  is  verplicht  de  onderaannemers  in  te  zetten 
+waarop  hij  zich  heeft  beroepen  in  het  kader  van  de  kwalitatieve 
+selectie.  Het  gebruik  van  andere  onderaannemers  is  onderworpen 
+aan de toestemming van de aanbestedende overheid. 
+
+Deze  onderaannemers  of  entiteiten  mogen  zich  niet  in  een  toestand  van 
+uitsluiting bevinden, zoals bedoeld in artikel 61 KB Plaatsing.” 
+
+Artikel 58, § 5, van het koninklijk besluit Plaatsing bepaalt: 
+
+“§ 5. Bij de gunningsbeslissing kan de aanbestedende overheid de selectie 
+van  een  reeds  geselecteerde  herzien,  indien  zijn  persoonlijke  situatie  of 
+bekwaamheid alsdan niet meer beantwoorden aan de grond van paragraaf 1 
+bepaalde selectievoorwaarden”. 
+
+8.3. 
+
+De verwerende partij heeft de offerte van de verzoekende partij 
+
+met toepassing van voormeld artikel 58, § 5, van het koninklijk besluit Plaatsing 
+
+geweerd  omdat  ze  “niet  in  overeenstemming  [was]  met  artikel  12  van  het  KB 
+
+Plaatsing, noch met punt 3.3.3.b), van de selectieleidraad”. Uit artikel 12, tweede 
+
+lid blijkt dat wanneer de procedure een selectiefase omvat, de inschrijver in zijn 
+
+offerte  steeds  de  onderaannemers  moet  vermelden  waarvan  de  draagkracht 
+
+bepalend  is  geweest  voor  zijn  selectie.  Punt  3.3.3.b),  van  de  selectieleidraad 
+
+XII-7820-15/23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+bepaalt dat de opdrachtnemer de onderaannemers moet inzetten waarop hij zich 
+
+heeft  beroepen  in  het  kader  van  de  kwalitatieve  selectie.  De  verzoekende  partij 
+
+heeft  in  haar  offerte  een  andere  onderaannemer  voorgesteld  dan  diegene  in  de 
+
+selectiefase. Zij betwist echter dat zij zich op de draagkracht van de in de selectie 
+
+voorgestelde onderaannemer RealDolmen heeft beroepen, zodat artikel 12, tweede 
+
+lid, van het koninklijk besluit Plaatsing geen toepassing mocht vinden.   
+
+De  omstandigheid  dat  de  verzoekende  partij  zich  in  het 
+
+formulier kandidaatstelling kandidaat heeft gesteld als individuele onderneming, 
+
+doet in de eerste plaats weinig ter zake. RealDolmen wordt in de kandidaatstelling 
+
+voorgesteld als de “subcontractor” of onderaannemer en treedt dus als dusdanig 
+
+niet op als de kandidaat-inschrijver die zich als enige verbindt ten aanzien van de 
+
+aanbestedende overheid. 
+
+Ook  de  vermelding  in  het  selectieverslag  dat  onder  de  rubriek 
+
+“onderaannemer” van het formulier kandidaatstelling RealDolmen niet is vermeld, 
+
+is  niet  bepalend.  De  toevoeging  onder  de  rubriek  “Er  wordt  personeel 
+
+tewerkgesteld  dat  onderworpen  is  aan  de  sociale  zekerheidswetgeving  van  een 
+
+andere lidstaat van de Europese Unie” schept verwarring omtrent de inhoud van de 
+
+JA/NEE  die  er  op  volgt.  Uit  een  vergelijking  van  de  kandidaturen  –  waarop  de 
+
+Raad  ondanks  het  vertrouwelijk  karakter  ervan  vermag  acht  te  slaan  –  blijkt 
+
+overigens  dat  ook  andere  kandidaat-inschrijvers  NEE  hebben  aangeduid  hoewel 
+
+uit  bepaalde  van  die  kandidaturen  blijkt  dat  gebruik  wordt  gemaakt  van  een 
+
+onderaannemer. 
+
+De  verzoekende  partij  ontkent  voorts  niet  dat  zij  in  het 
+
+toelichtende  document  bij  het  formulier  kandidaatstelling  RealDolmen  voorstelt 
+
+als “subcontractor”. Daaruit kan echter niet zonder meer worden afgeleid dat de 
+
+verzoekende partij zich ook heeft beroepen op de draagkracht van RealDolmen in 
+
+het kader van haar selectie. Bovendien wordt niet betwist dat de kandidaatstelling 
+
+van de verzoekende partij geen verbintenis bevat van RealDolmen in de zin van 
+
+artikel 74 koninklijk besluit Plaatsing. 
+
+XII-7820-16/23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Niettemin  lijkt  het  betoog  van  de  verzoekende  partij  op  het 
+
+eerste gezicht onvoldoende toereikend om het standpunt van de verwerende partij 
+
+dat RealDolmen de onderaannemer is op wiens draagkracht de verzoekende partij 
+
+zich beriep tijdens de selectiefase aan het wankelen te brengen. 
+
+Hoewel de samengevatte bevindingen van de selectiecommissie 
+
+in een eerste lezing inderdaad enkel worden betrokken op de verzoekende partij, 
+
+lijken de gedetailleerde resultaten van de evaluatie, zoals opgenomen in de bijlagen 
+
+bij  het  selectieverslag,  ook  RealDolmen  in  de  technische  beoordeling  te  hebben 
+
+betrokken. Meer nog, als “opmerking” geeft de commissie mee dat de “inschrijver 
+
+[…] volledig [steunt] op [de] onderaannemer”.   
+
+Het  voorgaande  lijkt  bevestiging  te  vinden  in  de  kandidatuur-
+
+stelling zelf van de verzoekende partij en waarop de Raad van State, zoals gezegd, 
+
+vermag  acht  te  slaan  ondanks  het  vertrouwelijk  karakter  ervan.  Specifiek  wat 
+
+betreft  de  selectievereisten  inzake  de  technische  bekwaamheid,  verwijst  de 
+
+verzoekende partij in haar kandidatuurstelling op tal van plaatsen naar referenties 
+
+en competenties van RealDolmen. 
+
+In  haar  verzoekschrift  lijkt  de  verzoekende  partij  niet  alleen 
+
+selectief te zijn geweest in het citeren van de voormelde technische beoordeling, 
+
+maar lijkt zij bovendien de door haar behaalde scores op de door haar geciteerde 
+
+criteria,  ten  onrechte  te  extrapoleren  naar  de  door  de  selectieleidraad  vereiste 
+
+minimumscore  van  120/200.  De  som  van  de  door  haar  behaalde  scores  op  de 
+
+criteria C1, C3, C4 en C5 bedraagt 99/140. Nog aangenomen dat de punten die de 
+
+verzoekende  partij  voor  de  genoemde  subcriteria  heeft  behaald,  zijn  ingegeven 
+
+door haar eigen individuele kwaliteiten, kan de daarop betrokken argumentatie van 
+
+de verzoekende partij geenszins op zich overtuigen om ook aan te nemen dat zij 
+
+zich  in  het  geheel  niet  heeft  beroepen  op  de  technische  bekwaamheid  van 
+
+RealDolmen met het oog op haar selectie. 
+
+Haar eigen verwijzing naar het subcriterium C8, en waarvan zij 
+
+uitdrukkelijk verklaart te hebben verwezen naar RealDolmen, lijkt zulks overigens 
+
+te  bevestigen,  weze  het  dat  de  verzoekende  partij  die  elementen  definieert  als 
+
+“niet-essentiële aspecten van de opdracht”. Wat deze laatste stelling betreft, lijkt 
+
+XII-7820-17/23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+het daarbij te volstaan stil te staan bij de totaalscore van de verzoekende partij na 
+
+technische beoordeling, namelijk 121/200 en de impact hierop van dit subcriterium 
+
+C8.  Vastgesteld  dat  de  op  dit  laatste  subcriterium  behaalde  score  van  4/15  niet 
+
+anders dan bepalend kan zijn geweest om de vereiste minimumscore te behalen, 
+
+kan het beweerd niet essentiële karakter van dit subcriterium in deze stand van het 
+
+geding dan ook niet worden bijgevallen. 
+
+8.4. 
+
+De  verzoekende  partij 
+
+lijkt  dan  ook 
+
+te  falen 
+
+in  haar 
+
+bewijsvoering dat zij geen beroep heeft gedaan op de draagkracht van RealDolmen 
+
+met het oog op haar selectie. Bijgevolg lijkt zij evenmin te kunnen worden gevolgd 
+
+in haar standpunt dat punt 3.3.3.b), van de selectieleidraad niet van toepassing zou 
+
+zijn en zij dan ook in het kader van haar offerte zonder probleem kon samenwerken 
+
+met een andere onderaannemer dan diegene waarop zij zich in de sectiefase had 
+
+beroepen, te weten de nv Ausy Belgium.   
+
+Eveneens vergeefs lijkt de verzoekende partij zich te beroepen 
+
+op het vertrouwensbeginsel. Het blijkt niet dat de aanbestedende overheid op enige 
+
+wijze  in  hoofde  van  de  verzoekende  partij  de  rechtmatige  verwachting  heeft 
+
+gecreëerd,  in  die  zin  dat  de  verzoekende  partij  erop  mocht  vertrouwen  dat  zij 
+
+eenmaal geselecteerd tot de onderhandelingen zou worden toegelaten, ook al blijkt 
+
+uit haar offerte dat zij niet langer voldoet aan een selectievoorwaarde. 
+
+8.5. 
+
+In zoverre de verzoekende partij in ondergeschikte orde aanvoert 
+
+dat  de  aanbestedende  overheid  haar  toestemming  om  van  onderaannemer  te 
+
+wisselen, niet had mogen weigeren zonder haar om toelichting te vragen, kan het 
+
+volgende worden opgemerkt. 
+
+                                    De “toestemming”, zijnde de goedkeuring of instemming van de 
+
+aanbestedende  overheid,  lijkt  een  vraag  of  aanbod  van  de  inschrijver  te 
+
+vooronderstellen. Te dezen lijkt de verzoekende partij noch in haar offerte, noch 
+
+voorafgaandelijk in vraagvorm, noch tijdens de informatievergadering van 25 juni 
+
+2014, aandacht te hebben besteed aan de wijziging van onderaannemer, laat staan 
+
+voor  “het  gebruik  van  andere  onderaannemers”  de  toestemming  te  hebben 
+
+gevraagd aan de verwerende partij.   
+
+XII-7820-18/23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Voorts  en  nog  daargelaten  de  vraag  of  de  “toestemming” 
+
+waarvan sprake in punt 3.3.3.b), van de selectieleidraad en die betrekking heeft op 
+
+de “opdrachtnemer” niet enkel de fase na sluiting van een overeenkomst betreft, 
+
+lijkt artikel 12, tweede lid, van het koninklijk besluit Plaatsing de vermelding van 
+
+andere onderaannemers in de offerte dan diegene waarvan de draagkracht bepalend 
+
+is geweest voor de selectie, alleszins niet toe te staan onder voorwaarden. 
+
+Noch  het  zorgvuldigheidsbeginsel,  noch  het  redelijkheids-
+
+beginsel,  noch  de  soepele  aard  van  de  onderhandelingsprocedure  lijken  de 
+
+aanbestedende overheid dan ook te verhinderen alleen al om de betrokken reden de 
+
+offerte te weren, zonder de verzoekende partij voorafgaandelijk om toelichting te 
+
+vragen of te motiveren waarom geen toestemming wordt gegeven voor het beroep 
+
+op  een  andere  onderaannemer.  Voor  het  overige  kan  worden  verwezen  naar  de 
+
+beoordeling van het tweede middel.   
+
+8.6. 
+
+Aangezien de verzoekende partij er in deze stand van het geding 
+
+niet in is geslaagd aan te tonen dat de verwerende partij ten onrechte de offerte niet 
+
+conform heeft verklaard met artikel 12 van het koninklijk besluit Plaatsing en punt 
+
+3.3.3.b) van de selectieleidraad, kan zij niet worden bijgevallen in haar standpunt 
+
+dat de aanbestedende overheid, wilde zij rechtmatig handelen, haar om toelichting 
+
+had moeten vragen. Evenmin toont zij met de prima facie vereiste ernst aan dat de 
+
+beslissing  om  haar  offerte  te  weren,  zou  worden  gedragen  door  foutieve 
+
+vaststellingen, zowel in feite als in rechte. 
+
+8.7.   
+
+Het eerste middel is niet ernstig. 
+
+B. Tweede middel 
+
+Uiteenzetting van het middel   
+
+8.8. 
+
+In  een  tweede  middel  wordt  de  schending  aangevoerd  van  de 
+
+artikelen 3, 8°, en 5 van de wet van 15 juni 2006 ‘overheidsopdrachten en bepaalde 
+
+opdrachten voor werken, leveringen en diensten’, artikel 109 van het koninklijk 
+
+besluit ‘plaatsing overheidsopdrachten klassieke sectoren’ van 15 juli 2011, punt 
+
+D.6., van het bijzonder bestek 16EN2013/1 en van de beginselen van behoorlijk 
+
+XII-7820-19/23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+bestuur,  meer  bepaald  het  patere  legem  quam  ipse  fecisti-beginsel,  het 
+
+zorgvuldigheidsbeginsel en het redelijkheidsbeginsel. 
+
+De verzoekende partij acht voormelde bepalingen en beginselen 
+
+geschonden: 
+
+is 
+
+het 
+
+heeft 
+
+bestuur 
+
+toegelaten 
+
+inschrijver 
+
+inno.com  niet 
+
+“Doordat  de 
+tot  de 
+onderhandelingen en niet is uitgenodigd voor de eerste voorstelling van de 
+offerte en eerste onderhandelingsronde, 
+Terwijl zowel het bijzonder bestek als het antwoord van de aanbestedende 
+overheid  op  de  vraag  3  van  de  geselecteerde  kandidaten  voorzag  in  een 
+eerste  voorstelling  van  de  offerte  na  indiening  ervan,  dat  het  bestek  niet 
+voorzag  in  een  onderhandelingsprocedure  in  opeenvolgende  fases,  zodat 
+ieder inschrijver de kans diende te krijgen om zijn offerte voor te stellen en 
+te onderhandelen over de offerte, 
+Terwijl 
+eerste 
+onderhandelingsvergadering  aan  te  wenden  om  nadere  informatie  in  te 
+winnen over de reden tot wissel van onderaannemer van inno.com en de 
+geoorloofdheid ervan; dat de aanbestedende overheid in strijd met het eigen 
+bestek  en  selectieleidraad  heeft  nagelaten  om  op  gemotiveerde  wijze  te 
+verantwoorden  waarom  een  wijziging  van  onderaannemer  aan  een 
+voorafgaande  toestemming  zou  zijn  onderworpen  en  ondergeschikt  hoe 
+dan  ook  geen  motieven  heeft  aangebracht  waarom  een  dergelijke 
+toestemming  in  het  concrete  voorliggende  geval  van  inno.com  niet  kon 
+worden verleend; 
+Zodat inno.com ten onrechte niet is uitgenodigd voor de onderhandelingen 
+en  geen  kans  heeft  gekregen  om  mee  te  dingen  naar  de  opdracht  en  het 
+bestuur de principes van de onderhandelingsprocedure en van de eerlijke 
+mededinging heeft geschonden.” 
+
+nagelaten 
+
+om 
+
+de 
+
+De  verzoekende  partij  licht  toe  dat  het  bestuur  niet  gerechtigd 
+
+was om de onderhandelingen in opeenvolgende fases te voeren en dat het bestek 
+
+het bestuur ertoe verplichtte haar uit te nodigen voor minstens één gesprek om te 
+
+onderhandelen over haar offerte teneinde de verzoekende partij de kans te bieden 
+
+haar offerte aan te passen aan de eisen vermeld in de opdrachtdocumenten. Indien 
+
+er al een probleem was met de onderaannemerswissel had de verzoekende partij dit 
+
+tijdens een dergelijk gesprek kunnen uitklaren, ongeacht of de toestemming van de 
+
+overheid dienaangaande al dan niet was vereist. Door aan de verzoekende partij de 
+
+mogelijkheid te ontnemen om haar offerte in het kader van de onderhandelingen 
+
+toe te lichten, heeft het bestuur de gelijkheid tussen de inschrijvers miskend en de 
+
+mededinging  niet  ten  volle  laten  spelen.  Wat  de  als  geschonden  ingeroepen 
+
+XII-7820-20/23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+algemene beginselen van behoorlijk bestuur betreft, herhaalt de verzoekende partij 
+
+haar grieven uiteengezet onder het eerste middel. 
+
+Beoordeling 
+
+8.9. 
+
+Artikel 3, 8°, van de voormelde wet van 15 juni 2006 definieert 
+
+de  onderhandelingsprocedure  met  bekendmaking  als  de  gunningsprocedure 
+
+waarbij elke aannemer, leverancier of dienstverlener een aanvraag tot deelneming 
+
+mag  indienen,  waarbij  alleen  de  geselecteerden  een  offerte  mogen  indienen  en 
+
+waarbij over de voorwaarden van de opdracht kan worden onderhandeld met de 
+
+inschrijvers.   
+
+Overeenkomstig  artikel  5  van  voormelde  wet  behandelen  de 
+
+aanbestedende  overheden  de  aannemers,  leveranciers  en  dienstverleners  op 
+
+gelijke, niet-discriminerende en transparante wijze. 
+
+Artikel 109 van het koninklijk besluit Plaatsing luidt: 
+
+“§1. Dit artikel is van toepassing in geval van onderhandelingsprocedure 
+met bekendmaking voor een opdracht voor werken, leveringen of diensten 
+van bijlage II, A, van de wet die de drempel vermeld in artikel 32 bereikt. 
+§ 2. De aanbestedende overheid onderhandelt met de inschrijvers over de 
+door hen ingediende offertes, om die aan te passen aan de eisen die zij in de 
+opdrachtdocumenten heeft vermeld en om de beste offerte te kiezen. 
+Tijdens  de  onderhandelingen  waarborgt  de  aanbestedende  overheid  de 
+gelijke  behandeling  van  alle  inschrijvers.  Met  name  geeft  zij  geen 
+discriminerende  informatie  die  sommige  inschrijvers  kan  bevoordelen 
+tegenover andere. 
+§  3.  De  aanbestedende  overheid  kan  bepalen  dat  de  onderhandelings-
+procedure  in  opeenvolgende  fases  verloopt,  teneinde  het  aantal  offertes 
+waarover onderhandeld moet worden, te verminderen door toepassing van 
+de  gunningscriteria  die  in  de  opdrachtdocumenten  zijn  vermeld.  Het 
+gebruik van deze mogelijkheid wordt vermeld in de opdrachtdocumenten. 
+In  de  slotfase  moet  het  verminderde  aantal  zodanig  zijn  dat  een 
+daadwerkelijke mededinging kan worden gewaarborgd, voor zover er een 
+voldoende aantal geschikte offertes is.” 
+
+XII-7820-21/23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Artikel D.6.,  van  het deel 1  “Administratieve bepalingen” van 
+
+het bestek nr. 16EN2013/1 bepaalt dat “de inschrijvers […] hun 1ste offerte ten 
+
+overstaan  opdrachtgevers  [zullen]  komen  toelichten  op  een  nader  te  bepalen 
+
+datum”. 
+
+8.10. 
+
+De verzoekende partij lijkt in het middel een en ander uit het oog 
+
+te verliezen. 
+
+In de eerste plaats kan uit de libellering van artikel 3, 8°, van de 
+
+wet  van  15  juni  2006  –  het  gebruik  van  het  woord  “kan”  –  geen  principiële 
+
+verplichting tot onderhandelen worden afgeleid voor de aanbestedende overheid. 
+
+Te dezen bepaalt het bijzonder bestek evenwel dat de inschrij-
+
+vers hun offerte zullen mogen komen toelichten. Uit het antwoord op de vraag 3 
+
+tijdens de informatievergadering van 25 juni 2014 (zie hiervoor randnr. 3.7.) blijkt 
+
+ook dat na de indiening van de offertes “een of meerdere onderhandelingssessies 
+
+met elke geselecteerde afzonderlijk” zullen volgen. 
+
+Bij  een  onderhandelingsprocedure  is  weliswaar  ruimte  voor 
+
+overleg.    Dit  overleg  lijkt  echter  de  fase  van  de  beoordeling  van  de  offertes  te 
+
+betreffen, waar een afstemming wat betreft de inhoud van de offerte op de wensen 
+
+van het bestuur eventueel mogelijk zou zijn, maar het lijkt op het eerste gezicht 
+
+geen  betrekking  te  hebben  op  de  selectie  van  de  inschrijvers,  zoals  dit  door  de 
+
+aanbestedende overheid zelf is geregeld in te dezen de selectieleidraad, en die in 
+
+een voorafgaande fase reeds is beëindigd. 
+
+8.11. 
+
+In zoverre de verzoekende partij zich beroept op een schending 
+
+van  het  gelijkheidsbeginsel  kan  op  het  eerste  gezicht  worden  volstaan  met  de 
+
+vaststelling dat geen van de overige inschrijvers, voor zover deze al een beroep 
+
+hadden gedaan op de draagkracht van onderaannemers met het oog op hun selectie, 
+
+in hun offerte een andere onderaannemer hadden voorgesteld en niettegenstaande 
+
+toch tot de onderhandelingen werden toegelaten.   
+
+8.12. 
+
+In de huidige stand van het geding lijkt om de gegeven redenen 
+
+de  verwerende  partij  dan  ook  niet  te  kunnen  worden  verweten  de  verzoekende 
+
+XII-7820-22/23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+partij  niet  te  hebben  toegelaten  tot  de  onderhandelingen  en  is  ook  het  tweede 
+
+middel niet ernstig. 
+
+Het tweede middel is niet ernstig. 
+
+VIII. Besluit 
+
+9. 
+
+Geen van beide middelen is ernstig gebleken. De vordering tot 
+
+schorsing  bij  uiterst  dringende  noodzakelijkheid  dient  dan  ook  te  worden 
+
+verworpen. 
+
+BESLISSING 
+
+1.  Het  verzoek  van  de  bv  ARS  Traffic  &  Transport  Technology  tot 
+
+tussenkomst in het administratief kort geding wordt ingewilligd. 
+
+2. De Raad van State verwerpt de vordering.   
+
+Dit  arrest  is  uitgesproken  te  Brussel,  in  openbare  terechtzitting  van  27  februari 
+
+2015, door de Raad van State, XIIe kamer, samengesteld uit: 
+
+Johan Bovin, 
+
+staatsraad, 
+
+waarnemend voorzitter, 
+
+bijgestaan door 
+
+Frank Bontinck, 
+
+griffier. 
+
+De griffier 
+
+De voorzitter 
+
+Frank Bontinck 
+
+Johan Bovin 
+
+XII-7820-23/23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

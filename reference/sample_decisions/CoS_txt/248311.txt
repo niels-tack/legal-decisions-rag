@@ -1,0 +1,1339 @@
+RAAD VAN STATE, AFDELING BESTUURSRECHTSPRAAK 
+
+VOORZITTER VAN DE XIIe KAMER 
+
+In zake: 
+
+A R R E S T 
+
+nr. 248.311 van 21 september 2020 
+in de zaak A. 231.597/XII-8945 
+
+de NV CIPAL SCHAUBROECK 
+bijgestaan en vertegenwoordigd door 
+advocaten Tom De Smet en Evert Vervaet 
+kantoor houdend te 2800 Mechelen 
+Grote Nieuwedijkstraat 417 
+bij wie woonplaats wordt gekozen 
+
+tegen: 
+
+de PROVINCIE LIMBURG 
+bijgestaan en vertegenwoordigd door 
+advocaten Jens Debièvre, Lore Derdeyn en Matthias Castelein 
+kantoor houdend te 1000 Brussel 
+Havenlaan 86c, 113b 
+bij wie woonplaats wordt gekozen 
+
+--------------------------------------------------------------------------------------------------   
+
+I. Voorwerp van de vordering 
+
+1. 
+
+De  vordering,  ingesteld  op  21  augustus  2020,  strekt  tot  de 
+
+schorsing bij uiterst dringende noodzakelijkheid van de tenuitvoerlegging van “de 
+
+beslissing van de deputatie van de provincieraad LIMBURG d.d. 6 augustus 2020, 
+
+waarbij  de  overheidsopdracht  „Aankoop  van  een  HRM-suite  met  volledige 
+
+integratie  van  de  loonadministratie  en  het  personeelsbeheer‟,  bestaande  uit  het 
+
+perceel 1 „Werving en selectie‟ en het perceel 2 „HRM software‟ aan DILEOZ NV 
+
+[...] wordt gegund, de offerte van [de nv Cipal Schaubroeck] voor beide percelen 
+
+nietig wordt verklaard en met de impliciete weigering om deze opdracht aan [de nv 
+
+Cipal Schaubroeck] te gunnen”. 
+
+XII-8945-1/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+II. Verloop van de rechtspleging 
+
+2. 
+
+De verwerende partij heeft een nota ingediend. 
+
+De  partijen  zijn  opgeroepen  voor  de  terechtzitting,  die  heeft 
+
+plaatsgevonden op 10 september 2020, om 14.00 uur. 
+
+Staatsraad Patricia De Somere heeft verslag uitgebracht. 
+
+Advocaat  Evert  Vervaet,  die  verschijnt  voor  de  verzoekende 
+
+partij, en advocatne Jens Debièvre en Matthias Casteleyn, die verschijnen voor de 
+
+verwerende partij, zijn gehoord. 
+
+Auditeur  Thomas  Maes  heeft  een  met  dit  arrest  eensluidend 
+
+advies gegeven. 
+
+Er is toepassing gemaakt van de bepalingen op het gebruik der 
+
+talen,  vervat  in  titel  VI,  hoofdstuk  II,  van  de  wetten  op  de  Raad  van  State, 
+
+gecoördineerd op 12 januari 1973. 
+
+III. Feiten 
+
+3.1. 
+
+De  verwerende  partij  schrijft  een  overheidsopdracht  voor 
+
+leveringen uit met als voorwerp de  “aankoop van een HRM-suite met volledige 
+
+integratie  van  de  loonadministratie  en  het  personeelsbeheer”,  bestaande  uit  een 
+
+perceel 1 “Werving en selectie” en een perceel 2 “HRM software”. 
+
+De  opdracht  wordt  bekendgemaakt 
+
+in  het  Bulletin  der 
+
+Aanbestedingen van 6 maart 2020 en in het Supplement op het Publicatieblad van 
+
+de Europese Unie van 11 maart 2020. 
+
+De waarde van perceel 1 wordt geraamd op 105.875,00 euro, btw 
+
+inbegrepen, en van perceel 2 op 1.406.625,00 euro, btw inbegrepen. 
+
+XII-8945-2/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Het  bijzonder  bestek  nr.  2020N062330  van  7  mei  2020  is  van 
+
+toepassing op de opdracht.   
+
+Teneinde  de  kwaliteit  van  de  voorgestelde  software 
+
+te 
+
+beoordelen, schrijft punt 1.5 van het bestek voor dat er verplicht een demonstratie 
+
+zal worden gegeven door de inschrijver, die volledig een livedemo van de software 
+
+moet zijn en geen voorstelling mag zijn aan de hand van screenshots (realistische 
+
+eenvoudige/ingewikkelde situaties).   
+
+Het gunningscriterium “Prijs” wordt in punt 1.12 van het bestek 
+
+voor beide percelen als volgt omschreven: 
+
+“Er  wordt  een  all-in  prijs  gevraagd  voor  het  modulair  aansluiten  en  in 
+dienst stellen van de software. In de inventaris ais bijlage dient de prijs per 
+deelopdracht aangegeven te worden. 
+De prijs bestaat uit volgende onderdelen: 
+Software 
+Aankoopprijs (vaste kostprijs) inclusief/met inbegrip van de noodzakelijke 
+configuraties en dienstverlening 
+Licentieprijs per eindgebruikers en administrators 
+Implementatie (vaste kostprijs) 
+Dataconversie (vaste kostprijs) 
+Opleiding, documentatie en handleidingen (vaste kostprijs, met opgave van 
+het  voorziene  aantal  uren  opleiding,  voor  de  opleiding  eindgebruiker  en 
+voor de opleiding administrator) 
+Onderhoud  (vaste  kostprijs  voor  ondersteuning,  correctief  onderhoud, 
+upgrades  van  de  software,  aanpassingsonderhoud,  met  opgave  van  de 
+kostprijs voor een periode van 4 jaar vanaf het einde van de implementatie 
+van alle modules van beide percelen). 
+De  kostprijs  omvat  de  totale  prijs  voor  het  voldoen  aan  de  functionele 
+vereisten, de niet-functionele vereisten en de technische vereisten. 
+Er  wordt  bijkomend  een  uurprijs  gevraagd  voor  eventuele  bijkomende 
+prestaties  op  afroep.  Deze  bijkomende  prestaties  kunnen  enerzijds 
+betrekking  hebben  op  de  technische  ontwikkeling  en  anderzijds  op  de 
+vorming  (bv.  bijkomende  infosessies).  De  opdrachtnemer  dient  voor  elk 
+van beide vormen in de inventaris een uurprijs aan te geven. 
+In  de  prijzen  zijn  inbegrepen  alle  kosten,  metingen  en  prestaties  die 
+inherent zijn aan de uitvoering van de opdracht, met name: 
+1° de administratie en het secretariaat 
+2° de verplaatsing, het vervoer en de verzekering 
+3°  de  levering  van  documenten  of  stukken  die  inherent  zijn  aan  de 
+uitvoering 
+
+XII-8945-3/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4°  de  kosten  gemaakt  voor  het  koppelen  van  de  software  met  bestaande 
+software beschreven in de beschreven architectuur.” 
+
+3.2. 
+
+De  opdracht  wordt  geplaatst  door  middel  van  een 
+
+mededingingsprocedure  met  onderhandeling.  De  plaatsingsprocedure  omvat  een 
+
+selectie- en een gunningsfase. 
+
+De  verzoekende  partij  en  de  nv  Dileoz  dienen  elk  een 
+
+kandidatuur in en worden geselecteerd. 
+
+Beide ondernemingen worden uitgenodigd om een offerte in te 
+
+dienen,  wat  zij  ook  doen.  Er  vinden  onderhandelingen  plaats  met  beide 
+
+inschrijvers,  waarna  zij  elk  een  verbeterde  offerte  indienen  op  1  juli  2020,  en 
+
+vervolgens, na een tweede onderhandelingsronde, een BAFO op 10 juli 2020. 
+
+Bij een e-mailbericht van 10 juli 2020 richt de verwerende partij 
+
+een verzoek tot prijsverantwoording aan beide inschrijvers voor de eenheidsprijzen 
+
+van enkele posten, die zij elk op 20 juli 2020 beantwoorden. 
+
+3.3. 
+
+Er  wordt  een  gunningsverslag  opgesteld,  op  het  stuk  zelf 
+
+gedateerd  op  15  juli  2020,  doch  volgens  de  nota  van  de  verwerende  partij  op 
+
+3 augustus 2020 opgesteld.   
+
+Wat het onderzoek van de regelmatigheid van de offertes betreft, 
+
+vermeldt  het  gunningsverslag  over  de  offerte  van  de  verzoekende  partij  het 
+
+volgende: 
+
+“Perceel 1 (Werving en selectie) 
+De offerte is substantieel onregelmatig:   
+
+-  De inschrijver formuleert een voorbehoud voor de kostprijs van post 
+6: dataconversie. De inschrijver vermeldt in de migratietabel dat een 
+concrete  prijsinschatting  pas  kan  gebeuren  na  inhoudelijke  en 
+technische screening van de aanwezige data. Er wordt bijgevolg door 
+de inschrijver voor post 6 een schatting gemaakt, terwijl de inventaris 
+van de opdracht vraagt om een globale prijs voor deze post. Door dit 
+voorbehoud is een correcte prijsvergelijking niet mogelijk. 
+
+XII-8945-4/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+De  offerte  van  Cipal  Schaubroeck  NV  voor  perceel  1  is  hierdoor 
+substantieel onregelmatig. 
+Perceel 2 (HRM software) 
+Offerte is substantieel onregelmatig:   
+
+-  Het bestek van de opdracht vermeldt dat de demo volledig live moet 
+plaatsvinden,  dit  om  de  „real-life‟  werking  van  het  voorgestelde 
+systeem te kunnen testen. De demo van Cipal Schaubroeck NV voor 
+perceel  2  was  echter  niet  volledig  live:  Mock-ups  en  PowerPoint 
+slides wisselen elkaar af. Hierdoor is de demo niet conform de eisen 
+van  het  bestek  en  is  de  offerte  van  Cipal  Schaubroeck  NV 
+onregelmatig.   
+
+-  De kosten voor alle koppelingen zoals ze gevraagd zijn, moeten mee 
+opgenomen zijn in de prijs. Cipal Schaubroeck NV deelt mee dat een 
+gedegen kostprijsraming enkel kan mits een voorafgaande analyse en 
+een  gedegen  oplijsting  van  de  verwachtingen  van  de  Provincie 
+binnen deze koppeling. Cipal Schaubroeck NV vermeldt voor deze 
+koppelingen dus een prijs zonder resultaatsverbintenis. Hierdoor is de 
+offerte niet vergelijkbaar en bijgevolg onregelmatig.   
+
+-  De inschrijver formuleert een voorbehoud voor de kostprijs van post 
+8: dataconversie. De inschrijver formuleert dat de kostprijs zoals deze 
+vermeld  is  in  de  inventaris  slechts  een  schatting  is.  De  inventaris 
+vermeldt  voor  deze  post  dat  er  een  globale  prijs  moet  gegeven 
+worden. Doordat de inschrijver vermeldt dat het om een raming gaat, 
+is  een correcte prijsvergelijking niet mogelijk.  Bovendien vermeldt 
+de inschrijver dat deze raming zonder resultaatsverbintenis is.   
+
+-  De  inschrijver  heeft  niet  voor  alle  gevraagde  functionaliteiten  een 
+voorstel  ingediend.  De  aanbesteder  heeft  er  op  gewezen  dat 
+functionaliteiten  enkel  als  aangeboden  kunnen  beschouwd  worden 
+wanneer er een functionele omschrijving en bijbehorende prijs wordt 
+aangeboden.  Cipal  Schaubroeck  NV  laat  weten  dat  hun  voorstel 
+louter een raming betreft en dit zonder resultaatsverbintenis.   
+De offerte van Cipal Schaubroeck NV voor perceel 2 van de opdracht is 
+substantieel  onregelmatig  door  de  verschillende  voorbehouden  die  in  de 
+offerte worden vermeld. Hierdoor is de offerte onvergelijkbaar.” 
+
+De  offerte  van  de  nv  Dileoz  wordt  zonder  opmerkingen 
+
+regelmatig verklaard. Enkel deze offerte wordt getoetst aan de gunningscriteria. Er 
+
+wordt vervolgens voorgesteld om beide percelen van de opdracht te gunnen aan de 
+
+nv Dileoz.   
+
+3.4. 
+
+Op 6 augustus 2020 beslist de verwerende partij, verwijzend naar 
+
+het  gunningsverslag,  om  beide  percelen  van  de  opdracht  te  gunnen  aan  de 
+
+nv Dileoz. 
+
+XII-8945-5/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+IV. Ontvankelijkheid van de vordering 
+
+4. 
+
+Vooralsnog  bestaat  er  geen  noodzaak  om  over  de  door  de 
+
+verwerende partij opgeworpen ontvankelijkheidsexcepties uitspraak te doen. Een 
+
+onderzoek van en een uitspraak over die excepties zou alleen nodig zijn indien de 
+
+grondvoorwaarden voor het toewijzen van de vordering tot schorsing vervuld zijn, 
+
+wat, zoals hierna zal blijken, niet het geval is. 
+
+V. Schorsingsvoorwaarden 
+
+5.1. 
+
+Krachtens artikel 17, §§ 1 en 4, van de gecoördineerde wetten op 
+
+de Raad van State kan tot schorsing van de tenuitvoerlegging bij uiterst dringende 
+
+noodzakelijkheid  slechts  worden  besloten  onder  de  dubbele  voorwaarde  dat 
+
+minstens één ernstig middel wordt aangevoerd dat de nietigverklaring van de akte 
+
+of  het  reglement  prima  facie  kan  verantwoorden  en  dat  een  uiterst  dringende 
+
+noodzakelijkheid voorhanden is die onverenigbaar is met de behandelingstermijn 
+
+van de gewone vordering tot schorsing. 
+
+5.2. 
+
+Te dezen is evenwel ook de wet van 17 juni 2013 „betreffende de 
+
+motivering,  de  informatie  en  de  rechtsmiddelen  inzake  overheidsopdrachten, 
+
+bepaalde  opdrachten  voor  werken,  leveringen  en  diensten  en  concessies‟  van 
+
+toepassing. 
+
+Krachtens  artikel  15,  eerste  lid,  van  die  wet  kan  de  uitvoering 
+
+worden  geschorst  van  de  thans  bestreden  beslissingen  in  aanwezigheid  van  een 
+
+ernstig middel of een klaarblijkelijke onwettigheid. 
+
+Overeenkomstig  artikel  15,  tweede  lid,  echter  wordt  de 
+
+vordering tot schorsing voor de Raad van State uitsluitend ingesteld volgens een 
+
+procedure bij uiterst dringende noodzakelijkheid. 
+
+Er  dient  te  dezen  dan  ook  enkel  nog  te  worden  onderzocht  of 
+
+minstens  één  ernstig  middel  wordt  aangevoerd,  dan  wel  een  klaarblijkelijke 
+
+XII-8945-6/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+onwettigheid  aanwezig  is,  die  de  nietigverklaring  van  de  bestreden  beslissingen 
+
+kunnen verantwoorden. 
+
+VI. Onderzoek van de middelen 
+
+A. Eerste middel   
+
+Uiteenzetting van het middel 
+
+6.  
+
+In  een  eerste  onderdeel  voert  de  verzoekende  partij  de 
+
+“oneigenlijke toepassing” van het artikel 36 van het koninklijk besluit van 18 april 
+
+2017  „plaatsing  overheidsopdrachten  in  de  klassieke  sectoren‟  (hierna:  het 
+
+koninklijk besluit plaatsing 2017) aan. 
+
+Zij licht toe dat uit de kennisgevingsbrieven van 7 augustus 2020 
+
+blijkt  dat  haar  offertes  voor  de  percelen  1  en  2  van  de  opdracht  nietig  werden 
+
+verklaard  wegens  één  of  meerdere  onregelmatigheden,  zonder  dat  wordt 
+
+verduidelijkt waarom dit “substantiële” onregelmatigheden zijn. Deze beoordeling 
+
+kadert in de toepassing van artikel 76 van het koninklijk besluit plaatsing 2017, dat 
+
+handelt over het regelmatigheidsonderzoek. 
+
+In  een  e-mailbericht  van  10  juli  2020  had  de  aanbestedende 
+
+overheid toelichting gevraagd bij de offerte met toepassing van artikel 36 van het 
+
+koninklijk besluit plaatsing 2017 dat handelt over het prijzenonderzoek ingevolge 
+
+abnormale prijzen of kosten, terwijl deze bepaling volgens haar geen toepassing 
+
+vindt  in  een  mededingingsprocedure  met  onderhandelingen  zoals  te  dezen, 
+
+overeenkomstig  artikel  36,  §  6,  van  het  koninklijk  besluit  plaatsing  2017. 
+
+Bovendien verduidelijkt de verwerende partij nergens waarom zij de prijzen in de 
+
+BAFO  als  abnormaal  beschouwt,  dat  geldt  a  fortiori  wanneer  de  BAFO-prijzen 
+
+van de verzoekende partij worden vergeleken met de prijzen uit de initiële offerte 
+
+van  de  gekozen  inschrijver.  De  verwerende  partij  kon  dan  ook  niet  op  wettige 
+
+wijze artikel 36 van het koninklijk besluit plaatsing 2017 toepassen en op grond 
+
+daarvan beslissen tot de nietigheid wegens onregelmatigheid van de offertes van de 
+
+verzoekende partij. 
+
+XII-8945-7/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Bovendien heeft de verzoekende partij een prijsverantwoording 
+
+verschaft,  terwijl  de  motivering  omtrent  het  voorbehoud  bij  de  kostprijs  van  de 
+
+dataconversie,  zowel  bij  perceel  1  als  perceel  2,  geen  betrekking  heeft  op  het 
+
+abnormaal  karakter  ervan.  De  verwerende  partij  toont  volgens  haar  niet  aan  dat 
+
+door het voorbehoud de onderlinge vergelijking van de offertes totaal onmogelijk 
+
+is geworden. Het voorbehoud betreft enkel de hoegrootheid van de som, maar tast 
+
+volgens  de  verzoekende  partij  in  se  de  onderlinge  vergelijkbaarheid  niet  aan. 
+
+Evenmin beschouwt de verwerende partij dit als een abnormale prijs. Als de prijs 
+
+niet  abnormaal  is  bevonden,  komt  de  onderlinge  vergelijkbaarheid  niet  in  het 
+
+gedrang. Het voorbehoud is het gevolg van een gebrek aan technische gegevens in 
+
+het bestek over de dataconversie. 
+
+De  verwerende  partij  mocht  haar  beslissing  tot  het  nietig 
+
+verklaren  van  de  offerte  voor  beide  percelen  niet  steunen  op  artikel  36  van  het 
+
+koninklijk  besluit  plaatsing  2017  of  naar  aanleiding  van  een  vraag  tot 
+
+prijsverantwoording. Minstens bevat de bestreden beslissing geen enkel deugdelijk 
+
+motief waaruit blijkt dat de verzoekende partij abnormale prijzen hanteert. 
+
+7. 
+
+In  een  tweede  onderdeel  voert  de  verzoekende  partij  de 
+
+schending aan van artikel 76 van het koninklijk besluit plaatsing 2017. 
+
+De verzoekende partij doet gelden dat de verwerende partij het 
+
+onderzoek naar abnormale prijzen op grond van het artikel 36 van het koninklijk 
+
+besluit plaatsing 2017 oneigenlijk gebruikt om een regularisatie van de BAFO van 
+
+de  verzoekende  partij  mogelijk  te  maken,  wat  eigenlijk  op  grond  van 
+
+artikel 76, § 4, niet kan. Door alsnog om verantwoording te vragen, zelfs onder het 
+
+mom van een prijzenonderzoek, geeft de verwerende partij eigenlijk te kennen dat 
+
+de mogelijke onregelmatigheden niet substantieel zijn.   
+
+De verzoekende partij betoogt vervolgens: 
+
+“Voor  wat  betreft  het  perceel  1  betekent  dit  dat  de  gevraagde 
+prijsverantwoording  voor  de  kostenraming  voor  de  dataconversie  geen 
+substantiële onregelmatigheid kan zijn. Op grond van het artikel 76, §3 KB 
+Plaatsing kon [de verwerende partij] aldus de offerte niet nietig verklaren 
+
+XII-8945-8/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+wegens  één  niet-substantiële  onregelmatigheid,  waardoor  de  bestreden 
+beslissing op dat punt onwettig is.   
+Voor  wat  betreft  het  perceel  2  geldt  dezelfde  redenering,  nu  het 
+regelmatigheidsonderzoek  nog  plaats  vond  na  de  laatste  offerte  en  na  de 
+vraag tot prijsverantwoording, zodat de Verwerende partij op grond van het 
+artikel  76  KB  Plaatsing  niet  langer  kon  beslissen  tot  de  substantiële 
+onregelmatigheid van de offerte.   
+Het  staat  aldus  vast  dat  zelfs  de  vraag  tot  prijsverantwoording,  door  de 
+aanbestedende  overheid  niet  kon  gebruikt  worden 
+een 
+regelmatigheidsonderzoek  in  de  fase  na  het  indienen  van  de  BAFO.  Dit 
+blijkt te meer uit de (onterecht) weerhouden onregelmatigheden aangezien 
+deze, met uitzondering van de demo die niet volledig live was voor perceel 
+2, allen betrekking hebben op de aangeboden prijzen en in het bijzonder het 
+erbij geformuleerde voorbehoud.”   
+
+als 
+
+8.   
+
+In  een  derde  onderdeel  voert  de  verzoekende  partij 
+
+“onzorgvuldige motivering” aan. 
+
+Zij betoogt dat uit de bestreden beslissing niet blijkt dat er sprake 
+
+is  van  substantiële  onregelmatigheden,  minstens  wordt  nergens  gemotiveerd 
+
+waarom de onregelmatigheden die kwalificatie verdienen. 
+
+Wat de onregelmatigheid van de livedemo voor perceel 2 betreft, 
+
+doet  de  verzoekende  partij  gelden  dat  het  voorschrift  om  te  voorzien  in  een 
+
+(live)demo  op  zich  geen  technische  specificatie  uitmaakt  in  verband  met  de 
+
+uitvoering  van  de  opdracht.  Dit  betreft  enkel  een  verzoek  in  het  kader  van  het 
+
+indienen  van  de  offerte.  Daarnaast  wijst  de  verzoekende  partij  erop  dat  zij  een 
+
+livedemo heeft gepresenteerd, waarbij slechts één module, het budgetbeheer, niet 
+
+live  kon worden voorgesteld. Met andere woorden werd 95 % van de volledige 
+
+toepassing  voor  perceel  2  met  een  livedemo  gepresenteerd.  Het  overige 
+
+niet-livedeel  was  aldus  verwaarloosbaar.  De  verwerende  partij  heeft  de 
+
+verzoekende partij uitgenodigd om een BAFO in te dienen, zodat de verzoekende 
+
+partij  veronderstelde  dat  de  door  haar  gepresenteerde  demo  volstond  voor  de 
+
+beoordeling van haar offerte, en in deze fase was het niet (meer) mogelijk voor de 
+
+verwerende partij om dit als onregelmatigheid vast te stellen. 
+
+Wat 
+
+de 
+
+onregelmatigheden 
+
+gekoppeld 
+
+aan 
+
+de 
+
+prijsverantwoording  betreft,  merkt  de  verzoekende  partij  op  dat  er  geen  enkel 
+
+XII-8945-9/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+beletsel  bestaat  om  over  te  gaan  tot  een  prijsvergelijking  wanneer  voor  een 
+
+bepaalde  post  een  voorbehoud  wordt  geformuleerd.  Het  behoort  aan  de 
+
+verwerende  partij  om  aan  te  tonen  dat  de  vergelijkbaarheid  werkelijk  in  het 
+
+gedrang is gekomen of dat er sprake is van een abnormale prijs maar zij doet geen 
+
+van beide. De verzoekende partij voegt eraan toe dat het voorbehoud het gevolg is 
+
+van een gebrek aan technische gegevens voor het uitvoeren van de dataconversie in 
+
+het bestek. Dit betekent dat, indien de verzoekende partij meerwerken zou moeten 
+
+verrichten die de geraamde prijs te boven gaan, deze enkel het gevolg zijn van de 
+
+conversie  van  gegevens  waaromtrent  de  besteksbepalingen  geen  informatie  of 
+
+detaillering bevatten. Deze meerwerken vormen dan werken buiten het bestek om.   
+
+Wat de kostprijs voor de functionaliteiten betreft, wordt nergens 
+
+in de besteksbepalingen voorgeschreven dat er een prijs moet worden opgegeven 
+
+voor elke gevraagde functionaliteit. Het volstond om een globale prijs te geven. 
+
+Evenwel heeft de verzoekende partij, om aan het verzoek van de verwerende partij 
+
+tegemoet  te  komen,  een  raming  gegeven.  De  mededeling  dat  er  geen 
+
+resultaatsverbintenis  wordt  geformuleerd,  komt  derhalve  logisch  voor  omdat  de 
+
+verwerende partij de datavelden niet vermeldde, maar enkel de datagroepen. De 
+
+verzoekende  partij  kwam  hieraan  tegemoet  door  een  prijsopgave  volgens  de 
+
+migratietabel,  zodat  de  verwerende  partij  verkeerdelijk  stelt  dat  de  onderlinge 
+
+vergelijkbaarheid in het gedrang was. 
+
+9.   
+
+In  een  vierde  onderdeel  voert  de  verzoekende  partij  de 
+
+schending aan van de artikelen 2 en 3 van de wet van 29 juli 1991 „betreffende de 
+
+uitdrukkelijke  motivering 
+
+van 
+
+de 
+
+bestuurshandelingen‟ 
+
+(hierna: 
+
+de 
+
+motiveringswet). Zij betoogt daartoe: 
+
+in 
+
+bevat, 
+
+opgenomen 
+
+“Uit  het  deputatiebesluit  van  6  augustus  2020  blijkt  niet  dat  deze  de 
+formele  motieven 
+beide 
+zoals 
+kennisgevingsbrieven  van  7  augustus  2020.  Aangezien  het  verslag  van 
+nazicht reeds werd opgesteld op 15 juli 2020, voor de prijsverantwoording 
+bezorgd  door  Verzoekende  partij  op  20  juli  2020,  houdt  dit  in  dat  dit 
+verslag van nazicht evenmin de motieven kan bevatten, zoals opgenomen 
+in de kennisgevingsbrieven van 7 augustus 2020 aangezien deze motieven 
+een antwoord vormen op de prijsverantwoording gegeven op 20 juli 2020.   
+Evenmin kan er met de kennisgevingsbrieven van 7 augustus 2020 sprake 
+zijn van een motivering met verwijzing aangezien dit een motivatie post 
+
+de 
+
+XII-8945-10/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+factum  zou  betreffen,  nu  deze  kennisgevingsbrieven  dateren  van  na  het 
+nemen van het deputatiebesluit op 6 augustus 2020.   
+Doordat de gemotiveerde beslissing van 6 augustus 2020 de motieven tot 
+het nietig verklaren van de offerte voor de percelen 1 en 2 niet bevat, is 
+deze  beslissing  niet  afdoende  formeel  gemotiveerd,  ook  al  worden  de 
+motieven navolgend in de beide kennisgevingsbrieven opgenomen. Deze 
+kennisgevingsbrieven vormen op zich geen gunningsbeslissing.” 
+
+Beoordeling 
+
+Eerste onderdeel 
+
+10. 
+
+Het  door  de  verzoekende  partij  ingeroepen  artikel  36  van  het 
+
+koninklijk  besluit  plaatsing  2017  regelt  het  onderzoek  door  de  aanbestedende 
+
+overheid naar abnormaal lage of hoge prijzen of kosten in de offertes, nadat eerst 
+
+een algemeen prijzenonderzoek werd uitgevoerd op grond van artikel 35 van het 
+
+voormelde koninklijk besluit.   
+
+Anders dan de verzoekende partij het ziet, is een aanbestedende 
+
+overheid ook bij een procedure in het kader van een mededingingsprocedure met 
+
+onderhandeling onderworpen aan het prijzen- of kostenonderzoek voorgeschreven 
+
+in de artikelen 35 en 36 van het koninklijk besluit plaatsing 2017, en lijkt te dezen 
+
+de uitzondering vermeld in artikel 36, § 6, niet van toepassing omdat de geraamde 
+
+waarde van de opdracht hoger is dan de drempel voor de Europese bekendmaking.   
+
+Evenwel lijken de motieven vermeld in het gunningsverslag om 
+
+tot de substantiële onregelmatigheid van de offertes van de verzoekende partij voor 
+
+beide percelen te besluiten, op het eerste gezicht geen betrekking te hebben op een 
+
+niet afdoende verantwoorde abnormaal lage of hoge prijs of kost met toepassing 
+
+van artikel 36 van het koninklijk besluit plaatsing 2017. Deze motieven betreffen 
+
+het maken van een voorbehoud in de prijsopgave voor bepaalde posten (percelen 1 
+
+en  2),  een  niet-conforme  demo  (perceel  2),  het  niet  aangaan  van  een 
+
+resultaatsverbintenis  (perceel  2)  en  het  niet  indienen  van  een  voorstel  voor  alle 
+
+gevraagde functionaliteiten (perceel 2). Er wordt uitdrukkelijk gesteld dat door de 
+
+gemaakte voorbehouden en het gebrek aan een resultaatsverbintenis een correcte 
+
+prijsvergelijking niet mogelijk is, en de niet-livedemo niet conform de eisen van 
+
+XII-8945-11/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+het bestek is. De verwerende partij heeft hiermee, zo lijkt het, toepassing gemaakt 
+
+van artikel 76 van het koninklijk besluit plaatsing 2017. De omstandigheid dat de 
+
+verwerende  partij  om  een  prijsverantwoording  heeft  gevraagd  voor 
+
+eenheidsprijzen  van  bepaalde  posten  met  toepassing  van  artikel  36  van  het 
+
+koninklijk besluit plaatsing 2017, doet daar geen afbreuk aan.   
+
+Het betoog gesteund op de beweerde gebrekkige toepassing van 
+
+artikel 36 van het koninklijk besluit plaatsing 2017, dient op het eerste gezicht dan 
+
+ook als irrelevant te worden verworpen. 
+
+11. 
+
+De  verzoekende  partij  maakt  voorts  niet  aannemelijk  dat  de 
+
+onderlinge  vergelijking  van  de  offertes  door  de  voorbehouden  in  haar  BAFO‟s     
+
+mogelijk zou zijn omdat, volgens haar, deze voorbehouden enkel de hoegrootheid 
+
+van de som betreffen en, vermits de prijs niet abnormaal is bevonden, zij er in ieder 
+
+geval toe gehouden is deze te honoreren.   
+
+Een voorbehoud in de prijsopgave lijkt integendeel wel degelijk 
+
+de vergelijking met de andere offerte te verhinderen en bovendien van aard te zijn 
+
+aan de verzoekende partij een discriminerend voordeel te bieden en de verbintenis 
+
+van de inschrijver om  de opdracht  onder de  gestelde voorwaarden uit te  voeren 
+
+onzeker te maken. Deze gebreken lijken op het eerste gezicht evident te voldoen 
+
+aan  de  definitie  van  een  substantiële  onregelmatigheid  omschreven 
+
+in 
+
+artikel 76, § 1,  van  het  koninklijk  besluit  plaatsing  2017,  zodat  ze  geen  nadere 
+
+expliciete verduidelijking behoeven. 
+
+12. 
+
+Het eerste onderdeel is niet ernstig. 
+
+Tweede onderdeel 
+
+13. 
+
+Artikel  76,  §  1,  derde  lid,  van  het  koninklijk  besluit  plaatsing 
+
+2017 luidt: 
+
+“Een  offerte  is  substantieel  onregelmatig  wanneer  ze  van  aard  is  de 
+tot 
+inschrijver 
+
+discriminerend 
+
+voordeel 
+
+bieden, 
+
+een 
+
+te 
+
+XII-8945-12/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+concurrentievervalsing  te  leiden,  de  beoordeling  van  de  offerte  van  de 
+inschrijver of de vergelijking ervan met de andere offertes te verhinderen, 
+of  de  verbintenis  van  de  inschrijver  om  de  opdracht  onder  de  gestelde 
+voorwaarden uit te voeren onbestaande, onvolledig of onzeker te maken.” 
+
+14. 
+
+Zoals hoger vastgesteld, voldoen het maken van een voorbehoud 
+
+in de prijsopgave voor bepaalde posten, een niet-conforme demo, het niet aangaan 
+
+van  een  resultaatsverbintenis  en  het  niet  indienen  van  een  voorstel  voor  alle 
+
+gevraagde functionaliteiten, elk op zich reeds aan de definitie van een substantiële 
+
+onregelmatigheid  opgenomen  in  artikel  76,  §  1,  derde  lid,  van  het  koninklijk 
+
+besluit  plaatsing  2017,  en  doet  de  omstandigheid  dat  de  verwerende  partij  een 
+
+prijzenonderzoek op de BAFO‟s van de verzoekende partij heeft uitgevoerd en in 
+
+dat  kader  om  een  prijsverantwoording  voor  bepaalde  eenheidsprijzen  heeft 
+
+gevraagd, daar geen afbreuk aan.   
+
+Waar de verzoekende partij doet gelden dat de verwerende partij 
+
+het prijzenonderzoek oneigenlijk zou hebben willen gebruiken om de verzoekende 
+
+partij  toe  te  staan  haar  BAFO‟s  te  regulariseren,  lijkt  zij  de  vragen  om 
+
+verduidelijking te verwarren met het toelaten van een regularisatie. In ieder geval 
+
+wordt op het eerste gezicht niet ingezien hoe dit argument – indien al correct – in 
+
+het voordeel van de verzoekende partij kan spelen.   
+
+De verzoekende partij kan niet worden bijgevallen waar zij lijkt 
+
+te  doen  gelden  dat  de  aanbestedende  overheid  geen  regelmatigheidsonderzoek 
+
+meer  zou  mogen  uitvoeren  in  de  fase  na  het  indienen  van  de  BAFO‟s.  Het 
+
+tegendeel is het geval, ook bij een BAFO dient de regelmatigheid van de offerte te 
+
+worden onderzocht. Artikel 76, § 4, eerste lid, van het koninklijk besluit plaatsing 
+
+2017 bepaalt immers dat “[w]anneer het een finale offerte betreft […] paragraaf 3 
+
+van toepassing [is]”. In die mate faalt het middelonderdeel dan ook naar recht. 
+
+15. 
+
+Het tweede onderdeel is niet ernstig.   
+
+XII-8945-13/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Derde onderdeel 
+
+16. 
+
+In  dit  onderdeel  herneemt  de  verzoekende  partij  in  de  eerste 
+
+plaats  de  grief,  reeds  beoordeeld  in  het  eerste  en  het  tweede  onderdeel,  dat  niet 
+
+afdoende  gemotiveerd  zou  zijn  waarom  de 
+
+in  aanmerking  genomen 
+
+onregelmatigheden  in  de  BAFO‟s  van  de  verzoekende  partij  substantiële 
+
+onregelmatigheden  zouden  uitmaken.  Er  wordt  naar  de  beoordeling  ervan 
+
+verwezen. 
+
+17. 
+
+In  de  mate  dat  de  verzoekende  partij  doet  gelden  dat  het 
+
+voorschrift om te voorzien in een  livedemo op zich geen technische specificatie 
+
+uitmaakt in verband met de uitvoering van de opdracht, maar enkel een verzoek in 
+
+het kader van het indienen van de offerte, kan worden volstaan met de vaststelling 
+
+dat het vereisen van een verplichte livedemo in het bestek op het eerste gezicht een 
+
+minimumvereiste vormt die ertoe strekt de aanbestedende overheid een duidelijk 
+
+beeld  te  verschaffen  van  hetgeen  door  de  inschrijvers  wordt  aangeboden.  Het 
+
+afwijken van deze vereiste lijkt op het eerste gezicht de beoordeling van de offerte 
+
+van de inschrijver of de vergelijking ervan met de andere offertes te verhinderen, 
+
+zodat een dergelijke afwijking wel degelijk een substantiële onregelmatigheid lijkt 
+
+uit  te  maken  in  de  zin  van  artikel  76,  §  1,  derde  lid,  van  het  koninklijk  besluit 
+
+plaatsing 2017. 
+
+De loutere bewering van de verzoekende partij dat “95% van de 
+
+volledige toepassing voor perceel 2 met een live demo [werd] gepresenteerd” lijkt 
+
+te  strijden  met  de  vaststelling  in  het  gunningsverslag  dat  “[d]e  demo  van  Cipal 
+
+Schaubroeck  NV  voor  perceel  2  […]  niet  volledig  live  [was]:  Mock-ups  en 
+
+PowerPoint slides wisselen elkaar af”. Er zijn in de huidige stand van het geding 
+
+geen  reden  voorhanden  om  aan  te  nemen  dat  het  gunningsverslag  op  dit  punt 
+
+onjuist of onvolledig zou zijn. 
+
+18. 
+
+In de mate dat de verzoekende partij in dit onderdeel de stelling 
+
+herneemt  dat  het  maken  van  een  voorbehoud  bij  de  prijsopgave,  geen  beletsel 
+
+vormt  om  de  offertes  te  vergelijken,  is  het  middel  niet  ernstig  zoals  reeds  werd 
+
+vastgesteld  bij  de  beoordeling  van  het  eerste  en  het  tweede  onderdeel  van  het 
+
+middel. 
+
+XII-8945-14/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Voor  zover  de  verzoekende  partij  stelt  dat  de  gemaakte 
+
+voorbehouden het gevolg zijn van “een gebrek aan technische gegevens voor het 
+
+uitvoeren  van  de  dataconversie”,  lijkt  met  de  verwerende  partij  op  het  eerste 
+
+gezicht te kunnen worden gesteld dat de verzoekende partij heeft nagelaten haar 
+
+hierover te bevragen, zelfs ondanks de duidelijke vraag om een globale vaste prijs 
+
+op te geven. De stelling dat de voorbehouden bij de prijsopgave betrekking zouden 
+
+hebben op meerwerken buiten het bestek om, vindt op het eerste gezicht geen steun 
+
+in  de  BAFO‟s  van  de  verzoekende  partij,  waar  de  voorbehouden  worden 
+
+geformuleerd  in  termen  die  op  het  eerste  gezicht  wel  degelijk  (ook)  betrekking 
+
+hebben op het voorwerp van de opdracht zoals omschreven in het bestek. 
+
+In  de  mate  dat  de  verzoekende  partij  doet  gelden  dat  de 
+
+vermelding in haar BAFO voor perceel 2, dat er geen resultaatsverbintenis wordt 
+
+aangegaan,  de  onderlinge  vergelijkbaarheid  van  de  offertes  niet  in  het  gedrang 
+
+brengt, kan worden volstaan met vast te stellen dat juist het tegendeel het geval is. 
+
+Een  offerte  met  een  dergelijk  voorbehoud  dient  reeds  op  het  eerste  gezicht  als 
+
+onvergelijkbaar  te  worden  beschouwd  met  een  offerte  waarin  een  dergelijk 
+
+voorbehoud niet wordt geformuleerd.   
+
+19. 
+
+Het derde onderdeel is niet ernstig. 
+
+Vierde onderdeel 
+
+20. 
+
+De  artikelen  2  en  3  van  de  motiveringswet  verplichten  de 
+
+overheid ertoe in de akte de juridische en feitelijke overwegingen te vermelden die 
+
+aan de beslissing ten grondslag liggen, en dit op een “afdoende” wijze. 
+
+De  in  het  gunningsverslag  uitgedrukte  motieven  om  tot  de 
+
+substantiële  onregelmatigheid  van  de  offertes  van  de  verzoekende  partij  te 
+
+besluiten,  volstaan  reeds  op  het  eerste  gezicht  wel  degelijk  om  de  bestreden 
+
+beslissing te dragen in feite en in rechte. 
+
+De  bestreden  beslissing  van  6  augustus  2020  verwijst  naar  het 
+
+verslag van nazicht van de offertes van “15 juli 2020”, en wordt als integrerend 
+
+deel aan het besluit gehecht. Wat de datum van dit gunningsverslag betreft, maakt 
+
+XII-8945-15/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+de verwerende partij in haar nota op het eerste gezicht aannemelijk dat de datering 
+
+ervan  op  15  juli  2020  een  materiële  vergissing  betreft,  en  het  verslag  werd 
+
+opgesteld op 3 augustus 2020, dit is na het indienen van de prijsverantwoording 
+
+door  de  verzoekende  partij  op  20  juli  2020.  Er  kan  met  de  verwerende  partij 
+
+worden  vastgesteld  dat  het  gunningsverslag  op  bladzijde  4  uitdrukkelijk  en 
+
+ondubbelzinnig  verwijst  naar  de  op  20  juli  2020  door  de  verzoekende  partij 
+
+ingediende  prijsverantwoording.  In  dat  licht  lijkt  de  argumentatie  van  de 
+
+verzoekende  partij  dat  het  gunningsverslag  vóór  het 
+
+indienen  van  de 
+
+prijsverantwoording werd opgesteld, en de kennisgevingsbrieven van 7 augustus 
+
+2020  bijgevolg  een  motivering  post  factum  zouden  bevatten,  aldus  feitelijke 
+
+grondslag te missen. 
+
+21. 
+
+Het vierde onderdeel is niet ernstig. 
+
+B. Tweede middel 
+
+Uiteenzetting van het middel 
+
+22. 
+
+De verzoekende partij voert de schending aan van “het artikel 36 
+
+KB  Plaatsing 
+
+in  de  klassieke  sectoren  van  18  april  2017  [en]  het 
+
+vertrouwensbeginsel”, alsook roept zij “onbevoegdheid” in. 
+
+In dit middel voert zij volgende twee grieven aan: 
+
+“Ten  eerste  bevat  de  kennisgevingsbrief  d.d.  7  augustus  2020,  noch  het 
+deputatiebesluit van 6 augustus 2020 een concrete motivering als antwoord 
+op  de  gegeven  prijsverantwoording.  Enkel  concludeert  de  verwerende 
+partij dat de offerte onregelmatig is door het  geformuleerde voorbehoud, 
+maar  beschouwt  zij  de  gegeven  prijzen  helemaal  niet  als  abnormaal. 
+Verzoekende partij toonde dit reeds aan onder het eerste middel. 
+Ten tweede leest Verzoekende partij in het deputatiebesluit van 6 augustus 
+2020, haar ter kennis gebracht per e-mail van 20 augustus 2020, dat er al op 
+datum  van  15 juli  2020,  amper  vijf  dagen  na  de  vraag 
+tot 
+prijsverantwoording,  een  verslag  van  nazicht  van  de  offertes  werd 
+opgesteld, waarop de Verwerende partij zich baseerde om de gemotiveerde 
+en  huidige  bestreden  beslissing  te  nemen.  Aldus  heeft  men  voor  het 
+opstellen van het verslag van nazicht van de offertes helemaal niet gewacht 
+tot  het  aanleveren  van  de  gevraagde  prijsverantwoording,  waarvoor 
+Verzoekende partij de mogelijkheid was gegeven tot en met 22 juli 2020. 
+
+XII-8945-16/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Integendeel, vond de redactie van het verslag van nazicht van offertes al 
+plaats op 15 juli 2020.   
+Kortom,  was  de  motivatie  van  de  gunning  aan  Dileoz  op  dat  moment  al 
+definitief, maar heeft men – klaarblijkelijk – Verzoekende partij compleet 
+in de waan gelaten waarbij het Verzoekende partij op het moment van het 
+indienen van haar verzoekschrift niet duidelijk is of haar offertes als in het 
+verslag van nazicht al als nietig werden verklaard, of pas nadien.   
+In  het  eerste  geval,  heeft  de  Verwerende  partij  met  schending  van  het 
+artikel  36  KB  Plaatsing  en  minstens  het  zorgvuldigheidsbeginsel  en  het 
+vertrouwensbeginsel,  de  prijsverantwoording  niet  afgewacht  om  een 
+verslag van nazicht van de offertes op te stellen.   
+In de tweede hypothese betekent dit dat de beslissing tot nietigverklaring 
+van de beide offertes niet tot het voorwerp behoort van de gemotiveerde 
+beslissing van 6 augustus 2020 aangezien het verslag van nazicht van de 
+offertes er integrerend deel [van] uitmaakt, wat tot het gevolg heeft dat er 
+geen deputatiebesluit aan deze nietigverklaring ten grondslag ligt, wat ook 
+betekent dat de nietigverklaring niet door het bevoegde orgaan werd beslist, 
+namelijk de deputatie als collegiaal orgaan.” 
+
+Beoordeling 
+
+23. 
+
+In de mate dat de verzoekende partij in een eerste grief verwijst 
+
+naar een gebrek aan motivering aangaande de gegeven prijsverantwoording, blijkt 
+
+op het eerste gezicht niet dat de verwerende partij er te dezen toe was gehouden om 
+
+te “antwoorden” op de prijsverantwoording aangezien immers niet werd besloten 
+
+om de BAFO‟s te weren wegens niet-afdoende verantwoorde abnormale prijzen of 
+
+kosten. 
+
+24. 
+
+De  tweede  grief  berust  in  haar  geheel  op  de  premisse  dat  het 
+
+gunningsverslag werd opgesteld op 15 juli 2020, nog vóór de verzoekende partij 
+
+haar  prijsverantwoording  had  ingediend  op  20  juli  2020.  Zoals  reeds  werd 
+
+vastgesteld bij de beoordeling van het vierde onderdeel van het eerste middel, mist 
+
+die  veronderstelling  feitelijke  grondslag  en  betreft  de  datering  van  het 
+
+gunningsverslag op 15 juli 2020 prima facie wel degelijk een materiële vergissing.   
+
+Deze vaststelling volstaat om de tweede grief in haar geheel te 
+
+verwerpen. 
+
+25. 
+
+Het tweede middel is evenmin ernstig.   
+
+XII-8945-17/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+VII. Besluit 
+
+26. 
+
+Geen van beide middelen is ernstig gebleken. De vordering tot 
+
+schorsing  bij  uiterst  dringende  noodzakelijkheid  dient  dan  ook  te  worden 
+
+verworpen. 
+
+BESLISSING 
+
+1. De Raad van State verwerpt de vordering. 
+
+2. De verzoekende partij wordt verwezen in de kosten van de vordering tot 
+
+schorsing bij uiterst dringende noodzakelijkheid, begroot op een rolrecht van 
+
+200  euro,  een  bijdrage  van  20  euro,  en  een  rechtsplegingsvergoeding  van 
+
+700 euro, die verschuldigd is aan de verwerende partij. 
+
+Dit arrest is uitgesproken te Brussel, in openbare terechtzitting van eenentwintig 
+
+september tweeduizend twintig, door de Raad van State, XIIe kamer, samengesteld 
+
+uit: 
+
+Patricia De Somere, 
+
+staatsraad, 
+
+waarnemend voorzitter, 
+
+bijgestaan door 
+
+Greta Scheveneels, 
+
+griffier. 
+
+De griffier 
+
+De voorzitter 
+
+Greta Scheveneels 
+
+Patricia De Somere 
+
+XII-8945-18/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

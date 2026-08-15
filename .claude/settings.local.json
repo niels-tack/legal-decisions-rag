@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python *)",
+      "Bash(just test *)",
+      "Bash(npm test *)",
+      "Bash(just check *)",
+      "Bash(npx tsc *)",
+      "Bash(echo \"Exit code: $?\")",
+      "Bash(echo \"Exit: $?\")",
+      "Bash(curl *)",
+      "Bash(grep -v \"^.*:$\")",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 *)",
+      "Bash(uv add *)",
+      "Bash(uv run *)"
+    ]
+  }
+}

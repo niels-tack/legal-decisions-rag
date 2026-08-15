@@ -30,13 +30,13 @@ def test_pip_audit_no_vulnerabilities():
         result = subprocess.run(
             [
                 sys.executable,
-                '-m',
-                'pip_audit',
-                '--format=json',
-                '--progress-spinner=off',
-                '--ignore-vuln',
-                'CVE-2025-53000',
-                '--skip-editable',
+                "-m",
+                "pip_audit",
+                "--format=json",
+                "--progress-spinner=off",
+                "--ignore-vuln",
+                "CVE-2025-53000",
+                "--skip-editable",
             ],
             cwd=project_root,
             capture_output=True,
@@ -44,31 +44,36 @@ def test_pip_audit_no_vulnerabilities():
             timeout=120,  # 2 minute timeout
         )
     except subprocess.TimeoutExpired:
-        pytest.fail('pip-audit command timed out after 120 seconds')
+        pytest.fail("pip-audit command timed out after 120 seconds")
     except FileNotFoundError:
-        pytest.fail('pip-audit not installed or not accessible')
+        pytest.fail("pip-audit not installed or not accessible")
 
     # Check if pip-audit found any vulnerabilities
     if result.returncode != 0:
         # pip-audit returns non-zero when vulnerabilities are found
-        error_output = result.stdout + '\n' + result.stderr
+        error_output = result.stdout + "\n" + result.stderr
 
         # Check if it's an actual vulnerability vs an error
-        if 'vulnerabilities found' in error_output.lower() or '"dependencies"' in result.stdout:
+        if (
+            "vulnerabilities found" in error_output.lower()
+            or '"dependencies"' in result.stdout
+        ):
             pytest.fail(
-                f'pip-audit detected security vulnerabilities!\n\n'
-                f'Output:\n{result.stdout}\n\n'
-                f'Please review and update vulnerable packages.\n'
-                f'Run manually with: uv run python -m pip_audit --ignore-vuln CVE-2025-53000 --skip-editable'
+                f"pip-audit detected security vulnerabilities!\n\n"
+                f"Output:\n{result.stdout}\n\n"
+                f"Please review and update vulnerable packages.\n"
+                f"Run manually with: uv run python -m pip_audit --ignore-vuln CVE-2025-53000 --skip-editable"
             )
         else:
             # Some other error occurred
             pytest.fail(
-                f'pip-audit failed to run properly:\n\nReturn code: {result.returncode}\nOutput: {error_output}\n'
+                f"pip-audit failed to run properly:\n\nReturn code: {result.returncode}\nOutput: {error_output}\n"
             )
 
     # Success - no vulnerabilities found
-    assert result.returncode == 0, 'pip-audit should return 0 when no vulnerabilities are found'
+    assert result.returncode == 0, (
+        "pip-audit should return 0 when no vulnerabilities are found"
+    )
 
 
 def test_pip_audit_runs_successfully():
@@ -78,14 +83,16 @@ def test_pip_audit_runs_successfully():
     """
     try:
         result = subprocess.run(
-            [sys.executable, '-m', 'pip_audit', '--version'],
+            [sys.executable, "-m", "pip_audit", "--version"],
             capture_output=True,
             text=True,
             timeout=10,
         )
-        assert result.returncode == 0, f'pip-audit --version failed: {result.stderr}'
-        assert 'pip-audit' in result.stdout.lower(), 'pip-audit version output unexpected'
+        assert result.returncode == 0, f"pip-audit --version failed: {result.stderr}"
+        assert "pip-audit" in result.stdout.lower(), (
+            "pip-audit version output unexpected"
+        )
     except FileNotFoundError:
-        pytest.fail('pip-audit not installed')
+        pytest.fail("pip-audit not installed")
     except subprocess.TimeoutExpired:
-        pytest.fail('pip-audit --version timed out')
+        pytest.fail("pip-audit --version timed out")

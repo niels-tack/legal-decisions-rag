@@ -1,0 +1,23 @@
+{
+  "name": "legal-decisions-rag-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Phase 1 static search site: client-side BM25 search over cases.db, per-case pages, assistant handoff.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "lit-html": "^3.3.3",
+    "sql.js-httpvfs": "^0.8.12"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite": "^8.2.1",
+    "vitest": "^4.1.10"
+  }
+}

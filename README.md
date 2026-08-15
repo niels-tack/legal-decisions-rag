@@ -1,6 +1,6 @@
 # legal-decisions-rag
 
-Project to expose publicly available legal decisions to non-technical users through chat interfaces (Copilot etc.)
+A searchable website for Belgian Constitutional Court rulings, for non-technical legal professionals and citizens - with a built-in handoff that carries retrieved, cited passages into whatever AI assistant the user already has (Copilot, ChatGPT, Claude). See `context/Functional requirements.md` and `context/Technical requirements.md` for the full scope and architecture.
 
 ---
 
@@ -135,23 +135,30 @@ The `/context` directory contains the **single source of truth** for project req
 
 ```
 legal-decisions-rag/
-├── context/               # Project requirements (single source of truth)
+├── context/                # Project requirements (single source of truth)
 │   ├── Functional requirements.md
 │   └── Technical requirements.md
-├── src/                   # Application source code
-│   ├── __init__.py
-│   └── main.py           # Entry point
-├── tests/                # Test files
-│   └── test_main.py
-├── .vscode/              # VS Code configuration
+├── src/
+│   ├── ingestion/          # Weekly scrape + PDF-to-Markdown pipeline (discover, extract, assemble)
+│   ├── indexing/            # Builds cases.db: Phase 1 BM25 index, Phase 2 embeddings
+│   ├── query_service/       # Phase 2 hosted hybrid-search FastAPI app (Scaleway)
+│   ├── db_schema.py         # Shared cases.db schema (cases, chunks, chunks_fts, embeddings)
+│   └── schemas.py           # Shared data contracts across ingestion/indexing/query service
+├── v2/                     # Deferred (MCP server, Copilot Studio/Custom GPT integration) - see v2/README.md
+├── infra/terraform/         # Phase 2 Scaleway infrastructure as code
+├── tests/                  # Test files, mirroring src/
+├── .vscode/                # VS Code configuration
 │   └── copilot-instructions.md  # AI assistant instructions
-├── .env.example          # Example environment variables
-├── .python-version       # Python version specification
-├── .python-version        # Python version for this project
-├── justfile               # Task runner commands
-├── pyproject.toml         # Project metadata and dependencies
-└── README.md              # This file
+├── .env.example            # Example environment variables
+├── .python-version         # Python version for this project
+├── justfile                # Task runner commands
+├── pyproject.toml          # Project metadata and dependencies
+└── README.md                # This file
 ```
+
+The Phase 1 static website/search frontend (SQLite-WASM client-side search,
+per-case pages, assistant handoff) does not exist yet - see the current
+`context/Functional requirements.md` for its scope.
 
 ## Contributing
 

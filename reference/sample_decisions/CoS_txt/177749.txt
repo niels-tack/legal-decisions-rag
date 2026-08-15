@@ -1,0 +1,598 @@
+RAAD VAN STATE, AFDELING ADMINISTRATIE.
+
+A R R E S T
+
+nr. 177.749 van 11 december 2007
+in de zaak A. 71.846/XII-89.
+
+In zake :
+
+de NV GULDENBERG DATA ENGINEERING,
+die woonplaats kiest bij
+advocaten Ph. Coenraets en P. Luchie,
+kantoor houdende te 1000 Brussel,
+Terkamerenlaan 27
+
+tegen :
+
+het  AGENTSCHAP  VOOR  GEOGRAFISCHE  INFORMATIE
+VLAANDEREN, 
+voorheen de VLAAMSE LANDMAATSCHAPPIJ,
+die woonplaats kiest bij
+advocaat D. D’Hooghe,
+kantoor houdende te 1060 Brussel,
+Henri Wafelaertsstraat 47-51.
+
+tussenkomende partij :
+
+de NV TELE-ATLAS BELGIUM,
+die woonplaats kiest bij
+advocaten J. L. Stuyck en D. Lindemans,
+kantoor houdende te 1000 Brussel,
+Keizerslaan 3.
+
+---------------------------------------------------------------------------------------------------
+
+D E  R A A D  V A N  S T A T E,  XIIe  K A M E R,
+
+Gezien  het  verzoekschrift  dat  de  NV  Guldenberg  Data
+
+Engineering op 9 december 1996 heeft ingediend om de nietigverklaring te vorderen
+
+van “de toewijzingsbeslissing van de Vlaamse Landmaatschappij aan NV Tele Atlas
+
+Data  Gent,  bij  beslissing  van  de  Raad  van  Bestuur  van  9  oktober  1996,  met
+
+betrekking  tot  het  bestek  OC-96/01  ‘Opdracht  voor  aanneming  van  leveringen.
+Digitaal vectorieel wegen- en spoorwegenbestand op middenschaalniveau voor het
+Vlaams en Brussels gewest’”;
+
+Gelet  op  het  arrest  nr.  157.987  van  27  april  2006  waarbij  de
+debatten worden heropend en het door de auditeur-generaal aan te stellen lid van het
+auditoraat  ermede  wordt  belast  het  onderzoek  van  de  zaak  voort  te  zetten  met
+betrekking tot de gegrondheid van het eerste middel en, in voorkomend geval, de
+ontvankelijkheid en gegrondheid van de overige middelen;
+
+XII-89-1/10
+
+Gezien  het  aanvullend  verslag  opgesteld  door  eerste  auditeur
+
+J. Stevens;
+
+Gelet  op  de  beschikking  van  26  september  2006  die  de
+
+neerlegging ter griffie van het verslag en van het dossier gelast;
+
+Gelet op de kennisgeving van het verslag aan partijen en gezien
+
+de laatste memories;
+
+Gelet  op  de  beschikking  van  15  maart  2007  waarbij  de
+
+terechtzitting bepaald wordt op 17 april 2007;
+
+Gehoord het verslag van kamervoorzitter D. Verbiest;
+
+Gehoord  de  opmerkingen  van  advocaat  Ch.  Lepinois,  loco
+
+advocaat Ph. Coenraets, en van gedelegeerd bestuurder R. Van Den Wyngaert, die
+
+verschijnen voor de verzoekende partij, van advocaat N. Kiekens, die loco advocaat
+
+D. D'Hooghe verschijnt voor de verwerende partij, en van advocaat J. Honnay, die
+
+loco advocaten J. L. Stuyck en D. Lindemans verschijnt voor de tussenkomende
+
+partij;
+
+Gehoord het advies van eerste auditeur J. Stevens;
+
+Gelet op titel VI, hoofdstuk II, van de wetten op de Raad van
+
+State, gecoördineerd op 12 januari 1973;
+
+OVERWEEGT WAT VOLGT :
+
+1. De gegevens van de zaak.
+
+1.1.
+De verwerende partij schrijft een algemene offerteaanvraag uit
+voor  een  opdracht  voor  aanneming  van  leveringen.  De  opdracht  strekt  tot  de
+levering  van  een  digitaal  vectorieel  wegen-  en  spoorwegenbestand  op
+middenschaalniveau voor het Vlaamse en het Brussels Hoofdstedelijk Gewest.
+
+Het toepasselijke bestek voorziet in een “basisopdracht” en drie
+
+“opties” of aanvullende leveringen.
+
+XII-89-2/10
+
+Het bestek (bladz. 6) bepaalt als gunningscriteria, “in volgorde
+
+van afnemend belang” :
+
+“(1) De  technische  waarde  van  de  te  leveren  bestanden  en  bijkomende
+technische  contractuele
+
+bestanden,  rekening  houdend  met  de 
+bepalingen, met inbegrip van de resultaten van de testen (40 %).
+
+ (2) De volledige prijs, inclusief de prijs voor de 3 opties (40 %).
+ (3) De kwaliteit van de voorziene dienstverlening, de kennisoverdracht, de
+
+documentatie en de ondersteuning (10 %).
+ (4) De financiële en beroepswaarborgen (5 %).
+ (5) De  voorgelegde  referenties  m.b.t.  gelijkaardige  opdrachten  en de
+
+specifieke problematiek (5 %).”.
+
+1.2.
+
+Op  1  juli  1996  worden  de  offertes  geopend.    Er  blijken  vier
+
+inschrijvers  een  offerte  te  hebben  ingediend,  onder  wie  de  verzoekende  en  de
+
+tussenkomende partij NV Tele-Atlas Belgium.
+
+1.3.
+
+In  een  uitgebreide  nota  van  19  september  1996  vergelijkt  de
+
+administratie de inschrijvingen.
+
+Uiteindelijk  wordt  daarin  de  verzoekende  partij 
+
+telkens
+
+geklasseerd na  NV Tele-Atlas Belgium, en na  het Nationaal Geografisch Instituut.
+
+In  het  voorstel  van  beslissing  wordt  voor  de  eerste  “optie”  van  NV  Tele-Atlas
+
+Belgium gekozen.
+
+1.4.
+
+De  Raad  van  Bestuur  van  de  verwerende  partij  neemt  in  zijn
+
+zitting van 9 oktober 1996 de bestreden beslissing, in navolging van het voornoemde
+
+voorstel waarnaar in de beslissing wordt verwezen.
+
+2. De gegrondheid van het beroep.
+
+Het eerste middel
+
+2.1.
+
+Het eerste middel van de verzoekende partij luidt als volgt :
+
+“3.1.  Schending  van  art.  14  Wet  Overheidsopdrachten  en  art.  44
+
+Uitvoeringsbesluit Overheidsopdrachten
+
+Dat het volkomen gebruikelijk is dat men de diverse prijsoffertes vergelijkt
+tussen  de  mededingers,  zowel  hun  basisoffertes  en  hun  suggesties,
+tegelijkertijd;
+
+Dat,  in  casu,  men  enkel  en  alleen  een  vergelijking  doet  van  de  diverse
+inschrijvingen op grond van de basisofferte, overeenkomstig de percentages die
+in de gunningscriteria zijn voorzien;
+
+XII-89-3/10
+
+Dat,  na  het  uitverkiezen  van  N.V.  Tele  Atlas,  geruggesteund  op  een
+onvolledig dossier (zie infra 3.2.), men vervolgens slechts oog heeft voor diens
+suggestie ‘Street Net’;
+
+Dat  de  ganse  vergelijking  tussen  de  inschrijvers  echter  enkel  en  alleen
+geruggesteund was op de basisoffertes welke voor N.V. Tele Atlas het product
+VlagisNet betrof;
+
+Dat het volstaat het verschil in prijs vast te stellen tussen de basisofferte
+
+10.890.000 fr.
+15.730.000 fr.
+3.630.000 fr.
+
+VlagisNet :
+- basisopdracht :
+- optie 1 :
+- optie 2 :
+Subtotaal : abstractie makend van optie 3 
+die niet gegund is :
+
+30.253.000 fr.
+en de prijs die in aanmerking komt voor de suggestie ‘Street Net’, zijnde de
+gecumuleerde  bedragen  voor  de  eerste  drie  jaren  :  11.946.330  fr.  +
+14.335.596 fr. + 14.335.596 fr. = 40.617.522 fr.;
+
+Dat het had volstaan, voor inschrijver N.V. Tele Atlas, de twee prijzen te
+vergelijken  (basisofferte  en  suggestie)  met  de  andere  inschrijvers  om
+vervolgens de suggestie uit te sluiten wegens de kennelijk hogere prijs... die
+toch 40% van het evaluatiepercentage (voorzien in het bestek) uitmaakt;
+
+Dat  het  allereerst  enkel  vergelijken  van  de  basisoffertes  en  vervolgens
+slechts  oog  hebben  voor  de  suggestie  van  de  uitgekozen  basisofferte,  een
+fundamentele schending uitmaakt van de vereiste objectieve vergelijking en het
+tegen elkaar afwegen van de diverse inschrijvingen;
+
+Dat, samenvattend, de vergelijking van de offertes geenszins geschiedde
+overeenkomstig de mechanismes voorzien in art. 14 van de Wet Overheids-
+opdrachten en art. 44 van het Uitvoeringsbesluit Overheidsopdrachten”.
+
+2.2.
+
+In  haar  memorie  van  wederantwoord  betoogt  de  verzoekende
+
+partij onder meer nog wat volgt :
+
+“3.1.1.  Schending  van  het  gelijkheidsbeginsel  bij  de  vergelijking  van  de
+
+inschrijvingen
+
+Het basisprincipe dat aan de wet  overheidsopdrachten  ten  grondslag ligt,
+wordt  door  VLM  systematisch  genegeerd  :  het  betreft  het  principe  van  de
+absolute gelijkheid van de kandidaat-inschrijvers, eens de overheid voor een
+aanbestedings- of offerteaanvraagprocedure heeft gekozen.
+
+Nergens  wordt  geantwoord  op  het  fundamentele  punt,  opgeworpen  door
+Guldenberg, nl. dat VLM de wet op de overheidsopdrachten miskent, wanneer
+zij slechts de vier basisoffertes vergelijkt op basis van een - overigens volstrekt
+verkeerde,  -  cfr.  infra  -  vergelijking,  vervolgens  Vlagisnet  als  voordeligste
+offerte  weerhoudt  om  daarna  de  extrapolatie  te  maken  naar  de  suggestie
+Streetnet, daar waar een objectieve vergelijking tussen Streetnet, Vlagisnet en
+de producten van resp. Master, NGI en Guldenberg, volledig mogelijk was.
+
+Hierna wordt aangetoond dat Streetnet niet enkel met Vlagisnet, maar ook
+
+met de andere produkten had moeten vergeleken worden.
+
+[...]
+krachtens intussen vaste rechtspraak van de Raad van State is het zo dat het
+indienen  van  een  regelmatige  suggestie,  ervoor  zorgt  dat  het  bestuur  deze
+mogelijks  zal  aannemen,  met  als  gevolg  evenwel  dat  een  prijsvergelijking
+tussen de inschrijvingen onmogelijk is geworden : in dat geval is het bestuur
+niet gerechtigd om van de prijs van de inschrijvingen een determinerende factor
+te maken (Raad van State, 4 januari 1979, nr. 19.347, inzake Ferret, en Raad
+van State, 22 februari 1979, nr. 19.461, inzake Ferret).
+
+XII-89-4/10
+
+Indien men dan op pag. 15, onder nr. 20 op de memorie van antwoord van
+VLM leest dat de vergelijking van de prijs “ook hier” enigszins bemoeilijkt
+wordt door een aantal bijkomende elementen die suggestie Streetnet aanbrengt,
+kan men niet anders dan besluiten dat VLM manifest in strijd met de hierboven
+vermelde verplichtingen de opdracht heeft toegewezen.  Er wordt hier immers
+expressis verbis toegegeven dat een deugdelijke vergelijking van het aspect
+prijs nagenoeg onmogelijk was.
+
+[...]
+Het  moge  immers  duidelijk  zijn  dat,  ten  eerste,  het  bestuur  inderdaad
+gerechtigd is om rekening te houden met een bepaalde suggestie, weze het op
+de  voorwaarde  dat  deze  suggestie  niet 
+tegen  essentiële
+bestekbepalingen, hetgeen in casu manifest het geval is (cfr. infra) en dat, ten
+tweede, Guldenberg noch de andere inschrijvers de mogelijkheid hebben gehad
+om een dermate van het bestek afwijkende suggestie voor te stellen.
+
+indruist 
+
+[...]
+Volgens Guldenberg was VLM dan ook verplicht om, rekening houdende
+met  het  algemeen  beginsel  van  behoorlijk  bestuur 
+(in  casu  het
+gelijkheidsbeginsel) gebruik te maken van art. 44, 5/ van het K.B. van 22 april
+1977 dat kandidaat-inschrijvers uitnodigt hun offertes aan te vullen.
+
+[...]
+3.1.2. De prijs van Streetnet is wel degelijk hoger dan de prijs van Vlagisnet
+[...]
+Derhalve kan Streetnet wel degelijk perfect met de andere vier producten
+worden vergeken, aangezien de offerte van VLM duidelijk voorziet dat het
+bestand  eveneens  kan  worden  aangekocht  zonder  het  afsluiten  van  een
+onderhoudscontract.
+
+Over  het  feit  dat  in  dit  geval  het  Streetnet-bestand  39.821.000  fr.  kost
+(abstractie makend van de ongeoorloofde afwijking van het bestek i.v.m. het
+doorgroeiscenario  en/of  het  onderhoud),  en  derhalve  bijna  10.000.000  fr.
+duurder is dan het Vlagisnet-bestand (30.250.000 fr.), kan geen twijfel bestaan.
+Het  weze  derhalve  duidelijk  dat,  indien  men  zich  aan  de  essentiële
+besteksvoorwaarden  houdt,  het  Streetnet-bestand  tot  25  %  duurder  is  dan
+Vlagisnet; Het feit dat Streetnet, in geval gebruik zou worden gemaakt van het
+doorgroeiscenario  en  in  geval  tegelijkertijd  een  onderhoudscontract  wordt
+afgesloten, eventueel goedkoper zou zijn dan Vlagisnet, doet in casu niets meer
+ter zake.
+
+Guldenberg  heeft  immers  uitvoerig  geargumenteerd  dat  deze  hypothese
+manifest in strijd zijn met de besteksbepalingen, conform waaraan Guldenberg
+een offerte indiende.
+
+Zij werd, zoals reeds gezegd, evenmin in de mogelijkheid gesteld door VLM
+om  zelf  haar  offerte  aan  te  vullen  met  het  oog  op  het  aanbieden  van  een
+eventueel doorgroeiscenario en/of een onderhoudscontract
+
+[...]”.
+
+2.3.
+In haar laatste memorie doet de verzoekende partij in essentie nog
+gelden dat bij kwantitatieve vergelijking tussen de producten die de tussenkomende
+partij  aanbood,  namelijk  het  gekozen  Streetnet  en  het  basisproduct  Vlagisnet,
+Streetnet lager moet scoren dan de 90 punten die Vlagisnet verkreeg, dat echter
+nagelaten  is  Streetnet  te  vergelijken  met  de  andere  producten  op  grond  van
+kwantitatief gedefinieerde besteksvereisten, maar wel Streetnet boven Vlagisnet is
+
+XII-89-5/10
+
+verkozen  op  grond  van  een  criterium  dat  nooit  een  besteksvereiste  is  geweest,
+
+namelijk een onderhoudsovereenkomst.
+
+2.4.1.
+
+Artikel  14  van  de  wet  van  14  juli  1976  betreffende  de
+
+overheidsopdrachten voor aanneming van werken, leveringen en diensten bepaalt :
+
+“De bevoegde overheid kiest de regelmatige offerte die haar het voordeligst
+lijkt,  rekening  houdend  met  haar  bedrag,  haar  aanwendingskosten,  haar
+technische waarde, de zekerheid van de bevoorrading, de beroeps- en financiële
+waarborgen geboden door elk der kandidaten, de uitvoeringstermijn, en alle
+andere overwegingen voorzien in het bestek of in de offerteaanvraag alsmede
+met alle in de offerte gedane suggesties, tenzij in het bijzonder bestek anders
+is bepaald”.
+
+Artikel 44 van het koninklijk besluit van 24 april 1977 betreffende
+
+de  overheidsopdrachten  voor  aanneming  van  werken,  leveringen  en  diensten
+
+bepaalt :
+
+“Bij toepassing van artikel 14 van de wet van 14 juli 1976 kiest de bevoegde
+overheid  de  regelmatige  offerte  die  haar  het  voordeligst  lijkt  op  grond  van
+criteria die verschillend kunnen zijn naargelang van de opdracht, zoals deze
+opgesomd in artikel 14 van de wet.
+
+Daartoe vermeldt de bevoegde overheid in het bestek al de gunningscriteria
+die zij zal in acht nemen, zo mogelijk in volgorde van afnemend belang; in
+voorkomend geval wordt die volgorde in het bestek vermeld.
+
+Er wordt ook rekening gehouden met de in de offerte gedane suggesties,
+
+voor zover het bestek dit niet verbiedt [...]”.
+
+In de nota aan de Stuurgroep GIS-Vlaanderen zijn de basisoffertes
+
+van de vier inschrijvers vergeleken en geëvalueerd (blz. 3-14).
+
+Als besluit worden de offertes als volgt gerangschikt :
+
+1. TeleAtlas : 81 punten
+
+2. NGI : 78 punten
+
+3. Master : 76 punten
+4. Verzoekende partij : 74 punten
+
+Wanneer optie 3 (beschikken over gegevens van gebieden buiten
+
+Vlaamse Gewest) buiten beschouwing wordt gelaten, is de rangschikking :
+1. TeleAtlas : 90 punten
+2. NGI : 81 punten
+3. Verzoekende partij : 76 punten
+4. Master : 75 punten
+
+XII-89-6/10
+
+Onder punt 10 van de voormelde nota (bladzijde 14-20) worden
+
+de door de vier inschrijvers gedane suggesties besproken en geëvalueerd.
+
+Aan  de  door  de  tussenkomende  partij  gedane  suggestie,  het
+
+aanbieden  van  het  product  Streetnet,  wordt  een  uitvoerige  bespreking  gewijd.
+
+Streetnet wordt vergeleken met Vlagisnet -hetgeen tussenkomende partij als basis
+
+heeft  voorgesteld.  Een  overzicht  van  de  verschilpunten  tussen  beide  wordt
+
+weergegeven (blz. 16).  Gesteld wordt dat het Streetnet-bestand het bestand is dat
+
+aan de basis ligt van het Vlagisnet-bestand, dat beide bestanden op technisch vlak
+
+een grote gelijkenis vertonen, dat de beoordeling van de technische kenmerken over
+
+het  algemeen  overeenkomt.  Voorts  worden  de  volledigheid,  de  geometrische
+
+nauwkeurigheid, de actualiteit en actualisatie, de topologie, de attribuutinformatie,
+
+de  formaten  en  transformaties,  de  documentatie,  technische  bijstand  en
+
+dienstverlening, de leveringstermijn en de prijs besproken.
+
+Door  Vlagisnet  te  evalueren  en  te  vergelijken  met  de  andere
+
+offertes en daarna de suggestie Streetnet hoofdzakelijk te vergelijken met Vlagisnet
+
+en -zoals de verwerende partij terecht stelt- ook, maar in mindere mate, met de
+
+andere offertes, is Streetnet de facto ook vergeleken met de andere offertes.
+
+Aangezien uit de voormelde rangschikkingen gebleken is dat de
+
+tussenkomende  partij  met  Vlagisnet  veruit  de  meest  voordelige  offerte  heeft
+
+ingediend, vloeit uit de vergelijking tussen Vlagisnet en Streetnet, welke duidelijk
+
+in  het  voordeel  van  Streetnet  blijkt  uit  te  draaien,  voort  dat  de  offerte  van  de
+
+tussenkomende partij met Streetnet nog meer de voordeligste offerte wordt dan die
+
+met  Vlagisnet  reeds  was.  Aan  die  vaststelling  doet  de  opmerking  van  de
+
+verzoekende  partij,  dat  de  prijs  van  Streetnet  hoger  uitvalt  dan  de  prijs  van
+
+Vlagisnet, geen afbreuk. Anders dan de verzoekende partij stelt, is de prijs niet als
+
+determinerend criterium gehanteerd.
+
+De verwerende partij heeft ook de suggesties van de verzoekende
+partij  besproken  en  geëvalueerd  maar  deze  heeft  geen  gelijkaardige  suggestie
+ingediend als de tussenkomende partij met Streetnet : de twee suggesties van de
+verzoekende partij  zijn  eerder miniem van  aard, maar dat  kan niet  aangerekend
+worden  aan  de  verwerende  noch  aan  de  tussenkomende  partij,  enkel  aan  de
+verzoekende  partij  zelf  die  ook  een  suggestie  gelijkaardig  aan  die  van  de
+tussenkomende partij had kunnen doen maar dat niet gedaan heeft.
+
+XII-89-7/10
+
+Niet  wordt  ingezien  op  welke  wijze  door  de  geschetste
+
+handelwijze  artikel  14  van  de  voormelde  wet  of  artikel  44  van  het  voormelde
+
+koninklijk besluit, zoals in het middel aangevoerd, geschonden zijn.
+
+2.4.2.
+
+In haar memorie van wederantwoord stelt de verzoekende partij
+
+dat de verwerende partij de andere inschrijvers, na het indienen van hun offertes,
+
+had moeten uitnodigen om eveneens een suggestie voor te stellen zoals deze van de
+
+tussenkomende partij.  Zij verwijst in dat verband naar artikel 44, vijfde lid, van het
+
+voormelde koninklijk besluit van 22 april 1977 waarin bepaald is : “In elk geval
+
+treedt het bestuur slechts in contact met de kandidaten indien zij de inhoud van hun
+
+offertes moeten preciseren of aanvullen”.
+
+Die  bepaling  is  echter  niet  bedoeld  om  inschrijvers,  die  geen
+
+suggestie hebben ingediend, na de opening van de offertes, uit te nodigen en de kans
+
+te  geven  een  suggestie  in  te  dienen  om  reden  dat  één  van  de  inschrijvers  een
+
+suggestie heeft ingediend.
+
+2.4.3.
+
+Betreffende de bewering van de verzoekende partij ten slotte, dat
+
+een  niet  door  het  bestek  vereiste  onderhoudsovereenkomst  de  doorslag  heeft
+
+gegeven  bij  de  keuze  voor  Streetnet,  moet  worden  opgemerkt  dat  niets  de
+
+verzoekende partij belette een suggestie voor te stellen die eveneens daarin voorzag
+
+en voorts dat een suggestie essentieel van de basisopdracht afwijkende elementen
+
+bevat.
+
+aangetoond.
+
+Ook  op  dit  punt  worden  de  aangevoerde  schendingen  niet
+
+2.4.4.
+
+Het middel is niet gegrond.
+
+Het tweede, derde en vierde middel
+
+Het voornoemde tussenarrest nr. 157.987 heropent de debatten en
+3.
+belast  het  auditoraat  ermee  “het  onderzoek  van  de  zaak  voort  te  zetten  met
+betrekking tot de gegrondheid van het eerste middel en, in voorkomend geval, de
+ontvankelijkheid en gegrondheid van de overige middelen”.
+
+XII-89-8/10
+
+In  het  aanvullend  auditoraatsverslag  is  het  eerste  middel
+
+onderzocht  op  zijn  gegrondheid  en  niet  gegrond  bevonden.  Hiervoor  wordt  dat
+
+standpunt door de Raad van State bijgevallen.
+
+In dat verslag wordt echter enkel dat eerste middel onderzocht en
+
+niet de andere drie middelen. Voor het overige wordt daarin zonder meer gesteld dat
+
+“over de andere middelen [...] in het geciteerd arrest niets [wordt] gezegd” en voorts
+
+dat derhalve de conclusie van het eerste auditoraatsverslag, van 12 maart 2002,
+
+wordt  behouden,  namelijk  dat  die  andere  middelen  onontvankelijk  zijn  wegens
+
+ontstentenis van belang.
+
+Het meervermelde tussenarrest heeft echter wel degelijk iets over
+
+de andere middelen gezegd, namelijk dat in voorkomend geval, wanneer het eerste
+
+middel niet de oplossing in de zaak mogelijk maakt, het onderzoek van de zaak moet
+
+worden voortgezet wat de ontvankelijkheid en gegrondheid van de overige middelen
+
+betreft. Aldus werd de algemene conclusie uit het eerste auditoraatsverslag, dat de
+
+verzoekende  partij  belang  miste  bij  “de”  in  het  verzoekschrift  aangevoerde
+
+middelen, niet bijgevallen.
+
+Dienvolgens  is  er  grond  om  de  debatten  te  heropenen  en  bij
+
+toepassing van artikel 24, derde lid, van de gecoördineerde wetten op de Raad van
+
+State, om het auditoraat te gelasten het onderzoek van welbepaald het tweede, derde
+
+en vierde middel af te doen.
+
+OM DIE REDENEN
+
+BESLIST DE RAAD VAN STATE :
+
+De debatten worden heropend.
+
+Artikel 1.
+
+Artikel 2.
+
+Het door de auditeur-generaal aan te stellen lid van het auditoraat
+wordt ermede belast het tweede, derde en vierde middel te onderzoeken op hun
+ontvankelijkheid en hun gegrondheid.
+
+XII-89-9/10
+
+Aldus  te  Brussel  uitgesproken  in  openbare  terechtzitting,  op
+
+elf december 2007, door de XIIe kamer, die was samengesteld uit :
+
+de HH. D. VERBIEST,
+
+kamervoorzitter,
+
+J. LUST,
+
+G. VAN HAEGENDOREN,
+
+Mevr.
+
+S. DOMS,
+
+staatsraad,
+
+staatsraad,
+
+griffier.
+
+De griffier,
+
+ De voorzitter,
+
+ S. DOMS.
+
+D. VERBIEST.
+
+XII-89-10/10
+
+

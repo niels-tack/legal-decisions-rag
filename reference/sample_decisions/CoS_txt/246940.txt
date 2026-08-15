@@ -1,0 +1,1279 @@
+RAAD VAN STATE, AFDELING BESTUURSRECHTSPRAAK 
+
+VOORZITTER VAN DE XIIe KAMER 
+
+A R R E S T 
+
+nr. 246.940 van 4 februari 2020 
+in de zaak A. 229.962/XII-8859 
+
+In zake: 
+
+de BVBA INTERNATIONAL BUSINESS MACHINES OF   
+BELGIUM (IBM) 
+bijgestaan en vertegenwoordigd door   
+advocaten Youri Musschebroeck en Virginie Dor 
+kantoor houdend te 1170 Brussel 
+Terhulpsesteenweg 178 
+bij wie woonplaats wordt gekozen 
+
+tegen: 
+
+de RIJKSDIENST VOOR ARBEIDSVOORZIENING (RVA) 
+bijgestaan en vertegenwoordigd door 
+advocaten Marie Vastmans en Anthony Poppe 
+kantoor houdend te 1160 Brussel 
+Tedescolaan 7 
+bij wie woonplaats wordt gekozen 
+
+--------------------------------------------------------------------------------------------------   
+
+I. Voorwerp van de vordering 
+
+1. 
+
+De  vordering,  ingesteld  op  13  januari  2020,  strekt  tot  de 
+
+schorsing bij uiterst dringende noodzakelijkheid van de tenuitvoerlegging van de 
+
+“beslissing  d.d.  19  december  2019  van  de  RVA  om  voor  perceel  1  (Storage), 
+
+perceel 2 (Netwerk) en het perceel 3 (Servers) van de overheidsopdracht voor het 
+
+onderhoud van de hardware IBM niet te selecteren”. 
+
+II. Verloop van de rechtspleging 
+
+2. 
+
+De verwerende partij heeft een nota ingediend. 
+
+De  partijen  zijn  opgeroepen  voor  de  terechtzitting,  die  heeft 
+
+plaatsgevonden op 30 januari 2020, om 11.00 uur. 
+
+XII-8859-1/18 
+
+‡AECUMEGBG-BEAGGFV‡ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Staatsraad Pierre Barra heeft verslag uitgebracht. 
+
+Advocaat  Youri  Musschebroeck,  die  verschijnt  voor  de 
+
+verzoekende partij, en advocaat Anthony Poppe, die tevens loco advocaat Marie 
+
+Vastmans verschijnt voor de verwerende partij, zijn gehoord. 
+
+Auditeur  Thomas  Maes  heeft  een  met  dit  arrest  eensluidend 
+
+advies gegeven. 
+
+Er is toepassing gemaakt van de bepalingen op het gebruik der 
+
+talen,  vervat  in  titel  VI,  hoofdstuk  II,  van  de  wetten  op  de  Raad  van  State, 
+
+gecoördineerd op 12 januari 1973. 
+
+III. Feiten 
+
+3.1. 
+
+De  verwerende  partij  schrijft  een  overheidsopdracht  uit  voor 
+
+diensten  “Onderhoud  van  de  hardware  –  Raamcontract”.  Het  is  een  openbare 
+
+procedure waarbij de verwerende partij optreedt als aankoopcentrale. 
+
+De  opdracht  betreft  de  ondersteuning  en  het  onderhoud  van 
+
+informaticamateriaal. Ze bestaat uit drie percelen: (1) Storage; (2) Netwerk en (3) 
+
+Servers. 
+
+3.2. 
+
+De  opdracht  wordt  aangekondigd 
+
+in  het  Bulletin  der 
+
+Aanbestedingen  van  13  september  2019  en  in  het  Supplement  op  het 
+
+Publicatieblad van de Europese Unie van 18 september 2019. 
+
+3.3. 
+
+In het bestek worden zes selectiecriteria vermeld, één inzake de 
+
+financiële  draagkracht  van  de 
+
+inschrijver  en  vijf 
+
+inzake  de 
+
+technische 
+
+bekwaamheid van de inschrijver. Het eerste selectiecriterium inzake de technische 
+
+bekwaamheid van de inschrijver wordt als volgt omschreven: 
+
+“Eerste  criterium  inzake  de  technische  bekwaamheid  van  de  inschrijver: 
+kwaliteitscontrole: technici en/of technische organen, onderaannemers[.] 
+
+XII-8859-2/18 
+
+‡AECUMEGBG-BEAGGFV‡ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+De  inschrijver  moet  over  voldoende  technici  of  technische  organen 
+beschikken  of  kunnen  beschikken,  in  het  bijzonder  de  personen  of  de 
+organen  die  verantwoordelijk  zijn  voor  de  kwaliteitscontrole.  Bij  de 
+beoordeling van de technische bekwaamheid zal enkel rekening gehouden 
+worden met de technici of de technische organen die in het raam van de 
+opdracht  die  het  voorwerp  uitmaakt  van  onderhavig  bestek  een 
+meerwaarde bieden. 
+De inschrijver kan een beroep doen op onderaannemers (cf. 3.5 van huidig 
+bestek) 
+De inschrijver voegt bij zijn offerte 
+
+• een opgave van de al dan niet tot de onderneming behorende technici 
+of technische organen, in het bijzonder van die welke verantwoordelijk 
+zijn voor de kwaliteitscontrole.   
+
+• De  nodige  bewijzen  van  hun  specialisatie  en  onderlegdheid  (CV‟s, 
+
+certificaten)   
+
+• Een lijst van de onderaannemers en de nodige documenten waarin zij 
+verklaren  zich  niet  in  een  uitsluitingstoestand  te  bevinden  met 
+betrekking tot hun persoonlijke situatie evenals een verklaring waarin 
+tot  het  verstrekken  van  de  gevraagde 
+zij  zich  verbinden 
+onderhoudsprestaties.” 
+
+Daarnaast wordt in het bestek bepaald: 
+
+beantwoordt.  Het  UEA 
+
+“2.9.1.1. Uitsluitingscriteria 
+Op  straffe  van  substantiële  nietigheid  van  de  offerte,  en  met  het  oog  op 
+administratieve vereenvoudiging, voegt de inschrijver bij zijn offerte een 
+accuraat  en  correct  ingevuld  Uniform  Europees  Aanbestedingsdocument 
+(UEA), en waarin hij formeel verklaart dat er geen uitsluitingsgronden op 
+hem  van  toepassing  zijn  en  dat  hij  aan  alle  voorgeschreven  kwalitatieve 
+selectiecriteria 
+via 
+https://uea.publicprocurement.be. De kandidaat/inschrijver vult daarbij de 
+delen  I  tot  en  met  VI  van  het  UEA  accuraat  en  correct  in.  Wat  deel  IV 
+betreft  volstaat  het  om  enkel  afdeling  a  „algemene  aanwijzing  voor  alle 
+selectiecriteria‟ in te vullen. 
+De inschrijver moet tevens, eveneens op straffe van substantiële nietigheid:   
+- Een  ingevuld  UEA  voorleggen  voor  elke  deelnemer  van  een 
+combinatie  van  ondernemingen  die  optreedt  als  inschrijver,  en  voor 
+elke  onderaannemer  of  andere  entiteit  op  wiens  draagkracht  de 
+inschrijver  een  beroep  doet;  houdende  de  inlichtingen  vereist  in  de 
+delen II tot V van het UEA;   
+
+vindt 
+
+terug 
+
+u 
+
+- In  geval  de  inschrijver  een  combinatie  van  ondernemingen  is, 
+aanduiden  welke  deelnemer  aan  de  combinatie  zal  optreden  als 
+vertegenwoordiger naar de aanbesteder toe, in deel II.B van het UEA. 
+(artikel 40 KB plaatsing 2017).” 
+
+‡AECUMEGBG-BEAGGFV‡ 
+
+XII-8859-3/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.4. 
+
+Op 8 oktober 2019 stelt de verzoekende partij de volgende vraag 
+
+aan de verwerende partij over het bestek: 
+
+“Referentie naar par[a]graaf 2.9.11, wat beschouwt u als subcontractor en 
+moet  voor  elke  subcontractor  ook  een  UEA  te  worden  ingediend?  We 
+verwijzen  hier  naar  het  feit  dat  om  full  support  aan  te  bieden  er  een 
+verplichting is om diensten aan te kopen bij de originele vendor. Dient elke 
+„originele‟ vendor dan een aparte UEA op te maken of is de UEA van de 
+aanbieder alleen voldoende?” 
+
+De verwerende partij antwoordt op 10 oktober 2019: 
+
+“Onderaanneming kan gedefinieerd worden als een overeenkomst waarbij 
+de hoofdaannemer het werk dat hem in de hoofdaannemingsovereenkomst 
+werd toevertrouwd, geheel of gedeeltelijk laat uitvoeren door een andere 
+aannemer, de onderaannemer, die aanvaardt om dit buiten enige band van 
+ondergeschiktheid  te  doen,  tegen  betaling  van  een  prijs  door  de 
+hoofdaannemer. 
+De  uitvoeringsverordening  (EU)  2016/7  van  5  januari  2016  van  de 
+Europese  Commissie  houdende  een  standaardformulier  voor  het  UEA 
+maakt het volgende duidelijk : 
+-  Een  ondernemer  die  zelfstandig  deelneemt  en  zich  niet  beroept  op  de 
+draagkracht  van  andere  entiteiten  om  aan  de  selectiecriteria  te  voldoen, 
+moet maar 1 UEA invullen 
+-  Een  ondernemer  die  zelfstandig  deelneemt,  maar  beroep  doet  op  de 
+[draag]kracht  van  één  of  meerdere  entiteiten,  moet  de  aanbestedende 
+overheid zijn eigen UEA bezorgen, samen met een afzonderlijk UEA met 
+de relevante informatie voor iedere entiteit waarop de ondernemer steunt 
+-  Indien  combinaties  van  ondernemers  samen  deelnemen  aan  een 
+procedure,  dan  dient  er  voor  iedere  deelnemer  een  UEA  te  worden 
+ingediend.” 
+
+3.5. 
+
+De verzoekende partij dient een offerte in voor de drie percelen. 
+
+Naast de verzoekende partij dienen nog drie andere inschrijvers offertes in voor 
+
+diverse combinaties van percelen. 
+
+3.6. 
+
+Op  19  december  2019  wordt  een  gunningsverslag  opgesteld. 
+
+Daarin wordt, wat de selectie betreft, als volgt geoordeeld over de offerte van de 
+
+verzoekende partij: 
+
+“8.3. Selectiecriteria 
+[…] 
+
+XII-8859-4/18 
+
+‡AECUMEGBG-BEAGGFV‡ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+8.3.2. Selectiecriteria met betrekking tot de technische bekwaamheid van 
+de inschrijver 
+Eerste  criterium:  kwaliteitscontrole:  technici  en/of  technische  organen, 
+onderaannemers 
+De evaluatoren stellen vast dat: 
+[…] 
+b. wat betreft onderaannemers 
+[…] 
+[IBM] doet beroep op onderaannemers, maar voegt bij zijn offerte niet de 
+documenten die dienaangaande werden gevraagd in het bestek en voldoet 
+derhalve  niet  aan  alle  vereisten  die  werden  gesteld  in  het  bestek.  [IBM] 
+heeft nagelaten om de volgende documenten toe te voegen aan zijn offerte: 
+een  verklaring  van  iedere  onderaannemer  dat  hij  zich  niet  in  een 
+uitsluitingstoestand bevindt met betrekking tot zijn persoonlijke situatie en 
+een  verklaring  van  iedere  onderaannemer  dat  hij  zich  verbindt  tot  het 
+verstrekken  van  de  gevraagde  onderhoudsprestaties.  [IBM]  voldoet  dus 
+niet aan de selectiecriteria in verband met onderaanneming. 
+[…] 
+8.4. Conclusie m.b.t. regelmatigheid, toegangsrechten en selectie 
+[…] 
+De offerte van [IBM] voldoet niet aan het  eerste  selectiecriterium, zodat 
+[IBM] niet is geselecteerd.” 
+
+De 
+
+inschrijvers 
+
+nv Econocom  Managed  Services 
+
+en 
+
+nv Realdolmen  worden  wel  geselecteerd.  Hun  offertes  worden  getoetst  aan  de 
+
+gunningscriteria. Het gunningsverslag komt vervolgens tot het volgende besluit: 
+
+“Wat  betreft  de  percelen  1  en  3  is  de  economisch  meest  voordelige  en 
+regelmatige offerte die van inschrijver Econocom Managed Services […]. 
+Wat betreft perceel 2 is er geen geselecteerde inschrijver, zodat de opdracht 
+voor perceel 2 niet kan worden gegund. Met het oog op de gunning van 
+perceel  2  zal  een  nieuwe  gunningsprocedure  worden  aangevat,  meer 
+bepaald 
+voorafgaande 
+een 
+bekendmaking.” 
+
+onderhandelingsprocedure 
+
+zonder 
+
+3.7. 
+
+Eveneens  op  19  december  2019  beslist  de  verwerende  partij, 
+
+verwijzend  naar  het  gunningsverslag,  om  de  opdracht  voor  perceel  1  en  3  te 
+
+gunnen aan de nv Econocom Managed Services en om voor perceel 2 een nieuwe 
+
+gunningsprocedure te starten. Dat is de bestreden beslissing. 
+
+‡AECUMEGBG-BEAGGFV‡ 
+
+XII-8859-5/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.8. 
+
+Met  een  aangetekend  schrijven  en  een  e-mailbericht  van 
+
+27 december  2019  brengt  de  verwerende  partij  het  volgende  ter  kennis  aan  de 
+
+verzoekende partij: 
+
+“Overeenkomstig artikel 8,§1,3° van de wet van 17 juni 2013 […] stel ik u 
+ervan in kennis dat de Rijksdienst voor Arbeidsvoorziening, bij monde van 
+het  Beheerscomité,  tijdens  de  zitting  van  19/12/2019,  na  grondig  en 
+vergelijkend onderzoek van de offertes, heeft beslist dat voor het perceel 1 
+(Storage),  perceel  2  (Netwerk)  en  het  perceel  3  (Servers),  de  door  uw 
+onderneming ingediende offerte niet werd geselecteerd. 
+Als bijlage vindt u een uittreksel van het proces-verbaal van de zitting van 
+het Beheerscomité d.d. 19/12/2019, houdende de gemotiveerde beslissing, 
+alsook een uittreksel uit het evaluatierapport. 
+Ik breng er u ook van in kennis dat, behoudens een vordering bij de Raad 
+van State tot schorsing van de uitvoering van deze beslissing in het kader 
+van  een  rechtspleging  bij  uiterst  dringende  noodzakelijkheid,  de 
+Rijksdienst  voor  Arbeidsvoorziening  de  opdracht  m.b.t.  het  perceel  1 
+(Storage) en het perceel 3 (Servers) na verloop van een wachttermijn van 
+15  dagen,  die  ingaat  vanaf  de  mededeling  van  de  gemotiveerde 
+gunningsbeslissing, zal afsluiten met de onderneming Econocom Managed 
+Services.  Wat  betreft  het  perceel  2  (Netwerk)  zal  een  nieuwe  procedure 
+worden  aangevat.  Wij  zullen  [IBM]  en  Atos  Belgium  contacteren  in  het 
+kader  van 
+zonder  voorafgaande 
+bekendmaking.” 
+
+een  onderhandelingsprocedure 
+
+IV. Ontvankelijkheid van de vordering 
+
+Standpunt van de partijen 
+
+4.1.1. 
+
+In  het  verzoekschrift  verklaart  de  verzoekende  partij  dat  haar 
+
+belang bestaat in de mogelijkheid om uiteindelijk de begunstigde van de opdracht 
+
+te worden. Indien de Raad zou oordelen dat de beslissing om de verzoekende partij 
+
+niet  te  selecteren  onwettig  is,  dan  zal  de  verwerende  partij  ofwel  een  nieuwe 
+
+opdracht  moeten  lanceren  en  kan  de  verzoekende  partij  een  nieuwe  offerte 
+
+indienen of zal de verzoekende partij, in voorkomend geval, alsnog moeten worden 
+
+geselecteerd. 
+
+4.1.2. 
+
+Volgens de verwerende partij, die het belang van de verzoekende 
+
+partij  betwist,  heeft  de  verzoekende  partij  enkel  de  beslissing  om  haar  niet  te 
+
+selecteren aangevochten, maar niet de beslissing tot gunning van perceel 1 en 3, 
+
+XII-8859-6/18 
+
+‡AECUMEGBG-BEAGGFV‡ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+noch  de  beslissing  om  voor  perceel  2  een  onderhandelingsprocedure  zonder 
+
+voorafgaande bekendmaking op te starten. Nochtans werd de verzoekende partij, 
+
+zo  vervolgt  de  verwerende  partij,  in  de  kennisgeving  geïnformeerd  over  het 
+
+bestaan  van  deze  beslissingen.  De  termijn  om  een  vordering  in  kortgeding  bij 
+
+uiterst  dringende  noodzakelijkheid  in  te  stellen  tegen  deze  beslissingen  is 
+
+inmiddels  verstreken.  De  verzoekende  partij  beschikt,  zo  besluit  de  verwerende 
+
+partij, bijgevolg niet over het rechtens vereiste belang bij het alleen aanvechten van 
+
+de beslissing tot niet-selectie. 
+
+Beoordeling 
+
+4.2. 
+
+De exceptie van de verwerende partij steunt op de stelling dat de 
+
+voorliggende  vordering  uitsluitend  gericht  zou  zijn  tegen  de  beslissing  om  de 
+
+verzoekende partij niet te selecteren. 
+
+Er  blijkt  evenwel  op  het  eerste  gezicht  om  de  hiernavolgende 
+
+redenen  niet  dat  zulks  hier  apert  het  geval  is  zodat  de  exceptie  de  nodige  ernst 
+
+ontbreekt. 
+
+Uit de bestreden beslissing zelf blijkt prima facie immers niet dat 
+
+de  verwerende  partij  afzonderlijke  beslissingen  zou  hebben  genomen  inzake 
+
+selectie, gunning en opstart van een nieuwe plaatsingsprocedure. Integendeel blijkt 
+
+de  verwerende  partij  één  enkele  beslissing  te  hebben  genomen  die  alle  drie 
+
+aspecten verweven in zich draagt. De voorliggende vordering lijkt dan ook gericht 
+
+te zijn tegen deze  enige  beslissing over de  betrokken overheidsopdracht  in  haar 
+
+geheel. 
+
+Hierbij mag ook worden bedacht dat de verwerende partij zelf in 
+
+de kennisgeving aan de verzoekende partij de beslissing van 19 december 2019 als 
+
+één geheel behandelt, zonder het onderscheid te maken dat zij nu in het leven wil 
+
+roepen. De omschrijving van het voorwerp in het verzoekschrift als de “beslissing 
+
+d.d. 19 december 2019 van de RVA om […] IBM niet te selecteren” lijkt dan ook 
+
+vooral  in  het  licht  van  die  vermeldingen  in  de  kennisgeving  te  moeten  worden 
+
+gelezen. De verwerende partij lijkt immers zelf uitdrukkelijk in de kennisgeving 
+
+XII-8859-7/18 
+
+‡AECUMEGBG-BEAGGFV‡ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+voorop te stellen dat het aanvechten van de niet-selectie voor haar zou volstaan om 
+
+niet over te gaan tot het sluiten van de overeenkomst voor de percelen 1 en 3. 
+
+V. Schorsingsvoorwaarden 
+
+5.1. 
+
+Krachtens artikel 17, §§ 1 en 4, van de gecoördineerde wetten op 
+
+de Raad van State kan tot schorsing van de tenuitvoerlegging bij uiterst dringende 
+
+noodzakelijkheid  slechts  worden  besloten  onder  de  dubbele  voorwaarde  dat 
+
+minstens één ernstig middel wordt aangevoerd dat de nietigverklaring van de akte 
+
+of  het  reglement  prima  facie  kan  verantwoorden  en  dat  een  uiterst  dringende 
+
+noodzakelijkheid voorhanden is die onverenigbaar is met de behandelingstermijn 
+
+van de gewone vordering tot schorsing. 
+
+5.2. 
+
+Te dezen is evenwel ook de wet van 17 juni 2013 „betreffende de 
+
+motivering,  de  informatie  en  de  rechtsmiddelen  inzake  overheidsopdrachten, 
+
+bepaalde  opdrachten  voor  werken,  leveringen  en  diensten  en  concessies‟  van 
+
+toepassing. 
+
+Krachtens  artikel  15,  eerste  lid,  van  die  wet  kan  de  uitvoering 
+
+worden  geschorst  van  de  thans  bestreden  beslissing  in  aanwezigheid  van  een 
+
+ernstig middel of een klaarblijkelijke onwettigheid. 
+
+Overeenkomstig  artikel  15,  tweede  lid,  echter  wordt  de 
+
+vordering tot schorsing voor de Raad van State uitsluitend ingesteld volgens een 
+
+procedure bij uiterst dringende noodzakelijkheid. 
+
+Er  dient  te  dezen  dan  ook  enkel  nog  te  worden  onderzocht  of 
+
+minstens  één  ernstig  middel  wordt  aangevoerd,  dan  wel  een  klaarblijkelijke 
+
+onwettigheid  aanwezig  is,  die  de  nietigverklaring  van  de  bestreden  beslissing 
+
+kunnen verantwoorden. 
+
+‡AECUMEGBG-BEAGGFV‡ 
+
+XII-8859-8/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+VI. Onderzoek van de middelen 
+
+A. Eerste middel 
+
+Uiteenzetting van het middel 
+
+6. 
+
+De verzoekende partij  voert  de schending  aan van “artikel 65, 
+
+tweede en vierde lid van het koninklijk besluit van 18 april 2017 en de algemene 
+
+beginselen van behoorlijk bestuur, waaronder het zorgvuldigheidsbeginsel en het 
+
+gelijkheidsbeginsel” en betoogt: 
+
+“Doordat RVA heeft beslist dat IBM niet voldoet aan de selectiecriteria in 
+verband met onderaanneming;   
+Terwijl  RVA  heeft  nagelaten  om  elk  kwalitatief  selectiecriterium  van 
+technische aard, te verbinden aan een gepast niveau; dat de selectiecriteria 
+die RVA in casu heeft gebruikt bijvoorbeeld eisen dat de inschrijver over 
+„voldoende‟  technici  of  technische  organen  beschikken  of  kunnen 
+beschikken (selectiecriterium „kwaliteitscontrole‟), dat de inschrijver over 
+„voldoende bekwame en gespecialiseerde medewerkers‟ moet beschikken 
+(selectiecriterium  „personeelsbestand‟); dat  de inschrijver zijn technische 
+bekwaamheid moet aantonen aan de hand van een „lijst van de voornaamste 
+diensten, die gerelateerd zijn aan het voorwerp van onderhavig opdracht‟ 
+(selectiecriterium  „referenties‟);  dat  de  inschrijver  „over  de  technische 
+uitrusting  (moet)  beschikken  om  de  opdracht  behoorlijk  te  kunnen 
+realiseren‟ (selectiecriterium „technische uitrusting‟); dat de inschrijver een 
+verklaring  moet  voorleggen  waaruit  zou  moeten  blijken  dat  hij  aan 
+„bepaalde‟ kwaliteitsnormen voldoet (selectiecriterium  „certificaten‟); dat 
+geen van deze selectiecriteria dus verbonden werden aan een gepast niveau, 
+zodat  de  beslissing  dat  IBM  niet  voldoet  aan  de  selectiecriteria  in  ieder 
+geval onwettig is.” 
+
+In de toelichting bij het middel benadrukt de verzoekende partij 
+
+dat  dergelijke  vereisten  niet  precies  zijn  en  de  deur  op  een  kier  zetten  voor 
+
+willekeurige beslissingen. Volgens de verzoekende partij  heeft zij belang bij dit 
+
+middel nu zij niet werd geselecteerd omdat zij niet voldeed aan de selectiecriteria. 
+
+Indien  de  verwerende  partij  de  selectiecriteria  had  verbonden  aan  een  gepast 
+
+niveau, dan had de verzoekende partij bovendien naar eigen zeggen “met zekerheid 
+
+kunnen  weten  dat  zij  geen  beroep  diende  te  doen  op  de  draagkracht  van 
+
+onderaannemers”. 
+
+XII-8859-9/18 
+
+‡AECUMEGBG-BEAGGFV‡ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Beoordeling 
+
+7. 
+
+De verzoekende partij lijkt onvoldoende aan te tonen belang te 
+
+hebben bij het middel. Uit het gunningsverslag – randnummer 3.6 – blijkt dat de 
+
+verzoekende partij niet werd geselecteerd niet om reden dat zij niet voldoet aan 
+
+bepaalde minimumvereisten inzake technische bekwaamheid maar wel omdat zij 
+
+heeft  nagelaten  de  door  het  bestek  vereiste  documenten  inzake  het  eerste 
+
+selectiecriterium bij haar offerte te voegen. De aangevoerde onwettigheid lijkt de 
+
+verzoekende partij hier dan ook geen nadeel te hebben toegebracht. De opmerking 
+
+van de verzoekende partij dat, indien de verwerende partij de selectiecriteria had 
+
+verbonden aan een gepast niveau, de verzoekende partij met zekerheid had kunnen 
+
+weten dat zij geen beroep diende te doen op de draagkracht van onderaannemers, is 
+
+evenmin van aard om tot een ander besluit te leiden; deze opmerking wordt niet 
+
+voldoende concreet geadstrueerd, te meer hierbij mag worden bedacht dat, zoals 
+
+ter terechtzitting is gebleken, de verzoekende partij de zittende dienstverlener is. 
+
+Overigens lijkt het middel ten gronde evenmin ernstig. 
+
+De verwerende partij lijkt immers te mogen worden bijgevallen 
+
+waar zij in haar nota doet gelden dat het gepaste niveau van de selectiecriteria te 
+
+dezen kan worden afgeleid uit de uitvoerige en nauwkeurige beschrijving van de 
+
+opdracht  in  het  bestek,  zodat  de  inschrijvers  kennis  hadden  van  het  exacte 
+
+voorwerp en de omvang van de opdracht, kennis aan de hand waarvan zij prima 
+
+facie de in het bestek gestelde selectievereisten naar behoren konden interpreteren. 
+
+Hier  opnieuw  mag  worden  bedacht  dat  de  verzoekende  partij  de  zittende 
+
+dienstverlener  is  zodat  haar  argument  ter  terechtzitting  dat  de  opdracht  niet 
+
+duidelijk was, niet plausibel lijkt. De nauwkeurige omschrijving van de opdracht in 
+
+het  bestek  nam  op  het  eerste  gezicht  ook  meteen  de  mogelijkheid  weg  voor  de 
+
+aanbestedende  overheid  om  de  selectiecriteria  arbitrair  in  te  vullen,  zoals  de 
+
+verzoekende partij vreest. 
+
+‡AECUMEGBG-BEAGGFV‡ 
+
+XII-8859-10/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+B. Tweede middel 
+
+Uiteenzetting van het middel 
+
+8. 
+
+De  verzoekende  partij  voert  de  schending  aan  van  “artikel  73 
+
+van het koninklijk besluit van 18 april 2017, de beginselen van behoorlijk bestuur, 
+
+waaronder het zorgvuldigheidsbeginsel en het gelijkheidsbeginsel” en betoogt: 
+
+“Doordat RVA heeft besloten om IBM niet te selecteren en heeft besloten 
+om Econom Managed Services en Realdolmen wel te selecteren; dat RVA, 
+zonder hierover enige vraag te stellen, heeft vastgesteld dat  IBM niet de 
+documenten met betrekking tot de onderaannemers waarop zij beroep zou 
+doen voor de uitvoering van de opdracht en die in het bestek zouden zijn 
+gevraagd, heeft overgemaakt en derhalve meent dat IBM niet voldoet aan 
+alle  selectiecriteria;  dat  in  het  bestek  immers  onder  het  selectiecriterium 
+„kwaliteitscontrole‟ werd gevraagd om „een lijst van de onderaannemers‟ 
+over te maken en de „nodige documenten waarin zij (de onderaannemers) 
+verklaren zich niet in een uitsluitingstoestand te bevinden met betrekking 
+tot  hun  persoonlijke  situatie  evenals  een  verklaring  waarin  zij  zich 
+verbinden tot het verstrekken van de gevraagde onderhoudsprestaties‟; 
+Terwijl (eerste onderdeel) uit het door IBM overgemaakte UEA blijkt dat 
+IBM geen beroep doet op de draagkracht van de onderaannemers waarop 
+IBM  (in voorkomend  geval) beroep zou doen voor de uitvoering van de 
+opdracht; en terwijl RVA op de vraag van  IBM welke  documenten voor 
+onderaannemers moesten worden overgemaakt, heeft geantwoord dat enkel 
+een UEA voor de onderaannemers diende te worden overgemaakt wanneer 
+er beroep zou worden gedaan op hun draagkracht; zodat IBM meende dat 
+de documenten met betrekking tot de onderaannemers die overeenkomstig 
+de overheidsopdrachtenreglementering enkel moeten worden overgemaakt 
+wanneer  men  beroep  doet  op  de  draagkracht  van  derden,  niet  heeft 
+overgemaakt samen met haar offerte; en terwijl RVA, voor zover zij niet 
+begreep waarom deze documenten niet zouden zijn overgemaakt, ook een 
+vraag  had  kunnen  stellen  aan  IBM;  dat  immers  van  een  zorgvuldige 
+aanbestedende  overheid  kan  worden  verwacht  dat  zij  de  beslissing 
+zorgvuldig voorbereid en de juridische aspecten van het dossier deugdelijk 
+onderzoekt; 
+Terwijl  (tweede  onderdeel)  de  bestekclausule  onwettig  is  omdat  het  niet 
+tijdens  de 
+aan  een  aanbestedende  overheid 
+plaatsingsprocedure  ervan  te  verzekeren  dat  de  door  een  inschrijver 
+voorgestelde onderaannemers zich niet in een uitsluitingsgrond bevinden; 
+dat de controle van de uitsluitingsgronden overeenkomstig de artikelen 67 
+(verplichte  uitsluitingsgronden),  68  (uitsluitingsgrond  in  verband  met 
+fiscale  en  sociale  schulden)  en  69  (facultatieve  uitsluitingsgrond)  enkel 
+dient te gebeuren in hoofde van de „kandidaat of inschrijver‟; dat er geen 
+enkele rechtsgrond bestaat op basis waarvan een aanbestedende overheid 
+
+toekomt  om  zich 
+
+XII-8859-11/18 
+
+‡AECUMEGBG-BEAGGFV‡ 
+
+ 
+ 
+ 
+ 
+ 
+te  verzekeren  dat  de  door  een 
+
+ook  kan  controleren  of  een  onderaannemer  zich  bevindt  in  een 
+uitsluitingsgrond; 
+Terwijl  (derde  onderdeel)  de  bestekclausule  onwettig  is  omdat  de 
+verklaringen niet dienstig zijn voor een aanbestedende overheid  om  zich 
+inschrijver  voorgestelde 
+ervan 
+onderaannemers zich niet in een uitsluitingsgrond bevinden; 
+Terwijl  (vierde  onderdeel)  RVA  niet  heeft  gecontroleerd  of  de 
+verklaringen/verbintenissen  van  de  door  de  andere  inschrijvers  (Econom 
+Managed  Services,  Realdolmen  en  Atos)  voorgestelde  onderaannemers 
+rechtsgeldig  werden  ondertekend,  zodat  ook  niet  vaststaat  of  de  andere 
+inschrijvers konden worden geselecteerd; 
+Terwijl (vijfde onderdeel) Econom Managed Services en Realdolmen ook 
+een  verklaring  en  verbintenis  van  IBM  hadden  moeten  overmaken, 
+aangezien (i) overeenkomstig het bestek RVA ondersteuning wenst van de 
+oorspronkelijke  leverancier/dienstverlener,  (ii)  het  feit  dat  RVA  over 
+IBM-apparatuur  beschikt,  en  (iii)  dat  IBM  deze  ondersteuning  niet  heeft 
+uitbesteed aan Econom Managed Services en Realdolmen, zodat IBM met 
+een  aan  zekerheid  grenzende  waarschijnlijkheid  zal  moeten  optreden  als 
+onderaannemer van de andere inschrijvers.” 
+
+Beoordeling 
+
+9.1. 
+
+Het  bestek  bevat  zes  selectiecriteria,  één  inzake  de  financiële 
+
+draagkracht van de inschrijver en vijf inzake de technische bekwaamheid van de 
+
+inschrijver. Het eerste selectiecriterium inzake de technische bekwaamheid van de 
+
+inschrijver wordt in het bestek omschreven als “kwaliteitscontrole: technici en/of 
+
+technische organen, onderaannemers”. In het kader van dit selectiecriterium wordt 
+
+in het bestek bepaald dat de inschrijvers, indien zij voor dit selectiecriterium een 
+
+beroep doen op onderaannemers, het volgende bij hun offerte dienen te voegen: 
+
+“Een  lijst  van  de  onderaannemers  en  de  nodige  documenten  waarin  zij 
+verklaren zich niet in een uitsluitingstoestand te bevinden met betrekking 
+tot  hun  persoonlijke  situatie  evenals  een  verklaring  waarin  zij  zich 
+verbinden tot het verstrekken van de gevraagde onderhoudsprestaties.” 
+
+Daarnaast wordt in het bestek, wat de uitsluitingscriteria betreft, 
+
+voorgeschreven dat de inschrijver “[o]p straffe van substantiële nietigheid van de 
+
+offerte, en met het oog op administratieve vereenvoudiging, […] bij zijn offerte 
+
+een  accuraat  en  correct  ingevuld  Uniform  Europees  Aanbestedingsdocument 
+
+(UEA) [voegt] waarin hij formeel verklaart dat er geen uitsluitingsgronden op hem 
+
+van toepassing zijn en dat hij aan alle voorgeschreven kwalitatieve selectiecriteria 
+
+XII-8859-12/18 
+
+‡AECUMEGBG-BEAGGFV‡ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+beantwoordt”. Voorts wordt in het bestek in dit verband vereist dat de inschrijver, 
+
+op  straffe  van  substantiële  nietigheid,  “[e]en  ingevuld  UEA  [moet]  voorleggen 
+
+[…]  voor  elke  onderaannemer  of  andere  entiteit  op  wiens  draagkracht  de 
+
+inschrijver een beroep doet”. De vereiste om “de nodige documenten waarin zij 
+
+verklaren zich niet in een uitsluitingstoestand te bevinden” bij te voegen indien de 
+
+inschrijver voor het eerste selectiecriterium inzake technische bekwaamheid een 
+
+beroep doet op onderaannemers, lijkt op het eerste gezicht te mogen worden geacht 
+
+te  overlappen  met  de  plicht  voor  dergelijke  onderaannemers  een  UEA  bij  te 
+
+voegen. 
+
+In het bij haar offerte gevoegde UEA verklaart de verzoekende 
+
+partij geen beroep te doen op de draagkracht van andere entiteiten om te voldoen 
+
+aan de selectiecriteria. In haar offerte vermeldt zij echter bij haar beschrijving van 
+
+de wijze waarop zij voldoet aan het eerste selectiecriterium inzake de technische 
+
+bekwaamheid  van  de  inschrijver  “kwaliteitscontrole:  technici  en/of  technische 
+
+organen,  onderaannemers”,  na  een  uiteenzetting  over  haar  procedures  voor 
+
+kwaliteitsgarantie,  over  haar  specialisaties  en 
+
+lokale  onderlegdheid  voor 
+
+kwaliteitsgarantie  en  een  vermelding  van  curricula  vitae  van  personen  met  een 
+
+functie  in  verband  met  kwaliteit,  ook  een  lijst  van  onderaannemers  –  offerte 
+
+bladzijden  20  tot  24.  Daarbij  verklaart  zij  –  offerte  bladzijde  18  –:  “IBM  is 
+
+verantwoordelijk  voor  het  totale  onderhoudsproces  en  doet  beroep  op  de 
+
+ondersteuning  van  gespecialiseerde  partners  voor  het  onderhoud  op  bepaalde 
+
+niet-IBM producten”. Voorts licht de verzoekende partij in dit deel van haar offerte 
+
+inzake het voldoen aan de selectiecriteria nog in detail toe hoe zij samenwerkt met 
+
+haar tientallen onderaannemers om de door het bestek vereiste support te kunnen 
+
+leveren  –  offerte  bladzijde  19.  Daarbij  vermeldt  zij  nauwgezet  welke 
+
+onderaannemer voor welk type onderhoudsprestatie zal worden ingezet. 
+
+In het  gunningsverslag wordt beslist om de verzoekende partij 
+
+niet te selecteren op  grond van de  overweging dat  de verzoekende partij  bij het 
+
+eerste selectiecriterium met betrekking tot de technische bekwaamheid een beroep 
+
+doet  op  onderaannemers,  maar  bij  haar  offerte  de  documenten  niet  voegt  die 
+
+dienaangaande werden gevraagd in het bestek. 
+
+‡AECUMEGBG-BEAGGFV‡ 
+
+XII-8859-13/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+9.2. 
+
+Wat  het  eerste  middelonderdeel  betreft,  voert  de  verzoekende 
+
+partij in essentie aan dat zij niet verplicht was om voornoemde documenten bij te 
+
+voegen  voor  haar  onderaannemers  aangezien  zij  geen  beroep  doet  op  hun 
+
+draagkracht om aan de selectiecriteria te voldoen. 
+
+Gelet op de onder randnummer 9.1 geschetste vermeldingen die 
+
+de  verzoekende  partij  in  haar  offerte  zelf  heeft  opgenomen,  lijkt  de  verwerende 
+
+partij  terecht  te  mogen  concluderen  dat  de  verzoekende  partij  wel  degelijk  een 
+
+beroep doet op de draagkracht van de onderaannemers die zij in haar offerte heeft 
+
+vermeld onder het eerste selectiecriterium inzake technische bekwaamheid, en dit 
+
+om  aan  dat  selectiecriterium  te  voldoen.  Dat  de  verzoekende  partij  thans  het 
+
+omgekeerde beweert, lijkt tegen haar eigen offerte in te gaan. 
+
+Het  gegeven  dat  de  verzoekende  partij  in  weerwil  van  haar 
+
+offerte, in haar UEA het vakje “nee” aankruist bij de vraag of zij een beroep doet 
+
+op de draagkracht van andere entiteiten om te voldoen aan de selectiecriteria, doet 
+
+niet anders besluiten. De verwerende partij mocht zich steunen op de vermeldingen 
+
+in  de  offerte  zelf  van  de  verzoekende  partij.  In  elk  geval  toont  de  verzoekende 
+
+partij  niet  aan  dat  een  door  haarzelf  veroorzaakte  tegenstrijdigheid  hier  in  haar 
+
+voordeel moet spelen. 
+
+Ten slotte mag worden vastgesteld dat de verzoekende partij niet 
+
+aantoont,  in  de  concrete  omstandigheden  van  de  zaak  waarbij  de  verzoekende 
+
+partij zelf enige onzorgvuldigheid aan de dag legt, dat de mogelijkheid voor een 
+
+aanbestedende  overheid  om  met  toepassing  van  artikel  66,  §  3,  van  de  wet  van 
+
+17 juni  2016  „inzake  overheidsopdrachten‟  (hierna:  wet  overheidsopdrachten 
+
+2016) contact op te nemen met een inschrijver, hier moet worden begrepen als een 
+
+verplichting  of  een  dwingende  uiting  van  zorgvuldigheid  in  hoofde  van  de 
+
+verwerende partij. 
+
+9.3. 
+
+Wat het tweede middelonderdeel betreft, voert de verzoekende 
+
+partij in essentie aan dat de betrokken bepaling in het bestek onwettig is omdat het 
+
+niet aan de aanbestedende overheid toekomt om tijdens de plaatsingsprocedure te 
+
+controleren of een onderaannemer zich in een uitsluitingsgrond bevindt; dat kan 
+
+volgens de verzoekende partij enkel tijdens de uitvoeringsfase van de opdracht. 
+
+XII-8859-14/18 
+
+‡AECUMEGBG-BEAGGFV‡ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Bij de bespreking van het eerste middelonderdeel is op het eerste 
+
+gezicht vastgesteld dat de verwerende partij te dezen terecht op zicht van de offerte 
+
+van de verzoekende partij mocht besluiten dat deze inschrijver wel degelijk een 
+
+beroep  deed  op  de  draagkracht  van  onderaannemers  om  te  voldoen  aan  het 
+
+betrokken  selectiecriterium.  In  artikel  73,  §  1,  tweede  lid,  van  de  wet 
+
+overheidsopdrachten 2016 wordt uitdrukkelijk bepaald dat wanneer een kandidaat 
+
+een beroep doet op de draagkracht van een derde het UEA ook de gegevens bevat 
+
+aangaande de uitsluitingsgronden en de selectiecriteria ten aanzien van de derde op 
+
+wiens draagkracht een beroep wordt gedaan. Daarnaast  wordt in artikel 73, § 1, 
+
+tweede 
+
+lid,  van  het  koninklijk  besluit  van  18 april  2017 
+
+„plaatsing 
+
+overheidsopdrachten in de klassieke sectoren‟ (hierna: koninklijk besluit plaatsing 
+
+2017)  uitdrukkelijk  bepaald  dat 
+
+“[d]e  aanbestedende  overheid 
+
+[…] 
+
+overeenkomstig de artikelen 73 tot 76 van de wet na[gaat] of de entiteiten op wier 
+
+draagkracht een ondernemer zich wil beroepen, aan de selectiecriteria voldoen en 
+
+of voor hen uitsluitingsgronden bestaan”. 
+
+Aldus lijkt de verwerende partij te dezen wel degelijk over een 
+
+rechtsgrond te beschikken om reeds tijdens de plaatsingsprocedure te controleren 
+
+of  een  onderaannemer  op  wiens  draagkracht  een  beroep  wordt  gedaan  om  te 
+
+voldoen aan de selectiecriteria, zich in een uitsluitingsgrond bevindt zodat in dat 
+
+licht niet blijkt dat de besteksbepaling onwettig zou zijn. 
+
+9.4. 
+
+Wat  het  derde  middelonderdeel  betreft,  laat  de  verzoekende 
+
+partij  in  essentie  gelden  dat  de  betrokken  besteksbepaling  onwettig  is  omdat  de 
+
+verklaringen niet dienstig zijn voor de aanbestedende overheid om zich ervan te 
+
+verzekeren dat de door een inschrijver voorgestelde onderaannemers zich niet in 
+
+een uitsluitingsgrond bevinden. De verzoekende partij ziet naar eigen zeggen de 
+
+meerwaarde  niet  in  van  de  in  het  bestek  gevraagde  verklaring  inzake 
+
+uitsluitingsgronden in hoofde van onderaannemers. 
+
+Bij de bespreking van het tweede middelonderdeel is gebleken 
+
+dat de verwerende partij er krachtens artikel 73, § 1, tweede lid, koninklijk besluit 
+
+plaatsing 2017, toe gehouden was de betrokken documenten op te vragen bij de 
+
+XII-8859-15/18 
+
+‡AECUMEGBG-BEAGGFV‡ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+verzoekende  partij.  Aldus  lijkt  de  opportuniteitskritiek  die  in  het  derde 
+
+middelonderdeel wordt aangevoerd, niet relevant. 
+
+9.5. 
+
+Wat  het  vierde  middelonderdeel  betreft,  voert  de  verzoekende 
+
+partij  in  essentie  aan  dat  de  verwerende  partij  niet  heeft  gecontroleerd  of  de 
+
+verklaringen  of  verbintenissen  van  de  door  de  andere  inschrijvers  voorgestelde 
+
+onderaannemers rechtsgeldig werden ondertekend. 
+
+Het  middelonderdeel  lijkt  op  het  eerste  gezicht  feitelijke 
+
+grondslag te missen.  Uit de offertes  van de overige inschrijvers gevoegd bij het 
+
+vertrouwelijk  deel  van  het  administratief  dossier  waar  de  Raad  kennis  mag  van 
+
+nemen,  lijken  zij,  anders  dan  de  verzoekende  partij,  geen  beroep  te  doen  op  de 
+
+draagkracht  van  hun  mogelijke  onderaannemers  om  te  voldoen  aan  het  eerste 
+
+selectiecriterium inzake technische bekwaamheid. Minstens blijken zij in het deel 
+
+van hun offerte dat  betrekking  heeft op het  kwestieuze selectiecriterium, anders 
+
+dan de verzoekende partij heeft gedaan, niet naar het inzetten van onderaannemers 
+
+te verwijzen. Aldus blijkt niet dat de verwerende partij hier had moeten besluiten 
+
+dat  de  andere  inschrijvers  ook  de  draagkracht  van  derden  inroepen  bij  het 
+
+betrokken  selectiecriterium.  Hetzelfde  geldt  overigens  ook  voor  de  andere 
+
+selectiecriteria. 
+
+feitelijk gegeven. 
+
+De verzoekende partij lijkt dan ook uit te gaan van een onjuist 
+
+9.6. 
+
+Wat het vijfde middelonderdeel betreft, betoogt de verzoekende 
+
+partij in essentie dat de andere inschrijvers een verklaring en verbintenis van de 
+
+verzoekende partij zelf bij hun offerte hadden moeten voegen, nu de verwerende 
+
+partij over IBM-apparatuur beschikt die onder de opdracht valt. 
+
+Ook dit middelonderdeel berust op de onjuiste veronderstelling 
+
+dat de andere inschrijvers in hun offerte een beroep zouden doen op de draagkracht 
+
+van  hun  mogelijke  onderaannemers  om  te  voldoen  aan  het  betrokken  eerste 
+
+selectiecriterium  inzake  technische  bekwaamheid,  dan  wel  aan  de  overige 
+
+selectiecriteria. 
+
+XII-8859-16/18 
+
+‡AECUMEGBG-BEAGGFV‡ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Het  feit  dat  de  andere  inschrijvers  bij  de  uitvoering  van  de 
+
+opdracht mogelijkerwijs op sommige punten een beroep zouden moeten doen op 
+
+diensten  of  producten  van  de  verzoekende  partij,  houdt  op  zich  niet  in  dat  zij 
+
+daarmee ook meteen een formele onderaannemerrelatie zouden aangaan met haar 
+
+voor  het  uitvoeren  van  de  opdracht,  laat  staan  een  beroep  zouden  doen  op  haar 
+
+draagkracht om te voldoen aan de selectiecriteria. In dit verband mag er worden 
+
+verwezen naar de nota van de verwerende partij, waaruit blijkt dat het hier op het 
+
+eerste gezicht louter zou gaan om het downloaden van software-updates bij IBM. 
+
+9.7. 
+
+Het middel is niet ernstig. 
+
+VII. Besluit 
+
+10. 
+
+Geen  van  de  middelen  is  ernstig  gebleken.  De  vordering  tot 
+
+schorsing  bij  uiterst  dringende  noodzakelijkheid  dient  dan  ook  te  worden 
+
+verworpen. 
+
+BESLISSING 
+
+1. De Raad van State verwerpt de vordering. 
+
+2. De verzoekende partij wordt verwezen in de kosten van de vordering tot 
+
+schorsing bij uiterst dringende noodzakelijkheid, begroot op een rolrecht van 
+
+200  euro,  een  bijdrage  van  20  euro,  en  een  rechtsplegingsvergoeding  van 
+
+700 euro, die verschuldigd is aan de verwerende partij. 
+
+‡AECUMEGBG-BEAGGFV‡ 
+
+XII-8859-17/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Dit arrest is uitgesproken te Brussel, in openbare terechtzitting van vier februari 
+
+tweeduizend twintig, door de Raad van State, XIIe kamer, samengesteld uit: 
+
+Pierre Barra, 
+
+staatsraad, 
+
+waarnemend voorzitter, 
+
+bijgestaan door 
+
+Greta Scheveneels, 
+
+griffier. 
+
+De griffier 
+
+De voorzitter 
+
+Greta Scheveneels 
+
+Pierre Barra 
+
+‡AECUMEGBG-BEAGGFV‡ 
+
+XII-8859-18/18 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

@@ -1,0 +1,1161 @@
+RAAD VAN STATE, AFDELING BESTUURSRECHTSPRAAK 
+
+VOORZITTER VAN DE XIIeVAKANTIEKAMER 
+
+In zake: 
+
+A R R E S T 
+
+nr. 248.080 van 23 juli 2020 
+in de zaak A. 231.146/XII-8923 
+
+de nv FRONTFORCE 
+bijgestaan en vertegenwoordigd door 
+advocaatNicky Van Laeken 
+kantoor houdend te 9150 Kruibeke 
+Bazelstraat 303-305 
+bij wie woonplaats wordt gekozen 
+
+tegen: 
+
+deHULPVERLENINGSZONE  VLAAMS-BRABANT  WEST
+bijgestaan en vertegenwoordigd door 
+advocaatBert Beelen 
+kantoor houdend te 3000 Leuven 
+Justus Lipsiusstraat 24 
+bij wie woonplaats wordt gekozen 
+
+--------------------------------------------------------------------------------------------------   
+
+I. Voorwerp van de vordering 
+
+1. 
+
+De vordering, ingesteld op 1 juli 2020, strekt tot de schorsing bij 
+
+uiterst dringende noodzakelijkheid van de tenuitvoerlegging van“de beslissing van 
+
+Brandweerzone Vlaams Brabant West dd. 08.06.2020 betreffende de gunning van 
+
+de overheidsopdracht tot aankoop van dispatching”. 
+
+II. Verloop van de rechtspleging 
+
+2. 
+
+De verwerende partij heeft een nota en een administratief dossier 
+
+ingediend. 
+
+De  partijen  zijn  opgeroepen  voor  de  terechtzitting,  die  heeft 
+
+plaatsgevonden op 16 juli 2020, om 11 uur. 
+
+XII-8923-1/15 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Staatsraad Johan Bovinheeft verslag uitgebracht. 
+
+Advocaat  Maarten  De  Feyter,  die  loco  advocaat  Nicky  Van 
+
+Laeken verschijnt voor de verzoekende partij, en advocaat Johan Vanstipelen, die   
+
+locoadvocaat Bert Beelen verschijnt voor de verwerende partij, zijn gehoord. 
+
+Eerste auditeur-afdelingshoofdAnn Eylenboschheeft een met dit 
+
+arrest eensluidend advies gegeven. 
+
+Er is toepassing gemaakt van de bepalingen op het gebruik der 
+
+talen,  vervat  in  titel  VI,  hoofdstuk  II,  van  de  wetten  op  de  Raad  van  State, 
+
+gecoördineerd op 12 januari 1973. 
+
+III. Feiten 
+
+3.1. 
+
+De verwerende partij schrijft een overheidsopdracht uit voor de 
+
+levering van software voor de „zonale dispatching‟.   
+
+De opdracht wordt gegund bij wijze van mededingingsprocedure 
+
+met onderhandeling. 
+
+3.2. 
+
+Op  2  december  2019  worden  door  het  zonecollege  uit  vijf 
+
+kandidaten drie ondernemingen geselecteerd en uitgenodigd tot het indienen van 
+
+een offerte: de nv Intergraph Belgium, de nv Ferranti Computer Systems en de bv 
+
+Verdi. 
+
+3.3. 
+
+Het  bijzonder  bestek  met  referte  2019-013  fase  2  “zone 
+
+dispatching” is toepasselijk.   
+
+De volgende gunningscriteria zijn van toepassing: 
+
+Nr. 
+1 
+
+Beschrijving 
+Prijs 
+Regel  van  drie;  Score  offerte  =  (prijs  laagste  offerte/prijs  offerte)  * 
+gewicht van het criterium prijs 
+
+Gewicht 
+40 
+
+XII-8923-2/15 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2 
+
+3 
+
+4 
+
+De prijs waarmee rekening gehouden wordt voor de berekening van de 
+zone: 
+-eenmalige kosten 
+-de jaarlijkse kosten op 5 jaar 
+Demo 
+De inschrijver geeft een demo. Voor meer uitleg wordt verwezen naar 
+de technische bepalingen. 
+De punten worden toegekend op basis van 
+
+30 
+
+-  Het  aantal  werkende  functionaliteiten  die  getoond 
+
+moeten worden 
+
+-  De gebruiksvriendelijkheid, bv. werken met slepen en 
+
+droppen in plaats van veel moeten klikken 
+
+-  De overzichtelijkheid van de schermen 
+
+De demo zal als volgt beoordeeld worden 
+
+-  Zeer slecht = 0 punten 
+-  Slecht = 6 punten 
+-  Matig = 12 punten 
+-  Goed = 18 punten 
+-  Zeer goed = 24 punten 
+-  Uitstekend = 30 punten 
+
+Op dit criterium dient de inschrijver minstens 60% te halen 
+Totaal van de functionaliteiten op 24 maanden 
+De functionaliteiten die operationeel moeten zijn op 24 maanden na de 
+voorlopige oplevering 
+Hiervoor  wordt  verwezen  naar  de  technische  bepalingen  van  het 
+bestek. Aan elke functionaliteit zal een gewicht toegekend worden. De 
+totale score wordt herleid naar een totaal op 20 punten 
+Dit onderdeel zal als volgt beoordeeld worden: 
+
+20 
+
+-  144 = 60% 
+-  144 tot 160 = 0 punten 
+-  161 tot 176 = 4 punten 
+-  177 tot 192 = 8 punten 
+-  193 tot 208 = 12 punten 
+-  209 tot 224 = 16 punten 
+-  225 tot 240 = 20 punten 
+
+Op dit criterium dient de inschrijver minstens 60 % te halen 
+Onderhoudscontract/ondersteuning 
+De  inschrijver  doet  een  voorstel  van  onderhoudscontract.  Voor  de 
+minimumeisen wordt verwezen naar de technische bepalingen 
+
+10 
+
+De aanbieder biedt een onderhoudscontract aan dat minimum voldoet 
+aan de eisen van hete bestek. Het aangeboden onderhoudscontract zal 
+als volgt beoordeeld worden: 
+
+-  Voorstel voldoet aan de minimumeisen zonder extra’s: 
+
+0 punten 
+
+-  Voorstel scoort op 3 tijden van de resolutie minimum 
+20% sneller dan de minimumeisen van het bestek: 2 
+punten 
+
+-  Voorstel scoort op 3 tijden van de resolutie minimum 
+40% sneller dan de minimumeisen van het bestek = 4 
+punten 
+
+XII-8923-3/15 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+De aanbieder geeft aan hoeveel procent van het onderhoudscontract 
+wordt geïnvesteerd in nieuwe ontwikkeling in functie van nieuwe noden, 
+wensen, technische ontwikkelingen, … 
+Dit onderdeel zal als volgt beoordeeld worden: 
+
+- 
+
+uit 
+
+die 
+
+alle 
+
+-  De  aanbieder  engageert  zich  om  de  tool  aan  te 
+passen aan de wettelijke veranderingen = 0 punten 
+-  De  aanbieder  zal  nieuwe  wensen  bespreken  in  een 
+werkgroep 
+klanten 
+bestaat 
+(hulpverleningszones).  Op  basis  van  de  grootste 
+gemene  deler  worden  er  aanpassingen  aan  de  tool 
+aangebracht = 1 punt 
+Indien  de  aanbieder  zich  engageert  jaarlijks  een 
+aantal  manuren  ter  beschikking  te  stellen,  zodat  de 
+tool  kan  aangepast  worden  aan  individuele  wensen 
+van  de  zone  dan  worden  de  volgende  punten 
+toegekend: 
+● 40 manuren = 2 punten 
+● 80 manuren = 3 punten 
+● 120 manuren = 4 punten 
+● 160 manuren = 5 punten 
+● 200 manuren = 6 punten 
+
+Totaal gewicht gunningscriteria: 
+
+100 
+
+De technische bepalingen waaraan de dispatching software dient 
+
+te beantwoorden zijn opgenomen in hoofdstuk 3 van het bestek. Aldaar zijn deze 
+
+technische bepalingen in tekstvorm weergegeven. Deze technische bepalingen zijn 
+
+overgenomen in de bijlage D van het bestek (vragenlijst technische bepalingen) in 
+
+tabelvorm.   
+
+In  de  technische  bepalingen  is  vermeldwelke  technische 
+
+functionaliteiten van het aangeboden systeem op de demo moeten kunnen worden 
+
+getoond (en dus al beschikbaar zijn op het aangeboden systeem ten tijde van de 
+
+demo).  Het  betreft  de  functionaliteiten  aangeduid  in  de  tekst  van  de  technische 
+
+bepalingen en de tabel van de bijlage D met *** (dus de onderstreepte 3 *** in 
+
+tegenstelling tot andere functionaliteiten die zijn aangeduid met *,** of ***). Dit 
+
+staat beschreven onder artikel III.1.7 van het bestek. 
+
+De beoordeling van de demo is het tweede gunningscriterium. 
+
+Het  derde  gunningscriterium  betreft  de  beoordeling  van  de 
+
+functionaliteiten op 24 maanden. Het bestek laat toe dat bepaalde functionaliteiten 
+
+van het aangeboden systeem op het moment van indiening van de offerte nog niet 
+
+XII-8923-4/15 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+voorhanden  zijn  maar  wel  uiterlijk  24  maanden  na  de  sluiting  van  de  opdracht 
+
+dienente  zijngerealiseerd.  Dit  wordt  beschreven  onder  artikel  III.1.7  van  het 
+
+bestek: 
+
+“De  aanbieder  geeft  aan  welke  van  de  gevraagde  functionaliteiten  bij 
+installatie reeds beschikbaar zullen zijn en welke functionaliteiten in een 
+later stadium worden bijgevoegd. Uiterlijk 24 maanden na de sluiting van 
+de opdracht zijn alle functionaliteiten beschikbaar. De aanbieder beschrijft 
+hiervoor zijn roadmap. In het bestek staat aan de hand van sterren ***/**/* 
+de  prioriteit  van  de  functionaliteiten  aangegeven.  De  functionaliteiten 
+waarvan de sterren onderlijnd zijn (***), moeten aangetoond worden op de 
+demo.” 
+
+Artikel III.8 van het bestek bepaalt voorts: 
+
+“De aanbieder start de demo met een algemene voorstelling van zijn tool. 
+Daarna  worden  de  gevraagde  functionaliteiten  getoond  die  in  het  bestek 
+aangeduid  zijn  met  ***,  zie  specifieke  lijst.  De  functionaliteiten  worden 
+gedemonstreerd  in  een  effectief  werkende  tool  door  het  simuleren  van 
+interventies.” 
+
+Artikel III.9 van het bestek luidt: 
+
+“De  aanbieder  beschrijft  in  zijn  offerte  welke  functionaliteiten  met  één, 
+twee of drie sterren in zijn tool aanwezig zullen zijn en tegen wanneer. 
+De aanbieder mag eveneens extra functionaliteiten aanbieden. 
+Alle  beloofde  functionaliteiten  aangeduid  in  het  bestek  met  drie  sterren 
+moeten beschikbaar zijn na de testfase (zie migratietraject). 
+Alle  beloofde  functionaliteiten  aangeduid  in  het  bestek  met  twee  sterren 
+moeten beschikbaar zijn na 12 maanden. Deze termijn start de dag na de 
+sluiting van de opdracht. 
+Alle beloofde functionaliteiten aangeduid in het bestek met één ster moeten 
+beschikbaar zijn na 24 maanden. Deze termijn start de dag na de sluiting 
+van  de  opdracht,  tenzij  anders  werd  overeengekomen  tijdens  de 
+onderhandelingsfase. 
+In de tabel van Bijlage D wordt aan de verschillende functionaliteiten een 
+weging  gegeven.  De  functionaliteiten  met  de  vermelding  „minimumeis‟ 
+moeten aangeboden worden. 
+Dit  onderdeel  zal  als  volgt  beoordeeld  worden,  in  functie  van  de  totale 
+weging van de aangeboden functionaliteiten: 
+De totale weging wordt als volgt omgezet: 
+- 144 = 60% 
+- 144 tot 160 = 0 punten   
+- 161 tot 176 = 4 punten   
+
+XII-8923-5/15 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+- 177 tot 192 = 8 punten   
+- 193 tot 208 = 12 punten   
+- 209 tot 224 = 16 punten   
+- 225 tot 240 = 20 punten”. 
+
+In  de  tabel  van  de  bijlage  D  van  het  bestek  zijn  de 
+
+functionaliteiten voorzien van een bepaalde weging. 
+
+3.4. 
+
+Op 31 december 2019 worden de activiteiten van de bedrijfstak 
+
+“Frontforce” van de nv Ferranti Computer Systems overgenomen door haar 100% 
+
+dochtervennootschap,  de  nv  Frontforce.  De  voorwaarden  opgelegd  in  de 
+
+selectieleidraad voor de kandidaatstelling worden opnieuw gecontroleerd. De nv 
+
+Frontforce voldoet aan alle voorwaarden. 
+
+3.5. 
+
+3.6. 
+
+De nv Frontforce en de bv Verdi dienen een offerte in.   
+
+Op 2 maart 2020 geeft de bv Verdi een demo. Na de demo wordt 
+
+er onderhandeld met de bv Verdi. 
+
+Op 12 maart 2020 geeft de nv Frontforce een demo. Na de demo 
+
+wordt er onderhandeld met de nv Frontforce. 
+
+3.7. 
+
+De  nv  Frontforce  en  de  bv  Verdi  dienen  op  20  april  2020  een 
+
+BAFO in.   
+
+3.8. 
+
+Het  verslag  van  nazicht  van  de  offertes  wordt  opgesteld  op 
+
+26 mei 2020.   
+
+De offerte van de bv Verdi scoort 87,11/100; de offerte van de nv 
+
+Frontforce scoort 80/100. 
+
+In het verslag wordt voorgesteldom de opdracht te gunnen aan de 
+
+bv Verdi.   
+
+3.9. 
+
+Verdi.   
+
+Op  8  juni  2020  gunt  het  zonecollege  de  opdracht  aan  de  bv 
+
+XII-8923-6/15 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Dit is de bestreden beslissing. 
+
+3.10. 
+
+Bij  aangetekendebrief  en  per  e-mailbericht  van  16  juni  2020 
+
+wordt de verzoekende partij ervan in kennis gesteld dat de opdracht niet aan haar is 
+
+gegund. 
+
+bijgevoegd. 
+
+Het  verslag  van  nazicht  van  de  offertes  en  zijn  bijlagen  zijn 
+
+IV. Regelmatigheid van de rechtspleging 
+
+4. 
+
+De  verzoekende  partij  heeft  een  antwoordnota  ingediend.  Dit 
+
+stuk,  dat  nietis  voorgeschreven  in  de  procedureregeling,  wordt  slechts  bij  de 
+
+beoordeling van devordering betrokken in de mate dat het de neerslag is van de 
+
+mondelingeuiteenzetting ter terechtzitting. 
+
+V. Schorsingsvoorwaarden 
+
+5.1. 
+
+Krachtens artikel 17, §§ 1 en 4, van de gecoördineerde wetten op 
+
+de Raad van State kan tot schorsing van de tenuitvoerlegging bij uiterst dringende 
+
+noodzakelijkheid  slechts  worden  besloten  onder  de  dubbele  voorwaarde  dat 
+
+minstens één ernstig middel wordt aangevoerd dat de nietigverklaring van de akte 
+
+of  het  reglement  prima  facie  kan  verantwoorden  en  dat  een  uiterst  dringende 
+
+noodzakelijkheid voorhanden is die onverenigbaar is met de behandelingstermijn 
+
+van de gewone vordering tot schorsing. 
+
+5.2. 
+
+Te dezen is evenwel ook de wet van 17 juni 2013 „betreffende de 
+
+motivering,  de  informatie  en  de  rechtsmiddelen  inzake  overheidsopdrachten, 
+
+bepaalde  opdrachten  voor  werken,  leveringen  en  diensten  en  concessies‟  van 
+
+toepassing. 
+
+Krachtens  artikel  15,  eerste  lid,  van  die  wet  kan  de  uitvoering 
+
+worden  geschorst  van  de  thans  bestreden  beslissing  in  aanwezigheid  van  een 
+
+ernstig middel of een klaarblijkelijke onwettigheid. 
+
+XII-8923-7/15 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Overeenkomstig  artikel  15,  tweede  lid,  echter  wordt  de 
+
+vordering tot schorsing voor de Raad van State uitsluitend ingesteld volgens een 
+
+procedure bij uiterst dringende noodzakelijkheid. 
+
+Er  dient  te  dezen  dan  ook  enkel  nog  te  worden  onderzocht  of 
+
+minstens  één  ernstig  middel  wordt  aangevoerd,  dan  wel  een  klaarblijkelijke 
+
+onwettigheid  aanwezig 
+
+is,  die  de  nietigverklaring  van  de  bestreden 
+
+beslissingkunnen verantwoorden. 
+
+VI. Onderzoek van de middelen 
+
+A. Eerste middel   
+
+Uiteenzetting van het middel   
+
+6. 
+
+De verzoekende partij voert in een eerste middel de schending 
+
+aan van de wet van 29 juli 1991 „betreffende de uitdrukkelijke motivering van de 
+
+bestuurshandelingen‟  (hierna:  formelemotiveringswet)  doordat  de  bestreden 
+
+beslissing  niet  afdoende  is  gemotiveerd.  Met  verwijzing  naar  een  arrest  van  het 
+
+Hof van Cassatie (Cass. 25 september 2003, C030026N/1) betoogt de verzoekende 
+
+partij dat de motieven in de akte of beslissing zelf moeten worden opgenomen en er 
+
+geen  rekening  kan  worden  gehouden  met  motieven  die  in  andere  stukken 
+
+voorkomen.“De enkele opgave van het niet voldoen aan de beste prijs-kwaliteit is 
+
+te algemeen, te vaag en kan niet worden aanzien als een afdoende motivering. De 
+
+feitelijke gegevens die ertoe geleid hebben om tot de beslissing tot niet gunning 
+
+over te gaan worden er niet vermeld”. 
+
+Beoordeling 
+
+7. 
+
+Krachtens  artikel  3  van  de  formelemotiveringswet  moet  de 
+
+opgelegde  motivering  in  de  akte  de  juridische  en  feitelijke  overwegingen 
+
+vermelden die aan de beslissing ten grondslag liggen en moet zij afdoende zijn. In 
+
+tegenstelling tot hetgeen de verzoekende partij betoogt mag daarbij ook rekening 
+
+worden gehouden met motieven die in andere stukken voorkomen, op voorwaarde 
+
+dat  daarnaar  wordt  verwezen  in  de  beslissing  zelf,  dat  deze  door  de  betrokkene 
+
+XII-8923-8/15 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+gekend zijn en op hun beurt afdoende gemotiveerd en niet tegenstrijdig zijn (Cass. 
+
+12 oktober 2015, S.13.0026.N/4).Het arrest waarnaar de verzoekende partij in het 
+
+verzoekschrift  verwijst,  namelijk  het  arrest  van  25  september  2003, 
+
+C030026N/1,heeft  overigens  geen  betrekking  op  de 
+
+toepassing  van  de 
+
+formelemotiveringswet. 
+
+8. 
+
+De bestreden beslissing steunt op “de kwalitatieve selectie van 
+
+de inschrijvingen, het regelmatigheidsonderzoek van de offertes en de vergelijking 
+
+van de offertes”, die zijn terug te vinden in het verslag van nazicht van de offertes 
+
+en de bijbehorende bijlagen diealsbijlage bij de bestreden beslissing zijn gevoegd 
+
+en er integraal deel van uitmaken en die blijkens het dossier mede ter kennis zijn 
+
+gebracht van de verzoekende partij. 
+
+Het  betoog  van  de  verzoekende  partij  dat  niet  zou  zijn 
+
+aangetoond dat de verzoekende partij het verslag van nazicht van de offertes en de 
+
+bijbehorende  bijlagen  ook  effectief  heeft  ontvangen,  strookt  op  het  eerste 
+
+gezichtniet  met  het  administratief  dossier  en  meer  bepaald  met  het  stuk  12 
+
+bevattende de aangetekende brief van 16 juni 2020 waarbij de bestreden beslissing 
+
+aan de verzoekende partij ter kennis wordt gebracht en met stuk 14 bevattende het 
+
+e-mailbericht  van  16  juni  2020,  waaruit  blijkt  dat  debijgevoegde  PDF-files  het 
+
+verslag van nazicht en de bijlagen ervan omvatten.Overigens blijkt de kennis van 
+
+die motieven door de verzoekende partij uit de inhoudelijke argumentatie die zij in 
+
+haar tweede middel ontwikkelt. 
+
+9. 
+
+Het eerste middel is niet ernstig. 
+
+B. Tweede middel 
+
+Uiteenzetting van het middel   
+
+10. 
+
+De verzoekende partij voert in een tweede middel de schending 
+
+aan  van  artikel  16  van  de  wet  van  24  december  1993  „betreffende  de 
+
+overheidsopdrachten  en  sommige  opdrachten  voor  aanneming  van  werken, 
+
+leveringen en diensten‟ (hierna: wet van 24 december 1993), artikel 115, §1, van 
+
+het koninklijk besluit van 8 januari 1996 „betreffende de overheidsopdrachten voor 
+
+XII-8923-9/15 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+aanneming  van  werken,  leveringen  en  diensten  en  de  concessies  voor  openbare 
+
+werken‟(hierna:  koninklijk  besluit  van  8  januari  1996),  het  grondwettelijk  en 
+
+Europees 
+
+beginsel 
+
+van 
+
+de 
+
+gelijkheid 
+
+der 
+
+inschrijvers, 
+
+de 
+
+materiëlemotiveringsplicht en de zorgvuldigheidsplicht. 
+
+De verzoekende partij betoogt in dit middel in essentie dat beide 
+
+inschrijvers niet gelijkwaardig werden behandeld in de beoordeling van een aantal 
+
+functionaliteiten,  minstens  zoude  niet-gelijke  behandeling  niet  afdoende  zijn 
+
+gemotiveerd door de verwerende partij. Zijdringt aan op een herberekening van de 
+
+punten  omtrent  een  aantal  functionaliteiten,  omdat  volgens  haar  verschillende 
+
+maatstaven  zouden  zijn  gehanteerd  bij  het  beoordelen  van  de  demo‟s  en  de 
+
+offertes: 
+
+“Volgende punten dienen gecorrigeerd te worden: 
+
+-  1.5.1 cliëntapplicatie voor de operator en achterliggende motoren 
+
+Eis 15-b; 1 punt 
+
+-  1.5.2 cliëntapplicatie voor de operator en achterliggende motoren 
+
+eis 20-f: 5 punten 
+
+-  Gebruikersinterfaces  eis  3  website  –  11  personeelsgegevens 
+
+aanpassen: 0,625 punten 
+
+-  1.5.5  gebruikersinterfaces  eis  3  website  –  14  voertuig  wisselen: 
+
+0,75 punten 
+
+-  1.5.6 periferie 3 interventieblad – b: 1,282 punten 
+
+Daarnaast  werden  in  de  demo  een  aantal  functionaliteiten  wel  volledig 
+getoond  in  tegenstelling  tot  wat  in  de  gemotiveerde  onderbouwing  en 
+gunningsbeslissing  wordt  weergegeven.  Bijgevolg  dient  de  beoordeling 
+aangepast te worden. 
+Het gaat om volgende functionaliteiten: 21, 31 en 36. 
+Wat betreft de gebruiksvriendelijkheid dienen eveneens een aantal zaken te 
+worden aangepast: 
+
+- 
+
+in 
+
+het 
+
+m.b.t. 
+
+gunningsverslag 
+
+„Vooralarm/alarm/einde  alarm‟:  De  gemotiveerde  onderbouwing 
+de 
+opgegeven 
+gebruiksvriendelijkheid  is  gerelateerd  aan  het  beheer  van  deze 
+functionaliteit. Echter stelt de te beoordelen eis: „de operator kan bij 
+een  interventie  al  dan  niet  reeds  in  uitvoering.  Het  gaat  hier  dus 
+duidelijk over de gebruiksvriendelijkheid voor de operator en niet 
+de beheerder. De gemotiveerde onderbouwing voor de toekenning 
+van  de  punten  die  voor  dit  punt  werd  gegeven 
+in  het 
+gunningsverslag  is  hier  niet  van  toepassing.  De  gemotiveerde 
+onderbouwing is bijgevolg incorrect. 
+
+- 
+
+„de  operator  kan  verschillende  kaartlagen 
+raadplegen  en 
+selecteren‟:  De  gemotiveerde  onderbouwing  voor  de  toekenning 
+
+XII-8923-10/15 
+
+ 
+ 
+ 
+ 
+ 
+ 
+- 
+
+- 
+
+van  de  punten  op  het  onderdeel  gebruiksvriendelijkheid  heeft 
+betrekking op de beheerder die periodiek de kaarten aanpast. Echter 
+de  te  beoordelen  eis  in  het  bestek  stelt:  „de  operator  heeft  steeds 
+duidelijk zicht op de GIS-tool‟. Het gaat hier dus duidelijk over de 
+gebruiksvriendelijkheid voor de operator en niet over de beheerder. 
+De gemotiveerde onderbouwing voor de toekenning van de punten 
+die voor dit punt werd gegeven in het gunningsverslag is hier niet 
+van  toepassing.  De  gemotiveerde  onderbouwing  is  bijgevolg 
+incorrect. 
+„functies  persoonsgebonden 
+en  postgebonden‟:  Frontforce 
+Emergency  biedt  de  mogelijkheid  om  functies  persoonsgebonden 
+en  postgebonden  te  maken  zoals  geëist  in  het  bestek.  De 
+verwachting van HVZ Vlaams-Brabant West is echter dat men per 
+persoon kan aangeven welke functies hij per post heeft. Dit is nu 
+niet  het  geval  en  was  bij  Verdi  wel  het  geval.  Echter  geeft 
+Frontforce aan dat er enkel beoordeeld kan en mag worden op basis 
+van wat er staat en niet wat men er graag had gezien… Aangezien 
+dit functionaliteit is met 2 sterren moet dit maar opgeleverd worden 
+12 maanden na gunning en kan dit volgens het bestek onmogelijk 
+meetellen in de beoordeling van de demo vereisten en dus bijgevolg 
+niet onder deze demo eis. De gemotiveerde onderbouwing voor de 
+toekenning van de punten op dit onderdeel waar gesteld werd dat de 
+functionaliteit niet getoond werd, is bijgevolg incorrect aangezien 
+ze niet beoordeeld had mogen worden. 
+„app  overzicht‟:  De  gemotiveerde  onderbouwing  voor  de 
+toekenning van de punten op dit onderdeel heeft betrekking op het 
+volgende  punt  in  de  vereisten  (20  f):  „een  persoon  moet  kunnen 
+beschikbaar  zijn  voor  meerdere  posten  gelijktijdig  met  eventueel 
+een 
+dit 
+functionaliteit is met 2 sterren moet dit maar opgeleverd worden 12 
+maanden  na  gunning  en  kan  dit  volgens  het  bestek  onmogelijk 
+meetellen in de beoordeling van de demo vereisten en dus bijgevolg 
+niet onder deze demo eis. Het betreft hier een inconsistentie van het 
+bestek waarmee de beoordelingscommissie rekening had dienen te 
+houden.” 
+
+beschikbaarheidniveau.  Aangezien 
+
+verschillend 
+
+Beoordeling 
+
+11. 
+
+Voor zover  in  het  middel de schending  wordt  aangevoerd van 
+
+artikel 16 van de wet van 24 december 1993 en artikel 115, § 1, van het koninklijk 
+
+besluit van 8 januari 1996, faalt het middel naar recht. Beide bepalingen zijn met 
+
+ingang van 1 juli 2013 opgeheven, bij, eensdeels, artikel 78 van de wet van 15 juni 
+
+2006  „overheidsopdrachten  en  bepaalde  opdrachten  voor  werken,  leveringen  en 
+
+diensten‟,  zelf  opgeheven  bij  artikel  190  van  de  wet  van  17  juni  2016  „inzake 
+
+overheidsopdrachten‟ en, anderdeels, bij artikel 5, 1° van het koninklijk besluit van 
+
+XII-8923-11/15 
+
+ 
+ 
+ 
+ 
+2  juni  2013  „tot  bepaling  van  de  datum  van  inwerkingtreding  van  de  wet 
+
+overheidsopdrachten en bepaalde opdrachten voor werken, leveringen en diensten 
+
+van 15 juni 2006 en van de koninklijke uitvoeringsbesluiten ervan‟. 
+
+In haar antwoord op de nota van de verwerende partij verwijst de 
+
+verzoekende partij naar artikel 4, eerste lid, van de wet van 17 juni 2016 „inzake 
+
+overheidsopdrachten‟, dat luidt: 
+
+“De  aanbesteders  behandelen  de  ondernemers  op  gelijke  en 
+niet-discriminerende  wijze  en  handelen  op  een 
+transparante  en 
+proportionele wijze.”   
+
+Nu niet blijkt dat de vermelding in de aanhef van het middel van 
+
+inmiddels opgeheven bepalingen de verwerende partij heeft belet een verweer te 
+
+ontwikkelen  met  betrekking  tot  het  eveneens  als  geschonden  aangevoerde 
+
+gelijkheidsbeginsel,  zorgvuldigheidsbeginsel  en  de  materielemotiverings- 
+
+verplichting, wordt het middel in die matenader onderzocht. 
+
+12. 
+
+In  de  eerste  plaats  wordt  opgemerkt  dat  het  betoog  van  de 
+
+verzoekende  partij  niet  gestructureerd  is  en  weinig  concreet  onderbouwd.  De 
+
+verzoekende partij formuleert een aantal losse grieven, waarbij zonder toelichting 
+
+van  de  verwerende  partij  prima  facieniet  altijd  duidelijk  is  of  het  gaat  om 
+
+functionaliteiten die in het kader van de beoordeling van het tweede of het derde 
+
+gunningscriterium aan bod zijn gekomen en  waarbij  de verzoekende partij  zelfs 
+
+geen  poging  onderneemt  om  aannemelijk  te  maken  dat  een  herberekening  van 
+
+punten zou toelaten de rangschikking in haar voordeel om te buigen. 
+
+Voorts  wordt  algemeen  opgemerkt  dat,  anders  dan  in  het 
+
+inleidend  verzoekschrift,  de  verzoekende  partij  een  en  ander  voor  het  eerst 
+
+concreet  tracht  uit  te  klaren  in  haar  antwoord  op  de  nota  van  de  verwerende 
+
+partij.Zulks  lijkt  alleszins  het  geval  wat  de  vijf  functionaliteiten  betreft  die  de 
+
+verzoekende  partij  op  bladzijde  5  van  haar  verzoekschrift  louter  opsomt,  en  die 
+
+zoals de verwerende partij toelicht in haar nota, alle aan bod zijn gekomen in het 
+
+kader  van  de  beoordeling  van  het  gunningscriterium  3,  en  waarvoor  de 
+
+verzoekende  partijzonder  meer  een  herberekening  van  de  puntenwenstzonder 
+
+XII-8923-12/15 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+evenweluit 
+
+te 
+
+leggen  waarom.  Het  verzoekschrift  bevat  geen  enkele 
+
+argumentatiewaarom de beoordeling weergegeven in bijlage 3 bij het verslag van 
+
+nazicht  bij  de  betrokken  functionaliteiten  niet  correct  zou  zijn.  De  verzoekende 
+
+partij kan dit euvel niet meer op ontvankelijke wijze nadien remediërendoor in een 
+
+antwoord op de nota van de verwerende partij voor het eerst aan te geven waarom 
+
+deze volgens haar niet correct werden beoordeeld. 
+
+Dit geldt ook voor de functionaliteiten 21, 31 en 36waarvan de 
+
+verzoekende partij in het verzoekschrift in essentie louter beweert dat deze “wel 
+
+volledig  [werden]  getoond  [tijdens  de  demo]  in  tegenstelling  tot  wat  in  de 
+
+gemotiveerde onderbouwing en gunningsbeslissing wordt weergegeven”.   
+
+Wat 
+
+de 
+
+functionaliteiten 
+
+„functies 
+
+postgebonden 
+
+en 
+
+persoonsgebonden‟ en „app.overzicht‟betreft, die in “bijlage 1 bij het verslag van 
+
+nazicht:  beoordeling  demo”  functionaliteiten  31  en  36  betreffen,  komt  haar 
+
+kritiekin  haar  verzoekschrift,  hiervoor  geciteerd,  erop  neer  dat  deze 
+
+functionaliteiten  maar  moeten  worden  opgeleverd  12  maanden  na  gunning  en 
+
+dezealdus volgens het bestek onmogelijk mogenmeetellen in de beoordeling van 
+
+de demovereistenbij het tweede gunningscriterium.De verzoekende partij gaat er 
+
+hierbij van uit dat dit functionaliteitenzijn met 2 sterren, maar met de verwerende 
+
+partij begrijpt de Raad niet “waarom de verzoekende partij meent dat [...][dit] niet 
+
+mocht  worden  beoordeeld  in  het  kader  van  de  demo  terwijl  dit  nochtans  een 
+
+functionaliteit is met *** die aldus moest kunnen worden getoond in het kader van 
+
+de demo”. Immers de uitleg van functionaliteit 31in de voormelde bijlage 1 stemt 
+
+overeen  met  die  van  bestekseis  21,  a),  bij  “Clientapplicatie  voor  de  operator  en 
+
+achterliggende motoren” van het bestek (blz. 81 van het bestek) en die van 36 in de 
+
+voormelde bijlage 1 met die van bestekseis 2b bij “Gebruikersinterfaces” (blz. 87 
+
+van het bestek), telkens functionaliteiten met ***. 
+
+Functionaliteit  21,  waarbij  de  verzoekende  partij  in  haar 
+
+verzoekschrift geen enkele uitleg geeft doch die zij in haar antwoord op de nota 
+
+van de verwerende partij omschrijft als “Voertuigen met actuele status en de tijd 
+
+waarop” en waarbij zij stelt dat de “tijd waarop” hier incorrect werd beoordeeld als 
+
+de  “tijd  hoelang”,  lijkt  zij  voorbij  te  gaan  aan  bestekseis  12,  h),  waarin  wordt 
+
+XII-8923-13/15 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+gevraagd: “een overzicht van de ingezette voortuigen bij deze interventie met hun 
+
+actuele voertuigstatus en de tijd hoelang men reeds op deze status staat”. 
+
+Wat de functionaliteiten „Vooralarm/alarm/einde alarm‟ en „de 
+
+operator  kan  verschillende  kaartlagen  raadplegen  en  selecteren‟  betreft,  die  in 
+
+“bijlage 1 bij het verslag van nazicht: beoordeling demo” functionaliteiten 12 en 25 
+
+zijn, bekritiseert de verzoekende partij in haar verzoekschrift in essentie het feit dat 
+
+de verwerende partij die eisen (ook) heeft beoordeeld vanuit het perspectief van de 
+
+gebruiksvriendelijkheid  voor  de  beheerder,  terwijl  het  te  beoordelen  aspect 
+
+volgens haar enkel de gebruiksvriendelijkheid voor de operator zou mogen zijn. De 
+
+verwerende partij lijkt evenwel prima facie te kunnen worden bijgevallen in haar 
+
+stellingdat  het  bestek  zich  niet  lijkt  te  verzetten  tegen  een  beoordeling  van  de 
+
+gebruiksvriendelijkheid niet alleen voor de operator (dispatcher), maar ook voor de 
+
+andere gebruikers zoals de planner, de officier en de beheerder.   
+
+Ten  slotte  is  de  weinige  inhoudelijke  argumentatie  die  de 
+
+verzoekende  partij  formuleert  in  het  inleidend  verzoekschrift  niet  meteen  van 
+
+dieaardom  prima 
+
+facieeen  ongelijke  behandeling,  onzorgvuldigheid  of 
+
+ondeugdelijke  motivering  in  hoofde  van  de  verwerende  partij  aannemelijk  te 
+
+maken.  Veelal  lijken  de  argumenten  van  de  verzoekende  partij  te  getuigen  van 
+
+eigen inzichten in de draagwijdte van de besteksbepalingen en de mate waarin haar 
+
+offerte daaraan zou beantwoorden, waardoor eerder lijkt te worden aangestuurd op 
+
+een eigen appreciatie door de Raad, hetgeen zijn rechtmatigheidstoezicht te buiten 
+
+zou gaan. 
+
+13. 
+
+Het tweede middel is niet ernstig. 
+
+VII. Besluit 
+
+14. 
+
+Geen van beide middelen is ernstig gebleken. De vordering tot 
+
+schorsing  bij  uiterst  dringende  noodzakelijkheid  dient  dan  ook  te  worden 
+
+verworpen. 
+
+XII-8923-14/15 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BESLISSING 
+
+1. De Raad van State verwerpt de vordering.   
+
+2. De verzoekende partij wordt verwezen in de kosten van de vordering tot 
+
+schorsing  bij  uiterst  dringende  noodzakelijkheid,  begroot  op  een  rolrecht 
+
+van200  euro,  een  bijdrage  van  20  euroen  een rechtsplegingsvergoeding  van 
+
+700 euro, die verschuldigd is aan de verwerende partij. 
+
+Dit arrest is uitgesproken te Brussel, in openbare terechtzitting van drieëntwintig 
+
+juli 
+
+tweeduizend 
+
+twintig,  door  de  Raad  van  State,  XIIe vakantiekamer, 
+
+samengesteld uit: 
+
+Johan Bovin, 
+
+staatsraad,waarnemend voorzitter, 
+
+bijgestaan door 
+
+Joris Casneuf, 
+
+griffier. 
+
+De griffier 
+
+De voorzitter 
+
+Joris Casneuf 
+
+Johan Bovin 
+
+XII-8923-15/15 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

@@ -1,0 +1,142 @@
+# Phase 1 static site build and GitHub Pages deployment.
+#
+# What this job does:
+#   1. Checks out this repo and the public data repo (niels-tack/legal_decisions).
+#   2. Builds cases.db (BM25-only, no embeddings - Phase 1 only).
+#   3. Generates one static HTML page per ruling with src.site.build_site.
+#   4. Builds the Vite frontend (TypeScript → JS bundle + CSS, with cases.db
+#      and cases/ pages already in frontend/public/ so Vite copies them into
+#      dist/ as static assets).
+#   5. Uploads the dist/ directory as a GitHub Pages artifact and deploys it.
+#
+# Triggers:
+#   - Manual (workflow_dispatch) - use this for the first deploy or after
+#     fixing a workflow/code issue.
+#   - Weekly schedule (Tuesday 04:00 UTC) - runs the day after the Phase 2
+#     build-index.yml job so Phase 1 always reflects the latest corpus.
+#   - Any push to main that touches code (src/, frontend/) or this workflow -
+#     keeps the Pages site in sync with code changes even between data updates.
+#
+# No Scaleway secrets are required for Phase 1 - the artifact goes to GitHub
+# Pages only.
+
+name: Build and deploy Phase 1 static site
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "0 4 * * 2"  # Tuesday 04:00 UTC, after Monday ingestion + Phase 2 build
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/publish-pages.yml"
+      - "src/**"
+      - "frontend/**"
+      - "pyproject.toml"
+      - "uv.lock"
+
+# Allow one concurrent Pages deployment; don't cancel in-progress deploys.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+# Permissions required by actions/deploy-pages and actions/upload-pages-artifact.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+env:
+  DATA_REPO_PATH: data-repo
+  MARKDOWN_SUBPATH: Constitutional_Court_Belgium/NL
+  DB_PATH: frontend/public/cases.db
+  CASES_OUT_DIR: frontend/public/cases
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@v4
+
+      - name: Checkout legal_decisions data repository
+        uses: actions/checkout@v4
+        with:
+          repository: niels-tack/legal_decisions
+          path: ${{ env.DATA_REPO_PATH }}
+          # Public repository - no token needed.
+
+      - name: Install uv and Python
+        uses: astral-sh/setup-uv@v9
+        with:
+          python-version: "3.13"
+          enable-cache: true
+
+      - name: Install Python dependencies (core only, no embeddings extra)
+        run: uv sync --locked
+
+      - name: Resolve and validate Markdown source directory
+        id: markdown
+        run: |
+          set -euo pipefail
+          MARKDOWN_DIR="${DATA_REPO_PATH}/${MARKDOWN_SUBPATH}"
+          # Create the directory if it doesn't exist yet (empty data repo is
+          # valid during bootstrapping - build_index handles an empty dir
+          # gracefully and produces a valid, empty cases.db).
+          mkdir -p "$MARKDOWN_DIR"
+          FILE_COUNT=$(find "$MARKDOWN_DIR" -maxdepth 1 -name '*.md' | wc -l)
+          echo "markdown_dir=${MARKDOWN_DIR}" >> "$GITHUB_OUTPUT"
+          echo "file_count=${FILE_COUNT}" >> "$GITHUB_OUTPUT"
+          echo "Found ${FILE_COUNT} Markdown ruling(s) in ${MARKDOWN_DIR}."
+
+      - name: Build cases.db (Phase 1, BM25 only)
+        run: |
+          set -euo pipefail
+          mkdir -p "$(dirname ${{ env.DB_PATH }})"
+          uv run python -m src.indexing.build_index \
+            --markdown-dir "${{ steps.markdown.outputs.markdown_dir }}" \
+            --db-path "${{ env.DB_PATH }}"
+          echo "cases.db built: $(du -sh ${{ env.DB_PATH }} | cut -f1)"
+          echo "Rulings indexed: ${{ steps.markdown.outputs.file_count }}"
+
+      - name: Generate per-case HTML pages
+        run: |
+          set -euo pipefail
+          mkdir -p "${{ env.CASES_OUT_DIR }}"
+          uv run python -m src.site.build_site \
+            --markdown-dir "${{ steps.markdown.outputs.markdown_dir }}" \
+            --out-dir "${{ env.CASES_OUT_DIR }}"
+          PAGE_COUNT=$(find "${{ env.CASES_OUT_DIR }}" -name '*.html' | wc -l)
+          echo "Generated ${PAGE_COUNT} case page(s)."
+
+      - name: Install frontend npm dependencies
+        run: npm --prefix frontend ci
+
+      - name: Build frontend (Vite)
+        # VITE_SEARCH_BACKEND defaults to "local" (client-side SQLite provider)
+        # when not set - correct for Phase 1.
+        run: npm --prefix frontend run build
+
+      - name: Report artifact size
+        run: |
+          echo "frontend/dist size:"
+          du -sh frontend/dist
+          echo ""
+          echo "Breakdown:"
+          du -sh frontend/dist/* 2>/dev/null || true
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: frontend/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

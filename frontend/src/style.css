@@ -1,0 +1,371 @@
+/*
+ * Design tokens: the entire visual system in one place (colors, spacing,
+ * type scale, radii). Keeping the "component inventory" small and the
+ * tokens centralized is what keeps a framework-free UI maintainable as it
+ * grows - see the component list this build follows: search box, filters,
+ * example queries, result card, badge, pagination, section nav (reader
+ * page), copy button, and three state screens (loading/empty/error).
+ */
+:root {
+  color-scheme: light;
+
+  /* Color: one confident accent, restrained neutrals - not a marketing palette. */
+  --color-text: #16181d;
+  --color-text-muted: #565d6b;
+  --color-border: #d8dce2;
+  --color-border-strong: #b7bfca;
+  --color-surface: #ffffff;
+  --color-surface-subtle: #f6f7f9;
+  --color-accent: #0b4a7a;
+  --color-accent-strong: #08355a;
+  --color-highlight-bg: #eaf2fa;
+  --color-mark-bg: #fff1a8;
+  --color-badge-outcome-bg: #eaf5ec;
+  --color-badge-outcome-text: #1e5e2f;
+  --color-focus-ring: #1a6ec7;
+
+  /* Type scale: this UI is ~90% typography, so it carries most of the design. */
+  --font-sans: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.375rem;
+  --font-size-xl: 1.75rem;
+  --line-height-base: 1.55;
+  --measure: 42rem; /* ~70-80 characters at --font-size-base */
+
+  /* Spacing scale. */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2.5rem;
+
+  --radius: 0.4rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-text);
+  background: var(--color-surface);
+}
+
+.page {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4) var(--space-6);
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  margin: 0 0 var(--space-2);
+}
+
+.privacy-note {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  margin: 0 0 var(--space-5);
+}
+
+/* Search: the homepage. No hero, no marketing chrome - the box is the page. */
+.search-form {
+  margin-bottom: var(--space-5);
+}
+
+#query-input {
+  width: 100%;
+  font-size: var(--font-size-md);
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius);
+  color: var(--color-text);
+}
+
+.search-form button[type="submit"] {
+  margin-top: var(--space-3);
+  padding: 0.55rem 1.4rem;
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--color-accent);
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-form button[type="submit"]:hover {
+  background: var(--color-accent-strong);
+}
+
+.query-guidance {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin: var(--space-2) 0 0;
+}
+
+.example-queries {
+  margin-top: var(--space-3);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.example-queries-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.example-query {
+  font-size: var(--font-size-sm);
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--color-border-strong);
+  border-radius: 999px;
+  background: var(--color-surface-subtle);
+  color: var(--color-accent);
+  cursor: pointer;
+}
+
+.example-query:hover {
+  background: var(--color-highlight-bg);
+}
+
+.filters {
+  margin-top: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-3) var(--space-4) var(--space-4);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.filters legend {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  padding: 0 var(--space-1);
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  gap: var(--space-1);
+}
+
+.filters input,
+.filters select {
+  font: inherit;
+  color: var(--color-text);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius);
+  padding: 0.3rem 0.5rem;
+}
+
+/* Honest system states: this is most of the perceived UX quality for a
+   static-search app, so these get real visual weight, not an afterthought. */
+.status {
+  color: var(--color-text-muted);
+  min-height: 1.3rem;
+  margin: var(--space-2) 0;
+}
+
+.handoff {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin: var(--space-4) 0;
+}
+
+/* An author `display` rule always wins over the UA's `[hidden] { display:
+   none }` default at equal specificity - without this, `.handoff[hidden]`
+   would still render as a flex box. */
+.handoff[hidden] {
+  display: none;
+}
+
+.handoff button {
+  padding: 0.55rem 1.1rem;
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-accent);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.handoff button:hover {
+  background: var(--color-highlight-bg);
+}
+
+.copy-feedback {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+/* Result anatomy: a small dossier card, not a blue link - date/arrest
+   number prominent, outcome/procedure as scannable badges, matched terms
+   highlighted, two clearly separated actions. */
+.results-list {
+  list-style: none;
+  margin: 0 0 var(--space-4);
+  padding: 0;
+}
+
+.result-card {
+  position: relative;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.result-select {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.result-select label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.result-title {
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  margin: 0 2.5rem var(--space-1) 0;
+}
+
+.result-title a {
+  color: var(--color-accent-strong);
+  text-decoration: none;
+}
+
+.result-title a:hover {
+  text-decoration: underline;
+}
+
+.result-identifiers {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-2);
+}
+
+.result-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.result-badge {
+  display: inline-block;
+  background: var(--color-highlight-bg);
+  color: var(--color-accent-strong);
+  border-radius: 0.3rem;
+  padding: 0.15rem 0.5rem;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.result-badge--outcome {
+  background: var(--color-badge-outcome-bg);
+  color: var(--color-badge-outcome-text);
+}
+
+.result-badge--paragraph {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+
+.result-excerpt {
+  margin: var(--space-2) 0;
+}
+
+.result-excerpt mark {
+  background: var(--color-mark-bg);
+  color: inherit;
+  border-radius: 0.15rem;
+  padding: 0 0.1rem;
+}
+
+.result-links a {
+  margin-right: var(--space-4);
+  font-size: var(--font-size-sm);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  justify-content: center;
+  margin: var(--space-5) 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.pagination button {
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* Trust furniture: a quiet, permanent strip - freshness, privacy, source
+   attribution, not-legal-advice - load-bearing for this audience, not
+   boilerplate. */
+.trust-footer {
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.trust-footer p {
+  margin: 0.2rem 0;
+}
+
+/* Accessibility: visible focus is not optional. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--color-focus-ring);
+  outline-offset: 2px;
+}
+
+/* Wider layout for large screens: override --measure progressively so the
+   page fills the available space on a full-screen browser without stretching
+   too far on very wide monitors. Below 1100px the default 42rem stays. */
+@media (min-width: 1100px) {
+  :root {
+    --measure: 68rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  :root {
+    --measure: 90rem;
+  }
+}
