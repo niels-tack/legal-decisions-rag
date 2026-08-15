@@ -182,6 +182,12 @@ class SourceConfig:
             ``"facts"``); for dynamic-section courts (``dynamic_sections=True``)
             keys are verbatim heading texts as they appear in the body.
             Headings absent from the map get ``section_category=None``.
+        heading_level_map: Optional mapping from section keys to heading depth
+            integers (1 = top-level section, 2 = subsection, 3 = sub-subsection).
+            Same key convention as ``heading_category_map``. Headings absent from
+            the map get ``heading_level=None``. Used by the indexer to populate
+            ``chunks.heading_level`` and ``chunks.parent_heading`` so the UI can
+            display breadcrumbs and callers can filter by depth.
         dynamic_sections: When ``True``, ``markdown_case.split_sections``
             detects section boundaries by scanning for any ``## ``-prefixed
             line in the Markdown body (used for courts like RVS whose heading
@@ -194,6 +200,7 @@ class SourceConfig:
     paragraph_marker_re: re.Pattern[str] | None
     section_headers: tuple[tuple[str, str], ...] = field(default=())
     heading_category_map: dict[str, str] | None = field(default=None)
+    heading_level_map: dict[str, int] | None = field(default=None)
     dynamic_sections: bool = field(default=False)
 
 
@@ -219,6 +226,99 @@ _RVS_PARAGRAPH_MARKER_RE = re.compile(r"(?m)^\s*(\d+(?:\.\d+)*)\.\s+")
 # Registry
 # ---------------------------------------------------------------------------
 
+# GHCC section level map.
+# Level 1: top-level Roman-numeral sections (facts = I./II., ruling = Om die redenen).
+# Level 2: letter-divider subsections (A = party arguments, B = court reasoning).
+# This reflects the document hierarchy from the CoC PDF analysis: Roman numerals
+# appear as level 1 in the source PDF; -A- and -B- dividers are level 2 within
+# the "In rechte" Roman-numeral section.
+_GHCC_HEADING_LEVEL_MAP: dict[str, int] = {
+    GHCC_SECTION_FACTS: 1,
+    GHCC_SECTION_ARGUMENTS: 2,
+    GHCC_SECTION_REASONING: 2,
+    GHCC_SECTION_RULING: 1,
+}
+
+# RVS heading level map.
+# Level 1: structural / top-level section headings that frame the whole ruling.
+# Level 2: grounds (middelen) and procedural sub-headings examined within level 1.
+# Level 3: assessment headings and party-standpoint sub-headings within level 2.
+# Headings not listed here get heading_level=None; they are still indexed and
+# retrievable, just without a depth signal (the corpus has too many one-off
+# formulations to enumerate exhaustively).
+_RVS_HEADING_LEVEL_MAP: dict[str, int] = {
+    # --- Level 1: structural anchors present in (nearly) every ruling --------
+    "De gegevens van de zaak": 1,
+    "Feiten": 1,
+    "De feiten": 1,
+    "De rechtsmacht van de Raad van State": 1,
+    "Rechtsmacht van de Raad van State": 1,
+    "De ontvankelijkheid": 1,
+    "Ontvankelijkheid van het beroep": 1,
+    "Ontvankelijkheid van de beroepen": 1,
+    "Ontvankelijkheid van de vordering": 1,
+    "Ontvankelijkheid – belang": 1,
+    "De grondvoorwaarden voor de schorsing": 1,
+    "De schorsingsvoorwaarden": 1,
+    "Schorsingsvoorwaarden": 1,
+    "Herinnering aan de schorsingsvoorwaarden": 1,
+    "De gegrondheid van het beroep": 1,
+    "De gegrondheid": 1,
+    "OM DIE REDENEN": 1,
+    "BESLIST DE RAAD VAN STATE :": 1,
+    # --- Level 2: grounds (middelen) -----------------------------------------
+    "Enig middel": 2,
+    "Eerste middel": 2,
+    "Tweede middel": 2,
+    "Derde middel": 2,
+    "Vierde middel": 2,
+    "Vijfde middel": 2,
+    "Zesde middel": 2,
+    "Zevende middel": 2,
+    "Achtste middel": 2,
+    "Negende middel": 2,
+    "Tiende middel": 2,
+    "Het enige middel": 2,
+    "Het eerste middel": 2,
+    "Het tweede middel": 2,
+    "Het derde middel": 2,
+    "Het vierde middel": 2,
+    "Het vijfde middel": 2,
+    "Het zesde middel": 2,
+    "Het zevende middel": 2,
+    "Het achtste middel": 2,
+    "Het negende middel": 2,
+    "Het tiende middel": 2,
+    "Onderzoek van de middelen": 2,
+    "Onderzoek van het enige middel": 2,
+    "Onderzoek van het eerste middel": 2,
+    "Onderzoek van het tweede middel": 2,
+    "Onderzoek van het derde middel": 2,
+    "Onderzoek van het vierde middel": 2,
+    "Onderzoek van het vijfde middel": 2,
+    "Onderzoek van het zesde middel": 2,
+    "Onderzoek van het zevende middel": 2,
+    "Onderzoek van het achtste middel": 2,
+    "Onderzoek van het negende middel": 2,
+    "Onderzoek van het tiende middel": 2,
+    "De exceptie": 2,
+    "Exceptie": 2,
+    "Excepties": 2,
+    "Exceptie betreffende de rechtsmacht": 2,
+    # --- Level 3: sub-headings within grounds --------------------------------
+    "Eerste onderdeel": 3,
+    "Tweede onderdeel": 3,
+    "Derde onderdeel": 3,
+    "Vierde onderdeel": 3,
+    "Vijfde onderdeel": 3,
+    "Standpunt van de partijen": 3,
+    "Uiteenzetting van het middel": 3,
+    "Uiteenzetting van de exceptie": 3,
+    "Betwisting door verzoekende partij": 3,
+    "Beoordeling van het middel": 3,
+    "Beoordeling": 3,
+}
+
 SOURCES: dict[str, SourceConfig] = {
     SOURCE_CONSTITUTIONAL_COURT: SourceConfig(
         key=SOURCE_CONSTITUTIONAL_COURT,
@@ -236,6 +336,7 @@ SOURCES: dict[str, SourceConfig] = {
             GHCC_SECTION_REASONING: CATEGORY_REASONING,
             GHCC_SECTION_RULING: CATEGORY_OPERATIVE,
         },
+        heading_level_map=_GHCC_HEADING_LEVEL_MAP,
     ),
     SOURCE_COUNCIL_OF_STATE: SourceConfig(
         key=SOURCE_COUNCIL_OF_STATE,
@@ -243,6 +344,7 @@ SOURCES: dict[str, SourceConfig] = {
         paragraph_marker_re=_RVS_PARAGRAPH_MARKER_RE,
         dynamic_sections=True,
         heading_category_map=_RVS_HEADING_CATEGORY_MAP,
+        heading_level_map=_RVS_HEADING_LEVEL_MAP,
     ),
 }
 

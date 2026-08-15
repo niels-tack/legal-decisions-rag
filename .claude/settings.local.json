@@ -9,7 +9,11 @@
       "Bash(echo \"Exit code: $?\")",
       "Bash(echo \"Exit: $?\")",
       "Bash(curl *)",
-      "Bash(grep -v \"^.*:$\")"
+      "Bash(grep -v \"^.*:$\")",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 *)",
+      "Bash(uv add *)",
+      "Bash(uv run *)"
     ]
   }
 }

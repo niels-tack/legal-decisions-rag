@@ -64,6 +64,8 @@ CREATE TABLE IF NOT EXISTS chunks (
     case_id INTEGER NOT NULL,
     section TEXT NOT NULL,
     section_category TEXT,
+    heading_level INTEGER,
+    parent_heading TEXT,
     paragraph_number TEXT,
     parent_numbers TEXT NOT NULL,
     chunk_order INTEGER NOT NULL,
@@ -132,6 +134,8 @@ def insert_chunk(
     paragraph_number: str | None = None,
     parent_numbers: list[str] | None = None,
     section_category: str | None = None,
+    heading_level: int | None = None,
+    parent_heading: str | None = None,
 ) -> None:
     """Insert one passage into ``chunks`` and its FTS5 index entry.
 
@@ -152,18 +156,27 @@ def insert_chunk(
         section_category: Cross-court semantic category (one of the
             ``CATEGORY_*`` constants from ``src.sources``), or ``None`` if
             the heading is not in the body's ``heading_category_map``.
+        heading_level: Depth of this section's heading in the document
+            hierarchy (1 = top-level, 2 = subsection, 3 = sub-subsection).
+            ``None`` for headings not listed in ``heading_level_map``.
+        parent_heading: Verbatim heading text of the nearest ancestor section
+            at a lower level, or ``None`` if this is already a top-level
+            section. Derived from the heading stack at index time.
     """
     import json
 
     conn.execute(
         "INSERT INTO chunks "
-        "(chunk_id, case_id, section, section_category, paragraph_number, "
-        "parent_numbers, chunk_order, text) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+        "(chunk_id, case_id, section, section_category, heading_level, "
+        "parent_heading, paragraph_number, parent_numbers, chunk_order, text) "
+        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
         (
             chunk_id,
             case_id,
             section,
             section_category,
+            heading_level,
+            parent_heading,
             paragraph_number,
             json.dumps(parent_numbers or []),
             chunk_order,

@@ -82,6 +82,21 @@ class ChunkResult(BaseModel):
             "None when the heading is not in the body's category map."
         ),
     )
+    heading_level: int | None = Field(
+        None,
+        description=(
+            "Depth of this section in the document heading hierarchy "
+            "(1 = top-level, 2 = subsection, 3 = sub-subsection). "
+            "None for headings not in the source's level map."
+        ),
+    )
+    parent_heading: str | None = Field(
+        None,
+        description=(
+            "Verbatim heading of the nearest ancestor section at a shallower level, "
+            "or None if this is already a top-level section."
+        ),
+    )
     paragraph_number: str | None = Field(
         ..., description="This chunk's own numbered identifier, e.g. 'B.7.3'"
     )

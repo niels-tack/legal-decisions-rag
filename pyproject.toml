@@ -17,6 +17,7 @@ dependencies = [
     "uvicorn>=0.30.0",
     "httpx>=0.27.0",
     "boto3>=1.34.0",
+    "pymupdf>=1.28.2",
 ]
 
 # Phase 2 only (src/indexing/embeddings.py, add_embeddings(), and the query

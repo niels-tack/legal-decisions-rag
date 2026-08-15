@@ -100,7 +100,7 @@ def _lexical_search(
     query_text: str,
     limit: int,
     sources: list[str] | None = None,
-) -> list[tuple[int, int, str, str | None, str | None, str]]:
+) -> list[tuple[int, int, str, str | None, str | None, int | None, str | None, str]]:
     """Rank passages by BM25 via the ``chunks_fts`` virtual table.
 
     Args:
@@ -111,8 +111,9 @@ def _lexical_search(
 
     Returns:
         ``(chunk_id, case_id, section, paragraph_number, section_category,
-        text)`` tuples ordered by FTS5's BM25-derived ``rank`` (best first).
-        Empty if ``query_text`` has no usable tokens.
+        heading_level, parent_heading, text)`` tuples ordered by FTS5's
+        BM25-derived ``rank`` (best first). Empty if ``query_text`` has no
+        usable tokens.
     """
     match_query = _build_fts_match_query(query_text)
     if not match_query:
@@ -120,7 +121,8 @@ def _lexical_search(
     source_sql, source_params = _source_filter_sql(sources)
     cursor = conn.execute(
         "SELECT chunks.chunk_id, chunks.case_id, chunks.section, "
-        "chunks.paragraph_number, chunks.section_category, chunks.text "
+        "chunks.paragraph_number, chunks.section_category, "
+        "chunks.heading_level, chunks.parent_heading, chunks.text "
         "FROM chunks_fts "
         "JOIN chunks ON chunks.chunk_id = chunks_fts.rowid "
         "JOIN cases ON cases.case_id = chunks.case_id "
@@ -136,7 +138,7 @@ def _semantic_search(
     embed_fn: Callable[[list[str]], np.ndarray],
     limit: int,
     sources: list[str] | None = None,
-) -> list[tuple[int, int, str, str | None, str | None, str]]:
+) -> list[tuple[int, int, str, str | None, str | None, int | None, str | None, str]]:
     """Rank passages by cosine similarity to the embedded query text.
 
     The corpus is small enough that a brute-force scan over every stored
@@ -155,14 +157,15 @@ def _semantic_search(
 
     Returns:
         ``(chunk_id, case_id, section, paragraph_number, section_category,
-        text)`` tuples ordered by similarity score (best first). Empty if
-        there are no stored embeddings (e.g. a Phase 1 artifact that never
-        ran the Phase 2 ``add_embeddings`` step).
+        heading_level, parent_heading, text)`` tuples ordered by similarity
+        score (best first). Empty if there are no stored embeddings (e.g. a
+        Phase 1 artifact that never ran the Phase 2 ``add_embeddings`` step).
     """
     source_sql, source_params = _source_filter_sql(sources)
     rows = conn.execute(
         "SELECT chunks.chunk_id, chunks.case_id, chunks.section, "
-        "chunks.paragraph_number, chunks.section_category, chunks.text, "
+        "chunks.paragraph_number, chunks.section_category, "
+        "chunks.heading_level, chunks.parent_heading, chunks.text, "
         "embeddings.vector "
         "FROM embeddings "
         "JOIN chunks ON chunks.chunk_id = embeddings.chunk_id "
@@ -178,12 +181,13 @@ def _semantic_search(
     # applied here at retrieval time. Both prefixes are defined in
     # src.db_schema so a model change updates both places atomically.
     query_vector = embed_fn([EMBEDDING_QUERY_PREFIX + query_text])[0].astype(np.float32)
-    stored_vectors = np.stack([np.frombuffer(row[6], dtype=np.float32) for row in rows])
+    stored_vectors = np.stack([np.frombuffer(row[8], dtype=np.float32) for row in rows])
     scores = stored_vectors @ query_vector
 
     top_indices = np.argsort(-scores)[:limit]
     return [
-        (rows[i][0], rows[i][1], rows[i][2], rows[i][3], rows[i][4], rows[i][5])
+        (rows[i][0], rows[i][1], rows[i][2], rows[i][3], rows[i][4],
+         rows[i][5], rows[i][6], rows[i][7])
         for i in top_indices
     ]
 
@@ -251,15 +255,20 @@ def hybrid_search(
     # Track each chunk's rank (1-based) in whichever list(s) it appears in,
     # plus enough chunk detail to build the final result without a second
     # per-chunk lookup.
-    chunk_info: dict[int, tuple[int, str, str | None, str | None, str]] = {}
+    chunk_info: dict[
+        int, tuple[int, str, str | None, str | None, int | None, str | None, str]
+    ] = {}
     fused_scores: dict[int, float] = {}
 
     for ranked_list in (lexical_rows, semantic_rows):
         for rank, (
-            chunk_id, case_id, section, paragraph_number, section_category, text
+            chunk_id, case_id, section, paragraph_number,
+            section_category, heading_level, parent_heading, text
         ) in enumerate(ranked_list, start=1):
             chunk_info.setdefault(
-                chunk_id, (case_id, section, paragraph_number, section_category, text)
+                chunk_id,
+                (case_id, section, paragraph_number, section_category,
+                 heading_level, parent_heading, text),
             )
             fused_scores[chunk_id] = fused_scores.get(chunk_id, 0.0) + 1.0 / (
                 _RRF_K + rank
@@ -272,11 +281,16 @@ def hybrid_search(
     # ``_MAX_CHUNKS_PER_CASE`` per case (ordered best-first). The case's
     # representative score is the score of its highest-ranked chunk, which
     # also determines its position in the final ranked list.
-    case_chunks: dict[int, list[tuple[float, str, str | None, str | None, str]]] = {}
+    case_chunks: dict[
+        int,
+        list[tuple[float, str, str | None, str | None, int | None, str | None, str]],
+    ] = {}
     for chunk_id, score in fused_scores.items():
-        case_id, section, paragraph_number, section_category, text = chunk_info[chunk_id]
+        (case_id, section, paragraph_number, section_category,
+         heading_level, parent_heading, text) = chunk_info[chunk_id]
         case_chunks.setdefault(case_id, []).append(
-            (score, section, paragraph_number, section_category, text)
+            (score, section, paragraph_number, section_category,
+             heading_level, parent_heading, text)
         )
 
     # Sort each case's chunks by score descending, keep the top N.
@@ -305,11 +319,14 @@ def hybrid_search(
             ChunkResult(
                 section=section,
                 section_category=section_category,
+                heading_level=heading_level,
+                parent_heading=parent_heading,
                 paragraph_number=paragraph_number,
                 excerpt=_truncate_excerpt(text),
                 score=score,
             )
-            for score, section, paragraph_number, section_category, text in case_chunks[case_id]
+            for (score, section, paragraph_number, section_category,
+                 heading_level, parent_heading, text) in case_chunks[case_id]
         ]
         results.append(
             CaseSearchResult(

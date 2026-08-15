@@ -144,12 +144,28 @@ def _index_file(conn: sqlite3.Connection, md_file: Path, next_chunk_id: int) -> 
 
     chunk_id = next_chunk_id
     order = 0
+    # heading_stack: list of (level, heading_key) for ancestor sections.
+    # Maintained so each chunk knows its nearest ancestor at a lower level.
+    heading_stack: list[tuple[int, str]] = []
+
     for section_key, section_text in sections.items():
         category = (
             source_config.heading_category_map.get(section_key)
             if source_config.heading_category_map
             else None
         )
+        level = (
+            source_config.heading_level_map.get(section_key)
+            if source_config.heading_level_map
+            else None
+        )
+
+        # Update the ancestor stack: pop any entries at the same or deeper level
+        # so the parent is always a strictly shallower heading.
+        if level is not None:
+            heading_stack = [(lvl, h) for lvl, h in heading_stack if lvl < level]
+        parent = heading_stack[-1][1] if heading_stack else None
+
         for paragraph_number, parent_numbers, chunk_text in split_into_paragraphs(
             section_text, source_config
         ):
@@ -163,9 +179,18 @@ def _index_file(conn: sqlite3.Connection, md_file: Path, next_chunk_id: int) -> 
                 paragraph_number=paragraph_number,
                 parent_numbers=parent_numbers,
                 section_category=category,
+                heading_level=level,
+                parent_heading=parent,
             )
             chunk_id += 1
             order += 1
+
+        # Push this section onto the stack after processing its chunks, so
+        # sibling sections at the same level share the same parent rather
+        # than each other.
+        if level is not None:
+            heading_stack.append((level, section_key))
+
     return chunk_id
 
 
