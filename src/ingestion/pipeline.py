@@ -227,6 +227,12 @@ def run_pipeline(
 ) -> list[Path]:
     """Run one full weekly ingestion pass for a given year.
 
+    Discovery uses the Court's public document server
+    (``https://nl.const-court.be/public/n/{year}/``), a plain Apache directory
+    listing that is accessible without TLS fingerprinting or JavaScript
+    rendering. Per-ruling metadata is then fetched from each ruling's info card
+    page (``https://nl.const-court.be/ARR/{number}/{year}``).
+
     Args:
         data_repo_path: Root of the public data repository's local clone.
         year: Calendar year to discover rulings for. Defaults to the
@@ -249,19 +255,39 @@ def run_pipeline(
     http_session = session or build_session()
 
     known_slugs = existing_file_slugs(output_dir)
-    html = discover.fetch_listing_html(target_year, session=http_session)
-    discovered_rulings = discover.parse_listing_html(html)
+
+    server_html = discover.fetch_document_server_listing(
+        target_year, session=http_session
+    )
+    all_slugs = discover.parse_document_server_listing(server_html, target_year)
+    new_slugs = [s for s in all_slugs if s not in known_slugs]
+    logger.info(
+        "Document server: %d ruling(s) for %d, %d new.",
+        len(all_slugs),
+        target_year,
+        len(new_slugs),
+    )
+
+    discovered_rulings: list[discover.DiscoveredRuling] = []
+    for slug in new_slugs:
+        arrest_number = discover.arrest_number_from_slug(slug)
+        try:
+            card_html = discover.fetch_info_card_html(
+                arrest_number, session=http_session
+            )
+            ruling = discover.parse_info_card(card_html, slug)
+        except Exception as exc:
+            logger.warning(
+                "Could not fetch/parse info card for %s (%s): %s - skipping.",
+                slug,
+                arrest_number,
+                exc,
+            )
+            continue
+        discovered_rulings.append(ruling)
 
     written_paths: list[Path] = []
     for ruling in discovered_rulings:
-        try:
-            file_slug = discover.file_slug_from_pdf_url(ruling["pdf_url"])
-        except ValueError:
-            logger.warning("Skipping ruling with unparsable PDF URL: %r", ruling)
-            continue
-        if file_slug in known_slugs:
-            continue
-
         if written_paths:
             time.sleep(delay_seconds)
         written_paths.append(

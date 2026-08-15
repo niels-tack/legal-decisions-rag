@@ -224,6 +224,34 @@ def test_process_ruling_raises_when_ecli_not_found(
         )
 
 
+def _fake_discovery(
+    monkeypatch: pytest.MonkeyPatch, slugs: list[str]
+) -> None:
+    """Patch the three document-server discovery calls to return ``slugs``."""
+    monkeypatch.setattr(
+        discover,
+        "fetch_document_server_listing",
+        lambda year, session=None, language="nl": "<html></html>",
+    )
+    monkeypatch.setattr(
+        discover,
+        "parse_document_server_listing",
+        lambda html, year, language="nl": slugs,
+    )
+    monkeypatch.setattr(
+        discover,
+        "fetch_info_card_html",
+        lambda arrest_number, language="nl", session=None: "<html></html>",
+    )
+    monkeypatch.setattr(
+        discover,
+        "parse_info_card",
+        lambda html, file_slug, language="nl": _make_discovered(
+            discover.ghcc_pdf_download_url(file_slug), arrest_number=discover.arrest_number_from_slug(file_slug)
+        ),
+    )
+
+
 def test_run_pipeline_skips_rulings_already_present_as_markdown(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
@@ -233,23 +261,13 @@ def test_run_pipeline_skips_rulings_already_present_as_markdown(
     output_dir.mkdir(parents=True)
     (output_dir / "2025-001n.md").write_text("already here", encoding="utf-8")
 
-    monkeypatch.setattr(
-        discover, "fetch_listing_html", lambda year, session=None: "<html></html>"
-    )
-    monkeypatch.setattr(
-        discover,
-        "parse_listing_html",
-        lambda html: [
-            _make_discovered("https://www.const-court.be/public/n/2025/2025-001n.pdf"),
-            _make_discovered("https://www.const-court.be/public/n/2025/2025-002n.pdf"),
-        ],
-    )
+    _fake_discovery(monkeypatch, ["2025-001n", "2025-002n"])
     processed: list[str] = []
     monkeypatch.setattr(
         pipeline,
         "process_ruling",
         lambda ruling, out_dir, cache_dir, session: (
-            processed.append(ruling["pdf_url"]) or out_dir / "dummy.md"
+            processed.append(ruling["arrest_number"]) or out_dir / "dummy.md"
         ),
     )
     monkeypatch.setattr(pipeline.time, "sleep", lambda seconds: None)
@@ -258,7 +276,7 @@ def test_run_pipeline_skips_rulings_already_present_as_markdown(
         data_repo_path, year=2025, session=_unused_session()
     )
 
-    assert processed == ["https://www.const-court.be/public/n/2025/2025-002n.pdf"]
+    assert processed == ["2/2025"]
     assert len(written) == 1
 
 
@@ -266,16 +284,7 @@ def test_run_pipeline_does_not_push_by_default(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     """push_to_remote must never run unless --push (push=True) was explicitly set."""
-    monkeypatch.setattr(
-        discover, "fetch_listing_html", lambda year, session=None: "<html></html>"
-    )
-    monkeypatch.setattr(
-        discover,
-        "parse_listing_html",
-        lambda html: [
-            _make_discovered("https://www.const-court.be/public/n/2025/2025-001n.pdf")
-        ],
-    )
+    _fake_discovery(monkeypatch, ["2025-001n"])
     monkeypatch.setattr(
         pipeline,
         "process_ruling",
@@ -295,16 +304,7 @@ def test_run_pipeline_pushes_only_when_explicitly_requested(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
     """With push=True and at least one new file, push_to_remote should run exactly once."""
-    monkeypatch.setattr(
-        discover, "fetch_listing_html", lambda year, session=None: "<html></html>"
-    )
-    monkeypatch.setattr(
-        discover,
-        "parse_listing_html",
-        lambda html: [
-            _make_discovered("https://www.const-court.be/public/n/2025/2025-001n.pdf")
-        ],
-    )
+    _fake_discovery(monkeypatch, ["2025-001n"])
     monkeypatch.setattr(
         pipeline,
         "process_ruling",
