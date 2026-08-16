@@ -17,8 +17,8 @@ from tests.query_service.conftest import fake_embed_fn
 
 
 def test_build_fts_match_query_quotes_and_joins_tokens() -> None:
-    """Tokens are individually quoted and joined with OR."""
-    assert _build_fts_match_query("milieu vergunning") == '"milieu" OR "vergunning"'
+    """Tokens are individually quoted and joined with implicit AND (space-separated)."""
+    assert _build_fts_match_query("milieu vergunning") == '"milieu" "vergunning"'
 
 
 def test_build_fts_match_query_escapes_embedded_quotes() -> None:

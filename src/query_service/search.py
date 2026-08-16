@@ -60,10 +60,12 @@ def _build_fts_match_query(query_text: str) -> str:
 
     Each whitespace-separated token is quoted individually and any literal
     double quote inside a token is escaped by doubling it, then the quoted
-    tokens are joined with ``OR``. This treats the query as a bag of literal
-    terms rather than passing it through FTS5's own query syntax, so
-    characters like ``-`` or unbalanced quotes in arbitrary user input can't
-    raise an FTS5 syntax error.
+    tokens are joined with implicit AND (space-separated, no operator keyword).
+    FTS5 treats adjacent quoted terms as AND by default, so all terms must
+    appear in a matching chunk - matching legal search industry practice
+    (EUR-Lex, Hudoc, Caselaw.nl all default to AND). The quoting still
+    prevents FTS5 syntax errors from characters like ``-`` or unbalanced
+    quotes in arbitrary user input.
 
     Args:
         query_text: The raw user search string.
@@ -74,7 +76,7 @@ def _build_fts_match_query(query_text: str) -> str:
     """
     tokens = query_text.split()
     quoted = [f'"{token.replace(chr(34), chr(34) * 2)}"' for token in tokens]
-    return " OR ".join(quoted)
+    return " ".join(quoted)
 
 
 def _source_filter_sql(sources: list[str] | None) -> tuple[str, tuple[str, ...]]:
