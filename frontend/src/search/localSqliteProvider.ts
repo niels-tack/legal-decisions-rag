@@ -66,13 +66,16 @@ interface WhereClause {
  * Execute a prepared statement and return all rows as plain objects.
  *
  * @sqlite.org/sqlite-wasm's PreparedStatement uses `finalize()` (not `free()`),
- * and `getAsObject()` without a prototype argument. Otherwise the step-based
- * iteration API is identical to the former sql.js wrapper.
+ * and `get({})` (not `getAsObject()`). Calling `bind()` on a statement that
+ * has no `?` placeholders throws "This statement has no bindable parameters",
+ * so we skip the call when params is empty.
  */
 function queryAll<T extends object>(db: Database, sql: string, params: unknown[]): T[] {
   const stmt: PreparedStatement = db.prepare(sql);
   try {
-    stmt.bind(params as BindableValue[]);
+    if (params.length > 0) {
+      stmt.bind(params as BindableValue[]);
+    }
     const rows: T[] = [];
     while (stmt.step()) {
       // `get({})` returns the current row as a column-name → value object,
