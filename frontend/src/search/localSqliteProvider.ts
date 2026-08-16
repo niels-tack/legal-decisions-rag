@@ -92,13 +92,29 @@ export class LocalSqliteProvider implements SearchProvider {
       const workerUrl = new URL("sql.js-httpvfs/dist/sqlite.worker.js", import.meta.url);
       const wasmUrl = new URL("sql.js-httpvfs/dist/sql-wasm.wasm", import.meta.url);
 
+      // GitHub Pages (Fastly CDN) applies transparent gzip compression to
+      // cases.db, returning Content-Encoding: gzip with a Content-Length that
+      // reflects the compressed size. sql.js-httpvfs uses Content-Length from
+      // an initial HEAD/GET to calculate the number of SQLite pages, so it
+      // truncates the database at the compressed-size boundary and fails when
+      // trying to read pages beyond it.
+      //
+      // Fix: fetch the full file first (the browser auto-decompresses gzip and
+      // returns the real uncompressed bytes), then wrap in a blob URL. Blob
+      // URLs have the correct uncompressed Content-Length and no
+      // Content-Encoding, so sql.js-httpvfs's range requests work correctly.
+      const dbBuffer = await fetch(this.dbUrl).then((r) => r.arrayBuffer());
+      const blobUrl = URL.createObjectURL(
+        new Blob([dbBuffer], { type: "application/octet-stream" }),
+      );
+
       this.workerPromise = createDbWorker(
         [
           {
             from: "inline",
             config: {
               serverMode: "full",
-              url: this.dbUrl,
+              url: blobUrl,
               requestChunkSize: REQUEST_CHUNK_SIZE,
             },
           },

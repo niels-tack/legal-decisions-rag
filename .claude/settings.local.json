@@ -13,7 +13,12 @@
       "Bash(python3 -c ' *)",
       "Bash(python3 *)",
       "Bash(uv add *)",
-      "Bash(uv run *)"
+      "Bash(uv run *)",
+      "Bash(git -C /mnt/c/Users/niels/Documents/Documenten/Projecten/legal-decisions-rag ls-files frontend/)",
+      "Bash(git -C /mnt/c/Users/niels/Documents/Documenten/Projecten/legal-decisions-rag ls-files frontend/vite.config.ts)",
+      "Bash(git -C /mnt/c/Users/niels/Documents/Documenten/Projecten/legal-decisions-rag status --short frontend/vite.config.ts)",
+      "Bash(git *)",
+      "Bash(npm run *)"
     ]
   }
 }
