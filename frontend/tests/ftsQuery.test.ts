@@ -3,8 +3,8 @@ import { describe, expect, it } from "vitest";
 import { buildFtsMatchQuery } from "../src/search/ftsQuery";
 
 describe("buildFtsMatchQuery", () => {
-  it("quotes and joins tokens with OR", () => {
-    expect(buildFtsMatchQuery("milieu vergunning")).toBe('"milieu" OR "vergunning"');
+  it("quotes and joins tokens with implicit AND (space-separated)", () => {
+    expect(buildFtsMatchQuery("milieu vergunning")).toBe('"milieu" "vergunning"');
   });
 
   it("escapes an embedded double quote by doubling it", () => {
@@ -16,6 +16,6 @@ describe("buildFtsMatchQuery", () => {
   });
 
   it("collapses repeated whitespace between tokens", () => {
-    expect(buildFtsMatchQuery("a   b\tc")).toBe('"a" OR "b" OR "c"');
+    expect(buildFtsMatchQuery("a   b\tc")).toBe('"a" "b" "c"');
   });
 });
