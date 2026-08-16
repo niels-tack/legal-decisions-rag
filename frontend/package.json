@@ -13,9 +13,11 @@
   },
   "dependencies": {
     "lit-html": "^3.3.3",
+    "sql.js": "^1.14.2",
     "sql.js-httpvfs": "^0.8.12"
   },
   "devDependencies": {
+    "@types/sql.js": "^1.4.11",
     "typescript": "^7.0.2",
     "vite": "^8.2.1",
     "vitest": "^4.1.10"
