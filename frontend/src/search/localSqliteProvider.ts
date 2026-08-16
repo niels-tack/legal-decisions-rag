@@ -1,5 +1,8 @@
-import initSqlJs, { type Database, type Statement } from "sql.js";
-import sqlWasmUrl from "sql.js/dist/sql-wasm.wasm?url";
+import initSqlite3, {
+  type BindableValue,
+  type Database,
+  type PreparedStatement,
+} from "@sqlite.org/sqlite-wasm";
 
 import { truncateExcerpt } from "./excerpt";
 import { buildFtsMatchQuery } from "./ftsQuery";
@@ -60,38 +63,40 @@ interface WhereClause {
 }
 
 /**
- * Execute a sql.js prepared statement and return all rows as plain objects.
+ * Execute a prepared statement and return all rows as plain objects.
  *
- * sql.js's `Database.exec()` returns column names and value arrays separately,
- * which is awkward to work with. This helper prepares the statement, binds
- * params, steps through all rows, and returns typed objects - matching the
- * ergonomics of the former sql.js-httpvfs `.query()` method.
+ * @sqlite.org/sqlite-wasm's PreparedStatement uses `finalize()` (not `free()`),
+ * and `getAsObject()` without a prototype argument. Otherwise the step-based
+ * iteration API is identical to the former sql.js wrapper.
  */
 function queryAll<T extends object>(db: Database, sql: string, params: unknown[]): T[] {
-  const stmt: Statement = db.prepare(sql);
+  const stmt: PreparedStatement = db.prepare(sql);
   try {
-    stmt.bind(params as Parameters<Statement["bind"]>[0]);
+    stmt.bind(params as BindableValue[]);
     const rows: T[] = [];
     while (stmt.step()) {
-      rows.push(stmt.getAsObject({}) as T);
+      // `get({})` returns the current row as a column-name → value object,
+      // equivalent to sql.js's `getAsObject()`.
+      rows.push(stmt.get({}) as T);
     }
     return rows;
   } finally {
-    stmt.free();
+    stmt.finalize();
   }
 }
 
 /**
  * Phase 1's default `SearchProvider`: BM25-only full-text search running
  * entirely in the browser against the statically hosted `cases.db`, fetched
- * once over HTTP and held in memory via `sql.js` (WebAssembly SQLite). No
- * embeddings, no hybrid re-ranking, no fusion score - Phase 1 has exactly one
- * ranked list (FTS5's own `rank`), unlike the Phase 2 API's RRF fusion of two.
+ * once over HTTP and held in memory via `@sqlite.org/sqlite-wasm` (the
+ * official SQLite WebAssembly build, which includes FTS5). No embeddings, no
+ * hybrid re-ranking, no fusion score.
  *
  * The full database is fetched once (the browser auto-decompresses any
  * Content-Encoding: gzip the CDN applies, so the ArrayBuffer is always the
- * real uncompressed SQLite bytes). Subsequent queries run synchronously in the
- * WASM sandbox with no additional network traffic.
+ * real uncompressed SQLite bytes). The bytes are loaded into WASM memory via
+ * `sqlite3_deserialize`. Subsequent queries run synchronously in the WASM
+ * sandbox with no additional network traffic.
  *
  * Results are grouped by case: each returned item is one `CaseSearchResult`
  * with up to `MAX_CHUNKS_PER_CASE` matching chunks (best-ranked first).
@@ -104,10 +109,11 @@ export class LocalSqliteProvider implements SearchProvider {
   private async getDb(): Promise<Database> {
     if (!this.dbPromise) {
       this.dbPromise = (async () => {
-        const [SQL, buffer] = await Promise.all([
-          // Bundler-relative WASM URL, resolved to a hashed asset path by Vite
-          // at build time - no CDN script tags or separate server config needed.
-          initSqlJs({ locateFile: () => sqlWasmUrl }),
+        const [sqlite3, buffer] = await Promise.all([
+          // @sqlite.org/sqlite-wasm resolves its own WASM file via
+          // `new URL("sqlite3.wasm", import.meta.url)`, which Vite bundles as
+          // a hashed static asset at build time - no manual locateFile needed.
+          initSqlite3(),
           // The browser automatically decompresses Content-Encoding: gzip (as
           // GitHub Pages/Fastly applies to cases.db), so arrayBuffer() always
           // yields the real uncompressed SQLite bytes regardless of CDN
@@ -117,7 +123,29 @@ export class LocalSqliteProvider implements SearchProvider {
             return r.arrayBuffer();
           }),
         ]);
-        return new SQL.Database(new Uint8Array(buffer));
+
+        // Allocate WASM heap memory for the database bytes, then use
+        // sqlite3_deserialize to open them as an in-memory database. The
+        // FREEONCLOSE flag tells SQLite to free the heap allocation when the
+        // database is closed; RESIZEABLE allows SQLite to grow the buffer if
+        // needed (e.g. when running VACUUM - harmless for read-only use).
+        const byteArray = new Uint8Array(buffer);
+        const p = sqlite3.wasm.allocFromTypedArray(byteArray);
+        const db = new sqlite3.oo1.DB();
+        const rc = sqlite3.capi.sqlite3_deserialize(
+          db,
+          "main",
+          p,
+          byteArray.length,
+          byteArray.length,
+          sqlite3.capi.SQLITE_DESERIALIZE_FREEONCLOSE |
+            sqlite3.capi.SQLITE_DESERIALIZE_RESIZEABLE,
+        );
+        if (rc !== 0) {
+          db.close();
+          throw new Error(`sqlite3_deserialize failed with code ${rc}`);
+        }
+        return db;
       })();
     }
     return this.dbPromise;
@@ -171,9 +199,6 @@ export class LocalSqliteProvider implements SearchProvider {
           paragraphNumber: row.paragraph_number,
           excerpt: truncateExcerpt(row.text),
           highlightedSnippet: row.highlighted_snippet,
-          // No ranking score is exposed by FTS5's bare `rank` ordering in a
-          // portable way here; relative order (already applied via ORDER BY)
-          // is what matters for Phase 1, not a score value.
           score: 0,
         });
       }
@@ -211,15 +236,6 @@ export class LocalSqliteProvider implements SearchProvider {
     const where = this.buildWhereClause(matchQuery, filters);
     const orderBy = SORT_CLAUSES[options.sort];
 
-    // Fetch a large flat pool (no SQL-level OFFSET) ordered by FTS5 rank, then
-    // group into cases in JS. SQL OFFSET on chunk rows cannot directly represent
-    // an OFFSET on cases, so pagination is handled after grouping by slicing the
-    // full ordered case list. See comment on POOL_SIZE for sizing rationale.
-    //
-    // snippet() sentinel bytes are bound as params rather than inlined into the
-    // SQL text: sql.js's WASM string-marshaling mishandles raw control-byte
-    // sentinels when interpolated directly - binding is also just better
-    // practice regardless.
     const rows = queryAll<CaseRow>(
       db,
       `SELECT chunks.section, chunks.paragraph_number, chunks.text,
@@ -265,22 +281,16 @@ export class LocalSqliteProvider implements SearchProvider {
 
   async listFilterOptions(): Promise<FilterOptions> {
     const db = await this.getDb();
-    const [procedureTypeRows, sourceRows] = await Promise.all([
-      Promise.resolve(
-        queryAll<{ procedure_type: string }>(
-          db,
-          "SELECT DISTINCT procedure_type FROM cases ORDER BY procedure_type",
-          [],
-        ),
-      ),
-      Promise.resolve(
-        queryAll<{ source: string }>(
-          db,
-          "SELECT DISTINCT source FROM cases ORDER BY source",
-          [],
-        ),
-      ),
-    ]);
+    const procedureTypeRows = queryAll<{ procedure_type: string }>(
+      db,
+      "SELECT DISTINCT procedure_type FROM cases ORDER BY procedure_type",
+      [],
+    );
+    const sourceRows = queryAll<{ source: string }>(
+      db,
+      "SELECT DISTINCT source FROM cases ORDER BY source",
+      [],
+    );
     return {
       procedureTypes: procedureTypeRows.map((row) => row.procedure_type),
       sources: sourceRows.map((row) => row.source),
