@@ -137,7 +137,7 @@ dl.metadata dt { font-weight: 600; color: #565d6b; }
 .paragraph:target { background: #fff1a8; }
 .paragraph.relevant { border-left: 3px solid #0b4a7a; padding-left: 0.75rem; background: #eaf2fa; }
 .paragraph.relevant:target { background: #fff1a8; }
-p { margin: 0 0 0.9rem; }
+p { margin: 0 0 0.9rem; text-align: justify; }
 footer.reader-footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #d8dce2; font-size: 0.85rem; color: #565d6b; }
 a:focus-visible, button:focus-visible { outline: 3px solid #1a6ec7; outline-offset: 2px; }
 #passage-nav { position: fixed; bottom: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: center; gap: 1rem; padding: 0.65rem 1rem; background: #fff; border-top: 1px solid #d8dce2; box-shadow: 0 -2px 6px rgba(0,0,0,.07); font-size: 0.9rem; z-index: 100; }
@@ -145,6 +145,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid #1a6ec7; outline-offs
 #passage-nav button { padding: 0.35rem 0.85rem; border: 1px solid #b7bfca; border-radius: 0.4rem; background: #f6f7f9; cursor: pointer; }
 #passage-nav button:hover:not(:disabled) { background: #eaf2fa; }
 #passage-nav button:disabled { opacity: 0.4; cursor: default; }
+@media (min-width: 1100px) { body { max-width: 68rem; } }
+@media (min-width: 1600px) { body { max-width: 90rem; } }
 """
 
 # Reads the `?p=` query parameter (comma-separated paragraph IDs from the

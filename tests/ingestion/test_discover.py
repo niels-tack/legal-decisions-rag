@@ -4,9 +4,11 @@ from datetime import date
 from pathlib import Path
 
 import pytest
+from bs4 import BeautifulSoup
 from src.ingestion import discover
 
 FIXTURE_PATH = Path(__file__).parent / "fixtures" / "listing_sample.html"
+INFO_CARD_FIXTURE_PATH = Path(__file__).parent / "fixtures" / "info_card_sample.html"
 
 
 @pytest.fixture
@@ -84,3 +86,118 @@ def test_file_slug_from_pdf_url_rejects_url_without_pdf_filename() -> None:
     """A URL with no recognizable PDF filename should raise, not silently fail."""
     with pytest.raises(ValueError, match="Could not derive a file slug"):
         discover.file_slug_from_pdf_url("https://www.const-court.be/nl/judgments")
+
+
+# ---------------------------------------------------------------------------
+# _find_labeled_value
+# ---------------------------------------------------------------------------
+
+
+def test_find_labeled_value_dl_pattern() -> None:
+    """dt/dd pairs should be matched by their exact label text."""
+    html = "<dl><dt>Datum</dt><dd>14/02/2026</dd></dl>"
+    soup = BeautifulSoup(html, "html.parser")
+    assert discover._find_labeled_value(soup, "Datum") == "14/02/2026"
+
+
+def test_find_labeled_value_table_pattern() -> None:
+    """th/td pairs should be matched when dl is absent."""
+    html = "<table><tr><th>Dictum</th><td>Geen schending</td></tr></table>"
+    soup = BeautifulSoup(html, "html.parser")
+    assert discover._find_labeled_value(soup, "Dictum") == "Geen schending"
+
+
+def test_find_labeled_value_inline_span_pattern() -> None:
+    """Inline span 'Label : value' should be matched as the fallback."""
+    html = "<span>Rolnummer : 9123</span>"
+    soup = BeautifulSoup(html, "html.parser")
+    assert discover._find_labeled_value(soup, "Rolnummer") == "9123"
+
+
+def test_find_labeled_value_tries_labels_in_order() -> None:
+    """The first matching label wins; remaining labels are not tried."""
+    html = "<dl><dt>Dictum</dt><dd>Verwerping</dd></dl>"
+    soup = BeautifulSoup(html, "html.parser")
+    # "Uitspraak" is not present; "Dictum" is - should still return the value.
+    assert discover._find_labeled_value(soup, "Uitspraak", "Dictum") == "Verwerping"
+
+
+def test_find_labeled_value_returns_empty_when_absent() -> None:
+    """A page with none of the given labels should return an empty string."""
+    soup = BeautifulSoup("<html><body><p>No metadata here.</p></body></html>", "html.parser")
+    assert discover._find_labeled_value(soup, "Datum", "Beslist op") == ""
+
+
+# ---------------------------------------------------------------------------
+# parse_info_card  (dl/dd fixture)
+# ---------------------------------------------------------------------------
+
+
+@pytest.fixture
+def info_card_html() -> str:
+    """Load the saved info card HTML fixture."""
+    return INFO_CARD_FIXTURE_PATH.read_text(encoding="utf-8")
+
+
+def test_parse_info_card_date(info_card_html: str) -> None:
+    """The ruling date should be parsed from the Datum label."""
+    ruling = discover.parse_info_card(info_card_html, "2026-014n")
+    assert ruling["ruling_date"] == date(2026, 2, 14)
+
+
+def test_parse_info_card_role_number(info_card_html: str) -> None:
+    """The role number should be extracted from the Rolnummer label."""
+    ruling = discover.parse_info_card(info_card_html, "2026-014n")
+    assert ruling["role_number"] == "9123"
+
+
+def test_parse_info_card_procedure_type(info_card_html: str) -> None:
+    """The procedure type should be extracted from the rechtspleging label."""
+    ruling = discover.parse_info_card(info_card_html, "2026-014n")
+    assert ruling["procedure_type"] == "Prejudiciële vraag"
+
+
+def test_parse_info_card_controlled_norm(info_card_html: str) -> None:
+    """The controlled norm should be extracted from the Bestreden bepaling label."""
+    ruling = discover.parse_info_card(info_card_html, "2026-014n")
+    assert "Vlaamse Wooncode" in ruling["controlled_norm"]
+
+
+def test_parse_info_card_outcome(info_card_html: str) -> None:
+    """The outcome should be extracted from the Dictum label."""
+    ruling = discover.parse_info_card(info_card_html, "2026-014n")
+    assert ruling["outcome"] == "Geen schending"
+
+
+def test_parse_info_card_keywords(info_card_html: str) -> None:
+    """Keywords should be split on ' - ' and returned as a list."""
+    ruling = discover.parse_info_card(info_card_html, "2026-014n")
+    assert ruling["keywords"] == ["Wonen", "Sociale huisvesting"]
+
+
+def test_parse_info_card_derived_fields(info_card_html: str) -> None:
+    """Arrest number and pdf_url are derived from the slug, not from the HTML."""
+    ruling = discover.parse_info_card(info_card_html, "2026-014n")
+    assert ruling["arrest_number"] == "14/2026"
+    assert "2026-014n.pdf" in ruling["pdf_url"]
+
+
+def test_parse_info_card_empty_page_falls_back_gracefully() -> None:
+    """A page with no recognizable metadata should yield empty strings, not raise."""
+    ruling = discover.parse_info_card("<html><body></body></html>", "2026-001n")
+    assert ruling["procedure_type"] == ""
+    assert ruling["keywords"] == []
+    assert ruling["ruling_date"] == date.min
+
+
+def test_parse_info_card_inline_span_fallback() -> None:
+    """span-based 'label : value' format should also be parsed correctly."""
+    html = """
+    <html><body>
+      <span>Rolnummer : 8423</span>
+      <span>Trefwoorden : Grondrechten - Eigendomsrecht</span>
+    </body></html>
+    """
+    ruling = discover.parse_info_card(html, "2025-061n")
+    assert ruling["role_number"] == "8423"
+    assert ruling["keywords"] == ["Grondrechten", "Eigendomsrecht"]

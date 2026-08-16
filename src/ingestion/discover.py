@@ -69,6 +69,23 @@ _TOP_INFOS_CLASS = "top-infos"
 _ROLE_NUMBER_PREFIX_RE = re.compile(r"^Rolnummers?\s*:?\s*", re.IGNORECASE)
 _KEYWORDS_PREFIX_RE = re.compile(r"^Trefwoorden\s*:?\s*", re.IGNORECASE)
 
+# Tags that carry a single "Label : value" text node on the Court site.
+_INLINE_TAGS = frozenset({"span", "p", "li"})
+
+# Dutch label variants for each metadata field on the ARR info-card page.
+# Multiple entries per field cover label wording and plural differences.
+_LABEL_DATE = ("Datum", "Datum arrest", "Datum uitspraak", "Beslist op")
+_LABEL_ROLE = ("Rolnummer", "Rolnummers", "Rolnr")
+_LABEL_PROCEDURE = (
+    "Aard van de rechtspleging",
+    "Type procedure",
+    "Procedure",
+    "Rechtspleging",
+)
+_LABEL_NORM = ("Bestreden bepaling", "Getoetste norm", "Norm", "Onderwerp")
+_LABEL_OUTCOME = ("Dictum", "Uitspraak", "Beslissing", "Besluit")
+_LABEL_KEYWORDS = ("Trefwoorden", "Sleutelwoorden", "Onderwerpen")
+
 
 class DiscoveredRuling(TypedDict):
     """One ruling record scraped from the case overview listing.
@@ -429,6 +446,52 @@ def arrest_number_from_slug(file_slug: str) -> str:
 # ---------------------------------------------------------------------------
 
 
+def _find_labeled_value(soup: BeautifulSoup, *labels: str) -> str:
+    """Return the value paired with the first matching Dutch label.
+
+    Searches two HTML patterns in order:
+
+    1. ``<dt>label</dt><dd>value</dd>`` or ``<th>label</th><td>value</td>``:
+       used by definition-list and table-based info pages.
+    2. An inline element (``<span>``, ``<p>``, ``<li>``) whose full text
+       matches ``"label : value"``: used by the Vuetify listing page and
+       similar span-based info-card variants.
+
+    Checking both patterns makes the parser robust to the two distinct HTML
+    structures observed on the const-court.be domain without relying on
+    CSS class names, which differ between page versions.
+
+    Args:
+        soup: Parsed HTML document.
+        *labels: Dutch label strings to try, in order of preference.
+
+    Returns:
+        The extracted value text, or an empty string if nothing matched.
+    """
+    for label in labels:
+        re_exact = re.compile(r"^\s*" + re.escape(label) + r"\s*$", re.IGNORECASE)
+
+        # Pattern 1: definition list or table (<dt>/<th> → <dd>/<td>).
+        for tag_name in ("dt", "th"):
+            el = soup.find(tag_name, string=re_exact)
+            if el is not None:
+                sibling = el.find_next_sibling(["dd", "td"])
+                if sibling is not None:
+                    return sibling.get_text(separator=" ", strip=True)
+
+        # Pattern 2: inline "label : value" element.
+        re_prefix = re.compile(
+            r"^\s*" + re.escape(label) + r"\s*:?\s*(.+)$", re.IGNORECASE
+        )
+        for el in soup.find_all(_INLINE_TAGS):
+            text = el.get_text(" ", strip=True)
+            m = re_prefix.match(text)
+            if m:
+                return m.group(1).strip()
+
+    return ""
+
+
 def fetch_info_card_html(
     arrest_number: str,
     language: str = "nl",
@@ -467,72 +530,33 @@ def parse_info_card(
     carries the ruling's date, procedure type, controlled norm, outcome,
     role number, and keywords. This parser is the authoritative metadata
     source when using document-server-based discovery (the listing page is
-    not used).
+    not used because TLS fingerprinting blocks automated requests there).
 
-    .. note::
-        The HTML structure of the info card page has not yet been confirmed
-        to be server-rendered (vs. a Nuxt.js SPA). If the page is SPA-only,
-        BeautifulSoup will find no data and all fields will fall back to empty
-        strings. Run ``fetch_info_card_html`` manually on a live ruling to
-        verify before relying on this parser in production.
+    Uses :func:`_find_labeled_value` to scan for Dutch label text in both
+    ``<dt>/<dd>`` definition-list structure and inline ``"label : value"``
+    spans, so it remains correct across page redesigns that change CSS class
+    names without changing the visible label text.
 
     Args:
         html: Raw HTML of the info card page.
         file_slug: File/URL slug, e.g. ``"2026-014n"``, used to derive the
-            arrest number and PDF download URL when they cannot be found in
-            the page.
+            arrest number and PDF download URL.
         language: ISO 639-1 language code.
 
     Returns:
         A ``DiscoveredRuling`` record; fields that could not be parsed fall
-        back to empty strings or empty lists.
+        back to empty strings or empty lists rather than raising.
     """
     soup = BeautifulSoup(html, "html.parser")
     arrest_number = arrest_number_from_slug(file_slug)
     pdf_url = ghcc_pdf_download_url(file_slug, language)
 
-    # --- Fields extracted from the info card page ---
-    # The HTML structure below is a best-effort guess based on standard
-    # patterns used on similar court websites. Update these selectors once
-    # the actual page HTML is confirmed (share a saved copy of any info card
-    # page to validate and tighten this parser).
-
-    def _text(selector: str) -> str:
-        tag = soup.select_one(selector)
-        return tag.get_text(separator=" ", strip=True) if tag else ""
-
-    # Try common <dl>/<dt>/<dd> pattern first, then fall back to searching
-    # the full page text for known Dutch label prefixes.
-    ruling_date_text = (
-        _text("dd.ruling-date")
-        or _text("[data-field='date']")
-        or _text(".arrest-date")
-    )
-    role_number_text = (
-        _text("dd.role-number")
-        or _text("[data-field='rolnummer']")
-        or _text(".role-number")
-    )
-    procedure_type_text = (
-        _text("dd.procedure-type")
-        or _text("[data-field='procedure']")
-        or _text(".procedure-type")
-    )
-    controlled_norm_text = (
-        _text("dd.controlled-norm")
-        or _text("[data-field='norm']")
-        or _text(".controlled-norm")
-    )
-    outcome_text = (
-        _text("dd.outcome")
-        or _text("[data-field='outcome']")
-        or _text(".outcome")
-    )
-    keywords_text = (
-        _text("dd.keywords")
-        or _text("[data-field='keywords']")
-        or _text(".keywords")
-    )
+    ruling_date_text = _find_labeled_value(soup, *_LABEL_DATE)
+    role_number_text = _find_labeled_value(soup, *_LABEL_ROLE)
+    procedure_type_text = _find_labeled_value(soup, *_LABEL_PROCEDURE)
+    controlled_norm_text = _find_labeled_value(soup, *_LABEL_NORM)
+    outcome_text = _find_labeled_value(soup, *_LABEL_OUTCOME)
+    keywords_text = _find_labeled_value(soup, *_LABEL_KEYWORDS)
 
     # Parse the date; fall back to a sentinel so upstream code can detect
     # and log the failure rather than silently storing a wrong date.
