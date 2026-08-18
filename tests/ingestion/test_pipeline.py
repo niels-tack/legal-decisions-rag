@@ -227,7 +227,7 @@ def test_process_ruling_raises_when_ecli_not_found(
 def _fake_discovery(
     monkeypatch: pytest.MonkeyPatch, slugs: list[str]
 ) -> None:
-    """Patch the three document-server discovery calls to return ``slugs``."""
+    """Patch discovery calls to return ``slugs`` without any network access."""
     monkeypatch.setattr(
         discover,
         "fetch_document_server_listing",
@@ -240,15 +240,19 @@ def _fake_discovery(
     )
     monkeypatch.setattr(
         discover,
-        "fetch_info_card_html",
-        lambda arrest_number, language="nl", session=None: "<html></html>",
+        "fetch_listing_html",
+        lambda year, language="nl", session=None, timeout=30.0: "<html></html>",
     )
     monkeypatch.setattr(
         discover,
-        "parse_info_card",
-        lambda html, file_slug, language="nl": _make_discovered(
-            discover.ghcc_pdf_download_url(file_slug), arrest_number=discover.arrest_number_from_slug(file_slug)
-        ),
+        "parse_listing_html",
+        lambda html, language="nl": [
+            _make_discovered(
+                discover.ghcc_pdf_download_url(slug),
+                arrest_number=discover.arrest_number_from_slug(slug),
+            )
+            for slug in slugs
+        ],
     )
 
 
@@ -371,19 +375,27 @@ def test_main_wires_parsed_args_into_run_pipeline(
         push: bool = False,
         delay_seconds: float = pipeline.DEFAULT_DELAY_SECONDS,
         session: object | None = None,
+        force: bool = False,
+        use_pdf_cache: bool = True,
     ) -> list[Path]:
         captured.update(
             data_repo_path=data_repo_path,
             year=year,
             push=push,
             delay_seconds=delay_seconds,
+            force=force,
+            use_pdf_cache=use_pdf_cache,
         )
         return []
 
     monkeypatch.setattr(pipeline, "run_pipeline", fake_run_pipeline)
 
-    pipeline.main(["--data-repo-path", "/tmp/data", "--push", "--year", "2024"])
+    pipeline.main(
+        ["--data-repo-path", "/tmp/data", "--push", "--year", "2024", "--force", "--no-pdf-cache"]
+    )
 
     assert captured["data_repo_path"] == Path("/tmp/data")
     assert captured["year"] == 2024
     assert captured["push"] is True
+    assert captured["force"] is True
+    assert captured["use_pdf_cache"] is False

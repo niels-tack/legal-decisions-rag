@@ -79,6 +79,32 @@ frontend-typecheck:
 frontend-build: frontend-dev-data
     npm --prefix frontend run build
 
+# Run the weekly Constitutional Court ingestion pipeline.
+#
+# Required:
+#   data_repo_path   local clone of the niels-tack/legal_decisions data repository
+#
+# Optional positional overrides (supply "" to keep defaults):
+#   year             calendar year to discover (defaults to current year)
+#
+# Optional flags (append after positional args):
+#   --push           commit + push new Markdown files to the data repo remote
+#   --force          re-process slugs that already have a .md file (re-ingest mode)
+#   --no-pdf-cache   re-download PDFs even if a .pdf is already cached locally
+#   --delay-seconds N  seconds to wait between PDF downloads (default: 2.0)
+#
+# Examples:
+#   just ingest /path/to/legal_decisions                        # current year, dry run
+#   just ingest /path/to/legal_decisions 2026 --push            # push new files
+#   just ingest /path/to/legal_decisions 2026 --force           # re-ingest all (use cached PDFs)
+#   just ingest /path/to/legal_decisions 2025 --force --no-pdf-cache  # full re-download
+[group('lifecycle')]
+ingest data_repo_path year=`date +%Y` *args="":
+    uv run python -m src.ingestion.pipeline \
+        --data-repo-path "{{data_repo_path}}" \
+        --year {{year}} \
+        {{args}}
+
 # Process the checked-in sample PDFs (reference/sample_decisions/CoC_pdf) into
 # Markdown: real PDF extraction, no network access - see
 # scripts/process_sample_pdfs.py for what's real vs. placeholder.

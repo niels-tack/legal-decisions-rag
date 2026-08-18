@@ -18,7 +18,10 @@
       "Bash(git -C /mnt/c/Users/niels/Documents/Documenten/Projecten/legal-decisions-rag ls-files frontend/vite.config.ts)",
       "Bash(git -C /mnt/c/Users/niels/Documents/Documenten/Projecten/legal-decisions-rag status --short frontend/vite.config.ts)",
       "Bash(git *)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(npm --prefix /mnt/c/Users/niels/Documents/Documenten/Projecten/legal-decisions-rag/frontend install sql.js)",
+      "Bash(npm install *)",
+      "Bash(npm --prefix frontend run test)"
     ]
   }
 }

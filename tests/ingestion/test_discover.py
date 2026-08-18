@@ -9,6 +9,9 @@ from src.ingestion import discover
 
 FIXTURE_PATH = Path(__file__).parent / "fixtures" / "listing_sample.html"
 INFO_CARD_FIXTURE_PATH = Path(__file__).parent / "fixtures" / "info_card_sample.html"
+REAL_SAMPLE_PATH = (
+    Path(__file__).parents[2] / "reference" / "real_samples" / "listing_2026-07_nl.html"
+)
 
 
 @pytest.fixture
@@ -29,20 +32,14 @@ def test_parse_listing_html_extracts_single_role_number_case(listing_html: str) 
     rulings = discover.parse_listing_html(listing_html)
     first = rulings[0]
 
-    assert first["arrest_number"] == "61/2025"
-    assert first["role_number"] == "8423"
-    assert first["ruling_date"] == date(2025, 4, 3)
+    assert first["arrest_number"] == "92/2026"
+    assert first["role_number"] == "8510"
+    assert first["ruling_date"] == date(2026, 7, 16)
     assert first["procedure_type"] == "Beroep tot vernietiging"
-    assert (
-        first["controlled_norm"]
-        == "Wetten en procedures inzake gedeeltelijke verbeurdverklaring"
-    )
-    assert first["outcome"] == "Verwerping van het beroep"
-    assert first["keywords"] == [
-        "Voorafgaande rechtspleging",
-        "Beroep tot vernietiging",
-    ]
-    assert first["pdf_url"] == "https://www.const-court.be/public/n/2025/2025-061n.pdf"
+    assert "waterbeleid" in first["controlled_norm"].lower()
+    assert "Verwerping" in first["outcome"]
+    assert first["keywords"] == ["Leefmilieu", "Vlaams Gewest", "Waterbeleid"]
+    assert first["pdf_url"] == "https://nl.const-court.be/public/n/2026/2026-092n.pdf"
 
 
 def test_parse_listing_html_joins_multiple_role_numbers(listing_html: str) -> None:
@@ -50,7 +47,7 @@ def test_parse_listing_html_joins_multiple_role_numbers(listing_html: str) -> No
     rulings = discover.parse_listing_html(listing_html)
     third = rulings[2]
 
-    assert third["role_number"] == "8224, 8223"
+    assert third["role_number"] == "8463, 8513"
 
 
 def test_parse_listing_html_treats_bare_dash_keywords_as_empty(
@@ -68,6 +65,70 @@ def test_parse_listing_html_returns_empty_list_for_no_cards() -> None:
     rulings = discover.parse_listing_html("<html><body>No cases here.</body></html>")
 
     assert rulings == []
+
+
+# ---------------------------------------------------------------------------
+# Real-world sample (reference/real_samples/listing_2026-07_nl.html), captured
+# from https://nl.const-court.be/judgments?year=2026&month=7. Grounds the
+# parser against markup shapes the hand-written fixture above doesn't cover.
+# ---------------------------------------------------------------------------
+
+
+@pytest.fixture
+def real_listing_html() -> str:
+    """Load the real captured listing HTML sample."""
+    return REAL_SAMPLE_PATH.read_text(encoding="utf-8")
+
+
+def test_parse_real_sample_finds_all_four_cards(real_listing_html: str) -> None:
+    """All four complete cards in the real capture should be parsed."""
+    rulings = discover.parse_listing_html(real_listing_html)
+
+    assert [r["arrest_number"] for r in rulings] == [
+        "92/2026",
+        "91/2026",
+        "90/2026",
+        "89/2026",
+    ]
+
+
+def test_parse_real_sample_preserves_guillemets_in_controlled_norm(
+    real_listing_html: str,
+) -> None:
+    """Guillemet-quoted law titles (« ... ») should come through unescaped."""
+    rulings = discover.parse_listing_html(real_listing_html)
+
+    assert "« tot wijziging van het decreet" in rulings[0]["controlled_norm"]
+
+
+def test_parse_real_sample_joins_br_separated_outcome_bullets(
+    real_listing_html: str,
+) -> None:
+    """A <br>-separated bulleted outcome (arr-89-2026) should join into one
+    space-separated string, keeping each bullet's leading '-' intact."""
+    rulings = discover.parse_listing_html(real_listing_html)
+    outcome = rulings[3]["outcome"]
+
+    assert outcome.startswith("- Prejudiciële vragen aan het Hof van Justitie")
+    assert " - Vernietiging (artikel 51/5" in outcome
+    assert "<br>" not in outcome
+
+
+def test_parse_real_sample_dash_joined_role_numbers(real_listing_html: str) -> None:
+    """"8411 - 8412" (arr-89-2026) should be split and comma-joined."""
+    rulings = discover.parse_listing_html(real_listing_html)
+
+    assert rulings[3]["role_number"] == "8411, 8412"
+
+
+def test_parse_real_sample_ignores_press_release_link(real_listing_html: str) -> None:
+    """A "Persbericht" press-release link (arr-91-2026, arr-89-2026) must not
+    be picked up as, or corrupt, the controlled norm or outcome fields."""
+    rulings = discover.parse_listing_html(real_listing_html)
+
+    assert "Persbericht" not in rulings[1]["controlled_norm"]
+    assert "Persbericht" not in rulings[1]["outcome"]
+    assert "Persbericht" not in rulings[3]["outcome"]
 
 
 @pytest.mark.parametrize(
