@@ -136,20 +136,38 @@ def _parse_date(text: str) -> date:
 
 
 def _clean_docket_number(text: str) -> str:
-    """Normalize a role-number element's text into a single comma-joined string.
+    """Normalize a docket-number element's text into a deterministic string.
 
-    Handles both "Rolnummer: 8115" and "Rolnummer : 8115" formats, as well
-    as plural multi-number forms like "Rolnummer: 8224 - 8226".
+    Handles plain values ("Rolnummer: 8115"), spaced prefixes
+    ("Rolnummer : 8115"), and inclusive ranges ("Rolnummer: 8224 - 8226"),
+    expanding each range to every value between the endpoints.
 
     Args:
-        text: The raw text of the role-number element.
+        text: The raw text of the docket-number element.
 
     Returns:
-        The docket number(s) joined with ``", "``, e.g. ``"8224, 8223"``.
+        The docket number(s) joined with ``", "``.
     """
     stripped = _ROLE_NUMBER_PREFIX_RE.sub("", text).strip()
-    parts = [part.strip() for part in stripped.split("-") if part.strip()]
-    return ", ".join(parts)
+    values: list[str] = []
+
+    for segment in re.split(r"\s*,\s*", stripped):
+        segment = segment.strip()
+        if not segment:
+            continue
+
+        range_match = re.fullmatch(r"(\d+)\s*-\s*(\d+)", segment)
+        if range_match:
+            start = int(range_match.group(1))
+            end = int(range_match.group(2))
+            if start > end:
+                start, end = end, start
+            values.extend(str(number) for number in range(start, end + 1))
+            continue
+
+        values.append(segment)
+
+    return ", ".join(values)
 
 
 def _clean_keywords(text: str) -> list[str]:
