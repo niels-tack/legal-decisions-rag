@@ -160,22 +160,23 @@ def build_case_metadata(
         A validated ``CaseMetadata`` instance ready for
         ``assemble.write_case_file``.
     """
+    challenged_norm = discovered.get("challenged_norm") or discovered["controlled_norm"]
     return CaseMetadata(
         source=SOURCE_CONSTITUTIONAL_COURT,
         ecli=ecli,
-        arrest_number=discovered["arrest_number"],
-        role_number=discovered["role_number"],
+        case_number=discovered["case_number"],
+        docket_number=discovered["docket_number"],
         file_slug=file_slug,
         ruling_date=discovered["ruling_date"],
         language="nl",
         procedure_type=discovered["procedure_type"],
-        controlled_norm=discovered["controlled_norm"],
+        controlled_norm=challenged_norm,
         outcome=discovered["outcome"],
         keywords=discovered["keywords"],
         source_pdf_url=discover.ghcc_permalink_pdf(
-            discovered["arrest_number"], language="nl"
+            discovered["case_number"], language="nl"
         ),
-        title=_build_title(discovered["procedure_type"], discovered["controlled_norm"]),
+        title=_build_title(discovered["procedure_type"], challenged_norm),
     )
 
 
@@ -200,6 +201,7 @@ def process_ruling(
     pdf_cache_dir: Path,
     session: requests.Session,
     label: str = "",
+    use_pdf_cache: bool = True,
 ) -> Path:
     """Download, extract, and assemble the Markdown file for one new ruling.
 
@@ -209,6 +211,9 @@ def process_ruling(
         pdf_cache_dir: Directory the downloaded PDF is kept in.
         session: A polite requests session for the PDF download.
         label: Optional progress prefix (e.g. ``"[2/5]"``) shown in log lines.
+        use_pdf_cache: If True (default), skip the PDF download when a cached
+            ``.pdf`` already exists under ``pdf_cache_dir``. Pass False to
+            force a fresh download regardless.
 
     Returns:
         The path of the written Markdown file.
@@ -219,11 +224,14 @@ def process_ruling(
     file_slug = discover.file_slug_from_pdf_url(discovered["pdf_url"])
     tag = f"{label} {file_slug}" if label else file_slug
 
-    logger.info("%s - downloading PDF...", tag)
     pdf_path = pdf_cache_dir / f"{file_slug}.pdf"
-    download_pdf(
-        discover.ghcc_pdf_download_url(file_slug, language="nl"), pdf_path, session
-    )
+    if use_pdf_cache and pdf_path.exists():
+        logger.info("%s - using cached PDF.", tag)
+    else:
+        logger.info("%s - downloading PDF...", tag)
+        download_pdf(
+            discover.ghcc_pdf_download_url(file_slug, language="nl"), pdf_path, session
+        )
 
     logger.info("%s - extracting ECLI...", tag)
     ecli = extract.extract_ecli(pdf_path)
@@ -277,6 +285,8 @@ def run_pipeline(
     push: bool = False,
     delay_seconds: float = DEFAULT_DELAY_SECONDS,
     session: requests.Session | None = None,
+    force: bool = False,
+    use_pdf_cache: bool = True,
 ) -> list[Path]:
     """Run one full weekly ingestion pass for a given year.
 
@@ -298,6 +308,12 @@ def run_pipeline(
             downloads.
         session: An existing session to reuse; a fresh polite session (see
             ``build_session``) is created if omitted.
+        force: If True, re-process slugs that already have a Markdown file
+            instead of skipping them. Use for re-ingestion after a metadata
+            extraction fix.
+        use_pdf_cache: If True (default), skip PDF downloads for slugs whose
+            ``.pdf`` file already exists in the cache directory. Pass False
+            to force fresh downloads.
 
     Returns:
         Paths of newly written Markdown files (empty if nothing was new).
@@ -316,55 +332,47 @@ def run_pipeline(
         target_year, session=http_session
     )
     all_slugs = discover.parse_document_server_listing(server_html, target_year)
-    new_slugs = [s for s in all_slugs if s not in known_slugs]
-    logger.info(
-        "Phase 1/3: %d ruling(s) on document server, %d new (already known: %d).",
-        len(all_slugs),
-        len(new_slugs),
-        len(known_slugs),
-    )
+    if force:
+        new_slugs = list(all_slugs)
+        logger.info(
+            "Phase 1/3: --force: re-processing all %d slug(s) (ignoring %d already known).",
+            len(new_slugs),
+            len(known_slugs),
+        )
+    else:
+        new_slugs = [s for s in all_slugs if s not in known_slugs]
+        logger.info(
+            "Phase 1/3: %d ruling(s) on document server, %d new (already known: %d).",
+            len(all_slugs),
+            len(new_slugs),
+            len(known_slugs),
+        )
 
     if not new_slugs:
         logger.info("Nothing to do.")
         return []
 
     # ------------------------------------------------------------------
-    # Phase 2: fetch info cards for each new slug
+    # Phase 2: fetch the listing page once and match slugs to metadata
     # ------------------------------------------------------------------
-    total_new = len(new_slugs)
     logger.info(
-        "=== Phase 2/3: Fetching info cards for %d new ruling(s) ===", total_new
+        "=== Phase 2/3: Fetching year %d listing page for metadata ===", target_year
     )
+    listing_html = discover.fetch_listing_html(target_year, session=http_session)
+    all_rulings = discover.parse_listing_html(listing_html)
+    slug_to_ruling: dict[str, discover.DiscoveredRuling] = {
+        discover.file_slug_from_pdf_url(r["pdf_url"]): r for r in all_rulings
+    }
     discovered_rulings: list[discover.DiscoveredRuling] = []
-    for idx, slug in enumerate(new_slugs, start=1):
-        arrest_number = discover.arrest_number_from_slug(slug)
-        logger.info(
-            "[%d/%d] %s - fetching info card (arrest %s)...",
-            idx,
-            total_new,
-            slug,
-            arrest_number,
-        )
-        try:
-            card_html = discover.fetch_info_card_html(
-                arrest_number, session=http_session
-            )
-            ruling = discover.parse_info_card(card_html, slug)
-        except Exception as exc:
-            logger.warning(
-                "[%d/%d] %s - info card failed (%s): %s - skipping.",
-                idx,
-                total_new,
-                slug,
-                arrest_number,
-                exc,
-            )
-            continue
-        discovered_rulings.append(ruling)
+    for slug in new_slugs:
+        if slug in slug_to_ruling:
+            discovered_rulings.append(slug_to_ruling[slug])
+        else:
+            logger.warning("Slug %s not found on listing page - skipping.", slug)
     logger.info(
-        "Phase 2/3: %d/%d ruling(s) ready for processing.",
+        "Phase 2/3: %d/%d new slug(s) matched on listing page.",
         len(discovered_rulings),
-        total_new,
+        len(new_slugs),
     )
 
     # ------------------------------------------------------------------
@@ -378,7 +386,14 @@ def run_pipeline(
             time.sleep(delay_seconds)
         label = f"[{idx}/{total_process}]"
         written_paths.append(
-            process_ruling(ruling, output_dir, pdf_cache_dir, http_session, label=label)
+            process_ruling(
+                ruling,
+                output_dir,
+                pdf_cache_dir,
+                http_session,
+                label=label,
+                use_pdf_cache=use_pdf_cache,
+            )
         )
 
     logger.info("=== Done: wrote %d new case file(s) ===", len(written_paths))
@@ -432,6 +447,24 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         default=DEFAULT_DELAY_SECONDS,
         help="Politeness delay between successive PDF downloads.",
     )
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        default=False,
+        help=(
+            "Re-process all slugs, even those that already have a Markdown file. "
+            "Use after a metadata-extraction fix to regenerate existing cases."
+        ),
+    )
+    parser.add_argument(
+        "--no-pdf-cache",
+        action="store_true",
+        default=False,
+        help=(
+            "Re-download PDFs even if a cached .pdf already exists. "
+            "Off by default; the cache avoids redundant bandwidth on re-ingestion runs."
+        ),
+    )
     return parser.parse_args(argv)
 
 
@@ -448,6 +481,8 @@ def main(argv: list[str] | None = None) -> None:
         year=args.year,
         push=args.push,
         delay_seconds=args.delay_seconds,
+        force=args.force,
+        use_pdf_cache=not args.no_pdf_cache,
     )
 
 

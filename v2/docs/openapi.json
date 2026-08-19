@@ -2,7 +2,7 @@
   "openapi": "3.0.3",
   "info": {
     "title": "Belgian Constitutional Court Rulings Search API",
-    "description": "Hosted, read-only search API over Belgian Constitutional Court rulings (Dutch-language, POC scope). Returns ranked, cited passages from official rulings using hybrid BM25 + vector retrieval. This API is designed to be called by an AI agent or assistant (Microsoft Copilot Studio declarative agent, ChatGPT Custom GPT Action, or MCP server) on behalf of a non-technical end user who asked a plain-language question about Constitutional Court case law. The API does not synthesize answers itself - it only retrieves and returns cited source passages; the calling LLM is responsible for composing the final answer and MUST include the citation fields (ecli, arrest_number, ruling_date) for every ruling it references, plus a link to source_pdf_url so a human can verify the passage against the original PDF.",
+    "description": "Hosted, read-only search API over Belgian Constitutional Court rulings (Dutch-language, POC scope). Returns ranked, cited passages from official rulings using hybrid BM25 + vector retrieval. This API is designed to be called by an AI agent or assistant (Microsoft Copilot Studio declarative agent, ChatGPT Custom GPT Action, or MCP server) on behalf of a non-technical end user who asked a plain-language question about Constitutional Court case law. The API does not synthesize answers itself - it only retrieves and returns cited source passages; the calling LLM is responsible for composing the final answer and MUST include the citation fields (ecli, case_number, ruling_date) for every ruling it references, plus a link to source_pdf_url so a human can verify the passage against the original PDF.",
     "version": "1.0.0",
     "contact": {
       "name": "legal-decisions-rag maintainer",
@@ -36,13 +36,13 @@
         "tags": ["search"],
         "operationId": "searchConstitutionalCourtRulings",
         "summary": "Search Belgian Constitutional Court rulings",
-        "description": "Runs a hybrid BM25 (lexical) + vector (semantic) search over the indexed corpus of Belgian Constitutional Court rulings and returns the top-ranked matching passages, each tagged with full case metadata for citation. Call this action whenever a user asks a question about Belgian Constitutional Court case law - for example a conceptual/topical question (e.g. 'What has the Court decided about environmental permits?'), or an exact-lookup question naming a specific citation, case number, role number, or article. Every result includes everything needed to cite the source correctly: at minimum, always cite the `ecli`, `arrest_number`, and `ruling_date` together in the answer, and include a link to `source_pdf_url` so the user can open and verify the original official PDF. Do not present retrieved passages as legal advice - they are excerpts of official rulings for the calling assistant to summarize and cite, not a substitute for the source text.",
+        "description": "Runs a hybrid BM25 (lexical) + vector (semantic) search over the indexed corpus of Belgian Constitutional Court rulings and returns the top-ranked matching passages, each tagged with full case metadata for citation. Call this action whenever a user asks a question about Belgian Constitutional Court case law - for example a conceptual/topical question (e.g. 'What has the Court decided about environmental permits?'), or an exact-lookup question naming a specific citation, case number, docket number, or article. Every result includes everything needed to cite the source correctly: at minimum, always cite the `ecli`, `case_number`, and `ruling_date` together in the answer, and include a link to `source_pdf_url` so the user can open and verify the original official PDF. Do not present retrieved passages as legal advice - they are excerpts of official rulings for the calling assistant to summarize and cite, not a substitute for the source text.",
         "parameters": [
           {
             "name": "q",
             "in": "query",
             "required": true,
-            "description": "The search query. Accepts either a natural-language question in Dutch or English (e.g. 'Wat besliste het Grondwettelijk Hof over energiepremies?' or 'rulings about environmental permits in 2024') or an exact citation to look up directly (e.g. an ECLI such as 'ECLI:BE:GHCC:2025:ARR.001', an arrest number such as '1/2025', a role/docket number such as '8115', or a file slug such as '2025-001n'). Do not rephrase or truncate a citation the user typed - pass it through as-is so exact-match lexical search can find it.",
+            "description": "The search query. Accepts either a natural-language question in Dutch or English (e.g. 'Wat besliste het Grondwettelijk Hof over energiepremies?' or 'rulings about environmental permits in 2024') or an exact citation to look up directly (e.g. an ECLI such as 'ECLI:BE:GHCC:2025:ARR.001', an case number such as '1/2025', a role/docket number such as '8115', or a file slug such as '2025-001n'). Do not rephrase or truncate a citation the user typed - pass it through as-is so exact-match lexical search can find it.",
             "schema": {
               "type": "string",
               "minLength": 1,
@@ -151,11 +151,11 @@
       },
       "SearchResultItem": {
         "type": "object",
-        "description": "One ranked passage from a single Constitutional Court ruling, together with the full metadata needed to cite it correctly. ecli, arrest_number, role_number, and case_number are distinct identifiers from the source documents and must not be conflated or substituted for one another when citing a ruling.",
+        "description": "One ranked passage from a single Constitutional Court ruling, together with the full metadata needed to cite it correctly. ecli, case_number, docket_number, and case_number are distinct identifiers from the source documents and must not be conflated or substituted for one another when citing a ruling.",
         "required": [
           "ecli",
-          "arrest_number",
-          "role_number",
+          "case_number",
+          "docket_number",
           "case_number",
           "ruling_date",
           "language",
@@ -174,25 +174,25 @@
             "description": "Canonical citation identifier for the ruling (European Case Law Identifier), e.g. 'ECLI:BE:GHCC:2025:ARR.001'. Always include this verbatim when citing the ruling in an answer.",
             "example": "ECLI:BE:GHCC:2025:ARR.001"
           },
-          "arrest_number": {
+          "case_number": {
             "type": "string",
             "description": "Official arrest (judgment) number as published by the Court, e.g. '1/2025'. Always include this alongside the ECLI and ruling date when citing.",
             "example": "1/2025"
           },
-          "role_number": {
+          "docket_number": {
             "type": "string",
-            "description": "Role/docket number ('rolnummer') of the underlying case before the Court, e.g. '8115'. Distinct from the arrest number and case number - do not use interchangeably.",
+            "description": "Role/docket number ('rolnummer') of the underlying case before the Court, e.g. '8115'. Distinct from the case number and case number - do not use interchangeably.",
             "example": "8115"
           },
           "case_number": {
             "type": "string",
-            "description": "File/URL slug used by the Court's own website for this ruling, e.g. '2025-001n'. Distinct from the ECLI, arrest number, and role number.",
+            "description": "File/URL slug used by the Court's own website for this ruling, e.g. '2025-001n'. Distinct from the ECLI, case number, and docket number.",
             "example": "2025-001n"
           },
           "ruling_date": {
             "type": "string",
             "format": "date",
-            "description": "Date the ruling was rendered (ISO 8601, YYYY-MM-DD). Always include this alongside the ECLI and arrest number when citing.",
+            "description": "Date the ruling was rendered (ISO 8601, YYYY-MM-DD). Always include this alongside the ECLI and case number when citing.",
             "example": "2025-01-09"
           },
           "language": {

@@ -140,8 +140,8 @@ def test_successful_response_is_parsed_and_returned(
         "results": [
             {
                 "ecli": "ECLI:BE:GHCC:2025:ARR.001",
-                "arrest_number": "1/2025",
-                "role_number": "8001",
+                "case_number": "1/2025",
+                "docket_number": "8001",
                 "case_number": "2025-001n",
                 "ruling_date": "2025-01-15",
                 "language": "nl",

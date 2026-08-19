@@ -80,9 +80,6 @@ jobs:
         run: |
           set -euo pipefail
           MARKDOWN_DIR="${DATA_REPO_PATH}/${MARKDOWN_SUBPATH}"
-          # Create the directory if it doesn't exist yet (empty data repo is
-          # valid during bootstrapping - build_index handles an empty dir
-          # gracefully and produces a valid, empty cases.db).
           mkdir -p "$MARKDOWN_DIR"
           FILE_COUNT=$(find "$MARKDOWN_DIR" -maxdepth 1 -name '*.md' | wc -l)
           echo "markdown_dir=${MARKDOWN_DIR}" >> "$GITHUB_OUTPUT"
@@ -113,11 +110,10 @@ jobs:
         run: npm --prefix frontend ci
 
       - name: Build frontend (Vite)
-        # VITE_SEARCH_BACKEND defaults to "local" (client-side SQLite provider)
-        # when not set - correct for Phase 1.
-        # VITE_BASE_PATH sets Vite's `base` to the GitHub Pages subpath so
-        # asset URLs resolve correctly under /legal-decisions-rag/.
+        # VITE_SEARCH_BACKEND: set local to stay on the browser-side SQLite provider
+        # VITE_BASE_PATH: set Vite's base path to GitHub Pages subpath
         env:
+          VITE_SEARCH_BACKEND: local
           VITE_BASE_PATH: /${{ github.event.repository.name }}/
         run: npm --prefix frontend run build
 

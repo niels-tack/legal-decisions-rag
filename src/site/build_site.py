@@ -238,8 +238,8 @@ def render_case_page(metadata: CaseMetadata, sections: dict[str, str]) -> str:
         for label, value in (
             ("Source", source_config.name),
             ("ECLI", metadata.ecli),
-            ("Arrest number", metadata.arrest_number),
-            ("Role number", metadata.role_number),
+            ("Case number", metadata.case_number),
+            ("Docket number", metadata.docket_number),
             ("Date", metadata.ruling_date.isoformat()),
             ("Language", metadata.language),
             ("Procedure type", metadata.procedure_type),

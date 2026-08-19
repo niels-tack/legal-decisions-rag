@@ -189,8 +189,16 @@ def _semantic_search(
 
     top_indices = np.argsort(-scores)[:limit]
     return [
-        (rows[i][0], rows[i][1], rows[i][2], rows[i][3], rows[i][4],
-         rows[i][5], rows[i][6], rows[i][7])
+        (
+            rows[i][0],
+            rows[i][1],
+            rows[i][2],
+            rows[i][3],
+            rows[i][4],
+            rows[i][5],
+            rows[i][6],
+            rows[i][7],
+        )
         for i in top_indices
     ]
 
@@ -253,7 +261,9 @@ def hybrid_search(
     # only bounds how many rows the virtual-table scan materialises.
     candidate_pool = max(_CANDIDATE_POOL_SIZE, limit * _MAX_CHUNKS_PER_CASE * 5)
     lexical_rows = _lexical_search(conn, query_text, candidate_pool, sources)
-    semantic_rows = _semantic_search(conn, query_text, embed_fn, candidate_pool, sources)
+    semantic_rows = _semantic_search(
+        conn, query_text, embed_fn, candidate_pool, sources
+    )
 
     # Track each chunk's rank (1-based) in whichever list(s) it appears in,
     # plus enough chunk detail to build the final result without a second
@@ -265,13 +275,26 @@ def hybrid_search(
 
     for ranked_list in (lexical_rows, semantic_rows):
         for rank, (
-            chunk_id, case_id, section, paragraph_number,
-            section_category, heading_level, parent_heading, text
+            chunk_id,
+            case_id,
+            section,
+            paragraph_number,
+            section_category,
+            heading_level,
+            parent_heading,
+            text,
         ) in enumerate(ranked_list, start=1):
             chunk_info.setdefault(
                 chunk_id,
-                (case_id, section, paragraph_number, section_category,
-                 heading_level, parent_heading, text),
+                (
+                    case_id,
+                    section,
+                    paragraph_number,
+                    section_category,
+                    heading_level,
+                    parent_heading,
+                    text,
+                ),
             )
             fused_scores[chunk_id] = fused_scores.get(chunk_id, 0.0) + 1.0 / (
                 _RRF_K + rank
@@ -289,11 +312,25 @@ def hybrid_search(
         list[tuple[float, str, str | None, str | None, int | None, str | None, str]],
     ] = {}
     for chunk_id, score in fused_scores.items():
-        (case_id, section, paragraph_number, section_category,
-         heading_level, parent_heading, text) = chunk_info[chunk_id]
+        (
+            case_id,
+            section,
+            paragraph_number,
+            section_category,
+            heading_level,
+            parent_heading,
+            text,
+        ) = chunk_info[chunk_id]
         case_chunks.setdefault(case_id, []).append(
-            (score, section, paragraph_number, section_category,
-             heading_level, parent_heading, text)
+            (
+                score,
+                section,
+                paragraph_number,
+                section_category,
+                heading_level,
+                parent_heading,
+                text,
+            )
         )
 
     # Sort each case's chunks by score descending, keep the top N.
@@ -328,22 +365,30 @@ def hybrid_search(
                 excerpt=_truncate_excerpt(text),
                 score=score,
             )
-            for (score, section, paragraph_number, section_category,
-                 heading_level, parent_heading, text) in case_chunks[case_id]
+            for (
+                score,
+                section,
+                paragraph_number,
+                section_category,
+                heading_level,
+                parent_heading,
+                text,
+            ) in case_chunks[case_id]
         ]
         source_config = SOURCES.get(case["source"])
         info_card = (
-            source_config.build_info_card_url(case["arrest_number"], case["language"])
-            if source_config is not None and source_config.build_info_card_url is not None
+            source_config.build_info_card_url(case["case_number"], case["language"])
+            if source_config is not None
+            and source_config.build_info_card_url is not None
             else None
         )
         results.append(
             CaseSearchResult(
                 source=case["source"],
                 ecli=case["ecli"],
-                arrest_number=case["arrest_number"],
-                role_number=case["role_number"],
-                case_number=case["file_slug"],
+                case_number=case["case_number"],
+                docket_number=case["docket_number"],
+                file_slug=case["file_slug"],
                 ruling_date=case["ruling_date"],
                 language=case["language"],
                 procedure_type=case["procedure_type"],

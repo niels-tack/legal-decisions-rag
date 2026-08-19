@@ -1,23 +1,20 @@
-"""Scrape the Constitutional Court's official Dutch-language case listing.
+"""Scrape the Constitutional Court's official case listing and document server.
 
-Two distinct sources are used for GHCC ingestion, following the Court's own
-referencing guidelines (``https://nl.const-court.be/rule/referencing-judgments``):
+Two distinct sources are used for GHCC ingestion:
 
-1. **Metadata listing** - ``https://nl.const-court.be/nl/judgments?year={year}``:
-   a server-rendered Vuetify SPA, each ruling represented as a
-   ``judgement-card`` div carrying its date, procedure type, arrest number,
-   PDF link, controlled norm, outcome, role number(s), and keywords. This
-   page applies TLS fingerprinting that blocks Python ``requests``; in
-   practice the HTML is saved from a browser session and fed to
-   ``parse_listing_html`` (a pure function with no network dependency).
+1. **Metadata listing** - ``https://{lang}.const-court.be/judgments?year={year}``:
+   A server-rendered Nuxt 3 app. Each ruling is a ``judgment-card`` div
+   (``data-testid="judgment-card"``, ``id="arr-{seq}-{year}"``) carrying its
+   date, procedure type, case number, controlled norm, outcome, role
+   number(s), and keywords. This page is accessible without TLS
+   fingerprinting from Python ``requests``.
 
-2. **PDF downloads** - ``https://nl.const-court.be/public/n/``: a plain
-   Apache directory listing, accessible without TLS fingerprinting. Year
-   subdirectories (``/public/n/{year}/``) list PDFs as ``{year}-{seq:03d}n.pdf``
-   (zero-padded three-digit sequence, Dutch ``n`` suffix). Some rulings also
-   carry a companion ``-info.pdf`` (e.g. ``2026-002n-info.pdf``); these are
-   information-card PDFs and are not ingested. ``ghcc_pdf_download_url``
-   constructs the download URL from a file slug.
+2. **PDF downloads** - ``https://{lang}.const-court.be/public/{suffix}/{year}/``:
+   A plain Apache directory listing, also accessible without TLS
+   fingerprinting. Year subdirectories list PDFs as ``{year}-{seq:03d}{suffix}.pdf``
+   (zero-padded three-digit sequence). Companion ``-info.pdf`` press-release
+   files are excluded. ``ghcc_pdf_download_url`` constructs the download URL
+   from a file slug.
 
 Three canonical URL patterns are defined here for use throughout the pipeline:
 - **PDF permalink**: ``https://{lang}.const-court.be/{number}/{year}.pdf``
@@ -26,26 +23,21 @@ Three canonical URL patterns are defined here for use throughout the pipeline:
 - **Info card**: ``https://{lang}.const-court.be/ARR/{number}/{year}``
   (e.g. ``https://nl.const-court.be/ARR/31/2025``) - exposed as
   ``permalink_info_card`` in search results.
-- **Download**: ``https://{lang}.const-court.be/public/n/{year}/{slug}.pdf``
+- **Download**: ``https://{lang}.const-court.be/public/{suffix}/{year}/{slug}.pdf``
   - used only by the ingestion pipeline, never stored.
-
-``www.const-court.be`` still resolves but redirects to the language subdomain
-(``nl.``, ``fr.``, ``de.``, ``en.``) since August 2025.
 """
 
 from __future__ import annotations
 
 import re
 from datetime import date, datetime
-from typing import Any, TypedDict
-from urllib.parse import urljoin
+from typing import TypedDict
 
 import requests
 from bs4 import BeautifulSoup
-from bs4.element import Comment
 
 BASE_URL = "https://www.const-court.be"
-LISTING_URL_TEMPLATE = BASE_URL + "/nl/judgments?year={year}"
+LISTING_URL_TEMPLATE = "https://{language}.const-court.be/judgments?year={year}"
 
 # Map from ISO 639-1 language code to the single-letter suffix used in the
 # document server path (/public/n/) and in PDF filenames (2026-014n.pdf).
@@ -58,13 +50,8 @@ _APACHE_HREF_RE = re.compile(r'href="([^"]+\.pdf)"', re.IGNORECASE)
 # Capture groups: (year, zero_padded_seq, lang_suffix)
 _RULING_PDF_RE = re.compile(r"^(\d{4})-(\d{3})([a-z])\.pdf$", re.IGNORECASE)
 
-# The judgement-card class string observed live also carries Vuetify
-# component classes (e.g. "judgement-card mx-auto my-4 v-card v-sheet
-# theme--light"). BeautifulSoup's class_ matching checks membership in the
-# element's parsed class list, so matching on this single class name is
-# robust to the other classes' presence, order, or a future Vuetify bump.
-_CARD_CLASS = "judgement-card"
-_TOP_INFOS_CLASS = "top-infos"
+# Judgment card id attribute: arr-{seq}-{year}
+_CARD_ID_RE = re.compile(r"^arr-(\d+)-(\d{4})$")
 
 _ROLE_NUMBER_PREFIX_RE = re.compile(r"^Rolnummers?\s*:?\s*", re.IGNORECASE)
 _KEYWORDS_PREFIX_RE = re.compile(r"^Trefwoorden\s*:?\s*", re.IGNORECASE)
@@ -73,7 +60,7 @@ _KEYWORDS_PREFIX_RE = re.compile(r"^Trefwoorden\s*:?\s*", re.IGNORECASE)
 _INLINE_TAGS = frozenset({"span", "p", "li"})
 
 # Dutch label variants for each metadata field on the ARR info-card page.
-# Multiple entries per field cover label wording and plural differences.
+# Keep the challenged norm and the court-applied norm as separate concepts.
 _LABEL_DATE = ("Datum", "Datum arrest", "Datum uitspraak", "Beslist op")
 _LABEL_ROLE = ("Rolnummer", "Rolnummers", "Rolnr")
 _LABEL_PROCEDURE = (
@@ -82,7 +69,8 @@ _LABEL_PROCEDURE = (
     "Procedure",
     "Rechtspleging",
 )
-_LABEL_NORM = ("Bestreden bepaling", "Getoetste norm", "Norm", "Onderwerp")
+_LABEL_CHALLENGED_NORM = ("Bestreden bepaling", "Norm", "Onderwerp")
+_LABEL_APPLIED_NORM = ("Getoetste norm", "Toetsnorm")
 _LABEL_OUTCOME = ("Dictum", "Uitspraak", "Beslissing", "Besluit")
 _LABEL_KEYWORDS = ("Trefwoorden", "Sleutelwoorden", "Onderwerpen")
 
@@ -96,10 +84,12 @@ class DiscoveredRuling(TypedDict):
     from the fields captured here.
     """
 
-    arrest_number: str
-    role_number: str
+    case_number: str
+    docket_number: str
     ruling_date: date
     procedure_type: str
+    challenged_norm: str
+    applied_norm: str
     controlled_norm: str
     outcome: str
     keywords: list[str]
@@ -120,8 +110,8 @@ def fetch_listing_html(
 
     Args:
         year: Calendar year to fetch the listing for.
-        language: Value sent in the ``Accept-Language`` header to request
-            the Dutch-language version of the page.
+        language: ISO 639-1 language code; determines the subdomain
+            (``nl.const-court.be``, ``fr.const-court.be``, etc.).
         session: An existing ``requests.Session`` to reuse (e.g. the pipeline's
             polite session with retry/backoff configured). A throwaway
             session is created if omitted.
@@ -134,53 +124,61 @@ def fetch_listing_html(
         requests.HTTPError: If the server returns a non-2xx status code.
     """
     http = session or requests.Session()
-    response = http.get(
-        LISTING_URL_TEMPLATE.format(year=year),
-        headers={"Accept-Language": language},
-        timeout=timeout,
-    )
+    url = LISTING_URL_TEMPLATE.format(language=language, year=year)
+    response = http.get(url, timeout=timeout)
     response.raise_for_status()
     return response.text
 
 
 def _parse_date(text: str) -> date:
-    """Parse a ``dd/mm/yyyy`` date string as shown on the listing page.
-
-    Args:
-        text: The raw date text of one judgement card, e.g. ``"03/04/2025"``.
-
-    Returns:
-        The corresponding ``date``.
-    """
+    """Parse a ``dd/mm/yyyy`` date string as shown on the listing page."""
     return datetime.strptime(text.strip(), "%d/%m/%Y").date()
 
 
-def _clean_role_number(text: str) -> str:
-    """Normalize a role-number span's text into a single comma-joined string.
+def _clean_docket_number(text: str) -> str:
+    """Normalize a docket-number element's text into a deterministic string.
 
-    The source text looks like ``"Rolnummer : 8115"`` or, for cases with
-    multiple joined role numbers, ``"Rolnummers : 8224 - 8223"``.
+    Handles plain values ("Rolnummer: 8115"), spaced prefixes
+    ("Rolnummer : 8115"), and inclusive ranges ("Rolnummer: 8224 - 8226"),
+    expanding each range to every value between the endpoints.
 
     Args:
-        text: The raw text of the role-number ``<span>``.
+        text: The raw text of the docket-number element.
 
     Returns:
-        The role number(s) joined with ``", "``, e.g. ``"8224, 8223"``.
+        The docket number(s) joined with ``", "``.
     """
     stripped = _ROLE_NUMBER_PREFIX_RE.sub("", text).strip()
-    parts = [part.strip() for part in stripped.split("-") if part.strip()]
-    return ", ".join(parts)
+    values: list[str] = []
+
+    for segment in re.split(r"\s*,\s*", stripped):
+        segment = segment.strip()
+        if not segment:
+            continue
+
+        range_match = re.fullmatch(r"(\d+)\s*-\s*(\d+)", segment)
+        if range_match:
+            start = int(range_match.group(1))
+            end = int(range_match.group(2))
+            if start > end:
+                start, end = end, start
+            values.extend(str(number) for number in range(start, end + 1))
+            continue
+
+        values.append(segment)
+
+    return ", ".join(values)
 
 
 def _clean_keywords(text: str) -> list[str]:
-    """Normalize a keywords span's text into a list of individual keywords.
+    """Normalize a keywords element's text into a list of individual keywords.
 
-    Cases with no assigned keywords show a lone ``"-"`` on the site; that
-    is treated as "no keywords" rather than a single literal keyword.
+    A lone ``"-"`` is treated as "no keywords". The input may or may not
+    carry a ``"Trefwoorden: "`` prefix.
 
     Args:
-        text: The raw text of the keywords ``<span>``, e.g.
-            ``"Trefwoorden : Fiscaal recht - Registratierechten"``.
+        text: The raw keywords text, e.g.
+            ``"Leefmilieu - Waterbeleid - Bemesting"``.
 
     Returns:
         A list of individual keyword strings, possibly empty.
@@ -191,94 +189,92 @@ def _clean_keywords(text: str) -> list[str]:
     return [part.strip() for part in stripped.split(" - ") if part.strip()]
 
 
-def _extract_arrest_number(heading: Any) -> str:
-    """Pull the arrest number out of a judgement card's ``<h3>`` heading.
-
-    The heading contains an ``<a>`` (the PDF link, wrapping an icon/label)
-    followed by a bare text node holding the arrest number, e.g.
-    ``"61/2025"``. The prior working scraper located this text by finding
-    the empty HTML comment ``<!-- -->`` that Vue's compiler leaves before
-    it; the equivalent, more robust way with BeautifulSoup is to take the
-    heading's direct text-node children (not the anchor's own text) while
-    filtering out that same comment node.
-
-    Args:
-        heading: The ``<h3>`` tag of one judgement card.
-
-    Returns:
-        The arrest number text, e.g. ``"61/2025"``, or an empty string if
-        the expected structure isn't found.
-    """
-    text_nodes = [
-        node
-        for node in heading.find_all(string=True, recursive=False)
-        if not isinstance(node, Comment)
-    ]
-    return "".join(text_nodes).strip()
-
-
-def parse_listing_html(html: str) -> list[DiscoveredRuling]:
+def parse_listing_html(html: str, language: str = "nl") -> list[DiscoveredRuling]:
     """Parse one year's case overview listing HTML into ruling records.
 
     Pure function: no network access, so this is fully unit-testable
     against a saved HTML fixture.
 
+    Parses the Nuxt 3 SSR HTML returned by
+    ``https://{lang}.const-court.be/judgments?year={year}``. Each judgment
+    card has ``data-testid="judgment-card"`` and ``id="arr-{seq}-{year}"``;
+    the file slug and download URL are derived from the card id.
+
     Args:
-        html: The raw HTML of a ``/nl/judgments?year=<year>`` page.
+        html: The raw HTML of the listing page.
+        language: ISO 639-1 language code used to derive file slugs
+            (e.g. ``"nl"`` → suffix ``"n"`` → ``"2026-092n"``).
 
     Returns:
-        One record per judgement card found, in document order. Cards
+        One record per judgment card found, in document order. Cards
         missing an expected field yield an empty string/list for that
         field rather than raising, so a single malformed card doesn't
         abort the whole page.
     """
     soup = BeautifulSoup(html, "html.parser")
     rulings: list[DiscoveredRuling] = []
+    suffix = _LANG_SUFFIX.get(language, language[0])
 
-    for card in soup.find_all("div", class_=_CARD_CLASS):
-        top_infos = card.find("div", class_=_TOP_INFOS_CLASS)
-        paragraphs = top_infos.find_all("p") if top_infos is not None else []
-        ruling_date = (
-            _parse_date(paragraphs[0].get_text())
-            if len(paragraphs) > 0
-            else datetime.min.date()
+    for card in soup.find_all("div", attrs={"data-testid": "judgment-card"}):
+        # Derive case number and file slug from the card id (e.g. "arr-92-2026").
+        card_id = str(card.get("id", ""))
+        id_match = _CARD_ID_RE.match(card_id)
+        if id_match is None:
+            continue
+        seq = int(id_match.group(1))
+        year_str = id_match.group(2)
+        file_slug = f"{year_str}-{seq:03d}{suffix}"
+        case_number = f"{seq}/{year_str}"
+        pdf_url = ghcc_pdf_download_url(file_slug, language)
+
+        # Date: first span.text-body-medium in the card.
+        date_span = card.find("span", class_="text-body-medium")
+        try:
+            ruling_date = (
+                _parse_date(date_span.get_text(strip=True)) if date_span else date.min
+            )
+        except ValueError:
+            ruling_date = date.min
+
+        # Procedure type: span with BOTH text-body-medium AND ml-auto classes.
+        # Uses CSS selector because BS4's class_ list argument is OR, not AND.
+        procedure_span = card.select_one("span.text-body-medium.ml-auto")
+        procedure_type = procedure_span.get_text(strip=True) if procedure_span else ""
+
+        # Challenged norm: the provision named in the card's main law/article
+        # block. This is not the same concept as the court's own applied norm.
+        norm_div = card.find("div", class_="mt-2")
+        challenged_norm = (
+            norm_div.get_text(separator=" ", strip=True) if norm_div else ""
         )
-        procedure_type = (
-            paragraphs[1].get_text(strip=True) if len(paragraphs) > 1 else ""
-        )
 
-        heading = card.find("h3")
-        pdf_url = ""
-        arrest_number = ""
-        if heading is not None:
-            anchor = heading.find("a")
-            href = anchor.get("href") if anchor is not None else None
-            if href:
-                pdf_url = urljoin(BASE_URL, href)
-            arrest_number = _extract_arrest_number(heading)
+        # Outcome: div with the text-emphasis class (visually highlighted verdict).
+        outcome_div = card.find("div", class_="text-emphasis")
+        outcome = outcome_div.get_text(separator=" ", strip=True) if outcome_div else ""
 
-        role_number = ""
-        keywords: list[str] = []
-        remaining_spans: list[str] = []
-        for span in card.find_all("span"):
-            text = span.get_text(" ", strip=True)
+        # Docket number: first div.text-body-small whose text starts with "Rolnummer".
+        docket_number = ""
+        for div in card.find_all("div", class_="text-body-small"):
+            text = div.get_text(strip=True)
             if _ROLE_NUMBER_PREFIX_RE.match(text):
-                role_number = _clean_role_number(text)
-            elif _KEYWORDS_PREFIX_RE.match(text):
-                keywords = _clean_keywords(text)
-            else:
-                remaining_spans.append(text)
+                docket_number = _clean_docket_number(text)
+                break
 
-        controlled_norm = remaining_spans[0] if len(remaining_spans) > 0 else ""
-        outcome = remaining_spans[1] if len(remaining_spans) > 1 else ""
+        # Keywords: div.judgment-caption-text (dash-separated topic tags).
+        keywords_div = card.find("div", class_="judgment-caption-text")
+        keywords = (
+            _clean_keywords(keywords_div.get_text(strip=True)) if keywords_div else []
+        )
 
         rulings.append(
             DiscoveredRuling(
-                arrest_number=arrest_number,
-                role_number=role_number,
+                case_number=case_number,
+                docket_number=docket_number,
                 ruling_date=ruling_date,
                 procedure_type=procedure_type,
-                controlled_norm=controlled_norm,
+                challenged_norm=challenged_norm,
+                applied_norm="",
+                controlled_norm=challenged_norm,
                 outcome=outcome,
                 keywords=keywords,
                 pdf_url=pdf_url,
@@ -293,7 +289,7 @@ def file_slug_from_pdf_url(pdf_url: str) -> str:
 
     Args:
         pdf_url: The full PDF URL, e.g.
-            ``"https://www.const-court.be/public/n/2025/2025-001n.pdf"``.
+            ``"https://nl.const-court.be/public/n/2025/2025-001n.pdf"``.
 
     Returns:
         The filename without its ``.pdf`` extension.
@@ -307,45 +303,45 @@ def file_slug_from_pdf_url(pdf_url: str) -> str:
     return match.group(1)
 
 
-def ghcc_permalink_pdf(arrest_number: str, language: str = "nl") -> str:
+def ghcc_permalink_pdf(case_number: str, language: str = "nl") -> str:
     """Canonical permalink to the published PDF of one GHCC ruling.
 
     Format: ``https://<language>.const-court.be/<number>/<year>.pdf``,
     following the court's official referencing rules.
 
     Args:
-        arrest_number: Official arrest number, e.g. ``"1/2025"``.
+        case_number: Official case number, e.g. ``"1/2025"``.
         language: ISO 639-1 language code (``"nl"``, ``"fr"``, ``"de"``).
 
     Returns:
         Permalink URL, e.g. ``"https://nl.const-court.be/1/2025.pdf"``.
     """
-    number, year = arrest_number.split("/", 1)
+    number, year = case_number.split("/", 1)
     return f"https://{language}.const-court.be/{number}/{year}.pdf"
 
 
-def ghcc_permalink_info_card(arrest_number: str, language: str = "nl") -> str:
+def ghcc_permalink_info_card(case_number: str, language: str = "nl") -> str:
     """Canonical link to the GHCC information card for one ruling.
 
     Format: ``https://<language>.const-court.be/ARR/<number>/<year>``.
 
     Args:
-        arrest_number: Official arrest number, e.g. ``"1/2025"``.
+        case_number: Official case number, e.g. ``"1/2025"``.
         language: ISO 639-1 language code.
 
     Returns:
         Info card URL, e.g. ``"https://nl.const-court.be/ARR/1/2025"``.
     """
-    number, year = arrest_number.split("/", 1)
+    number, year = case_number.split("/", 1)
     return f"https://{language}.const-court.be/ARR/{number}/{year}"
 
 
 def ghcc_pdf_download_url(file_slug: str, language: str = "nl") -> str:
     """Build the download URL for a GHCC ruling PDF from the public document server.
 
-    The public document server (``/public/n/``) is used for ingestion because
-    the main site applies TLS fingerprinting that blocks automated clients.
-    The year component is inferred from the leading ``YYYY-`` part of the slug.
+    The public document server (``/public/{suffix}/``) is used for ingestion
+    because it is accessible without TLS fingerprinting. The year component
+    is inferred from the leading ``YYYY-`` part of the slug.
 
     Args:
         file_slug: The file/URL slug, e.g. ``"2025-001n"``.
@@ -356,7 +352,8 @@ def ghcc_pdf_download_url(file_slug: str, language: str = "nl") -> str:
         ``"https://nl.const-court.be/public/n/2025/2025-001n.pdf"``.
     """
     year = file_slug.split("-")[0]
-    return f"https://{language}.const-court.be/public/n/{year}/{file_slug}.pdf"
+    suffix = _LANG_SUFFIX.get(language, language[0])
+    return f"https://{language}.const-court.be/public/{suffix}/{year}/{file_slug}.pdf"
 
 
 # ---------------------------------------------------------------------------
@@ -372,7 +369,7 @@ def fetch_document_server_listing(
 ) -> str:
     """Fetch the Apache directory listing for one year from the document server.
 
-    Unlike the Vuetify listing page, the document server returns a plain HTML
+    Unlike the listing page, the document server returns a plain HTML
     directory index that Python ``requests`` can access directly without TLS
     fingerprinting or JavaScript rendering.
 
@@ -424,17 +421,17 @@ def parse_document_server_listing(
     return sorted(slugs)
 
 
-def arrest_number_from_slug(file_slug: str) -> str:
-    """Derive the official arrest number from a file slug.
+def case_number_from_slug(file_slug: str) -> str:
+    """Derive the official case number from a file slug.
 
     The slug encodes year and zero-padded sequence (e.g. ``"2026-014n"``);
-    the arrest number strips the leading zeros (e.g. ``"14/2026"``).
+    the case number strips the leading zeros (e.g. ``"14/2026"``).
 
     Args:
         file_slug: File/URL slug, e.g. ``"2026-014n"``.
 
     Returns:
-        Arrest number string, e.g. ``"14/2026"``.
+        Case number string, e.g. ``"14/2026"``.
     """
     year_part, rest = file_slug.split("-", 1)
     seq_str = re.sub(r"[a-z]+$", "", rest, flags=re.IGNORECASE)
@@ -442,7 +439,8 @@ def arrest_number_from_slug(file_slug: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Info card fetching and parsing
+# Info card fetching and parsing (kept for historical reference; the pipeline
+# now uses parse_listing_html instead)
 # ---------------------------------------------------------------------------
 
 
@@ -456,10 +454,6 @@ def _find_labeled_value(soup: BeautifulSoup, *labels: str) -> str:
     2. An inline element (``<span>``, ``<p>``, ``<li>``) whose full text
        matches ``"label : value"``: used by the Vuetify listing page and
        similar span-based info-card variants.
-
-    Checking both patterns makes the parser robust to the two distinct HTML
-    structures observed on the const-court.be domain without relying on
-    CSS class names, which differ between page versions.
 
     Args:
         soup: Parsed HTML document.
@@ -493,7 +487,7 @@ def _find_labeled_value(soup: BeautifulSoup, *labels: str) -> str:
 
 
 def fetch_info_card_html(
-    arrest_number: str,
+    case_number: str,
     language: str = "nl",
     session: requests.Session | None = None,
     timeout: float = 30.0,
@@ -501,7 +495,7 @@ def fetch_info_card_html(
     """Fetch the HTML of the info card page for one ruling.
 
     Args:
-        arrest_number: Official arrest number, e.g. ``"14/2026"``.
+        case_number: Official case number, e.g. ``"14/2026"``.
         language: ISO 639-1 language code.
         session: An existing session to reuse.
         timeout: Per-request timeout in seconds.
@@ -512,7 +506,7 @@ def fetch_info_card_html(
     Raises:
         requests.HTTPError: On a non-2xx response.
     """
-    url = ghcc_permalink_info_card(arrest_number, language)
+    url = ghcc_permalink_info_card(case_number, language)
     http = session or requests.Session()
     response = http.get(url, timeout=timeout)
     response.raise_for_status()
@@ -526,21 +520,14 @@ def parse_info_card(
 ) -> DiscoveredRuling:
     """Parse a GHCC info card page into a ``DiscoveredRuling``.
 
-    The info card at ``https://{lang}.const-court.be/ARR/{number}/{year}``
-    carries the ruling's date, procedure type, controlled norm, outcome,
-    role number, and keywords. This parser is the authoritative metadata
-    source when using document-server-based discovery (the listing page is
-    not used because TLS fingerprinting blocks automated requests there).
-
     Uses :func:`_find_labeled_value` to scan for Dutch label text in both
     ``<dt>/<dd>`` definition-list structure and inline ``"label : value"``
-    spans, so it remains correct across page redesigns that change CSS class
-    names without changing the visible label text.
+    spans.
 
     Args:
         html: Raw HTML of the info card page.
         file_slug: File/URL slug, e.g. ``"2026-014n"``, used to derive the
-            arrest number and PDF download URL.
+            case number and PDF download URL.
         language: ISO 639-1 language code.
 
     Returns:
@@ -548,18 +535,17 @@ def parse_info_card(
         back to empty strings or empty lists rather than raising.
     """
     soup = BeautifulSoup(html, "html.parser")
-    arrest_number = arrest_number_from_slug(file_slug)
+    case_number = case_number_from_slug(file_slug)
     pdf_url = ghcc_pdf_download_url(file_slug, language)
 
     ruling_date_text = _find_labeled_value(soup, *_LABEL_DATE)
-    role_number_text = _find_labeled_value(soup, *_LABEL_ROLE)
+    docket_number_text = _find_labeled_value(soup, *_LABEL_ROLE)
     procedure_type_text = _find_labeled_value(soup, *_LABEL_PROCEDURE)
-    controlled_norm_text = _find_labeled_value(soup, *_LABEL_NORM)
+    challenged_norm_text = _find_labeled_value(soup, *_LABEL_CHALLENGED_NORM)
+    applied_norm_text = _find_labeled_value(soup, *_LABEL_APPLIED_NORM)
     outcome_text = _find_labeled_value(soup, *_LABEL_OUTCOME)
     keywords_text = _find_labeled_value(soup, *_LABEL_KEYWORDS)
 
-    # Parse the date; fall back to a sentinel so upstream code can detect
-    # and log the failure rather than silently storing a wrong date.
     parsed_date: date
     try:
         parsed_date = _parse_date(ruling_date_text) if ruling_date_text else date.min
@@ -573,11 +559,13 @@ def parse_info_card(
     )
 
     return DiscoveredRuling(
-        arrest_number=arrest_number,
-        role_number=role_number_text,
+        case_number=case_number,
+        docket_number=docket_number_text,
         ruling_date=parsed_date,
         procedure_type=procedure_type_text,
-        controlled_norm=controlled_norm_text,
+        challenged_norm=challenged_norm_text,
+        applied_norm=applied_norm_text,
+        controlled_norm=challenged_norm_text or applied_norm_text,
         outcome=outcome_text,
         keywords=keywords,
         pdf_url=pdf_url,

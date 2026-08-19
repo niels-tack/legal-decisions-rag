@@ -45,8 +45,8 @@ interface CaseRow {
   highlighted_snippet: string;
   source: string;
   ecli: string;
-  arrest_number: string;
-  role_number: string;
+  case_number: string;
+  docket_number: string;
   file_slug: string;
   ruling_date: string;
   language: string;
@@ -210,9 +210,9 @@ export class LocalSqliteProvider implements SearchProvider {
     return [...caseMap.values()].map(({ caseData, chunks }) => ({
       source: caseData.source,
       ecli: caseData.ecli,
-      arrestNumber: caseData.arrest_number,
-      roleNumber: caseData.role_number,
-      caseNumber: caseData.file_slug,
+      caseNumber: caseData.case_number,
+      docketNumber: caseData.docket_number,
+      fileSlug: caseData.file_slug,
       rulingDate: caseData.ruling_date,
       language: caseData.language,
       procedureType: caseData.procedure_type,
@@ -243,7 +243,7 @@ export class LocalSqliteProvider implements SearchProvider {
       db,
       `SELECT chunks.section, chunks.paragraph_number, chunks.text,
               snippet(chunks_fts, 0, ?, ?, ?, ?) AS highlighted_snippet,
-              cases.source, cases.ecli, cases.arrest_number, cases.role_number,
+              cases.source, cases.ecli, cases.case_number, cases.docket_number,
               cases.file_slug, cases.ruling_date, cases.language,
               cases.procedure_type, cases.controlled_norm, cases.outcome,
               cases.title, cases.source_pdf_url

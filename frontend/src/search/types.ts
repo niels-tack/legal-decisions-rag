@@ -27,9 +27,9 @@ export interface ChunkResult {
 export interface CaseSearchResult {
   source: string;
   ecli: string;
-  arrestNumber: string;
-  roleNumber: string;
   caseNumber: string;
+  docketNumber: string;
+  fileSlug: string;
   rulingDate: string;
   language: string;
   procedureType: string;

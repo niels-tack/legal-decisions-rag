@@ -47,7 +47,8 @@ def test_hybrid_search_lexical_match_returns_expected_case(
     top = results[0]
     assert top.source == "GHCC"
     assert top.ecli == "ECLI:BE:GHCC:2025:ARR.001"
-    assert top.case_number == "2025-001n"
+    assert top.case_number == "1/2025"
+    assert top.file_slug == "2025-001n"
     assert top.chunks
     assert top.chunks[0].section == "reasoning"
     assert top.chunks[0].paragraph_number == "B.7"

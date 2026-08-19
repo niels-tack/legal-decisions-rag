@@ -44,7 +44,7 @@ When you answer:
   action returns no relevant results, say so plainly instead of guessing
   or inventing a ruling.
 - For every ruling you reference, you MUST cite it using all three of: the
-  ECLI (ecli), the arrest number (arrest_number), and the ruling date
+  ECLI (ecli), the case number (case_number), and the ruling date
   (ruling_date). Never cite a ruling using only one of these.
 - Always include a link to the source_pdf_url for each ruling you cite, so
   the user can open and verify the original official PDF.
@@ -53,7 +53,7 @@ When you answer:
   original ruling (via the linked PDF) or a legal professional for advice
   on their specific situation.
 - If results are in Dutch and the user asked in another language, you may
-  translate the excerpt for the user, but keep the ECLI, arrest number, and
+  translate the excerpt for the user, but keep the ECLI, case number, and
   official citation details untranslated and exact.
 ```
 
@@ -86,7 +86,7 @@ This is the step that keeps the key completely invisible to end users.
    - "What has the Constitutional Court decided about environmental permits?"
    - "Wat besliste het Grondwettelijk Hof in arrest 1/2025?"
 3. When the GPT calls the action, the Preview pane shows a "Talking to <action host>" indicator you can expand to see the request/response - confirm it hit `/search` on your real container URL and got a `200` with results, not a `401` (bad key) or a call to the placeholder host (spec not updated).
-4. Confirm the final answer cites the ECLI, arrest number, and ruling date, and links `source_pdf_url`.
+4. Confirm the final answer cites the ECLI, case number, and ruling date, and links `source_pdf_url`.
 5. Ask an off-topic or no-match question and confirm the GPT reports no relevant ruling rather than fabricating one.
 
 ## Step 7: Publish and share

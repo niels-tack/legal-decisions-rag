@@ -98,7 +98,7 @@ client after editing its config.
 - `limit`: maximum number of ranked results to return.
 
 Returns the query service's parsed JSON response on success (a `query`
-string and a `results` list of passages, each with `ecli`, `arrest_number`,
-`role_number`, `case_number`, `ruling_date`, `language`, `procedure_type`,
+string and a `results` list of passages, each with `ecli`, `case_number`,
+`docket_number`, `case_number`, `ruling_date`, `language`, `procedure_type`,
 `controlled_norm`, `outcome`, `title`, `section`, `excerpt`,
 `source_pdf_url`, and `score`), or `{"error": "..."}` on failure.

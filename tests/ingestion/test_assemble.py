@@ -16,8 +16,8 @@ from src.sources import (
 SAMPLE_METADATA = CaseMetadata(
     source="GHCC",
     ecli="ECLI:BE:GHCC:2025:ARR.001",
-    arrest_number="1/2025",
-    role_number="8115",
+    case_number="1/2025",
+    docket_number="8115",
     file_slug="2025-001n",
     ruling_date=date(2025, 1, 9),
     language="nl",
@@ -71,8 +71,8 @@ def test_render_markdown_frontmatter_round_trips_through_yaml() -> None:
     parsed = yaml.safe_load(frontmatter_yaml)
 
     assert parsed["ecli"] == SAMPLE_METADATA.ecli
-    assert parsed["arrest_number"] == SAMPLE_METADATA.arrest_number
-    assert parsed["role_number"] == SAMPLE_METADATA.role_number
+    assert parsed["case_number"] == SAMPLE_METADATA.case_number
+    assert parsed["docket_number"] == SAMPLE_METADATA.docket_number
     assert parsed["file_slug"] == SAMPLE_METADATA.file_slug
     assert parsed["ruling_date"] == SAMPLE_METADATA.ruling_date
     assert parsed["language"] == SAMPLE_METADATA.language
