@@ -92,7 +92,7 @@ export class RemoteApiProvider implements SearchProvider {
       ecli: item.ecli,
       caseNumber: item.case_number,
       docketNumber: item.docket_number,
-      caseNumber: item.case_number,
+      fileSlug: item.file_slug,
       rulingDate: item.ruling_date,
       language: item.language,
       procedureType: item.procedure_type,

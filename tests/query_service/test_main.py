@@ -40,7 +40,8 @@ def test_search_from_allowed_origin_returns_matching_fixture(
 
     top_result = body["results"][0]
     assert top_result["ecli"] == "ECLI:BE:GHCC:2025:ARR.001"
-    assert top_result["case_number"] == "2025-001n"
+    assert top_result["case_number"] == "1/2025"
+    assert top_result["file_slug"] == "2025-001n"
     assert top_result["chunks"]
     assert "omgevingsvergunning" in top_result["chunks"][0]["excerpt"].lower()
     assert top_result["best_score"] > 0
@@ -78,9 +79,7 @@ def test_search_missing_query_param_returns_400(client: TestClient) -> None:
 
 def test_search_sources_param_filters_results(client: TestClient) -> None:
     """The repeatable ``sources`` query param scopes results to that body."""
-    response = client.get(
-        "/search", params={"q": "verkeer", "sources": ["OTHER"]}
-    )
+    response = client.get("/search", params={"q": "verkeer", "sources": ["OTHER"]})
 
     assert response.status_code == 200
     body = response.json()

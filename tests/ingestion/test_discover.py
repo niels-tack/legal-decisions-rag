@@ -27,7 +27,9 @@ def test_parse_listing_html_finds_all_cards(listing_html: str) -> None:
     assert len(rulings) == 3
 
 
-def test_parse_listing_html_extracts_single_docket_number_case(listing_html: str) -> None:
+def test_parse_listing_html_extracts_single_docket_number_case(
+    listing_html: str,
+) -> None:
     """The first card's fields should be parsed exactly as shown on the page."""
     rulings = discover.parse_listing_html(listing_html)
     first = rulings[0]
@@ -47,7 +49,13 @@ def test_parse_listing_html_joins_multiple_docket_numbers(listing_html: str) -> 
     rulings = discover.parse_listing_html(listing_html)
     third = rulings[2]
 
-    assert third["docket_number"] == "8463, 8513"
+    expected_range = ", ".join(str(number) for number in range(8463, 8514))
+    assert third["docket_number"] == expected_range
+
+
+def test_clean_docket_number_expands_inclusive_range() -> None:
+    """A multi-number docket range should expand to every number in between."""
+    assert discover._clean_docket_number("Rolnummer: 8224 - 8226") == "8224, 8225, 8226"
 
 
 def test_parse_listing_html_treats_bare_dash_keywords_as_empty(

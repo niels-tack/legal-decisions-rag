@@ -29,7 +29,7 @@ export interface CaseSearchResult {
   ecli: string;
   caseNumber: string;
   docketNumber: string;
-  caseNumber: string;
+  fileSlug: string;
   rulingDate: string;
   language: string;
   procedureType: string;

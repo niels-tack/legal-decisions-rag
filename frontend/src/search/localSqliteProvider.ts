@@ -212,7 +212,7 @@ export class LocalSqliteProvider implements SearchProvider {
       ecli: caseData.ecli,
       caseNumber: caseData.case_number,
       docketNumber: caseData.docket_number,
-      caseNumber: caseData.file_slug,
+      fileSlug: caseData.file_slug,
       rulingDate: caseData.ruling_date,
       language: caseData.language,
       procedureType: caseData.procedure_type,

@@ -18,8 +18,7 @@ class CaseMetadata(BaseModel):
     source: str = Field(
         ...,
         description=(
-            "Issuing judicial body, e.g. 'GHCC' for the Constitutional "
-            "Court."
+            "Issuing judicial body, e.g. 'GHCC' for the Constitutional Court."
         ),
     )
     ecli: str = Field(
@@ -37,9 +36,7 @@ class CaseMetadata(BaseModel):
         default="nl", description="ISO 639-1 language code of the ruling text"
     )
     procedure_type: str = Field(..., description="e.g. 'Prejudiciële vraag'")
-    controlled_norm: str = Field(
-        ..., description="The law/article under review"
-    )
+    controlled_norm: str = Field(..., description="The law/article under review")
     outcome: str = Field(
         ..., description="The Court's ruling outcome, e.g. 'Vernietiging'"
     )
@@ -107,8 +104,8 @@ class ChunkResult(BaseModel):
 
 
 class CaseSearchResult(BaseModel):
-    """One ranked case with its top matching chunks. Cases are ranked by their 
-    best chunk's score. Chunks within a case are ranked best-first by their own 
+    """One ranked case with its top matching chunks. Cases are ranked by their
+    best chunk's score. Chunks within a case are ranked best-first by their own
     scores.
     """
 
@@ -116,7 +113,7 @@ class CaseSearchResult(BaseModel):
     ecli: str
     case_number: str
     docket_number: str
-    case_number: str = Field(..., description="File/URL slug, e.g. 2025-001n")
+    file_slug: str = Field(..., description="File/URL slug, e.g. 2025-001n")
     ruling_date: date
     language: str
     procedure_type: str
@@ -145,5 +142,3 @@ class SearchResponse(BaseModel):
 
     query: str
     results: list[CaseSearchResult]
-
-
