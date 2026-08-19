@@ -73,7 +73,7 @@ When you answer:
   action returns no relevant results, say so plainly instead of guessing
   or inventing a ruling.
 - For every ruling you reference, you MUST cite it using all three of: the
-  ECLI (ecli), the arrest number (arrest_number), and the ruling date
+  ECLI (ecli), the case number (case_number), and the ruling date
   (ruling_date). Never cite a ruling using only one of these.
 - Always include a link to the source_pdf_url for each ruling you cite, so
   the user can open and verify the original official PDF.
@@ -82,7 +82,7 @@ When you answer:
   original ruling (via the linked PDF) or a legal professional for advice
   on their specific situation.
 - If results are in Dutch and the user asked in another language, you may
-  translate the excerpt for the user, but keep the ECLI, arrest number, and
+  translate the excerpt for the user, but keep the ECLI, case number, and
   official citation details untranslated and exact.
 ```
 
@@ -94,7 +94,7 @@ When you answer:
    - "Wat besliste het Grondwettelijk Hof in arrest 1/2025?"
 3. Confirm that:
    - The agent actually invokes `searchConstitutionalCourtRulings` (Copilot Studio's test pane typically shows a trace/activity log of tool calls - check it fired and returned a `200`).
-   - The final answer includes the ECLI, arrest number, and ruling date for each cited ruling, plus a link to the source PDF.
+   - The final answer includes the ECLI, case number, and ruling date for each cited ruling, plus a link to the source PDF.
    - Asking about a topic with no matching rulings produces an honest "no relevant ruling found" answer rather than a fabricated one.
    - No sign-in or API-key prompt appears to you as the test user (see Step 4.4).
 4. If the action isn't firing, check the **Tools** tab to confirm it's enabled for this agent's topic/orchestration, and re-read the instructions from Step 5 - Copilot Studio's generative orchestration decides when to call a tool based on the tool's description and the agent instructions, so a vague description can suppress calls. The `description` fields in `docs/openapi.json` are written specifically to make Copilot Studio's model aware of when to call the action.

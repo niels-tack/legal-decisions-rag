@@ -333,7 +333,7 @@ def hybrid_search(
         ]
         source_config = SOURCES.get(case["source"])
         info_card = (
-            source_config.build_info_card_url(case["arrest_number"], case["language"])
+            source_config.build_info_card_url(case["case_number"], case["language"])
             if source_config is not None and source_config.build_info_card_url is not None
             else None
         )
@@ -341,8 +341,8 @@ def hybrid_search(
             CaseSearchResult(
                 source=case["source"],
                 ecli=case["ecli"],
-                arrest_number=case["arrest_number"],
-                role_number=case["role_number"],
+                case_number=case["case_number"],
+                docket_number=case["docket_number"],
                 case_number=case["file_slug"],
                 ruling_date=case["ruling_date"],
                 language=case["language"],

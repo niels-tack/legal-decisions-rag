@@ -25,8 +25,8 @@ class CaseMetadata(BaseModel):
     ecli: str = Field(
         ..., description="Canonical citation, e.g. ECLI:BE:GHCC:2025:ARR.001"
     )
-    arrest_number: str = Field(..., description="Official arrest number, e.g. 1/2025")
-    role_number: str = Field(
+    case_number: str = Field(..., description="Official case number, e.g. 1/2025")
+    docket_number: str = Field(
         ..., description="Role/docket number(s) ('rolnummer'), e.g. 8115"
     )
     file_slug: str = Field(
@@ -114,8 +114,8 @@ class CaseSearchResult(BaseModel):
 
     source: str = Field(..., description="Issuing judicial body, e.g. 'GHCC'")
     ecli: str
-    arrest_number: str
-    role_number: str
+    case_number: str
+    docket_number: str
     case_number: str = Field(..., description="File/URL slug, e.g. 2025-001n")
     ruling_date: date
     language: str

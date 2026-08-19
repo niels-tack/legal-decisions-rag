@@ -21,13 +21,13 @@ Belgian Constitutional Court rulings are only available as scattered PDF documen
 - Recurring hosting cost stays strictly at €0.00/month (hosted on GitHub Pages).
 - The web search tool can be installed as an Edge Progressive Web App (PWA) onto the user's desktop taskbar in 1 click.
 - The maintainer's home network/hardware is never exposed to the public internet.
-- Every answer traces back to a verifiable ECLI identifier (e.g. `ECLI:BE:GHCC:2025:ARR.001`), official arrest number, ruling date, and a direct hyperlink to the official PDF on the Court's website. Initial (POC) scope is Dutch-language rulings only.
+- Every answer traces back to a verifiable ECLI identifier (e.g. `ECLI:BE:GHCC:2025:ARR.001`), official case number, ruling date, and a direct hyperlink to the official PDF on the Court's website. Initial (POC) scope is Dutch-language rulings only.
 
 ## Core requirements
 
 ### Must have (MVP)
 
-- Local ingestion pipeline (offline on maintainer's hardware), initially Dutch-language rulings only, converting PDF rulings into structured Markdown with YAML frontmatter capturing ECLI identifier, official arrest number, role/docket number ("rolnummer"), URL slug, ruling date, language, procedure type, controlled norm, outcome, subject keywords, and source PDF URL.
+- Local ingestion pipeline (offline on maintainer's hardware), initially Dutch-language rulings only, converting PDF rulings into structured Markdown with YAML frontmatter capturing ECLI identifier, official case number, role/docket number ("rolnummer"), URL slug, ruling date, language, procedure type, controlled norm, outcome, subject keywords, and source PDF URL.
 - Weekly automated scrape of the Court's official case overview listing for newly published rulings, pushing updated Markdown to GitHub.
 - Public GitHub repository hosting Markdown files as the canonical source.
 - GitHub Actions CI workflow compiling static client-side search indices (Pagefind/Orama) and building Progressive Web App (PWA) static web assets deployed to GitHub Pages.

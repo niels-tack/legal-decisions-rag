@@ -7,24 +7,24 @@ SVG icon path data, v-progress-linear loader skeletons, and the repeated
 `<span class="v-btn__overlay">` / `<span class="v-btn__underlay">` ripple
 elements that Vuetify emits for every button. Every element that carries
 metadata used by `discover.parse_listing_html` (date, procedure type,
-arrest number, controlled norm, outcome, role number, keywords, and the
+case number, controlled norm, outcome, docket number, keywords, and the
 optional "Persbericht" press-release link) is preserved verbatim, including
 attribute names, classes, and nesting, so this file can be diffed against a
 fresh capture to detect real markup drift.
 
 Four consecutive judgment cards are kept (92/2026 down to 89/2026) because
 together they exercise every shape seen in this month's listing:
-  - arr-92-2026: the plain case - single role number, single-line outcome,
+  - arr-92-2026: the plain case - single docket number, single-line outcome,
     keywords present, no press release.
   - arr-91-2026: adds a "Persbericht" link (not modeled as a field today -
     see reference/real_samples/NOTES.md).
-  - arr-90-2026: two role numbers joined with " - " ("8463 - 8513").
+  - arr-90-2026: two docket numbers joined with " - " ("8463 - 8513").
   - arr-89-2026: outcome text is a <br>-separated bulleted list rather
-    than a single sentence, and role numbers are again dash-joined
+    than a single sentence, and docket numbers are again dash-joined
     ("8411 - 8412"). Also carries a Persbericht link.
 
 The 88/2026 card was cut off mid-attribute in the capture (its source got
-truncated at a 50k-character limit before role number/keywords/outcome were
+truncated at a 50k-character limit before docket number/keywords/outcome were
 visible) and is intentionally omitted here rather than reconstructed.
 -->
 <!doctype html>

@@ -194,7 +194,7 @@ class SourceConfig:
             line in the Markdown body (used for courts like RVS whose heading
             set is open-ended and varies per ruling). When ``False`` (default),
             splits on the fixed list in ``section_headers``.
-        build_info_card_url: Optional callable ``(arrest_number, language) →
+        build_info_card_url: Optional callable ``(case_number, language) →
             URL`` that returns the court's information card/fiche URL for one
             ruling. Only courts that publish a stable, human-readable metadata
             page alongside each ruling set this (currently GHCC only, via
@@ -236,20 +236,20 @@ _RVS_PARAGRAPH_MARKER_RE = re.compile(r"(?m)^\s*(\d+(?:\.\d+)*)\.\s+")
 # ---------------------------------------------------------------------------
 
 
-def _ghcc_info_card_url(arrest_number: str, language: str) -> str:
+def _ghcc_info_card_url(case_number: str, language: str) -> str:
     """Canonical info card URL for one GHCC ruling.
 
     Format: ``https://{language}.const-court.be/ARR/{number}/{year}``.
     See ``https://nl.const-court.be/rule/referencing-judgments``.
 
     Args:
-        arrest_number: Official arrest number, e.g. ``"31/2025"``.
+        case_number: Official case number, e.g. ``"31/2025"``.
         language: ISO 639-1 language code, e.g. ``"nl"``.
 
     Returns:
         Info card URL, e.g. ``"https://nl.const-court.be/ARR/31/2025"``.
     """
-    number, year = arrest_number.split("/", 1)
+    number, year = case_number.split("/", 1)
     return f"https://{language}.const-court.be/ARR/{number}/{year}"
 
 

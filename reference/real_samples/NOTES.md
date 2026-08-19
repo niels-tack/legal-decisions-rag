@@ -16,7 +16,7 @@ info-card route. Running it against the real capture
 handles, deterministically and without any special-casing:
 
 - Guillemet-quoted law titles (`« ... »`) in the controlled norm.
-- Dash-joined multiple role numbers (`"8411 - 8412"` → `"8411, 8412"`).
+- Dash-joined multiple docket numbers (`"8411 - 8412"` → `"8411, 8412"`).
 - `<br>`-separated bulleted outcome text (arr-89-2026 has four `- ...`
   bullets in one `text-emphasis` div) — `get_text(separator=" ")` joins
   them into one readable string without needing `<br>`-specific handling.
@@ -38,7 +38,7 @@ handles, deterministically and without any special-casing:
   ECLI is extracted from the downloaded PDF's footer instead
   (`extract.extract_ecli`), not from the listing.
 - The 88/2026 card in the source capture was cut off mid-attribute by a
-  50k-character paste limit before its role number/keywords/outcome divs
+  50k-character paste limit before its docket number/keywords/outcome divs
   were visible, so it was left out of the saved sample entirely rather than
   reconstructed from a partial capture.
 

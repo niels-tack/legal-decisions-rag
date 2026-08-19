@@ -1,8 +1,8 @@
 ---
 source: "GHCC"
 ecli: "ECLI:BE:GHCC:2025:ARR.002"
-arrest_number: "2/2025"
-role_number: "8200"
+case_number: "2/2025"
+docket_number: "8200"
 file_slug: "2025-002n"
 ruling_date: "2025-02-20"
 language: "nl"

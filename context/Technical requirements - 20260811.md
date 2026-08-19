@@ -43,9 +43,9 @@
 **Data flow**:
 
 1. **Local ingestion (offline, maintainer's own hardware, weekly, Dutch-language rulings only for the POC)**:
-   - **Discover**: scrape the Court's official case overview listing for case number, role number ("rolnummer"), date, procedure type, controlled norm, outcome, official keywords, and PDF URL per ruling.
+   - **Discover**: scrape the Court's official case overview listing for case number, docket number ("rolnummer"), date, procedure type, controlled norm, outcome, official keywords, and PDF URL per ruling.
    - **Extract**: convert each PDF to text with `pdfplumber`, preserving the ruling's section structure (numbered facts, `-A-` party arguments, `-B-` the Court's reasoning, operative ruling). Strip repeated header/footer boilerplate via pattern matching.
-   - **Assemble**: merge metadata and extracted text into one Markdown file per ruling with YAML frontmatter. Capture distinct identifier fields: ECLI identifier, official arrest number (e.g. `1/2025`), role/docket number ("rolnummer", e.g. `8115`), and file/URL slug (e.g. `2025-001n`), plus date, language, procedure type, controlled norm, outcome, subject tags, and source PDF URL.
+   - **Assemble**: merge metadata and extracted text into one Markdown file per ruling with YAML frontmatter. Capture distinct identifier fields: ECLI identifier, official case number (e.g. `1/2025`), role/docket number ("rolnummer", e.g. `8115`), and file/URL slug (e.g. `2025-001n`), plus date, language, procedure type, controlled norm, outcome, subject tags, and source PDF URL.
 
    This machine is never reachable from the public internet; it only pushes finished Markdown to GitHub over outbound git.
 2. **CI index & web app build (GitHub Actions, free runners)**:

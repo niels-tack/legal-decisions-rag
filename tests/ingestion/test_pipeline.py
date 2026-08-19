@@ -27,14 +27,16 @@ from src.sources import (
 
 
 def _make_discovered(
-    pdf_url: str, arrest_number: str = "1/2025"
+    pdf_url: str, case_number: str = "1/2025"
 ) -> discover.DiscoveredRuling:
     """Build a minimal DiscoveredRuling record for pipeline tests."""
     return discover.DiscoveredRuling(
-        arrest_number=arrest_number,
-        role_number="8115",
+        case_number=case_number,
+        docket_number="8115",
         ruling_date=date(2025, 1, 9),
         procedure_type="Prejudiciële vraag",
+        challenged_norm="Artikel 1 van de wet van 19 juli 1991",
+        applied_norm="",
         controlled_norm="Artikel 1 van de wet van 19 juli 1991",
         outcome="Geen antwoord vereist",
         keywords=["Bevolkingsregister"],
@@ -125,9 +127,9 @@ def test_build_case_metadata_combines_discovered_and_ecli() -> None:
     assert metadata.source == "GHCC"
     assert metadata.ecli == "ECLI:BE:GHCC:2025:ARR.001"
     assert metadata.file_slug == "2025-001n"
-    assert metadata.arrest_number == "1/2025"
+    assert metadata.case_number == "1/2025"
     assert metadata.source_pdf_url == discover.ghcc_permalink_pdf(
-        discovered["arrest_number"], language="nl"
+        discovered["case_number"], language="nl"
     )
     assert metadata.source_pdf_url == "https://nl.const-court.be/1/2025.pdf"
     assert "Prejudiciële vraag" in metadata.title
@@ -224,9 +226,7 @@ def test_process_ruling_raises_when_ecli_not_found(
         )
 
 
-def _fake_discovery(
-    monkeypatch: pytest.MonkeyPatch, slugs: list[str]
-) -> None:
+def _fake_discovery(monkeypatch: pytest.MonkeyPatch, slugs: list[str]) -> None:
     """Patch discovery calls to return ``slugs`` without any network access."""
     monkeypatch.setattr(
         discover,
@@ -249,7 +249,7 @@ def _fake_discovery(
         lambda html, language="nl": [
             _make_discovered(
                 discover.ghcc_pdf_download_url(slug),
-                arrest_number=discover.arrest_number_from_slug(slug),
+                case_number=discover.case_number_from_slug(slug),
             )
             for slug in slugs
         ],
@@ -271,7 +271,7 @@ def test_run_pipeline_skips_rulings_already_present_as_markdown(
         pipeline,
         "process_ruling",
         lambda ruling, out_dir, cache_dir, session, **kwargs: (
-            processed.append(ruling["arrest_number"]) or out_dir / "dummy.md"
+            processed.append(ruling["case_number"]) or out_dir / "dummy.md"
         ),
     )
     monkeypatch.setattr(pipeline.time, "sleep", lambda seconds: None)
@@ -391,7 +391,15 @@ def test_main_wires_parsed_args_into_run_pipeline(
     monkeypatch.setattr(pipeline, "run_pipeline", fake_run_pipeline)
 
     pipeline.main(
-        ["--data-repo-path", "/tmp/data", "--push", "--year", "2024", "--force", "--no-pdf-cache"]
+        [
+            "--data-repo-path",
+            "/tmp/data",
+            "--push",
+            "--year",
+            "2024",
+            "--force",
+            "--no-pdf-cache",
+        ]
     )
 
     assert captured["data_repo_path"] == Path("/tmp/data")

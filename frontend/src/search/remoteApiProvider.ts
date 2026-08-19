@@ -19,8 +19,8 @@ interface ApiChunkResult {
 interface ApiCaseSearchResult {
   source: string;
   ecli: string;
-  arrest_number: string;
-  role_number: string;
+  case_number: string;
+  docket_number: string;
   case_number: string;
   ruling_date: string;
   language: string;
@@ -90,8 +90,8 @@ export class RemoteApiProvider implements SearchProvider {
     return body.results.map((item) => ({
       source: item.source,
       ecli: item.ecli,
-      arrestNumber: item.arrest_number,
-      roleNumber: item.role_number,
+      caseNumber: item.case_number,
+      docketNumber: item.docket_number,
       caseNumber: item.case_number,
       rulingDate: item.ruling_date,
       language: item.language,

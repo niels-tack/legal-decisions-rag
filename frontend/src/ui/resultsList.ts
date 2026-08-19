@@ -76,7 +76,7 @@ function renderResultCard(
       </div>
       <h2 class="result-title"><a href=${url}>${result.title}</a></h2>
       <div class="result-identifiers">
-        <strong>${result.rulingDate}</strong> · ${result.ecli} · arrest ${result.arrestNumber}
+        <strong>${result.rulingDate}</strong> · ${result.ecli} · arrest ${result.caseNumber}
       </div>
       <div class="result-badges">
         <span class="result-badge result-badge--outcome">${result.outcome}</span>

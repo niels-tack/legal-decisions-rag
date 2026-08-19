@@ -1,7 +1,7 @@
 ---
 ecli: "ECLI:BE:GHCC:2025:ARR.003"
-arrest_number: "3/2025"
-role_number: "8301"
+case_number: "3/2025"
+docket_number: "8301"
 file_slug: "2025-003n"
 ruling_date: "2025-03-01"
 language: "nl"

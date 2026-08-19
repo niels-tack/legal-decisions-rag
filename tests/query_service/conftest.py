@@ -76,8 +76,8 @@ _FIXTURE_CASES = [
     {
         "source": "GHCC",
         "ecli": "ECLI:BE:GHCC:2025:ARR.001",
-        "arrest_number": "1/2025",
-        "role_number": "8001",
+        "case_number": "1/2025",
+        "docket_number": "8001",
         "file_slug": "2025-001n",
         "ruling_date": "2025-01-15",
         "language": "nl",
@@ -91,8 +91,8 @@ _FIXTURE_CASES = [
     {
         "source": "GHCC",
         "ecli": "ECLI:BE:GHCC:2025:ARR.002",
-        "arrest_number": "2/2025",
-        "role_number": "8002",
+        "case_number": "2/2025",
+        "docket_number": "8002",
         "file_slug": "2025-002n",
         "ruling_date": "2025-02-20",
         "language": "nl",
@@ -106,8 +106,8 @@ _FIXTURE_CASES = [
     {
         "source": "GHCC",
         "ecli": "ECLI:BE:GHCC:2025:ARR.003",
-        "arrest_number": "3/2025",
-        "role_number": "8003",
+        "case_number": "3/2025",
+        "docket_number": "8003",
         "file_slug": "2025-003n",
         "ruling_date": "2025-03-05",
         "language": "nl",
@@ -124,8 +124,8 @@ _FIXTURE_CASES = [
         # doesn't require this key to be registered in src.sources.SOURCES.
         "source": "OTHER",
         "ecli": "ECLI:BE:OTHER:2025:ARR.004",
-        "arrest_number": "4/2025",
-        "role_number": "8004",
+        "case_number": "4/2025",
+        "docket_number": "8004",
         "file_slug": "2025-004x",
         "ruling_date": "2025-04-10",
         "language": "nl",
@@ -179,16 +179,16 @@ def _build_fixture_db(db_path: Path) -> None:
 
     for case_id, case in enumerate(_FIXTURE_CASES, start=1):
         conn.execute(
-            "INSERT INTO cases (case_id, source, ecli, arrest_number, "
-            "role_number, file_slug, ruling_date, language, procedure_type, "
+            "INSERT INTO cases (case_id, source, ecli, case_number, "
+            "docket_number, file_slug, ruling_date, language, procedure_type, "
             "controlled_norm, outcome, keywords, source_pdf_url, title) "
             "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
             (
                 case_id,
                 case["source"],
                 case["ecli"],
-                case["arrest_number"],
-                case["role_number"],
+                case["case_number"],
+                case["docket_number"],
                 case["file_slug"],
                 case["ruling_date"],
                 case["language"],

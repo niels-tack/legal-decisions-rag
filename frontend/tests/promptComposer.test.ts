@@ -18,8 +18,8 @@ function makeResult(overrides: Partial<CaseSearchResult> = {}): CaseSearchResult
   return {
     source: "GHCC",
     ecli: "ECLI:BE:GHCC:2025:ARR.001",
-    arrestNumber: "1/2025",
-    roleNumber: "8115",
+    caseNumber: "1/2025",
+    docketNumber: "8115",
     caseNumber: "2025-001n",
     rulingDate: "2025-01-15",
     language: "nl",

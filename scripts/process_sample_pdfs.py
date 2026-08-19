@@ -6,7 +6,7 @@ part of the ingestion pipeline with genuine parsing risk (PDF layout
 quirks, section-marker regexes) - so ``ecli`` and every section's text
 below are real, extracted text.
 
-The listing-page fields (arrest number, role number, procedure type,
+The listing-page fields (case number, docket number, procedure type,
 controlled norm, outcome, keywords, ruling date) normally come from
 ``src.ingestion.discover``'s live scrape of the Court's case overview page,
 which this script deliberately never calls (no outbound network access).
@@ -46,8 +46,8 @@ PLACEHOLDER_NOTE = "Placeholder (no live scrape - see scripts/process_sample_pdf
 _SLUG_RE = re.compile(r"^(\d{4})-(\d+)[a-z]?$")
 
 
-def _derive_arrest_number(file_slug: str) -> str:
-    """Derive a plausible arrest number from the file slug's year/sequence.
+def _derive_case_number(file_slug: str) -> str:
+    """Derive a plausible case number from the file slug's year/sequence.
 
     Args:
         file_slug: The PDF filename without extension, e.g. ``"2025-001n"``.
@@ -88,8 +88,8 @@ def process_sample_pdfs(pdf_dir: Path, out_dir: Path) -> list[Path]:
         metadata = CaseMetadata(
             source=SOURCE_CONSTITUTIONAL_COURT,
             ecli=ecli,
-            arrest_number=_derive_arrest_number(file_slug),
-            role_number=PLACEHOLDER_NOTE,
+            case_number=_derive_case_number(file_slug),
+            docket_number=PLACEHOLDER_NOTE,
             file_slug=file_slug,
             ruling_date=date(2025, 1, 1),
             language="nl",
