@@ -160,22 +160,23 @@ def build_case_metadata(
         A validated ``CaseMetadata`` instance ready for
         ``assemble.write_case_file``.
     """
+    challenged_norm = discovered.get("challenged_norm") or discovered["controlled_norm"]
     return CaseMetadata(
         source=SOURCE_CONSTITUTIONAL_COURT,
         ecli=ecli,
-        arrest_number=discovered["arrest_number"],
-        role_number=discovered["role_number"],
+        case_number=discovered["case_number"],
+        docket_number=discovered["docket_number"],
         file_slug=file_slug,
         ruling_date=discovered["ruling_date"],
         language="nl",
         procedure_type=discovered["procedure_type"],
-        controlled_norm=discovered["controlled_norm"],
+        controlled_norm=challenged_norm,
         outcome=discovered["outcome"],
         keywords=discovered["keywords"],
         source_pdf_url=discover.ghcc_permalink_pdf(
-            discovered["arrest_number"], language="nl"
+            discovered["case_number"], language="nl"
         ),
-        title=_build_title(discovered["procedure_type"], discovered["controlled_norm"]),
+        title=_build_title(discovered["procedure_type"], challenged_norm),
     )
 
 
@@ -386,8 +387,12 @@ def run_pipeline(
         label = f"[{idx}/{total_process}]"
         written_paths.append(
             process_ruling(
-                ruling, output_dir, pdf_cache_dir, http_session,
-                label=label, use_pdf_cache=use_pdf_cache,
+                ruling,
+                output_dir,
+                pdf_cache_dir,
+                http_session,
+                label=label,
+                use_pdf_cache=use_pdf_cache,
             )
         )
 

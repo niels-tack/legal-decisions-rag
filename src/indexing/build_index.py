@@ -207,7 +207,7 @@ def _insert_case(conn: sqlite3.Connection, metadata: CaseMetadata) -> int:
     cursor = conn.execute(
         """
         INSERT INTO cases (
-            source, ecli, arrest_number, role_number, file_slug, ruling_date,
+            source, ecli, case_number, docket_number, file_slug, ruling_date,
             language, procedure_type, controlled_norm, outcome, keywords,
             source_pdf_url, title
         ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
@@ -215,8 +215,8 @@ def _insert_case(conn: sqlite3.Connection, metadata: CaseMetadata) -> int:
         (
             metadata.source,
             metadata.ecli,
-            metadata.arrest_number,
-            metadata.role_number,
+            metadata.case_number,
+            metadata.docket_number,
             metadata.file_slug,
             metadata.ruling_date.isoformat(),
             metadata.language,
