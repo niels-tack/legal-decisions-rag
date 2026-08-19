@@ -21,7 +21,7 @@ interface ApiCaseSearchResult {
   ecli: string;
   case_number: string;
   docket_number: string;
-  case_number: string;
+  file_slug: string;
   ruling_date: string;
   language: string;
   procedure_type: string;

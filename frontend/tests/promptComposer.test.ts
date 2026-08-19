@@ -20,7 +20,7 @@ function makeResult(overrides: Partial<CaseSearchResult> = {}): CaseSearchResult
     ecli: "ECLI:BE:GHCC:2025:ARR.001",
     caseNumber: "1/2025",
     docketNumber: "8115",
-    caseNumber: "2025-001n",
+    fileSlug: "2025-001n",
     rulingDate: "2025-01-15",
     language: "nl",
     procedureType: "Prejudiciele vraag",
