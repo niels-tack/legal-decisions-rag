@@ -30,11 +30,12 @@ export function composePrompt(
     .map((result, index) => {
       const chunk = result.chunks[0];
       if (!chunk) return null;
+      const citation = result.ecli ?? `case ${result.caseNumber}`;
       const label = chunk.paragraphNumber
-        ? `${result.ecli}, paragraph ${chunk.paragraphNumber}`
-        : `${result.ecli}, ${chunk.section}`;
+        ? `${citation}, paragraph ${chunk.paragraphNumber}`
+        : `${citation}, ${chunk.section}`;
       return [
-        `[${index + 1}] ${label}, ${result.rulingDate}`,
+        `[${index + 1}] ${label}, ${result.rulingDate ?? "date unavailable"}`,
         `"${truncateExcerpt(chunk.excerpt)}"`,
         `Source PDF: ${result.sourcePdfUrl}`,
       ].join("\n");

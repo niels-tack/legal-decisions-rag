@@ -38,6 +38,8 @@ def test_parse_listing_html_extracts_single_docket_number_case(
     assert first["docket_number"] == "8510"
     assert first["ruling_date"] == date(2026, 7, 16)
     assert first["procedure_type"] == "Beroep tot vernietiging"
+    assert first["controlled_norm"] is not None
+    assert first["outcome"] is not None
     assert "waterbeleid" in first["controlled_norm"].lower()
     assert "Verwerping" in first["outcome"]
     assert first["keywords"] == ["Leefmilieu", "Vlaams Gewest", "Waterbeleid"]
@@ -106,6 +108,7 @@ def test_parse_real_sample_preserves_guillemets_in_controlled_norm(
     """Guillemet-quoted law titles (« ... ») should come through unescaped."""
     rulings = discover.parse_listing_html(real_listing_html)
 
+    assert rulings[0]["controlled_norm"] is not None
     assert "« tot wijziging van het decreet" in rulings[0]["controlled_norm"]
 
 
@@ -116,6 +119,7 @@ def test_parse_real_sample_joins_br_separated_outcome_bullets(
     space-separated string, keeping each bullet's leading '-' intact."""
     rulings = discover.parse_listing_html(real_listing_html)
     outcome = rulings[3]["outcome"]
+    assert outcome is not None
 
     assert outcome.startswith("- Prejudiciële vragen aan het Hof van Justitie")
     assert " - Vernietiging (artikel 51/5" in outcome
@@ -134,6 +138,9 @@ def test_parse_real_sample_ignores_press_release_link(real_listing_html: str) ->
     be picked up as, or corrupt, the controlled norm or outcome fields."""
     rulings = discover.parse_listing_html(real_listing_html)
 
+    assert rulings[1]["controlled_norm"] is not None
+    assert rulings[1]["outcome"] is not None
+    assert rulings[3]["outcome"] is not None
     assert "Persbericht" not in rulings[1]["controlled_norm"]
     assert "Persbericht" not in rulings[1]["outcome"]
     assert "Persbericht" not in rulings[3]["outcome"]
@@ -233,8 +240,9 @@ def test_parse_info_card_splits_challenged_and_applied_norm(
 ) -> None:
     """Bestreden bepaling and Getoetste norm must remain distinct metadata."""
     ruling = discover.parse_info_card(info_card_html, "2026-014n")
+    assert ruling["challenged_norm"] is not None
     assert "Vlaamse Wooncode" in ruling["challenged_norm"]
-    assert ruling["applied_norm"] == ""
+    assert ruling["applied_norm"] is None
 
 
 def test_parse_info_card_extracts_both_norm_labels_when_present() -> None:
@@ -248,6 +256,8 @@ def test_parse_info_card_extracts_both_norm_labels_when_present() -> None:
     </body></html>
     """
     ruling = discover.parse_info_card(html, "2026-014n")
+    assert ruling["challenged_norm"] is not None
+    assert ruling["applied_norm"] is not None
     assert "Vlaamse Wooncode" in ruling["challenged_norm"]
     assert "Grondwet" in ruling["applied_norm"]
 
@@ -272,11 +282,11 @@ def test_parse_info_card_derived_fields(info_card_html: str) -> None:
 
 
 def test_parse_info_card_empty_page_falls_back_gracefully() -> None:
-    """A page with no recognizable metadata should yield empty strings, not raise."""
+    """A page with no recognizable metadata should yield None values, not raise."""
     ruling = discover.parse_info_card("<html><body></body></html>", "2026-001n")
-    assert ruling["procedure_type"] == ""
+    assert ruling["procedure_type"] is None
     assert ruling["keywords"] == []
-    assert ruling["ruling_date"] == date.min
+    assert ruling["ruling_date"] is None
 
 
 def test_parse_info_card_inline_span_fallback() -> None:

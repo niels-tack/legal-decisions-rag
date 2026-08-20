@@ -18,15 +18,15 @@ interface ApiChunkResult {
 /** Mirrors `src/schemas.py::CaseSearchResult` field-for-field (snake_case, as sent over HTTP). */
 interface ApiCaseSearchResult {
   source: string;
-  ecli: string;
+  ecli: string | null;
   case_number: string;
-  docket_number: string;
+  docket_number: string | null;
   file_slug: string;
-  ruling_date: string;
+  ruling_date: string | null;
   language: string;
-  procedure_type: string;
-  controlled_norm: string;
-  outcome: string;
+  procedure_type: string | null;
+  controlled_norm: string | null;
+  outcome: string | null;
   title: string;
   source_pdf_url: string;
   best_score: number;

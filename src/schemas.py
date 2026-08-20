@@ -21,24 +21,24 @@ class CaseMetadata(BaseModel):
             "Issuing judicial body, e.g. 'GHCC' for the Constitutional Court."
         ),
     )
-    ecli: str = Field(
-        ..., description="Canonical citation, e.g. ECLI:BE:GHCC:2025:ARR.001"
-    )
+    ecli: str | None = Field(None, description="Canonical citation when present")
     case_number: str = Field(..., description="Official case number, e.g. 1/2025")
-    docket_number: str = Field(
-        ..., description="Role/docket number(s) ('rolnummer'), e.g. 8115"
+    docket_number: str | None = Field(
+        None, description="Role/docket number(s) ('rolnummer'), when published"
     )
     file_slug: str = Field(
         ..., description="Source PDF filename without extension, e.g. 2025-001n"
     )
-    ruling_date: date = Field(..., description="Date the ruling was rendered")
+    ruling_date: date | None = Field(None, description="Date the ruling was rendered")
     language: str = Field(
         default="nl", description="ISO 639-1 language code of the ruling text"
     )
-    procedure_type: str = Field(..., description="e.g. 'Prejudiciële vraag'")
-    controlled_norm: str = Field(..., description="The law/article under review")
-    outcome: str = Field(
-        ..., description="The Court's ruling outcome, e.g. 'Vernietiging'"
+    procedure_type: str | None = Field(None, description="e.g. 'Prejudiciële vraag'")
+    controlled_norm: str | None = Field(
+        None, description="The law/article under review"
+    )
+    outcome: str | None = Field(
+        None, description="The Court's ruling outcome, e.g. 'Vernietiging'"
     )
     keywords: list[str] = Field(
         default_factory=list, description="Official Court subject keywords"
@@ -110,15 +110,15 @@ class CaseSearchResult(BaseModel):
     """
 
     source: str = Field(..., description="Issuing judicial body, e.g. 'GHCC'")
-    ecli: str
+    ecli: str | None
     case_number: str
-    docket_number: str
+    docket_number: str | None
     file_slug: str = Field(..., description="File/URL slug, e.g. 2025-001n")
-    ruling_date: date
+    ruling_date: date | None
     language: str
-    procedure_type: str
-    controlled_norm: str
-    outcome: str
+    procedure_type: str | None
+    controlled_norm: str | None
+    outcome: str | None
     title: str
     source_pdf_url: str
     permalink_info_card: str | None = Field(

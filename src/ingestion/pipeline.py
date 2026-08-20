@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import logging
+import re
 import subprocess
 import time
 from datetime import date
@@ -31,6 +32,51 @@ DATA_SUBPATH = Path("Constitutional_Court_Belgium") / "NL"
 DEFAULT_DELAY_SECONDS = 2.0
 MAX_TITLE_LENGTH = 200
 LOG_DIR = Path("logs")
+
+_GHCC_FILE_SLUG_RE = re.compile(r"^(\d{4})-(\d{3})[a-z]$", re.IGNORECASE)
+_GHCC_ECLI_RE = re.compile(r"^ECLI:BE:GHCC:(\d{4}):ARR\.(\d+)$")
+
+
+def _warn_on_ecli_identity_mismatch(
+    ecli: str | None, file_slug: str, case_number: str, tag: str
+) -> None:
+    """Warn when a GHCC ECLI disagrees with filename-derived identity.
+
+    Publication continues because the Court can publish a ruling under a
+    later file sequence than the ECLI sequence. Missing ECLIs are handled by
+    the caller and are not identity mismatches.
+    """
+    if ecli is None:
+        return
+
+    ecli_match = _GHCC_ECLI_RE.fullmatch(ecli)
+    slug_match = _GHCC_FILE_SLUG_RE.fullmatch(file_slug)
+    if ecli_match is None:
+        logger.warning("%s - ECLI has unexpected GHCC format: %s", tag, ecli)
+        return
+    if slug_match is None:
+        logger.warning("%s - file slug has unexpected GHCC format: %s", tag, file_slug)
+        return
+
+    ecli_year, ecli_sequence = ecli_match.groups()
+    slug_year, slug_sequence = slug_match.groups()
+    case_number_match = re.fullmatch(r"(\d+)/(\d{4})", case_number)
+    case_identity = (
+        case_number_match.groups() if case_number_match is not None else None
+    )
+    expected_identity = (str(int(slug_sequence)), slug_year)
+
+    if (ecli_year, str(int(ecli_sequence))) != (
+        slug_year,
+        str(int(slug_sequence)),
+    ) or case_identity != expected_identity:
+        logger.warning(
+            "%s - identity mismatch: file slug %s, case %s, ECLI %s; continuing.",
+            tag,
+            file_slug,
+            case_number,
+            ecli,
+        )
 
 
 def _configure_logging(log_dir: Path = LOG_DIR) -> None:
@@ -126,7 +172,7 @@ def download_pdf(
     dest_path.write_bytes(response.content)
 
 
-def _build_title(procedure_type: str, controlled_norm: str) -> str:
+def _build_title(procedure_type: str | None, controlled_norm: str | None) -> str:
     """Synthesize a short human-readable title from discovered metadata.
 
     The case overview listing carries no dedicated title field, so this
@@ -140,27 +186,32 @@ def _build_title(procedure_type: str, controlled_norm: str) -> str:
     Returns:
         A title string bounded to ``MAX_TITLE_LENGTH`` characters.
     """
-    title = f"{procedure_type} - {controlled_norm}".strip(" -")
+    title = " - ".join(value for value in (procedure_type, controlled_norm) if value)
+    if not title:
+        title = "Constitutional Court ruling"
     if len(title) > MAX_TITLE_LENGTH:
         title = title[: MAX_TITLE_LENGTH - 1].rstrip() + "…"
     return title
 
 
 def build_case_metadata(
-    discovered: discover.DiscoveredRuling, file_slug: str, ecli: str
+    discovered: discover.DiscoveredRuling, file_slug: str, ecli: str | None
 ) -> CaseMetadata:
     """Combine a discovered listing record and PDF-derived ECLI into full metadata.
 
     Args:
         discovered: One record from ``discover.parse_listing_html``.
         file_slug: The file/URL slug derived from the PDF URL.
-        ecli: The canonical ECLI citation read from the PDF's footer.
+        ecli: The canonical ECLI citation read from the PDF's footer, or None
+            when the source PDF does not contain one.
 
     Returns:
         A validated ``CaseMetadata`` instance ready for
         ``assemble.write_case_file``.
     """
-    challenged_norm = discovered.get("challenged_norm") or discovered["controlled_norm"]
+    challenged_norm = discovered.get("challenged_norm") or discovered.get(
+        "controlled_norm"
+    )
     return CaseMetadata(
         source=SOURCE_CONSTITUTIONAL_COURT,
         ecli=ecli,
@@ -218,8 +269,6 @@ def process_ruling(
     Returns:
         The path of the written Markdown file.
 
-    Raises:
-        ValueError: If no ECLI could be found in the downloaded PDF.
     """
     file_slug = discover.file_slug_from_pdf_url(discovered["pdf_url"])
     tag = f"{label} {file_slug}" if label else file_slug
@@ -236,7 +285,9 @@ def process_ruling(
     logger.info("%s - extracting ECLI...", tag)
     ecli = extract.extract_ecli(pdf_path)
     if ecli is None:
-        raise ValueError(f"Could not find an ECLI in downloaded PDF: {pdf_path}")
+        logger.warning("%s - no ECLI found in downloaded PDF; continuing.", tag)
+    else:
+        _warn_on_ecli_identity_mismatch(ecli, file_slug, discovered["case_number"], tag)
 
     logger.info("%s - extracting sections...", tag)
     sections = extract.extract_case_sections(pdf_path)

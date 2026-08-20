@@ -39,20 +39,21 @@ const SORT_CLAUSES: Record<SortOption, string> = {
 };
 
 interface CaseRow {
+  case_id: number;
   section: string;
   paragraph_number: string | null;
   text: string;
   highlighted_snippet: string;
   source: string;
-  ecli: string;
+  ecli: string | null;
   case_number: string;
-  docket_number: string;
+  docket_number: string | null;
   file_slug: string;
-  ruling_date: string;
+  ruling_date: string | null;
   language: string;
-  procedure_type: string;
-  controlled_norm: string;
-  outcome: string;
+  procedure_type: string | null;
+  controlled_norm: string | null;
+  outcome: string | null;
   title: string;
   source_pdf_url: string;
 }
@@ -189,13 +190,13 @@ export class LocalSqliteProvider implements SearchProvider {
    * each case, chunks are in their original rank order (best first).
    */
   private groupIntoCases(rows: CaseRow[]): CaseSearchResult[] {
-    const caseMap = new Map<string, { caseData: CaseRow; chunks: ChunkResult[] }>();
+    const caseMap = new Map<number, { caseData: CaseRow; chunks: ChunkResult[] }>();
 
     for (const row of rows) {
-      if (!caseMap.has(row.ecli)) {
-        caseMap.set(row.ecli, { caseData: row, chunks: [] });
+      if (!caseMap.has(row.case_id)) {
+        caseMap.set(row.case_id, { caseData: row, chunks: [] });
       }
-      const entry = caseMap.get(row.ecli)!;
+      const entry = caseMap.get(row.case_id)!;
       if (entry.chunks.length < MAX_CHUNKS_PER_CASE) {
         entry.chunks.push({
           section: row.section,
@@ -241,7 +242,7 @@ export class LocalSqliteProvider implements SearchProvider {
 
     const rows = queryAll<CaseRow>(
       db,
-      `SELECT chunks.section, chunks.paragraph_number, chunks.text,
+      `SELECT cases.case_id, chunks.section, chunks.paragraph_number, chunks.text,
               snippet(chunks_fts, 0, ?, ?, ?, ?) AS highlighted_snippet,
               cases.source, cases.ecli, cases.case_number, cases.docket_number,
               cases.file_slug, cases.ruling_date, cases.language,
@@ -286,7 +287,7 @@ export class LocalSqliteProvider implements SearchProvider {
     const db = await this.getDb();
     const procedureTypeRows = queryAll<{ procedure_type: string }>(
       db,
-      "SELECT DISTINCT procedure_type FROM cases ORDER BY procedure_type",
+      "SELECT DISTINCT procedure_type FROM cases WHERE procedure_type IS NOT NULL ORDER BY procedure_type",
       [],
     );
     const sourceRows = queryAll<{ source: string }>(

@@ -76,10 +76,10 @@ function renderResultCard(
       </div>
       <h2 class="result-title"><a href=${url}>${result.title}</a></h2>
       <div class="result-identifiers">
-        <strong>${result.rulingDate}</strong> · ${result.ecli} · case ${result.caseNumber}
+        <strong>${result.rulingDate ?? "date unavailable"}</strong> · ${result.ecli ?? "ECLI unavailable"} · case ${result.caseNumber}
       </div>
       <div class="result-badges">
-        <span class="result-badge result-badge--outcome">${result.outcome}</span>
+        <span class="result-badge result-badge--outcome">${result.outcome ?? "Outcome unavailable"}</span>
         <span class="result-badge">${result.procedureType}</span>
       </div>
       <ul class="result-chunks">

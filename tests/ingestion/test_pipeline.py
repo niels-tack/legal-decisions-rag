@@ -135,6 +135,26 @@ def test_build_case_metadata_combines_discovered_and_ecli() -> None:
     assert "Prejudiciële vraag" in metadata.title
 
 
+@pytest.mark.parametrize(
+    ("ecli", "file_slug", "case_number", "should_warn"),
+    [
+        ("ECLI:BE:GHCC:2025:ARR.001", "2025-001n", "1/2025", False),
+        ("ECLI:BE:GHCC:2025:ARR.100", "2026-090n", "90/2026", True),
+    ],
+)
+def test_warn_on_ecli_identity_mismatch(
+    ecli: str,
+    file_slug: str,
+    case_number: str,
+    should_warn: bool,
+    caplog: pytest.LogCaptureFixture,
+) -> None:
+    """Matching and delayed-publication ECLIs are handled deterministically."""
+    pipeline._warn_on_ecli_identity_mismatch(ecli, file_slug, case_number, "test")
+
+    assert ("identity mismatch" in caplog.text) is should_warn
+
+
 def test_build_title_truncates_long_combined_text() -> None:
     """A very long controlled norm should be truncated rather than left unbounded."""
     title = pipeline._build_title("Prejudiciële vraag", "x" * 500)
@@ -206,24 +226,36 @@ def test_process_ruling_writes_markdown_with_merged_metadata(
     assert (pdf_cache_dir / "2025-001n.pdf").read_bytes() == b"fake-pdf"
 
 
-def test_process_ruling_raises_when_ecli_not_found(
+def test_process_ruling_writes_missing_ecli_as_null(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
-    """A PDF with no discoverable ECLI should raise rather than publish bad metadata."""
+    """A PDF with no discoverable ECLI should still produce a marked case file."""
     discovered = _make_discovered(
         "https://www.const-court.be/public/n/2025/2025-001n.pdf"
     )
 
     monkeypatch.setattr(pipeline, "download_pdf", _fake_download_pdf)
     monkeypatch.setattr(extract, "extract_ecli", lambda pdf_path: None)
+    monkeypatch.setattr(
+        extract,
+        "extract_case_sections",
+        lambda pdf_path: {
+            GHCC_SECTION_FACTS: "I. Facts",
+            GHCC_SECTION_ARGUMENTS: "- A - Arguments",
+            GHCC_SECTION_REASONING: "- B - Reasoning",
+            GHCC_SECTION_RULING: "Om die redenen, Ruling",
+        },
+    )
 
-    with pytest.raises(ValueError, match="Could not find an ECLI"):
-        pipeline.process_ruling(
-            discovered,
-            tmp_path / "out",
-            tmp_path / "pdfs",
-            session=_unused_session(),
-        )
+    output_path = pipeline.process_ruling(
+        discovered,
+        tmp_path / "out",
+        tmp_path / "pdfs",
+        session=_unused_session(),
+    )
+
+    assert output_path.exists()
+    assert "ecli: null" in output_path.read_text(encoding="utf-8")
 
 
 def _fake_discovery(monkeypatch: pytest.MonkeyPatch, slugs: list[str]) -> None:

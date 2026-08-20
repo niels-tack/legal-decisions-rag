@@ -33,6 +33,11 @@ logger = logging.getLogger(__name__)
 _BLANK_LINE_RE = re.compile(r"\n\s*\n")
 
 
+def _display_metadata(value: object) -> str:
+    """Return a stable label for metadata that is absent in the source."""
+    return str(value) if value is not None else "Not available"
+
+
 def _render_chunk_body(text: str) -> str:
     """Render one chunk's text as one or more escaped HTML ``<p>`` blocks.
 
@@ -107,7 +112,7 @@ def _render_section_nav(sections: dict[str, str], source_config: SourceConfig) -
     """
     links = [
         f'<a href="#section-{html.escape(label)}">'
-        f'{html.escape(header.removeprefix("## "))}</a>'
+        f"{html.escape(header.removeprefix('## '))}</a>"
         for header, label in source_config.section_headers
         if sections.get(label, "")
     ]
@@ -231,20 +236,25 @@ def render_case_page(metadata: CaseMetadata, sections: dict[str, str]) -> str:
         A full HTML document as a string.
     """
     source_config = get_source(metadata.source)
-    keywords = ", ".join(metadata.keywords) if metadata.keywords else "–"
+    keywords = ", ".join(metadata.keywords) if metadata.keywords else "Not available"
 
     metadata_rows = "".join(
         f"<dt>{html.escape(label)}</dt><dd>{html.escape(str(value))}</dd>"
         for label, value in (
             ("Source", source_config.name),
-            ("ECLI", metadata.ecli),
+            ("ECLI", _display_metadata(metadata.ecli)),
             ("Case number", metadata.case_number),
-            ("Docket number", metadata.docket_number),
-            ("Date", metadata.ruling_date.isoformat()),
+            ("Docket number", _display_metadata(metadata.docket_number)),
+            (
+                "Date",
+                _display_metadata(
+                    metadata.ruling_date.isoformat() if metadata.ruling_date else None
+                ),
+            ),
             ("Language", metadata.language),
-            ("Procedure type", metadata.procedure_type),
-            ("Controlled norm", metadata.controlled_norm),
-            ("Outcome", metadata.outcome),
+            ("Procedure type", _display_metadata(metadata.procedure_type)),
+            ("Controlled norm", _display_metadata(metadata.controlled_norm)),
+            ("Outcome", _display_metadata(metadata.outcome)),
             ("Keywords", keywords),
         )
     )
@@ -264,7 +274,7 @@ def render_case_page(metadata: CaseMetadata, sections: dict[str, str]) -> str:
     section_nav_html = _render_section_nav(sections, source_config)
 
     title = html.escape(metadata.title)
-    ecli = html.escape(metadata.ecli)
+    ecli = html.escape(_display_metadata(metadata.ecli))
     pdf_url = html.escape(metadata.source_pdf_url)
 
     return f"""<!doctype html>

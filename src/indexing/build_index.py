@@ -112,12 +112,16 @@ def split_into_paragraphs(
 
     for index, match in enumerate(matches):
         number = match.group(1)
-        end = matches[index + 1].start() if index + 1 < len(matches) else len(
-            section_text
+        end = (
+            matches[index + 1].start()
+            if index + 1 < len(matches)
+            else len(section_text)
         )
         parts = number.split(".")
         parent_numbers = [".".join(parts[:i]) for i in range(1, len(parts))]
-        chunks.append((number, parent_numbers, section_text[match.start() : end].strip()))
+        chunks.append(
+            (number, parent_numbers, section_text[match.start() : end].strip())
+        )
     return chunks
 
 
@@ -218,7 +222,7 @@ def _insert_case(conn: sqlite3.Connection, metadata: CaseMetadata) -> int:
             metadata.case_number,
             metadata.docket_number,
             metadata.file_slug,
-            metadata.ruling_date.isoformat(),
+            metadata.ruling_date.isoformat() if metadata.ruling_date else None,
             metadata.language,
             metadata.procedure_type,
             metadata.controlled_norm,

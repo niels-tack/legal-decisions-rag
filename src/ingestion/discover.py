@@ -85,13 +85,13 @@ class DiscoveredRuling(TypedDict):
     """
 
     case_number: str
-    docket_number: str
-    ruling_date: date
-    procedure_type: str
-    challenged_norm: str
-    applied_norm: str
-    controlled_norm: str
-    outcome: str
+    docket_number: str | None
+    ruling_date: date | None
+    procedure_type: str | None
+    challenged_norm: str | None
+    applied_norm: str | None
+    controlled_norm: str | None
+    outcome: str | None
     keywords: list[str]
     pdf_url: str
 
@@ -231,29 +231,31 @@ def parse_listing_html(html: str, language: str = "nl") -> list[DiscoveredRuling
         date_span = card.find("span", class_="text-body-medium")
         try:
             ruling_date = (
-                _parse_date(date_span.get_text(strip=True)) if date_span else date.min
+                _parse_date(date_span.get_text(strip=True)) if date_span else None
             )
         except ValueError:
-            ruling_date = date.min
+            ruling_date = None
 
         # Procedure type: span with BOTH text-body-medium AND ml-auto classes.
         # Uses CSS selector because BS4's class_ list argument is OR, not AND.
         procedure_span = card.select_one("span.text-body-medium.ml-auto")
-        procedure_type = procedure_span.get_text(strip=True) if procedure_span else ""
+        procedure_type = procedure_span.get_text(strip=True) if procedure_span else None
 
         # Challenged norm: the provision named in the card's main law/article
         # block. This is not the same concept as the court's own applied norm.
         norm_div = card.find("div", class_="mt-2")
         challenged_norm = (
-            norm_div.get_text(separator=" ", strip=True) if norm_div else ""
+            norm_div.get_text(separator=" ", strip=True) if norm_div else None
         )
 
         # Outcome: div with the text-emphasis class (visually highlighted verdict).
         outcome_div = card.find("div", class_="text-emphasis")
-        outcome = outcome_div.get_text(separator=" ", strip=True) if outcome_div else ""
+        outcome = (
+            outcome_div.get_text(separator=" ", strip=True) if outcome_div else None
+        )
 
         # Docket number: first div.text-body-small whose text starts with "Rolnummer".
-        docket_number = ""
+        docket_number = None
         for div in card.find_all("div", class_="text-body-small"):
             text = div.get_text(strip=True)
             if _ROLE_NUMBER_PREFIX_RE.match(text):
@@ -532,7 +534,7 @@ def parse_info_card(
 
     Returns:
         A ``DiscoveredRuling`` record; fields that could not be parsed fall
-        back to empty strings or empty lists rather than raising.
+        back to None or empty lists rather than raising.
     """
     soup = BeautifulSoup(html, "html.parser")
     case_number = case_number_from_slug(file_slug)
@@ -546,11 +548,11 @@ def parse_info_card(
     outcome_text = _find_labeled_value(soup, *_LABEL_OUTCOME)
     keywords_text = _find_labeled_value(soup, *_LABEL_KEYWORDS)
 
-    parsed_date: date
+    parsed_date: date | None
     try:
-        parsed_date = _parse_date(ruling_date_text) if ruling_date_text else date.min
+        parsed_date = _parse_date(ruling_date_text) if ruling_date_text else None
     except ValueError:
-        parsed_date = date.min
+        parsed_date = None
 
     keywords: list[str] = (
         [k.strip() for k in keywords_text.split(" - ") if k.strip()]
@@ -560,13 +562,13 @@ def parse_info_card(
 
     return DiscoveredRuling(
         case_number=case_number,
-        docket_number=docket_number_text,
+        docket_number=docket_number_text or None,
         ruling_date=parsed_date,
-        procedure_type=procedure_type_text,
-        challenged_norm=challenged_norm_text,
-        applied_norm=applied_norm_text,
-        controlled_norm=challenged_norm_text or applied_norm_text,
-        outcome=outcome_text,
+        procedure_type=procedure_type_text or None,
+        challenged_norm=challenged_norm_text or None,
+        applied_norm=applied_norm_text or None,
+        controlled_norm=challenged_norm_text or applied_norm_text or None,
+        outcome=outcome_text or None,
         keywords=keywords,
         pdf_url=pdf_url,
     )

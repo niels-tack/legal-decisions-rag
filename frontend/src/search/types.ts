@@ -26,15 +26,15 @@ export interface ChunkResult {
  */
 export interface CaseSearchResult {
   source: string;
-  ecli: string;
+  ecli: string | null;
   caseNumber: string;
-  docketNumber: string;
+  docketNumber: string | null;
   fileSlug: string;
-  rulingDate: string;
+  rulingDate: string | null;
   language: string;
-  procedureType: string;
-  controlledNorm: string;
-  outcome: string;
+  procedureType: string | null;
+  controlledNorm: string | null;
+  outcome: string | null;
   title: string;
   sourcePdfUrl: string;
   bestScore: number;
