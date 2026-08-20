@@ -217,9 +217,7 @@ def test_source_is_recorded_per_case(built_db: Path) -> None:
     """Every valid case records the judicial body that issued it."""
     conn = sqlite3.connect(built_db)
     try:
-        sources = {
-            row[0] for row in conn.execute("SELECT DISTINCT source FROM cases")
-        }
+        sources = {row[0] for row in conn.execute("SELECT DISTINCT source FROM cases")}
     finally:
         conn.close()
 
@@ -307,4 +305,25 @@ def test_split_into_paragraphs_derives_multi_level_hierarchy() -> None:
 
     result = split_into_paragraphs("B.76.2.3.  Diep genest punt.", source_config)
 
-    assert result == [("B.76.2.3", ["B", "B.76", "B.76.2"], "B.76.2.3.  Diep genest punt.")]
+    assert result == [
+        ("B.76.2.3", ["B", "B.76", "B.76.2"], "B.76.2.3.  Diep genest punt.")
+    ]
+
+
+def test_split_into_paragraphs_accepts_missing_period_before_uppercase_text() -> None:
+    """GHCC paragraph markers may omit their period before a new sentence."""
+    source_config = get_source(SOURCE_CONSTITUTIONAL_COURT)
+
+    result = split_into_paragraphs(
+        "B.1. Eerste punt.\nB.2 Tweede punt.\nB.2.1 vermeld in een verwijzing.",
+        source_config,
+    )
+
+    assert result == [
+        ("B.1", ["B"], "B.1. Eerste punt."),
+        (
+            "B.2",
+            ["B"],
+            "B.2 Tweede punt.\nB.2.1 vermeld in een verwijzing.",
+        ),
+    ]

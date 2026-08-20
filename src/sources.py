@@ -221,7 +221,7 @@ class SourceConfig:
 # (e.g. "B.7.", "B.76.2.3.") for "-A-" (party arguments) and "-B-"
 # (Court's reasoning). Facts and operative-ruling have no numbering, so
 # they fall back to a single whole-section chunk.
-_GHCC_PARAGRAPH_MARKER_RE = re.compile(r"(?m)^\s*([A-Z](?:\.\d+)+)\.\s+")
+_GHCC_PARAGRAPH_MARKER_RE = re.compile(r"(?m)^\s*([A-Z](?:\.\d+)+)\.?\s+(?=[A-ZÀ-Ý])")
 
 # ---------------------------------------------------------------------------
 # RVS internals
