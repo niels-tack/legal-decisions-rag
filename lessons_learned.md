@@ -59,6 +59,8 @@ before publication.
 ## Operational lessons
 
 - Validate the full corpus, not only a handful of recent rulings.
+- Keep derived titles focused on the substantive norm; procedure type remains
+  a separate metadata field for filtering and display.
 - Keep network discovery, PDF extraction, metadata assembly, indexing, and
   static rendering independently testable.
 - Treat warnings as data-quality signals while allowing recoverable cases to

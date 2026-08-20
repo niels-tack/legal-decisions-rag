@@ -186,9 +186,7 @@ def _build_title(procedure_type: str | None, controlled_norm: str | None) -> str
     Returns:
         A title string bounded to ``MAX_TITLE_LENGTH`` characters.
     """
-    title = " - ".join(value for value in (procedure_type, controlled_norm) if value)
-    if not title:
-        title = "Constitutional Court ruling"
+    title = controlled_norm or procedure_type or "Constitutional Court ruling"
     if len(title) > MAX_TITLE_LENGTH:
         title = title[: MAX_TITLE_LENGTH - 1].rstrip() + "…"
     return title

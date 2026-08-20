@@ -132,7 +132,22 @@ def test_build_case_metadata_combines_discovered_and_ecli() -> None:
         discovered["case_number"], language="nl"
     )
     assert metadata.source_pdf_url == "https://nl.const-court.be/1/2025.pdf"
-    assert "Prejudiciële vraag" in metadata.title
+    assert metadata.title == "Artikel 1 van de wet van 19 juli 1991"
+
+
+def test_build_title_omits_procedure_when_norm_is_available() -> None:
+    """Titles should avoid repeating procedure metadata already shown separately."""
+    title = pipeline._build_title(
+        "Beroepen tot vernietiging",
+        "Decreet van de Franse Gemeenschap van 6 april 1998",
+    )
+
+    assert title == "Decreet van de Franse Gemeenschap van 6 april 1998"
+
+
+def test_build_title_falls_back_to_procedure_without_norm() -> None:
+    """A procedure remains useful as a title when no norm was discovered."""
+    assert pipeline._build_title("Prejudiciële vraag", None) == "Prejudiciële vraag"
 
 
 @pytest.mark.parametrize(
