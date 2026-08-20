@@ -36,7 +36,6 @@ def _make_discovered(
         ruling_date=date(2025, 1, 9),
         procedure_type="Prejudiciële vraag",
         challenged_norm="Artikel 1 van de wet van 19 juli 1991",
-        applied_norm="",
         controlled_norm="Artikel 1 van de wet van 19 juli 1991",
         outcome="Geen antwoord vereist",
         keywords=["Bevolkingsregister"],

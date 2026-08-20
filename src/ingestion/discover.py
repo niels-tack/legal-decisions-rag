@@ -36,7 +36,6 @@ from typing import TypedDict
 import requests
 from bs4 import BeautifulSoup
 
-BASE_URL = "https://www.const-court.be"
 LISTING_URL_TEMPLATE = "https://{language}.const-court.be/judgments?year={year}"
 
 # Map from ISO 639-1 language code to the single-letter suffix used in the
@@ -56,24 +55,6 @@ _CARD_ID_RE = re.compile(r"^arr-(\d+)-(\d{4})$")
 _ROLE_NUMBER_PREFIX_RE = re.compile(r"^Rolnummers?\s*:?\s*", re.IGNORECASE)
 _KEYWORDS_PREFIX_RE = re.compile(r"^Trefwoorden\s*:?\s*", re.IGNORECASE)
 
-# Tags that carry a single "Label : value" text node on the Court site.
-_INLINE_TAGS = frozenset({"span", "p", "li"})
-
-# Dutch label variants for each metadata field on the ARR info-card page.
-# Keep the challenged norm and the court-applied norm as separate concepts.
-_LABEL_DATE = ("Datum", "Datum arrest", "Datum uitspraak", "Beslist op")
-_LABEL_ROLE = ("Rolnummer", "Rolnummers", "Rolnr")
-_LABEL_PROCEDURE = (
-    "Aard van de rechtspleging",
-    "Type procedure",
-    "Procedure",
-    "Rechtspleging",
-)
-_LABEL_CHALLENGED_NORM = ("Bestreden bepaling", "Norm", "Onderwerp")
-_LABEL_APPLIED_NORM = ("Getoetste norm", "Toetsnorm")
-_LABEL_OUTCOME = ("Dictum", "Uitspraak", "Beslissing", "Besluit")
-_LABEL_KEYWORDS = ("Trefwoorden", "Sleutelwoorden", "Onderwerpen")
-
 
 class DiscoveredRuling(TypedDict):
     """One ruling record scraped from the case overview listing.
@@ -89,7 +70,6 @@ class DiscoveredRuling(TypedDict):
     ruling_date: date | None
     procedure_type: str | None
     challenged_norm: str | None
-    applied_norm: str | None
     controlled_norm: str | None
     outcome: str | None
     keywords: list[str]
@@ -275,7 +255,6 @@ def parse_listing_html(html: str, language: str = "nl") -> list[DiscoveredRuling
                 ruling_date=ruling_date,
                 procedure_type=procedure_type,
                 challenged_norm=challenged_norm,
-                applied_norm="",
                 controlled_norm=challenged_norm,
                 outcome=outcome,
                 keywords=keywords,
@@ -320,22 +299,6 @@ def ghcc_permalink_pdf(case_number: str, language: str = "nl") -> str:
     """
     number, year = case_number.split("/", 1)
     return f"https://{language}.const-court.be/{number}/{year}.pdf"
-
-
-def ghcc_permalink_info_card(case_number: str, language: str = "nl") -> str:
-    """Canonical link to the GHCC information card for one ruling.
-
-    Format: ``https://<language>.const-court.be/ARR/<number>/<year>``.
-
-    Args:
-        case_number: Official case number, e.g. ``"1/2025"``.
-        language: ISO 639-1 language code.
-
-    Returns:
-        Info card URL, e.g. ``"https://nl.const-court.be/ARR/1/2025"``.
-    """
-    number, year = case_number.split("/", 1)
-    return f"https://{language}.const-court.be/ARR/{number}/{year}"
 
 
 def ghcc_pdf_download_url(file_slug: str, language: str = "nl") -> str:
@@ -438,137 +401,3 @@ def case_number_from_slug(file_slug: str) -> str:
     year_part, rest = file_slug.split("-", 1)
     seq_str = re.sub(r"[a-z]+$", "", rest, flags=re.IGNORECASE)
     return f"{int(seq_str)}/{year_part}"
-
-
-# ---------------------------------------------------------------------------
-# Info card fetching and parsing (kept for historical reference; the pipeline
-# now uses parse_listing_html instead)
-# ---------------------------------------------------------------------------
-
-
-def _find_labeled_value(soup: BeautifulSoup, *labels: str) -> str:
-    """Return the value paired with the first matching Dutch label.
-
-    Searches two HTML patterns in order:
-
-    1. ``<dt>label</dt><dd>value</dd>`` or ``<th>label</th><td>value</td>``:
-       used by definition-list and table-based info pages.
-    2. An inline element (``<span>``, ``<p>``, ``<li>``) whose full text
-       matches ``"label : value"``: used by the Vuetify listing page and
-       similar span-based info-card variants.
-
-    Args:
-        soup: Parsed HTML document.
-        *labels: Dutch label strings to try, in order of preference.
-
-    Returns:
-        The extracted value text, or an empty string if nothing matched.
-    """
-    for label in labels:
-        re_exact = re.compile(r"^\s*" + re.escape(label) + r"\s*$", re.IGNORECASE)
-
-        # Pattern 1: definition list or table (<dt>/<th> → <dd>/<td>).
-        for tag_name in ("dt", "th"):
-            el = soup.find(tag_name, string=re_exact)
-            if el is not None:
-                sibling = el.find_next_sibling(["dd", "td"])
-                if sibling is not None:
-                    return sibling.get_text(separator=" ", strip=True)
-
-        # Pattern 2: inline "label : value" element.
-        re_prefix = re.compile(
-            r"^\s*" + re.escape(label) + r"\s*:?\s*(.+)$", re.IGNORECASE
-        )
-        for el in soup.find_all(_INLINE_TAGS):
-            text = el.get_text(" ", strip=True)
-            m = re_prefix.match(text)
-            if m:
-                return m.group(1).strip()
-
-    return ""
-
-
-def fetch_info_card_html(
-    case_number: str,
-    language: str = "nl",
-    session: requests.Session | None = None,
-    timeout: float = 30.0,
-) -> str:
-    """Fetch the HTML of the info card page for one ruling.
-
-    Args:
-        case_number: Official case number, e.g. ``"14/2026"``.
-        language: ISO 639-1 language code.
-        session: An existing session to reuse.
-        timeout: Per-request timeout in seconds.
-
-    Returns:
-        Raw HTML of the info card page.
-
-    Raises:
-        requests.HTTPError: On a non-2xx response.
-    """
-    url = ghcc_permalink_info_card(case_number, language)
-    http = session or requests.Session()
-    response = http.get(url, timeout=timeout)
-    response.raise_for_status()
-    return response.text
-
-
-def parse_info_card(
-    html: str,
-    file_slug: str,
-    language: str = "nl",
-) -> DiscoveredRuling:
-    """Parse a GHCC info card page into a ``DiscoveredRuling``.
-
-    Uses :func:`_find_labeled_value` to scan for Dutch label text in both
-    ``<dt>/<dd>`` definition-list structure and inline ``"label : value"``
-    spans.
-
-    Args:
-        html: Raw HTML of the info card page.
-        file_slug: File/URL slug, e.g. ``"2026-014n"``, used to derive the
-            case number and PDF download URL.
-        language: ISO 639-1 language code.
-
-    Returns:
-        A ``DiscoveredRuling`` record; fields that could not be parsed fall
-        back to None or empty lists rather than raising.
-    """
-    soup = BeautifulSoup(html, "html.parser")
-    case_number = case_number_from_slug(file_slug)
-    pdf_url = ghcc_pdf_download_url(file_slug, language)
-
-    ruling_date_text = _find_labeled_value(soup, *_LABEL_DATE)
-    docket_number_text = _find_labeled_value(soup, *_LABEL_ROLE)
-    procedure_type_text = _find_labeled_value(soup, *_LABEL_PROCEDURE)
-    challenged_norm_text = _find_labeled_value(soup, *_LABEL_CHALLENGED_NORM)
-    applied_norm_text = _find_labeled_value(soup, *_LABEL_APPLIED_NORM)
-    outcome_text = _find_labeled_value(soup, *_LABEL_OUTCOME)
-    keywords_text = _find_labeled_value(soup, *_LABEL_KEYWORDS)
-
-    parsed_date: date | None
-    try:
-        parsed_date = _parse_date(ruling_date_text) if ruling_date_text else None
-    except ValueError:
-        parsed_date = None
-
-    keywords: list[str] = (
-        [k.strip() for k in keywords_text.split(" - ") if k.strip()]
-        if keywords_text
-        else []
-    )
-
-    return DiscoveredRuling(
-        case_number=case_number,
-        docket_number=docket_number_text or None,
-        ruling_date=parsed_date,
-        procedure_type=procedure_type_text or None,
-        challenged_norm=challenged_norm_text or None,
-        applied_norm=applied_norm_text or None,
-        controlled_norm=challenged_norm_text or applied_norm_text or None,
-        outcome=outcome_text or None,
-        keywords=keywords,
-        pdf_url=pdf_url,
-    )
